@@ -1,0 +1,18 @@
+<nav class="bg-dark text-white" id="sidenav" aria-label="DPL Components">
+
+Side  nav here
+
+<ul>
+  {% for item in sidenav %}
+<li>  {{item.text}}
+  <ul>
+    {% for child in item.children %}
+    <li><a href="components/{{child.href}}">{{ child.text}}</a></li>
+    {% endfor %}
+  </ul>
+</li>
+{% endfor %}
+</ul>
+
+ 
+</nav>

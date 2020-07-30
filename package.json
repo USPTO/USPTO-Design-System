@@ -1,0 +1,46 @@
+{
+  "name": "USPTO-DPL",
+  "version": "0.0.2",
+  "description": "USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.",
+  "directories": {
+    "dist": "dist"
+  },
+  "scripts": {
+    "build": "node ./scripts/build",
+    "dev": "node ./scripts/dev",
+    "serve": "node ./scripts/server",
+    "pretty-scss": "prettier ./src/assets/scss/**/*.scss --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/USPTO/designpatterns.git"
+  },
+  "keywords": [
+    "USPTO",
+    "ip",
+    "dpl",
+    "sass",
+    "fonts",
+    "icons"
+  ],
+  "author": "USPTO",
+  "contributors": [
+    "Menka Kayan <menka.kayan@uspto.gov>"
+  ],
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/uspto/designpatterns/issues"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "glob": "^7.1.6",
+    "nunjucks": "^3.2.2",
+    "nunjucks-extension-code-highlight": "*",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "fs-extra": "^9.0.1",
+    "prettier": "^2.0.5"
+  }
+}

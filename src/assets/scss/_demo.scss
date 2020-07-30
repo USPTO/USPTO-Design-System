@@ -1,0 +1,30 @@
+.parent-container {
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .flex-nowrap;
+  @extend .flex-grow-1;
+}
+
+#main-content {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE11-specific */
+  .parent-container {
+    display: block !important;
+  }
+}
+
+// reset max-widths for .nonav pages
+$nonav-container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+) !default;
+
+.nonav .container {
+  @include make-container-max-widths($nonav-container-max-widths);
+}

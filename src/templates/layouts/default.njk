@@ -1,0 +1,34 @@
+{% import '_macros.njk' as macros %}
+{% if build %}{% set x = '?b=' + build %}{% endif %}
+<!DOCTYPE html>
+<html lang="en"{% if page.class or nonav %} class="{{ (('nonav ' if nonav) + (page.class or '')) | trim }}"{% endif %}>
+<head>
+  {% include 'parts/_head.njk' %}
+  {% include 'parts/_styles.njk' %}
+  {% block head %}{% endblock %}
+</head>
+<body>
+{% block body %}
+{% block skipnav %}{% include 'parts/skipnav.njk' %}{% endblock %}
+
+{% block banner %}{% include 'parts/banner.njk' %}{% endblock %}
+
+{% block header %}{% include 'parts/_header.njk' %}{% endblock %}
+
+
+<div class="parent-container">
+  <main id="main-content">
+    {% block main %}
+    main
+    {% endblock %}
+  </main>    
+</div>
+ 
+{% endblock %}
+
+{% block footer %}{% include 'parts/_footer.njk' %}{% endblock %}
+
+{% block scripts %}{% include 'parts/_scripts.njk' %}{% endblock %}
+{% block body_end %}{% endblock %}
+</body>
+</html>
