@@ -1,0 +1,3 @@
+[submodule "usptostrap"]
+	path = usptostrap
+	url = https://github.com/USPTO/bs4-theme-dev
