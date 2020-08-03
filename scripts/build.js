@@ -91,8 +91,8 @@ const copyImageFile = async () => {
 }
 
 const copyFontsFile = async () => {
-  await fse.copy('usptostrap/css/fonts', 'dist/assets/css/fonts')
-  await fse.copy('usptostrap/css/icons', 'dist/assets/css/icons')
+  await fse.copy('usptostrap/assets/fonts', 'dist/assets/fonts')
+  await fse.copy('usptostrap/assets/icons', 'dist/assets/icons')
 }
  
 const updateData = async (context) => {
