@@ -1,4 +1,4 @@
-const sidenav = require('./sidenav')
+const componentList = require('./components/sidenav')
 const pkg = require('../../package.json')
 
 module.exports = {
@@ -53,7 +53,7 @@ module.exports = {
 
   sep: ' | ',
 
-  sidenav,
+  componentList,
 
   
 

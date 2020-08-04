@@ -1,10 +1,23 @@
 {% extends 'layouts/default.njk' %}
 {% set page = { class: 'page-badges', title: 'Badges' } %}
 
-{% block main %}
 
-<h1>This is components page</h1>
-
-{% endblock %}
+ {% block main %}  
 
 
+        <div class="row">
+          <div class="col-2">
+            {% block sidenav %}
+              {% include './sidenav.njk' %}
+            {% endblock %}
+          </div>
+          <div class="col-10">
+            <main id="main-content">
+             
+          <h1>This is components page</h1>
+         
+            </main>
+          </div>
+        
+      </div>
+       {% endblock %}
