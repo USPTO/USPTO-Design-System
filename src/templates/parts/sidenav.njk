@@ -1,18 +1,10 @@
-<nav class="bg-dark text-white" id="sidenav" aria-label="DPL Components">
-
-Side  nav here
-
-<ul>
-  {% for item in sidenav %}
-<li>  {{item.text}}
-  <ul>
-    {% for child in item.children %}
-    <li><a href="components/{{child.href}}">{{ child.text}}</a></li>
+<nav class="" id="sidenav" aria-label="DPL Components">
+<ul class="list-group">
+    {% for item in sidenav %}
+      <li class="list-group-item">
+        <a class="" href="{{item.href}}">{{item.text}}</a>
+      </li>
     {% endfor %}
   </ul>
-</li>
-{% endfor %}
-</ul>
-
- 
 </nav>
+

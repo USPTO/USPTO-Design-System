@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="nonav">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,8 +37,8 @@
     margin: 2rem 0;
   }
 </style>
-</head>
-<body>
+  </head>
+  <body class="parent-container">
   <a class="skipnav" href="#main-content">
     Skip to main content
   </a>
@@ -109,9 +109,10 @@
   </nav>
 </header>
 
-
-<div class="parent-container">
-  <main id="main-content">
+      <div class="main-container">
+       
+       
+        <main id="main-content">
 <div class="pl-hero bg-primary text-white">
   <div class="container">
     <h1 class="text-center"><b>USPTO</b> UI Design Library</h1>
@@ -182,13 +183,15 @@
   </div>
   
 </div>
-  </main>    
-</div>
- 
+        </main>
+      </div>
 
-  <footer>
-    Footer
-  </footer>
+
+<footer class="footer py-3">
+  <div class="container">
+    <span class="text-muted">Place footer content here.</span>
+  </div>
+</footer>
 
 
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -197,5 +200,5 @@
   <script src="assets/js/main.js"></script>
   
 
-</body>
+  </body>
 </html>

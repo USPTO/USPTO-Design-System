@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="page-badges">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,8 @@
   <title>USPTO UI Design Library | Badges</title>
   <link rel="stylesheet" href="../assets/css/main.css">
  
-</head>
-<body>
+  </head>
+  <body class="parent-container">
   <a class="skipnav" href="#main-content">
     Skip to main content
   </a>
@@ -80,20 +80,20 @@
         </div>
       </div>
     </section>
-  <header>
-    <div class="navbar navbar-expand bg-primary text-white">
-      <a class="navbar-brand text-white" href="../index.html" title="USPTO UI Design Library Home">
+<header>
+  <div class="navbar navbar-expand navbar-top text-white">
+    <a class="navbar-brand text-white" href="../index.html" title="USPTO UI Design Library Home">
       LOGO
             </a>
-      <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link  text-white" href="../" title="Download">
             Download
           </a>
         </li>
-      </ul>
-    </div>
-    <div class="navbar navbar-expand">
+    </ul>
+  </div>
+  <div class="navbar navbar-expand">
     <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link " href="../howto.html" title="How to use DPL">
@@ -101,27 +101,54 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../about.html" title="about">
-            about
+          <a class="nav-link " href="../components/index.html" title="Components">
+            Components
           </a>
         </li>
-      </ul>
-    </div>
-  </header>
+        <li class="nav-item">
+          <a class="nav-link " href="../" title="Page templates">
+            Page templates
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="../about.html" title="About">
+            About
+          </a>
+        </li>
+    </ul>
+  </div>
+</header>
+      <div class="main-container">
+        <div class="row">
+          <div class="col-2">
+<nav class="" id="sidenav" aria-label="DPL Components">
+<ul class="list-group">
+      <li class="list-group-item">
+        <a class="" href="badges.html">Badges</a>
+      </li>
+      <li class="list-group-item">
+        <a class="" href="buttons.html">Buttons</a>
+      </li>
+  </ul>
+</nav>
 
-
-<div class="parent-container">
-  <main id="main-content">
+          </div>
+          <div class="col-10">
+            <main id="main-content">
 
 <h1>THis is badge</h1>
 
-  </main>    
-</div>
- 
+            </main>
+          </div>
+        </div>
+      </div>
 
-  <footer>
-    Footer
-  </footer>
+
+<footer class="footer py-3">
+  <div class="container">
+    <span class="text-muted">Place footer content here.</span>
+  </div>
+</footer>
 
 
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
@@ -130,5 +157,5 @@
   <script src="../assets/js/main.js"></script>
   
 
-</body>
+  </body>
 </html>

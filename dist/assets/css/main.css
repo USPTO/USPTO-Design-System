@@ -897,7 +897,7 @@ pre code {
   }
 }
 
-.container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+.container-fluid, .parent-container .main-container, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -4286,6 +4286,8 @@ input[type=button].btn-block {
 }
 .navbar .container,
 .navbar .container-fluid,
+.navbar .parent-container .main-container,
+.parent-container .navbar .main-container,
 .navbar .container-sm,
 .navbar .container-md,
 .navbar .container-lg,
@@ -4361,6 +4363,7 @@ input[type=button].btn-block {
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
 .navbar-expand-sm > .container-fluid,
+.parent-container .navbar-expand-sm > .main-container,
 .navbar-expand-sm > .container-sm,
 .navbar-expand-sm > .container-md,
 .navbar-expand-sm > .container-lg,
@@ -4386,6 +4389,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-sm > .container,
 .navbar-expand-sm > .container-fluid,
+.parent-container .navbar-expand-sm > .main-container,
 .navbar-expand-sm > .container-sm,
 .navbar-expand-sm > .container-md,
 .navbar-expand-sm > .container-lg,
@@ -4403,6 +4407,7 @@ input[type=button].btn-block {
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
 .navbar-expand-md > .container-fluid,
+.parent-container .navbar-expand-md > .main-container,
 .navbar-expand-md > .container-sm,
 .navbar-expand-md > .container-md,
 .navbar-expand-md > .container-lg,
@@ -4428,6 +4433,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-md > .container,
 .navbar-expand-md > .container-fluid,
+.parent-container .navbar-expand-md > .main-container,
 .navbar-expand-md > .container-sm,
 .navbar-expand-md > .container-md,
 .navbar-expand-md > .container-lg,
@@ -4445,6 +4451,7 @@ input[type=button].btn-block {
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid,
+.parent-container .navbar-expand-lg > .main-container,
 .navbar-expand-lg > .container-sm,
 .navbar-expand-lg > .container-md,
 .navbar-expand-lg > .container-lg,
@@ -4470,6 +4477,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid,
+.parent-container .navbar-expand-lg > .main-container,
 .navbar-expand-lg > .container-sm,
 .navbar-expand-lg > .container-md,
 .navbar-expand-lg > .container-lg,
@@ -4487,6 +4495,7 @@ input[type=button].btn-block {
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
 .navbar-expand-xl > .container-fluid,
+.parent-container .navbar-expand-xl > .main-container,
 .navbar-expand-xl > .container-sm,
 .navbar-expand-xl > .container-md,
 .navbar-expand-xl > .container-lg,
@@ -4512,6 +4521,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-xl > .container,
 .navbar-expand-xl > .container-fluid,
+.parent-container .navbar-expand-xl > .main-container,
 .navbar-expand-xl > .container-sm,
 .navbar-expand-xl > .container-md,
 .navbar-expand-xl > .container-lg,
@@ -4532,6 +4542,7 @@ input[type=button].btn-block {
 }
 .navbar-expand > .container,
 .navbar-expand > .container-fluid,
+.parent-container .navbar-expand > .main-container,
 .navbar-expand > .container-sm,
 .navbar-expand > .container-md,
 .navbar-expand > .container-lg,
@@ -4551,6 +4562,7 @@ input[type=button].btn-block {
 }
 .navbar-expand > .container,
 .navbar-expand > .container-fluid,
+.parent-container .navbar-expand > .main-container,
 .navbar-expand > .container-sm,
 .navbar-expand > .container-md,
 .navbar-expand > .container-lg,
@@ -6859,7 +6871,7 @@ button.banner-dark:focus {
   flex-wrap: wrap !important;
 }
 
-.flex-nowrap, .parent-container {
+.flex-nowrap, .parent-container .main-container {
   flex-wrap: nowrap !important;
 }
 
@@ -6875,7 +6887,7 @@ button.banner-dark:focus {
   flex-grow: 0 !important;
 }
 
-.flex-grow-1, .parent-container {
+.flex-grow-1, .parent-container .main-container {
   flex-grow: 1 !important;
 }
 
@@ -11667,6 +11679,11 @@ body {
 #main-content {
   -ms-flex: 1;
   flex: 1;
+}
+
+.navbar-top, .footer {
+  background-color: #252f3e;
+  color: white;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

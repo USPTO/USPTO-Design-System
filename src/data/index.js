@@ -10,7 +10,7 @@ module.exports = {
 
   links: {    
     changelog: 'changelog.html',
-    firstComponent: `components/${sidenav[0].children[0].href}`,
+   // firstComponent: `components/${sidenav[0].children[0].href}`,
     home: 'index.html',    
   },
 
@@ -19,7 +19,7 @@ module.exports = {
   header: {
     links: [
       {
-        //href: 'about.html',
+        href: '',
         text: 'Download',
         title: 'Download',
       }      
@@ -34,9 +34,19 @@ module.exports = {
         title: 'How to use DPL',
       } , 
       {
+        href: 'components/index.html',
+        text: 'Components',
+        title: 'Components',
+      } , 
+      {
+        href: '',
+        text: 'Page templates',
+        title: 'Page templates',
+      } ,
+      {
         href: 'about.html',
-        text: 'about',
-        title: 'about',
+        text: 'About',
+        title: 'About',
       }      
     ]
   },

@@ -1,27 +1,27 @@
-  <header>
-    <div class="navbar navbar-expand bg-primary text-white">
-      <a class="navbar-brand text-white" href="{{ relativeRoot }}{{ links.home }}" title="USPTO UI Design Library Home">
+<header>
+  <div class="navbar navbar-expand navbar-top text-white">
+    <a class="navbar-brand text-white" href="{{ relativeRoot }}{{ links.home }}" title="USPTO UI Design Library Home">
       LOGO
             </a>
-      <ul class="navbar-nav ml-auto">
-        {% for link in header.links %}
+    <ul class="navbar-nav ml-auto">
+      {% for link in header.links %}
         <li class="nav-item">
           <a class="nav-link  text-white" href="{{ relativeRoot }}{{ link.href }}" title="{{ link.title or link.text }}">
             {{ link.text | safe }}
           </a>
         </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="navbar navbar-expand">
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="navbar navbar-expand">
     <ul class="navbar-nav">
-        {% for link in subHeader.links %}
+      {% for link in subHeader.links %}
         <li class="nav-item">
           <a class="nav-link " href="{{ relativeRoot }}{{ link.href }}" title="{{ link.title or link.text }}">
             {{ link.text | safe }}
           </a>
         </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </header>
+      {% endfor %}
+    </ul>
+  </div>
+</header>

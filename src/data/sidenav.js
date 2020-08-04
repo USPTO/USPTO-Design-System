@@ -1,8 +1,6 @@
 module.exports = [
   
-  {
-    "text": "Link",
-    "children": [
+  
      
       {
         "text": "Badges",
@@ -18,7 +16,6 @@ module.exports = [
       },
      
      
-    ]
-  },
+   
   
 ]
