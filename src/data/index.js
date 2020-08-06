@@ -1,5 +1,5 @@
-const componentList = require('./components/sidenav')
 const pkg = require('../../package.json')
+const navLinks = require('./navLinks')
 
 module.exports = {
 
@@ -34,12 +34,12 @@ module.exports = {
         title: 'How to use DPL',
       } , 
       {
-        href: 'components/index.html',
+        href: 'components/components.html',
         text: 'Components',
         title: 'Components',
       } , 
       {
-        href: '',
+        href: 'pageTemplates/pageTemplate1.html',
         text: 'Page templates',
         title: 'Page templates',
       } ,
@@ -53,7 +53,7 @@ module.exports = {
 
   sep: ' | ',
 
-  componentList,
+  ...navLinks,
 
   
 

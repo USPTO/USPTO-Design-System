@@ -1,23 +1,7 @@
-{% extends 'layouts/default.njk' %}
+{% extends 'layouts/components.njk' %}
+{% set navLinkIndex = 2 %}
 {% set page = { class: 'page-badges', title: 'Badges' } %}
 
-
- {% block main %}  
-
-
-        <div class="row">
-          <div class="col-2">
-            {% block sidenav %}
-              {% include './sidenav.njk' %}
-            {% endblock %}
-          </div>
-          <div class="col-10">
-            <main id="main-content">
-             
-          <h1>This is badge page</h1>
-         
-            </main>
-          </div>
-        
-      </div>
-       {% endblock %}
+{% block content %}
+  <h1>This is badges page</h1>
+{% endblock %}

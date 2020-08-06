@@ -6621,7 +6621,7 @@ button.banner-dark:focus {
   display: flex !important;
 }
 
-.d-inline-flex {
+.d-inline-flex, .btn.md-icon {
   display: inline-flex !important;
 }
 
@@ -10872,7 +10872,7 @@ h3 {
 }
 
 .btn.md-icon {
-  padding: 0.45rem 1rem;
+  vertical-align: middle;
 }
 
 .btn-group > .btn:not(:last-child):not(:first-child)[class*=btn-outline-] {
@@ -10969,6 +10969,9 @@ h3 {
 .accordion .card-header .accordion-heading .btn:focus, .accordion .card-header .accordion-heading .btn.focus {
   outline-offset: 0;
 }
+.accordion .card-header .accordion-heading .btn .material-icons {
+  font-size: 1.375rem;
+}
 .accordion .card-header .accordion-heading .btn .material-icons.collapsed-icon {
   display: block;
 }
@@ -11045,6 +11048,11 @@ h3 {
   background-color: transparent;
 }
 
+.custom-range:focus {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0;
+}
+
 .form-control:focus, .form-control.focus {
   outline: 0.25rem solid #2491ff;
   outline-offset: 0;
@@ -11059,6 +11067,16 @@ h3 {
 
 .was-validated .form-control:valid, .was-validated .form-control:invalid {
   border-width: 0.25rem !important;
+}
+
+.input-group-prepend .btn, .input-group-append .btn {
+  line-height: 0.75;
+}
+.input-group-sm > .input-group-prepend .material-icons {
+  font-size: 0.95rem;
+}
+.input-group-sm > .form-control, .input-group-sm > .custom-select, .input-group-lg > .form-control, .input-group-lg > .custom-select {
+  border-radius: 0;
 }
 
 .list-group-item-primary {
@@ -11416,7 +11434,7 @@ label {
   width: 100px;
   height: 100px;
   box-sizing: border-box;
-  border: 10px solid #4285F4;
+  border: 10px solid #4285f4;
   border-bottom-color: transparent;
   border-radius: 50%;
 }
@@ -11657,10 +11675,10 @@ body {
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
+  font-size: inherit;
   /* Preferred icon size */
   display: inline-block;
-  line-height: 1;
+  line-height: inherit;
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
