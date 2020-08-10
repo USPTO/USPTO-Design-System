@@ -87,7 +87,7 @@ const renderSassFile = (options = {}) => new Promise((resolve, reject) => {
 })
 
 const copyImageFile = async () => {
-  await fse.copy('usptostrap/assets/images', 'dist/assets/img')  
+  await fse.copy('usptostrap/assets/img', 'dist/assets/img')  
 }
 
 const copyFontsFile = async () => {
