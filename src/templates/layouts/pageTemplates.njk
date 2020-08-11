@@ -1,17 +1,13 @@
 {% extends "layouts/default.njk" %}
 {% set navLinks = pageTemplateNavLinks %}
 
-{% set title = NavLink.title%}
-
 {% block main %}
   <div class="d-flex">
-     
-        {% include 'parts/_sidenav.njk' %}
-     
+    {% include 'parts/_sidenav.njk' %}
     <div class="main-container">
       <main id="main-content">
-       {% block content%}{% endblock%}
-      </main>
+        {% block content%}{% endblock%}
+        </main>
       </div>
-   </div>
-{% endblock %}
+    </div>
+  {% endblock %}

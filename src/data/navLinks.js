@@ -1,11 +1,11 @@
 
 Object.assign(exports, {
   componentNavLinks: [
-    { href: 'components.html', title: 'Components' },
-    { href: 'badges.html', title: 'Badges' }
+    { href: 'components.html', text: 'Components' },
+    { href: 'badges.html', text: 'Badges' }
   ],
   pageTemplateNavLinks: [
-    { href: 'pageTemplate1.html', title: 'Page Template 1' },
-    { href: 'pageTemplate1.html', title: 'Page Template 2' }
+    { href: 'pageTemplate1.html', text: 'Page Template 1' },
+    { href: 'loader.html', text: 'Page Template 2' }
   ]
 })
