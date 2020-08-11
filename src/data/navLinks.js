@@ -6,6 +6,6 @@ Object.assign(exports, {
   ],
   pageTemplateNavLinks: [
     { href: 'pageTemplate1.html', text: 'Page Template 1' },
-    { href: 'loader.html', text: 'Page Template 2' }
+    { href: 'loader.html', text: 'Loading Spinner' }
   ]
 })

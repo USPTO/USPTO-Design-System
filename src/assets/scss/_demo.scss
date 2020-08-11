@@ -18,6 +18,10 @@
   color: white;
 }
 
+.img-thumbnail{
+  max-width: 10rem;
+}
+
 
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -27,14 +31,3 @@
   }
 }
 
-// reset max-widths for .nonav pages
-$nonav-container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-) !default;
-
-.nonav .container {
-  @include make-container-max-widths($nonav-container-max-widths);
-}

@@ -1,7 +1,11 @@
 {% extends 'layouts/pageTemplates.njk' %}
-{% set navLinkIndex = 1 %}
-{% set page = { class: '', title: 'Page Template' } %}
+{% set page = {
+  class: '',
+  title: 'Loading spinners'
+} %}
 
 {% block content %}
-  <h1>This is Page Template 1</h1>
+  <h1>{{page.title}}</h1>
+  <h2>Full page loading example</h2>
+  <a href="../examples/full-page-loading-spinner.html" target="_blank"><img class="img-thumbnail" src="{{relativeRoot}}/assets/img/loading-spinner-full.png" /></a>
 {% endblock %}

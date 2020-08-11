@@ -11425,6 +11425,7 @@ label {
  * Author: Rudi Theunissen (rudolf.theunissen$gmail.com)
  * Version: 1.1.1
  */
+/* spinner-wrapper is for IE */
 .spinner-wrapper {
   display: block;
   position: relative;
@@ -11469,7 +11470,7 @@ label {
   width: 100px;
   height: 100px;
   box-sizing: border-box;
-  border: 10px solid #4285f4;
+  border: 10px solid #fff;
   border-bottom-color: transparent;
   border-radius: 50%;
 }
@@ -11542,6 +11543,7 @@ label {
   }
 }
 
+/* Spinner for all modern browsers */
 html,
 body {
   height: 100%;
@@ -11565,11 +11567,17 @@ body {
   font-size: 0;
   display: inline-block;
   animation: outer 6600ms linear infinite;
+  padding: 1rem;
 }
 .md-preloader svg {
   animation: inner 1320ms linear infinite;
+  height: 75px;
+  width: 75px;
 }
 .md-preloader svg circle {
+  cx: 37.5;
+  cy: 37.5;
+  r: 33.5;
   fill: none;
   stroke: #fff;
   stroke-linecap: "round";
@@ -11649,55 +11657,6 @@ body {
   }
 }
 
-.spinner {
-  animation: rotator 1.4s linear infinite;
-}
-
-@keyframes rotator {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(270deg);
-  }
-}
-.path {
-  stroke-dasharray: 187;
-  stroke-dashoffset: 0;
-  transform-origin: center;
-  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
-}
-
-@keyframes colors {
-  0% {
-    stroke: #4285f4;
-  }
-  25% {
-    stroke: #de3e35;
-  }
-  50% {
-    stroke: #f7c223;
-  }
-  75% {
-    stroke: #1b9a59;
-  }
-  100% {
-    stroke: #4285f4;
-  }
-}
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 187;
-  }
-  50% {
-    stroke-dashoffset: 46.75;
-    transform: rotate(135deg);
-  }
-  100% {
-    stroke-dashoffset: 187;
-    transform: rotate(450deg);
-  }
-}
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
@@ -11739,30 +11698,14 @@ body {
   color: white;
 }
 
+.img-thumbnail {
+  max-width: 10rem;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE11-specific */
   .parent-container {
     display: block !important;
-  }
-}
-@media (min-width: 576px) {
-  .nonav .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .nonav .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .nonav .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .nonav .container {
-    max-width: 1140px;
   }
 }
 
