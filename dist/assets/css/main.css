@@ -11693,9 +11693,26 @@ body {
   flex: 1;
 }
 
-.navbar-top, .footer {
+.navbar-top,
+.footer {
   background-color: #252f3e;
   color: white;
+}
+
+main > section {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.sidenav {
+  display: block;
+  float: left;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  width: 15rem;
 }
 
 .img-thumbnail {

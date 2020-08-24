@@ -1,11 +1,11 @@
 .parent-container {
   @extend .d-flex;
   @extend .flex-column;
-  .main-container{
+  .main-container {
     @extend .container-fluid;
-  @extend .flex-nowrap;
-  @extend .flex-grow-1;
-}
+    @extend .flex-nowrap;
+    @extend .flex-grow-1;
+  }
 }
 
 #main-content {
@@ -13,16 +13,34 @@
   flex: 1;
 }
 
-.navbar-top, .footer {
+.navbar-top,
+.footer {
   background-color: #252f3e;
   color: white;
 }
 
-.img-thumbnail{
-  max-width: 10rem;
+main {
+  > section {
+    background: $white;
+    border: 1px solid #ddd;
+    margin: 2rem 0;
+    padding: 2rem;
+  }
 }
 
+//to be moved to theme later today
+.sidenav{
+  display: block;
+    float: left;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 15rem;
+}
 
+.img-thumbnail {
+  max-width: 10rem;
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE11-specific */
@@ -30,4 +48,3 @@
     display: block !important;
   }
 }
-

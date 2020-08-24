@@ -2,14 +2,12 @@
 {% set navLinks = foundationNavLinks %}
 
 {% block main %}
-<div class="row">
-  <div class="col-2">
+
     {% include 'parts/_sidenav.njk' %} 
-  </div>
-  <div class="col-10">
+  
     <div class="main-container">
       <main id="main-content"> {% block content%}{% endblock%} </main>
     </div>
-  </div>
+  
 </div>
 {% endblock %}
