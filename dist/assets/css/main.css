@@ -6637,7 +6637,7 @@ button.banner-dark:focus {
   display: table-cell !important;
 }
 
-.d-flex, .parent-container .main-container, .parent-container, .accordion .card-header .accordion-heading .btn, .alert {
+.d-flex, main > section .preview .code-box, .parent-container .main-container, .parent-container, .accordion .card-header .accordion-heading .btn, .alert {
   display: flex !important;
 }
 
@@ -6875,7 +6875,7 @@ button.banner-dark:focus {
   flex-direction: row !important;
 }
 
-.flex-column, .parent-container, .sidenav {
+.flex-column, main > section .preview .code-box, .parent-container, .sidenav {
   flex-direction: column !important;
 }
 
@@ -11705,9 +11705,13 @@ main > section {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
   margin: 2rem 0;
+}
+main > section .pattern {
   padding: 2rem;
 }
-
+main > section .preview {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
 .sidenav {
   background: #fff;
   display: block;

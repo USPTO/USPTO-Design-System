@@ -21,28 +21,35 @@
   color: white;
 }
 
-
-
 main {
   width: 100%;
   > section {
     background: $white;
-    border: 2px solid  rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.25rem;
     margin: 2rem 0;
-    padding: 2rem;
+    .pattern {
+     padding: 2rem;
+    }
+    .preview {
+      border-top: 2px solid rgba(0, 0, 0, 0.1);
+     .code-box{
+       @extend .d-flex;
+       @extend .flex-column;
+     }
+    }
   }
 }
 
 //to be moved to theme later today
-.sidenav{
+.sidenav {
   background: #fff;
   display: block;
-    float: left;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    width: 15rem;
+  float: left;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  width: 15rem;
 }
 
 .img-thumbnail {

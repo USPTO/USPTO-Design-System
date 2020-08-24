@@ -4,11 +4,13 @@
 
 {% block content %}
   <section>
-    <h1>This is colors page</h1>
-    <div class="swatches">
-    {{ macros.cardSwatch("brandColor", "#f06d06", "Our main color.") }}
-    {{ macros.cardSwatch("brandHighlight", "#d0b000", "For callouts and highlights.") }}
-    {{ macros.cardSwatch("grayDark", "#333333", "For things like code block backgrounds.") }}
+    <div class="pattern">
+      <h1>This is colors page</h1>
+      <div class="swatches">
+        {{ macros.cardSwatch("brandColor", "#f06d06", "Our main color.") }}
+        {{ macros.cardSwatch("brandHighlight", "#d0b000", "For callouts and highlights.") }}
+        {{ macros.cardSwatch("grayDark", "#333333", "For things like code block backgrounds.") }}
+      </div>
     </div>
   </section>
 {% endblock %}

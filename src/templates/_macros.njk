@@ -1,17 +1,84 @@
 {% macro cardSwatch(colorName, colorValue, colorNotes) %}
   <div class="color-swatch-tile">
-    
+
     <div class="color-swatch"
-         style="background-color: {{ colorValue }};">
-    </div>
-    
+         style="background-color: {{ colorValue }};"></div>
+
     <div class="color-name">
       {{ colorName }}
     </div>
-    
+
     <div class="color-notes">
       {{ colorNotes }}
     </div>
-    
+
   </div>
 {% endmacro %}
+
+{% macro viewCode(o) %}
+
+  {% set id = o.id or uid('codebox') %}
+
+  {% set blocks = o.codeBlocks or[
+    {
+      html: o.html,
+      code: o.code
+    }
+  ] %}
+
+  <div class="code-box{% if o.class %} {{ o.class }}{% endif %}">
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group btn-group-sm ml-auto" role="group" aria-label=" group">
+        <button type="button" class="btn btn-light">Example</button>
+        {{ viewCodeButton(id, o.ariaLabel) }}
+        <button type="button" class="btn btn-light">Copy Code</button>
+      </div>
+
+    </div>
+
+    <div class="pattern" >
+      {% for block in blocks %}
+        {{ block.code | safe | trim }}
+        <div class="collapse" id="{{ id }}">
+
+          {{ (block.html or 'Example HTML usage:') | indent(6) | safe | trim }}
+
+          {% if block.code %}
+
+            {% code %}{{ block.code | safe | trim }}{% endcode %}
+
+          {% endif %}
+        </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+{% endmacro %}
+
+{% macro viewCodeButton (controls, label, text, className = 'btn-dark') -%}
+
+  <button class="btn btn-light btn-collapse {{ className }} collapsed"
+
+      aria-controls="{{ controls }}"
+
+      aria-label="{{ label }}"
+
+      aria-expanded="false"
+
+      data-target="#{{ controls }}"
+
+      data-toggle="collapse"
+
+      type="button"
+
+    >
+
+    <span class="fa fa-chevron-right pr-1"></span>
+
+    {{ text or 'View Code' }}
+
+  </button>
+
+{%- endmacro %}

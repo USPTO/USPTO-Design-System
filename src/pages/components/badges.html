@@ -3,13 +3,22 @@
 
 {% block content %}
   <section>
-    <h1>This is badges page</h1>
-    {{badges | safe }}
+    <div class="pattern">
+      <h1>This is badges page</h1>
+      {{badges | safe }}
 
-    {% code %}
-    {{badges | safe | indent(5) | trim}}
+      {% code %}
+      {{badges | safe | indent(5) | trim}}
 
-    {% endcode %}
+      {% endcode %}
+    </div>
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'view code for breadcrumb',    code: badges
+
+  })
+
+}}
+    </div>
 
   </section>
 
