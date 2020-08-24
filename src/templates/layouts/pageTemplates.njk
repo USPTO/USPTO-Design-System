@@ -5,11 +5,7 @@
 
   {% include 'parts/_sidenav.njk' %}
 
-  <div class="main-container">
-    <main id="main-content">
-      {% block content%}{% endblock%}
-      </main>
-
-    </div>
-  </div>
+  <main id="main-content">
+    {% block content%}{% endblock%}
+  </main>
 {% endblock %}

@@ -29,7 +29,7 @@ Object.assign(exports, {
   ],
   foundationNavLinks: [
     { href: 'foundation.html', text: 'Foundation' },
-    { href: '	colors	.html', text: '	Colors	' },
+    { href: 'colors.html', text: 'Colors' },
     { href: '	grid	.html', text: '	Grid	' },
     { href: '	icons	.html', text: '	Icons	' },
     { href: '	layouts	.html', text: '	Layouts	' },

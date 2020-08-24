@@ -6637,7 +6637,7 @@ button.banner-dark:focus {
   display: table-cell !important;
 }
 
-.d-flex, .parent-container, .accordion .card-header .accordion-heading .btn, .alert {
+.d-flex, .parent-container .main-container, .parent-container, .accordion .card-header .accordion-heading .btn, .alert {
   display: flex !important;
 }
 
@@ -11688,25 +11688,28 @@ body {
   font-feature-settings: "liga";
 }
 
-#main-content {
-  -ms-flex: 1;
-  flex: 1;
+.parent-container {
+  background: #eee;
 }
-
 .navbar-top,
 .footer {
   background-color: #252f3e;
   color: white;
 }
 
+main {
+  width: 100%;
+}
 main > section {
   background: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
   margin: 2rem 0;
   padding: 2rem;
 }
 
 .sidenav {
+  background: #fff;
   display: block;
   float: left;
   margin-bottom: 3rem;
@@ -11717,6 +11720,30 @@ main > section {
 
 .img-thumbnail {
   max-width: 10rem;
+}
+
+.swatches {
+  display: flex;
+}
+
+.color-swatch-tile {
+  width: 160px;
+  padding: 1rem;
+  box-shadow: 0 0 10px #ccc;
+  margin-right: 1rem;
+}
+
+.color-swatch {
+  height: 150px;
+}
+
+.color-name {
+  font-weight: bold;
+  margin: 0 0 3px 0;
+}
+
+.color-notes {
+  font-size: 0.9rem;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
