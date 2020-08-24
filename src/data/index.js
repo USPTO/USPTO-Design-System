@@ -34,10 +34,21 @@ module.exports = {
         title: 'How to use DPL',
       } , 
       {
+      href: 'foundation/foundation.html',
+        text: 'Foundation',
+        title: 'Foundation',
+    },
+
+      {
         href: 'components/components.html',
         text: 'Components',
         title: 'Components',
       } , 
+      {
+        href: 'patterns/patterns.html',
+      text: 'Patterns',
+      title: 'Patterns',
+    },
       {
         href: 'pageTemplates/pageTemplate1.html',
         text: 'Page templates',

@@ -1,8 +1,8 @@
-<div class="navbar navbar-expand">
+<div class="navbar navbar-expand bg-primary p-0 mb-4">
   <ul class="navbar-nav">
     {% for link in subHeader.links %}
       <li class="nav-item">
-        <a class="nav-link " href="{{ relativeRoot }}{{ link.href }}" title="{{ link.title or link.text }}">
+        <a class="nav-link text-white" href="{{ relativeRoot }}{{ link.href }}" title="{{ link.title or link.text }}">
           {{ link.text | safe }}
         </a>
       </li>
