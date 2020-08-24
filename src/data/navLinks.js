@@ -3,6 +3,7 @@ Object.assign(exports, {
   componentNavLinks: [
     { href: 'components.html', text: 'Components' },
     { href: 'alertsNotifications.html', text: '	Alerts and notifications	' },
+    { href: 'badges.html', text: 'Badges' },
     { href: '	breadcrumbs.html', text: '	Breadcrumbs	' },
     { href: '	buttons.html', text: '	Buttons	' },
     { href: '	collapsiblePanels.html', text: '	Collapsible panels	' },

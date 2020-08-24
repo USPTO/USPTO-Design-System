@@ -1,6 +1,28 @@
 {% extends 'layouts/components.njk' %}
-{% set page = { class: 'page-badges' } %} 
+{% set page = { class: 'page-badges' } %}
 
 {% block content %}
-  <h1>This is badges page</h1>
+  <section>
+    <h1>This is badges page</h1>
+    {{badges | safe }}
+
+    {% code %}
+    {{badges | safe | indent(5) | trim}}
+
+    {% endcode %}
+
+  </section>
+
 {% endblock %}
+
+{% set badges %}
+<!--Badges-->
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+{% endset%}
