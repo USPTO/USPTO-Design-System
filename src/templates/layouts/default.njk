@@ -2,7 +2,10 @@
 {% if build %}{% set x = '?b=' + build %}
 {% endif %}
 <!DOCTYPE html>
-<html lang="en"{% if page.class %} class="{{ (page.class or '')) | trim }}"{% endif %}>
+<html lang="en"{% if page.class %} class="{{ (page.class or '') | trim }}"{% endif %}>
+{# <html lang="en" {% if page.class %}
+  class="here"
+{% endif %}> #}
   <head>
     {% include 'parts/_head.njk' %}
     {% include 'parts/_styles.njk' %}
