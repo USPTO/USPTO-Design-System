@@ -5,19 +5,14 @@
   <section>
     <div class="pattern">
       <h1>This is badges page</h1>
-      {{badges | safe }}
 
-      {% code %}
-      {{badges | safe | indent(5) | trim}}
-
-      {% endcode %}
     </div>
     <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'view code for badges',    code: badges
+      {{  macros.viewCode({   ariaLabel: 'view code for badges',    code: badges  })}}
+    </div>
 
-  })
-
-}}
+    <div class="preview">
+      {{  macros.viewCodeModal({   ariaLabel: 'view code for badges',    code: badges  })}}
     </div>
 
   </section>
