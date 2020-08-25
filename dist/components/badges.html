@@ -14,7 +14,8 @@
 
   <title>USPTO UI Design Library</title>
   <link rel="stylesheet" href="../assets/css/main.css">
- 
+ <link rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix />
+<link rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix />
   </head>
   <body class="parent-container">
   <a class="skipnav" href="#main-content">
@@ -131,99 +132,270 @@
 </div>      </header>
 
       <div class="main-container">
-
+  <div class="d-sm-block d-md-none">
+<p>Option 1</p>
+<div class="dropdown">
+  <button class="btn btn-block btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Option one
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li>
+        <a class="dropdown-item" href="components.html">Components</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="alertsNotifications.html">	Alerts and notifications	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="badges.html">Badges</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	breadcrumbs.html">	Breadcrumbs	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	buttons.html">	Buttons	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	collapsiblePanels.html">	Collapsible panels	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	dialogs.html">	Dialogs	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	formControls	.html">	Form controls	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	forms	.html">	Forms	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	labelsBadges	.html">	Labels and badges	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	menus	.html">	Menus	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	metadata	.html">	Metadata	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	pagination	.html">	Pagination	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	popovers	.html">	Popovers	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	progressLoading	.html">	Progress and loading	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	stepIndicators	.html">	Step indicators	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	tables	.html">	Tables	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	tabs	.html">	Tabs	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	tags	.html">	Tags	</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="	tooltips	.html">	Tooltips	</a>
+        
+      </li>
+  </ul>
+  <p class="mt-3">Option 2</p>
+  <select class="form-control" >
+      <option>
+        <a class="dropdown-item" href="components.html">Components</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="alertsNotifications.html">	Alerts and notifications	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="badges.html">Badges</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	breadcrumbs.html">	Breadcrumbs	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	buttons.html">	Buttons	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	collapsiblePanels.html">	Collapsible panels	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	dialogs.html">	Dialogs	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	formControls	.html">	Form controls	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	forms	.html">	Forms	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	labelsBadges	.html">	Labels and badges	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	menus	.html">	Menus	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	metadata	.html">	Metadata	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	pagination	.html">	Pagination	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	popovers	.html">	Popovers	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	progressLoading	.html">	Progress and loading	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	stepIndicators	.html">	Step indicators	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	tables	.html">	Tables	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	tabs	.html">	Tabs	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	tags	.html">	Tags	</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="	tooltips	.html">	Tooltips	</a>       
+      </option>
+  </select>
+</div>  </div>
+  <div class="d-none d-sm-none d-md-block">
 <nav id="sidenav" aria-label="DPL Components">
 <ul class="sidenav">
       <li>
         <a href="components.html">Components</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="alertsNotifications.html">	Alerts and notifications	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="badges.html">Badges</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	breadcrumbs.html">	Breadcrumbs	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	buttons.html">	Buttons	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	collapsiblePanels.html">	Collapsible panels	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	dialogs.html">	Dialogs	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	formControls	.html">	Form controls	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	forms	.html">	Forms	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	labelsBadges	.html">	Labels and badges	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	menus	.html">	Menus	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	metadata	.html">	Metadata	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	pagination	.html">	Pagination	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	popovers	.html">	Popovers	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	progressLoading	.html">	Progress and loading	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	stepIndicators	.html">	Step indicators	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	tables	.html">	Tables	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	tabs	.html">	Tabs	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	tags	.html">	Tags	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="	tooltips	.html">	Tooltips	</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
   </ul>
 </nav>
 
 
-
+  </div>
   <main id="main-content">
   <section>
     <div class="pattern">
       <h1>This is badges page</h1>
-
     </div>
     <div class="preview">
       
@@ -269,11 +441,10 @@
 <span class="badge badge-info">Info</span>
 <span class="badge badge-light">Light</span>
 <span class="badge badge-dark">Dark</span>
-        <div class="collapse" id="codebox-1">
+        <div class="collapse line-numbers" id="codebox-1">
 
           Example HTML usage:
 
-
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Badges--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-primary&quot;</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -290,97 +461,12 @@
   </div>
 
 
-    </div>
-
-    <div class="preview">
-      
-
-
-  <div class="code-box">
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <div class="btn-group btn-group-sm ml-auto" role="group" aria-label=" group">
-        <button type="button" class="btn btn-light">Example</button>
-        <button class="btn btn-light btn-collapse btn-dark collapsed"
-
-      aria-controls="codebox-2"
-
-      aria-label="view code for badges"
-
-      aria-expanded="false"
-
-      data-target="#codebox-2"
-
-      data-toggle="modal"
-
-      type="button"
-
-    >
-
-    <span class="fa fa-chevron-right pr-1"></span>
-
-    View Code
-
-  </button>
-        <button type="button" class="btn btn-light">Copy Code</button>
-      </div>
-
-    </div>
-
-    <div class="pattern" >
-        <!--Badges-->
-<span class="badge badge-primary">Primary</span>
-<span class="badge badge-secondary">Secondary</span>
-<span class="badge badge-success">Success</span>
-<span class="badge badge-danger">Danger</span>
-<span class="badge badge-warning">Warning</span>
-<span class="badge badge-info">Info</span>
-<span class="badge badge-light">Light</span>
-<span class="badge badge-dark">Dark</span>
-        <div class="modal fade" id="codebox-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div >
-
-                  Example HTML usage:
-
-
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Badges--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-primary&quot;</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-success&quot;</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-danger&quot;</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-warning&quot;</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-info&quot;</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-light&quot;</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-dark&quot;</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-    </div>
-
-  </div>
-
-
-    </div>
+    </div>  
 
   </section>
 
-  </main>
+    </main>
+  </div>
       </div>
 
 
@@ -394,6 +480,8 @@
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/popper/popper.min.js"></script>
   <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/prismjs/prism.js"></script>
+  <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
   <script src="../assets/js/main.js"></script>
   
 

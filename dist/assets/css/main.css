@@ -690,7 +690,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Merriweather Web", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: "Public Sans Web", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -11371,6 +11371,21 @@ h3 {
   border-color: #1b1b1b;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  letter-spacing: -0.03em;
+}
+
 a:hover, a:focus {
   text-decoration: underline;
 }
@@ -11401,18 +11416,26 @@ label {
 }
 
 .sidenav {
+  background: #fff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
+  display: block;
+  float: left;
+  margin: 2rem 2rem 2rem 0;
+  width: 15rem;
 }
-.sidenav :first-child {
-  border-top: none;
-}
-.sidenav li {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
-.sidenav li > a.active {
+.sidenav li.active {
   border-left: 0.25rem solid #005ea2;
   margin-left: -0.125rem;
+}
+.sidenav li > a {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.sidenav-sublist {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 0.81rem;
 }
 
 /**
@@ -11712,16 +11735,6 @@ main > section .pattern {
 main > section .preview {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
-.sidenav {
-  background: #fff;
-  display: block;
-  float: left;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-  margin-right: 2rem;
-  width: 15rem;
-}
-
 .img-thumbnail {
   max-width: 10rem;
 }
@@ -11756,102 +11769,9 @@ main > section .preview {
     display: block !important;
   }
 }
-/* a11y-light theme */
-/* Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css */
-/* @author: ericwbailey */
-/* Comment */
-.hljs-comment,
-.hljs-quote {
-  color: #696969;
-}
-
-/* Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-  color: #d91e18;
-}
-
-/* Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-  color: #aa5d00;
-}
-
-/* Yellow */
-.hljs-attribute {
-  color: #aa5d00;
-}
-
-/* Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-  color: #008000;
-}
-
-/* Blue */
-.hljs-title,
-.hljs-section {
-  color: #007faa;
-}
-
-/* Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #7928a1;
-}
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  background: #fefefe;
-  color: #545454;
-  padding: 0.5em;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .hljs-addition,
-.hljs-attribute,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-bullet,
-.hljs-comment,
-.hljs-link,
-.hljs-literal,
-.hljs-meta,
-.hljs-number,
-.hljs-params,
-.hljs-string,
-.hljs-symbol,
-.hljs-type,
-.hljs-quote {
-    color: highlight;
-  }
-
-  .hljs-keyword,
-.hljs-selector-tag {
-    font-weight: bold;
+@media (max-width: 768.98px) {
+  .main-container {
+    flex-direction: column !important;
   }
 }
 

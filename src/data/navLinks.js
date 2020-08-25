@@ -23,14 +23,16 @@ Object.assign(exports, {
     { href: '	tooltips	.html', text: '	Tooltips	' },
 
   ],
-  pageTemplateNavLinks: [
-    { href: 'pageTemplate1.html', text: 'Page Template 1' },
-    { href: 'pageTemplate2.html', text: 'Page Template 2' },
-    { href: 'loader.html', text: 'Loading Spinner' }
-  ],
+
   foundationNavLinks: [
     { href: 'foundation.html', text: 'Foundation' },
-    { href: 'colors.html', text: 'Colors' },
+    {
+      href: 'colors.html', text: 'Colors',
+      "children": [
+        { href: '#primary-ui-colors', text: 'Primary UI colors' },
+        { href: '#full-brand-palette', text: 'Full brand palette' }
+      ]
+    },
     { href: '	grid	.html', text: '	Grid	' },
     { href: '	icons	.html', text: '	Icons	' },
     { href: '	layouts	.html', text: '	Layouts	' },
@@ -38,6 +40,12 @@ Object.assign(exports, {
     { href: '	typography	.html', text: '	Typography	' }
 
   ],
+  pageTemplateNavLinks: [
+    { href: 'pageTemplate1.html', text: 'Page Template 1' },
+    { href: 'pageTemplate2.html', text: 'Page Template 2' },
+    { href: 'loader.html', text: 'Loading Spinner' }
+  ],
+
   patternsNavLinks: [
     { href: 'patterns.html', text: 'Patterns' },
     { href: '	cards	.html', text: '	Cards	' },

@@ -39,13 +39,12 @@
     <div class="pattern" >
       {% for block in blocks %}
         {{ block.code | safe | trim }}
-        <div class="collapse" id="{{ id }}">
+        <div class="collapse line-numbers" id="{{ id }}">
 
-          {{ (block.html or 'Example HTML usage:') | indent(6) | safe | trim }}
+          {{ (block.html or 'Example HTML usage:') | indent(16) | safe | trim }}
 
           {% if block.code %}
-
-            {% code %}{{ block.code | safe | trim }}{% endcode %}
+ {% code %}{{ block.code | safe | trim }}{% endcode %}
 
           {% endif %}
         </div>
@@ -57,66 +56,6 @@
 
 {% endmacro %}
 
-{% macro viewCodeModal(o) %}
-
-  {% set id = o.id or uid('codebox') %}
-
-  {% set blocks = o.codeBlocks or[
-    {
-      html: o.html,
-      code: o.code
-    }
-  ] %}
-
-  <div class="code-box{% if o.class %} {{ o.class }}{% endif %}">
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <div class="btn-group btn-group-sm ml-auto" role="group" aria-label=" group">
-        <button type="button" class="btn btn-light">Example</button>
-        {{ viewCodeModalButton(id, o.ariaLabel) }}
-        <button type="button" class="btn btn-light">Copy Code</button>
-      </div>
-
-    </div>
-
-    <div class="pattern" >
-      {% for block in blocks %}
-        {{ block.code | safe | trim }}
-        <div class="modal fade" id="{{ id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div >
-
-                  {{ (block.html or 'Example HTML usage:') | indent(6) | safe | trim }}
-
-                  {% if block.code %}
-
-                    {% code %}{{ block.code | safe | trim }}{% endcode %}
-
-                  {% endif %}
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      {% endfor %}
-
-    </div>
-
-  </div>
-
-{% endmacro %}
 
 {% macro viewCodeButton (controls, label, text, className = 'btn-dark') -%}
 
@@ -144,28 +83,3 @@
 
 {%- endmacro %}
 
-{% macro viewCodeModalButton (controls, label, text, className = 'btn-dark') -%}
-
-  <button class="btn btn-light btn-collapse {{ className }} collapsed"
-
-      aria-controls="{{ controls }}"
-
-      aria-label="{{ label }}"
-
-      aria-expanded="false"
-
-      data-target="#{{ controls }}"
-
-      data-toggle="modal"
-
-      type="button"
-
-    >
-
-    <span class="fa fa-chevron-right pr-1"></span>
-
-    {{ text or 'View Code' }}
-
-  </button>
-
-{%- endmacro %}

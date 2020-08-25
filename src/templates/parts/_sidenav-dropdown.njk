@@ -1,0 +1,26 @@
+<p>Option 1</p>
+<div class="dropdown">
+  <button class="btn btn-block btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Option one
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    {% for item in navLinks %}
+      <li>
+        <a class="dropdown-item" href="{{item.href}}">{{item.text}}</a>
+        {# <ul class="sidenav-sublist">
+        {% for child in item.children %}
+          <li><a href="{{child.href}}">{{child.text}}</a></li>
+          {% endfor %}
+        </ul> #}
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="mt-3">Option 2</p>
+  <select class="form-control" >
+    {% for item in navLinks %}
+      <option>
+        <a class="dropdown-item" href="{{item.href}}">{{item.text}}</a>       
+      </option>
+    {% endfor %}
+  </select>
+</div>

@@ -14,7 +14,8 @@
 
   <title>USPTO UI Design Library | Page Template</title>
   <link rel="stylesheet" href="../assets/css/main.css">
- 
+ <link rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix />
+<link rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix />
   </head>
   <body class="parent-container">
   <a class="skipnav" href="#main-content">
@@ -131,29 +132,66 @@
 </div>      </header>
 
       <div class="main-container">
-
+  <div class="d-sm-block d-md-none">
+<p>Option 1</p>
+<div class="dropdown">
+  <button class="btn btn-block btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Option one
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li>
+        <a class="dropdown-item" href="pageTemplate1.html">Page Template 1</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="pageTemplate2.html">Page Template 2</a>
+        
+      </li>
+      <li>
+        <a class="dropdown-item" href="loader.html">Loading Spinner</a>
+        
+      </li>
+  </ul>
+  <p class="mt-3">Option 2</p>
+  <select class="form-control" >
+      <option>
+        <a class="dropdown-item" href="pageTemplate1.html">Page Template 1</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="pageTemplate2.html">Page Template 2</a>       
+      </option>
+      <option>
+        <a class="dropdown-item" href="loader.html">Loading Spinner</a>       
+      </option>
+  </select>
+</div>  </div>
+  <div class="d-none d-sm-none d-md-block">
 <nav id="sidenav" aria-label="DPL Components">
 <ul class="sidenav">
       <li>
         <a href="pageTemplate1.html">Page Template 1</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="pageTemplate2.html">Page Template 2</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
       <li>
         <a href="loader.html">Loading Spinner</a>
-        
+        <ul class="sidenav-sublist">
+        </ul>
       </li>
   </ul>
 </nav>
 
 
-
+  </div>
   <main id="main-content">
   <h1>This is Page Template 1</h1>
-  </main>
+    </main>
+  </div>
       </div>
 
 
@@ -167,6 +205,8 @@
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/popper/popper.min.js"></script>
   <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/prismjs/prism.js"></script>
+  <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
   <script src="../assets/js/main.js"></script>
   
 

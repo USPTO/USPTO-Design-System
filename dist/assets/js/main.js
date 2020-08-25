@@ -4,7 +4,8 @@ $(function () {
   $('.current-year').text(new Date().getFullYear())
 
   var file = location.pathname.split('/').pop() // set `current` page
-  $('a[href="' + file + '"]').addClass('active').attr('aria-current', 'page')
+  $('a[href="' + file + '"]').parent('li').addClass('active')
+  $('a[href="' + file + '"]').attr('aria-current', 'page')
 
   $('.toast').toast('show')
 

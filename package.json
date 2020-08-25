@@ -36,6 +36,7 @@
     "glob": "^7.1.6",
     "nunjucks": "^3.2.2",
     "nunjucks-extension-code-highlight": "*",
+    "prismjs": "^1.21.0",
     "sass": "^1.26.10"
   },
   "devDependencies": {

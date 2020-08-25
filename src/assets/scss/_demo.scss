@@ -10,11 +10,6 @@
   }
 }
 
-// #main-content {
-//   -ms-flex: 1;
-//   flex: 1;
-// }
-
 .navbar-top,
 .footer {
   background-color: #252f3e;
@@ -29,27 +24,16 @@ main {
     border-radius: 0.25rem;
     margin: 2rem 0;
     .pattern {
-     padding: 2rem;
+      padding: 2rem;
     }
     .preview {
       border-top: 2px solid rgba(0, 0, 0, 0.1);
-     .code-box{
-       @extend .d-flex;
-       @extend .flex-column;
-     }
+      .code-box {
+        @extend .d-flex;
+        @extend .flex-column;
+      }
     }
   }
-}
-
-//to be moved to theme later today
-.sidenav {
-  background: #fff;
-  display: block;
-  float: left;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-  margin-right: 2rem;
-  width: 15rem;
 }
 
 .img-thumbnail {
@@ -82,3 +66,10 @@ main {
     display: block !important;
   }
 }
+
+@media (max-width: 768.98px) {
+  .main-container {
+    flex-direction: column !important;    
+  }
+}
+

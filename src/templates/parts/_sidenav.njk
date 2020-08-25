@@ -3,9 +3,11 @@
     {% for item in navLinks %}
       <li>
         <a href="{{item.href}}">{{item.text}}</a>
-        {# <ul>
-          <li>New Link</li>
-        </ul> #}
+        <ul class="sidenav-sublist">
+        {% for child in item.children %}
+          <li><a href="{{child.href}}">{{child.text}}</a></li>
+          {% endfor %}
+        </ul>
       </li>
     {% endfor %}
   </ul>
