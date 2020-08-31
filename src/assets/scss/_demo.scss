@@ -16,6 +16,22 @@
   color: white;
 }
 
+.sidenav {
+  li {
+     ul.sidenav-sublist {
+        display: none;
+     }
+  }
+  li.active {
+    background-color: $light-lightest;
+    font-weight: $font-weight-bold;
+    ul.sidenav-sublist {
+      display: block;
+      font-weight: $font-weight-normal;
+    }
+  }
+}
+
 main {
   width: 100%;
   > section {
