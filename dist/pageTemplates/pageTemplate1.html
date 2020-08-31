@@ -133,38 +133,14 @@
 
       <div class="main-container">
   <div class="d-sm-block d-md-none">
-<p>Option 1</p>
-<div class="dropdown">
-  <button class="btn btn-block btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   Option one
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <li>
-        <a class="dropdown-item" href="pageTemplate1.html">Page Template 1</a>
-        
-      </li>
-      <li>
-        <a class="dropdown-item" href="pageTemplate2.html">Page Template 2</a>
-        
-      </li>
-      <li>
-        <a class="dropdown-item" href="loader.html">Loading Spinner</a>
-        
-      </li>
-  </ul>
-  <p class="mt-3">Option 2</p>
-  <select class="form-control" >
-      <option>
-        <a class="dropdown-item" href="pageTemplate1.html">Page Template 1</a>       
-      </option>
-      <option>
-        <a class="dropdown-item" href="pageTemplate2.html">Page Template 2</a>       
-      </option>
-      <option>
-        <a class="dropdown-item" href="loader.html">Loading Spinner</a>       
-      </option>
-  </select>
-</div>  </div>
+<select class="form-control" id="leftSideNav" >
+    <option value="pageTemplate1.html">Page Template 1
+    </option>
+    <option value="pageTemplate2.html">Page Template 2
+    </option>
+    <option value="loader.html">Loading Spinner
+    </option>
+</select>  </div>
   <div class="d-none d-sm-none d-md-block">
 <nav id="sidenav" aria-label="DPL Components">
 <ul class="sidenav">
@@ -207,6 +183,7 @@
   <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
   <script src="../assets/vendor/prismjs/prism.js"></script>
   <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+  <script src="../assets/vendor/clipboard/clipboard.min.js"></script>
   <script src="../assets/js/main.js"></script>
   
 

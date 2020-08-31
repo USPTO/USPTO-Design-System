@@ -18,7 +18,8 @@
 {% macro viewCode(o) %}
 
   {% set id = o.id or uid('codebox') %}
-
+  {% set code = o.code %}
+  
   {% set blocks = o.codeBlocks or[
     {
       html: o.html,
@@ -27,25 +28,30 @@
   ] %}
 
   <div class="code-box{% if o.class %} {{ o.class }}{% endif %}">
+  <h2>Example</h2>
     <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
       <div class="btn-group btn-group-sm ml-auto" role="group" aria-label=" group">
-        <button type="button" class="btn btn-light">Example</button>
+        {# <button type="button" class="btn btn-light">Example</button> #}
         {{ viewCodeButton(id, o.ariaLabel) }}
-        <button type="button" class="btn btn-light">Copy Code</button>
+        {{ copyCodeButton(o.code) }}
       </div>
 
     </div>
 
     <div class="pattern" >
       {% for block in blocks %}
+      <div>
         {{ block.code | safe | trim }}
+        
+        </div>
         <div class="collapse line-numbers" id="{{ id }}">
 
           {{ (block.html or 'Example HTML usage:') | indent(16) | safe | trim }}
 
           {% if block.code %}
+           <div class="codeArea">
  {% code %}{{ block.code | safe | trim }}{% endcode %}
-
+</div>
           {% endif %}
         </div>
       {% endfor %}
@@ -59,7 +65,7 @@
 
 {% macro viewCodeButton (controls, label, text, className = 'btn-dark') -%}
 
-  <button class="btn btn-light btn-collapse {{ className }} collapsed"
+  <button class="btn btn-light btn-collapse collapsed"
 
       aria-controls="{{ controls }}"
 
@@ -73,11 +79,27 @@
 
       type="button"
 
+    >   
+
+     View Code
+
+  </button>
+
+{%- endmacro %}
+
+{% macro copyCodeButton (controls) -%}
+
+  <button class="btn btn-light clipboard"      
+
+      data-clipboard-text="{{ controls }}"
+
+      type="button"
+
     >
 
-    <span class="fa fa-chevron-right pr-1"></span>
+    
 
-    {{ text or 'View Code' }}
+     Copy Code
 
   </button>
 
