@@ -1,10 +1,19 @@
-{% extends 'layouts/default.njk' %}
-{% set page = { class: '', title: 'Home' } %}
+{% extends 'layouts/landing.njk' %}
+{% set page = { class: 'page-landing', title: 'Home' } %}
 
 {% block main %}
- <main id="main-content">
-<p>Main Block</p>
-</main>
+  <main id="main-content">
+    <div class="jumbotron jumbotron-fluid bg-primary">
+      <div class="container">
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <a class="text-white" href="about/about.html">Take to library</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">Add list items here</div>
+      </div>
+    </div>
+  </main>
 {% endblock %}
-
-

@@ -180,6 +180,10 @@ Object.assign(exports, {
       ],
     },
   ],
+  aboutNavLinks: [
+    { href: 'about.html', text: 'About' },
+
+  ],
   pageTemplateNavLinks: [
     { href: 'pageTemplate1.html', text: 'Page Template 1' },
     { href: 'pageTemplate2.html', text: 'Page Template 2' },
