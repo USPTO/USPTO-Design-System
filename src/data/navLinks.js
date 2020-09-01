@@ -12,7 +12,8 @@ Object.assign(exports, {
     },
     { href: 'badges.html', text: 'Badges' },
     { href: 'breadcrumbs.html', text: 'Breadcrumbs' },
-    {  href: 'buttons.html',    text: 'Buttons',
+    {
+      href: 'buttons.html', text: 'Buttons',
       "children": [
         { href: '#button-styles', text: 'Button styles' },
         { href: '#button-sizes', text: 'Button sizes' },
@@ -224,7 +225,8 @@ Object.assign(exports, {
     },
     { href: 'help.html', text: 'Help' },
     { href: 'search.html', text: 'Search' },
-    { href: 'settings.html', text: 'Settings',
+    {
+      href: 'settings.html', text: 'Settings',
       "children": [
         { href: '#navigation', text: 'Navigation' },
         { href: '#saving-changes', text: 'Saving changes' }

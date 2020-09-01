@@ -1,16 +1,19 @@
+<div class="navbar navbar-expand navbar-top ">
+  <a class="navbar-brand" href="{{ relativeRoot }}{{ links.home }}" title="USPTO UI Design Library Home">
+      USPTO <span class="font-weight-light">Design</span>
+  </a>
+  <a class="ml-auto text-white" href="{{ header.links[0].href }}" title="{{ header.links[0].title }}">
+    {{ header.links[0].text | safe }}
+  </a>
 
-  <div class="navbar navbar-expand navbar-top text-white">
-    <a class="navbar-brand text-white" href="{{ relativeRoot }}{{ links.home }}" title="USPTO UI Design Library Home">
-      LOGO
-            </a>
+  {# Since there is only one link - list doesnt make any sense
     <ul class="navbar-nav ml-auto">
       {% for link in header.links %}
         <li class="nav-item">
-          <a class="nav-link  text-white" href="{{ relativeRoot }}{{ link.href }}" title="{{ link.title or link.text }}">
+          <a class="nav-link " href="{{ relativeRoot }}{{ link.href }}" title="{{ link.title or link.text }}">
             {{ link.text | safe }}
           </a>
         </li>
       {% endfor %}
-    </ul>
-  </div>
-  
+    </ul> #}
+</div>
