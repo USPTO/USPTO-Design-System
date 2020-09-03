@@ -76,18 +76,19 @@ main {
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.25rem;
     margin: 2rem 0;
-    .pattern {
+    .pattern, .preview {
       padding: 2rem;
     }
     .preview {
       border-top: 2px solid rgba(0, 0, 0, 0.1);
-      .code-box {
-        @extend .d-flex;
-        @extend .flex-column;
-      }
+      
     }
   }
 }
+
+// .collapsing {
+//   transition: .3s transform linear;
+// }
 
 .img-thumbnail {
   max-width: 10rem;

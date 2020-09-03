@@ -6637,7 +6637,7 @@ button.banner-dark:focus {
   display: table-cell !important;
 }
 
-.d-flex, main > section .preview .code-box, .parent-container .main-container, .parent-container, .accordion .card-header .accordion-heading .btn, .alert {
+.d-flex, .parent-container .main-container, .parent-container, .accordion .card-header .accordion-heading .btn, .alert {
   display: flex !important;
 }
 
@@ -6875,7 +6875,7 @@ button.banner-dark:focus {
   flex-direction: row !important;
 }
 
-.flex-column, main > section .preview .code-box, .parent-container, .sidenav {
+.flex-column, .parent-container, .sidenav {
   flex-direction: column !important;
 }
 
@@ -6947,7 +6947,7 @@ button.banner-dark:focus {
   align-items: flex-end !important;
 }
 
-.align-items-center, .accordion .card-header .accordion-heading .btn, .btn.md-icon {
+.align-items-center, .accordion .card-header .accordion-heading .btn, .btn.md-icon, .alert {
   align-items: center !important;
 }
 
@@ -10442,6 +10442,7 @@ h3 {
 
 .badge {
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .badge-primary {
@@ -10893,6 +10894,9 @@ h3 {
 
 .btn.md-icon {
   vertical-align: middle;
+}
+.btn-sm .material-icons, .btn-group-sm > .btn .material-icons {
+  font-size: 1rem;
 }
 
 .btn-group > .btn:not(:last-child):not(:first-child)[class*=btn-outline-] {
@@ -11776,12 +11780,13 @@ main > section {
   border-radius: 0.25rem;
   margin: 2rem 0;
 }
-main > section .pattern {
+main > section .pattern, main > section .preview {
   padding: 2rem;
 }
 main > section .preview {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
+
 .img-thumbnail {
   max-width: 10rem;
 }

@@ -19,53 +19,37 @@
 
   {% set id = o.id or uid('codebox') %}
   {% set code = o.code %}
-  
-  {% set blocks = o.codeBlocks or[
-    {
-      html: o.html,
-      code: o.code
-    }
-  ] %}
+  {% set html = o.html %}
 
-  <div class="code-box{% if o.class %} {{ o.class }}{% endif %}">
-  <h2>Example</h2>
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <div class="btn-group btn-group-sm ml-auto" role="group" aria-label=" group">
-        {# <button type="button" class="btn btn-light">Example</button> #}
+  <div class="{% if o.class %} {{ o.class }}{% endif %}">
+    <div class="d-flex">
+      
+        <h2>Example</h2>
+     
+      <div class=" ml-auto">
         {{ viewCodeButton(id, o.ariaLabel) }}
-        {{ copyCodeButton(o.code) }}
-      </div>
-
+        {{ copyCodeButton(o.code) }}</div>
     </div>
-
-    <div class="pattern" >
-      {% for block in blocks %}
-      <div>
-        {{ block.code | safe | trim }}
-        
-        </div>
-        <div class="collapse line-numbers" id="{{ id }}">
-
-          {{ (block.html or 'Example HTML usage:') | indent(16) | safe | trim }}
-
-          {% if block.code %}
-           <div class="codeArea">
- {% code %}{{ block.code | safe | trim }}{% endcode %}
-</div>
-          {% endif %}
-        </div>
-      {% endfor %}
-
-    </div>
+    
+     
+        {{ o.code | safe | trim }}
+     
+      <div class="collapse line-numbers pt-2" id="{{ id }}">
+        {{ (o.html or 'Example HTML usage:') | indent(16) | safe | trim }}
+        {% if o.code %}
+          <div class="codeArea">
+            {% code %}{{ o.code | safe | trim }}{% endcode %}
+          </div>
+        {% endif %}
+      </div>   
 
   </div>
 
 {% endmacro %}
 
-
 {% macro viewCodeButton (controls, label, text, className = 'btn-dark') -%}
 
-  <button class="btn btn-light btn-collapse collapsed"
+  <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="{{ controls }}"
 
@@ -80,6 +64,7 @@
       type="button"
 
     >   
+    <span class="material-icons">unfold_more</span>
 
      View Code
 
@@ -89,7 +74,7 @@
 
 {% macro copyCodeButton (controls) -%}
 
-  <button class="btn btn-light clipboard"      
+  <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="{{ controls }}"
 
@@ -97,11 +82,10 @@
 
     >
 
-    
+    <span class="material-icons">content_copy</span>
 
      Copy Code
 
   </button>
 
 {%- endmacro %}
-
