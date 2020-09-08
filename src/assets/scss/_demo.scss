@@ -16,57 +16,9 @@
   }
 }
 
-.navbar-top,
 .footer {
   background-color: #252f3e;
   color: white;
-}
-
-header {
-  .navbar {
-    @extend .text-white;
-    li {
-      a.nav-link {
-        color: $white !important;
-        @include hover {
-          text-decoration: underline;
-        }
-        &:focus {
-          text-decoration: underline;
-        }
-      }
-      &.active {
-        a {
-          background-color: #1a4480;
-        }
-      }
-    }
-    .navbar-brand {
-      @extend .text-white;
-      @extend .font-weight-bold;
-      padding-left: 0.5rem;
-      text-decoration: none;
-    }
-    @media (min-width: 768.98px) {
-      padding: 0 1rem 0 0.5rem;
-    }
-  }
-}
-
-.sidenav {
-  li {
-    ul.sidenav-sublist {
-      display: none;
-    }
-  }
-  li.active {
-    background-color: $light-lightest;
-    font-weight: $font-weight-bold;
-    ul.sidenav-sublist {
-      display: block;
-      font-weight: $font-weight-normal;
-    }
-  }
 }
 
 main {
