@@ -38,6 +38,23 @@ main {
   }
 }
 
+
+.pl-main {
+  
+  padding-bottom: 75px;
+  background-image: url(../../../assets/img/hero-mockup.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  h1 {
+    font-weight: 200;
+    span {font-weight: bold;}
+  }
+  .pl-sub-main {
+    opacity: .6;
+  }
+}
+
 // .collapsing {
 //   transition: .3s transform linear;
 // }
