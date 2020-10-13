@@ -1,0 +1,406 @@
+{% extends 'layouts/components.njk' %}
+{% set page = { class: 'page-formControls' } %}
+
+{% block content %}
+  <section>
+    <div class="pattern">
+      <h1 id="text-box">Text box</h1>
+
+      <h2 id="purpose">Purpose</h2>
+      <p>Users need to input a simple text value.</p>
+
+      <h2 id="description">Description</h2>
+      <p>Text boxes allow the user to input a simple text value. A text box only allows for a single line of input.</p>
+    </div>
+    <div class="preview pv-sm">
+
+      {{  macros.viewCode({   ariaLabel: 'View code for input box',    code: inputBox  },  "Example")}}
+
+    </div>
+
+  </section>
+  <section>
+    <div class="pattern">
+      <h1 id="text-area">Text area</h1>
+
+      <h2 id="purpose-1">Purpose</h2>
+      <p>Users need to input an extended, potentially multi-line text value.</p>
+
+      <h4 id="description-1">Description</h4>
+      <p>Text areas allow the user to input extended, multi-line text values.</p>
+
+      <h4 id="sizing-and-resizing">Sizing and resizing</h4>
+
+      <p>Text areas can either</p>
+
+      <ul>
+        <li>have a fixed, static height</li>
+        <li>automatically grow/shrink based on the input, from a minimum number of lines (e.g., 3) to a maxmimum number of lines (e.g., 10) to ensure that space is optimally used</li>
+        <li>have a resize handle, allowing for manual vertical and/or horizontal resizing</li>
+      </ul>
+    </div>
+    <div class="preview pv-sm">
+      {{  macros.viewCode({   ariaLabel: 'View code for input box',    code: textArea  },  "Example")}}
+
+    </div>
+  </section>
+
+  <section>
+    <div class="pattern">
+      <h1 id="radio-buttons">Radio buttons</h1>
+
+      <h2 id="purpose-2">Purpose</h2>
+      <p>Users must choose between two or more mutually exclusive options.</p>
+
+      <h2 id="description-2">Description</h2>
+      <ul>
+        <li>Radio buttons come in a group of two or more mutually exclusive options</li>
+        <li>A radio button is either checked or unchecked</li>
+        <li>There can only be one radio button checked in a group</li>
+        <li>Radio button labels should use sentence casing</li>
+        <li>Use concise labels</li>
+        <li>Provide an initially checked option when the field is not required and/or there is a sane default</li>
+        <li>Align vertically when possible</li>
+        <li>Align in shorter columns if there are many options</li>
+        <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
+      </ul>
+    </div>
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for radio button',    code: radioButton  },  "Default radio button")}}
+    </div>
+
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for custom radio button',    code: radioButtonCustom  },  "Custom radio button")}}
+    </div>
+  </section>
+  <section>
+    <div class="pattern">
+      <h1 id="checkboxes">Checkboxes</h1>
+
+      <h2 id="purpose-3">Purpose</h2>
+      <p>Users need to specify which option(s) from a set are applicable/valid/true based on a label.</p>
+
+      <h2 id="description-3">Description</h2>
+      <ul>
+        <li>A set of checkboxes are used when a user is able to select none, one, or multiple options</li>
+        <li>A single checkbox is used when a user is able to select or not select an option</li>
+        <li>When clicked, a checkbox’s state toggles between unchecked and checked</li>
+        <li>Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected)</li>
+        <li>Checkbox labels should use sentence casing</li>
+        <li>Use concise labels</li>
+        <li>Align vertically when possible</li>
+        <li>Align in shorter columns if there are many options</li>
+        <li>The selected state of a checkbox should ideally indicate something ‘positive’ and may require the rephrasing of the label (e.g., <code class="highlighter-rouge">Send me weekly reminders</code>, vs. <code class="highlighter-rouge">Do not send me weekly reminders</code>)</li>
+        <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
+      </ul>
+    </div>
+
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for checkboxes',    code: checkboxesDefault  },  "Default checkboxes")}}
+    </div>
+
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for custom checkboxes',    code: checkboxesCustom  },  "Custom checkboxes")}}
+    </div>
+  </section>
+
+  <section>
+    <div class="pattern">
+      <h1 id="toggle-switches">Toggle switches</h1>
+
+      <h2 id="purpose-4">Purpose</h2>
+      <p>Users need to toggle an option between on/off or yes/no.</p>
+
+      <h2 id="description-4">Description</h2>
+      <p>Use a toggle switch for a binary option where the change occurs <em>immediately</em>. Use a checkbox instead if the user has to perform other actions for the change to be effective (e.g., pressing Save or Submit).</p>
+    </div>
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for toggle switches',    code: toggleSwitches  },  "Toggle switches")}}
+    </div>
+
+  </section>
+
+  <section>
+    <div class="pattern">
+    <h1 id="select">Select</h1>
+
+  <h2 id="purpose-5">Purpose</h2>
+  <p>The user needs to choose an option from a predefined set.</p>
+
+  <h2 id="description-5">Description</h2>
+  <ul>
+    <li>A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set</li>
+    <li>It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value</li>
+    <li>When clicked, the user is shown all available options and can make a selection</li>
+    <li>When a selection is made, the dropdown closes and the select control updates to reflect the current selection</li>
+    <li>If there are 5 or more options, the list should allow for filtering via a text field</li>
+    <li>For empty selects, use a placeholder in the format of <code class="highlighter-rouge">Select a [type]...</code> or <code class="highlighter-rouge">Select...</code></li>
+  </ul>
+    </div>
+    <div class="preview pv-sm">
+      {{  macros.viewCode({   ariaLabel: 'View code for select',    code: Select  },  "Default select")}}
+    </div>
+    <div class="preview pv-sm">
+      {{  macros.viewCode({   ariaLabel: 'View code for toggle switches',    code: selectCustom  },  "Custom select")}}
+    </div>
+  </section>
+
+  <section>
+    <div class="pattern">
+    <h1 id="multi-select">Multi-select</h1>
+
+  <p>This is the native browser multi-select. <code class="highlighter-rouge">ctrl+click</code> (or <code class="highlighter-rouge">cmd+click</code>) toggles selection on an item. <code class="highlighter-rouge">shift+click</code> performs a range selection. A single <code class="highlighter-rouge">click</code> sets the selection to only that item.</p>
+    </div>
+    <div class="preview pv-sm">
+    {{  macros.viewCode({   ariaLabel: 'View code for multi-select',    code: selectMultiple  },  "")}}
+    
+    </div>
+  </section>
+
+  <section>
+    <div class="pattern">
+      <h1 id="date-picker">Date picker</h1>
+
+  <p>Date pickers can provide:</p>
+
+  <ul>
+    <li>Navigating years and months via previous/next arrows and/or other dropdowns</li>
+    <li>Multi-calendar views</li>
+    <li>Range highlighting</li>
+    <li>Min and max allowable dates</li>
+    <li>Highlighting/disabling of days/rows/columns (e.g., disable weekends or highlight bi-week)</li>
+    <li>Ability to type date as well as use a calendar dropdown</li>
+  </ul>
+    </div>
+    <div class="preview pv-sm">
+    {{  macros.viewCode({   ariaLabel: 'View code for date picker',    code: datePicker  },  "")}}
+    
+    </div>
+  </section>
+
+{% endblock %}
+{% set inputBox %}
+<!--Text box-->
+<div class="form-group">
+  <label for="exampleFormControlInput1">Normal</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" name="exampleFormControlInput1">
+</div>
+<div class="form-group">
+  <label for="exampleFormControlInput2" >Disabled</label>
+  <input type="text" class="form-control"  id="exampleFormControlInput2" name="exampleFormControlInput2" disabled>
+</div>
+{% endset%}
+
+{% set textArea %}
+<!--Text area-->
+<div class="form-group">
+  <label for="ta1" class="col-sm-3 control-label">Normal</label>
+  <div class="col-sm-9">
+    <textarea class="form-control" id="ta1" rows="2"></textarea>
+  </div>
+</div>
+<div class="form-group">
+  <label for="ta2" class="col-sm-3 control-label">Disabled</label>
+  <div class="col-sm-9">
+    <textarea class="form-control" id="ta2" rows="2" disabled=""></textarea>
+  </div>
+</div>
+{% endset%}
+
+{% set radioButton %}
+<!--Default radio button-->
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+  <label class="form-check-label" for="exampleRadios1">
+                  Default radio checked
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
+  <label class="form-check-label" for="exampleRadios1">
+                  Default radio unchecked
+                </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled="">
+  <label class="form-check-label" for="exampleRadios3">
+                  Disabled radio
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option3" disabled="" checked="">
+  <label class="form-check-label" for="exampleRadios3">
+                  Disabled radio
+                </label>
+</div>
+{% endset%}
+
+{% set radioButtonCustom%}
+<!--Custom radio button-->
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+  <label class="custom-control-label" for="customRadio1">Custom radio checked</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio2">Custom radio unchecked</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
+  <label class="custom-control-label" for="customRadio3">Custom radio disabled</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio4" name="customRadio1" class="custom-control-input" disabled="" checked="">
+  <label class="custom-control-label" for="customRadio4">Custom radio disabled checked</label>
+</div>
+{% endset%}
+
+{% set checkboxesDefault %}
+<!--Default checkboxes-->
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="">
+  <label class="form-check-label" for="defaultCheck1">
+                  Default checkbox checked
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+  <label class="form-check-label" for="defaultCheck2">
+                  Default checkbox unchecked
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" disabled="">
+  <label class="form-check-label" for="defaultCheck3">
+                  Disabled checkbox
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" disabled="" checked="">
+  <label class="form-check-label" for="defaultCheck4">
+                  Disabled checkbox
+                </label>
+</div>
+{% endset%}
+
+{% set checkboxesCustom %}
+<!--Custom checkboxes-->
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+  <label class="custom-control-label" for="customCheck1">Custom checkbox checked</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck2">
+  <label class="custom-control-label" for="customCheck2">Custom checkbox unchecked</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck3" disabled="">
+  <label class="custom-control-label" for="customCheck2">Custom checkbox disabled</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck4" disabled="" checked="">
+  <label class="custom-control-label" for="customCheck2">Custom checkbox disabled checked</label>
+</div>
+{% endset%}
+
+{% set toggleSwitches %}
+<!--Toggle switches-->
+<div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+</div>
+<div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch2">
+  <label class="custom-control-label" for="customSwitch2">Toggle this switch element</label>
+</div>
+<div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" disabled id="customSwitch3">
+  <label class="custom-control-label" for="customSwitch3">Disabled switch element</label>
+</div>
+{% endset%}
+
+{% set Select %}
+<!--Select-->
+ <label for="exampleFormControlSelect1" class="mt-4">Normal</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                 
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+    <option value="value5">Option E</option>
+              </select>
+              <label for="exampleFormControlSelect2" class="mt-4">Disabled</label>
+              <select class="form-control" id="exampleFormControlSelect2" disabled>
+                
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+    <option value="value5">Option E</option>
+              </select>
+{% endset%}
+{% set selectCustom %}
+<!--Custom select-->
+ 
+              <label for="exampleFormControlSelect3" class="mt-4">Custom select</label>
+              <select class="custom-select" id="exampleFormControlSelect3">
+                <option selected="">Select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+            <label for="exampleFormControlSelect4" class="mt-4">Custom select small</label>
+              <select class="custom-select custom-select-sm" id="exampleFormControlSelect4">
+                <option selected="">Select small menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+
+             
+              <label for="exampleFormControlSelect5" class="mt-4">Custom select large</label>
+              <select class="custom-select custom-select-lg mb-2" id="exampleFormControlSelect5">
+                <option selected="">Select large menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+       
+{% endset%}
+
+{% set selectMultiple %}
+<!--Multiple select-->
+<label for="exampleFormControlSelect6" class="mt-4">Custom select</label>
+              <select class="custom-select" multiple id="exampleFormControlSelect6">               
+                <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+              </select>
+              <label for="exampleFormControlSelect6" class="mt-4">Custom select</label>
+              <select class="custom-select" multiple id="exampleFormControlSelect6" disabled>               
+                <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+              </select>
+{% endset%}
+{% set datePicker %}
+<!--Date picker-->
+<div class="usa-form-group">
+                  <label class="usa-label" id="appointment-date-label" for="appointment-date">Appointment date</label>
+                  <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
+                  <div class="usa-date-picker usa-date-picker--initialized" data-min-date="0000-01-01">
+                    <input class="usa-input usa-sr-only usa-date-picker__internal-input" id="" name="appointment-date" type="text" aria-describedby="appointment-date-label appointment-date-hint" aria-hidden="true" tabindex="-1">
+                  <div class="usa-date-picker__wrapper" tabindex="-1"><input class="usa-input usa-date-picker__external-input" id="appointment-date" name="" type="text" aria-describedby="appointment-date-label appointment-date-hint"><button type="button" class="usa-date-picker__button" aria-haspopup="true" aria-label="Toggle calendar">&nbsp;</button><div class="usa-date-picker__calendar" role="”dialog”" aria-modal="”true”" hidden=""></div><div class="usa-sr-only usa-date-picker__status" role="status" aria-live="polite"></div></div></div>
+                </div>
+{% endset%}
+

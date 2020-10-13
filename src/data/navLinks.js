@@ -42,7 +42,7 @@ Object.assign(exports, {
       ],
     },
     {
-      href: 'formControls	.html',
+      href: 'formControls.html',
       text: 'Form controls',
       "children": [
         { href: '#text-box', text: 'Text box' },

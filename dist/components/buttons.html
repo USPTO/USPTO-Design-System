@@ -146,7 +146,7 @@
     </option>
     <option value="dialogs.html">Dialogs
     </option>
-    <option value="formControls	.html">Form controls
+    <option value="formControls.html">Form controls
     </option>
     <option value="forms.html">Forms
     </option>
@@ -223,7 +223,7 @@
         </ul>
       </li>
       <li>
-        <a href="formControls	.html" data-parent="Form controls">Form controls</a>
+        <a href="formControls.html" data-parent="Form controls">Form controls</a>
         <ul class="sidenav-sublist">
           <li><a href="#text-box">Text box</a></li>
           <li><a href="#text-area">Text area</a></li>
@@ -767,8 +767,8 @@
   </button>
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Block level&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-block&quot;&gt;Block level&lt;/button&gt;
+      data-clipboard-text="&lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Block level&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;mt-2&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-block&quot;&gt;Block level&lt;/button&gt;&lt;/div&gt;
 "
 
       type="button"
@@ -785,15 +785,15 @@
     </div>
 
     <div class="preview-size">
-      <button type="button" class="btn btn-primary btn-block">Block level</button>
-<button type="button" class="btn btn-secondary btn-block">Block level</button>
+      <div><button type="button" class="btn btn-primary btn-block">Block level</button></div>
+<div class="mt-2"><button type="button" class="btn btn-secondary btn-block">Block level</button></div>
     </div>
 
     <div class="collapse line-numbers pt-2" id="codebox-5">
       Example HTML usage:
         <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary btn-block&quot;</span>&gt;</span>Block level<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary btn-block&quot;</span>&gt;</span>Block level<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>        </div>
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary btn-block&quot;</span>&gt;</span>Block level<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary btn-block&quot;</span>&gt;</span>Block level<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
 
   </div>
@@ -1367,6 +1367,8 @@
   <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
   <script src="../assets/vendor/clipboard/clipboard.min.js"></script>
   <script src="../assets/js/main.js"></script>
+  <script src="../usptostrap/assets/js/uswds.min.js"></script>
+
   
 
   </body>

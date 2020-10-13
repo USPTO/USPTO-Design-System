@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="en" class="page-formControls">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+  <title>USPTO UI Design Library</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+ <link rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix />
+<link rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix />
+  </head>
+  <body class="parent-container">
+  <a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+  <section class="banner banner-dark" aria-label="Official government website">
+      <div class="accordion">
+        <div class="d-md-none">
+          <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+            <div class="banner-inner">
+              <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+              <div class="flex-fill">
+                <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+              </div>
+              <span class="close-btn">
+                <i class="material-icons ">close</i>
+              </span>
+            </div>
+          </button>
+        </div>
+        <div class="d-none d-md-block">
+          <div class="banner-inner align-itens-center">
+
+            <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+
+            <p class="banner-header-text">An official website of the United States government</p>
+
+            <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+            </button>
+
+          </div>
+        </div>
+        <div class="banner-content collapse" id="gov-banner-demo">
+          <div class="row no-gutters-sm">
+            <div class="col-md-6 media">
+              <img class="banner-icon align-self-start" src="../assets/img//icon-dot-gov.svg" role="img" alt="Dot gov">
+              <div class="media-body">
+                <p>
+                  <strong>The .gov means it’s official.</strong>
+                  <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+              </div>
+            </div>
+            <div class="col-md-6  media">
+              <img class="banner-icon align-self-start" src="../assets/img//icon-https.svg" role="img" alt="Https">
+              <div class="media-body">
+                <p>
+                  <strong>The site is secure.</strong>
+                  <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>      <header>
+<div class="navbar navbar-expand navbar-top ">
+  <a class="navbar-brand" href="../index.html" title="USPTO UI Design Library Home">
+      USPTO <span class="font-weight-light">Design</span>
+  </a>
+  <a class="ml-auto" href="" title="Download">
+    Download
+  </a>
+
+  
+</div><nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="header sub navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../howto.html" title="How to use DPL">
+          How to use DPL
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+          Foundation
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../components/components.html" title="Components">
+          Components
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+          Patterns
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pageTemplates/pageTemplate1.html" title="Page templates">
+          Page templates
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../about/about.html" title="About">
+          About
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="components.html">Components
+    </option>
+    <option value="alertsNotifications.html">Alerts and notifications
+    </option>
+    <option value="breadcrumbs.html">Breadcrumbs
+    </option>
+    <option value="buttons.html">Buttons
+    </option>
+    <option value="collapsiblePanels.html">Collapsible panels
+    </option>
+    <option value="dialogs.html">Dialogs
+    </option>
+    <option value="formControls.html">Form controls
+    </option>
+    <option value="forms.html">Forms
+    </option>
+    <option value="labelsAndBadges.html">Labels and badges
+    </option>
+    <option value="menus.html">Menus
+    </option>
+    <option value="metadata.html">Metadata
+    </option>
+    <option value="pagination.html">Pagination
+    </option>
+    <option value="popovers.html">Popovers
+    </option>
+    <option value="progressLoading.html">Progress and loading
+    </option>
+    <option value="stepIndicators.html">Step indicators
+    </option>
+    <option value="tables.html">Tables
+    </option>
+    <option value="tabs.html">Tabs
+    </option>
+    <option value="tags.html">Tags
+    </option>
+    <option value="tooltips.html">Tooltips
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+<ul class="sidenav">
+      <li>
+        <a href="components.html" data-parent="Components">Components</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="alertsNotifications.html" data-parent="Alerts and notifications">Alerts and notifications</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#alerts-and-notifications">Alerts and notifications</a></li>
+          <li><a href="#contextual-alerts">Contextual alerts</a></li>
+          <li><a href="#system-notifications">System notifications</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="breadcrumbs.html" data-parent="Breadcrumbs">Breadcrumbs</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="buttons.html" data-parent="Buttons">Buttons</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#button-styles">Button styles</a></li>
+          <li><a href="#button-sizes">Button sizes</a></li>
+          <li><a href="#button-groups">Button groups</a></li>
+          <li><a href="#toggle-buttons">Toggle buttons</a></li>
+          <li><a href="#dropdown-buttons">Dropdown buttons</a></li>
+          <li><a href="#split-buttons">Split buttons</a></li>
+          <li><a href="#icon-buttons">Icon buttons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="collapsiblePanels.html" data-parent="Collapsible panels">Collapsible panels</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#behaviors">Behaviors</a></li>
+          <li><a href="#styles">Styles</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="dialogs.html" data-parent="Dialogs">Dialogs</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#confirmation">Confirmation</a></li>
+          <li><a href="#actionless">Actionless</a></li>
+          <li><a href="#modes">Modes</a></li>
+          <li><a href="#live">Live</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="formControls.html" data-parent="Form controls">Form controls</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#text-box">Text box</a></li>
+          <li><a href="#text-area">Text area</a></li>
+          <li><a href="#radio-buttons">Radio buttons</a></li>
+          <li><a href="#checkboxes">Checkboxes</a></li>
+          <li><a href="#toggle-switches">Toggle switches</a></li>
+          <li><a href="#select">Select</a></li>
+          <li><a href="#multi-select">Multi-select</a></li>
+          <li><a href="#date-picker">Date picker</a></li>
+          <li><a href="#time-picker">Time picker</a></li>
+          <li><a href="#slider">Slider</a></li>
+          <li><a href="#rich-text-editor">Rich text editor</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="forms.html" data-parent="Forms">Forms</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#field-widths">Field widths</a></li>
+          <li><a href="#labels">Labels</a></li>
+          <li><a href="#required-fields">Required fields</a></li>
+          <li><a href="#form-validation">Form validation</a></li>
+          <li><a href="#help-text">Help text</a></li>
+          <li><a href="#form-groups">Form groups</a></li>
+          <li><a href="#input-character-limits">Input character limits</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="labelsAndBadges.html" data-parent="Labels and badges">Labels and badges</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#labels">Labels</a></li>
+          <li><a href="#badges">Badges</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="menus.html" data-parent="Menus">Menus</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#submenus">Submenus</a></li>
+          <li><a href="#icons">Icons</a></li>
+          <li><a href="#form-controls">Form controls</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="metadata.html" data-parent="Metadata">Metadata</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="pagination.html" data-parent="Pagination">Pagination</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="popovers.html" data-parent="Popovers">Popovers</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="progressLoading.html" data-parent="Progress and loading">Progress and loading</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#progress-bars">Progress bars</a></li>
+          <li><a href="#load-spinners">Load spinners</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="stepIndicators.html" data-parent="Step indicators">Step indicators</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="tables.html" data-parent="Tables">Tables</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#styles">Styles</a></li>
+          <li><a href="#headers">Headers</a></li>
+          <li><a href="#sorting">Sorting</a></li>
+          <li><a href="#selection">Selection</a></li>
+          <li><a href="#row-action-buttons">Row action buttons</a></li>
+          <li><a href="#column-customization">Column customization</a></li>
+          <li><a href="#grouping">Grouping</a></li>
+          <li><a href="#expandable-rows">Expandable rows</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="tabs.html" data-parent="Tabs">Tabs</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#normal-tabs">Normal tabs</a></li>
+          <li><a href="#light-tabs">Light tabs</a></li>
+          <li><a href="#pill-tabs">Pill tabs</a></li>
+          <li><a href="#nested-tabs">Nested tabs</a></li>
+          <li><a href="#justified-tabs">Justified tabs</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="tags.html" data-parent="Tags">Tags</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="tooltips.html" data-parent="Tooltips">Tooltips</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#positioning">Positioning</a></li>
+          <li><a href="#content">Content</a></li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+
+
+  </div>
+  <main id="main-content">
+  <section>
+    <div class="pattern">
+      <h1 id="text-box">Text box</h1>
+
+      <h2 id="purpose">Purpose</h2>
+      <p>Users need to input a simple text value.</p>
+
+      <h2 id="description">Description</h2>
+      <p>Text boxes allow the user to input a simple text value. A text box only allows for a single line of input.</p>
+    </div>
+    <div class="preview pv-sm">
+
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Example</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for input box"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for input box"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Text box--&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;exampleFormControlInput1&quot;&gt;Normal&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleFormControlInput1&quot; name=&quot;exampleFormControlInput1&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;exampleFormControlInput2&quot; &gt;Disabled&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot;  id=&quot;exampleFormControlInput2&quot; name=&quot;exampleFormControlInput2&quot; disabled&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Text box-->
+<div class="form-group">
+  <label for="exampleFormControlInput1">Normal</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" name="exampleFormControlInput1">
+</div>
+<div class="form-group">
+  <label for="exampleFormControlInput2" >Disabled</label>
+  <input type="text" class="form-control"  id="exampleFormControlInput2" name="exampleFormControlInput2" disabled>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Text box--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlInput1&quot;</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlInput1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleFormControlInput1&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlInput2&quot;</span> &gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlInput2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleFormControlInput2&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+
+    </div>
+
+  </section>
+  <section>
+    <div class="pattern">
+      <h1 id="text-area">Text area</h1>
+
+      <h2 id="purpose-1">Purpose</h2>
+      <p>Users need to input an extended, potentially multi-line text value.</p>
+
+      <h4 id="description-1">Description</h4>
+      <p>Text areas allow the user to input extended, multi-line text values.</p>
+
+      <h4 id="sizing-and-resizing">Sizing and resizing</h4>
+
+      <p>Text areas can either</p>
+
+      <ul>
+        <li>have a fixed, static height</li>
+        <li>automatically grow/shrink based on the input, from a minimum number of lines (e.g., 3) to a maxmimum number of lines (e.g., 10) to ensure that space is optimally used</li>
+        <li>have a resize handle, allowing for manual vertical and/or horizontal resizing</li>
+      </ul>
+    </div>
+    <div class="preview pv-sm">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Example</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for input box"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for input box"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Text area--&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;ta1&quot; class=&quot;col-sm-3 control-label&quot;&gt;Normal&lt;/label&gt;
+  &lt;div class=&quot;col-sm-9&quot;&gt;
+    &lt;textarea class=&quot;form-control&quot; id=&quot;ta1&quot; rows=&quot;2&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;ta2&quot; class=&quot;col-sm-3 control-label&quot;&gt;Disabled&lt;/label&gt;
+  &lt;div class=&quot;col-sm-9&quot;&gt;
+    &lt;textarea class=&quot;form-control&quot; id=&quot;ta2&quot; rows=&quot;2&quot; disabled=&quot;&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Text area-->
+<div class="form-group">
+  <label for="ta1" class="col-sm-3 control-label">Normal</label>
+  <div class="col-sm-9">
+    <textarea class="form-control" id="ta1" rows="2"></textarea>
+  </div>
+</div>
+<div class="form-group">
+  <label for="ta2" class="col-sm-3 control-label">Disabled</label>
+  <div class="col-sm-9">
+    <textarea class="form-control" id="ta2" rows="2" disabled=""></textarea>
+  </div>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Text area--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;ta1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm-3 control-label&quot;</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm-9&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;ta1&quot;</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;ta2&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm-3 control-label&quot;</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-sm-9&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;ta2&quot;</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+
+    </div>
+  </section>
+
+  <section>
+    <div class="pattern">
+      <h1 id="radio-buttons">Radio buttons</h1>
+
+      <h2 id="purpose-2">Purpose</h2>
+      <p>Users must choose between two or more mutually exclusive options.</p>
+
+      <h2 id="description-2">Description</h2>
+      <ul>
+        <li>Radio buttons come in a group of two or more mutually exclusive options</li>
+        <li>A radio button is either checked or unchecked</li>
+        <li>There can only be one radio button checked in a group</li>
+        <li>Radio button labels should use sentence casing</li>
+        <li>Use concise labels</li>
+        <li>Provide an initially checked option when the field is not required and/or there is a sane default</li>
+        <li>Align vertically when possible</li>
+        <li>Align in shorter columns if there are many options</li>
+        <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
+      </ul>
+    </div>
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Default radio button</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for radio button"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for radio button"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Default radio button--&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleRadios&quot; id=&quot;exampleRadios1&quot; value=&quot;option1&quot; checked=&quot;&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios1&quot;&gt;
+                  Default radio checked
+                &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleRadios&quot; id=&quot;exampleRadios2&quot; value=&quot;option1&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios1&quot;&gt;
+                  Default radio unchecked
+                &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleRadios&quot; id=&quot;exampleRadios3&quot; value=&quot;option3&quot; disabled=&quot;&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios3&quot;&gt;
+                  Disabled radio
+                &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleRadios1&quot; id=&quot;exampleRadios4&quot; value=&quot;option3&quot; disabled=&quot;&quot; checked=&quot;&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios3&quot;&gt;
+                  Disabled radio
+                &lt;/label&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Default radio button-->
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+  <label class="form-check-label" for="exampleRadios1">
+                  Default radio checked
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
+  <label class="form-check-label" for="exampleRadios1">
+                  Default radio unchecked
+                </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled="">
+  <label class="form-check-label" for="exampleRadios3">
+                  Disabled radio
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option3" disabled="" checked="">
+  <label class="form-check-label" for="exampleRadios3">
+                  Disabled radio
+                </label>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Default radio button--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios1&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option1&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios1&quot;</span>&gt;</span>
+                  Default radio checked
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios2&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios1&quot;</span>&gt;</span>
+                  Default radio unchecked
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios3&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option3&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios3&quot;</span>&gt;</span>
+                  Disabled radio
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios1&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios4&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option3&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios3&quot;</span>&gt;</span>
+                  Disabled radio
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Custom radio button</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for custom radio button"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for custom radio button"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Custom radio button--&gt;
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;customRadio1&quot; name=&quot;customRadio&quot; class=&quot;custom-control-input&quot; checked=&quot;&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio1&quot;&gt;Custom radio checked&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;customRadio2&quot; name=&quot;customRadio&quot; class=&quot;custom-control-input&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio2&quot;&gt;Custom radio unchecked&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;customRadio3&quot; name=&quot;customRadio&quot; class=&quot;custom-control-input&quot; disabled=&quot;&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio3&quot;&gt;Custom radio disabled&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;customRadio4&quot; name=&quot;customRadio1&quot; class=&quot;custom-control-input&quot; disabled=&quot;&quot; checked=&quot;&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio4&quot;&gt;Custom radio disabled checked&lt;/label&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Custom radio button-->
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+  <label class="custom-control-label" for="customRadio1">Custom radio checked</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio2">Custom radio unchecked</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
+  <label class="custom-control-label" for="customRadio3">Custom radio disabled</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio4" name="customRadio1" class="custom-control-input" disabled="" checked="">
+  <label class="custom-control-label" for="customRadio4">Custom radio disabled checked</label>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Custom radio button--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-radio&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customRadio1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;customRadio&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customRadio1&quot;</span>&gt;</span>Custom radio checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-radio&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customRadio2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;customRadio&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customRadio2&quot;</span>&gt;</span>Custom radio unchecked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-radio&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customRadio3&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;customRadio&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customRadio3&quot;</span>&gt;</span>Custom radio disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-radio&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customRadio4&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;customRadio1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customRadio4&quot;</span>&gt;</span>Custom radio disabled checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+  </section>
+  <section>
+    <div class="pattern">
+      <h1 id="checkboxes">Checkboxes</h1>
+
+      <h2 id="purpose-3">Purpose</h2>
+      <p>Users need to specify which option(s) from a set are applicable/valid/true based on a label.</p>
+
+      <h2 id="description-3">Description</h2>
+      <ul>
+        <li>A set of checkboxes are used when a user is able to select none, one, or multiple options</li>
+        <li>A single checkbox is used when a user is able to select or not select an option</li>
+        <li>When clicked, a checkbox’s state toggles between unchecked and checked</li>
+        <li>Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected)</li>
+        <li>Checkbox labels should use sentence casing</li>
+        <li>Use concise labels</li>
+        <li>Align vertically when possible</li>
+        <li>Align in shorter columns if there are many options</li>
+        <li>The selected state of a checkbox should ideally indicate something ‘positive’ and may require the rephrasing of the label (e.g., <code class="highlighter-rouge">Send me weekly reminders</code>, vs. <code class="highlighter-rouge">Do not send me weekly reminders</code>)</li>
+        <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
+      </ul>
+    </div>
+
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Default checkboxes</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-5"
+
+      aria-label="View code for checkboxes"
+
+      aria-expanded="false"
+
+      data-target="#codebox-5"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for checkboxes"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Default checkboxes--&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck1&quot; checked=&quot;&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck1&quot;&gt;
+                  Default checkbox checked
+                &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck2&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck2&quot;&gt;
+                  Default checkbox unchecked
+                &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck3&quot; disabled=&quot;&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck3&quot;&gt;
+                  Disabled checkbox
+                &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck4&quot; disabled=&quot;&quot; checked=&quot;&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck4&quot;&gt;
+                  Disabled checkbox
+                &lt;/label&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Default checkboxes-->
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="">
+  <label class="form-check-label" for="defaultCheck1">
+                  Default checkbox checked
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+  <label class="form-check-label" for="defaultCheck2">
+                  Default checkbox unchecked
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" disabled="">
+  <label class="form-check-label" for="defaultCheck3">
+                  Disabled checkbox
+                </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" disabled="" checked="">
+  <label class="form-check-label" for="defaultCheck4">
+                  Disabled checkbox
+                </label>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-5">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Default checkboxes--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck1&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck1&quot;</span>&gt;</span>
+                  Default checkbox checked
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck2&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck2&quot;</span>&gt;</span>
+                  Default checkbox unchecked
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck3&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck3&quot;</span>&gt;</span>
+                  Disabled checkbox
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck4&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck4&quot;</span>&gt;</span>
+                  Disabled checkbox
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Custom checkboxes</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-6"
+
+      aria-label="View code for custom checkboxes"
+
+      aria-expanded="false"
+
+      data-target="#codebox-6"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for custom checkboxes"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Custom checkboxes--&gt;
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck1&quot; checked=&quot;&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck1&quot;&gt;Custom checkbox checked&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck2&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck2&quot;&gt;Custom checkbox unchecked&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck3&quot; disabled=&quot;&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck2&quot;&gt;Custom checkbox disabled&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck4&quot; disabled=&quot;&quot; checked=&quot;&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck2&quot;&gt;Custom checkbox disabled checked&lt;/label&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Custom checkboxes-->
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+  <label class="custom-control-label" for="customCheck1">Custom checkbox checked</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck2">
+  <label class="custom-control-label" for="customCheck2">Custom checkbox unchecked</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck3" disabled="">
+  <label class="custom-control-label" for="customCheck2">Custom checkbox disabled</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck4" disabled="" checked="">
+  <label class="custom-control-label" for="customCheck2">Custom checkbox disabled checked</label>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-6">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Custom checkboxes--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-checkbox&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck1&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck1&quot;</span>&gt;</span>Custom checkbox checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-checkbox&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck2&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck2&quot;</span>&gt;</span>Custom checkbox unchecked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-checkbox&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck3&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck2&quot;</span>&gt;</span>Custom checkbox disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-checkbox&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck4&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck2&quot;</span>&gt;</span>Custom checkbox disabled checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+  </section>
+
+  <section>
+    <div class="pattern">
+      <h1 id="toggle-switches">Toggle switches</h1>
+
+      <h2 id="purpose-4">Purpose</h2>
+      <p>Users need to toggle an option between on/off or yes/no.</p>
+
+      <h2 id="description-4">Description</h2>
+      <p>Use a toggle switch for a binary option where the change occurs <em>immediately</em>. Use a checkbox instead if the user has to perform other actions for the change to be effective (e.g., pressing Save or Submit).</p>
+    </div>
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Toggle switches</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-7"
+
+      aria-label="View code for toggle switches"
+
+      aria-expanded="false"
+
+      data-target="#codebox-7"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for toggle switches"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Toggle switches--&gt;
+&lt;div class=&quot;custom-control custom-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customSwitch1&quot; checked&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch1&quot;&gt;Toggle this switch element&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customSwitch2&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch2&quot;&gt;Toggle this switch element&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; disabled id=&quot;customSwitch3&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch3&quot;&gt;Disabled switch element&lt;/label&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Toggle switches-->
+<div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+</div>
+<div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch2">
+  <label class="custom-control-label" for="customSwitch2">Toggle this switch element</label>
+</div>
+<div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" disabled id="customSwitch3">
+  <label class="custom-control-label" for="customSwitch3">Disabled switch element</label>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-7">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Toggle switches--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-switch&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customSwitch1&quot;</span> <span class="hljs-attr">checked</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customSwitch1&quot;</span>&gt;</span>Toggle this switch element<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-switch&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customSwitch2&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customSwitch2&quot;</span>&gt;</span>Toggle this switch element<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-switch&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customSwitch3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customSwitch3&quot;</span>&gt;</span>Disabled switch element<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+
+  </section>
+
+  <section>
+    <div class="pattern">
+    <h1 id="select">Select</h1>
+
+  <h2 id="purpose-5">Purpose</h2>
+  <p>The user needs to choose an option from a predefined set.</p>
+
+  <h2 id="description-5">Description</h2>
+  <ul>
+    <li>A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set</li>
+    <li>It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value</li>
+    <li>When clicked, the user is shown all available options and can make a selection</li>
+    <li>When a selection is made, the dropdown closes and the select control updates to reflect the current selection</li>
+    <li>If there are 5 or more options, the list should allow for filtering via a text field</li>
+    <li>For empty selects, use a placeholder in the format of <code class="highlighter-rouge">Select a [type]...</code> or <code class="highlighter-rouge">Select...</code></li>
+  </ul>
+    </div>
+    <div class="preview pv-sm">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Default select</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-8"
+
+      aria-label="View code for select"
+
+      aria-expanded="false"
+
+      data-target="#codebox-8"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for select"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Select--&gt;
+ &lt;label for=&quot;exampleFormControlSelect1&quot; class=&quot;mt-4&quot;&gt;Normal&lt;/label&gt;
+              &lt;select class=&quot;form-control&quot; id=&quot;exampleFormControlSelect1&quot;&gt;
+                 
+    &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
+    &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
+    &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
+    &lt;option value=&quot;value4&quot;&gt;Option D&lt;/option&gt;
+    &lt;option value=&quot;value5&quot;&gt;Option E&lt;/option&gt;
+              &lt;/select&gt;
+              &lt;label for=&quot;exampleFormControlSelect2&quot; class=&quot;mt-4&quot;&gt;Disabled&lt;/label&gt;
+              &lt;select class=&quot;form-control&quot; id=&quot;exampleFormControlSelect2&quot; disabled&gt;
+                
+    &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
+    &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
+    &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
+    &lt;option value=&quot;value4&quot;&gt;Option D&lt;/option&gt;
+    &lt;option value=&quot;value5&quot;&gt;Option E&lt;/option&gt;
+              &lt;/select&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Select-->
+ <label for="exampleFormControlSelect1" class="mt-4">Normal</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                 
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+    <option value="value5">Option E</option>
+              </select>
+              <label for="exampleFormControlSelect2" class="mt-4">Disabled</label>
+              <select class="form-control" id="exampleFormControlSelect2" disabled>
+                
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+    <option value="value5">Option E</option>
+              </select>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-8">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Select--&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-4&quot;</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect1&quot;</span>&gt;</span>
+                 
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value1&quot;</span>&gt;</span>Option A<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value2&quot;</span>&gt;</span>Option B<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value3&quot;</span>&gt;</span>Option C<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value4&quot;</span>&gt;</span>Option D<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value5&quot;</span>&gt;</span>Option E<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect2&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-4&quot;</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect2&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>
+                
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value1&quot;</span>&gt;</span>Option A<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value2&quot;</span>&gt;</span>Option B<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value3&quot;</span>&gt;</span>Option C<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value4&quot;</span>&gt;</span>Option D<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value5&quot;</span>&gt;</span>Option E<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+    <div class="preview pv-sm">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Custom select</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-9"
+
+      aria-label="View code for toggle switches"
+
+      aria-expanded="false"
+
+      data-target="#codebox-9"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for toggle switches"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Custom select--&gt;
+ 
+              &lt;label for=&quot;exampleFormControlSelect3&quot; class=&quot;mt-4&quot;&gt;Custom select&lt;/label&gt;
+              &lt;select class=&quot;custom-select&quot; id=&quot;exampleFormControlSelect3&quot;&gt;
+                &lt;option selected=&quot;&quot;&gt;Select menu&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+                &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+                &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+                &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
+                &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;label for=&quot;exampleFormControlSelect4&quot; class=&quot;mt-4&quot;&gt;Custom select small&lt;/label&gt;
+              &lt;select class=&quot;custom-select custom-select-sm&quot; id=&quot;exampleFormControlSelect4&quot;&gt;
+                &lt;option selected=&quot;&quot;&gt;Select small menu&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+                &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+                &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+                &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
+                &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
+              &lt;/select&gt;
+
+             
+              &lt;label for=&quot;exampleFormControlSelect5&quot; class=&quot;mt-4&quot;&gt;Custom select large&lt;/label&gt;
+              &lt;select class=&quot;custom-select custom-select-lg mb-2&quot; id=&quot;exampleFormControlSelect5&quot;&gt;
+                &lt;option selected=&quot;&quot;&gt;Select large menu&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+                &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+                &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+                &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
+                &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
+              &lt;/select&gt;
+       
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Custom select-->
+ 
+              <label for="exampleFormControlSelect3" class="mt-4">Custom select</label>
+              <select class="custom-select" id="exampleFormControlSelect3">
+                <option selected="">Select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+            <label for="exampleFormControlSelect4" class="mt-4">Custom select small</label>
+              <select class="custom-select custom-select-sm" id="exampleFormControlSelect4">
+                <option selected="">Select small menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+
+             
+              <label for="exampleFormControlSelect5" class="mt-4">Custom select large</label>
+              <select class="custom-select custom-select-lg mb-2" id="exampleFormControlSelect5">
+                <option selected="">Select large menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-9">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Custom select--&gt;</span>
+ 
+              <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect3&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-4&quot;</span>&gt;</span>Custom select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect3&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Select menu<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect4&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-4&quot;</span>&gt;</span>Custom select small<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select custom-select-sm&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect4&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Select small menu<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+
+             
+              <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect5&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-4&quot;</span>&gt;</span>Custom select large<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select custom-select-lg mb-2&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect5&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Select large menu<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+  </section>
+
+  <section>
+    <div class="pattern">
+    <h1 id="multi-select">Multi-select</h1>
+
+  <p>This is the native browser multi-select. <code class="highlighter-rouge">ctrl+click</code> (or <code class="highlighter-rouge">cmd+click</code>) toggles selection on an item. <code class="highlighter-rouge">shift+click</code> performs a range selection. A single <code class="highlighter-rouge">click</code> sets the selection to only that item.</p>
+    </div>
+    <div class="preview pv-sm">
+    
+
+  <div class="">
+    <div class="d-flex">
+
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-10"
+
+      aria-label="View code for multi-select"
+
+      aria-expanded="false"
+
+      data-target="#codebox-10"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for multi-select"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Multiple select--&gt;
+&lt;label for=&quot;exampleFormControlSelect6&quot; class=&quot;mt-4&quot;&gt;Custom select&lt;/label&gt;
+              &lt;select class=&quot;custom-select&quot; multiple id=&quot;exampleFormControlSelect6&quot;&gt;               
+                &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
+    &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
+    &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
+    &lt;option value=&quot;value4&quot;&gt;Option D&lt;/option&gt;
+              &lt;/select&gt;
+              &lt;label for=&quot;exampleFormControlSelect6&quot; class=&quot;mt-4&quot;&gt;Custom select&lt;/label&gt;
+              &lt;select class=&quot;custom-select&quot; multiple id=&quot;exampleFormControlSelect6&quot; disabled&gt;               
+                &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
+    &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
+    &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
+    &lt;option value=&quot;value4&quot;&gt;Option D&lt;/option&gt;
+              &lt;/select&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Multiple select-->
+<label for="exampleFormControlSelect6" class="mt-4">Custom select</label>
+              <select class="custom-select" multiple id="exampleFormControlSelect6">               
+                <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+              </select>
+              <label for="exampleFormControlSelect6" class="mt-4">Custom select</label>
+              <select class="custom-select" multiple id="exampleFormControlSelect6" disabled>               
+                <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+              </select>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-10">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Multiple select--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect6&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-4&quot;</span>&gt;</span>Custom select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select&quot;</span> <span class="hljs-attr">multiple</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect6&quot;</span>&gt;</span>               
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value1&quot;</span>&gt;</span>Option A<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value2&quot;</span>&gt;</span>Option B<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value3&quot;</span>&gt;</span>Option C<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value4&quot;</span>&gt;</span>Option D<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect6&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-4&quot;</span>&gt;</span>Custom select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select&quot;</span> <span class="hljs-attr">multiple</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect6&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>               
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value1&quot;</span>&gt;</span>Option A<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value2&quot;</span>&gt;</span>Option B<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value3&quot;</span>&gt;</span>Option C<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value4&quot;</span>&gt;</span>Option D<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    
+    </div>
+  </section>
+
+  <section>
+    <div class="pattern">
+      <h1 id="date-picker">Date picker</h1>
+
+  <p>Date pickers can provide:</p>
+
+  <ul>
+    <li>Navigating years and months via previous/next arrows and/or other dropdowns</li>
+    <li>Multi-calendar views</li>
+    <li>Range highlighting</li>
+    <li>Min and max allowable dates</li>
+    <li>Highlighting/disabling of days/rows/columns (e.g., disable weekends or highlight bi-week)</li>
+    <li>Ability to type date as well as use a calendar dropdown</li>
+  </ul>
+    </div>
+    <div class="preview pv-sm">
+    
+
+  <div class="">
+    <div class="d-flex">
+
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-11"
+
+      aria-label="View code for date picker"
+
+      aria-expanded="false"
+
+      data-target="#codebox-11"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for date picker"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Date picker--&gt;
+&lt;div class=&quot;usa-form-group&quot;&gt;
+                  &lt;label class=&quot;usa-label&quot; id=&quot;appointment-date-label&quot; for=&quot;appointment-date&quot;&gt;Appointment date&lt;/label&gt;
+                  &lt;div class=&quot;usa-hint&quot; id=&quot;appointment-date-hint&quot;&gt;mm/dd/yyyy&lt;/div&gt;
+                  &lt;div class=&quot;usa-date-picker usa-date-picker--initialized&quot; data-min-date=&quot;0000-01-01&quot;&gt;
+                    &lt;input class=&quot;usa-input usa-sr-only usa-date-picker__internal-input&quot; id=&quot;&quot; name=&quot;appointment-date&quot; type=&quot;text&quot; aria-describedby=&quot;appointment-date-label appointment-date-hint&quot; aria-hidden=&quot;true&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;div class=&quot;usa-date-picker__wrapper&quot; tabindex=&quot;-1&quot;&gt;&lt;input class=&quot;usa-input usa-date-picker__external-input&quot; id=&quot;appointment-date&quot; name=&quot;&quot; type=&quot;text&quot; aria-describedby=&quot;appointment-date-label appointment-date-hint&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;usa-date-picker__button&quot; aria-haspopup=&quot;true&quot; aria-label=&quot;Toggle calendar&quot;&gt;&amp;nbsp;&lt;/button&gt;&lt;div class=&quot;usa-date-picker__calendar&quot; role=&quot;”dialog”&quot; aria-modal=&quot;”true”&quot; hidden=&quot;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;usa-sr-only usa-date-picker__status&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Date picker-->
+<div class="usa-form-group">
+                  <label class="usa-label" id="appointment-date-label" for="appointment-date">Appointment date</label>
+                  <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
+                  <div class="usa-date-picker usa-date-picker--initialized" data-min-date="0000-01-01">
+                    <input class="usa-input usa-sr-only usa-date-picker__internal-input" id="" name="appointment-date" type="text" aria-describedby="appointment-date-label appointment-date-hint" aria-hidden="true" tabindex="-1">
+                  <div class="usa-date-picker__wrapper" tabindex="-1"><input class="usa-input usa-date-picker__external-input" id="appointment-date" name="" type="text" aria-describedby="appointment-date-label appointment-date-hint"><button type="button" class="usa-date-picker__button" aria-haspopup="true" aria-label="Toggle calendar">&nbsp;</button><div class="usa-date-picker__calendar" role="”dialog”" aria-modal="”true”" hidden=""></div><div class="usa-sr-only usa-date-picker__status" role="status" aria-live="polite"></div></div></div>
+                </div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-11">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Date picker--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form-group&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-label&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;appointment-date-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;appointment-date&quot;</span>&gt;</span>Appointment date<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-hint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;appointment-date-hint&quot;</span>&gt;</span>mm/dd/yyyy<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-date-picker usa-date-picker--initialized&quot;</span> <span class="hljs-attr">data-min-date</span>=<span class="hljs-string">&quot;0000-01-01&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-sr-only usa-date-picker__internal-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;appointment-date&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;appointment-date-label appointment-date-hint&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-date-picker__wrapper&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-date-picker__external-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;appointment-date&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;appointment-date-label appointment-date-hint&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-date-picker__button&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Toggle calendar&quot;</span>&gt;</span><span class="hljs-symbol">&amp;nbsp;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-date-picker__calendar&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;”dialog”&quot;</span> <span class="hljs-attr">aria-modal</span>=<span class="hljs-string">&quot;”true”&quot;</span> <span class="hljs-attr">hidden</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-sr-only usa-date-picker__status&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;status&quot;</span> <span class="hljs-attr">aria-live</span>=<span class="hljs-string">&quot;polite&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    
+    </div>
+  </section>
+
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions or concerns?</p>
+    <p class="text-muted">Create an issue on our <a href="">Github repository</a> or email us.</p>
+  </div>
+</footer>
+
+
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/popper/popper.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/prismjs/prism.js"></script>
+  <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+  <script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../usptostrap/assets/js/uswds.min.js"></script>
+
+  
+
+  </body>
+</html>
