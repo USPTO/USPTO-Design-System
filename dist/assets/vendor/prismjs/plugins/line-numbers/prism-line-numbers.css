@@ -2,11 +2,13 @@ pre[class*="language-"].line-numbers {
 	position: relative;
 	padding-left: 3.8em;
 	counter-reset: linenumber;
+	max-height: 12rem;
+  overflow-y: scroll;
 }
 
 pre[class*="language-"].line-numbers > code {
 	position: relative;
-	white-space: inherit;
+	white-space: pre-wrap;
 }
 
 .line-numbers .line-numbers-rows {
