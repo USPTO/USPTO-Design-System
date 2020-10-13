@@ -122,20 +122,21 @@
 
   <section>
     <div class="pattern">
-    <h1 id="select">Select</h1>
+      <h1 id="select">Select</h1>
 
-  <h2 id="purpose-5">Purpose</h2>
-  <p>The user needs to choose an option from a predefined set.</p>
+      <h2 id="purpose-5">Purpose</h2>
+      <p>The user needs to choose an option from a predefined set.</p>
 
-  <h2 id="description-5">Description</h2>
-  <ul>
-    <li>A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set</li>
-    <li>It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value</li>
-    <li>When clicked, the user is shown all available options and can make a selection</li>
-    <li>When a selection is made, the dropdown closes and the select control updates to reflect the current selection</li>
-    <li>If there are 5 or more options, the list should allow for filtering via a text field</li>
-    <li>For empty selects, use a placeholder in the format of <code class="highlighter-rouge">Select a [type]...</code> or <code class="highlighter-rouge">Select...</code></li>
-  </ul>
+      <h2 id="description-5">Description</h2>
+      <ul>
+        <li>A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set</li>
+        <li>It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value</li>
+        <li>When clicked, the user is shown all available options and can make a selection</li>
+        <li>When a selection is made, the dropdown closes and the select control updates to reflect the current selection</li>
+        <li>If there are 5 or more options, the list should allow for filtering via a text field</li>
+        <li>For empty selects, use a placeholder in the format of <code class="highlighter-rouge">Select a [type]...</code> or <code class="highlighter-rouge">Select...</code>
+        </li>
+      </ul>
     </div>
     <div class="preview pv-sm">
       {{  macros.viewCode({   ariaLabel: 'View code for select',    code: Select  },  "Default select")}}
@@ -147,34 +148,34 @@
 
   <section>
     <div class="pattern">
-    <h1 id="multi-select">Multi-select</h1>
+      <h1 id="multi-select">Multi-select</h1>
 
-  <p>This is the native browser multi-select. <code class="highlighter-rouge">ctrl+click</code> (or <code class="highlighter-rouge">cmd+click</code>) toggles selection on an item. <code class="highlighter-rouge">shift+click</code> performs a range selection. A single <code class="highlighter-rouge">click</code> sets the selection to only that item.</p>
+      <p>This is the native browser multi-select. <code class="highlighter-rouge">ctrl+click</code> (or <code class="highlighter-rouge">cmd+click</code>) toggles selection on an item. <code class="highlighter-rouge">shift+click</code> performs a range selection. A single <code class="highlighter-rouge">click</code> sets the selection to only that item.</p>
     </div>
     <div class="preview pv-sm">
-    {{  macros.viewCode({   ariaLabel: 'View code for multi-select',    code: selectMultiple  },  "")}}
-    
+      {{  macros.viewCode({   ariaLabel: 'View code for multi-select',    code: selectMultiple  },  "")}}
+
     </div>
   </section>
 
   <section>
     <div class="pattern">
       <h1 id="date-picker">Date picker</h1>
+      <p>Depending on the JS library used for the date picker, functionality may vary.</p>
+      <p>Date pickers can provide:</p>
 
-  <p>Date pickers can provide:</p>
-
-  <ul>
-    <li>Navigating years and months via previous/next arrows and/or other dropdowns</li>
-    <li>Multi-calendar views</li>
-    <li>Range highlighting</li>
-    <li>Min and max allowable dates</li>
-    <li>Highlighting/disabling of days/rows/columns (e.g., disable weekends or highlight bi-week)</li>
-    <li>Ability to type date as well as use a calendar dropdown</li>
-  </ul>
+      <ul>
+        <li>Navigating years and months via previous/next arrows and/or other dropdowns</li>
+        <li>Multi-calendar views</li>
+        <li>Range highlighting</li>
+        <li>Min and max allowable dates</li>
+        <li>Highlighting/disabling of days/rows/columns (e.g., disable weekends or highlight bi-week)</li>
+        <li>Ability to type date as well as use a calendar dropdown</li>
+      </ul>
     </div>
     <div class="preview pv-sm">
-    {{  macros.viewCode({   ariaLabel: 'View code for date picker',    code: datePicker  },  "")}}
-    
+      {{  macros.viewCode({   ariaLabel: 'View code for date picker',    code: datePicker  },  "")}}
+
     </div>
   </section>
 
@@ -209,103 +210,115 @@
 
 {% set radioButton %}
 <!--Default radio button-->
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
-  <label class="form-check-label" for="exampleRadios1">
+<div class="form-group">
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+    <label class="form-check-label" for="exampleRadios1">
                   Default radio checked
                 </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
-  <label class="form-check-label" for="exampleRadios1">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
+    <label class="form-check-label" for="exampleRadios1">
                   Default radio unchecked
                 </label>
-</div>
+  </div>
 
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled="">
-  <label class="form-check-label" for="exampleRadios3">
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled="">
+    <label class="form-check-label" for="exampleRadios3">
                   Disabled radio
                 </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option3" disabled="" checked="">
-  <label class="form-check-label" for="exampleRadios3">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option3" disabled="" checked="">
+    <label class="form-check-label" for="exampleRadios3">
                   Disabled radio
                 </label>
+  </div>
 </div>
 {% endset%}
 
 {% set radioButtonCustom%}
 <!--Custom radio button-->
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-  <label class="custom-control-label" for="customRadio1">Custom radio checked</label>
-</div>
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio2">Custom radio unchecked</label>
-</div>
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
-  <label class="custom-control-label" for="customRadio3">Custom radio disabled</label>
-</div>
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio4" name="customRadio1" class="custom-control-input" disabled="" checked="">
-  <label class="custom-control-label" for="customRadio4">Custom radio disabled checked</label>
+<div class="form-group">
+  <div class="custom-control custom-radio">
+    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+    <label class="custom-control-label" for="customRadio1">Custom radio checked</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+    <label class="custom-control-label" for="customRadio2">Custom radio unchecked</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
+    <label class="custom-control-label" for="customRadio3">Custom radio disabled</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="customRadio4" name="customRadio1" class="custom-control-input" disabled="" checked="">
+    <label class="custom-control-label" for="customRadio4">Custom radio disabled checked</label>
+  </div>
 </div>
 {% endset%}
 
 {% set checkboxesDefault %}
 <!--Default checkboxes-->
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="">
-  <label class="form-check-label" for="defaultCheck1">
+<div class="form-group">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="">
+    <label class="form-check-label" for="defaultCheck1">
                   Default checkbox checked
                 </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-  <label class="form-check-label" for="defaultCheck2">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+    <label class="form-check-label" for="defaultCheck2">
                   Default checkbox unchecked
                 </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" disabled="">
-  <label class="form-check-label" for="defaultCheck3">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" disabled="">
+    <label class="form-check-label" for="defaultCheck3">
                   Disabled checkbox
                 </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" disabled="" checked="">
-  <label class="form-check-label" for="defaultCheck4">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" disabled="" checked="">
+    <label class="form-check-label" for="defaultCheck4">
                   Disabled checkbox
                 </label>
+  </div>
 </div>
 {% endset%}
 
 {% set checkboxesCustom %}
 <!--Custom checkboxes-->
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
-  <label class="custom-control-label" for="customCheck1">Custom checkbox checked</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck2">
-  <label class="custom-control-label" for="customCheck2">Custom checkbox unchecked</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck3" disabled="">
-  <label class="custom-control-label" for="customCheck2">Custom checkbox disabled</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck4" disabled="" checked="">
-  <label class="custom-control-label" for="customCheck2">Custom checkbox disabled checked</label>
+<div class="form-group">
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+    <label class="custom-control-label" for="customCheck1">Custom checkbox checked</label>
+  </div>
+
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck2">
+    <label class="custom-control-label" for="customCheck2">Custom checkbox unchecked</label>
+  </div>
+
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck3" disabled="">
+    <label class="custom-control-label" for="customCheck2">Custom checkbox disabled</label>
+  </div>
+
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck4" disabled="" checked="">
+    <label class="custom-control-label" for="customCheck2">Custom checkbox disabled checked</label>
+  </div>
 </div>
 {% endset%}
 
 {% set toggleSwitches %}
 <!--Toggle switches-->
+<div class="form-group">
 <div class="custom-control custom-switch">
   <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
   <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
@@ -318,89 +331,104 @@
   <input type="checkbox" class="custom-control-input" disabled id="customSwitch3">
   <label class="custom-control-label" for="customSwitch3">Disabled switch element</label>
 </div>
+</div>
 {% endset%}
 
 {% set Select %}
 <!--Select-->
- <label for="exampleFormControlSelect1" class="mt-4">Normal</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                 
-    <option value="value1">Option A</option>
-    <option value="value2">Option B</option>
-    <option value="value3">Option C</option>
-    <option value="value4">Option D</option>
-    <option value="value5">Option E</option>
-              </select>
-              <label for="exampleFormControlSelect2" class="mt-4">Disabled</label>
-              <select class="form-control" id="exampleFormControlSelect2" disabled>
-                
-    <option value="value1">Option A</option>
-    <option value="value2">Option B</option>
-    <option value="value3">Option C</option>
-    <option value="value4">Option D</option>
-    <option value="value5">Option E</option>
-              </select>
+<div class="form-group">
+<label for="exampleFormControlSelect1" class="mt-2">Normal</label>
+<select class="form-control" id="exampleFormControlSelect1">
+
+  <option value="value1">Option A</option>
+  <option value="value2">Option B</option>
+  <option value="value3">Option C</option>
+  <option value="value4">Option D</option>
+  <option value="value5">Option E</option>
+</select>
+</div>
+<div class="form-group">
+<label for="exampleFormControlSelect2" class="mt-2">Disabled</label>
+<select class="form-control" id="exampleFormControlSelect2" disabled>
+
+  <option value="value1">Option A</option>
+  <option value="value2">Option B</option>
+  <option value="value3">Option C</option>
+  <option value="value4">Option D</option>
+  <option value="value5">Option E</option>
+</select>
+</div>
 {% endset%}
 {% set selectCustom %}
 <!--Custom select-->
- 
-              <label for="exampleFormControlSelect3" class="mt-4">Custom select</label>
-              <select class="custom-select" id="exampleFormControlSelect3">
-                <option selected="">Select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="4">Four</option>
-                <option value="5">Five</option>
-              </select>
-            <label for="exampleFormControlSelect4" class="mt-4">Custom select small</label>
-              <select class="custom-select custom-select-sm" id="exampleFormControlSelect4">
-                <option selected="">Select small menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="4">Four</option>
-                <option value="5">Five</option>
-              </select>
-
-             
-              <label for="exampleFormControlSelect5" class="mt-4">Custom select large</label>
-              <select class="custom-select custom-select-lg mb-2" id="exampleFormControlSelect5">
-                <option selected="">Select large menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="4">Four</option>
-                <option value="5">Five</option>
-              </select>
-       
+<div class="form-group">
+<label for="exampleFormControlSelect3" class="mt-2">Custom select</label>
+<select class="custom-select" id="exampleFormControlSelect3">
+  <option selected="">Select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+  <option value="4">Four</option>
+  <option value="5">Five</option>
+</select>
+</div>
+<div class="form-group">
+<label for="exampleFormControlSelect4" class="mt-2">Custom select small</label>
+<select class="custom-select custom-select-sm" id="exampleFormControlSelect4">
+  <option selected="">Select small menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+  <option value="4">Four</option>
+  <option value="5">Five</option>
+</select>
+</div>
+<div class="form-group">
+<label for="exampleFormControlSelect5" class="mt-2">Custom select large</label>
+<select class="custom-select custom-select-lg" id="exampleFormControlSelect5">
+  <option selected="">Select large menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+  <option value="4">Four</option>
+  <option value="5">Five</option>
+</select>
+</div>
 {% endset%}
 
 {% set selectMultiple %}
 <!--Multiple select-->
-<label for="exampleFormControlSelect6" class="mt-4">Custom select</label>
-              <select class="custom-select" multiple id="exampleFormControlSelect6">               
-                <option value="value1">Option A</option>
+<div class="form-group">
+  <label for="exampleFormControlSelect6" class="mt-2">Custom select</label>
+  <select class="custom-select" multiple id="exampleFormControlSelect6">
+    <option value="value1">Option A</option>
     <option value="value2">Option B</option>
     <option value="value3">Option C</option>
     <option value="value4">Option D</option>
-              </select>
-              <label for="exampleFormControlSelect6" class="mt-4">Custom select</label>
-              <select class="custom-select" multiple id="exampleFormControlSelect6" disabled>               
-                <option value="value1">Option A</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="exampleFormControlSelect6" class="mt-2">Custom select</label>
+  <select class="custom-select" multiple id="exampleFormControlSelect6" disabled>
+    <option value="value1">Option A</option>
     <option value="value2">Option B</option>
     <option value="value3">Option C</option>
     <option value="value4">Option D</option>
-              </select>
+  </select>
+</div>
 {% endset%}
 {% set datePicker %}
 <!--Date picker-->
 <div class="usa-form-group">
-                  <label class="usa-label" id="appointment-date-label" for="appointment-date">Appointment date</label>
-                  <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
-                  <div class="usa-date-picker usa-date-picker--initialized" data-min-date="0000-01-01">
-                    <input class="usa-input usa-sr-only usa-date-picker__internal-input" id="" name="appointment-date" type="text" aria-describedby="appointment-date-label appointment-date-hint" aria-hidden="true" tabindex="-1">
-                  <div class="usa-date-picker__wrapper" tabindex="-1"><input class="usa-input usa-date-picker__external-input" id="appointment-date" name="" type="text" aria-describedby="appointment-date-label appointment-date-hint"><button type="button" class="usa-date-picker__button" aria-haspopup="true" aria-label="Toggle calendar">&nbsp;</button><div class="usa-date-picker__calendar" role="”dialog”" aria-modal="”true”" hidden=""></div><div class="usa-sr-only usa-date-picker__status" role="status" aria-live="polite"></div></div></div>
-                </div>
+  <label class="usa-label" id="appointment-date-label" for="appointment-date">Appointment date</label>
+  <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
+  <div class="usa-date-picker usa-date-picker--initialized" data-min-date="0000-01-01">
+    <input class="usa-input usa-sr-only usa-date-picker__internal-input" id="" name="appointment-date" type="text" aria-describedby="appointment-date-label appointment-date-hint" aria-hidden="true" tabindex="-1">
+    <div class="usa-date-picker__wrapper" tabindex="-1"><input class="usa-input usa-date-picker__external-input" id="appointment-date" name="" type="text" aria-describedby="appointment-date-label appointment-date-hint">
+      <button type="button" class="usa-date-picker__button" aria-haspopup="true" aria-label="Toggle calendar">&nbsp;</button>
+      <div class="usa-date-picker__calendar" role="”dialog”" aria-modal="”true”" hidden=""></div>
+      <div class="usa-sr-only usa-date-picker__status" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+</div>
 {% endset%}
-
