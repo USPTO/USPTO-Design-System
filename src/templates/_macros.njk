@@ -15,7 +15,7 @@
   </div>
 {% endmacro %}
 
-{% macro viewCode(o) %}
+{% macro viewCode(o, type = 'Example') %}
 
   {% set id = o.id or uid('codebox') %}
   {% set code = o.code %}
@@ -23,25 +23,28 @@
 
   <div class="{% if o.class %} {{ o.class }}{% endif %}">
     <div class="d-flex">
-      
-        <h2>Example</h2>
-     
+
+      {% if type %}
+        <h2>{{type}}</h2>
+      {% endif %}
+
       <div class=" ml-auto">
         {{ viewCodeButton(id, o.ariaLabel) }}
         {{ copyCodeButton(o.code) }}</div>
     </div>
-    
-     
-        {{ o.code | safe | trim }}
-     
-      <div class="collapse line-numbers pt-2" id="{{ id }}">
-        {{ (o.html or 'Example HTML usage:') | indent(16) | safe | trim }}
-        {% if o.code %}
-          <div class="codeArea">
-            {% code %}{{ o.code | safe | trim }}{% endcode %}
-          </div>
-        {% endif %}
-      </div>   
+
+    <div class="preview-size">
+      {{ o.code | safe | trim }}
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="{{ id }}">
+      {{ (o.html or 'Example HTML usage:') | indent(16) | safe | trim }}
+      {% if o.code %}
+        <div class="codeArea">
+          {% code %}{{ o.code | safe | trim }}{% endcode %}
+        </div>
+      {% endif %}
+    </div>
 
   </div>
 
@@ -63,10 +66,12 @@
 
       type="button"
 
-    >   
+      title="{{ label }}"
+
+    >
     <span class="material-icons">unfold_more</span>
 
-     View Code
+     View code
 
   </button>
 
@@ -80,11 +85,13 @@
 
       type="button"
 
+      title="Copy code"
+
     >
 
     <span class="material-icons">content_copy</span>
 
-     Copy Code
+     Copy code
 
   </button>
 

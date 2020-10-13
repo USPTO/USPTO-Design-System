@@ -55,7 +55,7 @@ module.exports = {
         title: 'Page templates',
       },
       {
-        href: 'about.html',
+        href: 'about/about.html',
         text: 'About',
         title: 'About',
       }

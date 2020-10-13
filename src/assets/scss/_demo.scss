@@ -32,8 +32,22 @@ main {
       padding: 2rem;
     }
     .preview {
-      border-top: 2px solid rgba(0, 0, 0, 0.1);
-      
+      border-bottom: 1px solid #eee;      
+    }
+    .pattern {
+      border-bottom: 1px solid #eee;      
+    }
+    .pv-xs {
+      .preview-size { max-width: 250px;}      
+    }
+    .pv-sm {
+      .preview-size { max-width: 500px;}      
+    }
+    .pv-md {
+      .preview-size { max-width: 850px;}      
+    }
+    .pv-lg {
+      .preview-size { max-width: 1200px;}      
     }
   }
 }

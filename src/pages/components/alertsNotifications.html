@@ -1,0 +1,70 @@
+{% extends 'layouts/components.njk' %}
+{% set page = { class: 'page-alertsNotifications' } %}
+
+{% block content %}
+<section>
+  <div class="pattern">
+    <h1 id="contextual-alerts">Contextual alerts</h1>
+    <h2 id="purpose">Purpose</h2>
+    <p>Users need to be aware of important information related to their current activity.</p>
+    <h2 id="description">Description</h2>
+    <ul>
+      <li>Contextual alerts are positioned above the area or form they relate to</li>
+      <li>They are often triggered by a user interaction</li>
+      <li>They can be closable and can have other action buttons or links.</li>
+      <li>Alerts with low importance (info or success) can close automatically after 20 seconds</li>
+      <li>Alerts with high importance (warning or danger) should not close automatically, unless the situation has been resolved in some other way</li>
+    </ul>
+    <h2>Types:</h2>
+    <ul>
+      <li> <strong>Info</strong> alerts should be used when there are tips or information that a user can benefit from.</li>
+      <li> <strong>Success</strong> alerts should be used when an action was performed successfully.</li>
+      <li> <strong>Warning</strong> alerts should be used when an action is out of the ordinary or might not be desired.</li>
+      <li> <strong>Danger</strong> alerts should be used when the system has failed to perform an action, or when the user has made an error.</li>
+    </ul>
+  </div>
+  <div class="preview pv-md"> {{  macros.viewCode({   ariaLabel: 'View code for standard alerts',    code: standardAlerts  }, 'Standard alerts')}} </div>
+  <div class="preview  pv-md"> {{  macros.viewCode({   ariaLabel: 'View code for slim alerts',    code: slimAlerts  }, 'Slim alert')}} </div>
+  <div class="preview  pv-md"> {{  macros.viewCode({   ariaLabel: 'View code for no icon alerts',    code: noIconsAlerts  }, 'No icon alerts')}} </div>
+</section>
+{% endblock %}
+
+{% set standardAlerts %} 
+<!--Standard alerts-->
+<div class="mb-2 alert alert-info" role="alert">
+  <div class="alert-icon"> <i class="material-icons">info</i> </div>
+  <div>
+    <h4 class="alert-heading">Use appropriate heading level</h4>
+    This is a info alert with <a href="#" class="alert-link">an example link</a>. </div>
+</div>
+<div class="mb-2 alert alert-success" role="alert">
+  <div class="alert-icon"> <i class="material-icons">check_circle</i> </div>
+  <div> This is a success alert with <a href="#" class="alert-link">an example link</a>. </div>
+</div>
+<div class="mb-2 alert alert-warning" role="alert">
+  <div class="alert-icon"> <i class="material-icons">warning</i> </div>
+  <div> This is a warning alert with <a href="#" class="alert-link">an example link</a>. </div>
+</div>
+<div class="mb-2 alert alert-danger" role="alert">
+  <div class="alert-icon"> <i class="material-icons">error</i> </div>
+  <div> This is a danger alert with <a href="#" class="alert-link">an example link</a>. </div>
+</div>
+{% endset%}
+
+{% set slimAlerts %} 
+<!--Slim alerts-->
+<div class="mb-2 alert alert-info alert-sm" role="alert">
+  <div class="alert-icon"> <i class="material-icons">info</i> </div>
+  <div> This is a small info alert with <a href="#" class="alert-link">an example link</a>. </div>
+</div>
+{% endset%}
+
+{% set noIconsAlerts %} 
+<!--No Icon alerts-->
+<div class="mb-2 alert alert-info" role="alert">
+  <div> This is a info regular alert with <a href="#" class="alert-link">an example link</a>. </div>
+</div>
+<div class="mb-2 alert alert-info alert-sm" role="alert">
+  <div> This is a info slim alert with <a href="#" class="alert-link">an example link</a>. </div>
+</div>
+{% endset%}

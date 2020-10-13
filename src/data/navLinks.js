@@ -10,7 +10,6 @@ Object.assign(exports, {
         { href: '#system-notifications', text: 'System notifications' }
       ],
     },
-    { href: 'badges.html', text: 'Badges' },
     { href: 'breadcrumbs.html', text: 'Breadcrumbs' },
     {
       href: 'buttons.html', text: 'Buttons',
@@ -75,7 +74,7 @@ Object.assign(exports, {
       ],
     },
     {
-      href: 'labelsBadges	.html',
+      href: 'labelsAndBadges.html',
       text: 'Labels and badges',
       "children": [
         { href: '#labels', text: 'Labels' },

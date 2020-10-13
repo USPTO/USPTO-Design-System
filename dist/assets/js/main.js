@@ -18,10 +18,10 @@ $(function () {
   //copy to clipboard  
   var clipboard = new ClipboardJS('.clipboard');
   clipboard.on('success', function (e) {
-    $(e.trigger).text("Copied!");
+    $(e.trigger).html("<span class=\"material-icons\">check</span> Copied!");
     e.clearSelection();
     setTimeout(function () {
-      $(e.trigger).text("Copy Code");
+      $(e.trigger).html("<span class=\"material-icons\">content_copy</span> Copy Code");
     }, 2500);
   });
 
@@ -37,4 +37,16 @@ $(function () {
 function $controls(el) {
   return $('#' + el.getAttribute('aria-controls'))
 };
+
+    /*
+     * Add collapsible panel functionality
+     */
+    $('body').on('click', '#collapse-all', function(e) {
+      e.preventDefault(e);
+      $('#myAccordion .collapse').collapse('hide');       
+    });
+    $('body').on('click', '#expand-all', function(e) {
+      e.preventDefault(e);    
+      $('#myAccordion .collapse').collapse('show');       
+    });
 

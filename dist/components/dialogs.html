@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en" class="page-dialogs">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+  <title>USPTO UI Design Library</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+ <link rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix />
+<link rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix />
+  </head>
+  <body class="parent-container">
+  <a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+  <section class="banner banner-dark" aria-label="Official government website">
+      <div class="accordion">
+        <div class="d-md-none">
+          <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+            <div class="banner-inner">
+              <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+              <div class="flex-fill">
+                <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+              </div>
+              <span class="close-btn">
+                <i class="material-icons ">close</i>
+              </span>
+            </div>
+          </button>
+        </div>
+        <div class="d-none d-md-block">
+          <div class="banner-inner align-itens-center">
+
+            <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+
+            <p class="banner-header-text">An official website of the United States government</p>
+
+            <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+            </button>
+
+          </div>
+        </div>
+        <div class="banner-content collapse" id="gov-banner-demo">
+          <div class="row no-gutters-sm">
+            <div class="col-md-6 media">
+              <img class="banner-icon align-self-start" src="../assets/img//icon-dot-gov.svg" role="img" alt="Dot gov">
+              <div class="media-body">
+                <p>
+                  <strong>The .gov means it’s official.</strong>
+                  <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+              </div>
+            </div>
+            <div class="col-md-6  media">
+              <img class="banner-icon align-self-start" src="../assets/img//icon-https.svg" role="img" alt="Https">
+              <div class="media-body">
+                <p>
+                  <strong>The site is secure.</strong>
+                  <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>      <header>
+<div class="navbar navbar-expand navbar-top ">
+  <a class="navbar-brand" href="../index.html" title="USPTO UI Design Library Home">
+      USPTO <span class="font-weight-light">Design</span>
+  </a>
+  <a class="ml-auto" href="" title="Download">
+    Download
+  </a>
+
+  
+</div><nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="header sub navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../howto.html" title="How to use DPL">
+          How to use DPL
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+          Foundation
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../components/components.html" title="Components">
+          Components
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+          Patterns
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pageTemplates/pageTemplate1.html" title="Page templates">
+          Page templates
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../about/about.html" title="About">
+          About
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="components.html">Components
+    </option>
+    <option value="alertsNotifications.html">Alerts and notifications
+    </option>
+    <option value="breadcrumbs.html">Breadcrumbs
+    </option>
+    <option value="buttons.html">Buttons
+    </option>
+    <option value="collapsiblePanels.html">Collapsible panels
+    </option>
+    <option value="dialogs.html">Dialogs
+    </option>
+    <option value="formControls	.html">Form controls
+    </option>
+    <option value="forms.html">Forms
+    </option>
+    <option value="labelsAndBadges.html">Labels and badges
+    </option>
+    <option value="menus.html">Menus
+    </option>
+    <option value="metadata.html">Metadata
+    </option>
+    <option value="pagination.html">Pagination
+    </option>
+    <option value="popovers.html">Popovers
+    </option>
+    <option value="progressLoading.html">Progress and loading
+    </option>
+    <option value="stepIndicators.html">Step indicators
+    </option>
+    <option value="tables.html">Tables
+    </option>
+    <option value="tabs.html">Tabs
+    </option>
+    <option value="tags.html">Tags
+    </option>
+    <option value="tooltips.html">Tooltips
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+<ul class="sidenav">
+      <li>
+        <a href="components.html" data-parent="Components">Components</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="alertsNotifications.html" data-parent="Alerts and notifications">Alerts and notifications</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#alerts-and-notifications">Alerts and notifications</a></li>
+          <li><a href="#contextual-alerts">Contextual alerts</a></li>
+          <li><a href="#system-notifications">System notifications</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="breadcrumbs.html" data-parent="Breadcrumbs">Breadcrumbs</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="buttons.html" data-parent="Buttons">Buttons</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#button-styles">Button styles</a></li>
+          <li><a href="#button-sizes">Button sizes</a></li>
+          <li><a href="#button-groups">Button groups</a></li>
+          <li><a href="#toggle-buttons">Toggle buttons</a></li>
+          <li><a href="#dropdown-buttons">Dropdown buttons</a></li>
+          <li><a href="#split-buttons">Split buttons</a></li>
+          <li><a href="#icon-buttons">Icon buttons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="collapsiblePanels.html" data-parent="Collapsible panels">Collapsible panels</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#behaviors">Behaviors</a></li>
+          <li><a href="#styles">Styles</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="dialogs.html" data-parent="Dialogs">Dialogs</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#confirmation">Confirmation</a></li>
+          <li><a href="#actionless">Actionless</a></li>
+          <li><a href="#modes">Modes</a></li>
+          <li><a href="#live">Live</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="formControls	.html" data-parent="Form controls">Form controls</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#text-box">Text box</a></li>
+          <li><a href="#text-area">Text area</a></li>
+          <li><a href="#radio-buttons">Radio buttons</a></li>
+          <li><a href="#checkboxes">Checkboxes</a></li>
+          <li><a href="#toggle-switches">Toggle switches</a></li>
+          <li><a href="#select">Select</a></li>
+          <li><a href="#multi-select">Multi-select</a></li>
+          <li><a href="#date-picker">Date picker</a></li>
+          <li><a href="#time-picker">Time picker</a></li>
+          <li><a href="#slider">Slider</a></li>
+          <li><a href="#rich-text-editor">Rich text editor</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="forms.html" data-parent="Forms">Forms</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#field-widths">Field widths</a></li>
+          <li><a href="#labels">Labels</a></li>
+          <li><a href="#required-fields">Required fields</a></li>
+          <li><a href="#form-validation">Form validation</a></li>
+          <li><a href="#help-text">Help text</a></li>
+          <li><a href="#form-groups">Form groups</a></li>
+          <li><a href="#input-character-limits">Input character limits</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="labelsAndBadges.html" data-parent="Labels and badges">Labels and badges</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#labels">Labels</a></li>
+          <li><a href="#badges">Badges</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="menus.html" data-parent="Menus">Menus</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#submenus">Submenus</a></li>
+          <li><a href="#icons">Icons</a></li>
+          <li><a href="#form-controls">Form controls</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="metadata.html" data-parent="Metadata">Metadata</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="pagination.html" data-parent="Pagination">Pagination</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="popovers.html" data-parent="Popovers">Popovers</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="progressLoading.html" data-parent="Progress and loading">Progress and loading</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#progress-bars">Progress bars</a></li>
+          <li><a href="#load-spinners">Load spinners</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="stepIndicators.html" data-parent="Step indicators">Step indicators</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="tables.html" data-parent="Tables">Tables</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#styles">Styles</a></li>
+          <li><a href="#headers">Headers</a></li>
+          <li><a href="#sorting">Sorting</a></li>
+          <li><a href="#selection">Selection</a></li>
+          <li><a href="#row-action-buttons">Row action buttons</a></li>
+          <li><a href="#column-customization">Column customization</a></li>
+          <li><a href="#grouping">Grouping</a></li>
+          <li><a href="#expandable-rows">Expandable rows</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="tabs.html" data-parent="Tabs">Tabs</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#normal-tabs">Normal tabs</a></li>
+          <li><a href="#light-tabs">Light tabs</a></li>
+          <li><a href="#pill-tabs">Pill tabs</a></li>
+          <li><a href="#nested-tabs">Nested tabs</a></li>
+          <li><a href="#justified-tabs">Justified tabs</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="tags.html" data-parent="Tags">Tags</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="tooltips.html" data-parent="Tooltips">Tooltips</a>
+        <ul class="sidenav-sublist">
+          <li><a href="#positioning">Positioning</a></li>
+          <li><a href="#content">Content</a></li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+
+
+  </div>
+  <main id="main-content">
+  <section>
+    <div class="pattern">
+      <h1>Dialogs</h1>
+
+      <h2 id="purpose">Purpose</h2>
+      <p>Dialogs provide the user with a focused way of accomplishing, confirming, or viewing something without entirely leaving a screen or page.</p>
+
+      <h2 id="description">Description</h2>
+      <ul>
+        <li>Dialogs are useful for interactions that are relatively quick (less than a couple minutes)</li>
+        <li>Dialogs float above the application until the user has taken a desired action or dismissed the dialog</li>
+        <li>Dialogs can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page</li>
+        <li>Dialogs are usually opened from a click action</li>
+        <li>Dialogs may or may not block interactions “behind” or “under” the dialog (see <a href="#modes">modes</a>)</li>
+        <li>If there is a non-destructive dismiss/cancel, dialogs can be closed by clicking outside of the dialog</li>
+      </ul>
+
+      <h2 id="components">Components</h2>
+      <h5>Header / title bar</h5>
+      
+
+      <ul>
+        <li>Short and concise title</li>
+        <li>Sentence case title</li>
+        <li>Dismiss (X) icon if a non-destructive ‘cancel/done’ is applicable</li>
+      </ul>
+<h5>Content</h5>
+     
+      <ul>
+        <li>Can contain text or UI controls focused on a particular task, process, or entitiy</li>
+        <li>Can scroll independently depending on the content, creating a pinned header/footer</li>
+      </ul>
+<h5>Footer</h5>
+      
+
+      <ul>
+        <li>Contains action buttons</li>
+        <li>Primary action buttons are right aligned</li>
+        <li>Cancel/previous buttons are left aligned</li>
+        <li>Use button styles that match the actions/priority, but if there more than two buttons with similar actions/priority, use the default button style for them all</li>
+        <li>Buttons should use action verbs that describe by themselves what will happen on click (e.g., ‘Delete user’ instead of ‘Ok’)</li>
+      </ul>
+    </div>
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for dialog"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for dialog"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Dialog--&gt;
+&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h3 class=&quot;modal-title&quot;&gt;Rename file&lt;/h3&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+          &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;form role=&quot;form&quot; class=&quot;&quot;&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;tb12&quot; class=&quot;control-label&quot;&gt;Enter a new file name&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;tb12&quot; value=&quot;dialogs.md&quot;&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Dialog-->
+<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Rename file</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form role="form" class="">
+          <div class="form-group">
+            <label for="tb12" class="control-label">Enter a new file name</label>
+            <input type="text" class="form-control" id="tb12" value="dialogs.md">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Rename file<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;form&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;tb12&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;control-label&quot;</span>&gt;</span>Enter a new file name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tb12&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;dialogs.md&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+     <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for dialog"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for dialog"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Dialog--&gt;
+&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h3 class=&quot;modal-title&quot;&gt;Find and replace&lt;/h3&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+          &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;form role=&quot;form&quot;&gt;
+           &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label for=&quot;exampleFormControlInput1&quot;&gt;Find&lt;/label&gt;
+              &lt;input type=&quot;text&quot; class=&quot;form-control &quot; id=&quot;exampleFormControlInput1&quot;&gt;
+            &lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+              &lt;label for=&quot;exampleFormControlInput2&quot;&gt;Replace with&lt;/label&gt;
+              &lt;input type=&quot;email&quot; class=&quot;form-control &quot; id=&quot;exampleFormControlInput2&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-check&quot;&gt;
+                  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck1&quot; checked=&quot;&quot;&gt;
+                  &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck1&quot;&gt;
+                  Match case
+                &lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;form-check&quot;&gt;
+                  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck2&quot; checked=&quot;&quot;&gt;
+                  &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck2&quot;&gt;
+                  Whole word
+                &lt;/label&gt;
+                &lt;/div&gt;
+
+        &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Find&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot; disabled=&quot;&quot;&gt;Replace&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Replace all&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Done&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Dialog-->
+<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Find and replace</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+           <div class="form-group">
+              <label for="exampleFormControlInput1">Find</label>
+              <input type="text" class="form-control " id="exampleFormControlInput1">
+            </div>
+<div class="form-group">
+              <label for="exampleFormControlInput2">Replace with</label>
+              <input type="email" class="form-control " id="exampleFormControlInput2">
+            </div>
+            <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="">
+                  <label class="form-check-label" for="defaultCheck1">
+                  Match case
+                </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked="">
+                  <label class="form-check-label" for="defaultCheck2">
+                  Whole word
+                </label>
+                </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Find</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" disabled="">Replace</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Replace all</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Find and replace<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;form&quot;</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlInput1&quot;</span>&gt;</span>Find<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control &quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlInput1&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlInput2&quot;</span>&gt;</span>Replace with<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control &quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlInput2&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck1&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck1&quot;</span>&gt;</span>
+                  Match case
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck2&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck2&quot;</span>&gt;</span>
+                  Whole word
+                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Find<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Replace<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Replace all<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Done<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for dialog"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for dialog"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Dialog--&gt;
+&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+       &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h3 class=&quot;modal-title text-success&quot;&gt;Thank you!&lt;/h3&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+          &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+      
+        &lt;p&gt;Your request has been submitted.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Back&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-success&quot;&gt;View request&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Dialog-->
+<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+       <div class="modal-header">
+        <h3 class="modal-title text-success">Thank you!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+        <p>Your request has been submitted.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-sm btn-success">View request</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title text-success&quot;</span>&gt;</span>Thank you!<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+      
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Your request has been submitted.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-success&quot;</span>&gt;</span>View request<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+    <div class="pattern">
+    <h1 id="confirmation">Confirmation</h1>
+
+  <p>A confirmation dialog is short, simple dialog that ensures the user is performing an action intentionally. This is especially useful for dangerous or irreversible operations.</p>
+    </div>
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for dialog"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for dialog"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Dialog--&gt;
+&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+       &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h3 class=&quot;modal-title text-danger&quot;&gt;Delete this user&lt;/h3&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+          &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+      
+        &lt;p&gt;All user information will be deleted.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Cancel&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Delete user&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Dialog-->
+<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+       <div class="modal-header">
+        <h3 class="modal-title text-danger">Delete this user</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+        <p>All user information will be deleted.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-sm btn-danger">Delete user</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title text-danger&quot;</span>&gt;</span>Delete this user<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+      
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>All user information will be deleted.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-danger&quot;</span>&gt;</span>Delete user<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-5"
+
+      aria-label="View code for dialog"
+
+      aria-expanded="false"
+
+      data-target="#codebox-5"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for dialog"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Dialog--&gt;
+&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+       &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h3 class=&quot;modal-title&quot;&gt;Abandon changes?&lt;/h3&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+          &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+      
+        &lt;p&gt;You have unsaved changes. Your changes will be lost.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Leave this page&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Stay on this page&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Dialog-->
+<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+       <div class="modal-header">
+        <h3 class="modal-title">Abandon changes?</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+        <p>You have unsaved changes. Your changes will be lost.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Leave this page</button>
+        <button type="button" class="btn btn-sm btn-primary">Stay on this page</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-5">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Abandon changes?<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+      
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You have unsaved changes. Your changes will be lost.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Leave this page<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>Stay on this page<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+
+    <div class="pattern">
+    <h1 id="actionless">Actionless</h1>
+
+  <p>An actionless dialog may block user interaction for a period of time, usually until something finishes or some other event occurs.</p>
+    </div>
+
+    <div class="preview">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-6"
+
+      aria-label="View code for dialog"
+
+      aria-expanded="false"
+
+      data-target="#codebox-6"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for dialog"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Dialog--&gt;
+&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+       
+      &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;div style=&quot;margin-bottom: 6px;&quot; class=&quot;clearfix&quot;&gt;
+                &lt;div class=&quot;pull-left&quot;&gt;Uploading document...&lt;/div&gt;                
+            &lt;/div&gt;
+            &lt;div class=&quot;progress&quot;&gt;
+            &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 65%;&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;25%&lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Dialog-->
+<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+       
+      <div class="modal-body">
+            <div style="margin-bottom: 6px;" class="clearfix">
+                <div class="pull-left">Uploading document...</div>                
+            </div>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-6">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+       
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;margin-bottom: 6px;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;clearfix&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pull-left&quot;</span>&gt;</span>Uploading document...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>                
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-bar&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;progressbar&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 65%;&quot;</span> <span class="hljs-attr">aria-valuenow</span>=<span class="hljs-string">&quot;25&quot;</span> <span class="hljs-attr">aria-valuemin</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-valuemax</span>=<span class="hljs-string">&quot;100&quot;</span>&gt;</span>25%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+
+    <div class="pattern">
+     <h1 id="modes">Modes</h1>
+  <p>Dialogs can prevent the user from performing actions behind/around the dialog if desired. There are 3 general modes:</p>
+
+  <ul>
+    <li><strong>Modal</strong>: A modal dialog <strong>prevents</strong> the user from interacting with all other areas of the application until the dialog is dismissed.</li>
+    <li><strong>Modeless</strong>: A modeless dialog <strong>allows</strong> the user interact with all other areas of the application without dismissing the dialog.</li>
+    <li><strong>Mixed-modal</strong>: A mixed-modal dialog may block <strong>some</strong> areas of the application, but not others. E.g., a dialog pertaining to one document, but not another visible document.</li>
+  </ul>
+    </div>
+
+<div class="pattern">
+<h1>Live</h1>
+</div>
+
+<div class="pattern">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLive">
+    Show demo modal
+  </button>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdropLive">
+    Show static backdrop modal
+  </button>
+</div>
+  </section>
+
+<!--Modal examples-->
+<div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLiveLabel">Modal title</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Woohoo, you're reading this text in a modal!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="staticBackdropLive" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLiveLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="staticBackdropLiveLabel">Modal title</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>I will not close if you click outside me. Don't even try to press escape key.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-sm btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions or concerns?</p>
+    <p class="text-muted">Create an issue on our <a href="">Github repository</a> or email us.</p>
+  </div>
+</footer>
+
+
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/popper/popper.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/prismjs/prism.js"></script>
+  <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+  <script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  
+
+  </body>
+</html>

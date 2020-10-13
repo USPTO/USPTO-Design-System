@@ -1,0 +1,60 @@
+{% extends 'layouts/components.njk' %}
+{% set page = { class: 'page-breadcrumbs' } %}
+
+{% block content %}
+  <section>
+    <div class="pattern">
+      <h1>Breadcrumbs</h1>
+      <h2 id="purpose">Purpose</h2>
+      <p>Users need to understand their current location and navigate within a hierarchical navigation scheme.</p>
+      <h2 id="description">Description</h2>
+      <p>Breadcrumbs display the current path to a particular page relative to the starting point. Breadcrumbs provide a means for users to understand their current context in a hierarchical structure and the ability to navigate up the structure easily.</p>
+      <ul>
+        <li>Breadcrumbs display the current path as links separated by carets to indicate each level.</li>
+        <li>The navigation root is the first element, the current location is the last element</li>
+        <li>The current location is not clickable.</li>
+        <li>Clicking on a link takes you to that screen.</li>
+      </ul>
+      <p>Depending on the complexity of the navigational hierarchy and the type of page or application, it may make sense for the breadcrumb to represent only part of the hierarchy while sub tabs/trees/navigation represent the remaining hierarchy. In that case, you may want to make the far right element clickable.</p>
+    </div>
+    <div class="preview pv-sm">
+      {{  macros.viewCode({   ariaLabel: 'View code for default breadcrumbs',    code: breadcrumbsDefault  },  "Default breadcrumb")}}
+    </div>
+    <div class="preview pv-sm">
+      {{  macros.viewCode({   ariaLabel: 'View code for wrapping breadcrumbs',    code: breadcrumbsWrapping }, "Wrapping breadcrumb" )}}
+    </div>
+  </section>
+{% endblock %}
+{% set breadcrumbsDefault %}
+<!--Breadcrumbs-->
+<nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="#">Home</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a href="#">Library</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a href="#">Long list of item</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Another long list of items </li>
+  </ol>
+</nav>
+{% endset%}
+
+{% set breadcrumbsWrapping %}
+<!--Breadcrumbs-->
+<ol class="breadcrumb breadcrumb-wrap">
+  <li class="breadcrumb-item">
+    <a href="#">Home</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="#">Library</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="#">Long list of item</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">Another long list of item</li>
+</ol>
+{% endset%}

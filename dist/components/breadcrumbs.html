@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-components">
+<html lang="en" class="page-breadcrumbs">
   <head>
   <meta charset="UTF-8">
   <meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
-  <title>USPTO UI Design Library | Components</title>
+  <title>USPTO UI Design Library</title>
   <link rel="stylesheet" href="../assets/css/main.css">
  <link rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix />
 <link rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix />
@@ -336,7 +336,226 @@
 
   </div>
   <main id="main-content">
-  <h1>This is components page</h1>
+  <section>
+    <div class="pattern">
+      <h1>Breadcrumbs</h1>
+      <h2 id="purpose">Purpose</h2>
+      <p>Users need to understand their current location and navigate within a hierarchical navigation scheme.</p>
+      <h2 id="description">Description</h2>
+      <p>Breadcrumbs display the current path to a particular page relative to the starting point. Breadcrumbs provide a means for users to understand their current context in a hierarchical structure and the ability to navigate up the structure easily.</p>
+      <ul>
+        <li>Breadcrumbs display the current path as links separated by carets to indicate each level.</li>
+        <li>The navigation root is the first element, the current location is the last element</li>
+        <li>The current location is not clickable.</li>
+        <li>Clicking on a link takes you to that screen.</li>
+      </ul>
+      <p>Depending on the complexity of the navigational hierarchy and the type of page or application, it may make sense for the breadcrumb to represent only part of the hierarchy while sub tabs/trees/navigation represent the remaining hierarchy. In that case, you may want to make the far right element clickable.</p>
+    </div>
+    <div class="preview pv-sm">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Default breadcrumb</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for default breadcrumbs"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for default breadcrumbs"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Breadcrumbs--&gt;
+&lt;nav aria-label=&quot;breadcrumb&quot; role=&quot;navigation&quot;&gt;
+  &lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;Long list of item&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Another long list of items &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Breadcrumbs-->
+<nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="#">Home</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a href="#">Library</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a href="#">Long list of item</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Another long list of items </li>
+  </ol>
+</nav>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Breadcrumbs--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;breadcrumb&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;navigation&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Library<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Long list of item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item active&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>Another long list of items <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+    <div class="preview pv-sm">
+      
+
+  <div class="">
+    <div class="d-flex">
+
+        <h2>Wrapping breadcrumb</h2>
+
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for wrapping breadcrumbs"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for wrapping breadcrumbs"
+
+    >
+    <span class="material-icons">unfold_more</span>
+
+     View code
+
+  </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Breadcrumbs--&gt;
+&lt;ol class=&quot;breadcrumb breadcrumb-wrap&quot;&gt;
+  &lt;li class=&quot;breadcrumb-item&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;breadcrumb-item&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;breadcrumb-item&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Long list of item&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Another long list of item&lt;/li&gt;
+&lt;/ol&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+
+    <span class="material-icons">content_copy</span>
+
+     Copy code
+
+  </button></div>
+    </div>
+
+    <div class="preview-size">
+      <!--Breadcrumbs-->
+<ol class="breadcrumb breadcrumb-wrap">
+  <li class="breadcrumb-item">
+    <a href="#">Home</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="#">Library</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="#">Long list of item</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">Another long list of item</li>
+</ol>
+    </div>
+
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Breadcrumbs--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb breadcrumb-wrap&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Library<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Long list of item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item active&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>Another long list of item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>        </div>
+    </div>
+
+  </div>
+
+
+    </div>
+  </section>
     </main>
   </div>
       </div>
