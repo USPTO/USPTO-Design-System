@@ -27,6 +27,38 @@
   <div class="preview  pv-md"> {{  macros.viewCode({   ariaLabel: 'View code for slim alerts',    code: slimAlerts  }, 'Slim alert')}} </div>
   <div class="preview  pv-md"> {{  macros.viewCode({   ariaLabel: 'View code for no icon alerts',    code: noIconsAlerts  }, 'No icon alerts')}} </div>
 </section>
+<section>
+  <div class="pattern">
+   <h1 id="system-notifications">System notifications</h1>
+
+  <h2 id="purpose-1">Purpose</h2>
+  <p>Users need to be aware of important information related to the system.</p>
+
+  <h2 id="description-1">Description</h2>
+
+  <ul>
+    <li>System notifications appear in in the top right corner of the screen</li>
+    <li>They are usually triggered by events <em>unrelated</em> to the user’s interactions</li>
+    <li>They can be closable and can have other action buttons or links.</li>
+    <li>Notifications with low importance (info or success) can close automatically after 20 seconds (if desired)</li>
+    <li>Notifications with high importance (warning or danger) should not close automatically, unless the situation has been resolved in some other way</li>
+    <li>Optional <code class="highlighter-rouge">.toast-footer</code> can be added to further emphasize action buttons in system notifications</li>
+  </ul>
+<!--
+  <h2>Types</h2>
+
+  <ul>
+    <li><strong>Info</strong> notifications can be used for general messages that aren’t particularly critical</li>
+    <li><strong>Success</strong> notifications can be used for positive messages that don’t have a context to associate it with</li>
+    <li><strong>Warning</strong> notifications can be used for messages that likely require attention</li>
+    <li><strong>Danger</strong> notifications can be used for critical messages that require immediate attention</li>
+  </ul>
+  -->
+  
+  </div>
+  <div class="preview pv-md"> {{  macros.viewCode({   ariaLabel: 'View code for notification',    code: standardNotification  }, 'System notification')}} </div>
+</section>
+
 {% endblock %}
 
 {% set standardAlerts %} 
@@ -66,5 +98,21 @@
 </div>
 <div class="mb-2 alert alert-info alert-sm" role="alert">
   <div> This is a info slim alert with <a href="#" class="alert-link">an example link</a>. </div>
+</div>
+{% endset%}
+{% set standardNotification %} 
+<!--System alert-->
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#007aff"></rect></svg>
+    <strong class="mr-auto">Message sent</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Message sent to Jerry.
+  </div>
 </div>
 {% endset%}

@@ -4,8 +4,7 @@ Object.assign(exports, {
     {
       href: 'alertsNotifications.html',
       text: 'Alerts and notifications',
-      "children": [
-        { href: '#alerts-and-notifications', text: 'Alerts and notifications' },
+      "children": [      
         { href: '#contextual-alerts', text: 'Contextual alerts' },
         { href: '#system-notifications', text: 'System notifications' }
       ],
@@ -53,6 +52,7 @@ Object.assign(exports, {
         { href: '#select', text: 'Select' },
         { href: '#multi-select', text: 'Multi-select' },
         { href: '#date-picker', text: 'Date picker' },
+        { href: '#date-input', text: 'Date input' },
         { href: '#time-picker', text: 'Time picker' },
         { href: '#slider', text: 'Slider' },
         { href: '#rich-text-editor', text: 'Rich text editor' }

@@ -14,14 +14,14 @@ module.exports = {
     home: 'index.html',
   },
 
-  title: 'USPTO UI Design Library',
+  title: 'USPTO UI Design System',
 
   header: {
     links: [
       {
-        href: '',
-        text: 'Download',
-        title: 'Download',
+        href: 'https://github.com/uspto/designpatterns',
+        text: 'View on Github',
+        title: 'View on Github',
       }
     ]
   },
@@ -50,7 +50,7 @@ module.exports = {
         title: 'Patterns',
       },
       {
-        href: 'pageTemplates/pageTemplate1.html',
+        href: 'pageTemplates/pageTemplate.html',
         text: 'Page templates',
         title: 'Page templates',
       },

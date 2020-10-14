@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
-  <title>USPTO UI Design Library</title>
+  <title>USPTO UI Design System</title>
   <link rel="stylesheet" href="../assets/css/main.css">
  <link rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix />
 <link rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix />
@@ -80,56 +80,59 @@
           </div>
         </div>
       </div>
-    </section>      <header>
-<div class="navbar navbar-expand navbar-top ">
-  <a class="navbar-brand" href="../index.html" title="USPTO UI Design Library Home">
-      USPTO <span class="font-weight-light">Design</span>
-  </a>
-  <a class="ml-auto" href="" title="Download">
-    Download
-  </a>
-
-  
-</div><nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="header sub navigation">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="../howto.html" title="How to use DPL">
-          How to use DPL
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
-          Foundation
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../components/components.html" title="Components">
-          Components
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
-          Patterns
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../pageTemplates/pageTemplate1.html" title="Page templates">
-          Page templates
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../about/about.html" title="About">
-          About
-        </a>
-      </li>
-      
-    </ul>
+    </section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO UI Design Library Home">
+          USPTO <span class="font-weight-light">Design System</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/uspto/designpatterns" title="View on Github">
+      View on Github
+    </a>
   </div>
-</nav>      </header>
+  </div>
+  <div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../howto.html" title="How to use DPL">
+              How to use DPL
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
+              Page templates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
 
       <div class="main-container">
   <div class="d-sm-block d-md-none">
@@ -184,7 +187,6 @@
       <li>
         <a href="alertsNotifications.html" data-parent="Alerts and notifications">Alerts and notifications</a>
         <ul class="sidenav-sublist">
-          <li><a href="#alerts-and-notifications">Alerts and notifications</a></li>
           <li><a href="#contextual-alerts">Contextual alerts</a></li>
           <li><a href="#system-notifications">System notifications</a></li>
         </ul>
@@ -233,6 +235,7 @@
           <li><a href="#select">Select</a></li>
           <li><a href="#multi-select">Multi-select</a></li>
           <li><a href="#date-picker">Date picker</a></li>
+          <li><a href="#date-input">Date input</a></li>
           <li><a href="#time-picker">Time picker</a></li>
           <li><a href="#slider">Slider</a></li>
           <li><a href="#rich-text-editor">Rich text editor</a></li>
@@ -379,15 +382,11 @@
         <li>Buttons should use action verbs that describe by themselves what will happen on click (e.g., ‘Delete user’ instead of ‘Ok’)</li>
       </ul>
     </div>
-    <div class="preview">
+    <div class="preview pv-only">
       
-
-  <div class="">
-    <div class="d-flex">
-
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-1"
 
@@ -403,16 +402,11 @@
 
       title="View code for dialog"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Dialog--&gt;
-&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
   &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
@@ -442,18 +436,11 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  </div>
+  <div class="preview-size"> <!--Dialog-->
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -476,14 +463,11 @@
       </div>
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-1">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-1">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
@@ -506,22 +490,16 @@
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
-     <div class="preview">
+     <div class="preview pv-only">
       
-
-  <div class="">
-    <div class="d-flex">
-
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-2"
 
@@ -537,16 +515,11 @@
 
       title="View code for dialog"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Dialog--&gt;
-&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
   &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
@@ -595,18 +568,11 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  </div>
+  <div class="preview-size"> <!--Dialog-->
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -648,14 +614,11 @@
       </div>
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-2">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-2">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
@@ -697,22 +660,16 @@
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
-    <div class="preview">
+    <div class="preview pv-only">
       
-
-  <div class="">
-    <div class="d-flex">
-
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-3"
 
@@ -728,16 +685,11 @@
 
       title="View code for dialog"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Dialog--&gt;
-&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
   &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
     &lt;div class=&quot;modal-content&quot;&gt;
        &lt;div class=&quot;modal-header&quot;&gt;
@@ -763,18 +715,11 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  </div>
+  <div class="preview-size"> <!--Dialog-->
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
        <div class="modal-header">
@@ -793,14 +738,11 @@
       </div>
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-3">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-3">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
@@ -819,27 +761,21 @@
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
-    <div class="pattern">
+    <div class="pattern pv-only">
     <h1 id="confirmation">Confirmation</h1>
 
   <p>A confirmation dialog is short, simple dialog that ensures the user is performing an action intentionally. This is especially useful for dangerous or irreversible operations.</p>
     </div>
-    <div class="preview">
+    <div class="preview pv-only">
       
-
-  <div class="">
-    <div class="d-flex">
-
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-4"
 
@@ -855,16 +791,11 @@
 
       title="View code for dialog"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Dialog--&gt;
-&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
   &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
     &lt;div class=&quot;modal-content&quot;&gt;
        &lt;div class=&quot;modal-header&quot;&gt;
@@ -890,18 +821,11 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  </div>
+  <div class="preview-size"> <!--Dialog-->
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
        <div class="modal-header">
@@ -920,14 +844,11 @@
       </div>
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-4">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-4">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
@@ -946,22 +867,16 @@
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
-    <div class="preview">
+    <div class="preview pv-only">
       
-
-  <div class="">
-    <div class="d-flex">
-
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-5"
 
@@ -977,16 +892,11 @@
 
       title="View code for dialog"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Dialog--&gt;
-&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
   &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
     &lt;div class=&quot;modal-content&quot;&gt;
        &lt;div class=&quot;modal-header&quot;&gt;
@@ -1012,18 +922,11 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  </div>
+  <div class="preview-size"> <!--Dialog-->
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
        <div class="modal-header">
@@ -1042,14 +945,11 @@
       </div>
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-5">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-5">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
@@ -1068,11 +968,9 @@
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
 
@@ -1082,15 +980,11 @@
   <p>An actionless dialog may block user interaction for a period of time, usually until something finishes or some other event occurs.</p>
     </div>
 
-    <div class="preview">
+    <div class="preview pv-only">
       
-
-  <div class="">
-    <div class="d-flex">
-
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-6"
 
@@ -1106,16 +1000,11 @@
 
       title="View code for dialog"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Dialog--&gt;
-&lt;div class=&quot;modal position-relative d-block&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
   &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
     &lt;div class=&quot;modal-content&quot;&gt;
        
@@ -1137,18 +1026,11 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+  </div>
+  <div class="preview-size"> <!--Dialog-->
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
        
@@ -1163,14 +1045,11 @@
       
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-6">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal position-relative d-block&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-6">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Dialog--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-dialog&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
        
@@ -1185,11 +1064,9 @@
       
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
 

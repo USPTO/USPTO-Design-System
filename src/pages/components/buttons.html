@@ -15,104 +15,111 @@
       <p>There are 6 button styles:</p>
       <ul>
         <li>
-          <strong>Default</strong>, the general button style.</li>
-        <li>
           <strong>Primary</strong>, indicates the critical, or most important action on a form/page.</li>
         <li>
-          <strong>Danger</strong>, indicates a dangerous, generally destructive action, such as deleting.</li>
+          <strong>Secondary</strong>, the general button style.</li>
+
         <li>
           <strong>Success</strong>, indicates a positive action.</li>
+
+        <li>
+          <strong>Danger</strong>, indicates a dangerous, generally destructive action, such as deleting.</li>
+        
+        <li>
+          <strong>Info</strong>, indicates a informative action.</li>
         <li>
           <strong>Warning</strong>, indicates an action that may have some side effects, such as giving a user admin access.</li>
+       
         <li>
-          <strong>Link</strong>, used for non-critical actions. Useful for keeping the interface simple.</li>
-      </ul>
-      <p>All buttons are prefixed with the <code class="highlighter-rouge">btn</code> class. The <code class="highlighter-rouge">btn</code> class can be applied to any element. Try to use <code class="highlighter-rouge">&lt;button&gt;</code> elements when an action won’t change the URL/route, and <code class="highlighter-rouge">&lt;a&gt;</code> elements when the action will change the URL/route.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for button styles',    code: buttonStyles  }, 'Buttons')}}
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for button styles',    code: buttonOutline  }, 'Outline Buttons')}}
-    </div>
-    <div class="pattern">
-      <h2 id="disabled-state">Disabled state</h2>
-      <p>Inactive states of UI elements, including buttons, are not required to meet accessible contrast requirements. <a href="https://www.w3.org/TR/WCAG21/#non-text-contrast">See WCAG 2.1 Section 1.4.11</a>
-      </p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for disabled buttons',    code: buttonDisabled } )}}
-    </div>
-  </section>
-  <section>
-    <div class="pattern">
-      <h1 id="button-sizes">Button sizes</h1>
-      <p>There are 3 different button sizes:</p>
-      <ul>
-        <li>
-          <strong>Large</strong>, use the <code class="highlighter-rouge">btn-lg</code> class.</li>
-        <li>
-          <strong>Normal</strong>, no extra classes necessary.</li>
-        <li>
-          <strong>Small</strong>, use the <code class="highlighter-rouge">btn-sm</code> class.</li>
-      </ul>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for button sizes',    code: buttonSizes } )}}
-    </div>
-    <div class="pattern">
-      <h2 id="block-level-buttons">Block level buttons</h2>
-      <p>Use the <code class="highlighter-rouge">btn-block</code> class for buttons that fill the width of their container. These are useful for narrow containers and cleaning up alignment.</p>
-    </div>
-    <div class="preview pv-sm">
-      {{  macros.viewCode({   ariaLabel: 'View code for block buttons',    code: buttonBlock } )}}
-    </div>
-  </section>
-  <section>
-    <div class="pattern">
-      <h1 id="button-groups">Button groups</h1>
-      <p>Related buttons can be grouped together to show associations and improve clarity. Button groups can be sized using the <code class="highlighter-rouge">btn-group-lg</code>, and <code class="highlighter-rouge">btn-group-sm</code>.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for button groups',    code: buttonGroup } )}}
-    </div>
-  </section>
-  <section>
-    <div class="pattern">
-      <h1 id="toggle-buttons">Toggle buttons</h1>
-      <p>Similar to a checkbox, toggle buttons can be toggled between active or not active.</p>
-      <p>Add the <code class="highlighter-rouge">active</code> class and the <code class="highlighter-rouge">aria-pressed="true"</code> attribute to a button.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for toggle buttons',    code: buttonToggle } )}}
-    </div>
-  </section>
-  <section>
-    <div class="pattern">
-      <h1 id="dropdown-buttons">Dropdown buttons</h1>
-      <p>Dropdown buttons can provide a menu or popover when clicked.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for dropdown buttons',    code: buttonDropdown } )}}</div>
-  </section>
-  <section>
-    <div class="pattern">
-      <h1 id="split-buttons">Split buttons</h1>
-      <p>Split buttons contain both a button and a dropdown. Clicking the button performs the action. Clicking the dropdown reveals other actions. Generally, the button is the primary or most common action, and items in the dropdown are secondary or less common actions.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for split buttons',    code: buttonSplit } )}}</div>
-  </section>
-  <section>
-    <div class="pattern">
-      <h1 id="icon-buttons">Icon buttons</h1>
-      <p>Icon buttons are buttons with an icon inside. An icon button may or may not have text. Icon buttons can help save space or improve the ability to scan/find buttons quickly.</p>
-      <p>Use <code class="highlighter-rouge">btn-icon-only</code> for buttons with only an icon in it. This optimizes the padding.</p>
-      <p>For an icon without chrome, use a <code class="highlighter-rouge">btn-hover</code>.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for icon buttons',    code: buttonIcons } )}}</div>
-  </section>
+          <strong>Light</strong>, the general button style for dark background.</li>
+        <li><strong>Link</strong>, used for non-critical actions. Useful for keeping the interface simple.</li>
+    </ul>
+    <p>All buttons are prefixed with the <code class="highlighter-rouge">btn</code> class. The <code class="highlighter-rouge">btn</code> class can be applied to any element. Try to use <code class="highlighter-rouge">&lt;button&gt;</code> elements when an action won’t change the URL/route, and <code class="highlighter-rouge">&lt;a&gt;</code> elements when the action will change the URL/route.</p>
+  </div>
+  <div class="preview">
+    {{  macros.viewCode({   ariaLabel: 'View code for button styles',    code: buttonStyles  }, 'Buttons')}}
+  </div>
+  <div class="preview">
+    {{  macros.viewCode({   ariaLabel: 'View code for button styles',    code: buttonOutline  }, 'Outline Buttons')}}
+  </div>
+  <div class="pattern">
+    <h2 id="disabled-state">Disabled state</h2>
+    <p>Inactive states of UI elements, including buttons, are not required to meet accessible contrast requirements. <a href="https://www.w3.org/TR/WCAG21/#non-text-contrast">See WCAG 2.1 Section 1.4.11</a>
+    </p>
+  </div>
+  <div class="preview">
+    {{  macros.viewCode({   ariaLabel: 'View code for disabled buttons',    code: buttonDisabled } )}}
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h1 id="button-sizes">Button sizes</h1>
+    <p>There are 3 different button sizes:</p>
+    <ul>
+      <li>
+        <strong>Large</strong>, use the <code class="highlighter-rouge">btn-lg</code> class.</li>
+      <li>
+        <strong>Normal</strong>, no extra classes necessary.</li>
+      <li>
+        <strong>Small</strong>, use the <code class="highlighter-rouge">btn-sm</code> class.</li>
+    </ul>
+  </div>
+  <div class="preview">
+    {{  macros.viewCode({   ariaLabel: 'View code for button sizes',    code: buttonSizes } )}}
+  </div>
+  <div class="pattern">
+    <h2 id="block-level-buttons">Block level buttons</h2>
+    <p>Use the <code class="highlighter-rouge">btn-block</code> class for buttons that fill the width of their container. These are useful for narrow containers and cleaning up alignment.</p>
+  </div>
+  <div class="preview pv-sm">
+    {{  macros.viewCode({   ariaLabel: 'View code for block buttons',    code: buttonBlock } )}}
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h1 id="button-groups">Button groups</h1>
+    <p>Related buttons can be grouped together to show associations and improve clarity. Button groups can be sized using the <code class="highlighter-rouge">btn-group-lg</code>, and <code class="highlighter-rouge">btn-group-sm</code>.</p>
+  </div>
+  <div class="preview">
+    {{  macros.viewCode({   ariaLabel: 'View code for button groups',    code: buttonGroup } )}}
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h1 id="toggle-buttons">Toggle buttons</h1>
+    <p>Similar to a checkbox, toggle buttons can be toggled between active or not active.</p>
+    <p>Add the <code class="highlighter-rouge">active</code> class and the <code class="highlighter-rouge">aria-pressed="true"</code> attribute to a button.</p>
+  </div>
+  <div class="preview">
+    {{  macros.viewCode({   ariaLabel: 'View code for toggle buttons',    code: buttonToggle } )}}
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h1 id="dropdown-buttons">Dropdown buttons</h1>
+    <p>Dropdown buttons can provide a menu or popover when clicked.</p>
+  </div>
+  <div class="preview">
+    {{  macros.viewCode({   ariaLabel: 'View code for dropdown buttons',    code: buttonDropdown } )}}</div>
+</section>
+<section>
+  <div class="pattern">
+    <h1 id="split-buttons">Split buttons</h1>
+    <p>Split buttons contain both a button and a dropdown. Clicking the button performs the action. Clicking the dropdown reveals other actions. Generally, the button is the primary or most common action, and items in the dropdown are secondary or less common actions.</p>
+  </div>
+  <div class="preview">
+    {{  macros.viewCode({   ariaLabel: 'View code for split buttons',    code: buttonSplit } )}}</div>
+</section>
+<section>
+  <div class="pattern">
+    <h1 id="icon-buttons">Icon buttons</h1>
+    <p>Icon buttons are buttons with an icon inside. An icon button may or may not have text. Icon buttons can help save space or improve the ability to scan/find buttons quickly.</p>
+    <p>Use <code class="highlighter-rouge">btn-icon-only</code> for buttons with only an icon in it. This optimizes the padding.</p>
+    <p>For an icon without chrome, use a <code class="highlighter-rouge">btn-hover</code>.</p>
+  </div>
+  <div class="preview">
+    {{  macros.viewCode({   ariaLabel: 'View code for icon buttons',    code: buttonIcons } )}}</div>
+</section>
 {% endblock %}
 {% set buttonStyles %}
 <!--Button styles-->
@@ -124,7 +131,7 @@
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-light">Light</button>
 <button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn btn-link btn-lg">Link</button>
+<button type="button" class="btn btn-link">Link</button>
 {% endset%}
 
 {% set buttonOutline %}
@@ -137,23 +144,16 @@
 <button type="button" class="btn btn-outline-warning">Warning</button>
 <button type="button" class="btn btn-outline-dark">Dark</button>
 <div class="p-2 mt-3 bg-dark">
-  <button type="button" class="btn btn-outline-light">Light</button>
-  <button type="button" class="btn btn-outline-light" disabled="">Disabled</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-light" disabled="">Disabled</button>
 </div>
 {% endset%}
 
 {% set buttonDisabled %}
 <!--Button disabled states-->
-<button type="button" class="btn btn-primary" disabled>Primary</button>
-<button type="button" class="btn btn-danger" disabled>Danger</button>
-<button type="button" class="btn btn-secondary" disabled>Secondary</button>
-<button type="button" class="btn btn-info" disabled>Info</button>
-<button type="button" class="btn btn-success" disabled>Success</button>
-<button type="button" class="btn btn-warning" disabled>Warning</button>
-<button type="button" class="btn btn-light" disabled>Light</button>
-<button type="button" class="btn btn-dark" disabled>Dark</button>
-<button type="button" class="btn btn-link btn-lg" disabled>Link</button>
+<button type="button" class="btn btn-primary" disabled>Button</button>
 <button type="button" class="btn btn-outline-info" disabled="">Disabled</button>
+<button type="button" class="btn btn-link" disabled>Link</button>
 {% endset%}
 {% set buttonSizes %}
 <button type="button" class="btn btn-lg btn-primary">Button</button>
@@ -162,20 +162,24 @@
 {% endset%}
 
 {% set buttonBlock %}
-<div><button type="button" class="btn btn-primary btn-block">Block level</button></div>
-<div class="mt-2"><button type="button" class="btn btn-secondary btn-block">Block level</button></div>
+<div>
+<button type="button" class="btn btn-primary btn-block">Block level</button>
+</div>
+<div class="mt-2">
+<button type="button" class="btn btn-secondary btn-block">Block level</button>
+</div>
 {% endset%}
 
 {% set buttonGroup %}
 <div class="btn-group" role="group" aria-label="Button group example">
-  <button type="button" class="btn btn-primary">Left</button>
-  <button type="button" class="btn btn-outline-primary">Middle</button>
-  <button type="button" class="btn btn-outline-primary">Right</button>
+<button type="button" class="btn btn-primary">Left</button>
+<button type="button" class="btn btn-outline-primary">Middle</button>
+<button type="button" class="btn btn-outline-primary">Right</button>
 </div>
 <div class="btn-group" role="group" aria-label="Button group example">
-  <button type="button" class="btn btn-secondary active">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
+<button type="button" class="btn btn-secondary active">Left</button>
+<button type="button" class="btn btn-secondary">Middle</button>
+<button type="button" class="btn btn-secondary">Right</button>
 </div>
 {% endset%}
 
@@ -183,71 +187,71 @@
 <button type="button" class="btn btn-primary active" aria-pressed="true">Active</button>
 <button type="button" class="btn btn-primary">Normal</button>
 <div class="btn-group">
-  <button type="button" class="btn btn-primary">Left</button>
-  <button type="button" class="btn btn-primary active" aria-pressed="true">Active</button>
-  <button type="button" class="btn btn-primary">Right</button>
+<button type="button" class="btn btn-primary">Left</button>
+<button type="button" class="btn btn-primary active" aria-pressed="true">Active</button>
+<button type="button" class="btn btn-primary">Right</button>
 </div>
 {% endset %}
 
 {%set buttonDropdown%}
 <div class="input-group">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <div role="separator" class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
-  </div>
+<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+<div class="dropdown-menu">
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+  <a class="dropdown-item" href="#">Something else here</a>
+  <div role="separator" class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">Separated link</a>
+</div>
 </div>
 {% endset %}
 
 {%set buttonSplit%}
 <div class="row">
-  <div class="col-auto">
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
-      </button>
-      <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(100px, 38px, 0px);">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-      </div>
+<div class="col-auto">
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(100px, 38px, 0px);">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
     </div>
   </div>
-  <div class="col-auto">
-    <div class="btn-group">
-      <button type="button" class="btn btn-secondary">Secondary</button>
-      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-      </div>
+</div>
+<div class="col-auto">
+  <div class="btn-group">
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
     </div>
   </div>
+</div>
 </div>
 {% endset %}
 
 {%set buttonIcons%}
 <button class="btn btn-secondary  md-icon" type="button">
-  <i class="material-icons">mode_comment</i> Search </button>
+<i class="material-icons">mode_comment</i> Search </button>
 <button class="btn btn-secondary  md-icon" type="button">
-  <i class="material-icons">print</i>
+<i class="material-icons">print</i>
 </button>
 <button class="btn btn-primary  md-icon" type="button">
-  <i class="material-icons">save</i>
+<i class="material-icons">save</i>
 </button>
 <button class="btn btn-outline-secondary  md-icon" type="button">
-  <i class="material-icons">date_range</i>
+<i class="material-icons">date_range</i>
 </button>
 <button class="btn btn-secondary  md-icon" type="button"> Lock <i class="material-icons">arrow_forward</i>
 </button>

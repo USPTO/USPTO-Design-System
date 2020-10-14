@@ -2,6 +2,11 @@
 
 
 $(function () {
+// initialize popover
+$('[data-toggle="popover"]').popover();
+
+
+
 
   //add active class to side nav li and aria-current to a tag
   var file = location.pathname.split('/').pop() // set `current` page
@@ -19,11 +24,16 @@ $(function () {
   var clipboard = new ClipboardJS('.clipboard');
   clipboard.on('success', function (e) {
     $(e.trigger).html("<span class=\"material-icons\">check</span> Copied!");
+    $(e.trigger).toggleClass('btn-light btn-success');
     e.clearSelection();
     setTimeout(function () {
       $(e.trigger).html("<span class=\"material-icons\">content_copy</span> Copy Code");
+      $(e.trigger).toggleClass('btn-light btn-success');
     }, 2500);
+   
   });
+
+
 
   // dropdown on change for left nav in mobile view
   $("#leftSideNav").change(function () {

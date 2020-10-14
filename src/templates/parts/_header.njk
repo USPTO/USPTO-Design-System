@@ -1,19 +1,19 @@
-<div class="navbar navbar-expand navbar-top ">
-  <a class="navbar-brand" href="{{ relativeRoot }}{{ links.home }}" title="USPTO UI Design Library Home">
-      USPTO <span class="font-weight-light">Design</span>
-  </a>
-  <a class="ml-auto" href="{{ header.links[0].href }}" title="{{ header.links[0].title }}">
-    {{ header.links[0].text | safe }}
-  </a>
-
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="{{ relativeRoot }}{{ links.home }}" title="USPTO UI Design Library Home">
+          USPTO <span class="font-weight-light">Design System</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="{{ header.links[0].href }}" title="{{ header.links[0].title }}">
+      {{ header.links[0].text | safe }}
+    </a>
+  </div>
+  </div>
   {# Since there is only one link - list doesnt make any sense
-    <ul class="navbar-nav ml-auto">
-      {% for link in header.links %}
-        <li class="nav-item">
-          <a class="nav-link " href="{{ relativeRoot }}{{ link.href }}" title="{{ link.title or link.text }}">
-            {{ link.text | safe }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul> #}
-</div>
+      <div class="nav-collapse-section">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    </div>
+    #}

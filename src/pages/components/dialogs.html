@@ -45,24 +45,24 @@
         <li>Buttons should use action verbs that describe by themselves what will happen on click (e.g., ‘Delete user’ instead of ‘Ok’)</li>
       </ul>
     </div>
-    <div class="preview">
+    <div class="preview pv-only">
       {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogDefault  },  "")}}
     </div>
-     <div class="preview">
+     <div class="preview pv-only">
       {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogFindReplace  },  "")}}
     </div>
-    <div class="preview">
+    <div class="preview pv-only">
       {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogSuccess  },  "")}}
     </div>
-    <div class="pattern">
+    <div class="pattern pv-only">
     <h1 id="confirmation">Confirmation</h1>
 
   <p>A confirmation dialog is short, simple dialog that ensures the user is performing an action intentionally. This is especially useful for dangerous or irreversible operations.</p>
     </div>
-    <div class="preview">
+    <div class="preview pv-only">
       {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogDelete  },  "")}}
     </div>
-    <div class="preview">
+    <div class="preview pv-only">
       {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogAbandon  },  "")}}
     </div>
 
@@ -72,7 +72,7 @@
   <p>An actionless dialog may block user interaction for a period of time, usually until something finishes or some other event occurs.</p>
     </div>
 
-    <div class="preview">
+    <div class="preview pv-only">
       {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogActionless  },  "")}}
     </div>
 
@@ -147,7 +147,7 @@
 {% endblock %}
 {% set dialogDefault %}
 <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -175,7 +175,7 @@
 
 {% set dialogFindReplace %}
 <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -222,7 +222,7 @@
 
 {% set dialogSuccess %}
 <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
        <div class="modal-header">
@@ -246,7 +246,7 @@
 
 {% set dialogDelete %}
 <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
        <div class="modal-header">
@@ -270,7 +270,7 @@
 
 {% set dialogAbandon %}
 <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
        <div class="modal-header">
@@ -294,7 +294,7 @@
 
 {% set dialogActionless %}
 <!--Dialog-->
-<div class="modal position-relative d-block" tabindex="-1" role="dialog">
+<div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
        

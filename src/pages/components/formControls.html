@@ -65,12 +65,13 @@
         <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
       </ul>
     </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for radio button',    code: radioButton  },  "Default radio button")}}
-    </div>
+    
 
     <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for custom radio button',    code: radioButtonCustom  },  "Custom radio button")}}
+      {{  macros.viewCode({   ariaLabel: 'View code for custom radio button',    code: radioButtonCustom  },  "Radio button")}}
+    </div>
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for radio button',    code: radioButton  },  "Browser radio button")}}
     </div>
   </section>
   <section>
@@ -95,12 +96,13 @@
       </ul>
     </div>
 
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for checkboxes',    code: checkboxesDefault  },  "Default checkboxes")}}
-    </div>
+    
 
     <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for custom checkboxes',    code: checkboxesCustom  },  "Custom checkboxes")}}
+      {{  macros.viewCode({   ariaLabel: 'View code for custom checkboxes',    code: checkboxesCustom  },  "Checkboxes")}}
+    </div>
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for checkboxes',    code: checkboxesDefault  },  "Browser checkboxes")}}
     </div>
   </section>
 
@@ -138,11 +140,12 @@
         </li>
       </ul>
     </div>
+    
     <div class="preview pv-sm">
-      {{  macros.viewCode({   ariaLabel: 'View code for select',    code: Select  },  "Default select")}}
+      {{  macros.viewCode({   ariaLabel: 'View code for toggle switches',    code: selectCustom  },  "Select")}}
     </div>
     <div class="preview pv-sm">
-      {{  macros.viewCode({   ariaLabel: 'View code for toggle switches',    code: selectCustom  },  "Custom select")}}
+      {{  macros.viewCode({   ariaLabel: 'View code for select',    code: Select  },  "Browser select")}}
     </div>
   </section>
 
@@ -177,6 +180,15 @@
       {{  macros.viewCode({   ariaLabel: 'View code for date picker',    code: datePicker  },  "")}}
 
     </div>
+    <div class="pattern">
+   <h1 id="date-input">Date input</h1> 
+<p>Three text fields are the easiest way for users to enter most dates. </p>
+    </div>
+<div class="preview pv-sm">
+      {{  macros.viewCode({   ariaLabel: 'View code for date input',    code: dateInput  },  "")}}
+
+    </>
+    
   </section>
 
 {% endblock %}
@@ -362,7 +374,7 @@
 {% set selectCustom %}
 <!--Custom select-->
 <div class="form-group">
-<label for="exampleFormControlSelect3" class="mt-2">Custom select</label>
+<label for="exampleFormControlSelect3" class="mt-2">Select</label>
 <select class="custom-select" id="exampleFormControlSelect3">
   <option selected="">Select menu</option>
   <option value="1">One</option>
@@ -373,7 +385,7 @@
 </select>
 </div>
 <div class="form-group">
-<label for="exampleFormControlSelect4" class="mt-2">Custom select small</label>
+<label for="exampleFormControlSelect4" class="mt-2">Small select</label>
 <select class="custom-select custom-select-sm" id="exampleFormControlSelect4">
   <option selected="">Select small menu</option>
   <option value="1">One</option>
@@ -384,7 +396,7 @@
 </select>
 </div>
 <div class="form-group">
-<label for="exampleFormControlSelect5" class="mt-2">Custom select large</label>
+<label for="exampleFormControlSelect5" class="mt-2">Large select</label>
 <select class="custom-select custom-select-lg" id="exampleFormControlSelect5">
   <option selected="">Select large menu</option>
   <option value="1">One</option>
@@ -399,7 +411,7 @@
 {% set selectMultiple %}
 <!--Multiple select-->
 <div class="form-group">
-  <label for="exampleFormControlSelect6" class="mt-2">Custom select</label>
+  <label for="exampleFormControlSelect6" class="mt-2">Select</label>
   <select class="custom-select" multiple id="exampleFormControlSelect6">
     <option value="value1">Option A</option>
     <option value="value2">Option B</option>
@@ -408,7 +420,7 @@
   </select>
 </div>
 <div class="form-group">
-  <label for="exampleFormControlSelect6" class="mt-2">Custom select</label>
+  <label for="exampleFormControlSelect6" class="mt-2">Select</label>
   <select class="custom-select" multiple id="exampleFormControlSelect6" disabled>
     <option value="value1">Option A</option>
     <option value="value2">Option B</option>
@@ -431,4 +443,26 @@
     </div>
   </div>
 </div>
+{% endset%}
+
+{% set dateInput %}
+<!--Date input field-->
+<fieldset class="usa-fieldset">
+    <legend class="usa-legend">Date of birth</legend>
+    <span class="usa-hint" id="dobHint">For example: 4 28 1986</span>
+    <div class="usa-memorable-date">
+      <div class="usa-form-group usa-form-group--month">
+        <label class="usa-label" for="date_of_birth_1">Month</label>
+        <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_1" name="date_of_birth_1" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
+      </div>
+      <div class="usa-form-group usa-form-group--day">
+        <label class="usa-label" for="date_of_birth_2">Day</label>
+        <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_2" name="date_of_birth_2" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
+      </div>
+      <div class="usa-form-group usa-form-group--year">
+        <label class="usa-label" for="date_of_birth_3">Year</label>
+        <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_3" name="date_of_birth_3" type="text" minlength="4" maxlength="4" pattern="[0-9]*" inputmode="numeric" value="">
+      </div>
+    </div>
+  </fieldset>
 {% endset%}

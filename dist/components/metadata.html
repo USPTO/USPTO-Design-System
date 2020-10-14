@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-breadcrumbs">
+<html lang="en" class="page-metadata">
   <head>
   <meta charset="UTF-8">
   <meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
@@ -341,29 +341,34 @@
   <main id="main-content">
   <section>
     <div class="pattern">
-      <h1>Breadcrumbs</h1>
-      <h2 id="purpose">Purpose</h2>
-      <p>Users need to understand their current location and navigate within a hierarchical navigation scheme.</p>
-      <h2 id="description">Description</h2>
-      <p>Breadcrumbs display the current path to a particular page relative to the starting point. Breadcrumbs provide a means for users to understand their current context in a hierarchical structure and the ability to navigate up the structure easily.</p>
+      <h1>Metadata</h1>
+      <p>The metadata pattern can be used for showing label/value pairs.</p>
+
+      <p>
+        <strong>Do</strong>
+      </p>
+
       <ul>
-        <li>Breadcrumbs display the current path as links separated by carets to indicate each level.</li>
-        <li>The navigation root is the first element, the current location is the last element</li>
-        <li>The current location is not clickable.</li>
-        <li>Clicking on a link takes you to that screen.</li>
+        <li>Consistently use <code class="highlighter-rouge">#</code> or <code class="highlighter-rouge">number</code> in labels</li>
+        <li>Indicate empty/blank values with an em-dash (—)</li>
+        <li>Reflow columns based on available screen real estate</li>
+        <li>Sentence case labels</li>
       </ul>
-      <p>Depending on the complexity of the navigational hierarchy and the type of page or application, it may make sense for the breadcrumb to represent only part of the hierarchy while sub tabs/trees/navigation represent the remaining hierarchy. In that case, you may want to make the far right element clickable.</p>
+
     </div>
-    <div class="preview pv-sm">
+    <div class="pattern">
+      <h1 id="horizontal">Horizontal</h1>
+      <p>Useful for shorter labels/values.</p>
+    </div>
+    <div class="preview">
       
 <div class="">
-  <div class="d-flex">     <h2>Default breadcrumb</h2>
-    <div class=" ml-auto"> 
+  <div class="d-flex">     <div class=" ml-auto"> 
       <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-1"
 
-      aria-label="View code for default breadcrumbs"
+      aria-label="View code for horizontal metadata"
 
       aria-expanded="false"
 
@@ -373,26 +378,24 @@
 
       type="button"
 
-      title="View code for default breadcrumbs"
+      title="View code for horizontal metadata"
 
     > <span class="material-icons">unfold_more</span> View code </button>
       <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Breadcrumbs--&gt;
-&lt;nav aria-label=&quot;breadcrumb&quot; role=&quot;navigation&quot;&gt;
-  &lt;ol class=&quot;breadcrumb&quot;&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Long list of item&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Another long list of items &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;
+      data-clipboard-text="&lt;!--Horizontal metadata--&gt;
+&lt;dl class=&quot;dl-horizontal&quot;&gt;
+  &lt;dt&gt;Examiner&lt;/dt&gt;
+  &lt;dd&gt;IP, Sikyin / 69776 / 1742&lt;/dd&gt;
+  &lt;dt&gt;SPE (multiple)&lt;/dt&gt;
+  &lt;dd&gt;John Olaskey&lt;/dd&gt;
+  &lt;dt&gt;Applicants&lt;/dt&gt;
+  &lt;dd&gt;Roman Amirpur&lt;/dd&gt;
+  &lt;dt&gt;Inventors&lt;/dt&gt;
+  &lt;dd&gt;Disney Dale&lt;/dd&gt;
+  &lt;dt&gt;Law firm&lt;/dt&gt;
+  &lt;dd&gt;Clayton &amp;amp; Clayton Associates&lt;/dd&gt;
+&lt;/dl&gt;
 "
 
       type="button"
@@ -402,52 +405,51 @@
     > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
   </div>
-  <div class="preview-size"> <!--Breadcrumbs-->
-<nav aria-label="breadcrumb" role="navigation">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a href="#">Home</a>
-    </li>
-    <li class="breadcrumb-item">
-      <a href="#">Library</a>
-    </li>
-    <li class="breadcrumb-item">
-      <a href="#">Long list of item</a>
-    </li>
-    <li class="breadcrumb-item active" aria-current="page">Another long list of items </li>
-  </ol>
-</nav> </div>
+  <div class="preview-size"> <!--Horizontal metadata-->
+<dl class="dl-horizontal">
+  <dt>Examiner</dt>
+  <dd>IP, Sikyin / 69776 / 1742</dd>
+  <dt>SPE (multiple)</dt>
+  <dd>John Olaskey</dd>
+  <dt>Applicants</dt>
+  <dd>Roman Amirpur</dd>
+  <dt>Inventors</dt>
+  <dd>Disney Dale</dd>
+  <dt>Law firm</dt>
+  <dd>Clayton &amp; Clayton Associates</dd>
+</dl> </div>
   <div class="collapse line-numbers pt-2" id="codebox-1">
    Example HTML usage:
-    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Breadcrumbs--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;breadcrumb&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;navigation&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Library<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Long list of item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item active&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>Another long list of items <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre> </div>
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Horizontal metadata--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dl-horizontal&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Examiner<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>IP, Sikyin / 69776 / 1742<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>SPE (multiple)<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>John Olaskey<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Applicants<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Roman Amirpur<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Inventors<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Disney Dale<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Law firm<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Clayton <span class="hljs-symbol">&amp;amp;</span> Clayton Associates<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre> </div>
  </div>
 </div>
 
     </div>
-    <div class="preview pv-sm">
+    <div class="pattern">
+      <h1 id="vertical">Vertical</h1>
+      <p>Useful for longer labels/values.</p>
+    </div>
+    <div class="preview ">
       
 <div class="">
-  <div class="d-flex">     <h2>Wrapping breadcrumb</h2>
-    <div class=" ml-auto"> 
+  <div class="d-flex">     <div class=" ml-auto"> 
       <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-2"
 
-      aria-label="View code for wrapping breadcrumbs"
+      aria-label="View code for vertical metadata"
 
       aria-expanded="false"
 
@@ -457,24 +459,23 @@
 
       type="button"
 
-      title="View code for wrapping breadcrumbs"
+      title="View code for vertical metadata"
 
     > <span class="material-icons">unfold_more</span> View code </button>
       <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Breadcrumbs--&gt;
-&lt;ol class=&quot;breadcrumb breadcrumb-wrap&quot;&gt;
-  &lt;li class=&quot;breadcrumb-item&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;breadcrumb-item&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;breadcrumb-item&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;Long list of item&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Another long list of item&lt;/li&gt;
-&lt;/ol&gt;
+      data-clipboard-text="&lt;!--Vertical metadata--&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Examiner&lt;/dt&gt;
+  &lt;dd&gt;IP, Sikyin / 69776 / 1742&lt;/dd&gt;
+  &lt;dt&gt;SPE (multiple)&lt;/dt&gt;
+  &lt;dd&gt;John Olaskey&lt;/dd&gt;
+  &lt;dt&gt;Publication #&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;a href=&quot;&quot;&gt;32132132132 &lt;i class=&quot;icon icon-external-link&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
 "
 
       type="button"
@@ -484,34 +485,182 @@
     > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
   </div>
-  <div class="preview-size"> <!--Breadcrumbs-->
-<ol class="breadcrumb breadcrumb-wrap">
-  <li class="breadcrumb-item">
-    <a href="#">Home</a>
-  </li>
-  <li class="breadcrumb-item">
-    <a href="#">Library</a>
-  </li>
-  <li class="breadcrumb-item">
-    <a href="#">Long list of item</a>
-  </li>
-  <li class="breadcrumb-item active" aria-current="page">Another long list of item</li>
-</ol> </div>
+  <div class="preview-size"> <!--Vertical metadata-->
+<dl>
+  <dt>Examiner</dt>
+  <dd>IP, Sikyin / 69776 / 1742</dd>
+  <dt>SPE (multiple)</dt>
+  <dd>John Olaskey</dd>
+  <dt>Publication #</dt>
+  <dd>
+    <a href="">32132132132 <i class="icon icon-external-link"></i>
+    </a>
+  </dd>
+</dl> </div>
   <div class="collapse line-numbers pt-2" id="codebox-2">
    Example HTML usage:
-    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Breadcrumbs--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb breadcrumb-wrap&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Library<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Long list of item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item active&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>Another long list of item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre> </div>
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Vertical metadata--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Examiner<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>IP, Sikyin / 69776 / 1742<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>SPE (multiple)<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>John Olaskey<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Publication #<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>32132132132 <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-external-link&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
+
+    </div>
+    <div class="pattern">
+      <h1 id="horizontal">Inline</h1>
+      <p>Useful for few labels/values.</p>
+    </div>
+    <div class="preview">
+      
+<div class="">
+  <div class="d-flex">     <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for inline metadata"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for inline metadata"
+
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Inline metadata--&gt;
+&lt;dl class=&quot;dl-inline&quot;&gt;
+  &lt;dt&gt;Created&lt;/dt&gt;
+  &lt;dd&gt;Mar 5, 2014&lt;/dd&gt;
+  &lt;dt&gt;Views&lt;/dt&gt;
+  &lt;dd&gt;1,662&lt;/dd&gt;
+  &lt;dt&gt;Status&lt;/dt&gt;
+  &lt;dd&gt;Approved&lt;/dd&gt;
+&lt;/dl&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    > <span class="material-icons">content_copy</span> Copy code </button>
+    </div>
+  </div>
+  <div class="preview-size"> <!--Inline metadata-->
+<dl class="dl-inline">
+  <dt>Created</dt>
+  <dd>Mar 5, 2014</dd>
+  <dt>Views</dt>
+  <dd>1,662</dd>
+  <dt>Status</dt>
+  <dd>Approved</dd>
+</dl> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-3">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Inline metadata--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dl-inline&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Created<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Mar 5, 2014<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Views<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>1,662<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Status<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Approved<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
+
+    </div>
+    <div class="pattern">
+      <h1 id="horizontal">Inverse</h1>
+      <p>For scenarios where the label pair bolding should be reversed use <code class="highlighter-rouge">.dl-inverse</code>.</p>
+    </div>
+    <div class="preview">
+      
+<div class="">
+  <div class="d-flex">     <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for inverse metadata"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for inverse metadata"
+
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Inverse metadata--&gt;
+&lt;dl class=&quot;dl-horizontal dl-inverse&quot;&gt;
+  &lt;dt&gt;Examiner&lt;/dt&gt;
+  &lt;dd&gt;IP, Sikyin / 69776 / 1742&lt;/dd&gt;
+  &lt;dt&gt;SPE (multiple)&lt;/dt&gt;
+  &lt;dd&gt;John Olaskey&lt;/dd&gt;
+  &lt;dt&gt;Applicants&lt;/dt&gt;
+  &lt;dd&gt;Roman Amirpur&lt;/dd&gt;
+  &lt;dt&gt;Inventors&lt;/dt&gt;
+  &lt;dd&gt;Disney Dale&lt;/dd&gt;
+  &lt;dt&gt;Law firm&lt;/dt&gt;
+  &lt;dd&gt;Clayton &amp;amp; Clayton Associates&lt;/dd&gt;
+&lt;/dl&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    > <span class="material-icons">content_copy</span> Copy code </button>
+    </div>
+  </div>
+  <div class="preview-size"> <!--Inverse metadata-->
+<dl class="dl-horizontal dl-inverse">
+  <dt>Examiner</dt>
+  <dd>IP, Sikyin / 69776 / 1742</dd>
+  <dt>SPE (multiple)</dt>
+  <dd>John Olaskey</dd>
+  <dt>Applicants</dt>
+  <dd>Roman Amirpur</dd>
+  <dt>Inventors</dt>
+  <dd>Disney Dale</dd>
+  <dt>Law firm</dt>
+  <dd>Clayton &amp; Clayton Associates</dd>
+</dl> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-4">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Inverse metadata--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dl-horizontal dl-inverse&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Examiner<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>IP, Sikyin / 69776 / 1742<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>SPE (multiple)<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>John Olaskey<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Applicants<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Roman Amirpur<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Inventors<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Disney Dale<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Law firm<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Clayton <span class="hljs-symbol">&amp;amp;</span> Clayton Associates<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre> </div>
  </div>
 </div>
 

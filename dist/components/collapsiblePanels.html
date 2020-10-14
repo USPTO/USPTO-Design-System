@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
-  <title>USPTO UI Design Library</title>
+  <title>USPTO UI Design System</title>
   <link rel="stylesheet" href="../assets/css/main.css">
  <link rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix />
 <link rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix />
@@ -80,56 +80,59 @@
           </div>
         </div>
       </div>
-    </section>      <header>
-<div class="navbar navbar-expand navbar-top ">
-  <a class="navbar-brand" href="../index.html" title="USPTO UI Design Library Home">
-      USPTO <span class="font-weight-light">Design</span>
-  </a>
-  <a class="ml-auto" href="" title="Download">
-    Download
-  </a>
-
-  
-</div><nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="header sub navigation">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="../howto.html" title="How to use DPL">
-          How to use DPL
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
-          Foundation
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../components/components.html" title="Components">
-          Components
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
-          Patterns
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../pageTemplates/pageTemplate1.html" title="Page templates">
-          Page templates
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../about/about.html" title="About">
-          About
-        </a>
-      </li>
-      
-    </ul>
+    </section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO UI Design Library Home">
+          USPTO <span class="font-weight-light">Design System</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/uspto/designpatterns" title="View on Github">
+      View on Github
+    </a>
   </div>
-</nav>      </header>
+  </div>
+  <div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../howto.html" title="How to use DPL">
+              How to use DPL
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
+              Page templates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
 
       <div class="main-container">
   <div class="d-sm-block d-md-none">
@@ -184,7 +187,6 @@
       <li>
         <a href="alertsNotifications.html" data-parent="Alerts and notifications">Alerts and notifications</a>
         <ul class="sidenav-sublist">
-          <li><a href="#alerts-and-notifications">Alerts and notifications</a></li>
           <li><a href="#contextual-alerts">Contextual alerts</a></li>
           <li><a href="#system-notifications">System notifications</a></li>
         </ul>
@@ -233,6 +235,7 @@
           <li><a href="#select">Select</a></li>
           <li><a href="#multi-select">Multi-select</a></li>
           <li><a href="#date-picker">Date picker</a></li>
+          <li><a href="#date-input">Date input</a></li>
           <li><a href="#time-picker">Time picker</a></li>
           <li><a href="#slider">Slider</a></li>
           <li><a href="#rich-text-editor">Rich text editor</a></li>
@@ -363,13 +366,10 @@
     </div>
     <div class="preview pv-md">      
       
-
-  <div class="">
-    <div class="d-flex">
-
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <h2>Expand/collapse all</h2>
+    <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-1"
 
@@ -385,13 +385,8 @@
 
       title="View code for accordion"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Accordion--&gt;
 &lt;div class=&quot;panel-toggler mb-2&quot;&gt;
@@ -462,17 +457,10 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Accordion-->
+  </div>
+  <div class="preview-size"> <!--Accordion-->
 <div class="panel-toggler mb-2">
         <a href="" id="expand-all">Expand all</a>&nbsp;|&nbsp;<a href="" id="collapse-all">Collapse all</a>
       </div>
@@ -534,13 +522,10 @@
         labore sustainable VHS. </div>
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-1">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Accordion--&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-1">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Accordion--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;panel-toggler mb-2&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;expand-all&quot;</span>&gt;</span>Expand all<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-symbol">&amp;nbsp;</span>|<span class="hljs-symbol">&amp;nbsp;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;collapse-all&quot;</span>&gt;</span>Collapse all<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -602,11 +587,9 @@
         labore sustainable VHS. <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
   </section>
@@ -618,14 +601,10 @@
     </div>
     <div class="preview pv-md">
       
-
-  <div class="">
-    <div class="d-flex">
-
-        <h2>Borderless</h2>
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <h2>Borderless</h2>
+    <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-2"
 
@@ -641,13 +620,8 @@
 
       title="View code for borderless accordion"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Borderless accordion--&gt;
 &lt;div class=&quot;accordion&quot; id=&quot;borderlessAccordionExample&quot;&gt;
@@ -715,17 +689,10 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Borderless accordion-->
+  </div>
+  <div class="preview-size"> <!--Borderless accordion-->
 <div class="accordion" id="borderlessAccordionExample">
   <div class="card card-borderless">
     <div class="card-header" id="heading-1">
@@ -784,13 +751,10 @@
         labore sustainable VHS. </div>
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-2">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Borderless accordion--&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-2">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Borderless accordion--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;borderlessAccordionExample&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card card-borderless&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-header&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;heading-1&quot;</span>&gt;</span>
@@ -849,23 +813,17 @@
         labore sustainable VHS. <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
     <div class="preview pv-md">
       
-
-  <div class="">
-    <div class="d-flex">
-
-        <h2>Bordered</h2>
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <h2>Bordered</h2>
+    <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-3"
 
@@ -881,13 +839,8 @@
 
       title="View code for bordered accordion"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Bordered accordion--&gt;
 &lt;div class=&quot;accordion&quot; id=&quot;borderedAccordionExample&quot;&gt;
@@ -955,17 +908,10 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Bordered accordion-->
+  </div>
+  <div class="preview-size"> <!--Bordered accordion-->
 <div class="accordion" id="borderedAccordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
@@ -1024,13 +970,10 @@
         labore sustainable VHS. </div>
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-3">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Bordered accordion--&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-3">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Bordered accordion--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;borderedAccordionExample&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-header&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;headingOne&quot;</span>&gt;</span>
@@ -1089,23 +1032,17 @@
         labore sustainable VHS. <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
     <div class="preview pv-md">
       
-
-  <div class="">
-    <div class="d-flex">
-
-        <h2>Multiselectable</h2>
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <h2>Multiselectable</h2>
+    <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-4"
 
@@ -1121,13 +1058,8 @@
 
       title="View code for multiselectable accordion"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Multiselect accordion--&gt;
 &lt;div class=&quot;accordion&quot; id=&quot;multiselectAccordionExample&quot;&gt;
@@ -1195,17 +1127,10 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Multiselect accordion-->
+  </div>
+  <div class="preview-size"> <!--Multiselect accordion-->
 <div class="accordion" id="multiselectAccordionExample">
   <div class="card card-borderless">
     <div class="card-header" id="heading-1">
@@ -1264,13 +1189,10 @@
         labore sustainable VHS. </div>
     </div>
   </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-4">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Multiselect accordion--&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-4">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Multiselect accordion--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;multiselectAccordionExample&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card card-borderless&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-header&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;heading-1&quot;</span>&gt;</span>
@@ -1329,23 +1251,17 @@
         labore sustainable VHS. <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
     <div class="preview pv-md">
       
-
-  <div class="">
-    <div class="d-flex">
-
-        <h2>Multitarget</h2>
-
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+<div class="">
+  <div class="d-flex">     <h2>Multitarget</h2>
+    <div class=" ml-auto"> 
+      <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-5"
 
@@ -1361,13 +1277,8 @@
 
       title="View code for multiselectable accordion"
 
-    >
-    <span class="material-icons">unfold_more</span>
-
-     View code
-
-  </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
+    > <span class="material-icons">unfold_more</span> View code </button>
+      <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Multitarget accordion--&gt;
 &lt;p&gt;
@@ -1391,17 +1302,10 @@
 
       title="Copy code"
 
-    >
-
-    <span class="material-icons">content_copy</span>
-
-     Copy code
-
-  </button></div>
+    > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
-
-    <div class="preview-size">
-      <!--Multitarget accordion-->
+  </div>
+  <div class="preview-size"> <!--Multitarget accordion-->
 <p>
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
@@ -1416,13 +1320,10 @@
   <div class="card card-body">
     <h3>Second element</h3>
     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
-</div>
-    </div>
-
-    <div class="collapse line-numbers pt-2" id="codebox-5">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Multitarget accordion--&gt;</span>
+</div> </div>
+  <div class="collapse line-numbers pt-2" id="codebox-5">
+   Example HTML usage:
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Multitarget accordion--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#multiCollapseExample1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;multiCollapseExample1&quot;</span>&gt;</span>Toggle first element<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#multiCollapseExample2&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;multiCollapseExample2&quot;</span>&gt;</span>Toggle second element<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -1437,11 +1338,9 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card card-body&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Second element<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-
-  </div>
-
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+ </div>
+</div>
 
     </div>
   </section>

@@ -12269,7 +12269,8 @@ main > section {
   border-radius: 0.25rem;
   margin: 2rem 0;
 }
-main > section .pattern, main > section .preview {
+main > section .pattern,
+main > section .preview {
   padding: 2rem;
 }
 main > section .preview {
@@ -12289,6 +12290,82 @@ main > section .pv-md .preview-size {
 }
 main > section .pv-lg .preview-size {
   max-width: 1200px;
+}
+main > section .pv-only .modal {
+  position: relative !important;
+  display: block !important;
+}
+main > section .pv-only .dropdown-menu {
+  position: relative !important;
+  display: block !important;
+  float: none;
+}
+main > section .pv-only .toast {
+  transition: opacity 0.15s linear;
+  display: block;
+  opacity: 1;
+}
+main > section .preview-size .popover {
+  display: none;
+}
+
+.popover-toolbar {
+  display: inline-block;
+  width: 100%;
+  padding: 0.65rem 1rem 0.2rem 1rem;
+  border-top: 1px solid #ebebeb;
+}
+
+.dl-inline dd, .dl-inline dt {
+  font-weight: 400;
+  float: left;
+  display: inline-block;
+  color: #707070;
+  margin-right: 4px;
+  margin-bottom: 0;
+}
+.dl-inline dt:after {
+  content: ":";
+  display: inline-block;
+}
+.dl-inline dd:after {
+  margin-left: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  content: "•";
+}
+.dl-inline dd:last-child:after {
+  display: none;
+}
+
+.dl-inverse dt {
+  font-weight: normal;
+}
+.dl-inverse dd {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    margin-left: 180px;
+    margin-bottom: 0;
+  }
+}
+.dl-horizontal dd:before, .dl-horizontal dd:after {
+  content: " ";
+  display: table;
+}
+.dl-horizontal dd:after {
+  clear: both;
 }
 
 .pl-main {

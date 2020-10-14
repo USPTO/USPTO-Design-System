@@ -1,0 +1,109 @@
+{% extends 'layouts/components.njk' %}
+{% set page = { class: 'page-metadata' } %}
+
+{% block content %}
+  <section>
+    <div class="pattern">
+      <h1>Metadata</h1>
+      <p>The metadata pattern can be used for showing label/value pairs.</p>
+
+      <p>
+        <strong>Do</strong>
+      </p>
+
+      <ul>
+        <li>Consistently use <code class="highlighter-rouge">#</code> or <code class="highlighter-rouge">number</code> in labels</li>
+        <li>Indicate empty/blank values with an em-dash (—)</li>
+        <li>Reflow columns based on available screen real estate</li>
+        <li>Sentence case labels</li>
+      </ul>
+
+    </div>
+    <div class="pattern">
+      <h1 id="horizontal">Horizontal</h1>
+      <p>Useful for shorter labels/values.</p>
+    </div>
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for horizontal metadata',    code: metadataHorizontal  },  "")}}
+    </div>
+    <div class="pattern">
+      <h1 id="vertical">Vertical</h1>
+      <p>Useful for longer labels/values.</p>
+    </div>
+    <div class="preview ">
+      {{  macros.viewCode({   ariaLabel: 'View code for vertical metadata',    code: metadataVertical  },  "")}}
+    </div>
+    <div class="pattern">
+      <h1 id="horizontal">Inline</h1>
+      <p>Useful for few labels/values.</p>
+    </div>
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for inline metadata',    code: metadataInline  },  "")}}
+    </div>
+    <div class="pattern">
+      <h1 id="horizontal">Inverse</h1>
+      <p>For scenarios where the label pair bolding should be reversed use <code class="highlighter-rouge">.dl-inverse</code>.</p>
+    </div>
+    <div class="preview">
+      {{  macros.viewCode({   ariaLabel: 'View code for inverse metadata',    code: metadataInverse  },  "")}}
+    </div>
+  </section>
+{% endblock %}
+{% set metadataHorizontal %}
+<!--Horizontal metadata-->
+<dl class="dl-horizontal">
+  <dt>Examiner</dt>
+  <dd>IP, Sikyin / 69776 / 1742</dd>
+  <dt>SPE (multiple)</dt>
+  <dd>John Olaskey</dd>
+  <dt>Applicants</dt>
+  <dd>Roman Amirpur</dd>
+  <dt>Inventors</dt>
+  <dd>Disney Dale</dd>
+  <dt>Law firm</dt>
+  <dd>Clayton &amp; Clayton Associates</dd>
+</dl>
+{% endset%}
+
+{% set metadataVertical %}
+<!--Vertical metadata-->
+<dl>
+  <dt>Examiner</dt>
+  <dd>IP, Sikyin / 69776 / 1742</dd>
+  <dt>SPE (multiple)</dt>
+  <dd>John Olaskey</dd>
+  <dt>Publication #</dt>
+  <dd>
+    <a href="">32132132132 <i class="icon icon-external-link"></i>
+    </a>
+  </dd>
+</dl>
+{% endset%}
+
+{% set metadataInline %}
+<!--Inline metadata-->
+<dl class="dl-inline">
+  <dt>Created</dt>
+  <dd>Mar 5, 2014</dd>
+  <dt>Views</dt>
+  <dd>1,662</dd>
+  <dt>Status</dt>
+  <dd>Approved</dd>
+</dl>
+{% endset%}
+
+{% set metadataInverse %}
+<!--Inverse metadata-->
+<dl class="dl-horizontal dl-inverse">
+  <dt>Examiner</dt>
+  <dd>IP, Sikyin / 69776 / 1742</dd>
+  <dt>SPE (multiple)</dt>
+  <dd>John Olaskey</dd>
+  <dt>Applicants</dt>
+  <dd>Roman Amirpur</dd>
+  <dt>Inventors</dt>
+  <dd>Disney Dale</dd>
+  <dt>Law firm</dt>
+  <dd>Clayton &amp; Clayton Associates</dd>
+</dl>
+{% endset%}
