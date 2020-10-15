@@ -87,12 +87,12 @@ const renderSassFile = (options = {}) => new Promise((resolve, reject) => {
 })
 
 const copyImageFile = async () => {
-  await fse.copy('usptostrap/assets/img', 'dist/assets/img')  
+  await fse.copy('./node_modules/usptostrap/assets/img', 'dist/assets/img')  
 }
 
 const copyFontsFile = async () => {
-  await fse.copy('usptostrap/assets/fonts', 'dist/assets/fonts')
-  await fse.copy('usptostrap/assets/icons', 'dist/assets/icons')
+  await fse.copy('./node_modules/usptostrap/assets/fonts', 'dist/assets/fonts')
+  await fse.copy('./node_modules/usptostrap/assets/icons', 'dist/assets/icons')
 }
  
 const updateData = async (context) => {
