@@ -11354,6 +11354,9 @@ h3 {
   padding: 0.5rem 1rem;
   background-color: #fafafb;
 }
+.modal-title {
+  font-size: 1.25rem;
+}
 
 .navbar li a.nav-link, header .uspto-header-middle li a.nav-link, .navbar .sidenav li > a, header .uspto-header-middle .sidenav li > a, .sidenav .navbar li > a, .sidenav header .uspto-header-middle li > a, header .sidenav .uspto-header-middle li > a {
   color: #fff !important;
