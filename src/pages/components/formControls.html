@@ -65,7 +65,6 @@
         <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
       </ul>
     </div>
-    
 
     <div class="preview">
       {{  macros.viewCode({   ariaLabel: 'View code for custom radio button',    code: radioButtonCustom  },  "Radio button")}}
@@ -95,8 +94,6 @@
         <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
       </ul>
     </div>
-
-    
 
     <div class="preview">
       {{  macros.viewCode({   ariaLabel: 'View code for custom checkboxes',    code: checkboxesCustom  },  "Checkboxes")}}
@@ -140,7 +137,7 @@
         </li>
       </ul>
     </div>
-    
+
     <div class="preview pv-sm">
       {{  macros.viewCode({   ariaLabel: 'View code for toggle switches',    code: selectCustom  },  "Select")}}
     </div>
@@ -181,14 +178,14 @@
 
     </div>
     <div class="pattern">
-   <h1 id="date-input">Date input</h1> 
-<p>Three text fields are the easiest way for users to enter most dates. </p>
+      <h1 id="date-input">Date input</h1>
+      <p>Three text fields are the easiest way for users to enter most dates. </p>
     </div>
-<div class="preview pv-sm">
+    <div class="preview pv-sm">
       {{  macros.viewCode({   ariaLabel: 'View code for date input',    code: dateInput  },  "")}}
 
     </>
-    
+
   </section>
 
 {% endblock %}
@@ -331,80 +328,80 @@
 {% set toggleSwitches %}
 <!--Toggle switches-->
 <div class="form-group">
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-</div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch2">
-  <label class="custom-control-label" for="customSwitch2">Toggle this switch element</label>
-</div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" disabled id="customSwitch3">
-  <label class="custom-control-label" for="customSwitch3">Disabled switch element</label>
-</div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+    <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+    <label class="custom-control-label" for="customSwitch2">Toggle this switch element</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" disabled id="customSwitch3">
+    <label class="custom-control-label" for="customSwitch3">Disabled switch element</label>
+  </div>
 </div>
 {% endset%}
 
 {% set Select %}
 <!--Select-->
 <div class="form-group">
-<label for="exampleFormControlSelect1" class="mt-2">Normal</label>
-<select class="form-control" id="exampleFormControlSelect1">
+  <label for="exampleFormControlSelect1" class="mt-2">Normal</label>
+  <select class="form-control" id="exampleFormControlSelect1">
 
-  <option value="value1">Option A</option>
-  <option value="value2">Option B</option>
-  <option value="value3">Option C</option>
-  <option value="value4">Option D</option>
-  <option value="value5">Option E</option>
-</select>
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+    <option value="value5">Option E</option>
+  </select>
 </div>
 <div class="form-group">
-<label for="exampleFormControlSelect2" class="mt-2">Disabled</label>
-<select class="form-control" id="exampleFormControlSelect2" disabled>
+  <label for="exampleFormControlSelect2" class="mt-2">Disabled</label>
+  <select class="form-control" id="exampleFormControlSelect2" disabled>
 
-  <option value="value1">Option A</option>
-  <option value="value2">Option B</option>
-  <option value="value3">Option C</option>
-  <option value="value4">Option D</option>
-  <option value="value5">Option E</option>
-</select>
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+    <option value="value5">Option E</option>
+  </select>
 </div>
 {% endset%}
 {% set selectCustom %}
 <!--Custom select-->
 <div class="form-group">
-<label for="exampleFormControlSelect3" class="mt-2">Select</label>
-<select class="custom-select" id="exampleFormControlSelect3">
-  <option selected="">Select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-  <option value="4">Four</option>
-  <option value="5">Five</option>
-</select>
+  <label for="exampleFormControlSelect3" class="mt-2">Select</label>
+  <select class="custom-select" id="exampleFormControlSelect3">
+    <option selected="">Select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    <option value="5">Five</option>
+  </select>
 </div>
 <div class="form-group">
-<label for="exampleFormControlSelect4" class="mt-2">Small select</label>
-<select class="custom-select custom-select-sm" id="exampleFormControlSelect4">
-  <option selected="">Select small menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-  <option value="4">Four</option>
-  <option value="5">Five</option>
-</select>
+  <label for="exampleFormControlSelect4" class="mt-2">Small select</label>
+  <select class="custom-select custom-select-sm" id="exampleFormControlSelect4">
+    <option selected="">Select small menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    <option value="5">Five</option>
+  </select>
 </div>
 <div class="form-group">
-<label for="exampleFormControlSelect5" class="mt-2">Large select</label>
-<select class="custom-select custom-select-lg" id="exampleFormControlSelect5">
-  <option selected="">Select large menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-  <option value="4">Four</option>
-  <option value="5">Five</option>
-</select>
+  <label for="exampleFormControlSelect5" class="mt-2">Large select</label>
+  <select class="custom-select custom-select-lg" id="exampleFormControlSelect5">
+    <option selected="">Select large menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    <option value="5">Five</option>
+  </select>
 </div>
 {% endset%}
 
@@ -431,38 +428,36 @@
 {% endset%}
 {% set datePicker %}
 <!--Date picker-->
-<div class="usa-form-group">
-  <label class="usa-label" id="appointment-date-label" for="appointment-date">Appointment date</label>
-  <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
-  <div class="usa-date-picker usa-date-picker--initialized" data-min-date="0000-01-01">
-    <input class="usa-input usa-sr-only usa-date-picker__internal-input" id="" name="appointment-date" type="text" aria-describedby="appointment-date-label appointment-date-hint" aria-hidden="true" tabindex="-1">
-    <div class="usa-date-picker__wrapper" tabindex="-1"><input class="usa-input usa-date-picker__external-input" id="appointment-date" name="" type="text" aria-describedby="appointment-date-label appointment-date-hint">
-      <button type="button" class="usa-date-picker__button" aria-haspopup="true" aria-label="Toggle calendar">&nbsp;</button>
-      <div class="usa-date-picker__calendar" role="”dialog”" aria-modal="”true”" hidden=""></div>
-      <div class="usa-sr-only usa-date-picker__status" role="status" aria-live="polite"></div>
+<form class="usa-form">
+  <div class="usa-form-group">
+    <label class="usa-label" id="appointment-date-label" for="appointment-date">Appointment date</label>
+    <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
+    <div class="usa-date-picker">
+      <input class="usa-input" id="appointment-date" name="appointment-date" type="text"
+                      aria-describedby="appointment-date-label appointment-date-hint">
     </div>
   </div>
-</div>
+</form>
 {% endset%}
 
 {% set dateInput %}
 <!--Date input field-->
 <fieldset class="usa-fieldset">
-    <legend class="usa-legend">Date of birth</legend>
-    <span class="usa-hint" id="dobHint">For example: 4 28 1986</span>
-    <div class="usa-memorable-date">
-      <div class="usa-form-group usa-form-group--month">
-        <label class="usa-label" for="date_of_birth_1">Month</label>
-        <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_1" name="date_of_birth_1" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
-      </div>
-      <div class="usa-form-group usa-form-group--day">
-        <label class="usa-label" for="date_of_birth_2">Day</label>
-        <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_2" name="date_of_birth_2" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
-      </div>
-      <div class="usa-form-group usa-form-group--year">
-        <label class="usa-label" for="date_of_birth_3">Year</label>
-        <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_3" name="date_of_birth_3" type="text" minlength="4" maxlength="4" pattern="[0-9]*" inputmode="numeric" value="">
-      </div>
+  <legend class="usa-legend">Date of birth</legend>
+  <span class="usa-hint" id="dobHint">For example: 4 28 1986</span>
+  <div class="usa-memorable-date">
+    <div class="usa-form-group usa-form-group--month">
+      <label class="usa-label" for="date_of_birth_1">Month</label>
+      <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_1" name="date_of_birth_1" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
     </div>
-  </fieldset>
+    <div class="usa-form-group usa-form-group--day">
+      <label class="usa-label" for="date_of_birth_2">Day</label>
+      <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_2" name="date_of_birth_2" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
+    </div>
+    <div class="usa-form-group usa-form-group--year">
+      <label class="usa-label" for="date_of_birth_3">Year</label>
+      <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_3" name="date_of_birth_3" type="text" minlength="4" maxlength="4" pattern="[0-9]*" inputmode="numeric" value="">
+    </div>
+  </div>
+</fieldset>
 {% endset%}

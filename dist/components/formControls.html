@@ -12,10 +12,14 @@
   <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
   <title>USPTO UI Design System</title>
-  <link rel="stylesheet" href="../assets/css/main.css">
- <link rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix />
-<link rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix />
-  </head>
+<link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
   <body class="parent-container">
   <a class="skipnav" href="#main-content">
     Skip to main content
@@ -540,7 +544,6 @@
         <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
       </ul>
     </div>
-    
 
     <div class="preview">
       
@@ -783,8 +786,6 @@
         <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
       </ul>
     </div>
-
-    
 
     <div class="preview">
       
@@ -1049,18 +1050,18 @@
 
       data-clipboard-text="&lt;!--Toggle switches--&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-&lt;div class=&quot;custom-control custom-switch&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customSwitch1&quot; checked&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch1&quot;&gt;Toggle this switch element&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;custom-control custom-switch&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customSwitch2&quot;&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch2&quot;&gt;Toggle this switch element&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;custom-control custom-switch&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; disabled id=&quot;customSwitch3&quot;&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch3&quot;&gt;Disabled switch element&lt;/label&gt;
-&lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-switch&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customSwitch1&quot; checked&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch1&quot;&gt;Toggle this switch element&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-switch&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customSwitch2&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch2&quot;&gt;Toggle this switch element&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-switch&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; disabled id=&quot;customSwitch3&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch3&quot;&gt;Disabled switch element&lt;/label&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 "
 
@@ -1073,35 +1074,35 @@
   </div>
   <div class="preview-size"> <!--Toggle switches-->
 <div class="form-group">
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-</div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch2">
-  <label class="custom-control-label" for="customSwitch2">Toggle this switch element</label>
-</div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" disabled id="customSwitch3">
-  <label class="custom-control-label" for="customSwitch3">Disabled switch element</label>
-</div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+    <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+    <label class="custom-control-label" for="customSwitch2">Toggle this switch element</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" disabled id="customSwitch3">
+    <label class="custom-control-label" for="customSwitch3">Disabled switch element</label>
+  </div>
 </div> </div>
   <div class="collapse line-numbers pt-2" id="codebox-7">
    Example HTML usage:
     <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Toggle switches--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-switch&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customSwitch1&quot;</span> <span class="hljs-attr">checked</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customSwitch1&quot;</span>&gt;</span>Toggle this switch element<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-switch&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customSwitch2&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customSwitch2&quot;</span>&gt;</span>Toggle this switch element<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-switch&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customSwitch3&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customSwitch3&quot;</span>&gt;</span>Disabled switch element<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-switch&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customSwitch1&quot;</span> <span class="hljs-attr">checked</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customSwitch1&quot;</span>&gt;</span>Toggle this switch element<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-switch&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customSwitch2&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customSwitch2&quot;</span>&gt;</span>Toggle this switch element<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-switch&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customSwitch3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customSwitch3&quot;</span>&gt;</span>Disabled switch element<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
  </div>
 </div>
@@ -1128,7 +1129,7 @@
         </li>
       </ul>
     </div>
-    
+
     <div class="preview pv-sm">
       
 <div class="">
@@ -1155,37 +1156,37 @@
 
       data-clipboard-text="&lt;!--Custom select--&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-&lt;label for=&quot;exampleFormControlSelect3&quot; class=&quot;mt-2&quot;&gt;Select&lt;/label&gt;
-&lt;select class=&quot;custom-select&quot; id=&quot;exampleFormControlSelect3&quot;&gt;
-  &lt;option selected=&quot;&quot;&gt;Select menu&lt;/option&gt;
-  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-  &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-  &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
-  &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
-&lt;/select&gt;
+  &lt;label for=&quot;exampleFormControlSelect3&quot; class=&quot;mt-2&quot;&gt;Select&lt;/label&gt;
+  &lt;select class=&quot;custom-select&quot; id=&quot;exampleFormControlSelect3&quot;&gt;
+    &lt;option selected=&quot;&quot;&gt;Select menu&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+    &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
+    &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-&lt;label for=&quot;exampleFormControlSelect4&quot; class=&quot;mt-2&quot;&gt;Small select&lt;/label&gt;
-&lt;select class=&quot;custom-select custom-select-sm&quot; id=&quot;exampleFormControlSelect4&quot;&gt;
-  &lt;option selected=&quot;&quot;&gt;Select small menu&lt;/option&gt;
-  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-  &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-  &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
-  &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
-&lt;/select&gt;
+  &lt;label for=&quot;exampleFormControlSelect4&quot; class=&quot;mt-2&quot;&gt;Small select&lt;/label&gt;
+  &lt;select class=&quot;custom-select custom-select-sm&quot; id=&quot;exampleFormControlSelect4&quot;&gt;
+    &lt;option selected=&quot;&quot;&gt;Select small menu&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+    &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
+    &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-&lt;label for=&quot;exampleFormControlSelect5&quot; class=&quot;mt-2&quot;&gt;Large select&lt;/label&gt;
-&lt;select class=&quot;custom-select custom-select-lg&quot; id=&quot;exampleFormControlSelect5&quot;&gt;
-  &lt;option selected=&quot;&quot;&gt;Select large menu&lt;/option&gt;
-  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-  &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-  &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
-  &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
-&lt;/select&gt;
+  &lt;label for=&quot;exampleFormControlSelect5&quot; class=&quot;mt-2&quot;&gt;Large select&lt;/label&gt;
+  &lt;select class=&quot;custom-select custom-select-lg&quot; id=&quot;exampleFormControlSelect5&quot;&gt;
+    &lt;option selected=&quot;&quot;&gt;Select large menu&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+    &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
+    &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 "
 
@@ -1198,73 +1199,73 @@
   </div>
   <div class="preview-size"> <!--Custom select-->
 <div class="form-group">
-<label for="exampleFormControlSelect3" class="mt-2">Select</label>
-<select class="custom-select" id="exampleFormControlSelect3">
-  <option selected="">Select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-  <option value="4">Four</option>
-  <option value="5">Five</option>
-</select>
+  <label for="exampleFormControlSelect3" class="mt-2">Select</label>
+  <select class="custom-select" id="exampleFormControlSelect3">
+    <option selected="">Select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    <option value="5">Five</option>
+  </select>
 </div>
 <div class="form-group">
-<label for="exampleFormControlSelect4" class="mt-2">Small select</label>
-<select class="custom-select custom-select-sm" id="exampleFormControlSelect4">
-  <option selected="">Select small menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-  <option value="4">Four</option>
-  <option value="5">Five</option>
-</select>
+  <label for="exampleFormControlSelect4" class="mt-2">Small select</label>
+  <select class="custom-select custom-select-sm" id="exampleFormControlSelect4">
+    <option selected="">Select small menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    <option value="5">Five</option>
+  </select>
 </div>
 <div class="form-group">
-<label for="exampleFormControlSelect5" class="mt-2">Large select</label>
-<select class="custom-select custom-select-lg" id="exampleFormControlSelect5">
-  <option selected="">Select large menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-  <option value="4">Four</option>
-  <option value="5">Five</option>
-</select>
+  <label for="exampleFormControlSelect5" class="mt-2">Large select</label>
+  <select class="custom-select custom-select-lg" id="exampleFormControlSelect5">
+    <option selected="">Select large menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    <option value="5">Five</option>
+  </select>
 </div> </div>
   <div class="collapse line-numbers pt-2" id="codebox-8">
    Example HTML usage:
     <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Custom select--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect3&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect3&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Select menu<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect3&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Select menu<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect4&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Small select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select custom-select-sm&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect4&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Select small menu<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect4&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Small select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select custom-select-sm&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect4&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Select small menu<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect5&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Large select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select custom-select-lg&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect5&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Select large menu<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect5&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Large select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-select custom-select-lg&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect5&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Select large menu<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
  </div>
 </div>
@@ -1296,26 +1297,26 @@
 
       data-clipboard-text="&lt;!--Select--&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-&lt;label for=&quot;exampleFormControlSelect1&quot; class=&quot;mt-2&quot;&gt;Normal&lt;/label&gt;
-&lt;select class=&quot;form-control&quot; id=&quot;exampleFormControlSelect1&quot;&gt;
+  &lt;label for=&quot;exampleFormControlSelect1&quot; class=&quot;mt-2&quot;&gt;Normal&lt;/label&gt;
+  &lt;select class=&quot;form-control&quot; id=&quot;exampleFormControlSelect1&quot;&gt;
 
-  &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
-  &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
-  &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
-  &lt;option value=&quot;value4&quot;&gt;Option D&lt;/option&gt;
-  &lt;option value=&quot;value5&quot;&gt;Option E&lt;/option&gt;
-&lt;/select&gt;
+    &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
+    &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
+    &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
+    &lt;option value=&quot;value4&quot;&gt;Option D&lt;/option&gt;
+    &lt;option value=&quot;value5&quot;&gt;Option E&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-&lt;label for=&quot;exampleFormControlSelect2&quot; class=&quot;mt-2&quot;&gt;Disabled&lt;/label&gt;
-&lt;select class=&quot;form-control&quot; id=&quot;exampleFormControlSelect2&quot; disabled&gt;
+  &lt;label for=&quot;exampleFormControlSelect2&quot; class=&quot;mt-2&quot;&gt;Disabled&lt;/label&gt;
+  &lt;select class=&quot;form-control&quot; id=&quot;exampleFormControlSelect2&quot; disabled&gt;
 
-  &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
-  &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
-  &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
-  &lt;option value=&quot;value4&quot;&gt;Option D&lt;/option&gt;
-  &lt;option value=&quot;value5&quot;&gt;Option E&lt;/option&gt;
-&lt;/select&gt;
+    &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
+    &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
+    &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
+    &lt;option value=&quot;value4&quot;&gt;Option D&lt;/option&gt;
+    &lt;option value=&quot;value5&quot;&gt;Option E&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 "
 
@@ -1328,51 +1329,51 @@
   </div>
   <div class="preview-size"> <!--Select-->
 <div class="form-group">
-<label for="exampleFormControlSelect1" class="mt-2">Normal</label>
-<select class="form-control" id="exampleFormControlSelect1">
+  <label for="exampleFormControlSelect1" class="mt-2">Normal</label>
+  <select class="form-control" id="exampleFormControlSelect1">
 
-  <option value="value1">Option A</option>
-  <option value="value2">Option B</option>
-  <option value="value3">Option C</option>
-  <option value="value4">Option D</option>
-  <option value="value5">Option E</option>
-</select>
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+    <option value="value5">Option E</option>
+  </select>
 </div>
 <div class="form-group">
-<label for="exampleFormControlSelect2" class="mt-2">Disabled</label>
-<select class="form-control" id="exampleFormControlSelect2" disabled>
+  <label for="exampleFormControlSelect2" class="mt-2">Disabled</label>
+  <select class="form-control" id="exampleFormControlSelect2" disabled>
 
-  <option value="value1">Option A</option>
-  <option value="value2">Option B</option>
-  <option value="value3">Option C</option>
-  <option value="value4">Option D</option>
-  <option value="value5">Option E</option>
-</select>
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+    <option value="value4">Option D</option>
+    <option value="value5">Option E</option>
+  </select>
 </div> </div>
   <div class="collapse line-numbers pt-2" id="codebox-9">
    Example HTML usage:
     <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Select--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect1&quot;</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value1&quot;</span>&gt;</span>Option A<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value2&quot;</span>&gt;</span>Option B<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value3&quot;</span>&gt;</span>Option C<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value4&quot;</span>&gt;</span>Option D<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value5&quot;</span>&gt;</span>Option E<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value1&quot;</span>&gt;</span>Option A<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value2&quot;</span>&gt;</span>Option B<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value3&quot;</span>&gt;</span>Option C<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value4&quot;</span>&gt;</span>Option D<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value5&quot;</span>&gt;</span>Option E<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect2&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect2&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlSelect2&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mt-2&quot;</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlSelect2&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value1&quot;</span>&gt;</span>Option A<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value2&quot;</span>&gt;</span>Option B<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value3&quot;</span>&gt;</span>Option C<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value4&quot;</span>&gt;</span>Option D<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value5&quot;</span>&gt;</span>Option E<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value1&quot;</span>&gt;</span>Option A<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value2&quot;</span>&gt;</span>Option B<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value3&quot;</span>&gt;</span>Option C<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value4&quot;</span>&gt;</span>Option D<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value5&quot;</span>&gt;</span>Option E<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
  </div>
 </div>
@@ -1523,18 +1524,16 @@
       <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Date picker--&gt;
-&lt;div class=&quot;usa-form-group&quot;&gt;
-  &lt;label class=&quot;usa-label&quot; id=&quot;appointment-date-label&quot; for=&quot;appointment-date&quot;&gt;Appointment date&lt;/label&gt;
-  &lt;div class=&quot;usa-hint&quot; id=&quot;appointment-date-hint&quot;&gt;mm/dd/yyyy&lt;/div&gt;
-  &lt;div class=&quot;usa-date-picker usa-date-picker--initialized&quot; data-min-date=&quot;0000-01-01&quot;&gt;
-    &lt;input class=&quot;usa-input usa-sr-only usa-date-picker__internal-input&quot; id=&quot;&quot; name=&quot;appointment-date&quot; type=&quot;text&quot; aria-describedby=&quot;appointment-date-label appointment-date-hint&quot; aria-hidden=&quot;true&quot; tabindex=&quot;-1&quot;&gt;
-    &lt;div class=&quot;usa-date-picker__wrapper&quot; tabindex=&quot;-1&quot;&gt;&lt;input class=&quot;usa-input usa-date-picker__external-input&quot; id=&quot;appointment-date&quot; name=&quot;&quot; type=&quot;text&quot; aria-describedby=&quot;appointment-date-label appointment-date-hint&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;usa-date-picker__button&quot; aria-haspopup=&quot;true&quot; aria-label=&quot;Toggle calendar&quot;&gt;&amp;nbsp;&lt;/button&gt;
-      &lt;div class=&quot;usa-date-picker__calendar&quot; role=&quot;”dialog”&quot; aria-modal=&quot;”true”&quot; hidden=&quot;&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;usa-sr-only usa-date-picker__status&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+&lt;form class=&quot;usa-form&quot;&gt;
+  &lt;div class=&quot;usa-form-group&quot;&gt;
+    &lt;label class=&quot;usa-label&quot; id=&quot;appointment-date-label&quot; for=&quot;appointment-date&quot;&gt;Appointment date&lt;/label&gt;
+    &lt;div class=&quot;usa-hint&quot; id=&quot;appointment-date-hint&quot;&gt;mm/dd/yyyy&lt;/div&gt;
+    &lt;div class=&quot;usa-date-picker&quot;&gt;
+      &lt;input class=&quot;usa-input&quot; id=&quot;appointment-date&quot; name=&quot;appointment-date&quot; type=&quot;text&quot;
+                      aria-describedby=&quot;appointment-date-label appointment-date-hint&quot;&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+&lt;/form&gt;
 "
 
       type="button"
@@ -1545,43 +1544,39 @@
     </div>
   </div>
   <div class="preview-size"> <!--Date picker-->
-<div class="usa-form-group">
-  <label class="usa-label" id="appointment-date-label" for="appointment-date">Appointment date</label>
-  <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
-  <div class="usa-date-picker usa-date-picker--initialized" data-min-date="0000-01-01">
-    <input class="usa-input usa-sr-only usa-date-picker__internal-input" id="" name="appointment-date" type="text" aria-describedby="appointment-date-label appointment-date-hint" aria-hidden="true" tabindex="-1">
-    <div class="usa-date-picker__wrapper" tabindex="-1"><input class="usa-input usa-date-picker__external-input" id="appointment-date" name="" type="text" aria-describedby="appointment-date-label appointment-date-hint">
-      <button type="button" class="usa-date-picker__button" aria-haspopup="true" aria-label="Toggle calendar">&nbsp;</button>
-      <div class="usa-date-picker__calendar" role="”dialog”" aria-modal="”true”" hidden=""></div>
-      <div class="usa-sr-only usa-date-picker__status" role="status" aria-live="polite"></div>
+<form class="usa-form">
+  <div class="usa-form-group">
+    <label class="usa-label" id="appointment-date-label" for="appointment-date">Appointment date</label>
+    <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
+    <div class="usa-date-picker">
+      <input class="usa-input" id="appointment-date" name="appointment-date" type="text"
+                      aria-describedby="appointment-date-label appointment-date-hint">
     </div>
   </div>
-</div> </div>
+</form> </div>
   <div class="collapse line-numbers pt-2" id="codebox-11">
    Example HTML usage:
     <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Date picker--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form-group&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-label&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;appointment-date-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;appointment-date&quot;</span>&gt;</span>Appointment date<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-hint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;appointment-date-hint&quot;</span>&gt;</span>mm/dd/yyyy<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-date-picker usa-date-picker--initialized&quot;</span> <span class="hljs-attr">data-min-date</span>=<span class="hljs-string">&quot;0000-01-01&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-sr-only usa-date-picker__internal-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;appointment-date&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;appointment-date-label appointment-date-hint&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-date-picker__wrapper&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-date-picker__external-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;appointment-date&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;appointment-date-label appointment-date-hint&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-date-picker__button&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Toggle calendar&quot;</span>&gt;</span><span class="hljs-symbol">&amp;nbsp;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-date-picker__calendar&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;”dialog”&quot;</span> <span class="hljs-attr">aria-modal</span>=<span class="hljs-string">&quot;”true”&quot;</span> <span class="hljs-attr">hidden</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-sr-only usa-date-picker__status&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;status&quot;</span> <span class="hljs-attr">aria-live</span>=<span class="hljs-string">&quot;polite&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-label&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;appointment-date-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;appointment-date&quot;</span>&gt;</span>Appointment date<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-hint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;appointment-date-hint&quot;</span>&gt;</span>mm/dd/yyyy<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-date-picker&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;appointment-date&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;appointment-date&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+                      <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;appointment-date-label appointment-date-hint&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre> </div>
  </div>
 </div>
 
 
     </div>
     <div class="pattern">
-   <h1 id="date-input">Date input</h1> 
-<p>Three text fields are the easiest way for users to enter most dates. </p>
+      <h1 id="date-input">Date input</h1>
+      <p>Three text fields are the easiest way for users to enter most dates. </p>
     </div>
-<div class="preview pv-sm">
+    <div class="preview pv-sm">
       
 <div class="">
   <div class="d-flex">     <div class=" ml-auto"> 
@@ -1606,23 +1601,23 @@
 
       data-clipboard-text="&lt;!--Date input field--&gt;
 &lt;fieldset class=&quot;usa-fieldset&quot;&gt;
-    &lt;legend class=&quot;usa-legend&quot;&gt;Date of birth&lt;/legend&gt;
-    &lt;span class=&quot;usa-hint&quot; id=&quot;dobHint&quot;&gt;For example: 4 28 1986&lt;/span&gt;
-    &lt;div class=&quot;usa-memorable-date&quot;&gt;
-      &lt;div class=&quot;usa-form-group usa-form-group--month&quot;&gt;
-        &lt;label class=&quot;usa-label&quot; for=&quot;date_of_birth_1&quot;&gt;Month&lt;/label&gt;
-        &lt;input class=&quot;usa-input usa-input--inline&quot; aria-describedby=&quot;dobHint&quot; id=&quot;date_of_birth_1&quot; name=&quot;date_of_birth_1&quot; type=&quot;text&quot; maxlength=&quot;2&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot; value=&quot;&quot;&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;usa-form-group usa-form-group--day&quot;&gt;
-        &lt;label class=&quot;usa-label&quot; for=&quot;date_of_birth_2&quot;&gt;Day&lt;/label&gt;
-        &lt;input class=&quot;usa-input usa-input--inline&quot; aria-describedby=&quot;dobHint&quot; id=&quot;date_of_birth_2&quot; name=&quot;date_of_birth_2&quot; type=&quot;text&quot; maxlength=&quot;2&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot; value=&quot;&quot;&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;usa-form-group usa-form-group--year&quot;&gt;
-        &lt;label class=&quot;usa-label&quot; for=&quot;date_of_birth_3&quot;&gt;Year&lt;/label&gt;
-        &lt;input class=&quot;usa-input usa-input--inline&quot; aria-describedby=&quot;dobHint&quot; id=&quot;date_of_birth_3&quot; name=&quot;date_of_birth_3&quot; type=&quot;text&quot; minlength=&quot;4&quot; maxlength=&quot;4&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot; value=&quot;&quot;&gt;
-      &lt;/div&gt;
+  &lt;legend class=&quot;usa-legend&quot;&gt;Date of birth&lt;/legend&gt;
+  &lt;span class=&quot;usa-hint&quot; id=&quot;dobHint&quot;&gt;For example: 4 28 1986&lt;/span&gt;
+  &lt;div class=&quot;usa-memorable-date&quot;&gt;
+    &lt;div class=&quot;usa-form-group usa-form-group--month&quot;&gt;
+      &lt;label class=&quot;usa-label&quot; for=&quot;date_of_birth_1&quot;&gt;Month&lt;/label&gt;
+      &lt;input class=&quot;usa-input usa-input--inline&quot; aria-describedby=&quot;dobHint&quot; id=&quot;date_of_birth_1&quot; name=&quot;date_of_birth_1&quot; type=&quot;text&quot; maxlength=&quot;2&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot; value=&quot;&quot;&gt;
     &lt;/div&gt;
-  &lt;/fieldset&gt;
+    &lt;div class=&quot;usa-form-group usa-form-group--day&quot;&gt;
+      &lt;label class=&quot;usa-label&quot; for=&quot;date_of_birth_2&quot;&gt;Day&lt;/label&gt;
+      &lt;input class=&quot;usa-input usa-input--inline&quot; aria-describedby=&quot;dobHint&quot; id=&quot;date_of_birth_2&quot; name=&quot;date_of_birth_2&quot; type=&quot;text&quot; maxlength=&quot;2&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot; value=&quot;&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;usa-form-group usa-form-group--year&quot;&gt;
+      &lt;label class=&quot;usa-label&quot; for=&quot;date_of_birth_3&quot;&gt;Year&lt;/label&gt;
+      &lt;input class=&quot;usa-input usa-input--inline&quot; aria-describedby=&quot;dobHint&quot; id=&quot;date_of_birth_3&quot; name=&quot;date_of_birth_3&quot; type=&quot;text&quot; minlength=&quot;4&quot; maxlength=&quot;4&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot; value=&quot;&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
 "
 
       type="button"
@@ -1634,50 +1629,50 @@
   </div>
   <div class="preview-size"> <!--Date input field-->
 <fieldset class="usa-fieldset">
-    <legend class="usa-legend">Date of birth</legend>
-    <span class="usa-hint" id="dobHint">For example: 4 28 1986</span>
-    <div class="usa-memorable-date">
-      <div class="usa-form-group usa-form-group--month">
-        <label class="usa-label" for="date_of_birth_1">Month</label>
-        <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_1" name="date_of_birth_1" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
-      </div>
-      <div class="usa-form-group usa-form-group--day">
-        <label class="usa-label" for="date_of_birth_2">Day</label>
-        <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_2" name="date_of_birth_2" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
-      </div>
-      <div class="usa-form-group usa-form-group--year">
-        <label class="usa-label" for="date_of_birth_3">Year</label>
-        <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_3" name="date_of_birth_3" type="text" minlength="4" maxlength="4" pattern="[0-9]*" inputmode="numeric" value="">
-      </div>
+  <legend class="usa-legend">Date of birth</legend>
+  <span class="usa-hint" id="dobHint">For example: 4 28 1986</span>
+  <div class="usa-memorable-date">
+    <div class="usa-form-group usa-form-group--month">
+      <label class="usa-label" for="date_of_birth_1">Month</label>
+      <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_1" name="date_of_birth_1" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
     </div>
-  </fieldset> </div>
+    <div class="usa-form-group usa-form-group--day">
+      <label class="usa-label" for="date_of_birth_2">Day</label>
+      <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_2" name="date_of_birth_2" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric" value="">
+    </div>
+    <div class="usa-form-group usa-form-group--year">
+      <label class="usa-label" for="date_of_birth_3">Year</label>
+      <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_3" name="date_of_birth_3" type="text" minlength="4" maxlength="4" pattern="[0-9]*" inputmode="numeric" value="">
+    </div>
+  </div>
+</fieldset> </div>
   <div class="collapse line-numbers pt-2" id="codebox-12">
    Example HTML usage:
     <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Date input field--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-fieldset&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">legend</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-legend&quot;</span>&gt;</span>Date of birth<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-hint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dobHint&quot;</span>&gt;</span>For example: 4 28 1986<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-memorable-date&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form-group usa-form-group--month&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;date_of_birth_1&quot;</span>&gt;</span>Month<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-input--inline&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;dobHint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;date_of_birth_1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;date_of_birth_1&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;[0-9]*&quot;</span> <span class="hljs-attr">inputmode</span>=<span class="hljs-string">&quot;numeric&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form-group usa-form-group--day&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;date_of_birth_2&quot;</span>&gt;</span>Day<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-input--inline&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;dobHint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;date_of_birth_2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;date_of_birth_2&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;[0-9]*&quot;</span> <span class="hljs-attr">inputmode</span>=<span class="hljs-string">&quot;numeric&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form-group usa-form-group--year&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;date_of_birth_3&quot;</span>&gt;</span>Year<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-input--inline&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;dobHint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;date_of_birth_3&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;date_of_birth_3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">minlength</span>=<span class="hljs-string">&quot;4&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;4&quot;</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;[0-9]*&quot;</span> <span class="hljs-attr">inputmode</span>=<span class="hljs-string">&quot;numeric&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">legend</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-legend&quot;</span>&gt;</span>Date of birth<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-hint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dobHint&quot;</span>&gt;</span>For example: 4 28 1986<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-memorable-date&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form-group usa-form-group--month&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;date_of_birth_1&quot;</span>&gt;</span>Month<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-input--inline&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;dobHint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;date_of_birth_1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;date_of_birth_1&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;[0-9]*&quot;</span> <span class="hljs-attr">inputmode</span>=<span class="hljs-string">&quot;numeric&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></code></pre> </div>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form-group usa-form-group--day&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;date_of_birth_2&quot;</span>&gt;</span>Day<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-input--inline&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;dobHint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;date_of_birth_2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;date_of_birth_2&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;[0-9]*&quot;</span> <span class="hljs-attr">inputmode</span>=<span class="hljs-string">&quot;numeric&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-form-group usa-form-group--year&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;date_of_birth_3&quot;</span>&gt;</span>Year<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-input usa-input--inline&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;dobHint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;date_of_birth_3&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;date_of_birth_3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">minlength</span>=<span class="hljs-string">&quot;4&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;4&quot;</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;[0-9]*&quot;</span> <span class="hljs-attr">inputmode</span>=<span class="hljs-string">&quot;numeric&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></code></pre> </div>
  </div>
 </div>
 
 
     </>
-    
+
   </section>
 
     </main>
