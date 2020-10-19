@@ -35,10 +35,9 @@
     "clipboard": "^2.0.6",
     "glob": "^7.1.6",
     "nunjucks": "^3.2.2",
-    "nunjucks-extension-code-highlight": "*",
     "prismjs": "^1.21.0",
     "sass": "^1.26.10",
-    "usptostrap": "0.1.1"
+    "usptostrap": "^2.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.12",

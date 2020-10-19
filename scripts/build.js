@@ -65,7 +65,8 @@ const renderFiles = async (context = data) => {
 const sass = require('sass')
 const includePaths = [
   'src/assets/scss',
-  './node_modules/bootstrap/scss'
+  './node_modules/bootstrap/scss',
+  './node_modules/usptostrap/src/scss'
 ]
 
 const renderSassFile = (options = {}) => new Promise((resolve, reject) => {
