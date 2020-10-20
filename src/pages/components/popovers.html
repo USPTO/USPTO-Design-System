@@ -5,56 +5,38 @@
     z
     <h1>Popovers</h1>
 
-{% block content %}
-  <section>
-    <div class="pattern">
-      <h1>Popovers</h1>
+    <h2 id="purpose">Purpose</h2>
+    <p>
+      Users need to be able to access additional related information or
+      functionality without a change in context.
+    </p>
 
-      <h3 id="purpose">Purpose</h3>
-      <p>Users need to be able to access additional related information or functionality without a change in context.</p>
+    <h2 id="description">Description</h2>
+    <ul>
+      <li>Popovers are a cross between a dialog and a tooltip</li>
+      <li>
+        Popovers are smaller contextual dialogs that are generally triggered by
+        a click
+      </li>
+      <li>They may or may not provide additional interactive controls</li>
+      <li>
+        Popovers display information or functionality related to a particular
+        item or control
+      </li>
+      <li>
+        Popovers can be dismissed via a close icon, clicking the control that
+        opened it, or by clicking anywhere outside of the popover
+      </li>
+      <li>
+        The amount of content in a popover should be relatively short, but they
+        can be scrollable if necessary
+      </li>
+      <li>
+        Popovers should be positioned based on the screen space available,
+      </li>
+    </ul>
 
-      <h3 id="description">Description</h3>
-      <ul>
-        <li>Popovers are a cross between a dialog and a tooltip</li>
-        <li>Popovers are smaller contextual dialogs that are generally triggered by a click</li>
-        <li>They may or may not provide additional interactive controls</li>
-        <li>Popovers display information or functionality related to a particular item or control</li>
-        <li>Popovers can be dismissed via a close icon, clicking the control that opened it, or by clicking anywhere outside of the popover</li>
-        <li>The amount of content in a popover should be relatively short, but they can be scrollable if necessary</li>
-        <li>Popovers should be positioned based on the screen space available,</li>
-      </ul>
-
-      <p>Use a popover instead of a tooltip or dialog when:</p>
-
-      <ul>
-        <li>You want a contextual relationship that a dialog can’t provide</li>
-        <li>You need to provide relatively simple interactions</li>
-        <li>You have more text/content than can comfortably fit in a tooltip</li>
-      </ul>
-       <div class="bs-popover-left popover show fade d-block position-relative" role="tooltip">
-        <div class="arrow" style="top: 90px;"></div>
-        <h3 class="popover-header">Add note</h3>
-        <div class="popover-body">
-          <textarea placeholder="Enter note here" class="form-control" name="" id="" rows="3"></textarea>
-        </div>
-        <div class="popover-toolbar">
-          <button class="btn btn-outline-secondary btn-sm md-icon float-left" type="button">
-            <i class="material-icons">image</i>
-          </button>
-          <button class="btn btn-outline-secondary btn-sm md-icon float-left" type="button">
-            <i class="material-icons">link</i>
-          </button>
-          <button class="btn btn-sm btn-primary float-right">Add</button>
-        </div>
-          </div>
-      <p>&nbsp;</p>
-      <div class="bs-popover-right popover show fade d-block position-relative" role="tooltip">
-        <div class="arrow" style="top: 90px;"></div>
-        <div class="popover-body">
-          <p>Simple search: Type a term in the search field and select the search button.</p>
-          <p>Advanced  search: Advanced boolean operators may be used. The default operator when searching multiple terms is “AND”.</p>
-          <a href="">Learn more</a>
-        </div>
+    <p>Use a popover instead of a tooltip or dialog when:</p>
 
     <ul>
       <li>You want a contextual relationship that a dialog can’t provide</li>

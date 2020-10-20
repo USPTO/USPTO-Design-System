@@ -5,53 +5,57 @@
     <h1>Metadata</h1>
     <p>The metadata pattern can be used for showing label/value pairs.</p>
 
-{% block content %}
-  <section>
-    <div class="pattern">
-      <h1>Metadata</h1>
-      <p>The metadata pattern can be used for showing label/value pairs.</p>
-<h3>Do</h3>
-      
+    <p>
+      <strong>Do</strong>
+    </p>
 
-      <ul>
-        <li>Consistently use <code class="highlighter-rouge">#</code> or <code class="highlighter-rouge">number</code> in labels</li>
-        <li>Indicate empty/blank values with an em-dash (—)</li>
-        <li>Reflow columns based on available screen real estate</li>
-        <li>Sentence case labels</li>
-      </ul>
-
-    </div>
-    <div class="pattern">
-      <h2 id="horizontal">Horizontal</h2>
-      <p>Useful for shorter labels/values.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for horizontal metadata',    code: metadataHorizontal  },  "")}}
-    </div>
-    <div class="pattern">
-      <h2 id="vertical">Vertical</h2>
-      <p>Useful for longer labels/values.</p>
-    </div>
-    <div class="preview ">
-      {{  macros.viewCode({   ariaLabel: 'View code for vertical metadata',    code: metadataVertical  },  "")}}
-    </div>
-    <div class="pattern">
-      <h2 id="horizontal">Inline</h2>
-      <p>Useful for few labels/values.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for inline metadata',    code: metadataInline  },  "")}}
-    </div>
-    <div class="pattern">
-      <h2 id="horizontal">Inverse</h2>
-      <p>For scenarios where the label pair bolding should be reversed use <code class="highlighter-rouge">.dl-inverse</code>.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for inverse metadata',    code: metadataInverse  },  "")}}
-    </div>
-  </section>
-{% endblock %}
-{% set metadataHorizontal %}
+    <ul>
+      <li>
+        Consistently use <code class="highlighter-rouge">#</code> or
+        <code class="highlighter-rouge">number</code> in labels
+      </li>
+      <li>Indicate empty/blank values with an em-dash (—)</li>
+      <li>Reflow columns based on available screen real estate</li>
+      <li>Sentence case labels</li>
+    </ul>
+  </div>
+  <div class="pattern">
+    <h1 id="horizontal">Horizontal</h1>
+    <p>Useful for shorter labels/values.</p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for horizontal metadata', code:
+    metadataHorizontal }, "")}}
+  </div>
+  <div class="pattern">
+    <h1 id="vertical">Vertical</h1>
+    <p>Useful for longer labels/values.</p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for vertical metadata', code:
+    metadataVertical }, "")}}
+  </div>
+  <div class="pattern">
+    <h1 id="horizontal">Inline</h1>
+    <p>Useful for few labels/values.</p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for inline metadata', code:
+    metadataInline }, "")}}
+  </div>
+  <div class="pattern">
+    <h1 id="horizontal">Inverse</h1>
+    <p>
+      For scenarios where the label pair bolding should be reversed use
+      <code class="highlighter-rouge">.dl-inverse</code>.
+    </p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for inverse metadata', code:
+    metadataInverse }, "")}}
+  </div>
+</section>
+{% endblock %} {% set metadataHorizontal %}
 <!--Horizontal metadata-->
 <dl class="dl-horizontal">
   <dt>Examiner</dt>

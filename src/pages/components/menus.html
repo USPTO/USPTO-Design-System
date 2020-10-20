@@ -4,32 +4,55 @@
   <div class="pattern">
     <h1>Menus</h1>
 
-  <h3 id="purpose">Purpose</h3>
-  <p>User needs to perform an action, and depending on space constraints or the frequency of use, the action does not need to be visible at all times.</p>
+    <h2 id="purpose">Purpose</h2>
+    <p>
+      User needs to perform an action, and depending on space constraints or the
+      frequency of use, the action does not need to be visible at all times.
+    </p>
 
-  <h3 id="description">Description</h3>
-  <p>Menus provide a list of available actions and options. They’re used in dropdowns, selects, and context menus.</p>
+    <h2 id="description">Description</h2>
+    <p>
+      Menus provide a list of available actions and options. They’re used in
+      dropdowns, selects, and context menus.
+    </p>
 
-  <h3 id="basic-functionality">Basic functionality</h3>
-  <p>Menus appear relative to the control or interaction that triggered the menu. Clicking an item from the menu performs the action or selects the option. For most actions, the menu should close when a menu item is clicked. If the clicked menu item is part of a set of multi-selectable options, then the menu should stay open.</p>
+    <h2 id="basic-functionality">Basic functionality</h2>
+    <p>
+      Menus appear relative to the control or interaction that triggered the
+      menu. Clicking an item from the menu performs the action or selects the
+      option. For most actions, the menu should close when a menu item is
+      clicked. If the clicked menu item is part of a set of multi-selectable
+      options, then the menu should stay open.
+    </p>
 
-  <ul>
-    <li>Menus may have submenus, icons, dividers, category labels, and checkboxes</li>
-    <li>Menu items may change depending on the context (e.g., <code class="highlighter-rouge">Mark as read</code> vs <code class="highlighter-rouge">Mark as unread</code>)</li>
-    <li>Use dividers to group related menu items</li>
-    <li>Use submenus to separate large sets of menu items</li>
-    <li>Include keyboard shortcuts if applicable</li>
-    <li>Disable menu items rather than hiding to improve discoverability of features</li>
-    <li>Indicate submenus with a caret</li>
-    <li>Indicate dialogs with an ellipsis</li>
-    <li>Use sentence case for menu items</li>
-  </ul>
-    </div>
-    <div class="preview  pv-only pv-xs">
-      {{  macros.viewCode({   ariaLabel: 'View code for menu',    code: menu  },  "Menu")}}
-    </div>
-    <div class="pattern">
-    <h2 id="submenus">Submenus</h2>
+    <ul>
+      <li>
+        Menus may have submenus, icons, dividers, category labels, and
+        checkboxes
+      </li>
+      <li>
+        Menu items may change depending on the context (e.g.,
+        <code class="highlighter-rouge">Mark as read</code> vs
+        <code class="highlighter-rouge">Mark as unread</code>)
+      </li>
+      <li>Use dividers to group related menu items</li>
+      <li>Use submenus to separate large sets of menu items</li>
+      <li>Include keyboard shortcuts if applicable</li>
+      <li>
+        Disable menu items rather than hiding to improve discoverability of
+        features
+      </li>
+      <li>Indicate submenus with a caret</li>
+      <li>Indicate dialogs with an ellipsis</li>
+      <li>Use sentence case for menu items</li>
+    </ul>
+  </div>
+  <div class="preview pv-only pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for menu', code: menu },
+    "Menu")}}
+  </div>
+  <div class="pattern">
+    <h1 id="submenus">Submenus</h1>
 
     <p>Submenus help organize menu items.</p>
   </div>

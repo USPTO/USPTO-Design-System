@@ -3,9 +3,12 @@
 <section>
   <div class="pattern">
     <h1 id="contextual-alerts">Contextual alerts</h1>
-    <h3 id="purpose">Purpose</h3>
-    <p>Users need to be aware of important information related to their current activity.</p>
-    <h3 id="description">Description</h3>
+    <h2 id="purpose">Purpose</h2>
+    <p>
+      Users need to be aware of important information related to their current
+      activity.
+    </p>
+    <h2 id="description">Description</h2>
     <ul>
       <li>
         Contextual alerts are positioned above the area or form they relate to
@@ -21,7 +24,7 @@
         automatically, unless the situation has been resolved in some other way
       </li>
     </ul>
-    <h3>Types:</h3>
+    <h2>Types:</h2>
     <ul>
       <li>
         <strong>Info</strong> alerts should be used when there are tips or
@@ -56,23 +59,39 @@
 </section>
 <section>
   <div class="pattern">
-   <h2 id="system-notifications">System notifications</h2>
+    <h1 id="system-notifications">System notifications</h1>
 
-  <h3 id="purpose-1">Purpose</h3>
-  <p>Users need to be aware of important information related to the system.</p>
+    <h2 id="purpose-1">Purpose</h2>
+    <p>
+      Users need to be aware of important information related to the system.
+    </p>
 
-  <h3 id="description-1">Description</h3>
+    <h2 id="description-1">Description</h2>
 
-  <ul>
-    <li>System notifications appear in in the top right corner of the screen</li>
-    <li>They are usually triggered by events <em>unrelated</em> to the user’s interactions</li>
-    <li>They can be closable and can have other action buttons or links.</li>
-    <li>Notifications with low importance (info or success) can close automatically after 20 seconds (if desired)</li>
-    <li>Notifications with high importance (warning or danger) should not close automatically, unless the situation has been resolved in some other way</li>
-    <li>Optional <code class="highlighter-rouge">.toast-footer</code> can be added to further emphasize action buttons in system notifications</li>
-  </ul>
-<!--
-  <h3>Types</h3>
+    <ul>
+      <li>
+        System notifications appear in in the top right corner of the screen
+      </li>
+      <li>
+        They are usually triggered by events <em>unrelated</em> to the user’s
+        interactions
+      </li>
+      <li>They can be closable and can have other action buttons or links.</li>
+      <li>
+        Notifications with low importance (info or success) can close
+        automatically after 20 seconds (if desired)
+      </li>
+      <li>
+        Notifications with high importance (warning or danger) should not close
+        automatically, unless the situation has been resolved in some other way
+      </li>
+      <li>
+        Optional <code class="highlighter-rouge">.toast-footer</code> can be
+        added to further emphasize action buttons in system notifications
+      </li>
+    </ul>
+    <!--
+  <h2>Types</h2>
 
   <ul>
     <li><strong>Info</strong> notifications can be used for general messages that aren’t particularly critical</li>
@@ -85,7 +104,6 @@
     {{ macros.viewCode({ ariaLabel: 'View code for notification', code:
     standardNotification }, 'System notification')}}
   </div>
-  <div class="preview pv-only pv-md"> {{  macros.viewCode({   ariaLabel: 'View code for notification',    code: standardNotification  }, 'System notification')}} </div>
 </section>
 
 {% endblock %} {% set standardAlerts %}

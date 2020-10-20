@@ -25,23 +25,12 @@
       </li>
       <li><strong>Secondary</strong>, the general button style.</li>
 
-{% block content %}
-  <section>
-    <div class="pattern">
-      <h1>Buttons</h1>
-      <p>Buttons are used as triggers for actions. Depending on the use case, buttons contain a label and/or an icon. There are a variety of styles, sizes, and variations that can be used for different situations.</p>
-      <p>All button labels are sentence case. They should be as short as possible while clearly explaining what will happen when the button is clicked.</p>
-    </div>
-  </section>
-  <section>
-    <div class="pattern">
-      <h2 id="button-styles">Button styles</h2>
-      <p>There are 6 button styles:</p>
-      <ul>
-        <li>
-          <strong>Primary</strong>, indicates the critical, or most important action on a form/page.</li>
-        <li>
-          <strong>Secondary</strong>, the general button style.</li>
+      <li><strong>Success</strong>, indicates a positive action.</li>
+
+      <li>
+        <strong>Danger</strong>, indicates a dangerous, generally destructive
+        action, such as deleting.
+      </li>
 
       <li><strong>Info</strong>, indicates a informative action.</li>
       <li>
@@ -77,10 +66,6 @@
     buttonOutline }, 'Outline Buttons')}}
   </div>
   <div class="pattern">
-<<<<<<< HEAD
-    <h3 id="disabled-state">Disabled state</h3>
-    <p>Inactive states of UI elements, including buttons, are not required to meet accessible contrast requirements. <a href="https://www.w3.org/TR/WCAG21/#non-text-contrast">See WCAG 2.1 Section 1.4.11</a>
-=======
     <h2 id="disabled-state">Disabled state</h2>
     <p>
       Inactive states of UI elements, including buttons, are not required to
@@ -88,7 +73,6 @@
       <a href="https://www.w3.org/TR/WCAG21/#non-text-contrast"
         >See WCAG 2.1 Section 1.4.11</a
       >
->>>>>>> 4a022c35c90118bf25dcc022ad02277fbaf30f2f
     </p>
   </div>
   <div class="preview">
@@ -98,7 +82,7 @@
 </section>
 <section>
   <div class="pattern">
-    <h2 id="button-sizes">Button sizes</h2>
+    <h1 id="button-sizes">Button sizes</h1>
     <p>There are 3 different button sizes:</p>
     <ul>
       <li>
@@ -117,8 +101,12 @@
     buttonSizes } )}}
   </div>
   <div class="pattern">
-    <h3 id="block-level-buttons">Block level buttons</h3>
-    <p>Use the <code class="highlighter-rouge">btn-block</code> class for buttons that fill the width of their container. These are useful for narrow containers and cleaning up alignment.</p>
+    <h2 id="block-level-buttons">Block level buttons</h2>
+    <p>
+      Use the <code class="highlighter-rouge">btn-block</code> class for buttons
+      that fill the width of their container. These are useful for narrow
+      containers and cleaning up alignment.
+    </p>
   </div>
   <div class="preview pv-sm">
     {{ macros.viewCode({ ariaLabel: 'View code for block buttons', code:
@@ -127,8 +115,13 @@
 </section>
 <section>
   <div class="pattern">
-    <h2 id="button-groups">Button groups</h2>
-    <p>Related buttons can be grouped together to show associations and improve clarity. Button groups can be sized using the <code class="highlighter-rouge">btn-group-lg</code>, and <code class="highlighter-rouge">btn-group-sm</code>.</p>
+    <h1 id="button-groups">Button groups</h1>
+    <p>
+      Related buttons can be grouped together to show associations and improve
+      clarity. Button groups can be sized using the
+      <code class="highlighter-rouge">btn-group-lg</code>, and
+      <code class="highlighter-rouge">btn-group-sm</code>.
+    </p>
   </div>
   <div class="preview">
     {{ macros.viewCode({ ariaLabel: 'View code for button groups', code:
@@ -137,9 +130,16 @@
 </section>
 <section>
   <div class="pattern">
-    <h2 id="toggle-buttons">Toggle buttons</h2>
-    <p>Similar to a checkbox, toggle buttons can be toggled between active or not active.</p>
-    <p>Add the <code class="highlighter-rouge">active</code> class and the <code class="highlighter-rouge">aria-pressed="true"</code> attribute to a button.</p>
+    <h1 id="toggle-buttons">Toggle buttons</h1>
+    <p>
+      Similar to a checkbox, toggle buttons can be toggled between active or not
+      active.
+    </p>
+    <p>
+      Add the <code class="highlighter-rouge">active</code> class and the
+      <code class="highlighter-rouge">aria-pressed="true"</code> attribute to a
+      button.
+    </p>
   </div>
   <div class="preview">
     {{ macros.viewCode({ ariaLabel: 'View code for toggle buttons', code:
@@ -148,7 +148,7 @@
 </section>
 <section>
   <div class="pattern">
-    <h2 id="dropdown-buttons">Dropdown buttons</h2>
+    <h1 id="dropdown-buttons">Dropdown buttons</h1>
     <p>Dropdown buttons can provide a menu or popover when clicked.</p>
   </div>
   <div class="preview">
@@ -158,8 +158,13 @@
 </section>
 <section>
   <div class="pattern">
-    <h2 id="split-buttons">Split buttons</h2>
-    <p>Split buttons contain both a button and a dropdown. Clicking the button performs the action. Clicking the dropdown reveals other actions. Generally, the button is the primary or most common action, and items in the dropdown are secondary or less common actions.</p>
+    <h1 id="split-buttons">Split buttons</h1>
+    <p>
+      Split buttons contain both a button and a dropdown. Clicking the button
+      performs the action. Clicking the dropdown reveals other actions.
+      Generally, the button is the primary or most common action, and items in
+      the dropdown are secondary or less common actions.
+    </p>
   </div>
   <div class="preview">
     {{ macros.viewCode({ ariaLabel: 'View code for split buttons', code:
@@ -168,10 +173,20 @@
 </section>
 <section>
   <div class="pattern">
-    <h2 id="icon-buttons">Icon buttons</h2>
-    <p>Icon buttons are buttons with an icon inside. An icon button may or may not have text. Icon buttons can help save space or improve the ability to scan/find buttons quickly.</p>
-    <p>Use <code class="highlighter-rouge">btn-icon-only</code> for buttons with only an icon in it. This optimizes the padding.</p>
-    <p>For an icon without chrome, use a <code class="highlighter-rouge">btn-hover</code>.</p>
+    <h1 id="icon-buttons">Icon buttons</h1>
+    <p>
+      Icon buttons are buttons with an icon inside. An icon button may or may
+      not have text. Icon buttons can help save space or improve the ability to
+      scan/find buttons quickly.
+    </p>
+    <p>
+      Use <code class="highlighter-rouge">btn-icon-only</code> for buttons with
+      only an icon in it. This optimizes the padding.
+    </p>
+    <p>
+      For an icon without chrome, use a
+      <code class="highlighter-rouge">btn-hover</code>.
+    </p>
   </div>
   <div class="preview">
     {{ macros.viewCode({ ariaLabel: 'View code for icon buttons', code:

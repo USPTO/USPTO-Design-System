@@ -1,5 +1,4 @@
 
 /node_modules
-/dist
 !.prettierrc
 dist/assets/css/usptostrap.css.map
