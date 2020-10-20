@@ -1,50 +1,62 @@
-{% extends 'layouts/components.njk' %}
-{% set page = { class: 'page-badges' } %}
-
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-badges' } %}
 {% block content %}
-  <section>
-    <div class="pattern">
-      <h1 id="labels">Labels</h1>
-      <p>Labels are generally used to provide emphasis on a characteristic of an object, e.g., the category of a document. They are generally actionless.</p>
-      <p>Avoid mixing standard and subtle labels.</p>
-      <h2 id="standard">Standard</h2>
-      <p>Use standard labels by default unless there are going to be many on the screen at once.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for standard labels',    code: standardBadges  }, 'Standard labels')}}
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for pill labels',    code: pillBadges  }, 'Pill labels')}}
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for link labels',    code: linkBadges  }, 'Link labels')}}
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for subtle labels',    code: subtleBadges  }, 'Subtle labels')}}
-    </div>
-  </section>
-  <section>
-    <div class="pattern">
-      <h1 id="badges">Badges</h1>
-      <p>Badges are generally used for emphasizing a numerical characteristic of an object, e.g., the number of unread items in a folder.</p>
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for subtle badges',    code: smallBadges  }, '')}}
-    </div>
-    <div class="preview pv-xs">
-      {{  macros.viewCode({   ariaLabel: 'View code for menu badges',    code: menuBadges  }, '')}}
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for menu badges',    code: buttonBadges  }, '')}}
-    </div>
-    <div class="preview">
-      {{  macros.viewCode({   ariaLabel: 'View code for menu badges',    code: sizeBadges  }, '')}}
-    </div>
-  </section>
-{% endblock %}
-
-
-{% set standardBadges %}
+<section>
+  <div class="pattern">
+    <h1 id="labels">Labels</h1>
+    <p>
+      Labels are generally used to provide emphasis on a characteristic of an
+      object, e.g., the category of a document. They are generally actionless.
+    </p>
+    <p>Avoid mixing standard and subtle labels.</p>
+    <h2 id="standard">Standard</h2>
+    <p>
+      Use standard labels by default unless there are going to be many on the
+      screen at once.
+    </p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for standard labels', code:
+    standardBadges }, 'Standard labels')}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for pill labels', code:
+    pillBadges }, 'Pill labels')}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for link labels', code:
+    linkBadges }, 'Link labels')}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for subtle labels', code:
+    subtleBadges }, 'Subtle labels')}}
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h1 id="badges">Badges</h1>
+    <p>
+      Badges are generally used for emphasizing a numerical characteristic of an
+      object, e.g., the number of unread items in a folder.
+    </p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for subtle badges', code:
+    smallBadges }, '')}}
+  </div>
+  <div class="preview pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for menu badges', code:
+    menuBadges }, '')}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for menu badges', code:
+    buttonBadges }, '')}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for menu badges', code:
+    sizeBadges }, '')}}
+  </div>
+</section>
+{% endblock %} {% set standardBadges %}
 <!--Standard badges-->
 <span class="badge badge-primary">Primary</span>
 <span class="badge badge-secondary">Secondary</span>
@@ -54,8 +66,7 @@
 <span class="badge badge-info">Info</span>
 <span class="badge badge-light">Light</span>
 <span class="badge badge-dark">Dark</span>
-{% endset%}
-{% set pillBadges %}
+{% endset%} {% set pillBadges %}
 <!--Pill badges-->
 <span class="badge badge-pill badge-primary">Primary</span>
 <span class="badge badge-pill badge-secondary">Secondary</span>
@@ -65,8 +76,7 @@
 <span class="badge badge-pill badge-info">Info</span>
 <span class="badge badge-pill badge-light">Light</span>
 <span class="badge badge-pill badge-dark">Dark</span>
-{% endset%}
-{% set linkBadges %}
+{% endset%} {% set linkBadges %}
 <!--Links badges-->
 <a href="#" class="badge badge-primary">Primary</a>
 <a href="#" class="badge badge-secondary">Secondary</a>
@@ -76,9 +86,7 @@
 <a href="#" class="badge badge-info">Info</a>
 <a href="#" class="badge badge-light">Light</a>
 <a href="#" class="badge badge-dark">Dark</a>
-{% endset%}
-
-{% set subtleBadges %}
+{% endset%} {% set subtleBadges %}
 <!--Standard badges-->
 <span class="badge badge-primary subtle">Primary</span>
 <span class="badge badge-secondary subtle">Secondary</span>
@@ -87,30 +95,26 @@
 <span class="badge badge-warning subtle">Warning</span>
 <span class="badge badge-info subtle">Info</span>
 <span class="badge badge-dark subtle">Dark</span>
-{% endset%}
-
-{% set smallBadges %}
+{% endset%} {% set smallBadges %}
 <span class="badge badge-primary">5</span>
 <span class="badge badge-secondary">200</span>
 <span class="badge badge-danger">0</span>
-{% endset%}
-
-{% set menuBadges %}
+{% endset%} {% set menuBadges %}
 <ul class="list-group">
-  <li class="list-group-item"> Inbox <span class="badge badge-secondary float-right">1,932</span>
+  <li class="list-group-item">
+    Inbox <span class="badge badge-secondary float-right">1,932</span>
   </li>
-  <li class="list-group-item active"> Outbox <span class="badge float-right">2</span>
+  <li class="list-group-item active">
+    Outbox <span class="badge float-right">2</span>
   </li>
-  <li class="list-group-item"> Spam </li>
+  <li class="list-group-item">Spam</li>
 </ul>
-{% endset%}
-{% set buttonBadges %}
-<button type="button" class="btn btn-primary"> Notifications  <span class="badge badge-light">4</span>
+{% endset%} {% set buttonBadges %}
+<button type="button" class="btn btn-primary">
+  Notifications <span class="badge badge-light">4</span>
   <span class="sr-only">unread messages</span>
 </button>
-{% endset%}
-
-{% set sizeBadges %}
+{% endset%} {% set sizeBadges %}
 <h1>Example heading <span class="badge badge-secondary">New</span></h1>
 <h2>Example heading <span class="badge badge-secondary">New</span></h2>
 <h3>Example heading <span class="badge badge-secondary">New</span></h3>

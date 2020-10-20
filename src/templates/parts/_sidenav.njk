@@ -1,16 +1,16 @@
 <nav id="sidenav" aria-label="DPL Components">
-<ul class="sidenav">
+  <ul class="sidenav">
     {% for item in navLinks %}
       <li>
         <a href="{{item.href}}" data-parent="{{item.text}}">{{item.text}}</a>
         <ul class="sidenav-sublist">
-        {% for child in item.children %}
-          <li><a href="{{child.href}}">{{child.text}}</a></li>
+          {% for child in item.children %}
+            <li>
+              <a href="{{child.href}}">{{child.text}}</a>
+            </li>
           {% endfor %}
         </ul>
       </li>
     {% endfor %}
   </ul>
 </nav>
-
-

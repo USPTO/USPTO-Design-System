@@ -1,66 +1,99 @@
-{% extends 'layouts/components.njk' %}
-{% set page = { class: 'page-menus' } %}
-
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-menus' } %}
 {% block content %}
-  <section>
-    <div class="pattern">
-      <h1>Menus</h1>
+<section>
+  <div class="pattern">
+    <h1>Menus</h1>
 
-  <h2 id="purpose">Purpose</h2>
-  <p>User needs to perform an action, and depending on space constraints or the frequency of use, the action does not need to be visible at all times.</p>
+    <h2 id="purpose">Purpose</h2>
+    <p>
+      User needs to perform an action, and depending on space constraints or the
+      frequency of use, the action does not need to be visible at all times.
+    </p>
 
-  <h2 id="description">Description</h2>
-  <p>Menus provide a list of available actions and options. They’re used in dropdowns, selects, and context menus.</p>
+    <h2 id="description">Description</h2>
+    <p>
+      Menus provide a list of available actions and options. They’re used in
+      dropdowns, selects, and context menus.
+    </p>
 
-  <h2 id="basic-functionality">Basic functionality</h2>
-  <p>Menus appear relative to the control or interaction that triggered the menu. Clicking an item from the menu performs the action or selects the option. For most actions, the menu should close when a menu item is clicked. If the clicked menu item is part of a set of multi-selectable options, then the menu should stay open.</p>
+    <h2 id="basic-functionality">Basic functionality</h2>
+    <p>
+      Menus appear relative to the control or interaction that triggered the
+      menu. Clicking an item from the menu performs the action or selects the
+      option. For most actions, the menu should close when a menu item is
+      clicked. If the clicked menu item is part of a set of multi-selectable
+      options, then the menu should stay open.
+    </p>
 
-  <ul>
-    <li>Menus may have submenus, icons, dividers, category labels, and checkboxes</li>
-    <li>Menu items may change depending on the context (e.g., <code class="highlighter-rouge">Mark as read</code> vs <code class="highlighter-rouge">Mark as unread</code>)</li>
-    <li>Use dividers to group related menu items</li>
-    <li>Use submenus to separate large sets of menu items</li>
-    <li>Include keyboard shortcuts if applicable</li>
-    <li>Disable menu items rather than hiding to improve discoverability of features</li>
-    <li>Indicate submenus with a caret</li>
-    <li>Indicate dialogs with an ellipsis</li>
-    <li>Use sentence case for menu items</li>
-  </ul>
-    </div>
-    <div class="preview  pv-only pv-xs">
-      {{  macros.viewCode({   ariaLabel: 'View code for menu',    code: menu  },  "Menu")}}
-    </div>
-    <div class="pattern">
+    <ul>
+      <li>
+        Menus may have submenus, icons, dividers, category labels, and
+        checkboxes
+      </li>
+      <li>
+        Menu items may change depending on the context (e.g.,
+        <code class="highlighter-rouge">Mark as read</code> vs
+        <code class="highlighter-rouge">Mark as unread</code>)
+      </li>
+      <li>Use dividers to group related menu items</li>
+      <li>Use submenus to separate large sets of menu items</li>
+      <li>Include keyboard shortcuts if applicable</li>
+      <li>
+        Disable menu items rather than hiding to improve discoverability of
+        features
+      </li>
+      <li>Indicate submenus with a caret</li>
+      <li>Indicate dialogs with an ellipsis</li>
+      <li>Use sentence case for menu items</li>
+    </ul>
+  </div>
+  <div class="preview pv-only pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for menu', code: menu },
+    "Menu")}}
+  </div>
+  <div class="pattern">
     <h1 id="submenus">Submenus</h1>
 
-  <p>Submenus help organize menu items.</p>
-    </div>
-    <div class="preview  pv-only pv-xs">
-      {{  macros.viewCode({   ariaLabel: 'View code for submenu',    code: subMenu }, "Submenu" )}}
-    </div>
-  </section>
-{% endblock %}
-{% set menu %}
+    <p>Submenus help organize menu items.</p>
+  </div>
+  <div class="preview pv-only pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for submenu', code: subMenu },
+    "Submenu" )}}
+  </div>
+</section>
+{% endblock %} {% set menu %}
 <!--Menu-->
 <div class="dropdown-menu">
-  <a class="dropdown-item" href="#">Bold <span class="float-right text-muted ml-4">Ctrl+B</span></a>
- <a class="dropdown-item" href="#">Italic <span class="float-right text-muted ml-4">Ctrl+I</span></a>
-<a class="dropdown-item"href="#">Underline <span class="float-right text-muted ml-4">Ctrl+U</span></a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item"href="#">Font <span class="float-right text-muted ml-4">></span></a>
-<a class="dropdown-item"href="#">Font size <span class="float-right text-muted ml-4">></span></a>
-<div role="separator" class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#"
+    >Bold <span class="float-right text-muted ml-4">Ctrl+B</span></a
+  >
+  <a class="dropdown-item" href="#"
+    >Italic <span class="float-right text-muted ml-4">Ctrl+I</span></a
+  >
+  <a class="dropdown-item" href="#"
+    >Underline <span class="float-right text-muted ml-4">Ctrl+U</span></a
+  >
+  <div role="separator" class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#"
+    >Font <span class="float-right text-muted ml-4">></span></a
+  >
+  <a class="dropdown-item" href="#"
+    >Font size <span class="float-right text-muted ml-4">></span></a
+  >
+  <div role="separator" class="dropdown-divider"></div>
   <a class="dropdown-item disabled" href="#">Conditional formatting...</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Clear formatting</a>
+  <div role="separator" class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">Clear formatting</a>
 </div>
-{% endset%}
-
-{% set subMenu %}
+{% endset%} {% set subMenu %}
 <!--Submenu-->
 <div class="dropdown-menu">
-<a class="dropdown-item"href="#">Submenu item <span class="float-right text-muted ml-4">></span></a>
-<a class="dropdown-item"href="#">Disabled submenu item <span class="float-right text-muted ml-4 d-inline">></span></a>
-
+  <a class="dropdown-item" href="#"
+    >Submenu item <span class="float-right text-muted ml-4">></span></a
+  >
+  <a class="dropdown-item" href="#"
+    >Disabled submenu item
+    <span class="float-right text-muted ml-4 d-inline">></span></a
+  >
 </div>
 {% endset%}

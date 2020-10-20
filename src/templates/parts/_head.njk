@@ -1,11 +1,14 @@
-  <meta charset="UTF-8">
-  <meta name="description" content="{{ description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta charset="UTF-8">
+<meta name="description" content="{{ description }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ img }}favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ img }}favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ img }}favicons/favicon-16x16.png">
-  <link rel="shortcut icon" href="{{ img }}favicons/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ img }}favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ img }}favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ img }}favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="{{ img }}favicons/favicon.ico">
 
-  <title>{{ title }}{% if page.title %}{{ sep or ' ' }}{{ page.title }}{% endif %}</title>
+<title>{{ title }}
+  {% if page.title %}{{ sep or ' ' }}{{ page.title }}
+  {% endif %}
+</title>

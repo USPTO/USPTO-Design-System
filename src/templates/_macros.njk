@@ -1,10 +1,14 @@
 {% macro cardSwatch(colorName, colorValue, colorNotes) %}
-<div class="color-swatch-tile">
-  <div class="color-swatch"
+  <div class="color-swatch-tile">
+    <div class="color-swatch"
          style="background-color: {{ colorValue }};"></div>
-  <div class="color-name"> {{ colorName }} </div>
-  <div class="color-notes"> {{ colorNotes }} </div>
-</div>
+    <div class="color-name">
+      {{ colorName }}
+    </div>
+    <div class="color-notes">
+      {{ colorNotes }}
+    </div>
+  </div>
 {% endmacro %}
 
 {% macro viewCode(o, type = 'Example') %}
@@ -12,26 +16,32 @@
   {% set id = o.id or uid('codebox') %}
   {% set code = o.code %}
   {% set html = o.html %}
-<div class="{% if o.class %} {{ o.class }}{% endif %}">
-  <div class="d-flex"> {% if type %}
-    <h2>{{type}}</h2>
-    {% endif %}
-    <div class=" ml-auto"> 
-      {{ viewCodeButton(id, o.ariaLabel) }}
-      {{ copyCodeButton(o.code) }}
+  <div class="{% if o.class %} {{ o.class }}{% endif %}">
+    <div class="d-flex">
+      {% if type %}
+        <h2>{{type}}</h2>
+      {% endif %}
+      <div class=" ml-auto">
+        {{ viewCodeButton(id, o.ariaLabel) }}
+        {{ copyCodeButton(o.code) }}
+      </div>
+    </div>
+    <div class="preview-size">
+      {{ o.code | safe | trim }}
+    </div>
+    <div class="collapse line-numbers pt-2" id="{{ id }}">
+      {{ (o.html or 'Example HTML usage:') | indent(16) | safe | trim }}
+      {% if o.code %}
+        <div class="codeArea">
+          {% code %}{{ o.code | safe | trim }}{% endcode %}
+        </div>
+      {% endif %}
     </div>
   </div>
-  <div class="preview-size"> {{ o.code | safe | trim }} </div>
-  <div class="collapse line-numbers pt-2" id="{{ id }}">
-   {{ (o.html or 'Example HTML usage:') | indent(16) | safe | trim }}
-    {% if o.code %}
-    <div class="codeArea"> {% code %}{{ o.code | safe | trim }}{% endcode %} </div>
-    {% endif %} </div>
-</div>
 {% endmacro %}
 
 {% macro viewCodeButton (controls, label, text, className = 'btn-dark') -%}
-<button class="btn btn-sm btn-light md-icon collapsed"
+  <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="{{ controls }}"
 
@@ -47,11 +57,12 @@
 
       title="{{ label }}"
 
-    > <span class="material-icons">unfold_more</span> View code </button>
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
 {%- endmacro %}
 
 {% macro copyCodeButton (controls) -%}
-<button class="btn btn-sm btn-light md-icon clipboard"      
+  <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="{{ controls }}"
 
@@ -59,5 +70,6 @@
 
       title="Copy code"
 
-    > <span class="material-icons">content_copy</span> Copy code </button>
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
 {%- endmacro %}

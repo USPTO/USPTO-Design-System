@@ -9,7 +9,8 @@
     "build": "node ./scripts/build",
     "dev": "node ./scripts/dev",
     "serve": "node ./scripts/server",
-    "pretty-scss": "prettier ./src/assets/scss/**/*.scss --write"
+    "pretty-scss": "prettier ./src/assets/scss/**/*.scss --write",
+    "pretty-html": "prettier ./src/pages/**/*.html --write"   
   },
   "repository": {
     "type": "git",
