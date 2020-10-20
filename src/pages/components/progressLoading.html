@@ -1,0 +1,63 @@
+{% extends 'layouts/components.njk' %}
+{% set page = { class: 'page-progressLoading' } %}
+
+{% block content %}
+  <section>
+    <div class="pattern">
+      <h1 id="progress-bars">Progress bars</h1>
+
+      <p>Progress bars should be used when there is a determinate amount of time/progress related to a process (e.g., uploading a file). An indeterminate progress can be used in conjunction with a determinate progress bar.</p>
+    </div>
+    <div class="preview pv-md">
+      {{  macros.viewCode({   ariaLabel: 'View code for determinate progress bar',    code: progressbar  },  "Determinate progress bar")}}
+    </div>
+
+    <div class="preview pv-md">
+      {{  macros.viewCode({   ariaLabel: 'View code for indeterminate progress bar',    code: progressbarIndeterminate  },  "Indeterminate progress bar")}}
+    </div>
+
+  </section>
+  <section>
+    <div class="pattern">
+      <h1 id="load-spinners">Load spinners</h1>
+
+      <p>Load spinners should be used when there is an indeterminate amount of time/progress related to a process (e.g., downloading data).</p>
+
+   
+
+    </div>
+
+    <div class="preview pv-xs">
+      {{  macros.viewCode({   ariaLabel: 'View code for load spinner',    code: loader  },  "Load spinner")}}
+    </div>
+  </section>
+{% endblock %}
+{% set progressbar %}
+<!--Indeterminate progress bar-->
+<div class="progress-label">
+        Importing...
+        </div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+</div>
+{% endset%}
+
+{% set progressbarIndeterminate %}
+<!--Indeterminate progress bar-->
+<div class="progress-label">
+        Finalizing...
+        </div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">100%</div>
+</div>
+{% endset%}
+{% set loader %}
+<!--Load spinner-->
+<div class="overlay">
+  <div class="md-preloader">
+    <svg>
+      <circle></circle>
+    </svg>
+  </div>
+</div>
+{% endset%}

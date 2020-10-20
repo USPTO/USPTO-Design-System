@@ -12324,7 +12324,8 @@ main > section .preview-size .popover {
   border-top: 1px solid #ebebeb;
 }
 
-.dl-inline dd, .dl-inline dt {
+.dl-inline dd,
+.dl-inline dt {
   font-weight: 400;
   float: left;
   display: inline-block;
@@ -12368,12 +12369,62 @@ main > section .preview-size .popover {
     margin-bottom: 0;
   }
 }
-.dl-horizontal dd:before, .dl-horizontal dd:after {
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
   content: " ";
   display: table;
 }
 .dl-horizontal dd:after {
   clear: both;
+}
+
+.btn.btn-hover {
+  border-color: transparent;
+  box-shadow: none;
+  background: none;
+}
+.btn.btn-hover:hover, .btn.btn-hover.page-link:focus {
+  background-color: #c9c9c9;
+  color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+}
+.btn.btn-hover:focus, .btn.btn-hover.focus {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+.btn.btn-hover:active, .btn.btn-hover.active {
+  outline: 0;
+  background-image: none;
+  background: #1b1b1b;
+  border: 1px solid #1b1b1b;
+}
+
+.btn-icon-only {
+  min-width: 33px;
+  text-align: center;
+  padding: 0.625rem;
+}
+.btn-icon-only.btn-sm, .btn-group-sm > .btn-icon-only.btn {
+  padding: 0.25rem;
+}
+
+.table-outline {
+  border: 1px solid #ccc;
+}
+
+.table-config-column {
+  width: 28px;
+  text-align: center;
+  padding: 0;
+  vertical-align: middle;
+}
+.table-config-column button {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
 }
 
 .pl-main {

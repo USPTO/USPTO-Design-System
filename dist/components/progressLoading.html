@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-metadata">
+<html lang="en" class="page-progressLoading">
   <head>
   <meta charset="UTF-8">
   <meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
@@ -345,32 +345,20 @@
   <main id="main-content">
   <section>
     <div class="pattern">
-      <h1>Metadata</h1>
-      <p>The metadata pattern can be used for showing label/value pairs.</p>
-<h3>Do</h3>
-      
+      <h1 id="progress-bars">Progress bars</h1>
 
-      <ul>
-        <li>Consistently use <code class="highlighter-rouge">#</code> or <code class="highlighter-rouge">number</code> in labels</li>
-        <li>Indicate empty/blank values with an em-dash (—)</li>
-        <li>Reflow columns based on available screen real estate</li>
-        <li>Sentence case labels</li>
-      </ul>
-
+      <p>Progress bars should be used when there is a determinate amount of time/progress related to a process (e.g., uploading a file). An indeterminate progress can be used in conjunction with a determinate progress bar.</p>
     </div>
-    <div class="pattern">
-      <h2 id="horizontal">Horizontal</h2>
-      <p>Useful for shorter labels/values.</p>
-    </div>
-    <div class="preview">
+    <div class="preview pv-md">
       
 <div class="">
-  <div class="d-flex">     <div class=" ml-auto"> 
+  <div class="d-flex">     <h3>Determinate progress bar</h3>
+    <div class=" ml-auto"> 
       <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-1"
 
-      aria-label="View code for horizontal metadata"
+      aria-label="View code for determinate progress bar"
 
       aria-expanded="false"
 
@@ -380,24 +368,18 @@
 
       type="button"
 
-      title="View code for horizontal metadata"
+      title="View code for determinate progress bar"
 
     > <span class="material-icons">unfold_more</span> View code </button>
       <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Horizontal metadata--&gt;
-&lt;dl class=&quot;dl-horizontal&quot;&gt;
-  &lt;dt&gt;Examiner&lt;/dt&gt;
-  &lt;dd&gt;IP, Sikyin / 69776 / 1742&lt;/dd&gt;
-  &lt;dt&gt;SPE (multiple)&lt;/dt&gt;
-  &lt;dd&gt;John Olaskey&lt;/dd&gt;
-  &lt;dt&gt;Applicants&lt;/dt&gt;
-  &lt;dd&gt;Roman Amirpur&lt;/dd&gt;
-  &lt;dt&gt;Inventors&lt;/dt&gt;
-  &lt;dd&gt;Disney Dale&lt;/dd&gt;
-  &lt;dt&gt;Law firm&lt;/dt&gt;
-  &lt;dd&gt;Clayton &amp;amp; Clayton Associates&lt;/dd&gt;
-&lt;/dl&gt;
+      data-clipboard-text="&lt;!--Indeterminate progress bar--&gt;
+&lt;div class=&quot;progress-label&quot;&gt;
+        Importing...
+        &lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 25%;&quot; aria-valuenow=&quot;45&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;45%&lt;/div&gt;
+&lt;/div&gt;
 "
 
       type="button"
@@ -407,51 +389,37 @@
     > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
   </div>
-  <div class="preview-size"> <!--Horizontal metadata-->
-<dl class="dl-horizontal">
-  <dt>Examiner</dt>
-  <dd>IP, Sikyin / 69776 / 1742</dd>
-  <dt>SPE (multiple)</dt>
-  <dd>John Olaskey</dd>
-  <dt>Applicants</dt>
-  <dd>Roman Amirpur</dd>
-  <dt>Inventors</dt>
-  <dd>Disney Dale</dd>
-  <dt>Law firm</dt>
-  <dd>Clayton &amp; Clayton Associates</dd>
-</dl> </div>
+  <div class="preview-size"> <!--Indeterminate progress bar-->
+<div class="progress-label">
+        Importing...
+        </div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+</div> </div>
   <div class="collapse line-numbers pt-2" id="codebox-1">
    Example HTML usage:
-    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Horizontal metadata--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dl-horizontal&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Examiner<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>IP, Sikyin / 69776 / 1742<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>SPE (multiple)<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>John Olaskey<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Applicants<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Roman Amirpur<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Inventors<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Disney Dale<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Law firm<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Clayton <span class="hljs-symbol">&amp;amp;</span> Clayton Associates<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre> </div>
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Indeterminate progress bar--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-label&quot;</span>&gt;</span>
+        Importing...
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-bar&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;progressbar&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 25%;&quot;</span> <span class="hljs-attr">aria-valuenow</span>=<span class="hljs-string">&quot;45&quot;</span> <span class="hljs-attr">aria-valuemin</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-valuemax</span>=<span class="hljs-string">&quot;100&quot;</span>&gt;</span>45%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
  </div>
 </div>
 
     </div>
-    <div class="pattern">
-      <h2 id="vertical">Vertical</h2>
-      <p>Useful for longer labels/values.</p>
-    </div>
-    <div class="preview ">
+
+    <div class="preview pv-md">
       
 <div class="">
-  <div class="d-flex">     <div class=" ml-auto"> 
+  <div class="d-flex">     <h3>Indeterminate progress bar</h3>
+    <div class=" ml-auto"> 
       <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-2"
 
-      aria-label="View code for vertical metadata"
+      aria-label="View code for indeterminate progress bar"
 
       aria-expanded="false"
 
@@ -461,23 +429,18 @@
 
       type="button"
 
-      title="View code for vertical metadata"
+      title="View code for indeterminate progress bar"
 
     > <span class="material-icons">unfold_more</span> View code </button>
       <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Vertical metadata--&gt;
-&lt;dl&gt;
-  &lt;dt&gt;Examiner&lt;/dt&gt;
-  &lt;dd&gt;IP, Sikyin / 69776 / 1742&lt;/dd&gt;
-  &lt;dt&gt;SPE (multiple)&lt;/dt&gt;
-  &lt;dd&gt;John Olaskey&lt;/dd&gt;
-  &lt;dt&gt;Publication #&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;a href=&quot;&quot;&gt;32132132132 &lt;i class=&quot;icon icon-external-link&quot;&gt;&lt;/i&gt;
-    &lt;/a&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
+      data-clipboard-text="&lt;!--Indeterminate progress bar--&gt;
+&lt;div class=&quot;progress-label&quot;&gt;
+        Finalizing...
+        &lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-striped bg-primary&quot; role=&quot;progressbar&quot; style=&quot;width: 100%;&quot; aria-valuenow=&quot;45&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;100%&lt;/div&gt;
+&lt;/div&gt;
 "
 
       type="button"
@@ -487,49 +450,48 @@
     > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
   </div>
-  <div class="preview-size"> <!--Vertical metadata-->
-<dl>
-  <dt>Examiner</dt>
-  <dd>IP, Sikyin / 69776 / 1742</dd>
-  <dt>SPE (multiple)</dt>
-  <dd>John Olaskey</dd>
-  <dt>Publication #</dt>
-  <dd>
-    <a href="">32132132132 <i class="icon icon-external-link"></i>
-    </a>
-  </dd>
-</dl> </div>
+  <div class="preview-size"> <!--Indeterminate progress bar-->
+<div class="progress-label">
+        Finalizing...
+        </div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">100%</div>
+</div> </div>
   <div class="collapse line-numbers pt-2" id="codebox-2">
    Example HTML usage:
-    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Vertical metadata--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Examiner<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>IP, Sikyin / 69776 / 1742<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>SPE (multiple)<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>John Olaskey<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Publication #<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>32132132132 <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-external-link&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre> </div>
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Indeterminate progress bar--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-label&quot;</span>&gt;</span>
+        Finalizing...
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-bar progress-bar-striped bg-primary&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;progressbar&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 100%;&quot;</span> <span class="hljs-attr">aria-valuenow</span>=<span class="hljs-string">&quot;45&quot;</span> <span class="hljs-attr">aria-valuemin</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-valuemax</span>=<span class="hljs-string">&quot;100&quot;</span>&gt;</span>100%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
  </div>
 </div>
 
     </div>
+
+  </section>
+  <section>
     <div class="pattern">
-      <h2 id="horizontal">Inline</h2>
-      <p>Useful for few labels/values.</p>
+      <h1 id="load-spinners">Load spinners</h1>
+
+      <p>Load spinners should be used when there is an indeterminate amount of time/progress related to a process (e.g., downloading data).</p>
+
+   
+
     </div>
-    <div class="preview">
+
+    <div class="preview pv-xs">
       
 <div class="">
-  <div class="d-flex">     <div class=" ml-auto"> 
+  <div class="d-flex">     <h3>Load spinner</h3>
+    <div class=" ml-auto"> 
       <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-3"
 
-      aria-label="View code for inline metadata"
+      aria-label="View code for load spinner"
 
       aria-expanded="false"
 
@@ -539,20 +501,19 @@
 
       type="button"
 
-      title="View code for inline metadata"
+      title="View code for load spinner"
 
     > <span class="material-icons">unfold_more</span> View code </button>
       <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Inline metadata--&gt;
-&lt;dl class=&quot;dl-inline&quot;&gt;
-  &lt;dt&gt;Created&lt;/dt&gt;
-  &lt;dd&gt;Mar 5, 2014&lt;/dd&gt;
-  &lt;dt&gt;Views&lt;/dt&gt;
-  &lt;dd&gt;1,662&lt;/dd&gt;
-  &lt;dt&gt;Status&lt;/dt&gt;
-  &lt;dd&gt;Approved&lt;/dd&gt;
-&lt;/dl&gt;
+      data-clipboard-text="&lt;!--Load spinner--&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;md-preloader&quot;&gt;
+    &lt;svg&gt;
+      &lt;circle&gt;&lt;/circle&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 "
 
       type="button"
@@ -562,107 +523,24 @@
     > <span class="material-icons">content_copy</span> Copy code </button>
     </div>
   </div>
-  <div class="preview-size"> <!--Inline metadata-->
-<dl class="dl-inline">
-  <dt>Created</dt>
-  <dd>Mar 5, 2014</dd>
-  <dt>Views</dt>
-  <dd>1,662</dd>
-  <dt>Status</dt>
-  <dd>Approved</dd>
-</dl> </div>
+  <div class="preview-size"> <!--Load spinner-->
+<div class="overlay">
+  <div class="md-preloader">
+    <svg>
+      <circle></circle>
+    </svg>
+  </div>
+</div> </div>
   <div class="collapse line-numbers pt-2" id="codebox-3">
    Example HTML usage:
-    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Inline metadata--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dl-inline&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Created<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Mar 5, 2014<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Views<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>1,662<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Status<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Approved<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre> </div>
- </div>
-</div>
-
-    </div>
-    <div class="pattern">
-      <h2 id="horizontal">Inverse</h2>
-      <p>For scenarios where the label pair bolding should be reversed use <code class="highlighter-rouge">.dl-inverse</code>.</p>
-    </div>
-    <div class="preview">
-      
-<div class="">
-  <div class="d-flex">     <div class=" ml-auto"> 
-      <button class="btn btn-sm btn-light md-icon collapsed"
-
-      aria-controls="codebox-4"
-
-      aria-label="View code for inverse metadata"
-
-      aria-expanded="false"
-
-      data-target="#codebox-4"
-
-      data-toggle="collapse"
-
-      type="button"
-
-      title="View code for inverse metadata"
-
-    > <span class="material-icons">unfold_more</span> View code </button>
-      <button class="btn btn-sm btn-light md-icon clipboard"      
-
-      data-clipboard-text="&lt;!--Inverse metadata--&gt;
-&lt;dl class=&quot;dl-horizontal dl-inverse&quot;&gt;
-  &lt;dt&gt;Examiner&lt;/dt&gt;
-  &lt;dd&gt;IP, Sikyin / 69776 / 1742&lt;/dd&gt;
-  &lt;dt&gt;SPE (multiple)&lt;/dt&gt;
-  &lt;dd&gt;John Olaskey&lt;/dd&gt;
-  &lt;dt&gt;Applicants&lt;/dt&gt;
-  &lt;dd&gt;Roman Amirpur&lt;/dd&gt;
-  &lt;dt&gt;Inventors&lt;/dt&gt;
-  &lt;dd&gt;Disney Dale&lt;/dd&gt;
-  &lt;dt&gt;Law firm&lt;/dt&gt;
-  &lt;dd&gt;Clayton &amp;amp; Clayton Associates&lt;/dd&gt;
-&lt;/dl&gt;
-"
-
-      type="button"
-
-      title="Copy code"
-
-    > <span class="material-icons">content_copy</span> Copy code </button>
-    </div>
-  </div>
-  <div class="preview-size"> <!--Inverse metadata-->
-<dl class="dl-horizontal dl-inverse">
-  <dt>Examiner</dt>
-  <dd>IP, Sikyin / 69776 / 1742</dd>
-  <dt>SPE (multiple)</dt>
-  <dd>John Olaskey</dd>
-  <dt>Applicants</dt>
-  <dd>Roman Amirpur</dd>
-  <dt>Inventors</dt>
-  <dd>Disney Dale</dd>
-  <dt>Law firm</dt>
-  <dd>Clayton &amp; Clayton Associates</dd>
-</dl> </div>
-  <div class="collapse line-numbers pt-2" id="codebox-4">
-   Example HTML usage:
-    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Inverse metadata--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dl-horizontal dl-inverse&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Examiner<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>IP, Sikyin / 69776 / 1742<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>SPE (multiple)<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>John Olaskey<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Applicants<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Roman Amirpur<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Inventors<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Disney Dale<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Law firm<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Clayton <span class="hljs-symbol">&amp;amp;</span> Clayton Associates<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre> </div>
+    <div class="codeArea"> <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Load spinner--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overlay&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;md-preloader&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">circle</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">circle</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre> </div>
  </div>
 </div>
 
