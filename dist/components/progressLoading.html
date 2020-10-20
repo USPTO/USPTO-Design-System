@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-popovers">
+<html lang="en" class="page-progressLoading">
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
@@ -460,106 +460,26 @@
   <main id="main-content">
 <section>
   <div class="pattern">
-    <h1>Popovers</h1>
+    <h1 id="progress-bars">Progress bars</h1>
 
-    <h2 id="purpose">Purpose</h2>
     <p>
-      Users need to be able to access additional related information or
-      functionality without a change in context.
+      Progress bars should be used when there is a determinate amount of
+      time/progress related to a process (e.g., uploading a file). An
+      indeterminate progress can be used in conjunction with a determinate
+      progress bar.
     </p>
-
-    <h2 id="description">Description</h2>
-    <ul>
-      <li>Popovers are a cross between a dialog and a tooltip</li>
-      <li>
-        Popovers are smaller contextual dialogs that are generally triggered by
-        a click
-      </li>
-      <li>They may or may not provide additional interactive controls</li>
-      <li>
-        Popovers display information or functionality related to a particular
-        item or control
-      </li>
-      <li>
-        Popovers can be dismissed via a close icon, clicking the control that
-        opened it, or by clicking anywhere outside of the popover
-      </li>
-      <li>
-        The amount of content in a popover should be relatively short, but they
-        can be scrollable if necessary
-      </li>
-      <li>
-        Popovers should be positioned based on the screen space available,
-      </li>
-    </ul>
-
-    <p>Use a popover instead of a tooltip or dialog when:</p>
-
-    <ul>
-      <li>You want a contextual relationship that a dialog can’t provide</li>
-      <li>You need to provide relatively simple interactions</li>
-      <li>You have more text/content than can comfortably fit in a tooltip</li>
-    </ul>
-    <div
-      class="bs-popover-left popover show fade d-block position-relative"
-      role="tooltip"
-    >
-      <div class="arrow" style="top: 90px;"></div>
-      <h3 class="popover-header">Add note</h3>
-      <div class="popover-body">
-        <textarea
-          placeholder="Enter note here"
-          class="form-control"
-          name=""
-          id=""
-          rows="3"
-        ></textarea>
-      </div>
-      <div class="popover-toolbar">
-        <button
-          class="btn btn-outline-secondary btn-sm md-icon float-left"
-          type="button"
-        >
-          <i class="material-icons">image</i>
-        </button>
-        <button
-          class="btn btn-outline-secondary btn-sm md-icon float-left"
-          type="button"
-        >
-          <i class="material-icons">link</i>
-        </button>
-        <button class="btn btn-sm btn-primary float-right">Add</button>
-      </div>
-    </div>
-    <p>&nbsp;</p>
-    <div
-      class="bs-popover-right popover show fade d-block position-relative"
-      role="tooltip"
-    >
-      <div class="arrow" style="top: 90px;"></div>
-      <div class="popover-body">
-        <p>
-          Simple search: Type a term in the search field and select the search
-          button.
-        </p>
-        <p>
-          Advanced search: Advanced boolean operators may be used. The default
-          operator when searching multiple terms is “AND”.
-        </p>
-        <a href="">Learn more</a>
-      </div>
-    </div>
   </div>
-  <div class="preview pv-sm">
+  <div class="preview pv-md">
     
   <div class="">
     <div class="d-flex">
+        <h2>Determinate progress bar</h2>
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-1"
 
-      aria-label="View code for popover"
+      aria-label="View code for determinate progress bar"
 
       aria-expanded="false"
 
@@ -569,18 +489,26 @@
 
       type="button"
 
-      title="View code for popover"
+      title="View code for determinate progress bar"
 
     >
     <span class="material-icons">unfold_more</span> View code </button>
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Popover--&gt;
-&lt;div class=&quot;popover bs-popover-right&quot; role=&quot;tooltip&quot;&gt;
-  &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
-  &lt;h3 class=&quot;popover-header&quot;&gt;Popover title&lt;/h3&gt;
-  &lt;div class=&quot;popover-body&quot;&gt;
-    And here&#39;s some amazing content. It&#39;s very engaging. Right?
+      data-clipboard-text="&lt;!--Indeterminate progress bar--&gt;
+&lt;div class=&quot;progress-label&quot;&gt;
+  Importing...
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div
+    class=&quot;progress-bar&quot;
+    role=&quot;progressbar&quot;
+    style=&quot;width: 25%;&quot;
+    aria-valuenow=&quot;45&quot;
+    aria-valuemin=&quot;0&quot;
+    aria-valuemax=&quot;100&quot;
+  &gt;
+    45%
   &lt;/div&gt;
 &lt;/div&gt;
 "
@@ -594,24 +522,40 @@
       </div>
     </div>
     <div class="preview-size">
-      <!--Popover-->
-<div class="popover bs-popover-right" role="tooltip">
-  <div class="arrow"></div>
-  <h3 class="popover-header">Popover title</h3>
-  <div class="popover-body">
-    And here's some amazing content. It's very engaging. Right?
+      <!--Indeterminate progress bar-->
+<div class="progress-label">
+  Importing...
+</div>
+<div class="progress">
+  <div
+    class="progress-bar"
+    role="progressbar"
+    style="width: 25%;"
+    aria-valuenow="45"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  >
+    45%
   </div>
 </div>
     </div>
     <div class="collapse line-numbers pt-2" id="codebox-1">
       Example HTML usage:
         <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Popover--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popover bs-popover-right&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tooltip&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;arrow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popover-header&quot;</span>&gt;</span>Popover title<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popover-body&quot;</span>&gt;</span>
-    And here&#x27;s some amazing content. It&#x27;s very engaging. Right?
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Indeterminate progress bar--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-label&quot;</span>&gt;</span>
+  Importing...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-bar&quot;</span>
+    <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;progressbar&quot;</span>
+    <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 25%;&quot;</span>
+    <span class="hljs-attr">aria-valuenow</span>=<span class="hljs-string">&quot;45&quot;</span>
+    <span class="hljs-attr">aria-valuemin</span>=<span class="hljs-string">&quot;0&quot;</span>
+    <span class="hljs-attr">aria-valuemax</span>=<span class="hljs-string">&quot;100&quot;</span>
+  &gt;</span>
+    45%
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
@@ -619,51 +563,178 @@
 
   </div>
 
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Indeterminate progress bar</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for indeterminate progress bar"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for indeterminate progress bar"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Indeterminate progress bar--&gt;
+&lt;div class=&quot;progress-label&quot;&gt;
+  Finalizing...
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div
+    class=&quot;progress-bar progress-bar-striped bg-primary&quot;
+    role=&quot;progressbar&quot;
+    style=&quot;width: 100%;&quot;
+    aria-valuenow=&quot;45&quot;
+    aria-valuemin=&quot;0&quot;
+    aria-valuemax=&quot;100&quot;
+  &gt;
+    100%
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Indeterminate progress bar-->
+<div class="progress-label">
+  Finalizing...
+</div>
+<div class="progress">
+  <div
+    class="progress-bar progress-bar-striped bg-primary"
+    role="progressbar"
+    style="width: 100%;"
+    aria-valuenow="45"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  >
+    100%
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Indeterminate progress bar--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-label&quot;</span>&gt;</span>
+  Finalizing...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-bar progress-bar-striped bg-primary&quot;</span>
+    <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;progressbar&quot;</span>
+    <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 100%;&quot;</span>
+    <span class="hljs-attr">aria-valuenow</span>=<span class="hljs-string">&quot;45&quot;</span>
+    <span class="hljs-attr">aria-valuemin</span>=<span class="hljs-string">&quot;0&quot;</span>
+    <span class="hljs-attr">aria-valuemax</span>=<span class="hljs-string">&quot;100&quot;</span>
+  &gt;</span>
+    100%
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+<section>
   <div class="pattern">
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-container="body"
-      data-toggle="popover"
-      data-placement="top"
-      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-    >
-      Popover on top
-    </button>
+    <h1 id="load-spinners">Load spinners</h1>
 
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-container="body"
-      data-toggle="popover"
-      data-placement="right"
-      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-    >
-      Popover on right
-    </button>
+    <p>
+      Load spinners should be used when there is an indeterminate amount of
+      time/progress related to a process (e.g., downloading data).
+    </p>
+  </div>
 
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-container="body"
-      data-toggle="popover"
-      data-placement="bottom"
-      data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus."
-    >
-      Popover on bottom
-    </button>
+  <div class="preview pv-xs">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Load spinner</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
 
-    <button
+      aria-controls="codebox-3"
+
+      aria-label="View code for load spinner"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
       type="button"
-      class="btn btn-secondary"
-      data-container="body"
-      data-toggle="popover"
-      data-placement="left"
-      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+
+      title="View code for load spinner"
+
     >
-      Popover on left
-    </button>
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Load spinner--&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;md-preloader&quot;&gt;
+    &lt;svg&gt;
+      &lt;circle&gt;&lt;/circle&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Load spinner-->
+<div class="overlay">
+  <div class="md-preloader">
+    <svg>
+      <circle></circle>
+    </svg>
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Load spinner--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overlay&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;md-preloader&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">circle</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">circle</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
   </div>
 </section>
     </main>

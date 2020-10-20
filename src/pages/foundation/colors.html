@@ -1,27 +1,27 @@
-{% extends 'layouts/foundation.njk' %}
-{% set page = { class: 'page-colors', title: 'Colors' } %}
-
-{% block content %}
+{% extends 'layouts/foundation.njk' %} {% set page = { class: 'page-colors',
+title: 'Colors' } %} {% block content %}
 <!--adding h1 for 508 -->
 <h1 class="sr-only">Colors Page</h1>
-  <section id="primary-ui-colors">
-    <div class="pattern">
-      <h2>This is colors page</h1>
-      <div class="swatches">
-        {{ macros.cardSwatch("brandColor", "#f06d06", "Our main color.") }}
-        {{ macros.cardSwatch("brandHighlight", "#d0b000", "For callouts and highlights.") }}
-        {{ macros.cardSwatch("grayDark", "#333333", "For things like code block backgrounds.") }}
-      </div>
+<section id="primary-ui-colors">
+  <div class="pattern">
+    <h2>This is colors page</h2>
+    <div class="swatches">
+      {{ macros.cardSwatch("brandColor", "#f06d06", "Our main color.") }} {{
+      macros.cardSwatch("brandHighlight", "#d0b000", "For callouts and
+      highlights.") }} {{ macros.cardSwatch("grayDark", "#333333", "For things
+      like code block backgrounds.") }}
     </div>
-  </section>
-  <section id="full-brand-palette">
-    <div class="pattern">
-      <h2>This is colors page</h1>
-      <div class="swatches">
-        {{ macros.cardSwatch("brandColor", "#f06d06", "Our main color.") }}
-        {{ macros.cardSwatch("brandHighlight", "#d0b000", "For callouts and highlights.") }}
-        {{ macros.cardSwatch("grayDark", "#333333", "For things like code block backgrounds.") }}
-      </div>
+  </div>
+</section>
+<section id="full-brand-palette">
+  <div class="pattern">
+    <h2>This is colors page</h2>
+    <div class="swatches">
+      {{ macros.cardSwatch("brandColor", "#f06d06", "Our main color.") }} {{
+      macros.cardSwatch("brandHighlight", "#d0b000", "For callouts and
+      highlights.") }} {{ macros.cardSwatch("grayDark", "#333333", "For things
+      like code block backgrounds.") }}
     </div>
-  </section>
+  </div>
+</section>
 {% endblock %}

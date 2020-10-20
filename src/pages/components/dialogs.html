@@ -1,114 +1,191 @@
-{% extends 'layouts/components.njk' %}
-{% set page = { class: 'page-dialogs' } %}
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-dialogs' }
+%} {% block content %}
+<section>
+  <div class="pattern">
+    <h1>Dialogs</h1>
 
-{% block content %}
-  <section>
-    <div class="pattern">
-      <h1>Dialogs</h1>
+    <h2 id="purpose">Purpose</h2>
+    <p>
+      Dialogs provide the user with a focused way of accomplishing, confirming,
+      or viewing something without entirely leaving a screen or page.
+    </p>
 
-      <h2 id="purpose">Purpose</h2>
-      <p>Dialogs provide the user with a focused way of accomplishing, confirming, or viewing something without entirely leaving a screen or page.</p>
+    <h2 id="description">Description</h2>
+    <ul>
+      <li>
+        Dialogs are useful for interactions that are relatively quick (less than
+        a couple minutes)
+      </li>
+      <li>
+        Dialogs float above the application until the user has taken a desired
+        action or dismissed the dialog
+      </li>
+      <li>
+        Dialogs can be used for managing settings, editing/creating simple
+        objects, confirming an action, or any other set of information/actions
+        that warrant not leaving the page
+      </li>
+      <li>Dialogs are usually opened from a click action</li>
+      <li>
+        Dialogs may or may not block interactions “behind” or “under” the dialog
+        (see <a href="#modes">modes</a>)
+      </li>
+      <li>
+        If there is a non-destructive dismiss/cancel, dialogs can be closed by
+        clicking outside of the dialog
+      </li>
+    </ul>
 
-      <h2 id="description">Description</h2>
-      <ul>
-        <li>Dialogs are useful for interactions that are relatively quick (less than a couple minutes)</li>
-        <li>Dialogs float above the application until the user has taken a desired action or dismissed the dialog</li>
-        <li>Dialogs can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page</li>
-        <li>Dialogs are usually opened from a click action</li>
-        <li>Dialogs may or may not block interactions “behind” or “under” the dialog (see <a href="#modes">modes</a>)</li>
-        <li>If there is a non-destructive dismiss/cancel, dialogs can be closed by clicking outside of the dialog</li>
-      </ul>
+    <h2 id="components">Components</h2>
+    <h5>Header / title bar</h5>
 
-      <h2 id="components">Components</h2>
-      <h5>Header / title bar</h5>
-      
+    <ul>
+      <li>Short and concise title</li>
+      <li>Sentence case title</li>
+      <li>Dismiss (X) icon if a non-destructive ‘cancel/done’ is applicable</li>
+    </ul>
+    <h5>Content</h5>
 
-      <ul>
-        <li>Short and concise title</li>
-        <li>Sentence case title</li>
-        <li>Dismiss (X) icon if a non-destructive ‘cancel/done’ is applicable</li>
-      </ul>
-<h5>Content</h5>
-     
-      <ul>
-        <li>Can contain text or UI controls focused on a particular task, process, or entitiy</li>
-        <li>Can scroll independently depending on the content, creating a pinned header/footer</li>
-      </ul>
-<h5>Footer</h5>
-      
+    <ul>
+      <li>
+        Can contain text or UI controls focused on a particular task, process,
+        or entitiy
+      </li>
+      <li>
+        Can scroll independently depending on the content, creating a pinned
+        header/footer
+      </li>
+    </ul>
+    <h5>Footer</h5>
 
-      <ul>
-        <li>Contains action buttons</li>
-        <li>Primary action buttons are right aligned</li>
-        <li>Cancel/previous buttons are left aligned</li>
-        <li>Use button styles that match the actions/priority, but if there more than two buttons with similar actions/priority, use the default button style for them all</li>
-        <li>Buttons should use action verbs that describe by themselves what will happen on click (e.g., ‘Delete user’ instead of ‘Ok’)</li>
-      </ul>
-    </div>
-    <div class="preview pv-only">
-      {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogDefault  },  "")}}
-    </div>
-     <div class="preview pv-only">
-      {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogFindReplace  },  "")}}
-    </div>
-    <div class="preview pv-only">
-      {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogSuccess  },  "")}}
-    </div>
-    <div class="pattern pv-only">
+    <ul>
+      <li>Contains action buttons</li>
+      <li>Primary action buttons are right aligned</li>
+      <li>Cancel/previous buttons are left aligned</li>
+      <li>
+        Use button styles that match the actions/priority, but if there more
+        than two buttons with similar actions/priority, use the default button
+        style for them all
+      </li>
+      <li>
+        Buttons should use action verbs that describe by themselves what will
+        happen on click (e.g., ‘Delete user’ instead of ‘Ok’)
+      </li>
+    </ul>
+  </div>
+  <div class="preview pv-only">
+    {{ macros.viewCode({ ariaLabel: 'View code for dialog', code: dialogDefault
+    }, "")}}
+  </div>
+  <div class="preview pv-only">
+    {{ macros.viewCode({ ariaLabel: 'View code for dialog', code:
+    dialogFindReplace }, "")}}
+  </div>
+  <div class="preview pv-only">
+    {{ macros.viewCode({ ariaLabel: 'View code for dialog', code: dialogSuccess
+    }, "")}}
+  </div>
+  <div class="pattern pv-only">
     <h1 id="confirmation">Confirmation</h1>
 
-  <p>A confirmation dialog is short, simple dialog that ensures the user is performing an action intentionally. This is especially useful for dangerous or irreversible operations.</p>
-    </div>
-    <div class="preview pv-only">
-      {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogDelete  },  "")}}
-    </div>
-    <div class="preview pv-only">
-      {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogAbandon  },  "")}}
-    </div>
+    <p>
+      A confirmation dialog is short, simple dialog that ensures the user is
+      performing an action intentionally. This is especially useful for
+      dangerous or irreversible operations.
+    </p>
+  </div>
+  <div class="preview pv-only">
+    {{ macros.viewCode({ ariaLabel: 'View code for dialog', code: dialogDelete
+    }, "")}}
+  </div>
+  <div class="preview pv-only">
+    {{ macros.viewCode({ ariaLabel: 'View code for dialog', code: dialogAbandon
+    }, "")}}
+  </div>
 
-    <div class="pattern">
+  <div class="pattern">
     <h1 id="actionless">Actionless</h1>
 
-  <p>An actionless dialog may block user interaction for a period of time, usually until something finishes or some other event occurs.</p>
-    </div>
+    <p>
+      An actionless dialog may block user interaction for a period of time,
+      usually until something finishes or some other event occurs.
+    </p>
+  </div>
 
-    <div class="preview pv-only">
-      {{  macros.viewCode({   ariaLabel: 'View code for dialog',    code: dialogActionless  },  "")}}
-    </div>
+  <div class="preview pv-only">
+    {{ macros.viewCode({ ariaLabel: 'View code for dialog', code:
+    dialogActionless }, "")}}
+  </div>
 
-    <div class="pattern">
-     <h1 id="modes">Modes</h1>
-  <p>Dialogs can prevent the user from performing actions behind/around the dialog if desired. There are 3 general modes:</p>
+  <div class="pattern">
+    <h1 id="modes">Modes</h1>
+    <p>
+      Dialogs can prevent the user from performing actions behind/around the
+      dialog if desired. There are 3 general modes:
+    </p>
 
-  <ul>
-    <li><strong>Modal</strong>: A modal dialog <strong>prevents</strong> the user from interacting with all other areas of the application until the dialog is dismissed.</li>
-    <li><strong>Modeless</strong>: A modeless dialog <strong>allows</strong> the user interact with all other areas of the application without dismissing the dialog.</li>
-    <li><strong>Mixed-modal</strong>: A mixed-modal dialog may block <strong>some</strong> areas of the application, but not others. E.g., a dialog pertaining to one document, but not another visible document.</li>
-  </ul>
-    </div>
+    <ul>
+      <li>
+        <strong>Modal</strong>: A modal dialog <strong>prevents</strong> the
+        user from interacting with all other areas of the application until the
+        dialog is dismissed.
+      </li>
+      <li>
+        <strong>Modeless</strong>: A modeless dialog <strong>allows</strong> the
+        user interact with all other areas of the application without dismissing
+        the dialog.
+      </li>
+      <li>
+        <strong>Mixed-modal</strong>: A mixed-modal dialog may block
+        <strong>some</strong> areas of the application, but not others. E.g., a
+        dialog pertaining to one document, but not another visible document.
+      </li>
+    </ul>
+  </div>
 
-<div class="pattern">
-<h1>Live</h1>
-</div>
+  <div class="pattern">
+    <h1>Live</h1>
+  </div>
 
-<div class="pattern">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLive">
-    Show demo modal
-  </button>
+  <div class="pattern">
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#exampleModalLive"
+    >
+      Show demo modal
+    </button>
 
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdropLive">
-    Show static backdrop modal
-  </button>
-</div>
-  </section>
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#staticBackdropLive"
+    >
+      Show static backdrop modal
+    </button>
+  </div>
+</section>
 
 <!--Modal examples-->
-<div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  id="exampleModalLive"
+  tabindex="-1"
+  aria-labelledby="exampleModalLiveLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title" id="exampleModalLiveLabel">Modal title</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -116,199 +193,315 @@
         <p>Woohoo, you're reading this text in a modal!</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+        <button
+          type="button"
+          class="btn btn-sm btn-secondary"
+          data-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-sm btn-primary">
+          Save changes
+        </button>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="staticBackdropLive" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLiveLabel" style="display: none;" aria-hidden="true">
+<div
+  class="modal fade"
+  id="staticBackdropLive"
+  data-backdrop="static"
+  data-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLiveLabel"
+  style="display: none;"
+  aria-hidden="true"
+>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title" id="staticBackdropLiveLabel">Modal title</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>I will not close if you click outside me. Don't even try to press escape key.</p>
+        <p>
+          I will not close if you click outside me. Don't even try to press
+          escape key.
+        </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+        <button
+          type="button"
+          class="btn btn-sm btn-secondary"
+          data-dismiss="modal"
+        >
+          Close
+        </button>
         <button type="button" class="btn btn-sm btn-primary">Understood</button>
       </div>
     </div>
   </div>
 </div>
 
-
-{% endblock %}
-{% set dialogDefault %}
+{% endblock %} {% set dialogDefault %}
 <!--Dialog-->
 <div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title">Rename file</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h1 class="modal-title">Rename file</h1>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
         <form role="form" class="">
           <div class="form-group">
-            <label for="tb12" class="control-label">Enter a new file name</label>
-            <input type="text" class="form-control" id="tb12" value="dialogs.md">
+            <label for="tb12" class="control-label"
+              >Enter a new file name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="tb12"
+              value="dialogs.md"
+            />
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+        <button
+          type="button"
+          class="btn btn-sm btn-secondary"
+          data-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-sm btn-primary">
+          Save changes
+        </button>
       </div>
     </div>
   </div>
 </div>
-{% endset%}
-
-{% set dialogFindReplace %}
+{% endset%} {% set dialogFindReplace %}
 <!--Dialog-->
 <div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title">Find and replace</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h1 class="modal-title">Find and replace</h1>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
         <form role="form">
-           <div class="form-group">
-              <label for="exampleFormControlInput1">Find</label>
-              <input type="text" class="form-control " id="exampleFormControlInput1">
-            </div>
-<div class="form-group">
-              <label for="exampleFormControlInput2">Replace with</label>
-              <input type="email" class="form-control " id="exampleFormControlInput2">
-            </div>
-            <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="">
-                  <label class="form-check-label" for="defaultCheck1">
-                  Match case
-                </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked="">
-                  <label class="form-check-label" for="defaultCheck2">
-                  Whole word
-                </label>
-                </div>
-
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Find</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput2">Replace with</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput2"
+            />
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="defaultCheck1"
+              checked=""
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Match case
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="defaultCheck2"
+              checked=""
+            />
+            <label class="form-check-label" for="defaultCheck2">
+              Whole word
+            </label>
+          </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Find</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" disabled="">Replace</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Replace all</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Find
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+          disabled=""
+        >
+          Replace
+        </button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Replace all
+        </button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Done
+        </button>
       </div>
     </div>
   </div>
 </div>
-{% endset%}
-
-{% set dialogSuccess %}
+{% endset%} {% set dialogSuccess %}
 <!--Dialog-->
 <div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-       <div class="modal-header">
+      <div class="modal-header">
         <h1 class="modal-title text-success">Thank you!</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
-      
         <p>Your request has been submitted.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Back</button>
-        <button type="button" class="btn btn-sm btn-success">View request</button>
+        <button
+          type="button"
+          class="btn btn-sm btn-secondary"
+          data-dismiss="modal"
+        >
+          Back
+        </button>
+        <button type="button" class="btn btn-sm btn-success">
+          View request
+        </button>
       </div>
     </div>
   </div>
 </div>
-{% endset%}
-
-{% set dialogDelete %}
+{% endset%} {% set dialogDelete %}
 <!--Dialog-->
 <div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-       <div class="modal-header">
+      <div class="modal-header">
         <h1 class="modal-title text-danger">Delete this user</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
-      
         <p>All user information will be deleted.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cancel</button>
+        <button
+          type="button"
+          class="btn btn-sm btn-secondary"
+          data-dismiss="modal"
+        >
+          Cancel
+        </button>
         <button type="button" class="btn btn-sm btn-danger">Delete user</button>
       </div>
     </div>
   </div>
 </div>
-{% endset%}
-
-{% set dialogAbandon %}
+{% endset%} {% set dialogAbandon %}
 <!--Dialog-->
 <div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-       <div class="modal-header">
-        <h1 class="modal-title">Abandon changes?</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div class="modal-header">
+        <h1 class="modal-title">Abandon changes?</h1>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
-      
         <p>You have unsaved changes. Your changes will be lost.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Leave this page</button>
-        <button type="button" class="btn btn-sm btn-primary">Stay on this page</button>
+        <button
+          type="button"
+          class="btn btn-sm btn-secondary"
+          data-dismiss="modal"
+        >
+          Leave this page
+        </button>
+        <button type="button" class="btn btn-sm btn-primary">
+          Stay on this page
+        </button>
       </div>
     </div>
   </div>
 </div>
-{% endset%}
-
-{% set dialogActionless %}
+{% endset%} {% set dialogActionless %}
 <!--Dialog-->
 <div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-       
       <div class="modal-body">
-            <div style="margin-bottom: 6px;" class="clearfix">
-                <div class="pull-left">Uploading document...</div>                
-            </div>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        <div style="margin-bottom: 6px;" class="clearfix">
+          <div class="pull-left">Uploading document...</div>
+        </div>
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 65%;"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            25%
           </div>
+        </div>
       </div>
-      
     </div>
   </div>
 </div>
 {% endset%}
-
