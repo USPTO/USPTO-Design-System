@@ -20,6 +20,8 @@ const env = nunjucks.configure(
   }
 )
 
+require('nunjucks-extension-code-highlight')(env)
+
 let uid = {}
 env.addGlobal('uid', key => {
   if (!uid[key]) uid[key] = 0

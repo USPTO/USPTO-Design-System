@@ -12,7 +12,7 @@ try {
 bs.create().init({
   online: false,
   open: false,
-  port: 3000,
+  port: 80,
   server: {
     baseDir: 'dist',
     directory: true,
