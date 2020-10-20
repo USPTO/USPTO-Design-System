@@ -1,5 +1,9 @@
-{% extends 'layouts/components.njk' %}
-{% set page = { class: 'page-popovers' } %}
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-popovers' }
+%} {% block content %}
+<section>
+  <div class="pattern">
+    z
+    <h1>Popovers</h1>
 
 {% block content %}
   <section>
@@ -52,40 +56,120 @@
           <a href="">Learn more</a>
         </div>
 
+    <ul>
+      <li>You want a contextual relationship that a dialog can’t provide</li>
+      <li>You need to provide relatively simple interactions</li>
+      <li>You have more text/content than can comfortably fit in a tooltip</li>
+    </ul>
+    <div
+      class="bs-popover-left popover show fade d-block position-relative"
+      role="tooltip"
+    >
+      <div class="arrow" style="top: 90px;"></div>
+      <h3 class="popover-header">Add note</h3>
+      <div class="popover-body">
+        <textarea
+          placeholder="Enter note here"
+          class="form-control"
+          name=""
+          id=""
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="popover-toolbar">
+        <button
+          class="btn btn-outline-secondary btn-sm md-icon float-left"
+          type="button"
+        >
+          <i class="material-icons">image</i>
+        </button>
+        <button
+          class="btn btn-outline-secondary btn-sm md-icon float-left"
+          type="button"
+        >
+          <i class="material-icons">link</i>
+        </button>
+        <button class="btn btn-sm btn-primary float-right">Add</button>
       </div>
     </div>
-    <div class="preview pv-sm">
-      {{  macros.viewCode({   ariaLabel: 'View code for popover',    code: popover  },  "")}}
-     
-
+    <p>&nbsp;</p>
+    <div
+      class="bs-popover-right popover show fade d-block position-relative"
+      role="tooltip"
+    >
+      <div class="arrow" style="top: 90px;"></div>
+      <div class="popover-body">
+        <p>
+          Simple search: Type a term in the search field and select the search
+          button.
+        </p>
+        <p>
+          Advanced search: Advanced boolean operators may be used. The default
+          operator when searching multiple terms is “AND”.
+        </p>
+        <a href="">Learn more</a>
+      </div>
     </div>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for popover', code: popover },
+    "")}}
+  </div>
 
-    <div class="pattern">
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
-</button>
+  <div class="pattern">
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-container="body"
+      data-toggle="popover"
+      data-placement="top"
+      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+    >
+      Popover on top
+    </button>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on right
-</button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-container="body"
+      data-toggle="popover"
+      data-placement="right"
+      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+    >
+      Popover on right
+    </button>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on bottom
-</button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-container="body"
+      data-toggle="popover"
+      data-placement="bottom"
+      data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus."
+    >
+      Popover on bottom
+    </button>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on left
-</button>
-    </div>
-
-  </section>
-{% endblock %}
-{% set popover %}
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-container="body"
+      data-toggle="popover"
+      data-placement="left"
+      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+    >
+      Popover on left
+    </button>
+  </div>
+</section>
+{% endblock %} {% set popover %}
 <!--Popover-->
 <div class="popover bs-popover-right" role="tooltip">
   <div class="arrow"></div>
   <h3 class="popover-header">Popover title</h3>
-  <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>
+  <div class="popover-body">
+    And here's some amazing content. It's very engaging. Right?
+  </div>
 </div>
 {% endset%}

@@ -1,10 +1,8 @@
-{% extends 'layouts/components.njk' %}
-{% set page = { class: 'page-menus' } %}
-
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-menus' } %}
 {% block content %}
-  <section>
-    <div class="pattern">
-      <h1>Menus</h1>
+<section>
+  <div class="pattern">
+    <h1>Menus</h1>
 
   <h3 id="purpose">Purpose</h3>
   <p>User needs to perform an action, and depending on space constraints or the frequency of use, the action does not need to be visible at all times.</p>
@@ -33,34 +31,46 @@
     <div class="pattern">
     <h2 id="submenus">Submenus</h2>
 
-  <p>Submenus help organize menu items.</p>
-    </div>
-    <div class="preview  pv-only pv-xs">
-      {{  macros.viewCode({   ariaLabel: 'View code for submenu',    code: subMenu }, "Submenu" )}}
-    </div>
-  </section>
-{% endblock %}
-{% set menu %}
+    <p>Submenus help organize menu items.</p>
+  </div>
+  <div class="preview pv-only pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for submenu', code: subMenu },
+    "Submenu" )}}
+  </div>
+</section>
+{% endblock %} {% set menu %}
 <!--Menu-->
 <div class="dropdown-menu">
-  <a class="dropdown-item" href="#">Bold <span class="float-right text-muted ml-4">Ctrl+B</span></a>
- <a class="dropdown-item" href="#">Italic <span class="float-right text-muted ml-4">Ctrl+I</span></a>
-<a class="dropdown-item"href="#">Underline <span class="float-right text-muted ml-4">Ctrl+U</span></a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item"href="#">Font <span class="float-right text-muted ml-4">></span></a>
-<a class="dropdown-item"href="#">Font size <span class="float-right text-muted ml-4">></span></a>
-<div role="separator" class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#"
+    >Bold <span class="float-right text-muted ml-4">Ctrl+B</span></a
+  >
+  <a class="dropdown-item" href="#"
+    >Italic <span class="float-right text-muted ml-4">Ctrl+I</span></a
+  >
+  <a class="dropdown-item" href="#"
+    >Underline <span class="float-right text-muted ml-4">Ctrl+U</span></a
+  >
+  <div role="separator" class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#"
+    >Font <span class="float-right text-muted ml-4">></span></a
+  >
+  <a class="dropdown-item" href="#"
+    >Font size <span class="float-right text-muted ml-4">></span></a
+  >
+  <div role="separator" class="dropdown-divider"></div>
   <a class="dropdown-item disabled" href="#">Conditional formatting...</a>
-<div role="separator" class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Clear formatting</a>
+  <div role="separator" class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">Clear formatting</a>
 </div>
-{% endset%}
-
-{% set subMenu %}
+{% endset%} {% set subMenu %}
 <!--Submenu-->
 <div class="dropdown-menu">
-<a class="dropdown-item"href="#">Submenu item <span class="float-right text-muted ml-4">></span></a>
-<a class="dropdown-item"href="#">Disabled submenu item <span class="float-right text-muted ml-4 d-inline">></span></a>
-
+  <a class="dropdown-item" href="#"
+    >Submenu item <span class="float-right text-muted ml-4">></span></a
+  >
+  <a class="dropdown-item" href="#"
+    >Disabled submenu item
+    <span class="float-right text-muted ml-4 d-inline">></span></a
+  >
 </div>
 {% endset%}

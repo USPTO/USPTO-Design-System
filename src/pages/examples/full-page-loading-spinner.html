@@ -1,15 +1,11 @@
-{% extends 'layouts/examples.njk' %}
-{% set page = {
-  class: '',
-  title: 'Full Page Loading spinner'
-} %}
-
-{% block content %}
-  <h1>{{page.title}}</h1>
-  <div class="overlay full-page">
-    <div class="md-preloader">
-      <svg>
-        <circle  /></svg>
-    </div>
+{% extends 'layouts/examples.njk' %} {% set page = { class: '', title: 'Full
+Page Loading spinner' } %} {% block content %}
+<h1>{{page.title}}</h1>
+<div class="overlay full-page">
+  <div class="md-preloader">
+    <svg>
+      <circle />
+    </svg>
   </div>
+</div>
 {% endblock %}

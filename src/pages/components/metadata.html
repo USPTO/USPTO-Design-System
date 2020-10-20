@@ -1,5 +1,9 @@
-{% extends 'layouts/components.njk' %}
-{% set page = { class: 'page-metadata' } %}
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-metadata' }
+%} {% block content %}
+<section>
+  <div class="pattern">
+    <h1>Metadata</h1>
+    <p>The metadata pattern can be used for showing label/value pairs.</p>
 
 {% block content %}
   <section>
@@ -61,9 +65,7 @@
   <dt>Law firm</dt>
   <dd>Clayton &amp; Clayton Associates</dd>
 </dl>
-{% endset%}
-
-{% set metadataVertical %}
+{% endset%} {% set metadataVertical %}
 <!--Vertical metadata-->
 <dl>
   <dt>Examiner</dt>
@@ -72,13 +74,10 @@
   <dd>John Olaskey</dd>
   <dt>Publication #</dt>
   <dd>
-    <a href="">32132132132 <i class="icon icon-external-link"></i>
-    </a>
+    <a href="">32132132132 <i class="icon icon-external-link"></i> </a>
   </dd>
 </dl>
-{% endset%}
-
-{% set metadataInline %}
+{% endset%} {% set metadataInline %}
 <!--Inline metadata-->
 <dl class="dl-inline">
   <dt>Created</dt>
@@ -88,9 +87,7 @@
   <dt>Status</dt>
   <dd>Approved</dd>
 </dl>
-{% endset%}
-
-{% set metadataInverse %}
+{% endset%} {% set metadataInverse %}
 <!--Inverse metadata-->
 <dl class="dl-horizontal dl-inverse">
   <dt>Examiner</dt>

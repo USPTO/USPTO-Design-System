@@ -1,6 +1,4 @@
-{% extends 'layouts/components.njk' %}
-{% set page = { class: 'page-badges' } %}
-
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-badges' } %}
 {% block content %}
   <section>
     <div class="pattern">
@@ -54,8 +52,7 @@
 <span class="badge badge-info">Info</span>
 <span class="badge badge-light">Light</span>
 <span class="badge badge-dark">Dark</span>
-{% endset%}
-{% set pillBadges %}
+{% endset%} {% set pillBadges %}
 <!--Pill badges-->
 <span class="badge badge-pill badge-primary">Primary</span>
 <span class="badge badge-pill badge-secondary">Secondary</span>
@@ -65,8 +62,7 @@
 <span class="badge badge-pill badge-info">Info</span>
 <span class="badge badge-pill badge-light">Light</span>
 <span class="badge badge-pill badge-dark">Dark</span>
-{% endset%}
-{% set linkBadges %}
+{% endset%} {% set linkBadges %}
 <!--Links badges-->
 <a href="#" class="badge badge-primary">Primary</a>
 <a href="#" class="badge badge-secondary">Secondary</a>
@@ -76,9 +72,7 @@
 <a href="#" class="badge badge-info">Info</a>
 <a href="#" class="badge badge-light">Light</a>
 <a href="#" class="badge badge-dark">Dark</a>
-{% endset%}
-
-{% set subtleBadges %}
+{% endset%} {% set subtleBadges %}
 <!--Standard badges-->
 <span class="badge badge-primary subtle">Primary</span>
 <span class="badge badge-secondary subtle">Secondary</span>
@@ -88,30 +82,26 @@
 <span class="badge badge-info subtle">Info</span>
 <span class="badge badge-light subtle">Light</span>
 <span class="badge badge-dark subtle">Dark</span>
-{% endset%}
-
-{% set smallBadges %}
+{% endset%} {% set smallBadges %}
 <span class="badge badge-primary">5</span>
 <span class="badge badge-secondary">200</span>
 <span class="badge badge-danger">0</span>
-{% endset%}
-
-{% set menuBadges %}
+{% endset%} {% set menuBadges %}
 <ul class="list-group">
-  <li class="list-group-item"> Inbox <span class="badge badge-secondary float-right">1,932</span>
+  <li class="list-group-item">
+    Inbox <span class="badge badge-secondary float-right">1,932</span>
   </li>
-  <li class="list-group-item active"> Outbox <span class="badge float-right">2</span>
+  <li class="list-group-item active">
+    Outbox <span class="badge float-right">2</span>
   </li>
-  <li class="list-group-item"> Spam </li>
+  <li class="list-group-item">Spam</li>
 </ul>
-{% endset%}
-{% set buttonBadges %}
-<button type="button" class="btn btn-primary"> Notifications  <span class="badge badge-light">4</span>
+{% endset%} {% set buttonBadges %}
+<button type="button" class="btn btn-primary">
+  Notifications <span class="badge badge-light">4</span>
   <span class="sr-only">unread messages</span>
 </button>
-{% endset%}
-
-{% set sizeBadges %}
+{% endset%} {% set sizeBadges %}
 <h1>Example heading <span class="badge badge-secondary">New</span></h1>
 <h2>Example heading <span class="badge badge-secondary">New</span></h2>
 <h3>Example heading <span class="badge badge-secondary">New</span></h3>
