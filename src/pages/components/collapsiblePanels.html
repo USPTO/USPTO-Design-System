@@ -68,6 +68,10 @@
     code: accordionMultiselectable }, 'Multiselectable')}}
   </div>
   <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for left icon accordion',
+    code: accordionLeftIcon }, 'Left icons')}}
+  </div>
+  <div class="preview pv-md">
     {{ macros.viewCode({ ariaLabel: 'View code for multiselectable accordion',
     code: accordionMultitarget }, 'Multitarget')}}
   </div>
@@ -84,7 +88,7 @@
 <div class="accordion" id="myAccordion">
   <div class="card">
     <div class="card-header" id="headingOne">
-      <h3 class="accordion-heading">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left"
           type="button"
@@ -93,7 +97,8 @@
           aria-expanded="true"
           aria-controls="collapseOne"
         >
-          Goods/Services <i class="material-icons collapsed-icon">add</i>
+          Goods/Services 
+          <i class="material-icons collapsed-icon">add</i>
           <i class="material-icons expanded-icon">remove</i>
         </button>
       </h3>
@@ -114,7 +119,7 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingTwo">
-      <h3 class="accordion-heading">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left collapsed"
           type="button"
@@ -144,7 +149,7 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingThree">
-      <h3 class="accordion-heading">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left collapsed"
           type="button"
@@ -177,15 +182,15 @@
 <!--Borderless accordion-->
 <div class="accordion" id="borderlessAccordionExample">
   <div class="card card-borderless">
-    <div class="card-header" id="heading-1">
-      <h3 class="accordion-heading">
+    <div class="card-header" id="headingFour">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left"
           type="button"
           data-toggle="collapse"
-          data-target="#collapse-1"
+          data-target="#collapseFour"
           aria-expanded="true"
-          aria-controls="collapse-1"
+          aria-controls="collapseFour"
         >
           Goods/Services <i class="material-icons collapsed-icon">add</i>
           <i class="material-icons expanded-icon">remove</i>
@@ -193,9 +198,9 @@
       </h3>
     </div>
     <div
-      id="collapse-1"
+      id="collapseFour"
       class="collapse show"
-      aria-labelledby="heading-1"
+      aria-labelledby="headingFour"
       data-parent="#borderlessAccordionExample"
     >
       <div class="card-body">
@@ -212,15 +217,15 @@
     </div>
   </div>
   <div class="card card-borderless">
-    <div class="card-header" id="heading-2">
-      <h3 class="accordion-heading">
+    <div class="card-header" id="headingFive">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left collapsed"
           type="button"
           data-toggle="collapse"
-          data-target="#collapse-2"
+          data-target="#collapseFive"
           aria-expanded="false"
-          aria-controls="collapse-2"
+          aria-controls="collapseFive"
         >
           Mark info <i class="material-icons collapsed-icon">add</i>
           <i class="material-icons expanded-icon">remove</i>
@@ -228,9 +233,9 @@
       </h3>
     </div>
     <div
-      id="collapse-2"
+      id="collapseFive"
       class="collapse"
-      aria-labelledby="heading-2"
+      aria-labelledby="headingFive"
       data-parent="#borderlessAccordionExample"
     >
       <div class="card-body">
@@ -247,15 +252,15 @@
     </div>
   </div>
   <div class="card card-borderless">
-    <div class="card-header" id="heading-3">
-      <h3 class="accordion-heading">
+    <div class="card-header" id="headingSix">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left collapsed"
           type="button"
           data-toggle="collapse"
-          data-target="#collapse-3"
+          data-target="#collapseSix"
           aria-expanded="false"
-          aria-controls="collapse-3"
+          aria-controls="collapseSix"
         >
           Owmer/Assignment <i class="material-icons collapsed-icon">add</i>
           <i class="material-icons expanded-icon">remove</i>
@@ -263,9 +268,9 @@
       </h3>
     </div>
     <div
-      id="collapse-3"
+      id="collapseSix"
       class="collapse"
-      aria-labelledby="heading-3"
+      aria-labelledby="headingSix"
       data-parent="#borderlessAccordionExample"
     >
       <div class="card-body">
@@ -286,15 +291,15 @@
 <!--Bordered accordion-->
 <div class="accordion" id="borderedAccordionExample">
   <div class="card">
-    <div class="card-header" id="headingOne">
-      <h3 class="accordion-heading">
+    <div class="card-header" id="headingSeven">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left"
           type="button"
           data-toggle="collapse"
-          data-target="#collapseOne"
+          data-target="#collapseSeven"
           aria-expanded="true"
-          aria-controls="collapseOne"
+          aria-controls="collapseSeven"
         >
           Goods/Services <i class="material-icons collapsed-icon">add</i>
           <i class="material-icons expanded-icon">remove</i>
@@ -302,9 +307,9 @@
       </h3>
     </div>
     <div
-      id="collapseOne"
+      id="collapseSeven"
       class="collapse show"
-      aria-labelledby="headingOne"
+      aria-labelledby="headingSeven"
       data-parent="#borderedAccordionExample"
     >
       <div class="card-body">
@@ -321,15 +326,15 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h3 class="accordion-heading">
+    <div class="card-header" id="headingEight">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left collapsed"
           type="button"
           data-toggle="collapse"
-          data-target="#collapseTwo"
+          data-target="#collapseEight"
           aria-expanded="false"
-          aria-controls="collapseTwo"
+          aria-controls="collapseEight"
         >
           Mark info <i class="material-icons collapsed-icon">add</i>
           <i class="material-icons expanded-icon">remove</i>
@@ -337,9 +342,9 @@
       </h3>
     </div>
     <div
-      id="collapseTwo"
+      id="collapseEight"
       class="collapse"
-      aria-labelledby="headingTwo"
+      aria-labelledby="headingEight"
       data-parent="#borderedAccordionExample"
     >
       <div class="card-body">
@@ -356,15 +361,15 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingThree">
-      <h3 class="accordion-heading">
+    <div class="card-header" id="headingNine">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left collapsed"
           type="button"
           data-toggle="collapse"
-          data-target="#collapseThree"
+          data-target="#collapseNine"
           aria-expanded="false"
-          aria-controls="collapseThree"
+          aria-controls="collapseNine"
         >
           Owner/Assignment <i class="material-icons collapsed-icon">add</i>
           <i class="material-icons expanded-icon">remove</i>
@@ -372,9 +377,9 @@
       </h3>
     </div>
     <div
-      id="collapseThree"
+      id="collapseNine"
       class="collapse"
-      aria-labelledby="headingThree"
+      aria-labelledby="headingNine"
       data-parent="#borderedAccordionExample"
     >
       <div class="card-body">
@@ -396,7 +401,7 @@
 <div class="accordion" id="multiselectAccordionExample">
   <div class="card card-borderless">
     <div class="card-header" id="heading-1">
-      <h3 class="accordion-heading">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left"
           type="button"
@@ -426,7 +431,7 @@
   </div>
   <div class="card card-borderless">
     <div class="card-header" id="heading-2">
-      <h3 class="accordion-heading">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left collapsed"
           type="button"
@@ -456,7 +461,7 @@
   </div>
   <div class="card card-borderless">
     <div class="card-header" id="heading-3">
-      <h3 class="accordion-heading">
+      <h3 class="accordion-heading icon-right">
         <button
           class="btn btn-light btn-block text-left collapsed"
           type="button"
@@ -485,7 +490,103 @@
     </div>
   </div>
 </div>
-{% endset%} {% set accordionMultitarget %}
+{% endset%} {% set accordionLeftIcon %}
+<!--Left icon accordion-->
+<div class="accordion" id="leftIconAccordionExample">
+  <div class="card card-borderless">
+    <div class="card-header" id="heading-4">
+      <h3 class="accordion-heading">
+        <button
+          class="btn btn-light btn-block text-left"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapse-4"
+          aria-expanded="true"
+          aria-controls="collapse-4"
+        > <i class="material-icons collapsed-icon">chevron_right</i>
+                      <i class="material-icons expanded-icon">expand_more</i>
+          Goods/Services 
+        </button>
+      </h3>
+    </div>
+    <div id="collapse-4" class="collapse show" aria-labelledby="heading-5">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+        beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+        haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card card-borderless">
+    <div class="card-header" id="heading-5">
+      <h3 class="accordion-heading">
+        <button
+          class="btn btn-light btn-block text-left collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapse-5"
+          aria-expanded="false"
+          aria-controls="collapse-5"
+        >
+        <i class="material-icons collapsed-icon">chevron_right</i>
+                      <i class="material-icons expanded-icon">expand_more</i>
+          Mark info 
+        </button>
+      </h3>
+    </div>
+    <div id="collapse-5" class="collapse" aria-labelledby="heading-5">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+        beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+        haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card card-borderless">
+    <div class="card-header" id="heading-6">
+      <h3 class="accordion-heading">
+        <button
+          class="btn btn-light btn-block text-left collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapse-6"
+          aria-expanded="false"
+          aria-controls="collapse-6"
+        >
+        <i class="material-icons collapsed-icon">chevron_right</i>
+                      <i class="material-icons expanded-icon">expand_more</i>
+          Owmer/Assignment 
+        </button>
+      </h3>
+    </div>
+    <div id="collapse-6" class="collapse" aria-labelledby="heading-6">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+        beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+        haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+{% endset%}{% set accordionMultitarget %}
 <!--Multitarget accordion-->
 <p>
   <a
