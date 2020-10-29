@@ -40,7 +40,7 @@
     "nunjucks-extension-code-highlight": "*",
     "prismjs": "^1.22.0",
     "sass": "^1.27.1",
-    "usptostrap": "^2.0.2"
+    "usptostrap": "^2.0.3"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",

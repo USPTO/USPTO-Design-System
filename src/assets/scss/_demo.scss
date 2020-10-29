@@ -40,22 +40,22 @@ main {
     }
     .pv-xs {
       .preview-size {
-        max-width: 250px;
+        max-width: 15rem;
       }
     }
     .pv-sm {
       .preview-size {
-        max-width: 500px;
+        max-width: 30rem;
       }
     }
     .pv-md {
       .preview-size {
-        max-width: 850px;
+        max-width: 50rem;
       }
     }
     .pv-lg {
       .preview-size {
-        max-width: 1200px;
+        max-width: 75rem;
       }
     }
     .pv-only {
@@ -186,7 +186,7 @@ main {
   margin-right: 1rem;
 }
 .color-swatch {
-  height: 150px;
+  height: 9rem;
 }
 .color-name {
   font-weight: bold;
