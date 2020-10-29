@@ -33,18 +33,18 @@
     "url": "https://github.com/uspto/designpatterns/issues"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.3",
     "clipboard": "^2.0.6",
     "glob": "^7.1.6",
     "nunjucks": "^3.2.2",
     "nunjucks-extension-code-highlight": "*",
-    "prismjs": "^1.21.0",
-    "sass": "^1.26.10",
-    "usptostrap": "^2.0.1"
+    "prismjs": "^1.22.0",
+    "sass": "^1.27.1",
+    "usptostrap": "^2.0.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.13",
     "fs-extra": "^9.0.1",
-    "prettier": "^2.0.5"
+    "prettier": "^2.1.2"
   }
 }
