@@ -4,9 +4,9 @@
 $(function () {
 
   // initialize popover
-$('[data-toggle="popover"]').popover();
-// initialize tooltip
-$('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+  // initialize tooltip
+  $('[data-toggle="tooltip"]').tooltip();
 
   //add active class to side nav li and aria-current to a tag
   var file = location.pathname.split('/').pop() // set `current` page
@@ -16,8 +16,8 @@ $('[data-toggle="tooltip"]').tooltip();
   //add active class to top nav based on the side nav 
   var parentFolder = $('ul.sidenav a').attr('data-parent');
   var locationFolder = location.pathname.split("/")[1];
-  if(parentFolder.toLowerCase() === locationFolder ){
-       $('ul.navbar-nav li a[title=' + parentFolder + ']').parent().addClass('active');
+  if (parentFolder.toLowerCase() === locationFolder) {
+    $('ul.navbar-nav li a[title=' + parentFolder + ']').parent().addClass('active');
   }
 
   //copy to clipboard  
@@ -30,7 +30,7 @@ $('[data-toggle="tooltip"]').tooltip();
       $(e.trigger).html("<span class=\"material-icons\">content_copy</span> Copy Code");
       $(e.trigger).toggleClass('btn-light btn-success');
     }, 2500);
-   
+
   });
   // dropdown on change for left nav in mobile view
   $("#leftSideNav").change(function () {
@@ -45,15 +45,15 @@ function $controls(el) {
   return $('#' + el.getAttribute('aria-controls'))
 };
 
-    /*
-     * Add collapsible panel functionality
-     */
-    $('body').on('click', '#collapse-all', function(e) {
-      e.preventDefault(e);
-      $('#myAccordion .collapse').collapse('hide');       
-    });
-    $('body').on('click', '#expand-all', function(e) {
-      e.preventDefault(e);    
-      $('#myAccordion .collapse').collapse('show');       
-    });
+/*
+ * Add collapsible panel functionality
+ */
+$('body').on('click', '#collapse-all', function (e) {
+  e.preventDefault(e);
+  $('#myAccordion .collapse').collapse('hide');
+});
+$('body').on('click', '#expand-all', function (e) {
+  e.preventDefault(e);
+  $('#myAccordion .collapse').collapse('show');
+});
 
