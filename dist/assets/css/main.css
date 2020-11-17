@@ -12514,7 +12514,8 @@ main > section .preview-size .popover {
   border-top: 1px solid #ebebeb;
 }
 
-.dl-inline dd, .dl-inline dt {
+.dl-inline dd,
+.dl-inline dt {
   font-weight: 400;
   float: left;
   display: inline-block;
@@ -12558,7 +12559,8 @@ main > section .preview-size .popover {
     margin-bottom: 0;
   }
 }
-.dl-horizontal dd:before, .dl-horizontal dd:after {
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
   content: " ";
   display: table;
 }

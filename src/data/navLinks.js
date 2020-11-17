@@ -4,7 +4,7 @@ Object.assign(exports, {
     {
       href: 'alertsNotifications.html',
       text: 'Alerts and notifications',
-      "children": [      
+      "children": [
         { href: '#contextual-alerts', text: 'Contextual alerts' },
         { href: '#system-notifications', text: 'System notifications' }
       ],
@@ -94,7 +94,11 @@ Object.assign(exports, {
     {
       href: 'pagination.html',
       text: 'Pagination',
-      "children": [{ href: '#examples', text: 'Examples' }],
+      "children": [
+        { href: '#examples', text: 'Examples' },
+        { href: '#sizing', text: 'Sizing' },
+       { href: '#alignment', text: 'Alignment' }
+    ],
     },
     { href: 'popovers.html', text: 'Popovers' },
     {

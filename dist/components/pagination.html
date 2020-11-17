@@ -367,6 +367,12 @@
             <li>
               <a href="#examples">Examples</a>
             </li>
+            <li>
+              <a href="#sizing">Sizing</a>
+            </li>
+            <li>
+              <a href="#alignment">Alignment</a>
+            </li>
         </ul>
       </li>
       <li>
@@ -532,17 +538,349 @@
       data-clipboard-text="&lt;!--Pagination--&gt;
 
 &lt;ul class=&quot;pagination&quot;&gt;
-  &lt;li class=&quot;page-item disabled&quot;&gt;
-    &lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
+  &lt;li class=&quot;page-item&quot;&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;Previous&lt;/a&gt;
   &lt;/li&gt;
   &lt;li class=&quot;page-item&quot;&gt;
     &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;1&lt;/a&gt;
   &lt;/li&gt;
-  &lt;li class=&quot;page-item active&quot;&gt;
-    &lt;span class=&quot;page-link&quot;&gt;
-      2
-      &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
-    &lt;/span&gt;
+  &lt;li class=&quot;page-item&quot;&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;2&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;3&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;Next&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Pagination-->
+
+<ul class="pagination">
+  <li class="page-item">
+    <a class="page-link" href="#!">Previous</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#!">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#!">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#!">3</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#!">Next</a>
+  </li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Pagination--&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pagination&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Pagination with icons</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for pagination with icons"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for pagination with icons"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Pagination with icons--&gt;
+&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;
+          &lt;svg
+            width=&quot;1em&quot;
+            height=&quot;1em&quot;
+            viewBox=&quot;0 0 16 16&quot;
+            class=&quot;bi bi-chevron-double-left&quot;
+            fill=&quot;currentColor&quot;
+            xmlns=&quot;http://www.w3.org/2000/svg&quot;
+          &gt;
+            &lt;path
+              fill-rule=&quot;evenodd&quot;
+              d=&quot;M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z&quot;
+            /&gt;
+            &lt;path
+              fill-rule=&quot;evenodd&quot;
+              d=&quot;M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z&quot;
+            /&gt;
+          &lt;/svg&gt;
+        &lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;3&lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;
+          &lt;svg
+            width=&quot;1em&quot;
+            height=&quot;1em&quot;
+            viewBox=&quot;0 0 16 16&quot;
+            class=&quot;bi bi-chevron-double-right&quot;
+            fill=&quot;currentColor&quot;
+            xmlns=&quot;http://www.w3.org/2000/svg&quot;
+          &gt;
+            &lt;path
+              fill-rule=&quot;evenodd&quot;
+              d=&quot;M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z&quot;
+            /&gt;
+            &lt;path
+              fill-rule=&quot;evenodd&quot;
+              d=&quot;M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z&quot;
+            /&gt;
+          &lt;/svg&gt;
+        &lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Pagination with icons-->
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-chevron-double-left"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            />
+          </svg>
+        </span>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#!">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#!">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#!">3</a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-chevron-double-right"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Pagination with icons--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Page navigation example&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pagination&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Next&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>
+            <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;1em&quot;</span>
+            <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;1em&quot;</span>
+            <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 16 16&quot;</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bi bi-chevron-double-left&quot;</span>
+            <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;currentColor&quot;</span>
+            <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span>
+              <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">&quot;evenodd&quot;</span>
+              <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z&quot;</span>
+            /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span>
+              <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">&quot;evenodd&quot;</span>
+              <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z&quot;</span>
+            /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Previous&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>
+            <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;1em&quot;</span>
+            <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;1em&quot;</span>
+            <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 16 16&quot;</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bi bi-chevron-double-right&quot;</span>
+            <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;currentColor&quot;</span>
+            <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span>
+              <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">&quot;evenodd&quot;</span>
+              <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z&quot;</span>
+            /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span>
+              <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">&quot;evenodd&quot;</span>
+              <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z&quot;</span>
+            /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Disabled and active
+    states</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for disabled and active states of
+    pagination"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for disabled and active states of
+    pagination"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Pagination--&gt;
+
+&lt;ul class=&quot;pagination&quot;&gt;
+  &lt;li class=&quot;page-item disabled&quot;&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;
+      &gt;Previous&lt;/a
+    &gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;1&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li class=&quot;page-item&quot;&gt;
     &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;3&lt;/a&gt;
@@ -566,16 +904,15 @@
 
 <ul class="pagination">
   <li class="page-item disabled">
-    <span class="page-link">Previous</span>
+    <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+      >Previous</a
+    >
   </li>
   <li class="page-item">
     <a class="page-link" href="#!">1</a>
   </li>
-  <li class="page-item active">
-    <span class="page-link">
-      2
-      <span class="sr-only">(current)</span>
-    </span>
+  <li class="page-item active" aria-current="page">
+    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
   </li>
   <li class="page-item">
     <a class="page-link" href="#!">3</a>
@@ -585,23 +922,22 @@
   </li>
 </ul>
     </div>
-    <div class="collapse line-numbers pt-2" id="codebox-1">
+    <div class="collapse line-numbers pt-2" id="codebox-3">
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Pagination--&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pagination&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item disabled&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">&quot;true&quot;</span>
+      &gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>
+    &gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item active&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>
-      2
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item active&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>2 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -614,117 +950,18 @@
   </div>
 
   </div>
-  <div class="preview">
-    
-  <div class="">
-    <div class="d-flex">
-        <h2>Small pagination</h2>
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
+</section>
 
-      aria-controls="codebox-2"
-
-      aria-label="View code for small pagination"
-
-      aria-expanded="false"
-
-      data-target="#codebox-2"
-
-      data-toggle="collapse"
-
-      type="button"
-
-      title="View code for small pagination"
-
-    >
-    <span class="material-icons">unfold_more</span> View code </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
-
-      data-clipboard-text="&lt;!--Pagination small--&gt;
-
-&lt;ul class=&quot;pagination pagination-sm&quot;&gt;
-  &lt;li class=&quot;page-item disabled&quot;&gt;
-    &lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;1&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item active&quot;&gt;
-    &lt;span class=&quot;page-link&quot;&gt;
-      2
-      &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;3&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;Next&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-"
-
-      type="button"
-
-      title="Copy code"
-
-    >
-    <span class="material-icons">content_copy</span> Copy code </button>
-      </div>
-    </div>
-    <div class="preview-size">
-      <!--Pagination small-->
-
-<ul class="pagination pagination-sm">
-  <li class="page-item disabled">
-    <span class="page-link">Previous</span>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">1</a>
-  </li>
-  <li class="page-item active">
-    <span class="page-link">
-      2
-      <span class="sr-only">(current)</span>
-    </span>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">3</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">Next</a>
-  </li>
-</ul>
-    </div>
-    <div class="collapse line-numbers pt-2" id="codebox-2">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Pagination small--&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pagination pagination-sm&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item disabled&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item active&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>
-      2
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
-    </div>
+<section>
+  <div class="pattern">
+    <h2 id="sizing">Sizing</h2>
+    <p>
+      Add <code class="highlighter-rouge">.pagination-lg</code> or
+      <code class="highlighter-rouge">.pagination-sm</code> for additional
+      sizes.
+    </p>
   </div>
 
-  </div>
   <div class="preview">
     
   <div class="">
@@ -733,13 +970,13 @@
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
-      aria-controls="codebox-3"
+      aria-controls="codebox-4"
 
       aria-label="View code for large pagination"
 
       aria-expanded="false"
 
-      data-target="#codebox-3"
+      data-target="#codebox-4"
 
       data-toggle="collapse"
 
@@ -752,26 +989,15 @@
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!--Pagination large--&gt;
-
 &lt;ul class=&quot;pagination pagination-lg&quot;&gt;
-  &lt;li class=&quot;page-item disabled&quot;&gt;
-    &lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;1&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item active&quot;&gt;
+  &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;
     &lt;span class=&quot;page-link&quot;&gt;
-      2
+      1
       &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
     &lt;/span&gt;
   &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;3&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;Next&lt;/a&gt;
-  &lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 "
 
@@ -785,52 +1011,30 @@
     </div>
     <div class="preview-size">
       <!--Pagination large-->
-
 <ul class="pagination pagination-lg">
-  <li class="page-item disabled">
-    <span class="page-link">Previous</span>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">1</a>
-  </li>
-  <li class="page-item active">
+  <li class="page-item active" aria-current="page">
     <span class="page-link">
-      2
+      1
       <span class="sr-only">(current)</span>
     </span>
   </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">3</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">Next</a>
-  </li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
 </ul>
     </div>
-    <div class="collapse line-numbers pt-2" id="codebox-3">
+    <div class="collapse line-numbers pt-2" id="codebox-4">
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Pagination large--&gt;</span>
-
 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pagination pagination-lg&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item disabled&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item active&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item active&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>
-      2
+      1
       <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
@@ -840,17 +1044,103 @@
     
   <div class="">
     <div class="d-flex">
+        <h2>Small pagination</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-5"
+
+      aria-label="View code for small pagination"
+
+      aria-expanded="false"
+
+      data-target="#codebox-5"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for small pagination"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Pagination small--&gt;
+&lt;ul class=&quot;pagination pagination-sm&quot;&gt;
+  &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;
+    &lt;span class=&quot;page-link&quot;&gt;
+      1
+      &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Pagination small-->
+<ul class="pagination pagination-sm">
+  <li class="page-item active" aria-current="page">
+    <span class="page-link">
+      1
+      <span class="sr-only">(current)</span>
+    </span>
+  </li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-5">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Pagination small--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pagination pagination-sm&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item active&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>
+      1
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="alignment">Alignment</h2>
+    <p>Change the alignment of pagination components with flexbox utilities.</p>
+  </div>
+
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
         <h2>Center align pagination</h2>
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
-      aria-controls="codebox-4"
+      aria-controls="codebox-6"
 
       aria-label="View code for center pagination"
 
       aria-expanded="false"
 
-      data-target="#codebox-4"
+      data-target="#codebox-6"
 
       data-toggle="collapse"
 
@@ -866,22 +1156,15 @@
 
 &lt;ul class=&quot;pagination justify-content-center&quot;&gt;
   &lt;li class=&quot;page-item disabled&quot;&gt;
-    &lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;
+      &gt;Previous&lt;/a
+    &gt;
   &lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;1&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item active&quot;&gt;
-    &lt;span class=&quot;page-link&quot;&gt;
-      2
-      &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;3&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;Next&lt;/a&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 "
@@ -899,48 +1182,34 @@
 
 <ul class="pagination justify-content-center">
   <li class="page-item disabled">
-    <span class="page-link">Previous</span>
+    <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+      >Previous</a
+    >
   </li>
+  <li class="page-item"><a class="page-link" href="#!">1</a></li>
+  <li class="page-item"><a class="page-link" href="#!">2</a></li>
+  <li class="page-item"><a class="page-link" href="#!">3</a></li>
   <li class="page-item">
-    <a class="page-link" href="#!">1</a>
-  </li>
-  <li class="page-item active">
-    <span class="page-link">
-      2
-      <span class="sr-only">(current)</span>
-    </span>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">3</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">Next</a>
+    <a class="page-link" href="#">Next</a>
   </li>
 </ul>
     </div>
-    <div class="collapse line-numbers pt-2" id="codebox-4">
+    <div class="collapse line-numbers pt-2" id="codebox-6">
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Pagination center--&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pagination justify-content-center&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item disabled&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">&quot;true&quot;</span>
+      &gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>
+    &gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item active&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>
-      2
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
     </div>
@@ -955,13 +1224,13 @@
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
-      aria-controls="codebox-5"
+      aria-controls="codebox-7"
 
       aria-label="View code for right pagination"
 
       aria-expanded="false"
 
-      data-target="#codebox-5"
+      data-target="#codebox-7"
 
       data-toggle="collapse"
 
@@ -977,22 +1246,15 @@
 
 &lt;ul class=&quot;pagination justify-content-end&quot;&gt;
   &lt;li class=&quot;page-item disabled&quot;&gt;
-    &lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;
+      &gt;Previous&lt;/a
+    &gt;
   &lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;1&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item active&quot;&gt;
-    &lt;span class=&quot;page-link&quot;&gt;
-      2
-      &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;3&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;
-    &lt;a class=&quot;page-link&quot; href=&quot;#!&quot;&gt;Next&lt;/a&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 "
@@ -1010,48 +1272,34 @@
 
 <ul class="pagination justify-content-end">
   <li class="page-item disabled">
-    <span class="page-link">Previous</span>
+    <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+      >Previous</a
+    >
   </li>
+  <li class="page-item"><a class="page-link" href="#!">1</a></li>
+  <li class="page-item"><a class="page-link" href="#!">2</a></li>
+  <li class="page-item"><a class="page-link" href="#!">3</a></li>
   <li class="page-item">
-    <a class="page-link" href="#!">1</a>
-  </li>
-  <li class="page-item active">
-    <span class="page-link">
-      2
-      <span class="sr-only">(current)</span>
-    </span>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">3</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="#!">Next</a>
+    <a class="page-link" href="#">Next</a>
   </li>
 </ul>
     </div>
-    <div class="collapse line-numbers pt-2" id="codebox-5">
+    <div class="collapse line-numbers pt-2" id="codebox-7">
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Pagination right--&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pagination justify-content-end&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item disabled&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">&quot;true&quot;</span>
+      &gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>
+    &gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item active&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span>&gt;</span>
-      2
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
     </div>
@@ -1059,6 +1307,7 @@
 
   </div>
 </section>
+
     </main>
   </div>
       </div>
