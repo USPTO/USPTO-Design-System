@@ -1,4 +1,4 @@
-{% extends 'layouts/components.njk' %} {% set page = { class: 'page-menus' } %}
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-menus', title: 'Menus' } %}
 {% block content %}
 <section>
   <div class="pattern">
@@ -60,6 +60,12 @@
     {{ macros.viewCode({ ariaLabel: 'View code for submenu', code: subMenu },
     "Submenu" )}}
   </div>
+
+  
+  <div class="preview pv-only pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for header menu', code: headerMenu },
+    "Headers" )}}
+  </div>
 </section>
 {% endblock %} {% set menu %}
 <!--Menu-->
@@ -75,10 +81,10 @@
   >
   <div role="separator" class="dropdown-divider"></div>
   <a class="dropdown-item" href="#"
-    >Font <span class="float-right text-muted ml-4">></span></a
+    >Font <span class="float-right mt-n1"><i class="material-icons">chevron_right</i></span></a
   >
   <a class="dropdown-item" href="#"
-    >Font size <span class="float-right text-muted ml-4">></span></a
+    >Font size <span class="float-right mt-n1"><i class="material-icons">chevron_right</i></span></a
   >
   <div role="separator" class="dropdown-divider"></div>
   <a class="dropdown-item disabled" href="#">Conditional formatting...</a>
@@ -89,11 +95,18 @@
 <!--Submenu-->
 <div class="dropdown-menu">
   <a class="dropdown-item" href="#"
-    >Submenu item <span class="float-right text-muted ml-4">></span></a
+    >Submenu item <span class="float-right mt-n1"><i class="material-icons">chevron_right</i></span></a
   >
-  <a class="dropdown-item" href="#"
-    >Disabled submenu item
-    <span class="float-right text-muted ml-4 d-inline">></span></a
+  <a class="dropdown-item disabled" href="#"
+    >Disabled  item
+    <span class="float-right mt-n1"><i class="material-icons">chevron_right</i></span></a
   >
 </div>
 {% endset%}
+{% set headerMenu%}
+<div class="dropdown-menu">
+  <h6 class="dropdown-header">Dropdown header</h6>
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+</div>
+{%endset%}
