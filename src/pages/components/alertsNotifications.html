@@ -85,10 +85,7 @@
         Notifications with high importance (warning or danger) should not close
         automatically, unless the situation has been resolved in some other way
       </li>
-      <li>
-        Optional <code class="highlighter-rouge">.toast-footer</code> can be
-        added to further emphasize action buttons in system notifications
-      </li>
+     
     </ul>
     <!--
   <h2>Types</h2>
@@ -100,9 +97,9 @@
     <li><strong>Danger</strong> notifications can be used for critical messages that require immediate attention</li>
   </ul>
   --></div>
-  <div class="preview pv-md">
-    {{ macros.viewCode({ ariaLabel: 'View code for notification', code:
-    standardNotification }, 'System notification')}}
+  <div class="preview pv-only pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for system notification', code:
+    systemNotification }, 'System notification')}}
   </div>
 </section>
 
@@ -160,22 +157,11 @@
     <a href="#" class="alert-link">an example link</a>.
   </div>
 </div>
-{% endset%} {% set standardNotification %}
+{% endset%} {% set systemNotification %}
 <!--System alert-->
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    <svg
-      class="bd-placeholder-img rounded mr-2"
-      width="20"
-      height="20"
-      xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="xMidYMid slice"
-      focusable="false"
-      role="img"
-    >
-      <rect width="100%" height="100%" fill="#007aff"></rect>
-    </svg>
-    <strong class="mr-auto">Message sent</strong>
+        <strong class="mr-auto">Message sent</strong>
     <small>11 mins ago</small>
     <button
       type="button"

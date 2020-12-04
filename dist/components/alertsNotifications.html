@@ -825,10 +825,7 @@
         Notifications with high importance (warning or danger) should not close
         automatically, unless the situation has been resolved in some other way
       </li>
-      <li>
-        Optional <code class="highlighter-rouge">.toast-footer</code> can be
-        added to further emphasize action buttons in system notifications
-      </li>
+     
     </ul>
     <!--
   <h2>Types</h2>
@@ -840,7 +837,7 @@
     <li><strong>Danger</strong> notifications can be used for critical messages that require immediate attention</li>
   </ul>
   --></div>
-  <div class="preview pv-md">
+  <div class="preview pv-only pv-md">
     
   <div class="">
     <div class="d-flex">
@@ -850,7 +847,7 @@
 
       aria-controls="codebox-4"
 
-      aria-label="View code for notification"
+      aria-label="View code for system notification"
 
       aria-expanded="false"
 
@@ -860,7 +857,7 @@
 
       type="button"
 
-      title="View code for notification"
+      title="View code for system notification"
 
     >
     <span class="material-icons">unfold_more</span> View code </button>
@@ -869,18 +866,7 @@
       data-clipboard-text="&lt;!--System alert--&gt;
 &lt;div class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
   &lt;div class=&quot;toast-header&quot;&gt;
-    &lt;svg
-      class=&quot;bd-placeholder-img rounded mr-2&quot;
-      width=&quot;20&quot;
-      height=&quot;20&quot;
-      xmlns=&quot;http://www.w3.org/2000/svg&quot;
-      preserveAspectRatio=&quot;xMidYMid slice&quot;
-      focusable=&quot;false&quot;
-      role=&quot;img&quot;
-    &gt;
-      &lt;rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;#007aff&quot;&gt;&lt;/rect&gt;
-    &lt;/svg&gt;
-    &lt;strong class=&quot;mr-auto&quot;&gt;Message sent&lt;/strong&gt;
+        &lt;strong class=&quot;mr-auto&quot;&gt;Message sent&lt;/strong&gt;
     &lt;small&gt;11 mins ago&lt;/small&gt;
     &lt;button
       type=&quot;button&quot;
@@ -907,18 +893,7 @@
       <!--System alert-->
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    <svg
-      class="bd-placeholder-img rounded mr-2"
-      width="20"
-      height="20"
-      xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="xMidYMid slice"
-      focusable="false"
-      role="img"
-    >
-      <rect width="100%" height="100%" fill="#007aff"></rect>
-    </svg>
-    <strong class="mr-auto">Message sent</strong>
+        <strong class="mr-auto">Message sent</strong>
     <small>11 mins ago</small>
     <button
       type="button"
@@ -938,18 +913,7 @@
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--System alert--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toast&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;alert&quot;</span> <span class="hljs-attr">aria-live</span>=<span class="hljs-string">&quot;assertive&quot;</span> <span class="hljs-attr">aria-atomic</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toast-header&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>
-      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bd-placeholder-img rounded mr-2&quot;</span>
-      <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;20&quot;</span>
-      <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;20&quot;</span>
-      <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>
-      <span class="hljs-attr">preserveAspectRatio</span>=<span class="hljs-string">&quot;xMidYMid slice&quot;</span>
-      <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>
-      <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;img&quot;</span>
-    &gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100%&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;100%&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#007aff&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">rect</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mr-auto&quot;</span>&gt;</span>Message sent<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">strong</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mr-auto&quot;</span>&gt;</span>Message sent<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>11 mins ago<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
       <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
