@@ -181,13 +181,13 @@ main {
   display: flex;
 }
 .color-swatch-tile {
-  width: 160px;
+ 
   padding: 1rem;
   box-shadow: 0 0 10px #ccc;
   margin-right: 1rem;
 }
 .color-swatch {
-  height: 9rem;
+  height: 4rem;
 }
 .color-name {
   font-weight: bold;
@@ -196,6 +196,18 @@ main {
 .color-notes {
   font-size: 0.9rem;
 }
+@each $color, $value in $theme-colors {
+  .swatch-#{$color} {
+    color: color-yiq($value);
+   background-color: $value;  
+   
+  }
+}
+
+.swatch-warning {
+  background-color: #ffbe2e!important;
+}
+
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE11-specific */

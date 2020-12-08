@@ -12594,14 +12594,13 @@ main > section .preview-size .popover {
 }
 
 .color-swatch-tile {
-  width: 160px;
   padding: 1rem;
   box-shadow: 0 0 10px #ccc;
   margin-right: 1rem;
 }
 
 .color-swatch {
-  height: 9rem;
+  height: 4rem;
 }
 
 .color-name {
@@ -12611,6 +12610,50 @@ main > section .preview-size .popover {
 
 .color-notes {
   font-size: 0.9rem;
+}
+
+.swatch-primary {
+  color: #fff;
+  background-color: #005ea2;
+}
+
+.swatch-secondary {
+  color: #fff;
+  background-color: #757575;
+}
+
+.swatch-success {
+  color: #fff;
+  background-color: #008139;
+}
+
+.swatch-info {
+  color: #fff;
+  background-color: #207ea0;
+}
+
+.swatch-warning {
+  color: #212529;
+  background-color: #fa9441;
+}
+
+.swatch-danger {
+  color: #fff;
+  background-color: #d83933;
+}
+
+.swatch-light {
+  color: #212529;
+  background-color: #f0f0f0;
+}
+
+.swatch-dark {
+  color: #fff;
+  background-color: #1b1b1b;
+}
+
+.swatch-warning {
+  background-color: #ffbe2e !important;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

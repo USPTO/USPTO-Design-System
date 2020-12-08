@@ -1,13 +1,15 @@
-{% macro cardSwatch(colorName, colorValue, colorNotes) %}
-  <div class="color-swatch-tile">
+{% macro cardSwatch(colorName, colorValue, colorNotes, colorVar) %}
+  <div class="col-lg-2 col-md-4 col-sm-4">
+  <div class="color-swatch-tile mb-4">
     <div class="color-swatch"
          style="background-color: {{ colorValue }};"></div>
     <div class="color-name">
       {{ colorName }}
     </div>
-    <div class="color-notes">
-      {{ colorNotes }}
+    <div class="color-value">
+      {{ colorValue }}
     </div>
+  </div>
   </div>
 {% endmacro %}
 
