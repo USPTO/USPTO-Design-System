@@ -106,7 +106,9 @@ Object.assign(exports, {
       text: 'Progress and loading',
       "children": [
         { href: '#progress-bars', text: 'Progress bars' },
-        { href: '#load-spinners', text: 'Load spinners' }
+        { href: '#load-spinners', text: 'Load spinners' },
+        { href: '#Size', text: 'Spinner size' },
+        { href: '#Spinner-examples', text: 'Spinner examples' }
       ],
     },
     { href: 'stepIndicators.html', text: 'Step indicators' },

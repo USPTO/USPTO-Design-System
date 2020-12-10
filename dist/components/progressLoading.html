@@ -390,6 +390,12 @@
             <li>
               <a href="#load-spinners">Load spinners</a>
             </li>
+            <li>
+              <a href="#Size">Spinner size</a>
+            </li>
+            <li>
+              <a href="#Spinner-examples">Spinner examples</a>
+            </li>
         </ul>
       </li>
       <li>
@@ -465,19 +471,19 @@
   </ul>
 </nav>  </div>
   <main id="main-content">
-<section>
-  <div class="pattern">
-    <h1 id="progress-bars">Progress bars</h1>
+  <section>
+    <div class="pattern">
+      <h1 id="progress-bars">Progress bars</h1>
 
-    <p>
+      <p>
       Progress bars should be used when there is a determinate amount of
       time/progress related to a process (e.g., uploading a file). An
       indeterminate progress can be used in conjunction with a determinate
       progress bar.
     </p>
-  </div>
-  <div class="preview pv-md">
-    
+    </div>
+    <div class="preview pv-md">
+      
   <div class="">
     <div class="d-flex">
         <h2>Determinate progress bar</h2>
@@ -562,10 +568,10 @@
     </div>
   </div>
 
-  </div>
+    </div>
 
-  <div class="preview pv-md">
-    
+    <div class="preview pv-md">
+      
   <div class="">
     <div class="d-flex">
         <h2>Indeterminate progress bar</h2>
@@ -650,20 +656,20 @@
     </div>
   </div>
 
-  </div>
-</section>
-<section>
-  <div class="pattern">
-    <h1 id="load-spinners">Load spinners</h1>
+    </div>
+  </section>
+  <section>
+    <div class="pattern">
+      <h1 id="load-spinners">Load spinners</h1>
 
-    <p>
+      <p>
       Load spinners should be used when there is an indeterminate amount of
       time/progress related to a process (e.g., downloading data).
     </p>
-  </div>
+    </div>
 
-  <div class="preview pv-xs">
-    
+    <div class="preview pv-xs">
+      
   <div class="">
     <div class="d-flex">
         <h2>Load spinner</h2>
@@ -730,8 +736,185 @@
     </div>
   </div>
 
+    </div>
+
+    <div class="pattern">
+      <h1 id="Size">Size</h1>
+      <p>
+     Add <code class="highlighter-rouge">.spinner-border-sm</code>  to make a smaller spinner that can quickly be used within other components.
+    </p>
+    </div>
+
+    <div class="preview pv-xs">
+      
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for spinner size"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for spinner size"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Spinner size--&gt;
+&lt;div class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Spinner size-->
+<div class="spinner-border spinner-border-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Spinner size--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner-border spinner-border-sm&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;status&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
   </div>
-</section>
+
+    </div>
+
+    <div class="pattern">
+      <h1 id="Button-spinner">Buttons</h1>
+      <p>
+     Use spinners within buttons to indicate an action is currently processing or taking place.
+    </p>
+    </div>
+
+    <div class="preview pv-xs">
+      
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-5"
+
+      aria-label="View code for spinner button"
+
+      aria-expanded="false"
+
+      data-target="#codebox-5"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for spinner button"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Spinner button--&gt;
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; disabled&gt;
+  &lt;span class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; disabled&gt;
+  &lt;span class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  Loading...
+&lt;/button&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Spinner button-->
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  <span class="sr-only">Loading...</span>
+</button>
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-5">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Spinner button--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner-border spinner-border-sm&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;status&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner-border spinner-border-sm&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;status&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  Loading...
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+    </div>
+
+    <div class="pattern">
+      <h1 id="Spinner-examples">Loading spinner examples</h1>
+      <div class="row">
+        <div class="col-4">
+          <a href="../examples/full-page-loading-spinner.html" target="_blank"
+  ><img
+    class="img-thumbnail"
+    src="..//assets/img/loading-fullpage.jpg"
+/></a>
+          <h2 class="mt-3">Full page loading</h2>
+        </div>
+        <div class="col-4">
+          <a href="../examples/container-loading-spinner.html" target="_blank"
+  ><img
+    class="img-thumbnail"
+    src="..//assets/img/loading-container.jpg"
+/></a>
+          <h2 class="mt-3">Inside container</h2>
+        </div>
+        <div class="col-4">
+          <a href="../examples/loading-spinner-ie.html" target="_blank"
+  ><img
+    class="img-thumbnail"
+    src="..//assets/img/loading-container.jpg"
+/></a>
+          <h2 class="mt-3">Spinner for IE 11</h2>
+        </div>
+      </div>
+
+    </div>
+
+  
+
+  </section>
     </main>
   </div>
       </div>
