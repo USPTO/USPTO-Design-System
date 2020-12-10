@@ -1,9 +1,13 @@
 {% extends "layouts/default.njk" %}
-{% block subheader %}{% endblock %}
+{% set navLinks = foundationNavLinks %}
+
 {% block main %}
-  <div class="main-container">
-    <main id="main-content">
-      {% block content%}{% endblock%}
-      </main>
-    </div>
-  {% endblock %}
+  <div class="d-sm-block d-md-none">
+    {% include 'parts/_sidenav-dropdown.njk' %}
+  </div>
+ 
+  <main id="main-content">
+    {% block content%}{% endblock%}
+    </main>
+  </div>
+{% endblock %}
