@@ -1,103 +1,98 @@
-{% extends 'layouts/components.njk' %}
-{% set page = { class:
-'page-progressLoading', title: 'Progress and loading' } %}
-{% block content %}
-  <section>
-    <div class="pattern">
-      <h1 id="progress-bars">Progress bars</h1>
+{% extends 'layouts/components.njk' %} {% set page = { class:
+'page-progressLoading', title: 'Progress and loading' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1 id="progress-bars">Progress bars</h1>
 
-      <p>
+    <p>
       Progress bars should be used when there is a determinate amount of
       time/progress related to a process (e.g., uploading a file). An
       indeterminate progress can be used in conjunction with a determinate
       progress bar.
     </p>
-    </div>
-    <div class="preview pv-md">
-      {{ macros.viewCode({ ariaLabel: 'View code for determinate progress bar',
+  </div>
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for determinate progress bar',
     code: progressbar }, "Determinate progress bar")}}
-    </div>
+  </div>
 
-    <div class="preview pv-md">
-      {{ macros.viewCode({ ariaLabel: 'View code for indeterminate progress bar',
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for indeterminate progress bar',
     code: progressbarIndeterminate }, "Indeterminate progress bar")}}
-    </div>
-  </section>
-  <section>
-    <div class="pattern">
-      <h1 id="load-spinners">Load spinners</h1>
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h1 id="load-spinners">Load spinners</h1>
 
-      <p>
+    <p>
       Load spinners should be used when there is an indeterminate amount of
       time/progress related to a process (e.g., downloading data).
     </p>
-    </div>
+  </div>
 
-    <div class="preview pv-xs">
-      {{ macros.viewCode({ ariaLabel: 'View code for load spinner', code: loader
+  <div class="preview pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for load spinner', code: loader
     }, "Load spinner")}}
-    </div>
+  </div>
 
-    <div class="pattern">
-      <h1 id="Size">Size</h1>
-      <p>
-     Add <code class="highlighter-rouge">.spinner-border-sm</code>  to make a smaller spinner that can quickly be used within other components.
+  <div class="pattern">
+    <h1 id="Size">Size</h1>
+    <p>
+      Add <code class="highlighter-rouge">.spinner-border-sm</code> to make a
+      smaller spinner that can quickly be used within other components.
     </p>
-    </div>
+  </div>
 
-    <div class="preview pv-xs">
-      {{ macros.viewCode({ ariaLabel: 'View code for spinner size', code: spinnerSize
-    }, "")}}
-    </div>
+  <div class="preview pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for spinner size', code:
+    spinnerSize }, "")}}
+  </div>
 
-    <div class="pattern">
-      <h1 id="Button-spinner">Buttons</h1>
-      <p>
-     Use spinners within buttons to indicate an action is currently processing or taking place.
+  <div class="pattern">
+    <h1 id="Button-spinner">Buttons</h1>
+    <p>
+      Use spinners within buttons to indicate an action is currently processing
+      or taking place.
     </p>
-    </div>
+  </div>
 
-    <div class="preview pv-xs">
-      {{ macros.viewCode({ ariaLabel: 'View code for spinner button', code: spinnerButton
-    }, "")}}
-    </div>
+  <div class="preview pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for spinner button', code:
+    spinnerButton }, "")}}
+  </div>
 
-    <div class="pattern">
-      <h1 id="Spinner-examples">Loading spinner examples</h1>
-      <div class="row">
-        <div class="col-4">
-          <a href="../examples/full-page-loading-spinner.html" target="_blank"
-  ><img
-    class="img-thumbnail"
-    src="{{relativeRoot}}/assets/img/loading-fullpage.jpg"
-/></a>
-          <h2 class="mt-3">Full page loading</h2>
-        </div>
-        <div class="col-4">
-          <a href="../examples/container-loading-spinner.html" target="_blank"
-  ><img
-    class="img-thumbnail"
-    src="{{relativeRoot}}/assets/img/loading-container.jpg"
-/></a>
-          <h2 class="mt-3">Inside container</h2>
-        </div>
-        <div class="col-4">
-          <a href="../examples/loading-spinner-ie.html" target="_blank"
-  ><img
-    class="img-thumbnail"
-    src="{{relativeRoot}}/assets/img/loading-container.jpg"
-/></a>
-          <h2 class="mt-3">Spinner for IE 11</h2>
-        </div>
+  <div class="pattern">
+    <h1 id="Spinner-examples">Loading spinner examples</h1>
+    <div class="row">
+      <div class="col-4">
+        <a href="../examples/full-page-loading-spinner.html" target="_blank"
+          ><img
+            class="img-thumbnail"
+            src="{{relativeRoot}}/assets/img/loading-fullpage.jpg"
+        /></a>
+        <h2 class="mt-3">Full page loading</h2>
       </div>
-
+      <div class="col-4">
+        <a href="../examples/container-loading-spinner.html" target="_blank"
+          ><img
+            class="img-thumbnail"
+            src="{{relativeRoot}}/assets/img/loading-container.jpg"
+        /></a>
+        <h2 class="mt-3">Inside container</h2>
+      </div>
+      <div class="col-4">
+        <a href="../examples/loading-spinner-ie.html" target="_blank"
+          ><img
+            class="img-thumbnail"
+            src="{{relativeRoot}}/assets/img/loading-container.jpg"
+        /></a>
+        <h2 class="mt-3">Spinner for IE 11</h2>
+      </div>
     </div>
-
-  
-
-  </section>
-{% endblock %}
-{% set progressbar %}
+  </div>
+</section>
+{% endblock %} {% set progressbar %}
 <!--Indeterminate progress bar-->
 <div class="progress-label">Importing...</div>
 <div class="progress">
@@ -112,8 +107,7 @@
     45%
   </div>
 </div>
-{% endset%}
-{% set progressbarIndeterminate %}
+{% endset%} {% set progressbarIndeterminate %}
 <!--Indeterminate progress bar-->
 <div class="progress-label">Finalizing...</div>
 <div class="progress">
@@ -128,8 +122,7 @@
     100%
   </div>
 </div>
-{% endset%}
-{% set loader %}
+{% endset%} {% set loader %}
 <!--Load spinner-->
 <div class="overlay">
   <div class="md-preloader">
@@ -138,23 +131,27 @@
     </svg>
   </div>
 </div>
-{% endset%}
-
-{% set spinnerSize %}
+{% endset%} {% set spinnerSize %}
 <!-- Spinner size-->
 <div class="spinner-border spinner-border-sm" role="status">
   <span class="sr-only">Loading...</span>
 </div>
-{% endset%}
-
-{% set spinnerButton %}
+{% endset%} {% set spinnerButton %}
 <!-- Spinner button-->
 <button class="btn btn-primary" type="button" disabled>
-  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  <span
+    class="spinner-border spinner-border-sm"
+    role="status"
+    aria-hidden="true"
+  ></span>
   <span class="sr-only">Loading...</span>
 </button>
 <button class="btn btn-primary" type="button" disabled>
-  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  <span
+    class="spinner-border spinner-border-sm"
+    role="status"
+    aria-hidden="true"
+  ></span>
   Loading...
 </button>
 {% endset%}
