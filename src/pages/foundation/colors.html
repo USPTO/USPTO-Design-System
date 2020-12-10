@@ -1,94 +1,93 @@
-{% extends 'layouts/foundation.njk' %}
-{% set page = { class: 'page-colors',
-title: 'Colors' } %}
-{% block content %}
-  <section>
-    <div class="pattern">
-      <h1 id="primary-ui-colors">Primary UI colors</h1>
-      <p>
+{% extends 'layouts/foundation.njk' %} {% set page = { class: 'page-colors',
+title: 'Colors' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1 id="primary-ui-colors">Primary UI colors</h1>
+    <p>
       These are the primary colors used for UI elements. The primary colors have
       semantic meanings associated with them.
     </p>
-      <h2>Colors</h2>
+    <h2>Colors</h2>
 
-      <div class="row">
-        {% for color in colors %}
-          {{ macros.cardSwatch( color.color_name,
-      color.color_value, color.color_notes ) }}
-        {% endfor %}
-      </div>
+    <div class="row">
+      {% for color in colors %} {{ macros.cardSwatch( color.color_name,
+      color.color_value, color.color_notes ) }} {% endfor %}
     </div>
+  </div>
 
-    <div class="pattern">
-      <h2 id="full-brand-palette">Full brand palette</h2>
-      <p>
+  <div class="pattern">
+    <h2 id="full-brand-palette">Full brand palette</h2>
+    <p>
       This is the full USPTO color palette. However, many of these are rarely
       used for UI elements.
     </p>
 
-      <div class="row">
-        {% for item in colors %}
-          <div class="col-md-4 mb-3">
-            <div class="p-3 mb-2 position-relative {{item.color_notes}}">
-              <strong class="d-block">{{item.color_name}}</strong>
-              {{item.color_value}}
-            </div>
+    <div class="row">
+      {% for item in colors %}
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 position-relative {{item.color_notes}}">
+          <strong class="d-block">{{item.color_name}}</strong>
+          {{item.color_value}}
+        </div>
 
-            {% for child in item.color_type %}
-              <div
+        {% for child in item.color_type %}
+        <!--  <div
           class="p-3"
           style="background-color:{{child.value}};
           color:{% if child.color %} {{ child.color}}{% endif %}
           "
         >
                 {{item.color_name}}-{{child.number}}
-              </div>
-            {% endfor %}
-          </div>
+              </div> -->
+        <div class="p-3 swatch-{{item.color_name}}-{{child.number}}">
+          {{item.color_name}}-{{child.number}}
+        </div>
+
         {% endfor %}
-        <div class="col-md-4 mb-3">
-          <div class="p-3 mb-2 text-white" style="background-color: #000">
-            <strong class="d-block">black</strong>
-          #000
+      </div>
+      {% endfor %}
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 text-white" style="background-color: #000000">
+          <strong class="d-block">black</strong>
+          #000000
         </div>
-          <div class="p-3 mb-2 bd-white border">
-            <strong class="d-block">white</strong>
-          #fff
-        </div>
+        <div class="p-3 mb-2 bd-white border">
+          <strong class="d-block">white</strong>
+          #ffffff
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-{% endblock %}
-
-{% set colors = [ { "color_name": "blue", "color_value":
-"#005ea2", "color_notes": "swatch-primary", "color_type": [ { number: '100',
+{% endblock %} {% set colors = [{ "color_name": "blue", "color_value":
+"#005ea2", "color_notes": "swatch-primary", "color_type": [{ number: '100',
 value: '#eff6fb' }, { number: '400', value: '#005ea2', color: '#ffffff' }, {
 number: '600', value: '#1a4480', color: '#ffffff' }, { number: '700', value:
-'#162e51', color: '#ffffff' } ] }, { "color_name": "gray", "color_value":
-"#757575", "color_notes": "swatch-secondary", "color_type": [ { number: '100',
-value: '#cccccc' }, { number: '200', value: '#c9c9c9' },{ number: '300', value:
-'#adadad' }, { number: '400', value: '#757575', color: '#ffffff' }, { number:
-'600', value: '#5c5c5c', color: '#ffffff' }, { number: '700', value: '#2e2e2e',
-color: '#ffffff' },{ number: '900', value: '#1b1b1b', color: '#ffffff' } ] }, {
-"color_name": "green", "color_value": "#008139", "color_notes":
-"swatch-success", "color_type": [ { number: '100', value: '#ecf3ec' }, { number:
-'400', value: '#008139', color: '#ffffff' }, { number: '600', value: '#216e1f',
-color: '#ffffff' }, { number: '700', value: '#154c21', color: '#ffffff' } ] }, {
-"color_name": "red", "color_value": "#d83933", "color_notes": "swatch-danger",
-"color_type": [ { number: '100', value: '#f4e3db' }, { number: '400', value:
-'#d83933', color: '#ffffff' }, { number: '600', value: '#b50909', color:
-'#ffffff' }, { number: '700', value: '#8b0a03', color: '#ffffff' } ] }, {
-"color_name": "yellow", "color_value": "#ffbe2e", "color_notes":
-"swatch-warning", "color_type": [ { number: '50', value: '#fdfbe4' },{ number:
-'100', value: '#faf3d1' }, { number: '400', value: '#ffbe2e', color: '#ffffff'
-}, { number: '600', value: '#e5a000', color: '#ffffff' }, { number: '700',
-value: '#c2850c', color: '#ffffff' } ] }, { "color_name": "cyan", "color_value":
-"#207ea0", "color_notes": "swatch-info", "color_type": [ { number: '100', value:
-'#e7f6f8' }, { number: '400', value: '#207ea0', color: '#ffffff' }, { number:
-'600', value: '#1b6e8b', color: '#ffffff' }, { number: '700', value: '#07648d',
-color: '#ffffff' } ] }, { "color_name": "light", "color_value": "#f0f0f0",
-"color_notes": "swatch-light", "color_type": [ { number: '100', value: '#ffffff'
-}, { number: '200', value: '#f9f9f9' }, { number: '400', value: '#f0f0f0' },{
-number: '600', value: '#e6e6e6' }, { number: '700', value: '#cfcfcf' } ] } ] %}
+'#162e51', color: '#ffffff' }] }, { "color_name": "green", "color_value":
+"#008139", "color_notes": "swatch-success", "color_type": [{ number: '100',
+value: '#ecf3ec' }, { number: '400', value: '#008139', color: '#ffffff' }, {
+number: '600', value: '#216e1f', color: '#ffffff' }, { number: '700', value:
+'#154c21', color: '#ffffff' }] }, { "color_name": "red", "color_value":
+"#d83933", "color_notes": "swatch-danger", "color_type": [{ number: '100',
+value: '#f4e3db' }, { number: '400', value: '#d83933', color: '#ffffff' }, {
+number: '600', value: '#b50909', color: '#ffffff' }, { number: '700', value:
+'#8b0a03', color: '#ffffff' }] }, { "color_name": "yellow", "color_value":
+"#ffbe2e", "color_notes": "swatch-warning", "color_type": [{ number: '50',
+value: '#fdfbe4' }, { number: '100', value: '#faf3d1' }, { number: '400', value:
+'#ffbe2e', color: '#ffffff' }, { number: '600', value: '#e5a000', color:
+'#ffffff' }, { number: '700', value: '#c2850c', color: '#ffffff' }] }, {
+"color_name": "cyan", "color_value": "#207ea0", "color_notes": "swatch-info",
+"color_type": [{ number: '100', value: '#e7f6f8' }, { number: '400', value:
+'#207ea0', color: '#ffffff' }, { number: '600', value: '#1b6e8b', color:
+'#ffffff' }, { number: '700', value: '#07648d', color: '#ffffff' }] }, {
+"color_name": "gray", "color_value": "#757575", "color_notes":
+"swatch-secondary", "color_type": [{ number: '100', value: '#cccccc' }, {
+number: '200', value: '#c9c9c9' }, { number: '300', value: '#adadad' }, {
+number: '400', value: '#757575', color: '#ffffff' }, { number: '600', value:
+'#5c5c5c', color: '#ffffff' }, { number: '700', value: '#2e2e2e', color:
+'#ffffff' }, { number: '900', value: '#1b1b1b', color: '#ffffff' }] }, {
+"color_name": "light", "color_value": "#f0f0f0", "color_notes": "swatch-light",
+"color_type": [{ number: '100', value: '#ffffff' }, { number: '200', value:
+'#f9f9f9' }, { number: '400', value: '#f0f0f0' }, { number: '600', value:
+'#e6e6e6' }, { number: '700', value: '#cfcfcf' }] }] %}

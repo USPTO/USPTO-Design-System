@@ -12656,6 +12656,155 @@ main > section .preview-size .popover {
   background-color: #ffbe2e !important;
 }
 
+.swatch-blue-100 {
+  background-color: #eff6fb;
+  color: #212529;
+}
+.swatch-blue-400 {
+  background-color: #005ea2;
+  color: #fff;
+}
+.swatch-blue-600 {
+  background-color: #1a4480;
+  color: #fff;
+}
+.swatch-blue-700 {
+  background-color: #162e51;
+  color: #fff;
+}
+.swatch-cyan-100 {
+  background-color: #e7f6f8;
+  color: #212529;
+}
+.swatch-cyan-400 {
+  background-color: #207ea0;
+  color: #fff;
+}
+.swatch-cyan-600 {
+  background-color: #1b6e8b;
+  color: #fff;
+}
+.swatch-cyan-700 {
+  background-color: #07648d;
+  color: #fff;
+}
+.swatch-light-100 {
+  background-color: #ffffff;
+  color: #212529;
+}
+.swatch-light-200 {
+  background-color: #f9f9f9;
+  color: #212529;
+}
+.swatch-light-400 {
+  background-color: #f0f0f0;
+  color: #212529;
+}
+.swatch-light-600 {
+  background-color: #e6e6e6;
+  color: #212529;
+}
+.swatch-light-700 {
+  background-color: #cfcfcf;
+  color: #212529;
+}
+.swatch-gray-100 {
+  background-color: #cccccc;
+  color: #212529;
+}
+.swatch-gray-200 {
+  background-color: #c9c9c9;
+  color: #212529;
+}
+.swatch-gray-300 {
+  background-color: #adadad;
+  color: #212529;
+}
+.swatch-gray-400 {
+  background-color: #757575;
+  color: #fff;
+}
+.swatch-gray-600 {
+  background-color: #5c5c5c;
+  color: #fff;
+}
+.swatch-gray-700 {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+.swatch-gray-900 {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+.swatch-green-100 {
+  background-color: #ecf3ec;
+  color: #212529;
+}
+.swatch-green-400 {
+  background-color: #008139;
+  color: #fff;
+}
+.swatch-green-600 {
+  background-color: #216e1f;
+  color: #fff;
+}
+.swatch-green-700 {
+  background-color: #154c21;
+  color: #fff;
+}
+.swatch-orange-400 {
+  background-color: #fa9441;
+  color: #212529;
+}
+.swatch-orange-600 {
+  background-color: #c05600;
+  color: #fff;
+}
+.swatch-orange-700 {
+  background-color: #775540;
+  color: #fff;
+}
+.swatch-red-100 {
+  background-color: #f4e3db;
+  color: #212529;
+}
+.swatch-red-400 {
+  background-color: #d83933;
+  color: #fff;
+}
+.swatch-red-600 {
+  background-color: #b50909;
+  color: #fff;
+}
+.swatch-red-700 {
+  background-color: #8b0a03;
+  color: #fff;
+}
+.swatch-yellow-50 {
+  background-color: #fdfbe4;
+  color: #212529;
+}
+.swatch-yellow-100 {
+  background-color: #faf3d1;
+  color: #212529;
+}
+.swatch-yellow-400 {
+  background-color: #ffbe2e;
+  color: #212529;
+}
+.swatch-yellow-600 {
+  background-color: #e5a000;
+  color: #212529;
+}
+.swatch-yellow-700 {
+  background-color: #c2850c;
+  color: #fff;
+}
+
+.swatch-yellow-700 {
+  color: #000 !important;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE11-specific */
   .parent-container {

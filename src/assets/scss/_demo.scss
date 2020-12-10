@@ -181,7 +181,6 @@ main {
   display: flex;
 }
 .color-swatch-tile {
- 
   padding: 1rem;
   box-shadow: 0 0 10px #ccc;
   margin-right: 1rem;
@@ -196,18 +195,39 @@ main {
 .color-notes {
   font-size: 0.9rem;
 }
+// Swatch colors
 @each $color, $value in $theme-colors {
   .swatch-#{$color} {
     color: color-yiq($value);
-   background-color: $value;  
-   
+    background-color: $value;
   }
 }
 
 .swatch-warning {
-  background-color: #ffbe2e!important;
+  background-color: #ffbe2e !important;
 }
 
+//Full brand color paletter background classes
+@mixin color-modifiers($attribute1: "background-color", $attribute2: "color", $prefix: "-", $separator: "-") {
+  @each $name, $color in $uspto-colors {
+    &#{$prefix}#{$name} {
+      @each $weight, $hex in $color {
+        &#{$separator}#{$weight} {
+          #{$attribute1}: $hex;
+          #{$attribute2}: color-yiq($hex);
+        }
+      }
+    }
+  }
+}
+
+.swatch {
+  @include color-modifiers;
+}
+
+.swatch-yellow-700 {
+  color:#000!important
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE11-specific */
