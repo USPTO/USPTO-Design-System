@@ -208,7 +208,12 @@ main {
 }
 
 //Full brand color paletter background classes
-@mixin color-modifiers($attribute1: "background-color", $attribute2: "color", $prefix: "-", $separator: "-") {
+@mixin color-modifiers(
+  $attribute1: "background-color",
+  $attribute2: "color",
+  $prefix: "-",
+  $separator: "-"
+) {
   @each $name, $color in $uspto-colors {
     &#{$prefix}#{$name} {
       @each $weight, $hex in $color {
@@ -226,7 +231,7 @@ main {
 }
 
 .swatch-yellow-700 {
-  color:#000!important
+  color: #000 !important;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
