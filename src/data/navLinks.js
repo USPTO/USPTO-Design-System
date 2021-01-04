@@ -65,7 +65,7 @@ Object.assign(exports, {
         { href: '#overview', text: 'Overview' },
         { href: '#field-widths', text: 'Field widths' },
         { href: '#labels', text: 'Labels' },
-        { href: '#required-fields', text: 'Required fields' },
+        { href: '#optional-fields', text: 'Optional fields' },
         { href: '#form-validation', text: 'Form validation' },
         { href: '#help-text', text: 'Help text' },
         { href: '#form-groups', text: 'Form groups' },
