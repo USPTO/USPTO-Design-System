@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-breadcrumbs">
+<html lang="en" class="page-tooltips">
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO UI Design System
- | Breadcrumbs
+ | Tooltips
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -471,50 +471,41 @@
   <main id="main-content">
 <section>
   <div class="pattern">
-    <h1>Breadcrumbs</h1>
+    <h1>Tooltips</h1>
     <h2 id="purpose">Purpose</h2>
-    <p>
-      Users need to understand their current location and navigate within a
-      hierarchical navigation scheme.
-    </p>
+    <p>Users need additional, potentially optional information on demand.</p>
     <h2 id="description">Description</h2>
-    <p>
-      Breadcrumbs display the current path to a particular page relative to the
-      starting point. Breadcrumbs provide a means for users to understand their
-      current context in a hierarchical structure and the ability to navigate up
-      the structure easily.
-    </p>
+    <p>Tooltips provide information when an element is hovered over.</p>
+
     <ul>
       <li>
-        Breadcrumbs display the current path as links separated by carets to
-        indicate each level.
+        Tooltips are attached to an element and appear when the element is
+        hovered over
       </li>
       <li>
-        The navigation root is the first element, the current location is the
-        last element
+        The show and hide delays of a tooltip may vary depending on the need,
+        but the default is 200ms to show and 0ms to hide
       </li>
-      <li>The current location is not clickable.</li>
-      <li>Clicking on a link takes you to that screen.</li>
+      <!-- <li>Tooltips cannot be interacted with</li> -->
     </ul>
-    <p>
-      Depending on the complexity of the navigational hierarchy and the type of
-      page or application, it may make sense for the breadcrumb to represent
-      only part of the hierarchy while sub tabs/trees/navigation represent the
-      remaining hierarchy. In that case, you may want to make the far right
-      element clickable.
-    </p>
+
+    <p>Use tooltips for:</p>
+
+    <ul>
+      <li>Icon and button descriptions</li>
+      <li>Expanding shortened date/time stamps</li>
+    </ul>
   </div>
-  <div class="preview pv-sm">
+  <div class="preview">
     
   <div class="">
     <div class="d-flex">
-        <h2>Default breadcrumb</h2>
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-1"
 
-      aria-label="View code for default breadcrumbs"
+      aria-label="View code for tooltips"
 
       aria-expanded="false"
 
@@ -524,29 +515,23 @@
 
       type="button"
 
-      title="View code for default breadcrumbs"
+      title="View code for tooltips"
 
     >
     <span class="material-icons">unfold_more</span> View code </button>
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Breadcrumbs--&gt;
-&lt;nav aria-label=&quot;breadcrumb&quot; role=&quot;navigation&quot;&gt;
-  &lt;ol class=&quot;breadcrumb&quot;&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Long list of item&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;
-      Another long list of items
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;
+      data-clipboard-text="&lt;!--Tooltips--&gt;
+
+&lt;button
+  class=&quot;btn btn-primary&quot;
+  type=&quot;button&quot;
+  data-toggle=&quot;tooltip&quot;
+  title=&quot;Tooltip&quot;
+&gt;
+  Tooltip
+&lt;/button&gt;
+
 "
 
       type="button"
@@ -558,59 +543,54 @@
       </div>
     </div>
     <div class="preview-size">
-      <!--Breadcrumbs-->
-<nav aria-label="breadcrumb" role="navigation">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a href="#">Home</a>
-    </li>
-    <li class="breadcrumb-item">
-      <a href="#">Library</a>
-    </li>
-    <li class="breadcrumb-item">
-      <a href="#">Long list of item</a>
-    </li>
-    <li class="breadcrumb-item active" aria-current="page">
-      Another long list of items
-    </li>
-  </ol>
-</nav>
+      <!--Tooltips-->
+
+<button
+  class="btn btn-primary"
+  type="button"
+  data-toggle="tooltip"
+  title="Tooltip"
+>
+  Tooltip
+</button>
     </div>
     <div class="collapse line-numbers pt-2" id="codebox-1">
       Example HTML usage:
         <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Breadcrumbs--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;breadcrumb&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;navigation&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Library<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Long list of item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item active&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>
-      Another long list of items
-    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre>        </div>
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Tooltips--&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tooltip&quot;</span>
+  <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Tooltip&quot;</span>
+&gt;</span>
+  Tooltip
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
 
   </div>
-  <div class="preview pv-sm">
+</section>
+<section>
+  <div class="pattern">
+    <h2 id="positioning">Positioning</h2>
+    <p>
+      Tooltips can be positioned either above, below, to the left, or to the
+      right of target element. In many situations, tooltips should be positioned
+      dynamically based on the available space around the target element.
+    </p>
+  </div>
+  <div class="preview pv-xs">
     
   <div class="">
     <div class="d-flex">
-        <h2>Wrapping breadcrumb</h2>
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-2"
 
-      aria-label="View code for wrapping breadcrumbs"
+      aria-label="View code for tooltips positions"
 
       aria-expanded="false"
 
@@ -620,27 +600,51 @@
 
       type="button"
 
-      title="View code for wrapping breadcrumbs"
+      title="View code for tooltips positions"
 
     >
     <span class="material-icons">unfold_more</span> View code </button>
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Breadcrumbs--&gt;
-&lt;ol class=&quot;breadcrumb breadcrumb-wrap&quot;&gt;
-  &lt;li class=&quot;breadcrumb-item&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;breadcrumb-item&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;breadcrumb-item&quot;&gt;
-    &lt;a href=&quot;#&quot;&gt;Long list of item&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;
-    Another long list of item
-  &lt;/li&gt;
-&lt;/ol&gt;
+      data-clipboard-text="&lt;!--Tooltips positions--&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-outline-secondary mb-2 ml-2&quot;
+  data-toggle=&quot;tooltip&quot;
+  data-placement=&quot;top&quot;
+  title=&quot;Tooltip on top&quot;
+&gt;
+  Tooltip on top
+&lt;/button&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-outline-secondary mb-2&quot;
+  data-toggle=&quot;tooltip&quot;
+  data-placement=&quot;right&quot;
+  title=&quot;Tooltip on right&quot;
+&gt;
+  Tooltip on right
+&lt;/button&gt;
+
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-outline-secondary mb-2&quot;
+  data-toggle=&quot;tooltip&quot;
+  data-placement=&quot;bottom&quot;
+  title=&quot;Tooltip on bottom&quot;
+&gt;
+  Tooltip on bottom
+&lt;/button&gt;
+
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-outline-secondary mb-2&quot;
+  data-toggle=&quot;tooltip&quot;
+  data-placement=&quot;left&quot;
+  title=&quot;Tooltip on left&quot;
+&gt;
+  Tooltip on left
+&lt;/button&gt;
 "
 
       type="button"
@@ -652,40 +656,232 @@
       </div>
     </div>
     <div class="preview-size">
-      <!--Breadcrumbs-->
-<ol class="breadcrumb breadcrumb-wrap">
-  <li class="breadcrumb-item">
-    <a href="#">Home</a>
-  </li>
-  <li class="breadcrumb-item">
-    <a href="#">Library</a>
-  </li>
-  <li class="breadcrumb-item">
-    <a href="#">Long list of item</a>
-  </li>
-  <li class="breadcrumb-item active" aria-current="page">
-    Another long list of item
-  </li>
-</ol>
+      <!--Tooltips positions-->
+<button
+  type="button"
+  class="btn btn-outline-secondary mb-2 ml-2"
+  data-toggle="tooltip"
+  data-placement="top"
+  title="Tooltip on top"
+>
+  Tooltip on top
+</button>
+<button
+  type="button"
+  class="btn btn-outline-secondary mb-2"
+  data-toggle="tooltip"
+  data-placement="right"
+  title="Tooltip on right"
+>
+  Tooltip on right
+</button>
+
+<button
+  type="button"
+  class="btn btn-outline-secondary mb-2"
+  data-toggle="tooltip"
+  data-placement="bottom"
+  title="Tooltip on bottom"
+>
+  Tooltip on bottom
+</button>
+
+<button
+  type="button"
+  class="btn btn-outline-secondary mb-2"
+  data-toggle="tooltip"
+  data-placement="left"
+  title="Tooltip on left"
+>
+  Tooltip on left
+</button>
     </div>
     <div class="collapse line-numbers pt-2" id="codebox-2">
       Example HTML usage:
         <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Breadcrumbs--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb breadcrumb-wrap&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Library<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Long list of item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breadcrumb-item active&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>
-    Another long list of item
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>        </div>
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Tooltips positions--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-secondary mb-2 ml-2&quot;</span>
+  <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tooltip&quot;</span>
+  <span class="hljs-attr">data-placement</span>=<span class="hljs-string">&quot;top&quot;</span>
+  <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Tooltip on top&quot;</span>
+&gt;</span>
+  Tooltip on top
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-secondary mb-2&quot;</span>
+  <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tooltip&quot;</span>
+  <span class="hljs-attr">data-placement</span>=<span class="hljs-string">&quot;right&quot;</span>
+  <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Tooltip on right&quot;</span>
+&gt;</span>
+  Tooltip on right
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-secondary mb-2&quot;</span>
+  <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tooltip&quot;</span>
+  <span class="hljs-attr">data-placement</span>=<span class="hljs-string">&quot;bottom&quot;</span>
+  <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Tooltip on bottom&quot;</span>
+&gt;</span>
+  Tooltip on bottom
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-secondary mb-2&quot;</span>
+  <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tooltip&quot;</span>
+  <span class="hljs-attr">data-placement</span>=<span class="hljs-string">&quot;left&quot;</span>
+  <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Tooltip on left&quot;</span>
+&gt;</span>
+  Tooltip on left
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="content">Content</h2>
+    <p>
+      The content of a tooltip can vary. It’s best to keep it to a few words.
+    </p>
+  </div>
+  <div class="preview pv-xs">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for tooltips contents"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for tooltips contents"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Tooltips content--&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-secondary btn- mb-2 ml-2&quot;
+  data-toggle=&quot;tooltip&quot;
+  data-placement=&quot;right&quot;
+  title=&quot;Print&quot;
+&gt;
+  Short content
+&lt;/button&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-secondary mb-2&quot;
+  data-toggle=&quot;tooltip&quot;
+  data-placement=&quot;right&quot;
+  title=&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper volutpat ultrices. Mauris lobortis lacus vel ullamcorper vestibulum.&quot;
+&gt;
+  Wrapping content
+&lt;/button&gt;
+
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-secondary mb-2&quot;
+  data-html=&quot;true&quot;
+  data-toggle=&quot;tooltip&quot;
+  data-placement=&quot;right&quot;
+  title=&#39;&lt;i class=&quot;align-middle material-icons&quot;&gt;today&lt;/i&gt; &amp;nbsp; &lt;strong&gt;April 21&lt;/strong&gt;, 2021&#39;
+&gt;
+  Rich content
+&lt;/button&gt;
+
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Tooltips content-->
+<button
+  type="button"
+  class="btn btn-secondary btn- mb-2 ml-2"
+  data-toggle="tooltip"
+  data-placement="right"
+  title="Print"
+>
+  Short content
+</button>
+<button
+  type="button"
+  class="btn btn-secondary mb-2"
+  data-toggle="tooltip"
+  data-placement="right"
+  title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper volutpat ultrices. Mauris lobortis lacus vel ullamcorper vestibulum."
+>
+  Wrapping content
+</button>
+
+<button
+  type="button"
+  class="btn btn-secondary mb-2"
+  data-html="true"
+  data-toggle="tooltip"
+  data-placement="right"
+  title='<i class="align-middle material-icons">today</i> &nbsp; <strong>April 21</strong>, 2021'
+>
+  Rich content
+</button>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Tooltips content--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary btn- mb-2 ml-2&quot;</span>
+  <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tooltip&quot;</span>
+  <span class="hljs-attr">data-placement</span>=<span class="hljs-string">&quot;right&quot;</span>
+  <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Print&quot;</span>
+&gt;</span>
+  Short content
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary mb-2&quot;</span>
+  <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tooltip&quot;</span>
+  <span class="hljs-attr">data-placement</span>=<span class="hljs-string">&quot;right&quot;</span>
+  <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper volutpat ultrices. Mauris lobortis lacus vel ullamcorper vestibulum.&quot;</span>
+&gt;</span>
+  Wrapping content
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary mb-2&quot;</span>
+  <span class="hljs-attr">data-html</span>=<span class="hljs-string">&quot;true&quot;</span>
+  <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tooltip&quot;</span>
+  <span class="hljs-attr">data-placement</span>=<span class="hljs-string">&quot;right&quot;</span>
+  <span class="hljs-attr">title</span>=<span class="hljs-string">&#x27;&lt;i class=&quot;align-middle material-icons&quot;&gt;today&lt;/i&gt; <span class="hljs-symbol">&amp;nbsp;</span> &lt;strong&gt;April 21&lt;/strong&gt;, 2021&#x27;</span>
+&gt;</span>
+  Rich content
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
 

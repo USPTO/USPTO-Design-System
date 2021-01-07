@@ -1,0 +1,289 @@
+{% extends 'layouts/components.njk' %} {% set page = { class:
+'page-stepindicator', title: 'Step indicators' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1>Step indicators</h1>
+
+    <p>
+      Step indicators are used to represent an ordered, sequential process. They
+      can be used as navigation, or just as a visual indicator for where a user
+      is within a process.
+    </p>
+  </div>
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for default step indicator',
+    code: stepIndicatorDefault }, "Default")}}
+  </div>
+
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for no label step indicator',
+    code: stepIndicatorNoLabel }, "No label")}}
+  </div>
+
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for centered step indicator',
+    code: stepIndicatorCentered }, "Centered")}}
+  </div>
+
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for counters step indicator',
+    code: stepIndicatorCounters }, "Counters")}}
+  </div>
+
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for small counters step
+    indicator', code: stepIndicatorSmallCounters }, "Small counters")}}
+  </div>
+</section>
+{% endblock %} {% set stepIndicatorDefault %}
+<!-- Default step indicator-->
+<div class="usa-step-indicator" aria-label="progress">
+  <ol class="usa-step-indicator__segments">
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Personal information <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Household status <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--current"
+      aria-current="true"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Supporting documents
+      </span>
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Signature <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Review and submit <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+  </ol>
+  <div class="usa-step-indicator__header">
+    <h2 class="usa-step-indicator__heading">
+      <span class="usa-step-indicator__heading-counter">
+        <span class="usa-sr-only">Step</span>
+        <span class="usa-step-indicator__current-step">3</span>
+        <span class="usa-step-indicator__total-steps">of 5</span>
+      </span>
+      <span class="usa-step-indicator__heading-text">Supporting documents</span>
+    </h2>
+  </div>
+</div>
+{% endset%} {% set stepIndicatorNoLabel %}
+<!-- No label step indicator-->
+<div
+  class="usa-step-indicator usa-step-indicator--no-labels"
+  aria-label="progress"
+>
+  <ol class="usa-step-indicator__segments">
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Personal information <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Household status <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--current"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Supporting documents
+      </span>
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Signature <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Review and submit <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+  </ol>
+  <div class="usa-step-indicator__header">
+    <h2 class="usa-step-indicator__heading">
+      <span class="usa-step-indicator__heading-counter">
+        <span class="usa-sr-only">Step</span>
+        <span class="usa-step-indicator__current-step">3</span>
+        <span class="usa-step-indicator__total-steps">of 5</span>
+      </span>
+      <span class="usa-step-indicator__heading-text">Supporting documents</span>
+    </h2>
+  </div>
+</div>
+{% endset%} {% set stepIndicatorCentered %}
+<!-- Centered step indicator-->
+<div
+  class="usa-step-indicator usa-step-indicator--center"
+  aria-label="progress"
+>
+  <ol class="usa-step-indicator__segments">
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Personal information <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Household status <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--current"
+      aria-current="true"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Supporting documents
+      </span>
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Signature <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Review and submit <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+  </ol>
+  <div class="usa-step-indicator__header">
+    <h2 class="usa-step-indicator__heading">
+      <span class="usa-step-indicator__heading-counter">
+        <span class="usa-sr-only">Step</span>
+        <span class="usa-step-indicator__current-step">3</span>
+        <span class="usa-step-indicator__total-steps">of 5</span>
+      </span>
+      <span class="usa-step-indicator__heading-text">Supporting documents</span>
+    </h2>
+  </div>
+</div>
+{% endset%} {% set stepIndicatorCounters %}
+<!-- Counters step indicator-->
+<div
+  class="usa-step-indicator usa-step-indicator--counters"
+  aria-label="progress"
+>
+  <ol class="usa-step-indicator__segments">
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Personal information <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Household status <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--current"
+      aria-current="true"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Supporting documents
+      </span>
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Signature <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Review and submit <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+  </ol>
+  <div class="usa-step-indicator__header">
+    <h2 class="usa-step-indicator__heading">
+      <span class="usa-step-indicator__heading-counter">
+        <span class="usa-sr-only">Step</span>
+        <span class="usa-step-indicator__current-step">3</span>
+        <span class="usa-step-indicator__total-steps">of 5</span>
+      </span>
+      <span class="usa-step-indicator__heading-text">Supporting documents</span>
+    </h2>
+  </div>
+</div>
+{% endset%} {% set stepIndicatorSmallCounters %}
+<!-- Small counters step indicator-->
+<div
+  class="usa-step-indicator usa-step-indicator--counters-sm"
+  aria-label="progress"
+>
+  <ol class="usa-step-indicator__segments">
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Personal information <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Household status <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--current"
+      aria-current="true"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Supporting documents
+      </span>
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Signature <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Review and submit <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+  </ol>
+  <div class="usa-step-indicator__header">
+    <h2 class="usa-step-indicator__heading">
+      <span class="usa-step-indicator__heading-counter">
+        <span class="usa-sr-only">Step</span>
+        <span class="usa-step-indicator__current-step">3</span>
+        <span class="usa-step-indicator__total-steps">of 5</span>
+      </span>
+      <span class="usa-step-indicator__heading-text">Supporting documents</span>
+    </h2>
+  </div>
+</div>
+{% endset%}

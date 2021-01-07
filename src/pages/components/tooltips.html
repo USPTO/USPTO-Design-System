@@ -1,0 +1,146 @@
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-tooltips',
+title: 'Tooltips' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1>Tooltips</h1>
+    <h2 id="purpose">Purpose</h2>
+    <p>Users need additional, potentially optional information on demand.</p>
+    <h2 id="description">Description</h2>
+    <p>Tooltips provide information when an element is hovered over.</p>
+
+    <ul>
+      <li>
+        Tooltips are attached to an element and appear when the element is
+        hovered over
+      </li>
+      <li>
+        The show and hide delays of a tooltip may vary depending on the need,
+        but the default is 200ms to show and 0ms to hide
+      </li>
+      <!-- <li>Tooltips cannot be interacted with</li> -->
+    </ul>
+
+    <p>Use tooltips for:</p>
+
+    <ul>
+      <li>Icon and button descriptions</li>
+      <li>Expanding shortened date/time stamps</li>
+    </ul>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for tooltips', code: tooltips },
+    "")}}
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h2 id="positioning">Positioning</h2>
+    <p>
+      Tooltips can be positioned either above, below, to the left, or to the
+      right of target element. In many situations, tooltips should be positioned
+      dynamically based on the available space around the target element.
+    </p>
+  </div>
+  <div class="preview pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for tooltips positions', code:
+    tooltipsPosition }, "")}}
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="content">Content</h2>
+    <p>
+      The content of a tooltip can vary. It’s best to keep it to a few words.
+    </p>
+  </div>
+  <div class="preview pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for tooltips contents', code:
+    tooltipsContent }, "")}}
+  </div>
+</section>
+{% endblock %} {% set tooltips %}
+<!--Tooltips-->
+
+<button
+  class="btn btn-primary"
+  type="button"
+  data-toggle="tooltip"
+  title="Tooltip"
+>
+  Tooltip
+</button>
+
+{% endset%} {% set tooltipsPosition %}
+<!--Tooltips positions-->
+<button
+  type="button"
+  class="btn btn-outline-secondary mb-2 ml-2"
+  data-toggle="tooltip"
+  data-placement="top"
+  title="Tooltip on top"
+>
+  Tooltip on top
+</button>
+<button
+  type="button"
+  class="btn btn-outline-secondary mb-2"
+  data-toggle="tooltip"
+  data-placement="right"
+  title="Tooltip on right"
+>
+  Tooltip on right
+</button>
+
+<button
+  type="button"
+  class="btn btn-outline-secondary mb-2"
+  data-toggle="tooltip"
+  data-placement="bottom"
+  title="Tooltip on bottom"
+>
+  Tooltip on bottom
+</button>
+
+<button
+  type="button"
+  class="btn btn-outline-secondary mb-2"
+  data-toggle="tooltip"
+  data-placement="left"
+  title="Tooltip on left"
+>
+  Tooltip on left
+</button>
+{% endset%} {% set tooltipsContent %}
+<!--Tooltips content-->
+<button
+  type="button"
+  class="btn btn-secondary btn- mb-2 ml-2"
+  data-toggle="tooltip"
+  data-placement="right"
+  title="Print"
+>
+  Short content
+</button>
+<button
+  type="button"
+  class="btn btn-secondary mb-2"
+  data-toggle="tooltip"
+  data-placement="right"
+  title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper volutpat ultrices. Mauris lobortis lacus vel ullamcorper vestibulum."
+>
+  Wrapping content
+</button>
+
+<button
+  type="button"
+  class="btn btn-secondary mb-2"
+  data-html="true"
+  data-toggle="tooltip"
+  data-placement="right"
+  title='<i class="align-middle material-icons">today</i> &nbsp; <strong>April 21</strong>, 2021'
+>
+  Rich content
+</button>
+
+{% endset%}

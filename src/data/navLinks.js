@@ -131,9 +131,8 @@ Object.assign(exports, {
       text: 'Tabs',
       "children": [
         { href: '#normal-tabs', text: 'Normal tabs' },
-        { href: '#light-tabs', text: 'Light tabs' },
         { href: '#pill-tabs', text: 'Pill tabs' },
-        { href: '#nested-tabs', text: 'Nested tabs' },
+        { href: '#vertical-tabs', text: 'Vertical tabs' },
         { href: '#justified-tabs', text: 'Justified tabs' }
       ],
     },

@@ -1,0 +1,367 @@
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-tabs',
+title: 'Tabs' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1>Tabs</h1>
+    <h2 id="purpose">Purpose</h2>
+    <p>User’s need to flip between multiple focused panes/views of content.</p>
+    <h2 id="description">Description</h2>
+    <p>
+      Tabs manage stacked panes of content, giving the users the ability to view
+      only the content pane they are interested in. Each tab button has a
+      corresponding content pane. Tabs build on a real world metaphor. The
+      selected state is reinforced with the tab metaphor of a folder physically
+      in front of the others in the set.
+    </p>
+    <h2 id="basic-functionality">Basic functionality</h2>
+    <ul>
+      <li>
+        You have multiple categories, views, and panes of content, but there is
+        the need to only show one pane at a time.
+      </li>
+      <li>Tabs are listed in a horizontal row.</li>
+      <li>Avoid overflowing tabs to new lines.</li>
+      <li>Tab titles should be short and predictable.</li>
+      <li>Tab buttons can contain icons, text, both, and even dropdowns.</li>
+      <li>
+        Tab headings are sentence case. Only the first word and proper nouns are
+        capitalized.
+      </li>
+    </ul>
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h3 id="normal-tabs">Normal tabs</h3>
+    <p>The selected tab color should be the same color as the tab content.</p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for normal tabs', code:
+    tabsNormal }, "")}}
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h3 id="pill-tabs">Pill tabs</h3>
+    <p>
+      Use when the tabs need even less emphasis in relation to other
+      navigational elements.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for pill tabs', code: tabsPill },
+    "")}}
+  </div>
+</section>
+
+<section>
+  <div class="pattern"><h3 id="vertical-tabs">Vertical tabs</h3></div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for vertical tabs', code:
+    tabsVertical }, "")}}
+  </div>
+</section>
+
+<section>
+  <div class="pattern"><h3 id="justified-tabs">Justified tabs</h3></div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for justified tabs', code:
+    tabsJustified }, "")}}
+  </div>
+</section>
+
+{% endblock %} {% set tabsNormal %}
+<!--Normal tabs-->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link active"
+      id="home-tab"
+      data-toggle="tab"
+      href="#home"
+      role="tab"
+      aria-controls="home"
+      aria-selected="true"
+      >Home</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="profile-tab"
+      data-toggle="tab"
+      href="#profile"
+      role="tab"
+      aria-controls="profile"
+      aria-selected="false"
+      >Profile</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="contact-tab"
+      data-toggle="tab"
+      href="#contact"
+      role="tab"
+      aria-controls="contact"
+      aria-selected="false"
+      >Contact</a
+    >
+  </li>
+</ul>
+<div class="tab-content p-2" id="myTabContent">
+  <div
+    class="tab-pane fade show active"
+    id="home"
+    role="tabpanel"
+    aria-labelledby="home-tab"
+  >
+    Nulla est ullamco ut irure incididunt nulla
+  </div>
+  <div
+    class="tab-pane fade"
+    id="profile"
+    role="tabpanel"
+    aria-labelledby="profile-tab"
+  >
+    Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum
+  </div>
+  <div
+    class="tab-pane fade"
+    id="contact"
+    role="tabpanel"
+    aria-labelledby="contact-tab"
+  >
+    Commodo esse dolore fugiat sint velit ullamco magna consequat voluptate
+    minim amet aliquip ipsum aute laboris nisi.
+  </div>
+</div>
+{% endset%} {% set tabsPill %}
+<!--Pill tabs-->
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link active"
+      id="pills-home-tab"
+      data-toggle="pill"
+      href="#pills-home"
+      role="tab"
+      aria-controls="pills-home"
+      aria-selected="true"
+      >Home</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="pills-profile-tab"
+      data-toggle="pill"
+      href="#pills-profile"
+      role="tab"
+      aria-controls="pills-profile"
+      aria-selected="false"
+      >Profile</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="pills-contact-tab"
+      data-toggle="pill"
+      href="#pills-contact"
+      role="tab"
+      aria-controls="pills-contact"
+      aria-selected="false"
+      >Contact</a
+    >
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div
+    class="tab-pane fade show active"
+    id="pills-home"
+    role="tabpanel"
+    aria-labelledby="pills-home-tab"
+  >
+    Nulla est ullamco ut irure incididunt nulla
+  </div>
+  <div
+    class="tab-pane fade"
+    id="pills-profile"
+    role="tabpanel"
+    aria-labelledby="pills-profile-tab"
+  >
+    Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum
+  </div>
+  <div
+    class="tab-pane fade"
+    id="pills-contact"
+    role="tabpanel"
+    aria-labelledby="pills-contact-tab"
+  >
+    Commodo esse dolore fugiat sint velit ullamco magna consequat voluptate
+    minim amet aliquip ipsum aute laboris nisi.
+  </div>
+</div>
+{% endset%} {% set tabsVertical %}
+<!--Vertical tabs-->
+<div class="row">
+  <div class="col-3">
+    <div
+      class="nav flex-column nav-pills"
+      id="v-pills-tab"
+      role="tablist"
+      aria-orientation="vertical"
+    >
+      <a
+        class="nav-link active"
+        id="v-pills-home-tab"
+        data-toggle="pill"
+        href="#v-pills-home"
+        role="tab"
+        aria-controls="v-pills-home"
+        aria-selected="true"
+        >Home</a
+      >
+      <a
+        class="nav-link"
+        id="v-pills-profile-tab"
+        data-toggle="pill"
+        href="#v-pills-profile"
+        role="tab"
+        aria-controls="v-pills-profile"
+        aria-selected="false"
+        >Profile</a
+      >
+      <a
+        class="nav-link"
+        id="v-pills-messages-tab"
+        data-toggle="pill"
+        href="#v-pills-messages"
+        role="tab"
+        aria-controls="v-pills-messages"
+        aria-selected="false"
+        >Messages</a
+      >
+      <a
+        class="nav-link"
+        id="v-pills-settings-tab"
+        data-toggle="pill"
+        href="#v-pills-settings"
+        role="tab"
+        aria-controls="v-pills-settings"
+        aria-selected="false"
+        >Settings</a
+      >
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="v-pills-home"
+        role="tabpanel"
+        aria-labelledby="v-pills-home-tab"
+      >
+        Nulla est ullamco ut irure incididunt nulla
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-profile"
+        role="tabpanel"
+        aria-labelledby="v-pills-profile-tab"
+      >
+        Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore
+        cillum
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-messages"
+        role="tabpanel"
+        aria-labelledby="v-pills-messages-tab"
+      >
+        Commodo esse dolore fugiat sint velit ullamco magna consequat voluptate
+        minim amet aliquip ipsum aute laboris nisi.
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-settings"
+        role="tabpanel"
+        aria-labelledby="v-pills-settings-tab"
+      >
+        Labore labore veniam irure irure ipsum pariatur mollit magna
+      </div>
+    </div>
+  </div>
+</div>
+{% endset%} {% set tabsJustified %}
+<!--Justified  tabs-->
+<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link active"
+      id="home-tab"
+      data-toggle="tab"
+      href="#home1"
+      role="tab"
+      aria-controls="home"
+      aria-selected="true"
+      >Home</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="profile-tab"
+      data-toggle="tab"
+      href="#profile1"
+      role="tab"
+      aria-controls="profile"
+      aria-selected="false"
+      >Profile</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="contact-tab"
+      data-toggle="tab"
+      href="#contact1"
+      role="tab"
+      aria-controls="contact"
+      aria-selected="false"
+      >Contact</a
+    >
+  </li>
+</ul>
+<div class="border border-light border-top-0 p-2 tab-content" id="myTabContent">
+  <div
+    class="tab-pane fade show active"
+    id="home1"
+    role="tabpanel"
+    aria-labelledby="home-tab"
+  >
+    Nulla est ullamco ut irure incididunt nulla
+  </div>
+  <div
+    class="tab-pane fade"
+    id="profile1"
+    role="tabpanel"
+    aria-labelledby="profile-tab"
+  >
+    Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum
+  </div>
+  <div
+    class="tab-pane fade"
+    id="contact1"
+    role="tabpanel"
+    aria-labelledby="contact-tab"
+  >
+    Commodo esse dolore fugiat sint velit ullamco magna consequat voluptate
+    minim amet aliquip ipsum aute laboris nisi.
+  </div>
+</div>
+
+{% endset%}
