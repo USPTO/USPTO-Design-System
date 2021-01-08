@@ -241,38 +241,593 @@
   </ul>
 </nav>  </div>
   <main id="main-content">
-<!--adding h1 for 508 -->
-<h1 class="sr-only">Colors Page</h1>
-<section id="fonts">
+<section>
   <div class="pattern">
-    <h1>This is Typography page</h1>
-    <div>Some info</div>
+    <h1 id="fonts">Fonts</h1>
+
+    <p>
+      Font load and fallback order:
+      <strong>Segoe UI, Helvetica Neue, Tahoma, Arial, sans-serif</strong>
+    </p>
+
+    <h2 id="font-availability">Font availability</h2>
+
+    <dl>
+      <dt>Public Sans Web</dt>
+      <dd>A strong, neutral, open source typeface for text or display.</dd>
+      <dt>Segoe UI</dt>
+      <dd>Ships with Windows Vista and newer and Microsoft Office.</dd>
+      <dt>Helvetica Neue</dt>
+      <dd>Ships with OSX.</dd>
+      <dt>Arial</dt>
+      <dd>Ships with most operating systems.</dd>
+    </dl>
   </div>
 </section>
-<section id="weights">
+<section>
   <div class="pattern">
-    <h1>This is Typography page</h1>
-    <div>Some info</div>
+    <h2 id="weights">Weights</h2>
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for input box"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for input box"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Font weight --&gt;
+&lt;p class=&quot;font-weight-bold&quot;&gt;700 - Bold text.&lt;/p&gt;
+&lt;p class=&quot;font-weight-bolder&quot;&gt;
+  Bolder - Bolder weight text (relative to the parent element).
+&lt;/p&gt;
+&lt;p class=&quot;font-weight-normal&quot;&gt;400 - Normal weight text.&lt;/p&gt;
+&lt;p class=&quot;font-weight-light&quot;&gt;300 - Light weight text.&lt;/p&gt;
+&lt;p class=&quot;font-weight-lighter&quot;&gt;
+  Lighter - Lighter weight text (relative to the parent element).
+&lt;/p&gt;
+&lt;p class=&quot;font-italic&quot;&gt;400 - Italic text.&lt;/p&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Font weight -->
+<p class="font-weight-bold">700 - Bold text.</p>
+<p class="font-weight-bolder">
+  Bolder - Bolder weight text (relative to the parent element).
+</p>
+<p class="font-weight-normal">400 - Normal weight text.</p>
+<p class="font-weight-light">300 - Light weight text.</p>
+<p class="font-weight-lighter">
+  Lighter - Lighter weight text (relative to the parent element).
+</p>
+<p class="font-italic">400 - Italic text.</p>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Font weight --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-bold&quot;</span>&gt;</span>700 - Bold text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-bolder&quot;</span>&gt;</span>
+  Bolder - Bolder weight text (relative to the parent element).
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-normal&quot;</span>&gt;</span>400 - Normal weight text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-light&quot;</span>&gt;</span>300 - Light weight text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-lighter&quot;</span>&gt;</span>
+  Lighter - Lighter weight text (relative to the parent element).
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-italic&quot;</span>&gt;</span>400 - Italic text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
   </div>
 </section>
-<section id="styles">
+
+<section>
   <div class="pattern">
-    <h1>This is Typography page</h1>
-    <div>Some info</div>
+    <h2 id="styles">Styles</h2>
+    <h3>Public Sans Web</h3>
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for input box"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for input box"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Font weight --&gt;
+&lt;table class=&quot;table table-borderless table-valign&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Display 3&lt;/td&gt;
+      &lt;td&gt;&lt;h1 class=&quot;display-3&quot;&gt;Regular 4.5rem&lt;/h1&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h1. Display 2&lt;/td&gt;
+      &lt;td&gt;&lt;h1&gt;Regular 2.5rem&lt;/h1&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h2. Display 1&lt;/td&gt;
+      &lt;td&gt;&lt;h2&gt;Semibold 1.5rem&lt;/h2&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h3. Headline&lt;/td&gt;
+      &lt;td&gt;&lt;h3 class=&quot;headline&quot;&gt;Semibold 1.25rem&lt;/h3&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h4. Title&lt;/td&gt;
+      &lt;td&gt;&lt;h4&gt;Semibold 1.125rem&lt;/h4&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h5. Subhead&lt;/td&gt;
+      &lt;td&gt;&lt;h5&gt;Semibold 1rem&lt;/h5&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h6.&lt;/td&gt;
+      &lt;td&gt;&lt;h6&gt;Semibold 0.875rem&lt;/h6&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Body&lt;/td&gt;
+      &lt;td&gt;&lt;div&gt;Regular 1rem&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Font weight -->
+<table class="table table-borderless table-valign">
+  <tbody>
+    <tr>
+      <td>Display 3</td>
+      <td><h1 class="display-3">Regular 4.5rem</h1></td>
+    </tr>
+    <tr>
+      <td>h1. Display 2</td>
+      <td><h1>Regular 2.5rem</h1></td>
+    </tr>
+    <tr>
+      <td>h2. Display 1</td>
+      <td><h2>Semibold 1.5rem</h2></td>
+    </tr>
+    <tr>
+      <td>h3. Headline</td>
+      <td><h3 class="headline">Semibold 1.25rem</h3></td>
+    </tr>
+    <tr>
+      <td>h4. Title</td>
+      <td><h4>Semibold 1.125rem</h4></td>
+    </tr>
+    <tr>
+      <td>h5. Subhead</td>
+      <td><h5>Semibold 1rem</h5></td>
+    </tr>
+    <tr>
+      <td>h6.</td>
+      <td><h6>Semibold 0.875rem</h6></td>
+    </tr>
+    <tr>
+      <td>Body</td>
+      <td><div>Regular 1rem</div></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Font weight --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;table table-borderless table-valign&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Display 3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;display-3&quot;</span>&gt;</span>Regular 4.5rem<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h1. Display 2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Regular 2.5rem<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h2. Display 1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Semibold 1.5rem<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h3. Headline<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;headline&quot;</span>&gt;</span>Semibold 1.25rem<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h4. Title<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Semibold 1.125rem<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h5. Subhead<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Semibold 1rem<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h6.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>Semibold 0.875rem<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Body<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Regular 1rem<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
   </div>
 </section>
-<section id="lists">
+
+<section>
   <div class="pattern">
-    <h1>This is Typography page</h1>
-    <div>Some info</div>
+    <h2 id="pairings">Pairings</h2>
+    <h1>Search for patents</h1>
+    <h2 class="text-muted mt-2">
+      New to Patent Searching? See this important information about searching
+      for patents
+    </h2>
+    <h6 class="text-muted">Jul 14, 2015</h6>
+    <hr />
+    <p>
+      Inventors are encouraged to search the USPTO's patent database to see if a
+      patent has already been filed or granted that is similar to your patent.
+      Patents may be searched in the USPTO Patent Full-Text and Image Database
+      (PatFT). The USPTO houses full text for patents issued from 1976 to the
+      present and PDF images for all patents from 1790 to the present.
+    </p>
+    <p>
+      All sequences (SEQ ID NOs.) and tables for listed patents or publications
+      are available for viewing, without downloading, by accessing the proper
+      document detail page and then submitting a SEQ ID NO or a mega table ID
+      number.
+    </p>
+    <h3>Global Patent Search Network (GPSN)</h3>
+    <p>
+      Global Patent Search Network (GPSN) enables users to search the full text
+      of multiple international patent collections. The initial collection
+      available will be Chinese patent documentation from the State Intellectual
+      Property Office (SIPO) of the People's Republic of China. Users can search
+      published applications, granted patents and utility models from 1985 to
+      2012. The data available includes full text Chinese patents, English
+      machine translations and full document images. This collection will be
+      periodically updated to include additional years of coverage.
+    </p>
+    <h4>Searching full text patents (since 1976)</h4>
+    <p>
+      Customize a search on all or a selected group of elements (fields) of a
+      patent.
+    </p>
+    <ul class="list-unstyled">
+      <li><a href="">Quick search</a></li>
+      <li><a href="">Advanced search</a></li>
+      <li><a href="">Patent number search</a></li>
+    </ul>
+    <p></p>
+    <h3>Patent Application Information Retrieval (PAIR)</h3>
+    <p>
+      The Patent Application Information Retrieval (PAIR) system provides IP
+      customers a safe, simple, and secure way to retrieve and download
+      information regarding patent application status.
+    </p>
+    <ul class="list-unstyled">
+      <li><a href="">Visit PAIR</a></li>
+    </ul>
+    <p></p>
   </div>
 </section>
-<section id="colors">
+
+<section>
   <div class="pattern">
-    <h1>This is Typography page</h1>
-    <div>Some info</div>
+    <h2 id="Lists">Lists</h2>
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Unordered</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for unordered list"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for unordered list"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Unordered list --&gt;
+&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;
+    List item 3
+    &lt;ul&gt;
+      &lt;li&gt;Nested list item 1&lt;/li&gt;
+      &lt;li&gt;Nested list item 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Unordered list -->
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>
+    List item 3
+    <ul>
+      <li>Nested list item 1</li>
+      <li>Nested list item 2</li>
+    </ul>
+  </li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Unordered list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    List item 3
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Ordered</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for ordered list"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for ordered list"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Ordered list --&gt;
+&lt;ol&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;
+    List item 3
+    &lt;ol&gt;
+      &lt;li&gt;Nested list item 1&lt;/li&gt;
+      &lt;li&gt;Nested list item 2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Ordered list -->
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>
+    List item 3
+    <ol>
+      <li>Nested list item 1</li>
+      <li>Nested list item 2</li>
+    </ol>
+  </li>
+</ol>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Ordered list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    List item 3
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
   </div>
 </section>
+
+<section>
+  <div class="pattern">
+    <h2 id="colors">Colors</h2>
+  </div>
+
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-5"
+
+      aria-label="View code for text colors"
+
+      aria-expanded="false"
+
+      data-target="#codebox-5"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for text colors"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Colors --&gt;
+&lt;p class=&quot;text-primary&quot;&gt;.text-primary&lt;/p&gt;
+&lt;p class=&quot;text-secondary&quot;&gt;.text-secondary&lt;/p&gt;
+&lt;p class=&quot;text-success&quot;&gt;.text-success&lt;/p&gt;
+&lt;p class=&quot;text-danger&quot;&gt;.text-danger&lt;/p&gt;
+&lt;p class=&quot;text-warning&quot;&gt;.text-warning&lt;/p&gt;
+&lt;p class=&quot;text-info&quot;&gt;.text-info&lt;/p&gt;
+&lt;p class=&quot;text-light bg-dark&quot;&gt;.text-light&lt;/p&gt;
+&lt;p class=&quot;text-dark&quot;&gt;.text-dark&lt;/p&gt;
+&lt;p class=&quot;text-body&quot;&gt;.text-body&lt;/p&gt;
+&lt;p class=&quot;text-muted&quot;&gt;.text-muted&lt;/p&gt;
+&lt;p class=&quot;text-white bg-dark&quot;&gt;.text-white&lt;/p&gt;
+&lt;p class=&quot;text-black-50&quot;&gt;.text-black-50&lt;/p&gt;
+&lt;p class=&quot;text-white-50 bg-dark&quot;&gt;.text-white-50&lt;/p&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Colors -->
+<p class="text-primary">.text-primary</p>
+<p class="text-secondary">.text-secondary</p>
+<p class="text-success">.text-success</p>
+<p class="text-danger">.text-danger</p>
+<p class="text-warning">.text-warning</p>
+<p class="text-info">.text-info</p>
+<p class="text-light bg-dark">.text-light</p>
+<p class="text-dark">.text-dark</p>
+<p class="text-body">.text-body</p>
+<p class="text-muted">.text-muted</p>
+<p class="text-white bg-dark">.text-white</p>
+<p class="text-black-50">.text-black-50</p>
+<p class="text-white-50 bg-dark">.text-white-50</p>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-5">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Colors --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-primary&quot;</span>&gt;</span>.text-primary<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-secondary&quot;</span>&gt;</span>.text-secondary<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-success&quot;</span>&gt;</span>.text-success<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-danger&quot;</span>&gt;</span>.text-danger<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-warning&quot;</span>&gt;</span>.text-warning<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-info&quot;</span>&gt;</span>.text-info<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-light bg-dark&quot;</span>&gt;</span>.text-light<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-dark&quot;</span>&gt;</span>.text-dark<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-body&quot;</span>&gt;</span>.text-body<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-muted&quot;</span>&gt;</span>.text-muted<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-white bg-dark&quot;</span>&gt;</span>.text-white<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-black-50&quot;</span>&gt;</span>.text-black-50<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-white-50 bg-dark&quot;</span>&gt;</span>.text-white-50<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
     </main>
   </div>
       </div>

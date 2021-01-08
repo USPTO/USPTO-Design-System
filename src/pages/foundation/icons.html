@@ -3,7 +3,161 @@ title: 'Icons' } %} {% block content %}
 
 <section>
   <div class="pattern">
-    <h1>This is icons page</h1>
+    <h1 id="overview">Overview</h1>
+    <h4 id="about-font-awesome-5">About Material design icons</h4>
+
+    <ul>
+      <li>
+        Material design icons is the official icon set from Google. These icons
+        are simple, modern and ensure readability and clarity at both large and
+        small sizes, these icons have been optimized for beautiful display on
+        all common platforms and display resolutions.
+      </li>
+      <li>
+        Material design icons on
+        <a
+          href="https://github.com/google/material-design-icons"
+          target="_blank"
+          >GitHub</a
+        >.
+      </li>
+      <li>
+        A complete list of available icons is available in the
+        <a href="https://material.io/resources/icons/?style=baseline"
+          >icon gallery</a
+        >.
+      </li>
+    </ul>
   </div>
 </section>
-{% endblock %}
+
+<section>
+  <div class="pattern">
+    <h2 id="usage">Usage</h2>
+
+    <ul>
+      <li>
+        Add Material design icons to your project by either using the version
+        included in this UI Library, or from
+        <a
+          href="https://google.github.io/material-design-icons/"
+          target="_blank"
+          >https://google.github.io/material-design-icons/</a
+        >.
+      </li>
+
+      <li>
+        Full capabilities documentation can be viewed on the
+        <a
+          href="https://material.io/resources/icons/?style=baseline"
+          target="_blank"
+          >Material icons resources page</a
+        >.
+      </li>
+    </ul>
+  </div>
+
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'view code for material design icon', code:
+    usageIcons }, '')}}
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h3 id="icon-color">Icon color</h3>
+
+    <p>
+      Material design icons automatically inherit the color of the associated
+      class or container around them.
+    </p>
+
+    <ul>
+      <li>
+        Use either a colored circle with a white icon, or a colored icon; not
+        both together. If necessary, you may use a dark circle to add emphasis
+        to warning icons.
+      </li>
+      <li>
+        Always ensure final icon usage is 508 compliant for color contrast.
+      </li>
+    </ul>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'view code for material design icon colors',
+    code: colorsIcons }, '')}}
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="system-icons">System Icons</h2>
+
+    <ul>
+      <li>System icons should always be one solid color.</li>
+      <li>
+        System icons should either be black, white, or any other primary UI
+        color.
+      </li>
+      <li>System icons can be placed in colored circles.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="icon-sizing">Icon sizing</h2>
+
+    <ul>
+      <li>
+        Material design icons can be scaled to any size, in accordance with
+        material design icons guidelines, we recommend them to be shown in
+        either 1.125rem, 1.35rem, 2.25rem or 3rem. The default being 1.35rem.
+        <br />
+
+        CSS rules for the standard material design sizing guidelines:
+        <ul class="list-unstyled">
+          <li><code>.material-icons.md-1 { font-size: 1rem; }</code></li>
+          <li><code>.material-icons.md-2 { font-size: 1.35rem; }</code></li>
+          <li><code>.material-icons.md-3 { font-size: 2.25rem; }</code></li>
+          <li><code>.material-icons.md-4 { font-size: 3rem; }</code></li>
+        </ul>
+      </li>
+      <li>
+        When scaling icons, ensure the sizes used appear sharp on standard and
+        high DPI screens.
+      </li>
+    </ul>
+  </div>
+
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'view code for material design icon size',
+    code: sizeIcons }, '')}}
+  </div>
+</section>
+
+{% endblock %} {% set usageIcons %}
+<!--Material icon usage -->
+<i class="material-icons">public</i>
+<i class="material-icons">launch</i>
+<i class="material-icons">computer</i>
+{% endset%} {% set colorsIcons %}
+<!--Material icon usage -->
+<i class="material-icons text-primary">public</i>
+<i class="material-icons text-secondary">public</i>
+<i class="material-icons text-success">public</i>
+<i class="material-icons text-danger">public</i>
+<i class="material-icons text-warning">public</i>
+<i class="material-icons text-info">public</i>
+<i class="material-icons text-dark">public</i>
+<i class="material-icons text-body">public</i>
+<i class="material-icons text-muted">public</i>
+<i class="material-icons text-white bg-dark">public</i>
+<i class="material-icons text-white-50 bg-dark">public</i>
+{% endset%} {% set sizeIcons %}
+<!--Material icon usage -->
+<i class="material-icons md-1">public</i>
+<i class="material-icons md-2">public</i>
+<i class="material-icons md-3">public</i>
+<i class="material-icons md-4">public</i>
+{% endset%}

@@ -3,7 +3,134 @@ title: 'Grid' } %} {% block content %}
 
 <section>
   <div class="pattern">
-    <h1>This is grid page</h1>
+    <h1>Grid</h1>
+    <p>
+      The 12 column grid can be used for aligning components and assisting in
+      responsive behavior. It is not intended to be the only solution for
+      aligning components.
+    </p>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="text-center">
+            Extra small<br />
+            <small>&lt;576px</small>
+          </th>
+          <th class="text-center">
+            Small<br />
+            <small>≥576px</small>
+          </th>
+          <th class="text-center">
+            Medium<br />
+            <small>≥768px</small>
+          </th>
+          <th class="text-center">
+            Large<br />
+            <small>≥992px</small>
+          </th>
+          <th class="text-center">
+            Extra large<br />
+            <small>≥1200px</small>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-nowrap" scope="row">Max container width</th>
+          <td>None (auto)</td>
+          <td>540px</td>
+          <td>720px</td>
+          <td>960px</td>
+          <td>1140px</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Class prefix</th>
+          <td>
+            <code>.col-</code>
+          </td>
+          <td>
+            <code>.col-sm-</code>
+          </td>
+          <td>
+            <code>.col-md-</code>
+          </td>
+          <td>
+            <code>.col-lg-</code>
+          </td>
+          <td>
+            <code>.col-xl-</code>
+          </td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"># of columns</th>
+          <td colspan="5">12</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Gutter width</th>
+          <td colspan="5">30px (15px on each side of a column)</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Nestable</th>
+          <td colspan="5">Yes</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Column ordering</th>
+          <td colspan="5">Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'view code for equal width grid', code:
+    equalWidthGrid }, '')}}
   </div>
 </section>
-{% endblock %}
+{% endblock %} {% set equalWidthGrid %}
+<!--Equal width grid -->
+<div class="container pl-grid-example">
+  <div class="row">
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <aa></aa>
+  </div>
+
+  <div class="row">
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+  </div>
+
+  <div class="row">
+    <div class="col">.col-*-3</div>
+    <div class="col">.col-*-3</div>
+    <div class="col">.col-*-3</div>
+    <div class="col">.col-*-3</div>
+  </div>
+
+  <div class="row">
+    <div class="col">.col-*-4</div>
+    <div class="col">.col-*-4</div>
+    <div class="col">.col-*-4</div>
+  </div>
+
+  <div class="row">
+    <div class="col">.col-*-6</div>
+    <div class="col">.col-*-6</div>
+  </div>
+</div>
+{% endset%}

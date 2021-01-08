@@ -1,0 +1,27 @@
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-tags',
+title: 'Tags' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1>Tags</h1>
+    <h2 id="purpose">Purpose</h2>
+    <p>
+      Users need to see the categories or labels of an object, which can often
+      be used to find related objects.
+    </p>
+    <h2 id="description">Description</h2>
+    <p>
+      Tags usually represent a category or label of an object. Sometimes they
+      are clickable.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for tags', code: tagsDefault },
+    "")}}
+  </div>
+</section>
+{% endblock %} {% set tagsDefault %}
+<!--Tags-->
+<span class="badge badge-light">News</span>
+<span class="badge badge-light">Patents</span>
+<a href="#" class="badge badge-light">Trademark</a>
+{% endset%}

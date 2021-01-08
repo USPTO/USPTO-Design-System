@@ -12656,6 +12656,31 @@ main > section .preview-size .popover {
   background-color: #ffbe2e !important;
 }
 
+.pl-grid-example .row > div {
+  background: #f0f0f0;
+  color: #999;
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.material-icons.md-1 {
+  font-size: 1rem;
+}
+
+.material-icons.md-2 {
+  font-size: 1.35rem;
+}
+
+.material-icons.md-3 {
+  font-size: 2.25rem;
+}
+
+.material-icons.md-4 {
+  font-size: 3rem;
+}
+
 .swatch-blue-100 {
   background-color: #eff6fb;
   color: #212529;

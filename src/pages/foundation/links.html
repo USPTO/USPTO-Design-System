@@ -1,0 +1,70 @@
+{% extends 'layouts/foundation.njk' %} {% set page = { class: 'page-links',
+title: 'Links' } %} {% block content %}
+
+<section>
+  <div class="pattern">
+    <h1>Links</h1>
+    <h2>Links within paragraphs</h2>
+    <p>
+      By default, links contained within a paragraph &lt;p&gt; tag will be blue
+      in color and underlined.
+    </p>
+
+    <ul>
+      <li>
+        Visited links will appear
+        <span style="color: purple; text-decoration: underline"
+          >purple and underlined</span
+        >
+      </li>
+      <li>
+        Override the default appearance of links contained in paragraphs only if
+        necessary
+      </li>
+      <li>
+        Links not contained within a paragraph should follow the individual
+        component/pattern styling as defined
+        <ul>
+          <li>
+            In general, links contained within interface components will not be
+            underlined
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <blockquote>
+      <h5 id="example">Example</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+        <a href="#">porttitor ex vestibulum</a>, iaculis metus a, suscipit leo.
+        Nullam ut rutrum nibh, vitae congue nisl. Cum sociis natoque penatibus
+        et magnis dis parturient montes, nascetur ridiculus mus.
+        <a href="#">Duis suscipit turpis ut tincidunt</a> dapibus. Etiam id
+        tristique nisi. Mauris non maximus ex, lacinia bibendum purus. Proin sit
+        amet mi ac massa tempus aliquet. In pellentesque facilisis odio nec
+        ultricies. <a href="#">Quisque metus magna</a>, aliquam a sollicitudin
+        at, mollis id massa.
+      </p>
+    </blockquote>
+  </div>
+  <div class="pattern">
+    <h2 id="externaloff-site-links">External/off-site links</h2>
+    <p>
+      Where necessary, add the “<em>icon-external-link</em>”
+      <i class="material-icons">launch</i> icon to inform users that the link
+      they are visiting is an external website.
+    </p>
+
+    <blockquote>
+      <h5 id="example-1">Example</h5>
+      <p>
+        Lorem ipsum dolor sit amet.
+        <a href="#">Quisque porttitor ex vestibulum</a>
+        <i class="icon icon-external-link"></i>, consectetur adipiscing elit.
+      </p>
+      <p>&nbsp;</p>
+    </blockquote>
+  </div>
+</section>
+{% endblock %}

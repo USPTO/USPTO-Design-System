@@ -244,7 +244,263 @@
 
 <section>
   <div class="pattern">
-    <h1>This is grid page</h1>
+    <h1>Grid</h1>
+    <p>
+      The 12 column grid can be used for aligning components and assisting in
+      responsive behavior. It is not intended to be the only solution for
+      aligning components.
+    </p>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="text-center">
+            Extra small<br />
+            <small>&lt;576px</small>
+          </th>
+          <th class="text-center">
+            Small<br />
+            <small>≥576px</small>
+          </th>
+          <th class="text-center">
+            Medium<br />
+            <small>≥768px</small>
+          </th>
+          <th class="text-center">
+            Large<br />
+            <small>≥992px</small>
+          </th>
+          <th class="text-center">
+            Extra large<br />
+            <small>≥1200px</small>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-nowrap" scope="row">Max container width</th>
+          <td>None (auto)</td>
+          <td>540px</td>
+          <td>720px</td>
+          <td>960px</td>
+          <td>1140px</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Class prefix</th>
+          <td>
+            <code>.col-</code>
+          </td>
+          <td>
+            <code>.col-sm-</code>
+          </td>
+          <td>
+            <code>.col-md-</code>
+          </td>
+          <td>
+            <code>.col-lg-</code>
+          </td>
+          <td>
+            <code>.col-xl-</code>
+          </td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"># of columns</th>
+          <td colspan="5">12</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Gutter width</th>
+          <td colspan="5">30px (15px on each side of a column)</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Nestable</th>
+          <td colspan="5">Yes</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Column ordering</th>
+          <td colspan="5">Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="view code for equal width grid"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for equal width grid"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Equal width grid --&gt;
+&lt;div class=&quot;container pl-grid-example&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-1&lt;/div&gt;
+    &lt;aa&gt;&lt;/aa&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-2&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-2&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-2&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-2&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-2&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-2&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-3&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-3&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-3&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-3&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-4&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-4&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-4&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-6&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col-*-6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Equal width grid -->
+<div class="container pl-grid-example">
+  <div class="row">
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <div class="col">.col-*-1</div>
+    <aa></aa>
+  </div>
+
+  <div class="row">
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+    <div class="col">.col-*-2</div>
+  </div>
+
+  <div class="row">
+    <div class="col">.col-*-3</div>
+    <div class="col">.col-*-3</div>
+    <div class="col">.col-*-3</div>
+    <div class="col">.col-*-3</div>
+  </div>
+
+  <div class="row">
+    <div class="col">.col-*-4</div>
+    <div class="col">.col-*-4</div>
+    <div class="col">.col-*-4</div>
+  </div>
+
+  <div class="row">
+    <div class="col">.col-*-6</div>
+    <div class="col">.col-*-6</div>
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Equal width grid --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container pl-grid-example&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">aa</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">aa</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-6<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>.col-*-6<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
   </div>
 </section>
     </main>
