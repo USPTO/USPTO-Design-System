@@ -29,7 +29,7 @@ module.exports = {
   subHeader: {
     links: [
       {
-        href: 'howto.html',
+        href: 'resources/how-to-use.html',
         text: 'How to use DPL',
         title: 'How to use DPL',
       },
