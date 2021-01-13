@@ -1,0 +1,16 @@
+{% extends "layouts/default.njk" %}
+{% set navLinks = usageNavLinks %}
+
+{% block main %}
+ <div class="d-sm-block d-md-none">
+    {% include 'parts/_sidenav-dropdown.njk' %}
+  </div>
+   <div class="d-none d-sm-none d-md-block">
+    {% include 'parts/_sidenav.njk' %}
+  </div>
+ 
+  <main id="main-content">
+    {% block content%}{% endblock%}
+    </main>
+  </div>
+{% endblock %}

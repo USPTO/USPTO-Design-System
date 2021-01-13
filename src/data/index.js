@@ -29,9 +29,9 @@ module.exports = {
   subHeader: {
     links: [
       {
-        href: 'resources/how-to-use.html',
-        text: 'How to use DPL',
-        title: 'How to use DPL',
+        href: 'usage/how-to-use.html',
+        text: 'Usage',
+        title: 'How to use USPTO Design System',
       },
       {
         href: 'foundation/foundation.html',
@@ -53,6 +53,11 @@ module.exports = {
         href: 'pageTemplates/pageTemplate.html',
         text: 'Page templates',
         title: 'Page templates',
+      },      
+      {
+        href: 'resources/resources.html',
+        text: 'Resources',
+        title: 'Resources',
       },
       {
         href: 'about/about.html',

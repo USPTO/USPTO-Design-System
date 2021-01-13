@@ -111,16 +111,18 @@ title: 'Icons' } %} {% block content %}
     <ul>
       <li>
         Material design icons can be scaled to any size, in accordance with
-        material design icons guidelines, we recommend them to be shown in
-        either 1.125rem, 1.35rem, 2.25rem or 3rem. The default being 1.35rem.
+        material design icons guidelines. The default being 1.35rem.
         <br />
 
         CSS rules for the standard material design sizing guidelines:
         <ul class="list-unstyled">
-          <li><code>.material-icons.md-1 { font-size: 1rem; }</code></li>
-          <li><code>.material-icons.md-2 { font-size: 1.35rem; }</code></li>
-          <li><code>.material-icons.md-3 { font-size: 2.25rem; }</code></li>
-          <li><code>.material-icons.md-4 { font-size: 3rem; }</code></li>
+          <li><code>.material-icons.md-xs { font-size: .75rem; }</code></li>
+          <li><code>.material-icons.md-sm { font-size: 1rem; }</code></li>
+          <li><code>.material-icons.md-lg { font-size: 2rem; }</code></li>
+          <li><code>.material-icons.md-2x { font-size: 2.7rem; }</code></li>
+          <li><code>.material-icons.md-3x { font-size: 4.05rem; }</code></li>
+          <li><code>.material-icons.md-5x { font-size: 6.75rem; }</code></li>
+          <li><code>.material-icons.md-10x { font-size: 13.5rem; }</code></li>
         </ul>
       </li>
       <li>
@@ -156,8 +158,11 @@ title: 'Icons' } %} {% block content %}
 <i class="material-icons text-white-50 bg-dark">public</i>
 {% endset%} {% set sizeIcons %}
 <!--Material icon usage -->
-<i class="material-icons md-1">public</i>
-<i class="material-icons md-2">public</i>
-<i class="material-icons md-3">public</i>
-<i class="material-icons md-4">public</i>
+<i class="material-icons md-xs">public</i>
+<i class="material-icons md-sm">public</i>
+<i class="material-icons md-lg">public</i>
+<i class="material-icons md-2x">public</i>
+<i class="material-icons md-3x">public</i>
+<i class="material-icons md-5x">public</i>
+<i class="material-icons md-10x">public</i>
 {% endset%}

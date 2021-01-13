@@ -90,7 +90,7 @@ Object.assign(exports, {
         { href: '#form-controls', text: 'Form controls' }
       ],
     },
-    { href: 'metadata.html', text: 'Metadata' },
+    //{ href: 'metadata.html', text: 'Metadata' },
     {
       href: 'pagination.html',
       text: 'Pagination',
@@ -136,7 +136,7 @@ Object.assign(exports, {
         { href: '#justified-tabs', text: 'Justified tabs' }
       ],
     },
-    { href: 'tags.html', text: 'Tags' },
+    //{ href: 'tags.html', text: 'Tags' },
     {
       href: 'tooltips.html',
       text: 'Tooltips',
@@ -193,8 +193,8 @@ Object.assign(exports, {
     { href: 'pageTemplate2.html', text: 'Page Template 2' },
     { href: 'loader.html', text: 'Loading Spinner' }
   ],
-  resourcesNavLinks: [
-    { href: 'how-to-use.html', text: 'How to use' },  
+ 
+  resourcesNavLinks: [     
     {
       href: 'resources.html',
       text: 'Resources',
@@ -204,6 +204,9 @@ Object.assign(exports, {
         { href: '#wireframes', text: 'Wireframe and prototype' }
       ],
     }
+  ],
+  usageNavLinks: [
+    { href: 'how-to-use.html', text: 'Usage' }
   ],
   patternsNavLinks: [
     { href: 'patterns.html', text: 'Patterns' },
