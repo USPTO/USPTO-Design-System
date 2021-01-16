@@ -1,0 +1,201 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = {
+class: 'page-wizards', title: 'Wizards' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1>Wizards</h1>
+    <h3 id="purpose">Purpose</h3>
+    <p>Users need guidance filling out a complex form.</p>
+    <h3 id="description">Description</h3>
+    <p>
+      Splitting a complex form into multiple steps accomplishes a few things:
+    </p>
+    <ul>
+      <li>
+        Reduces cognitive overhead by organizing and presenting related input
+        fields
+      </li>
+      <li>Facilitates a potentially linear or evolving process</li>
+      <li>Can provide improved contextual or evolving help</li>
+    </ul>
+    <h3 id="basic-functionality">Basic functionality</h3>
+    <p>A wizard is usually composed of:</p>
+    <ul>
+      <li>A list of steps, either horizontally or vertically</li>
+      <li>A collection of form controls and help text organized into steps</li>
+      <li>Buttons for navigation</li>
+      <li>Validation</li>
+    </ul>
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h2 id="steps">Steps</h2>
+    <p>
+      In many cases it’s beneficial to show the list of steps a wizard will
+      have. Depending on the number of steps and space available<!-- , steps can be listed vertically or horizontally-->.
+    </p>
+    <h3 id="validation">Validation</h3>
+    <ul>
+      <li>
+        Indicate a step’s validity
+        <ul>
+          <li>
+            Show a check icon when valid (only if the user has left/submitted
+            the form with valid input)
+          </li>
+          <li>
+            Show a warning icon when invalid (only if the user has
+            left/submitted the form with errors)
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h3 id="navigation">Navigation</h3>
+    <ul>
+      <li>Allow for navigating to previous steps when possible</li>
+      <li>In some cases, skipping ahead is applicable</li>
+      <li>Navigation may evolve depending on previous steps</li>
+    </ul>
+  </div>
+  <div class="pattern">
+    <h2>Horizontal steps</h2>
+    <p>Use horizontal steps when there are 4 or less steps.</p>
+  </div>
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for horizontal steps', code:
+    horizontalSteps }, '' )}}
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h2 id="buttons">Buttons</h2>
+    <p>
+      Buttons for a wizard can vary depending on the need. The primary actions
+      should be on the right, the secondary actions should be on the left.
+    </p>
+  </div>
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for wizards buttons', code:
+    buttonsWizards }, '' )}}
+  </div>
+</section>
+
+{% endblock %} {% set horizontalSteps%}
+
+<!-- Horizontal steps-->
+
+<div
+  class="usa-step-indicator usa-step-indicator--counters-sm usa-step-indicator--center"
+  aria-label="progress"
+>
+  <ol class="usa-step-indicator__segments">
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Applicant information <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--current"
+      aria-current="true"
+    >
+      <span class="usa-step-indicator__segment-label">Mark information </span>
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Goods and services <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+  </ol>
+</div>
+<h2 class="text-center mb-4">
+  So far so good. Now, let's talk about your mark.
+</h2>
+<h4 class="mb-3">First, what type of mark is this?</h4>
+
+<!-- learn more links -->
+<form>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios1"
+      value="option1"
+      checked
+    />
+    <label class="form-check-label" for="exampleRadios1">
+      Standard characters
+    </label>
+    <small class="form-text text-muted">
+      Use this option to register a mark that is comprised of word(s),
+      letter(s), number(s), or any combination thereof with no design element or
+      stylization. <a href="#">Learn more.</a>
+    </small>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios2"
+      value="option2"
+    />
+    <label class="form-check-label" for="exampleRadios2"> Special form </label>
+    <small class="form-text text-muted">
+      Use this option if you wish to register a mark that is comprised of
+      stylized word(s), letter(s), and/or number(s), and/or a design element.
+      <a href="#">Learn more.</a>
+    </small>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios3"
+      value="option3"
+    />
+    <label class="form-check-label" for="exampleRadios3"> Sound mark </label>
+    <small class="form-text text-muted">
+      A non-visual mark may be a sound, a scent, or otherwise non-visual mark.
+      <a href="#">Learn more.</a>
+    </small>
+  </div>
+  <div class="text-right mt-4">
+    <button class="btn btn-secondary">Back</button>
+    <button class="btn btn-primary">Continue</button>
+  </div>
+</form>
+{% endset %} {% set buttonsWizards %}
+<!-- Button wizards -->
+<div class="row">
+  <div class="col-12 mb-3">
+    <button class="btn btn-primary float-right">Continue</button>
+  </div>
+
+  <div class="col-12 mb-3 text-right">
+    <hr />
+    <button class="btn btn-secondary">Back</button>
+    <button class="btn btn-primary">Continue</button>
+  </div>
+
+  <div class="col-12 mb-3 text-right">
+    <hr />
+    <button class="btn btn-secondary">Back</button
+    ><button class="btn btn-secondary float-left">Cancel</button>
+    <button class="btn btn-primary">Continue</button>
+  </div>
+
+  <div class="col-12 mb-3 text-right text-right">
+    <hr />
+    <button class="btn btn-secondary">Back</button
+    ><button class="btn btn-secondary float-left">Cancel</button>
+
+    <button class="btn btn-secondary">Save</button>
+    <button class="btn btn-primary">Continue</button>
+  </div>
+</div>
+<p class="text-right mb-3 text-muted">Last saved 02/07/21 10:45 AM</p>
+{% endset %}

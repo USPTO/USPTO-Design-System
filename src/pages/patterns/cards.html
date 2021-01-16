@@ -1,0 +1,464 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = {
+class: 'page-cards', title: 'Cards' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1 id="cards-overview">Cards overview</h1>
+
+    <h2 id="purpose">Purpose</h2>
+    <p>
+      A card is a flexible and extensible content container. It includes options
+      for headers and footers, a wide variety of content, contextual background
+      colors, and powerful display options.
+    </p>
+
+    <h2 id="description">Description</h2>
+
+    <p>
+      Cards require a small amount of markup and classes to provide you with as
+      much control as possible. These classes and markup are flexible though and
+      can typically be remixed and extended with ease. For example, if your card
+      has no flush content like images, feel free to put the .card-body class on
+      the .card element to consolidate your markup.
+    </p>
+
+    <h2 id="merged-example">Merged example</h2>
+    <p>
+      Cards support a wide variety of content, including images, text, list
+      groups, links, and more. Mix and match multiple content types to create
+      the card you need.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for card', code: mixMatchCard },
+    '' )}}
+  </div>
+
+  <div class="pattern">
+    <h2 id="image-position-and-image-caps">Image position and image caps</h2>
+    <p>
+      Images can be positioned inside of cards quickly and easily with
+      <code class="highlighter-rouge">.card-image</code>. Be sure to set
+      <code class="highlighter-rouge">.img-fluid</code> to allow the image to
+      shrink and grow responsively.
+    </p>
+  </div>
+
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for image position inside card',
+    code: imagePositionCard }, '' )}}
+  </div>
+  <div class="pattern">
+    <h2>Image cards</h2>
+    <p>Turn an image into a card background and overlay your card’s text.</p>
+  </div>
+
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for image card', code: imageCard
+    }, '' )}}
+  </div>
+
+  <div class="pattern">
+    <h2 id="background-variants">Background variants</h2>
+    <p>
+      Cards include their own variant classes for quickly changing the
+      background-color and border-color of a card. Darker colors require the use
+      of
+      <code class="highlighter-rouge"
+        >.bg-* {primary, success, warning, info, secondary, danger, light, dark
+        }</code
+      >.
+    </p>
+  </div>
+  <div class="preview pv-lg">
+    {{ macros.viewCode({ ariaLabel: 'View code for background variants', code:
+    backgroundVariantsCard }, '' )}}
+  </div>
+
+  <div class="preview">
+    <h2 id="headers-and-footers">Headers and footers</h2>
+    <p>Add an optional header and/or footer within a card.</p>
+  </div>
+
+  <div class="preview pv-lg">
+    {{ macros.viewCode({ ariaLabel: 'View code for header and footer', code:
+    headerFooterCard }, '' )}}
+  </div>
+
+  <div class="preview">
+    <h2>Columns and masonry</h2>
+    <p>
+      Cards can be organized into Masonry-like columns with just CSS by wrapping
+      them in <code class="highlighter-rouge">.card-columns.</code> Only applies
+      to small devices and above.
+    </p>
+  </div>
+  <div class="preview pv-lg">
+    {{ macros.viewCode({ ariaLabel: 'View code for columns and masonry', code:
+    columnsCard }, '' )}}
+  </div>
+</section>
+
+{% endblock %} {% set mixMatchCard %}
+<!--Card-->
+<div class="card">
+  <div class="card-header">Featured</div>
+
+  <img
+    class="card-img-top img-fluid"
+    src="{{relativeRoot}}/assets/img/built-to-grow--alt.jpg"
+    alt="A placeholder image"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitletext-muted">Card subtitle</h6>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+  <div class="card-footer text-muted">2 days ago</div>
+</div>
+{% endset%} {% set imagePositionCard %}
+<!--Card image positions-->
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <!--Card image top-->
+    <div class="card">
+      <img
+        class="card-img-top img-fluid"
+        src="{{relativeRoot}}/assets/img/built-to-grow--alt.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h4 class="card-title">Card image top</h4>
+        <p class="card-text">
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <!--Card image middle-->
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Card image middle</h4>
+      </div>
+      <img
+        class="card-img img-fluid"
+        src="{{relativeRoot}}/assets/img/built-to-grow--alt.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <!--Card image bottom-->
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Card image bottom</h4>
+        <p class="card-text">
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+      <img
+        class="card-img-bottom img-fluid"
+        src="{{relativeRoot}}/assets/img/built-to-grow--alt.jpg"
+        alt="Card image cap"
+      />
+    </div>
+  </div>
+</div>
+{% endset%} {% set imageCard %}
+<!--Image card -->
+<div class="card">
+  <img
+    class="card-img img-fluid"
+    style="opacity: 0.2"
+    src="{{relativeRoot}}/assets/img/built-to-grow--alt.jpg"
+    alt="Card image"
+  />
+  <div class="card-img-overlay">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">
+      This is a wider card with supporting text below as a natural lead-in to
+      additional content. This content is a little bit longer.
+    </p>
+    <p>
+      Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+      Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+    </p>
+    <p class="card-text">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </p>
+  </div>
+</div>
+{% endset %} {% set backgroundVariantsCard %}
+<!--Background variants -->
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-2">
+    <div class="card text-white bg-primary">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Primary card title</h4>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-2">
+    <div class="card text-white bg-success d-inline-block">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Success card title</h4>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-2">
+    <div class="card bg-warning">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Warning card title</h4>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-2">
+    <div class="card text-white bg-info">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Info card title</h4>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-2">
+    <div class="card text-white bg-secondary">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Secondary card title</h4>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-2">
+    <div class="card text-white bg-danger">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Danger card sub title</h4>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-2">
+    <div class="card bg-light">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Light card title</h4>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-2">
+    <div class="card text-white bg-dark">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Dark card title</h4>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endset %} {% set headerFooterCard %}
+<!--Headers and footers -->
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="card">
+      <div class="card-header">Featured</div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="card">
+      <div class="card-header">Featured</div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-footer text-muted">2 days ago</div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-footer text-muted">2 days ago</div>
+    </div>
+  </div>
+</div>
+{% endset %} {% set columnsCard %}
+<!-- Columns and masonry -->
+<div class="card-columns">
+  <div class="card">
+    <img
+      src="{{relativeRoot}}/assets/img/built-to-grow--alt.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title that wraps to a new line</h5>
+      <p class="card-text">
+        This is a longer card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </p>
+    </div>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+        erat a ante.
+      </p>
+      <div class="blockquote-footer">
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </div>
+    </blockquote>
+  </div>
+  <div class="card">
+    <img
+      src="{{relativeRoot}}/assets/img/built-to-grow--alt.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        This card has supporting text below as a natural lead-in to additional
+        content.
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
+    </div>
+  </div>
+  <div class="card bg-primary text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+        erat.
+      </p>
+      <div class="blockquote-footer text-white">
+        <small>
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </div>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        This card has a regular title and short paragraphy of text below it.
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <img
+      src="{{relativeRoot}}/assets/img/built-to-grow--alt.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+        erat a ante.
+      </p>
+      <div class="blockquote-footer">
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </div>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        This is another card with title and supporting text below. This card has
+        some additional content to make it slightly taller overall.
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
+    </div>
+  </div>
+</div>
+{% endset %}

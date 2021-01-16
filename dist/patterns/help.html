@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" class="page-help">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO UI Design System
+ | Help
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO UI Design Library Home">
+          USPTO <span class="font-weight-light">Design System</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/uspto/designpatterns" title="View on Github" >
+     <img src="..//assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
+    </a>
+  </div>
+</div>
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="How to use USPTO Design System">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
+              Page templates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="patterns.html">Patterns
+    </option>
+    <option value="cards.html">Cards
+    </option>
+    <option value="dataFormats.html">Data formats
+    </option>
+    <option value="fileUpload.html">File upload
+    </option>
+    <option value="filters.html">Filters
+    </option>
+    <option value="help.html">Help
+    </option>
+    <option value="search.html">Search
+    </option>
+    <option value="settings.html">Settings
+    </option>
+    <option value="tours.html">Tours
+    </option>
+    <option value="wizards.html">Wizards
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="patterns.html" data-parent="Patterns">Patterns</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="cards.html" data-parent="Cards">Cards</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#cards-overview">Cards overview</a>
+            </li>
+            <li>
+              <a href="#image-position-and-image-caps">Image position</a>
+            </li>
+            <li>
+              <a href="#background-variants">Background variants</a>
+            </li>
+            <li>
+              <a href="#headers-and-footers">Headers and footers</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="dataFormats.html" data-parent="Data formats">Data formats</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#date-and-time">Date and time</a>
+            </li>
+            <li>
+              <a href="#file-sizes">File sizes</a>
+            </li>
+            <li>
+              <a href="#deprecated">Deprecated</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="fileUpload.html" data-parent="File upload">File upload</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#single-file-upload">Single file upload</a>
+            </li>
+            <li>
+              <a href="#multi-file-upload">Multi file upload</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="filters.html" data-parent="Filters">Filters</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#vertical-filters">Vertical filters</a>
+            </li>
+            <li>
+              <a href="#collapsed-filters">Collapsed filters</a>
+            </li>
+            <li>
+              <a href="#horizontal-filters">Horizontal filters</a>
+            </li>
+            <li>
+              <a href="#predefined-filters">Predefined filters</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="help.html" data-parent="Help">Help</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="search.html" data-parent="Search">Search</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="settings.html" data-parent="Settings">Settings</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#navigation">Navigation</a>
+            </li>
+            <li>
+              <a href="#saving-changes">Saving changes</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="tours.html" data-parent="Tours">Tours</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="wizards.html" data-parent="Wizards">Wizards</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#steps">Steps</a>
+            </li>
+            <li>
+              <a href="#buttons">Buttons</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+<section>
+  <div class="pattern">
+    <h1>Help</h1>
+
+    <h2 id="purpose">Purpose</h2>
+    <p>
+      Users need to understand the processes, forms, and data they’re
+      interacting with.
+    </p>
+
+    <h2 id="description">Description</h2>
+    <p>
+      Help can be provided in a lot of different ways. When and how you provide
+      help depends on the amount of help needed, the type of
+      process/interaction, and your target audience. Too much contextual help
+      can actually make interfaces harder to understand, but insufficient help
+      will frustrate new users.
+    </p>
+
+    <p>Some of the ways help can be provided are:</p>
+
+    <ul>
+      <li>Dedicated help and FAQ page(s)</li>
+      <li>
+        Above and in forms (<a
+          href="..//components/forms.html#help-text"
+          >See Forms page for examples</a
+        >)
+      </li>
+      <li>
+        Below form input fields (<a
+          href="..//components/forms.html#help-text"
+          >See Forms page for examples</a
+        >)
+      </li>
+      <li>
+        Popovers when form input fields are focused (<a
+          href="..//components/forms.html#help-text"
+          >See Forms page for examples</a
+        >)
+      </li>
+      <li>
+        Popovers with definitions/descriptions when hovering over a
+        label/term/word
+      </li>
+      <li>“Learn more” links and “Information” icons</li>
+    </ul>
+  </div>
+  <div class="pattern">
+    <h2 id="dotted-underlines">Dotted underlines</h2>
+    <p>
+      Use this for term definitions when a term may not be obvious to your
+      target audience.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for dotted underline"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for dotted underline"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Dotted underline --&gt;
+&lt;abbr
+  data-toggle=&quot;popover&quot;
+  data-placement=&quot;top&quot;
+  data-container=&quot;body&quot;
+  data-trigger=&quot;hover&quot;
+  data-content=&quot;The person, group of persons, or organization that received ownership rights of the patent application or patent.&quot;
+  &gt;Assignee&lt;/abbr
+&gt;: Smith, John D. "
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Dotted underline -->
+<abbr
+  data-toggle="popover"
+  data-placement="top"
+  data-container="body"
+  data-trigger="hover"
+  data-content="The person, group of persons, or organization that received ownership rights of the patent application or patent."
+  >Assignee</abbr
+>: Smith, John D.
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Dotted underline --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">abbr</span>
+  <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;popover&quot;</span>
+  <span class="hljs-attr">data-placement</span>=<span class="hljs-string">&quot;top&quot;</span>
+  <span class="hljs-attr">data-container</span>=<span class="hljs-string">&quot;body&quot;</span>
+  <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;hover&quot;</span>
+  <span class="hljs-attr">data-content</span>=<span class="hljs-string">&quot;The person, group of persons, or organization that received ownership rights of the patent application or patent.&quot;</span>
+  &gt;</span>Assignee<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>
+&gt;</span>: Smith, John D.</code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="pattern">
+    <h2>Input field focus popover</h2>
+    <p>
+      Use this when the information is only relevant once the user has focused
+      the field.
+    </p>
+  </div>
+
+  <div class="preview pv-xs">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for input field focus popover"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for input field focus popover"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Input field focus popover --&gt;
+&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;examplFLeInputPassword&quot;&gt;Password&lt;/label&gt;
+    &lt;input
+      type=&quot;password&quot;
+      class=&quot;form-control&quot;
+      id=&quot;examplFLeInputPassword&quot;
+      data-html=&quot;true&quot;
+      data-toggle=&quot;popover&quot;
+      data-container=&quot;body&quot;
+      data-trigger=&quot;focus&quot;
+      data-content=&quot;Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. &lt;a href=&#39;&#39;&gt;Why?&lt;/a&gt;&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Input field focus popover -->
+<form>
+  <div class="form-group">
+    <label for="examplFLeInputPassword">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="examplFLeInputPassword"
+      data-html="true"
+      data-toggle="popover"
+      data-container="body"
+      data-trigger="focus"
+      data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>"
+    />
+  </div>
+</form>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Input field focus popover --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;examplFLeInputPassword&quot;</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;examplFLeInputPassword&quot;</span>
+      <span class="hljs-attr">data-html</span>=<span class="hljs-string">&quot;true&quot;</span>
+      <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;popover&quot;</span>
+      <span class="hljs-attr">data-container</span>=<span class="hljs-string">&quot;body&quot;</span>
+      <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;focus&quot;</span>
+      <span class="hljs-attr">data-content</span>=<span class="hljs-string">&quot;Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. &lt;a href=&#x27;&#x27;&gt;Why?&lt;/a&gt;&quot;</span>
+    /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="pattern">
+    <h2>“Learn more” links</h2>
+    <p>
+      Use “Learn more” links to provide additional help text only when the user
+      needs it. The links can reveal additional text in the form of a popover, a
+      dedicated help page, or by expanding the text.
+    </p>
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for learn more links"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for learn more links"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- learn more links --&gt;
+&lt;form&gt;
+  &lt;div class=&quot;form-check&quot;&gt;
+    &lt;input
+      class=&quot;form-check-input&quot;
+      type=&quot;radio&quot;
+      name=&quot;exampleRadios&quot;
+      id=&quot;exampleRadios1&quot;
+      value=&quot;option1&quot;
+      checked
+    /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios1&quot;&gt;
+      Standard characters
+    &lt;/label&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;
+      Use this option to register a mark that is comprised of word(s),
+      letter(s), number(s), or any combination thereof with no design element or
+      stylization.
+      &lt;a href=&quot;#&quot;&gt;Learn more.&lt;/a&gt;
+    &lt;/small&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-check&quot;&gt;
+    &lt;input
+      class=&quot;form-check-input&quot;
+      type=&quot;radio&quot;
+      name=&quot;exampleRadios&quot;
+      id=&quot;exampleRadios2&quot;
+      value=&quot;option2&quot;
+    /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios2&quot;&gt; Special form &lt;/label&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;
+      Use this option if you wish to register a mark that is comprised of
+      stylized word(s), letter(s), and/or number(s), and/or a design element.
+      &lt;a href=&quot;#&quot;&gt;Learn more.&lt;/a&gt;
+    &lt;/small&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- learn more links -->
+<form>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios1"
+      value="option1"
+      checked
+    />
+    <label class="form-check-label" for="exampleRadios1">
+      Standard characters
+    </label>
+    <small class="form-text text-muted">
+      Use this option to register a mark that is comprised of word(s),
+      letter(s), number(s), or any combination thereof with no design element or
+      stylization.
+      <a href="#">Learn more.</a>
+    </small>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios2"
+      value="option2"
+    />
+    <label class="form-check-label" for="exampleRadios2"> Special form </label>
+    <small class="form-text text-muted">
+      Use this option if you wish to register a mark that is comprised of
+      stylized word(s), letter(s), and/or number(s), and/or a design element.
+      <a href="#">Learn more.</a>
+    </small>
+  </div>
+</form>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- learn more links --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span>
+      <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios&quot;</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios1&quot;</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option1&quot;</span>
+      <span class="hljs-attr">checked</span>
+    /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios1&quot;</span>&gt;</span>
+      Standard characters
+    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text text-muted&quot;</span>&gt;</span>
+      Use this option to register a mark that is comprised of word(s),
+      letter(s), number(s), or any combination thereof with no design element or
+      stylization.
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Learn more.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span>
+      <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios&quot;</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios2&quot;</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option2&quot;</span>
+    /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios2&quot;</span>&gt;</span> Special form <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text text-muted&quot;</span>&gt;</span>
+      Use this option if you wish to register a mark that is comprised of
+      stylized word(s), letter(s), and/or number(s), and/or a design element.
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Learn more.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="pattern">
+    <h2>“Information” icons</h2>
+    <p>
+      Use “Information” icons to provide explanations and elaborations for
+      titles and panels.
+    </p>
+  </div>
+
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for information icons"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for information icons"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Information icons --&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;
+    Weekly traffic
+    &lt;i
+      class=&quot;material-icons align-bottom text-secondary&quot;
+      data-toggle=&quot;popover&quot;
+      data-placement=&quot;right&quot;
+      data-container=&quot;body&quot;
+      data-trigger=&quot;hover&quot;
+      data-content=&quot;Only unique visits this week are counted. Repeat visitors during the same week are not counted.&quot;
+      &gt;info&lt;/i
+    &gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Information icons -->
+<div class="card">
+  <div class="card-header">
+    Weekly traffic
+    <i
+      class="material-icons align-bottom text-secondary"
+      data-toggle="popover"
+      data-placement="right"
+      data-container="body"
+      data-trigger="hover"
+      data-content="Only unique visits this week are counted. Repeat visitors during the same week are not counted."
+      >info</i
+    >
+  </div>
+  <div class="card-body">
+    <p>&nbsp;</p>
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Information icons --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-header&quot;</span>&gt;</span>
+    Weekly traffic
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons align-bottom text-secondary&quot;</span>
+      <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;popover&quot;</span>
+      <span class="hljs-attr">data-placement</span>=<span class="hljs-string">&quot;right&quot;</span>
+      <span class="hljs-attr">data-container</span>=<span class="hljs-string">&quot;body&quot;</span>
+      <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;hover&quot;</span>
+      <span class="hljs-attr">data-content</span>=<span class="hljs-string">&quot;Only unique visits this week are counted. Repeat visitors during the same week are not counted.&quot;</span>
+      &gt;</span>info<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>
+    &gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-body&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-symbol">&amp;nbsp;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions or concerns?</p>
+    <p class="text-muted">Create an issue on our <a href="">Github repository</a> or email us.</p>
+  </div>
+</footer>
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>

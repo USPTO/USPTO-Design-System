@@ -1,0 +1,184 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = {
+class: 'page-help', title: 'Help' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1>Help</h1>
+
+    <h2 id="purpose">Purpose</h2>
+    <p>
+      Users need to understand the processes, forms, and data they’re
+      interacting with.
+    </p>
+
+    <h2 id="description">Description</h2>
+    <p>
+      Help can be provided in a lot of different ways. When and how you provide
+      help depends on the amount of help needed, the type of
+      process/interaction, and your target audience. Too much contextual help
+      can actually make interfaces harder to understand, but insufficient help
+      will frustrate new users.
+    </p>
+
+    <p>Some of the ways help can be provided are:</p>
+
+    <ul>
+      <li>Dedicated help and FAQ page(s)</li>
+      <li>
+        Above and in forms (<a
+          href="{{relativeRoot}}/components/forms.html#help-text"
+          >See Forms page for examples</a
+        >)
+      </li>
+      <li>
+        Below form input fields (<a
+          href="{{relativeRoot}}/components/forms.html#help-text"
+          >See Forms page for examples</a
+        >)
+      </li>
+      <li>
+        Popovers when form input fields are focused (<a
+          href="{{relativeRoot}}/components/forms.html#help-text"
+          >See Forms page for examples</a
+        >)
+      </li>
+      <li>
+        Popovers with definitions/descriptions when hovering over a
+        label/term/word
+      </li>
+      <li>“Learn more” links and “Information” icons</li>
+    </ul>
+  </div>
+  <div class="pattern">
+    <h2 id="dotted-underlines">Dotted underlines</h2>
+    <p>
+      Use this for term definitions when a term may not be obvious to your
+      target audience.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for dotted underline', code:
+    dottedLineHelp }, '' )}}
+  </div>
+  <div class="pattern">
+    <h2>Input field focus popover</h2>
+    <p>
+      Use this when the information is only relevant once the user has focused
+      the field.
+    </p>
+  </div>
+
+  <div class="preview pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for input field focus popover',
+    code: inputFocusHelp }, '' )}}
+  </div>
+
+  <div class="pattern">
+    <h2>“Learn more” links</h2>
+    <p>
+      Use “Learn more” links to provide additional help text only when the user
+      needs it. The links can reveal additional text in the form of a popover, a
+      dedicated help page, or by expanding the text.
+    </p>
+  </div>
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for learn more links', code:
+    learnMoreHelp }, '' )}}
+  </div>
+  <div class="pattern">
+    <h2>“Information” icons</h2>
+    <p>
+      Use “Information” icons to provide explanations and elaborations for
+      titles and panels.
+    </p>
+  </div>
+
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for information icons', code:
+    informationIconHelp }, '' )}}
+  </div>
+</section>
+
+{% endblock %} {% set dottedLineHelp %}
+<!-- Dotted underline -->
+<abbr
+  data-toggle="popover"
+  data-placement="top"
+  data-container="body"
+  data-trigger="hover"
+  data-content="The person, group of persons, or organization that received ownership rights of the patent application or patent."
+  >Assignee</abbr
+>: Smith, John D. {% endset %} {% set inputFocusHelp %}
+<!-- Input field focus popover -->
+<form>
+  <div class="form-group">
+    <label for="examplFLeInputPassword">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="examplFLeInputPassword"
+      data-html="true"
+      data-toggle="popover"
+      data-container="body"
+      data-trigger="focus"
+      data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>"
+    />
+  </div>
+</form>
+{% endset %} {% set learnMoreHelp %}
+<!-- learn more links -->
+<form>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios1"
+      value="option1"
+      checked
+    />
+    <label class="form-check-label" for="exampleRadios1">
+      Standard characters
+    </label>
+    <small class="form-text text-muted">
+      Use this option to register a mark that is comprised of word(s),
+      letter(s), number(s), or any combination thereof with no design element or
+      stylization.
+      <a href="#">Learn more.</a>
+    </small>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios2"
+      value="option2"
+    />
+    <label class="form-check-label" for="exampleRadios2"> Special form </label>
+    <small class="form-text text-muted">
+      Use this option if you wish to register a mark that is comprised of
+      stylized word(s), letter(s), and/or number(s), and/or a design element.
+      <a href="#">Learn more.</a>
+    </small>
+  </div>
+</form>
+{% endset %} {% set informationIconHelp %}
+<!-- Information icons -->
+<div class="card">
+  <div class="card-header">
+    Weekly traffic
+    <i
+      class="material-icons align-bottom text-secondary"
+      data-toggle="popover"
+      data-placement="right"
+      data-container="body"
+      data-trigger="hover"
+      data-content="Only unique visits this week are counted. Repeat visitors during the same week are not counted."
+      >info</i
+    >
+  </div>
+  <div class="card-body">
+    <p>&nbsp;</p>
+  </div>
+</div>
+{% endset %}

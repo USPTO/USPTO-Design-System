@@ -214,8 +214,10 @@ Object.assign(exports, {
       href: 'cards.html',
       text: 'Cards',
       "children": [
-        { href: '#cards', text: 'Cards' },
-        { href: '#cards-overview', text: 'Cards overview' }
+          { href: '#cards-overview', text: 'Cards overview' },
+          { href: '#image-position-and-image-caps', text: 'Image position' },
+          { href: '#background-variants', text: 'Background variants' },
+          { href: '#headers-and-footers', text: 'Headers and footers' }
       ],
     },
     {

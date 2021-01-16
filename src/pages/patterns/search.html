@@ -1,0 +1,148 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = {
+class: 'page-search', title: 'Search' } %} {% block content %}
+
+<section>
+  <div class="pattern">
+    <h1>Search</h1>
+    <h2>Purpose</h2>
+    <p>Users need to search for data.</p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for basic search', code:
+    basicSearch }, 'Basic' )}}
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for basic search', code:
+    advanceSearch }, 'With advance' )}}
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for basic search', code:
+    scopedSearch }, 'Scoped' )}}
+  </div>
+</section>
+
+{% endblock %} {% set basicSearch%}
+<!-- Basic search -->
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Search this blog" />
+  <div class="input-group-append">
+    <button class="btn btn-primary md-icon" type="button">
+      <i class="material-icons">search</i>
+    </button>
+  </div>
+</div>
+{% endset %} {% set advanceSearch%}
+<!-- Advance search -->
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Search this blog" />
+
+  <div class="input-group-append">
+    <button class="btn btn-primary md-icon" type="button">
+      <i class="material-icons">search</i>
+    </button>
+  </div>
+</div>
+<div class="help-block">
+  <small><a href="#">Show advanced search</a></small>
+</div>
+{% endset %} {% set scopedSearch%}
+<!-- Scoped search -->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button
+      class="btn btn-primary dropdown-toggle"
+      type="button"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Patents
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Patents</a>
+      <a class="dropdown-item" href="#">Trademark</a>
+      <a class="dropdown-item" href="#">Application</a>
+    </div>
+  </div>
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Text input with dropdown button"
+  />
+</div>
+
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Text input with dropdown button"
+  />
+  <div class="input-group-append">
+    <button
+      class="btn btn-primary dropdown-toggle"
+      type="button"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Patents
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Patents</a>
+      <a class="dropdown-item" href="#">Trademark</a>
+      <a class="dropdown-item" href="#">Application</a>
+    </div>
+  </div>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button type="button" class="btn btn-primary">Patents</button>
+    <button
+      type="button"
+      class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Patents</a>
+      <a class="dropdown-item" href="#">Trademark</a>
+      <a class="dropdown-item" href="#">Application</a>
+    </div>
+  </div>
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Text input with segmented dropdown button"
+  />
+</div>
+
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Text input with segmented dropdown button"
+  />
+  <div class="input-group-append">
+    <button type="button" class="btn btn-primary">Patents</button>
+    <button
+      type="button"
+      class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Patents</a>
+      <a class="dropdown-item" href="#">Trademark</a>
+      <a class="dropdown-item" href="#">Application</a>
+    </div>
+  </div>
+</div>
+
+{% endset %}

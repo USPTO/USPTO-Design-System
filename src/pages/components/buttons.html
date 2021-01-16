@@ -334,7 +334,8 @@ title: 'Buttons' } %} {% block content %}
 </div>
 {% endset %} {%set buttonIcons%}
 <button class="btn btn-secondary md-icon" type="button">
-  <i class="material-icons">mode_comment</i> Search
+  <i class="material-icons">mode_comment</i>
+  <span class="btn-text">Search</span>
 </button>
 <button class="btn btn-secondary md-icon" type="button">
   <i class="material-icons">print</i>
@@ -346,6 +347,7 @@ title: 'Buttons' } %} {% block content %}
   <i class="material-icons">date_range</i>
 </button>
 <button class="btn btn-secondary md-icon" type="button">
-  Lock <i class="material-icons">arrow_forward</i>
+  <span class="btn-text">Lock</span> &nbsp
+  <i class="material-icons">arrow_forward</i>
 </button>
 {% endset %}

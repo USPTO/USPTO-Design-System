@@ -1,0 +1,213 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = {
+class: 'page-dataformat', title: 'Data format' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1 id="date-and-time">Date and time</h1>
+
+    <h3 id="formats">Formats</h3>
+    <table class="table table-bordered" style="max-width: 700px">
+      <colgroup>
+        <col style="width: 50%" />
+        <col style="width: 50%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td><code>time</code></td>
+          <td>10:00 AM</td>
+        </tr>
+        <tr>
+          <td><code>short date</code></td>
+          <td>January 11</td>
+        </tr>
+        <tr>
+          <td><code>abbreviated short date</code></td>
+          <td>Jan 11</td>
+        </tr>
+        <tr>
+          <td><code>long date</code></td>
+          <td>April 23, 2010</td>
+        </tr>
+        <tr>
+          <td><code>abbreviated long date</code></td>
+          <td>Apr 23, 2010</td>
+        </tr>
+        <tr>
+          <td><code>short date and time</code></td>
+          <td>February 5, 8:00 AM</td>
+        </tr>
+        <tr>
+          <td><code>abbreviated short date and time</code></td>
+          <td>Feb 5, 8:00 AM</td>
+        </tr>
+        <tr>
+          <td><code>long date and time</code></td>
+          <td>February 8, 2016, 1:00 PM</td>
+        </tr>
+        <tr>
+          <td><code>abbreviated long date and time</code></td>
+          <td>Feb 8, 2016, 1:00 PM</td>
+        </tr>
+        <tr>
+          <td><code>day of week and time</code></td>
+          <td>Monday, 7:30 AM</td>
+        </tr>
+        <tr>
+          <td><code>abbreviated day of week and time</code></td>
+          <td>Mon, 7:30 AM</td>
+        </tr>
+        <tr>
+          <td><code>day of week, short date and time</code></td>
+          <td>Monday, March 15, 3:25 PM</td>
+        </tr>
+        <tr>
+          <td>
+            <code
+              >abbreviated day of week, abbreviated short date and time</code
+            >
+          </td>
+          <td>Mon, Mar 15, 3:25 PM</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="smart-format">Smart format</h3>
+
+    <p>
+      For dates/times associated with user generated data (e.g., notes,
+      documents), use the <code class="highlighter-rouge">smart format</code>,
+      which changes relative to the current date.
+    </p>
+
+    <table class="table table-bordered" style="max-width: 700px">
+      <colgroup>
+        <col style="width: 50%" />
+        <col style="width: 50%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            If the date is in the past or future on the current day, format as
+            <code>time</code> only
+          </td>
+          <td>10:00 AM</td>
+        </tr>
+        <tr>
+          <td>
+            If the date is in the past or future within the current calendar
+            year, format as <code>short date</code>
+          </td>
+          <td>January 11</td>
+        </tr>
+        <tr>
+          <td>
+            If the date is in the past or future outside the current calendar
+            year, format as <code>long date</code>
+          </td>
+          <td>April 23, 2010</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="other">Other</h3>
+
+    <table class="table table-bordered" style="max-width: 700px">
+      <colgroup>
+        <col style="width: 50%" />
+        <col style="width: 50%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>For reminders or appointments, show both time and date</td>
+          <td>Jun 8, 8:00 AM <br />Today, 8:00 AM</td>
+        </tr>
+        <tr>
+          <td>Separate ranges with an en-dash without a space</td>
+          <td>
+            Jun 15–Jun 16 <br />
+            Dec 20, 2014–Jan 2, 2015
+          </td>
+        </tr>
+        <tr>
+          <td>
+            If a time range shares a common AM/PM, append only on the end of the
+            range
+          </td>
+          <td>10:00–11:00 AM <br />10:00 AM–12:30 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="file-sizes">File sizes</h2>
+
+    <ul>
+      <li>340 KB (round to nearest KB)</li>
+      <li>4.13 MB (two decimal max)</li>
+      <li>3.22 GB (two decimal max)</li>
+      <li>1.13 TB (two decimal max)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="deprecated">Deprecated</h2>
+
+    <h5
+      id="the-patterns-below-are-deprecated-for-external-public-facing-applications-internal-non-public-facing-applications-may-use-these-formats-at-their-discretion"
+    >
+      The patterns below are deprecated for external (public) facing
+      applications. Internal (non-public facing) applications may use these
+      formats at their discretion.
+    </h5>
+
+    <p>
+      In some limited circumstances these are still acceptable to use (e.g.
+      legacy or internal), but please ensure you are using the current
+      standardized date format above for publically accessible applications.
+    </p>
+
+    <table class="table table-bordered" style="max-width: 700px">
+      <colgroup>
+        <col style="width: 50%" />
+        <col style="width: 50%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td><code>condensed long date</code></td>
+          <td>MM/DD/YYYY, DD/MM/YYYY, or YYYY/MM/DD</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="condensed-long-date-usage">Condensed long date usage</h3>
+
+    <p>The condensed version of the long date format has 3 variations:</p>
+
+    <ul>
+      <li><code class="highlighter-rouge">MM/DD/YYYY</code> (05/12/2015)</li>
+      <li><code class="highlighter-rouge">DD/MM/YYYY</code> (12/05/2015)</li>
+      <li><code class="highlighter-rouge">YYYY/MM/DD</code> (2015/12/05)</li>
+    </ul>
+
+    <p>
+      <code class="highlighter-rouge">MM/DD/YYYY</code> is the format most used
+      in the US, whereas <code class="highlighter-rouge">DD/MM/YYYY</code> is
+      used most outside the US. Depending on the date, the format, and the
+      geographical location or customs of the user, a date has the potential for
+      being misinterpreted if the format is not what the user is expecting. The
+      only non-ambiguous format is
+      <code class="highlighter-rouge">YYYY/MM/DD</code>.
+    </p>
+
+    <p>
+      Depending on your target audience, determine which format makes the most
+      sense for your application.
+    </p>
+  </div>
+</section>
+
+{% endblock %}
