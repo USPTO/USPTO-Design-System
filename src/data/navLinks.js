@@ -229,6 +229,7 @@ Object.assign(exports, {
         { href: '#deprecated', text: 'Deprecated' }
       ],
     },
+    /*
     {
       href: 'fileUpload.html',
       text: 'File upload',
@@ -247,8 +248,10 @@ Object.assign(exports, {
         { href: '#predefined-filters', text: 'Predefined filters' }
       ],
     },
+    */
     { href: 'help.html', text: 'Help' },
     { href: 'search.html', text: 'Search' },
+    /*
     {
       href: 'settings.html', text: 'Settings',
       "children": [
@@ -256,7 +259,7 @@ Object.assign(exports, {
         { href: '#saving-changes', text: 'Saving changes' }
       ],
     },
-    { href: 'tours.html', text: 'Tours' },
+    { href: 'tours.html', text: 'Tours' },*/
     {
       href: 'wizards.html',
       text: 'Wizards',
