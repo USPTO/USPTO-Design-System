@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
-<title>USPTO UI Design System
+<title>USPTO Design System
  | Resources
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
@@ -89,14 +89,15 @@
 </section>      <header id="global-header">
 <div class="uspto-header-middle ">
   <div class="flex-fill">
-    <a class="navbar-brand" href="../index.html" title="USPTO UI Design Library Home">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design Library Home">
           USPTO <span class="font-weight-light">Design System</span>
     </a>
-    <a class="float-right mr-4 mt-2" href="https://github.com/uspto/designpatterns" title="View on Github" >
+    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
      <img src="..//assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
     </a>
   </div>
 </div>
+
 <div class="uspto-header-bottom">
   <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,11 +105,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../usage/how-to-use.html" title="How to use USPTO Design System">
-              Usage
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
               Foundation
@@ -127,6 +123,11 @@
           <li class="nav-item">
             <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
               Page templates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="How to use USPTO Design System">
+              Usage
             </a>
           </li>
           <li class="nav-item">
@@ -158,13 +159,13 @@
         <a href="resources.html" data-parent="Resources">Resources</a>
         <ul class="sidenav-sublist">
             <li>
-              <a href="#download">Download CSS/SCSS</a>
+              <a href="#download">Source code and integration</a>
             </li>
             <li>
-              <a href="#usingscss">Using the LESS files</a>
+              <a href="#usingscss">Using the SCSS theme files</a>
             </li>
             <li>
-              <a href="#wireframes">Wireframe and prototype</a>
+              <a href="#wireframe">Wireframe and prototype</a>
             </li>
         </ul>
       </li>
@@ -177,36 +178,17 @@
     <!--<h1>Resources</h1> -->
     <h1>Resources</h1>
     <div class="row">
-      <div class="col-6">
-        <h2 id="download">Download CSS/SCSS</h2>
+      <div class="col-12">
+        <h2 id="download">Downloading source code</h2>
         <p>
-          This zip file includes the source SCSS files and minified CSS. The
-          compiled CSS file includes a themed and extended version of Bootstrap.
-          The SCSS files pull in the Bootstrap source at compilation time.
+          The USPTO-DS-Theme GitHub library contains full source code and instructions for integrating into your project.  You can build locally, or integrate the Design System as a dependency with <a href="https://www.npmjs.com/package/usptostrap">NPM</a>.
         </p>
-        <a href="" class="btn btn-primary md-icon"
-          ><i class="material-icons">search</i
-          ><span class="btn-text">Download v2.0</span></a
+        <a href="https://github.com/USPTO/USPTO-DS-Theme" class="btn btn-primary md-icon"><span class="btn-text">Get the latest 2.x release</span></a
         >
         <div class="mt-2 small">
-          Looking for older releases? Find them
+          Looking for v1.0 releases? Find them
           <a href="https://github.com/uspto/designpatterns/releases">here.</a>
         </div>
-      </div>
-      <div class="col-6">
-        <h2>View on Github</h2>
-        <p>
-          The documentation and source are available on Github. If you want to
-          build the documentation locally, follow the instructions there.
-        </p>
-        <a href="" class="btn btn-secondary">
-          <img
-            src="..//assets/img/GitHub-Mark-light-32px.png"
-            alt="View on GitHub"
-            style="width: 16px"
-          />
-          &nbsp; uspto/designpatterns</a
-        >
       </div>
     </div>
   </div>
@@ -219,14 +201,7 @@
       The <code>usptostrap.scss</code> file uses <code>@import</code> to merge
       all the SCSS files at compilation time. Based on your folder structure,
       dependency management system, and 3rd party libraries,
-      <code>usptostrap.scss</code> may need to be updated. Use
-      <a href="http://gruntjs.com/">Grunt</a>,
-      <a href="http://gulpjs.com/">Gulp</a>,
-      <a href="http://maven.apache.org/">Maven</a>, or some
-      <a href="http://lesscss.org/usage/index.html#third-party-compilers"
-        >other tool</a
-      >
-      to compile the SCSS files.
+      <code>usptostrap.scss</code> may need to be updated.
     </p>
     <p>Similar to Bootstrap, the SCSS files are organized by module.</p>
     <ul>
@@ -252,17 +227,11 @@
   <div class="pattern">
     <h2 class="mb-4">Wireframe and prototype resources</h2>
 
-    <h3 id="wireframe">USPTO Axure widget library</h3>
+    <h3 id="wireframe">USPTO Design System Axure widget library</h3>
     <p>
-      This library allows for rapid wireframing of interactions using the look
-      and feel of the USPTO pattern library. The USPTO widget library can be
-      used in Axure or other compatible software.
+      Coming soon: in development.
     </p>
-    <a href="" class="btn btn-primary">Download USPTO Axure widget library</a>
-    <div class="mt-2 small">
-      Current release version: <strong>0.1.0</strong>
     </div>
-  </div>
 </section>
 
     </main>
@@ -272,10 +241,11 @@
 
 <footer class="footer py-3">
   <div class="container text-center">
-    <p>Need help? Questions or concerns?</p>
-    <p class="text-muted">Create an issue on our <a href="">Github repository</a> or email us.</p>
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p class="">Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme">Github repository</a>.</p>
   </div>
 </footer>
+
 <script src="../assets/vendor/jquery/jquery.min.js"></script>
 <script src="../assets/vendor/popper/popper.min.js"></script>
 <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>

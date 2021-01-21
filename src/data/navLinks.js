@@ -193,15 +193,15 @@ Object.assign(exports, {
     { href: 'pageTemplate2.html', text: 'Page Template 2' },
     { href: 'loader.html', text: 'Loading Spinner' }
   ],
- 
-  resourcesNavLinks: [     
+
+  resourcesNavLinks: [
     {
       href: 'resources.html',
       text: 'Resources',
       "children": [
-        { href: '#download', text: 'Download CSS/SCSS' },
-        { href: '#usingscss', text: 'Using the LESS files' },
-        { href: '#wireframes', text: 'Wireframe and prototype' }
+        { href: '#download', text: 'Source code and integration' },
+        { href: '#usingscss', text: 'Using the SCSS theme files' },
+        { href: '#wireframe', text: 'Wireframe and prototype' }
       ],
     }
   ],

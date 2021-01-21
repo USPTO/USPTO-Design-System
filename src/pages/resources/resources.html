@@ -5,36 +5,17 @@ title: 'Resources' } %} {% block content %}
     <!--<h1>{{page.title}}</h1> -->
     <h1>Resources</h1>
     <div class="row">
-      <div class="col-6">
-        <h2 id="download">Download CSS/SCSS</h2>
+      <div class="col-12">
+        <h2 id="download">Downloading source code</h2>
         <p>
-          This zip file includes the source SCSS files and minified CSS. The
-          compiled CSS file includes a themed and extended version of Bootstrap.
-          The SCSS files pull in the Bootstrap source at compilation time.
+          The USPTO-DS-Theme GitHub library contains full source code and instructions for integrating into your project.  You can build locally, or integrate the Design System as a dependency with <a href="https://www.npmjs.com/package/usptostrap">NPM</a>.
         </p>
-        <a href="" class="btn btn-primary md-icon"
-          ><i class="material-icons">search</i
-          ><span class="btn-text">Download v2.0</span></a
+        <a href="https://github.com/USPTO/USPTO-DS-Theme" class="btn btn-primary md-icon"><span class="btn-text">Get the latest 2.x release</span></a
         >
         <div class="mt-2 small">
-          Looking for older releases? Find them
+          Looking for v1.0 releases? Find them
           <a href="https://github.com/uspto/designpatterns/releases">here.</a>
         </div>
-      </div>
-      <div class="col-6">
-        <h2>View on Github</h2>
-        <p>
-          The documentation and source are available on Github. If you want to
-          build the documentation locally, follow the instructions there.
-        </p>
-        <a href="" class="btn btn-secondary">
-          <img
-            src="{{relativeRoot}}/assets/img/GitHub-Mark-light-32px.png"
-            alt="View on GitHub"
-            style="width: 16px"
-          />
-          &nbsp; uspto/designpatterns</a
-        >
       </div>
     </div>
   </div>
@@ -47,14 +28,7 @@ title: 'Resources' } %} {% block content %}
       The <code>usptostrap.scss</code> file uses <code>@import</code> to merge
       all the SCSS files at compilation time. Based on your folder structure,
       dependency management system, and 3rd party libraries,
-      <code>usptostrap.scss</code> may need to be updated. Use
-      <a href="http://gruntjs.com/">Grunt</a>,
-      <a href="http://gulpjs.com/">Gulp</a>,
-      <a href="http://maven.apache.org/">Maven</a>, or some
-      <a href="http://lesscss.org/usage/index.html#third-party-compilers"
-        >other tool</a
-      >
-      to compile the SCSS files.
+      <code>usptostrap.scss</code> may need to be updated.
     </p>
     <p>Similar to Bootstrap, the SCSS files are organized by module.</p>
     <ul>
@@ -80,17 +54,11 @@ title: 'Resources' } %} {% block content %}
   <div class="pattern">
     <h2 class="mb-4">Wireframe and prototype resources</h2>
 
-    <h3 id="wireframe">USPTO Axure widget library</h3>
+    <h3 id="wireframe">USPTO Design System Axure widget library</h3>
     <p>
-      This library allows for rapid wireframing of interactions using the look
-      and feel of the USPTO pattern library. The USPTO widget library can be
-      used in Axure or other compatible software.
+      Coming soon: in development.
     </p>
-    <a href="" class="btn btn-primary">Download USPTO Axure widget library</a>
-    <div class="mt-2 small">
-      Current release version: <strong>0.1.0</strong>
     </div>
-  </div>
 </section>
 
 {% endblock %}

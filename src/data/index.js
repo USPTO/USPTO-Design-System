@@ -14,12 +14,12 @@ module.exports = {
     home: 'index.html',
   },
 
-  title: 'USPTO UI Design System',
+  title: 'USPTO Design System',
 
   header: {
     links: [
       {
-        href: 'https://github.com/uspto/designpatterns',
+        href: 'https://github.com/USPTO/USPTO-DS-Theme',
         text: 'View on Github',
         title: 'View on Github',
       }
@@ -28,11 +28,6 @@ module.exports = {
 
   subHeader: {
     links: [
-      {
-        href: 'usage/how-to-use.html',
-        text: 'Usage',
-        title: 'How to use USPTO Design System',
-      },
       {
         href: 'foundation/foundation.html',
         text: 'Foundation',
@@ -53,7 +48,13 @@ module.exports = {
         href: 'pageTemplates/pageTemplate.html',
         text: 'Page templates',
         title: 'Page templates',
-      },      
+      },
+
+      {
+        href: 'usage/how-to-use.html',
+        text: 'Usage',
+        title: 'How to use USPTO Design System',
+      },
       {
         href: 'resources/resources.html',
         text: 'Resources',
