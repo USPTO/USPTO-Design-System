@@ -26,12 +26,9 @@ npm run dev
 
 
 ### Distribution Builds
-After running `npm run build`, you will have an `assets` folder that contains the stylesheet and resources. 
+After running `npm run build`, you will have an `assets` folder that contains the stylesheet and resources.
 
 
-## License
-
-Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States Department of Commerce reserves all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to recipients a royalty-free, nonexclusive license to use, copy, and create derivative works of the software outside of the United States.
 
 ## Disclaimer
 
@@ -42,4 +39,3 @@ The United States Department of Commerce (DOC) GitHub project code is provided o
 * U.S. Web Design Standards
 * Bootstrap 4 and bootstrap icons
 * Material icons
-* Google fonts
