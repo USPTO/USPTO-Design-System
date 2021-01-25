@@ -11458,10 +11458,6 @@ h3 {
   border-width: 0.25rem !important;
 }
 
-.form-control-sm, .form-control-lg {
-  border-radius: 0;
-}
-
 .input-group-text {
   border-radius: 0.2rem;
 }
@@ -12450,34 +12446,6 @@ footer .uspto-footer-middle .btn-collapse span {
   font-feature-settings: "liga";
 }
 
-.material-icons.md-xs {
-  font-size: 0.75rem;
-}
-
-.material-icons.md-sm {
-  font-size: 1rem;
-}
-
-.material-icons.md-lg {
-  font-size: 2rem;
-}
-
-.material-icons.md-2x {
-  font-size: 2.7rem;
-}
-
-.material-icons.md-3x {
-  font-size: 4.05rem;
-}
-
-.material-icons.md-5x {
-  font-size: 6.75rem;
-}
-
-.material-icons.md-10x {
-  font-size: 13.5rem;
-}
-
 .parent-container {
   background: #eee;
 }
@@ -12743,18 +12711,6 @@ main > section .preview-size .popover {
 }
 .swatch-cyan-700 {
   background-color: #07648d;
-  color: #fff;
-}
-.swatch-dark-100 {
-  background-color: #aeaeae;
-  color: #212529;
-}
-.swatch-dark-600 {
-  background-color: #24282c;
-  color: #fff;
-}
-.swatch-dark-700 {
-  background-color: #141719;
   color: #fff;
 }
 .swatch-light-100 {
