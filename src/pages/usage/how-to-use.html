@@ -6,21 +6,18 @@
     <h1>How to use the USPTO Design System</h1>
     <h2>Prerequisites</h2>
     <p>
-      Before proceeding with the USPTO Design System, we are assuming that you are
-      already aware about the basics of HTML, CSS and Twitter Bootstrap. If you
-      are not well aware of these concepts then we suggest that you go through
-      an overview of
-      <a
-        href="https://getbootstrap.com/"
-        rel="nofollow"
-        target="_blank"
+      Before proceeding with the USPTO Design System, we are assuming that you
+      are already aware about the basics of HTML, CSS and Twitter Bootstrap. If
+      you are not well aware of these concepts then we suggest that you go
+      through an overview of
+      <a href="https://getbootstrap.com/" rel="nofollow" target="_blank"
         >Bootstrap</a
       >.
     </p>
     <h2>Usage</h2>
     <h3>Download the USPTO Design System</h3>
     <p>
-      Download the latest version of Design System
+      Download the latest version of USPTO Design System
       <a
         href="https://github.com/uspto/uspto-ds-theme"
         rel="nofollow"
@@ -40,17 +37,17 @@
     <ul>
       <li>
         Download CSS/SCSS: Download the precompiled and minified versions of UI
-        Design System CSS, SVG image, and less. No documentation or original
+        Design System CSS, SVG image, and scss. No documentation or original
         source code files are included.
       </li>
       <li>
-        View on Github: Get the latest UI Design System and JavaScript source
+        View on Github: Get the latest USPTO Design System and JavaScript source
         code directly from GitHub.
       </li>
     </ul>
     <h3>File Structure</h3>
     <p>
-      If you have downloaded the UI Design Library source code then the file
+      If you have downloaded the USPTO Design System source code then the file
       structure would be as follows:
     </p>
     <p>
@@ -68,11 +65,11 @@
     </p>
     <p><strong>Images:</strong> Fundamental SVG images for icons.</p>
     <p>
-      <strong>Less:</strong> The usptostrap.less file uses @import to merge all
-      the LESS files at compilation time.
+      <strong>Scss:</strong> The usptostrap.scss file uses @import to merge all
+      the SCSS files at compilation time.
     </p>
     <h3>How to use?</h3>
-    <p>A basic HTML template using UI Design Library would look like this:</p>
+    <p>A basic HTML template using USPTO Design System would look like this:</p>
 
     <pre
       class="language-markup line-numbers mb-4"
@@ -80,8 +77,8 @@
     ><code class=" language-markup">&lt;!doctype html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;UI Design Library &lt;/title&gt;
-&lt;!-- USPTO Pattern Library CSS --&gt;
+&lt;title&gt;USPTO Design System&lt;/title&gt;
+&lt;!-- USPTO Design System CSS --&gt;
 &lt;link rel="stylesheet" type="text/css" href="css/usptostrap.min.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -98,15 +95,14 @@
 &lt;!doctype html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;UI Design Library &lt;/title&gt;
-&lt;!-- USPTO Pattern Library CSS --&gt;
+&lt;title&gt;USPTO Design System&lt;/title&gt;
+&lt;!-- USPTO Design System CSS --&gt;
 &lt;link rel="stylesheet" type="text/css" href="css/usptostrap.min.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;h1&gt;Welcome to USPTO&lt;/h1&gt;
-&lt;!-- jQuery library --&gt;
+&lt;!-- jQuery and Bootstrap library --&gt;
 &lt;script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" &gt;&lt;/script&gt;
-&lt;!-- Latest compiled JavaScript --&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
@@ -114,33 +110,11 @@
 </code>
 </pre>
 
-    <h3>Third party style sheets</h3>
-    <p>
-      All third party style sheets should be included after the UI Design
-      Library CSS files.
-    </p>
-    <pre
-      class="language-markup line-numbers mb-4"
-      style="max-height: none !important"
-    ><code class=" language-markup">&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;UI Design Library &lt;/title&gt;
-&lt;!-- USPTO Pattern Library CSS --&gt;
-&lt;link rel="stylesheet" type="text/css" href="css/usptostrap.min.css"&gt;
-&lt;!-- USPTO Global Header CSS --&gt;
-&lt;link rel="stylesheet" type="text/css" href="css/uspto-header-styles.min.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt;Welcome to USPTO&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
     <h3>Custom style sheets</h3>
     <p>
       To apply additional styling to your web application, simply add the proper
       code to your custom-styles.css file and include that file after all style
-      sheets. There is no need to edit any of the original UI Design Library
+      sheets. There is no need to edit any of the original USPTO Design System
       files directly.
     </p>
     <pre
@@ -149,11 +123,9 @@
     ><code class=" language-markup">&lt;!doctype html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;UI Design Library &lt;/title&gt;
-&lt;!-- USPTO Pattern Library CSS --&gt;
+&lt;title&gt;USPTO Design System&lt;/title&gt;
+&lt;!-- USPTO Design System CSS --&gt;
 &lt;link rel="stylesheet" type="text/css" href="css/usptostrap.min.css"&gt;
-&lt;!-- USPTO Global Header CSS --&gt;
-&lt;link rel="stylesheet" type="text/css" href="css/uspto-header-styles.min.css"&gt;
 &lt;!-- Custom CSS --&gt;
 &lt;link rel="stylesheet" type="text/css" href="css/custom-styles.css"&gt;
 &lt;/head&gt;

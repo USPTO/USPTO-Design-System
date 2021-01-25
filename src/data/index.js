@@ -44,12 +44,13 @@ module.exports = {
         text: 'Patterns',
         title: 'Patterns',
       },
+      /*
       {
         href: 'pageTemplates/pageTemplate.html',
         text: 'Page templates',
         title: 'Page templates',
       },
-
+*/
       {
         href: 'usage/how-to-use.html',
         text: 'Usage',

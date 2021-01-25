@@ -1,7 +1,7 @@
 {
-  "name": "USPTO-DPL",
+  "name": "USPTO-DS",
   "version": "0.0.2",
-  "description": "USPTO Design Pattern Library. Contains SASS, fonts, icons for building a USPTO styled application.",
+  "description": "USPTO Design  System. Contains SASS, fonts, icons for building a USPTO styled application.",
   "directories": {
     "dist": "dist"
   },
@@ -40,7 +40,7 @@
     "nunjucks-extension-code-highlight": "*",
     "prismjs": "^1.22.0",
     "sass": "^1.27.1",
-    "usptostrap": "^2.0.3"
+    "usptostrap": "^2.0.4"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",

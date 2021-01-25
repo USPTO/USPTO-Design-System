@@ -170,7 +170,7 @@ Object.assign(exports, {
         { href: '#animation', text: 'Animation' }
       ],
     },
-    { href: 'layouts.html', text: 'Layouts' },
+   // { href: 'layouts.html', text: 'Layouts' },
     { href: 'links.html', text: 'Links' },
     {
       href: 'typography.html',
