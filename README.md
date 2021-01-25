@@ -1,5 +1,7 @@
-# USPTO Design System
-The USPTO's open source Design System, based on the USWDS and Boostrap (Version 2.x)
+# USPTO Design System -
+The USPTO's open source Design System, based on the USWDS and Boostrap (Version 2.x).  This documentation site contains library guidance, style guide, patterns, templates, and other resources.
+
+Developers: The USPTO Design System v2.x theme can be [found here](https://github.com/USPTO/USPTO-DS-Theme)
 
 
 ## Installing
@@ -10,8 +12,8 @@ npm install
 ```
 ---
 
-## Building & running locally
-This project can be built with SASS.
+## Building & running the documentation site locally
+This documentation site can be run locally, and repurposed for your needs, or to use as the model for your own design library.
 
 To build the front-end assets (Fonts/CSS/JS) use:
 ```
