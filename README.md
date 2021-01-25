@@ -1,7 +1,9 @@
 # The USPTO Design System v2.x
 The USPTO's open source Design System, based on the USWDS and Boostrap (Version 2.x).  This documentation site contains library guidance, style guide, patterns, templates, and other resources.
 
-Developers: The USPTO Design System v2.x theme can be [found here](https://github.com/USPTO/USPTO-DS-Theme)
+Viewing the Design System: [https://uspto.github.io/USPTO-Design-System/index.html](https://uspto.github.io/USPTO-Design-System/index.html)
+
+Using the Design System: The USPTO Design System v2.x theme can be [found here](https://github.com/USPTO/USPTO-DS-Theme)
 
 
 ## Installing
