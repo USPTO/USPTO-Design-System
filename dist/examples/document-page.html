@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page-document">
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design  System. Contains SASS, fonts, icons for building a USPTO styled application.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Container Loading spinners
+ | Document page
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -89,58 +89,40 @@
 </section>      <header id="global-header">
 <div class="uspto-header-middle ">
   <div class="flex-fill">
-    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
-          USPTO <span class="font-weight-light">Design System (Beta)</span>
+    <a class="navbar-brand" href="#" title="Project title">
+          Project title
     </a>
-    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
-     <img src="..//assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
-    </a>
+  
   </div>
 </div>
-
 <div class="uspto-header-bottom">
   <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
-              Foundation
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../components/components.html" title="Components">
-              Components
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
-              Patterns
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
-              Page templates
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../usage/how-to-use.html" title="How to use USPTO Design System">
-              Usage
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../resources/resources.html" title="Resources">
-              Resources
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../about/about.html" title="About">
-              About
-            </a>
-          </li>
-      </ul>
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
 
     </div>
   </nav>
@@ -149,38 +131,85 @@
       <div class="main-container">
   <div class="d-sm-block d-md-none">
 <select class="form-control my-3" id="leftSideNav" >
-    <option value="foundation.html">Foundation
-    </option>
-    <option value="colors.html">Colors
-    </option>
-    <option value="grid.html">Grid
-    </option>
-    <option value="icons.html">Icons
-    </option>
-    <option value="links.html">Links
-    </option>
-    <option value="typography.html">Typography
-    </option>
+  
+    <option value="">Parent link</option>
+    <option value="">Parent link</option>
+    <option value="">Parent link</option>
+    <option value="">Parent link</option>
+  
 </select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+ <ul class="sidenav">
+      <li>
+        <a href="#">Parent link</a>        
+      </li>
+      <li class="active">
+        <a href="#" aria-current="page">Parent link</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Parent link</a>        
+      </li>
+      <li>
+        <a href="#">Parent link</a>        
+      </li>
+     
+  </ul>
+</nav>  </div>
  
   <main id="main-content">
-<section>
-  <div class="pattern">
-    <h1>Container Loading spinners</h1>
-    <div class="container overlay">
-      <div class="md-preloader">
-        <svg>
-          <circle />
-        </svg>
-      </div>
-    </div>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-  </div>
+<section class="p-4">
+  <h1>Page heading (h1)</h1>
+
+  <p>
+    The page heading communicates the main focus of the page. Make your page
+    heading descriptive and keep it succinct.
+  </p>
+
+  <h2>Section heading (h2)</h2>
+
+  <p>
+    These headings introduce, respectively, sections and subsections within your
+    body copy. As you create these headings, follow the same guidelines that you
+    use when writing section headings: Be succinct, descriptive, and precise.
+  </p>
+
+  <h3>Subsection heading (h3)</h3>
+
+  <p>
+    The particulars of your body copy will be determined by the topic of your
+    page. Regardless of topic, it’s a good practice to follow the inverted
+    pyramid structure when writing copy: Begin with the information that’s most
+    important to your users and then present information of less importance.
+  </p>
+
+  <p>
+    Keep each section and subsection focused — a good approach is to include one
+    theme (topic) per section.
+  </p>
+
+  <h4>Subsection heading (h4)</h4>
+
+  <p>
+    Use the side navigation menu to help your users quickly skip to different
+    sections of your page. The menu is best suited to displaying a hierarchy
+    with one to three levels and, as we mentioned, to display the sub-navigation
+    of a given page.
+  </p>
 </section>
 
     </main>
@@ -190,8 +219,7 @@
 
 <footer class="footer py-3">
   <div class="container text-center">
-    <p>Need help? Questions? Need to report a bug?</p>
-    <p class="">Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme">Github repository</a>.</p>
+    Footer
   </div>
 </footer>
 

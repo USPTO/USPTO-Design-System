@@ -22,6 +22,7 @@ Object.assign(exports, {
         { href: '#icon-buttons', text: 'Icon buttons' }
       ],
     },
+    { href: 'carousel.html', text: 'Carousel' },
     {
       href: 'collapsiblePanels.html',
       text: 'Collapsible panels',
@@ -111,7 +112,10 @@ Object.assign(exports, {
         { href: '#Spinner-examples', text: 'Spinner examples' }
       ],
     },
+   
+    { href: 'siteAlert.html', text: 'Site alert' },
     { href: 'stepIndicators.html', text: 'Step indicators' },
+    { href: 'summaryBOx.html', text: 'Summary box' },
     {
       href: 'tables.html',
       text: 'Tables',
@@ -189,9 +193,8 @@ Object.assign(exports, {
 
   ],
   pageTemplateNavLinks: [
-    { href: 'pageTemplate1.html', text: 'Page Template 1' },
-    { href: 'pageTemplate2.html', text: 'Page Template 2' },
-    { href: 'loader.html', text: 'Loading Spinner' }
+    { href: 'pageTemplate.html', text: 'Page templates' },
+    { href: 'documentationPage.html', text: 'Documentatin page' }
   ],
 
   resourcesNavLinks: [

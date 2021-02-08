@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-tags">
+<html lang="en" class="page-sitealert">
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design  System. Contains SASS, fonts, icons for building a USPTO styled application.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Tags
+ | Site alert
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -484,28 +484,21 @@
   <main id="main-content">
 <section>
   <div class="pattern">
-    <h1>Tags</h1>
-    <h2 id="purpose">Purpose</h2>
-    <p>
-      Users need to see the categories or labels of an object, which can often
-      be used to find related objects.
-    </p>
-    <h2 id="description">Description</h2>
-    <p>
-      Tags usually represent a category or label of an object. Sometimes they
-      are clickable.
-    </p>
+    <h1>Site alert</h1>
+
+    <p>A site alert communicates urgent sitewide information.</p>
   </div>
-  <div class="preview pv-sm">
+  <div class="preview">
     
   <div class="">
     <div class="d-flex">
+        <h2>Standard emergency site alert</h2>
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-1"
 
-      aria-label="View code for tags"
+      aria-label="View code for standard site alert"
 
       aria-expanded="false"
 
@@ -515,16 +508,23 @@
 
       type="button"
 
-      title="View code for tags"
+      title="View code for standard site alert"
 
     >
     <span class="material-icons">unfold_more</span> View code </button>
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Tags--&gt;
-&lt;span class=&quot;badge badge-light&quot;&gt;News&lt;/span&gt;
-&lt;span class=&quot;badge badge-light&quot;&gt;Patents&lt;/span&gt;
-&lt;a href=&quot;#&quot; class=&quot;badge badge-light&quot;&gt;Trademark&lt;/a&gt;
+      data-clipboard-text="&lt;!-- Standard emergency site alert --&gt;
+&lt;div class=&quot;alert alert-site&quot; aria-label=&quot;Site alert&quot;&gt;
+  &lt;div class=&quot;alert-icon&quot;&gt;
+    &lt;i class=&quot;material-icons&quot;&gt;error&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;h4 class=&quot;alert-heading&quot;&gt;Emergency alert message&lt;/h4&gt;
+    Additional context and followup information including
+    &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
 "
 
       type="button"
@@ -536,23 +536,363 @@
       </div>
     </div>
     <div class="preview-size">
-      <!--Tags-->
-<span class="badge badge-light">News</span>
-<span class="badge badge-light">Patents</span>
-<a href="#" class="badge badge-light">Trademark</a>
+      <!-- Standard emergency site alert -->
+<div class="alert alert-site" aria-label="Site alert">
+  <div class="alert-icon">
+    <i class="material-icons">error</i>
+  </div>
+  <div>
+    <h4 class="alert-heading">Emergency alert message</h4>
+    Additional context and followup information including
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+</div>
     </div>
     <div class="collapse line-numbers pt-2" id="codebox-1">
       Example HTML usage:
         <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Tags--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-light&quot;</span>&gt;</span>News<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-light&quot;</span>&gt;</span>Patents<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-light&quot;</span>&gt;</span>Trademark<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>        </div>
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Standard emergency site alert --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-icon&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-heading&quot;</span>&gt;</span>Emergency alert message<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    Additional context and followup information including
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span>&gt;</span>an example link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Site alert with no header</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for site alert without header"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for site alert without header"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Site alert with no header --&gt;
+&lt;div class=&quot;alert alert-site&quot; aria-label=&quot;Site alert&quot;&gt;
+  &lt;div class=&quot;alert-icon&quot;&gt;
+    &lt;i class=&quot;material-icons&quot;&gt;error&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Additional context and followup information including
+    &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Site alert with no header -->
+<div class="alert alert-site" aria-label="Site alert">
+  <div class="alert-icon">
+    <i class="material-icons">error</i>
+  </div>
+  <div>
+    Additional context and followup information including
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Site alert with no header --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-icon&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    Additional context and followup information including
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span>&gt;</span>an example link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Site alert with list </h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for site alert with list"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for site alert with list"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Site alert with list --&gt;
+&lt;div class=&quot;alert alert-site&quot; aria-label=&quot;Site alert&quot;&gt;
+  &lt;div class=&quot;alert-icon&quot;&gt;
+    &lt;i class=&quot;material-icons&quot;&gt;error&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;h4 class=&quot;alert-heading&quot;&gt;Emergency alert message&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        The primary emergency message and
+        &lt;a class=&quot;alert-link&quot; href=&quot;javascript:void(0);&quot;&gt;a link&lt;/a&gt; for
+        supporting context.
+      &lt;/li&gt;
+      &lt;li&gt;
+        Another message,
+        &lt;a class=&quot;alert-link&quot; href=&quot;javascript:void(0);&quot;&gt;and another link&lt;/a&gt;.
+      &lt;/li&gt;
+      &lt;li&gt;A final emergency message.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Site alert with list -->
+<div class="alert alert-site" aria-label="Site alert">
+  <div class="alert-icon">
+    <i class="material-icons">error</i>
+  </div>
+  <div>
+    <h4 class="alert-heading">Emergency alert message</h4>
+    <ul>
+      <li>
+        The primary emergency message and
+        <a class="alert-link" href="javascript:void(0);">a link</a> for
+        supporting context.
+      </li>
+      <li>
+        Another message,
+        <a class="alert-link" href="javascript:void(0);">and another link</a>.
+      </li>
+      <li>A final emergency message.</li>
+    </ul>
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Site alert with list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-icon&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-heading&quot;</span>&gt;</span>Emergency alert message<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        The primary emergency message and
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>a link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> for
+        supporting context.
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        Another message,
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>and another link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A final emergency message.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Slim site alert</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for slim site alert"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for slim site alert"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Slim site alert --&gt;
+&lt;div class=&quot;alert alert-site alert-sm&quot; aria-label=&quot;Site alert&quot;&gt;
+  &lt;div class=&quot;alert-icon&quot;&gt;
+    &lt;i class=&quot;material-icons&quot;&gt;error&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Short alert message.&lt;/strong&gt; Additional context and followup
+    information including &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Slim site alert -->
+<div class="alert alert-site alert-sm" aria-label="Site alert">
+  <div class="alert-icon">
+    <i class="material-icons">error</i>
+  </div>
+  <div>
+    <strong>Short alert message.</strong> Additional context and followup
+    information including <a href="#" class="alert-link">an example link</a>.
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Slim site alert --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site alert-sm&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-icon&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Short alert message.<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Additional context and followup
+    information including <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span>&gt;</span>an example link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Site alert with no icon</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-5"
+
+      aria-label="View code for site alert without icon"
+
+      aria-expanded="false"
+
+      data-target="#codebox-5"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for site alert without icon"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Site alert with no icon --&gt;
+&lt;div class=&quot;alert alert-site&quot; aria-label=&quot;Site alert&quot;&gt;
+  &lt;div&gt;
+    Additional context and followup information including
+    &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Site alert with no icon -->
+<div class="alert alert-site" aria-label="Site alert">
+  <div>
+    Additional context and followup information including
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-5">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Site alert with no icon --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    Additional context and followup information including
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span>&gt;</span>an example link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
 
   </div>
 </section>
+
     </main>
   </div>
       </div>

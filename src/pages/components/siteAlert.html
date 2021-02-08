@@ -1,0 +1,96 @@
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-sitealert',
+title: 'Site alert' } %} {% block content %}
+<section>
+  <div class="pattern">
+    <h1>Site alert</h1>
+
+    <p>A site alert communicates urgent sitewide information.</p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for standard site alert', code:
+    siteAlertStandard }, "Standard emergency site alert")}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for site alert without header',
+    code: siteAlertNoHeader }, "Site alert with no header")}}
+  </div>
+
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for site alert with list', code:
+    siteAlertWithList }, "Site alert with list ")}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for slim site alert', code:
+    siteAlertSlim }, "Slim site alert")}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for site alert without icon',
+    code: siteAlertNoIcon }, "Site alert with no icon")}}
+  </div>
+</section>
+
+{% endblock %} {% set siteAlertStandard %}
+<!-- Standard emergency site alert -->
+<div class="alert alert-site" aria-label="Site alert">
+  <div class="alert-icon">
+    <i class="material-icons">error</i>
+  </div>
+  <div>
+    <h4 class="alert-heading">Emergency alert message</h4>
+    Additional context and followup information including
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+</div>
+{% endset%} {% set siteAlertNoHeader %}
+<!-- Site alert with no header -->
+<div class="alert alert-site" aria-label="Site alert">
+  <div class="alert-icon">
+    <i class="material-icons">error</i>
+  </div>
+  <div>
+    Additional context and followup information including
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+</div>
+{% endset%} {% set siteAlertWithList %}
+<!-- Site alert with list -->
+<div class="alert alert-site" aria-label="Site alert">
+  <div class="alert-icon">
+    <i class="material-icons">error</i>
+  </div>
+  <div>
+    <h4 class="alert-heading">Emergency alert message</h4>
+    <ul>
+      <li>
+        The primary emergency message and
+        <a class="alert-link" href="javascript:void(0);">a link</a> for
+        supporting context.
+      </li>
+      <li>
+        Another message,
+        <a class="alert-link" href="javascript:void(0);">and another link</a>.
+      </li>
+      <li>A final emergency message.</li>
+    </ul>
+  </div>
+</div>
+{% endset%} {% set siteAlertSlim %}
+<!-- Slim site alert -->
+<div class="alert alert-site alert-sm" aria-label="Site alert">
+  <div class="alert-icon">
+    <i class="material-icons">error</i>
+  </div>
+  <div>
+    <strong>Short alert message.</strong> Additional context and followup
+    information including <a href="#" class="alert-link">an example link</a>.
+  </div>
+</div>
+{% endset%} {% set siteAlertNoIcon %}
+<!-- Site alert with no icon -->
+<div class="alert alert-site" aria-label="Site alert">
+  <div>
+    Additional context and followup information including
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+</div>
+{% endset%}
