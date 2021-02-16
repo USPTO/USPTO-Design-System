@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="page-document">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design  System. Contains SASS, fonts, icons for building a USPTO styled application.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Document page
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="#" title="Project title">
+          Project title
+    </a>
+  
+  </div>
+</div>
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div 
+      class="container"
+      >
+<div class="row">
+  <div class="col-3"> 
+
+     
+      <nav id="sidenav" aria-label="Document page links">
+ <ul class="sidenav border-0">
+      <li>
+        <a href="#">Parent link</a>        
+      </li>
+      <li class="active">
+        <a href="#" aria-current="page">Parent link</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Parent link</a>        
+      </li>
+      <li>
+        <a href="#">Parent link</a>        
+      </li>
+     
+  </ul>
+</nav></div>
+  <div class="col-9 border-left border-light "> <section class="p-4">
+  <h1>Page heading (h1)</h1>
+
+  <p>
+    The page heading communicates the main focus of the page. Make your page
+    heading descriptive and keep it succinct.
+  </p>
+
+  <h2>Section heading (h2)</h2>
+
+  <p>
+    These headings introduce, respectively, sections and subsections within your
+    body copy. As you create these headings, follow the same guidelines that you
+    use when writing section headings: Be succinct, descriptive, and precise.
+  </p>
+
+  <h3>Subsection heading (h3)</h3>
+
+  <p>
+    The particulars of your body copy will be determined by the topic of your
+    page. Regardless of topic, it’s a good practice to follow the inverted
+    pyramid structure when writing copy: Begin with the information that’s most
+    important to your users and then present information of less importance.
+  </p>
+
+  <p>
+    Keep each section and subsection focused — a good approach is to include one
+    theme (topic) per section.
+  </p>
+
+  <h4>Subsection heading (h4)</h4>
+
+  <p>
+    Use the side navigation menu to help your users quickly skip to different
+    sections of your page. The menu is best suited to displaying a hierarchy
+    with one to three levels and, as we mentioned, to display the sub-navigation
+    of a given page.
+  </p>
+
+  <!--Table-->
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Project name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Invoice</td>
+        <td>
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Templates</td>
+        <td>
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Payments</td>
+        <td>
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Account Management</td>
+        <td>
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+</div>
+</div>
+  
+  
+ 
+  
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    Footer
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>

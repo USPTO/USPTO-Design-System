@@ -1,0 +1,117 @@
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-banner',
+title: 'Banner' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Banner</h1>
+
+    <p>
+      The banner identifies official websites of government organizations in the
+      United States. It also helps visitors understand how to tell that a
+      website is both official and secure.
+    </p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for default banner', code:
+    bannerDefault }, ".gov domains")}}
+  </div>
+</section>
+{% endblock %} {% set bannerDefault %}
+<!--Banner-->
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button
+        class="btn accordion-btn"
+        type="button"
+        data-toggle="collapse"
+        data-target="#gov-banner"
+        aria-expanded="false"
+        aria-controls="gov-banner"
+      >
+        <div class="banner-inner">
+          <img
+            class="banner-header-flag mr-2"
+            src="../assets/img//us_flag_small.png"
+            alt="U.S. flag"
+          />
+          <div class="flex-fill">
+            <p class="banner-header-text">
+              An official website of the United States government
+              <span class="expand-btn"
+                >Here’s how you know
+                <i class="material-icons">keyboard_arrow_down</i></span
+              >
+            </p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+        <img
+          class="banner-header-flag mr-2"
+          src="../assets/img//us_flag_small.png"
+          alt="U.S. flag"
+        />
+
+        <p class="banner-header-text">
+          An official website of the United States government
+        </p>
+
+        <button
+          class="btn banner-btn ml-2"
+          type="button"
+          data-toggle="collapse"
+          data-target="#gov-banner"
+          aria-expanded="false"
+          aria-controls="gov-banner"
+        >
+          Here’s how you know
+          <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img
+            class="banner-icon align-self-start"
+            src="../assets/img//icon-dot-gov.svg"
+            role="img"
+            alt="Dot gov"
+          />
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br />
+              Federal government websites often end in .gov or .mil. Before
+              sharing sensitive information, make sure you’re on a federal
+              government site.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 media">
+          <img
+            class="banner-icon align-self-start"
+            src="../assets/img//icon-https.svg"
+            role="img"
+            alt="Https"
+          />
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br />
+              The <strong>https://</strong> ensures that you are connecting to
+              the official website and that any information you provide is
+              encrypted and transmitted securely.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endset%}

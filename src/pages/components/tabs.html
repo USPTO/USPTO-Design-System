@@ -1,6 +1,6 @@
 {% extends 'layouts/components.njk' %} {% set page = { class: 'page-tabs',
 title: 'Tabs' } %} {% block content %}
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h1>Tabs</h1>
     <h2 id="purpose">Purpose</h2>
@@ -30,7 +30,7 @@ title: 'Tabs' } %} {% block content %}
     </ul>
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h3 id="normal-tabs">Normal tabs</h3>
     <p>The selected tab color should be the same color as the tab content.</p>
@@ -41,7 +41,7 @@ title: 'Tabs' } %} {% block content %}
   </div>
 </section>
 
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h3 id="pill-tabs">Pill tabs</h3>
     <p>
@@ -55,7 +55,7 @@ title: 'Tabs' } %} {% block content %}
   </div>
 </section>
 
-<section>
+<section class="pv-content">
   <div class="pattern"><h3 id="vertical-tabs">Vertical tabs</h3></div>
   <div class="preview pv-sm">
     {{ macros.viewCode({ ariaLabel: 'View code for vertical tabs', code:
@@ -63,7 +63,7 @@ title: 'Tabs' } %} {% block content %}
   </div>
 </section>
 
-<section>
+<section class="pv-content">
   <div class="pattern"><h3 id="justified-tabs">Justified tabs</h3></div>
   <div class="preview">
     {{ macros.viewCode({ ariaLabel: 'View code for justified tabs', code:

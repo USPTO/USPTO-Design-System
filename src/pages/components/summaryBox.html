@@ -1,0 +1,49 @@
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-summarybox',
+title: 'Summary box' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Summary box</h1>
+
+    <p>
+      A summary box highlights key information from a longer page or displays
+      next steps.
+    </p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for default summary box', code:
+    summaryBoxDefault }, "")}}
+  </div>
+</section>
+
+{% endblock %} {% set summaryBoxDefault %}
+<!-- Summary box -->
+<div class="alert alert-summary" role="complementary">
+  <div>
+    <h4 class="alert-heading">Key information</h4>
+    <ul>
+      <li>
+        If you are under a winter storm warning,
+
+        <a class="alert-link" href="javascript:void(0);">find shelter</a> right
+        away.
+      </li>
+      <li>
+        Sign up for
+        <a class="alert-link" href="javascript:void(0);"
+          >your community’s warning system</a
+        >.
+      </li>
+      <li>
+        Learn the signs of, and basic treatments for
+        <a class="alert-link" href="javascript:void(0);"> frostbite</a> and
+        <a class="alert-link" href="javascript:void(0);"> hypothermia</a>.
+      </li>
+      <li>
+        Gather emergency supplies for your
+        <a class="alert-link" href="javascript:void(0);">home</a> and your
+        <a class="alert-link" href="javascript:void(0);">car</a>.
+      </li>
+    </ul>
+  </div>
+</div>
+{% endset%}

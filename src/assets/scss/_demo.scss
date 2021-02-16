@@ -21,9 +21,10 @@
   color: white;
 }
 
+
 main {
   width: 100%;
-  > section {
+  > .pv-content {
     background: $white;
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.25rem;
