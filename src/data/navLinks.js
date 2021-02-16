@@ -116,7 +116,7 @@ Object.assign(exports, {
    
     { href: 'siteAlert.html', text: 'Site alert' },
     { href: 'stepIndicators.html', text: 'Step indicators' },
-    { href: 'summaryBOx.html', text: 'Summary box' },
+    { href: 'summaryBox.html', text: 'Summary box' },
     {
       href: 'tables.html',
       text: 'Tables',
