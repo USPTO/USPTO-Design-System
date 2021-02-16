@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="page-popovers">
+<html lang="en" class="page-banner">
   <head>
 <meta charset="UTF-8">
-<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="description" content="USPTO Design  System. Contains SASS, fonts, icons for building a USPTO styled application.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Popovers
+ | Banner
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -491,106 +491,25 @@
   <main id="main-content">
 <section class="pv-content">
   <div class="pattern">
-    <h1>Popovers</h1>
+    <h1>Banner</h1>
 
-    <h2 id="purpose">Purpose</h2>
     <p>
-      Users need to be able to access additional related information or
-      functionality without a change in context.
+      The banner identifies official websites of government organizations in the
+      United States. It also helps visitors understand how to tell that a
+      website is both official and secure.
     </p>
-
-    <h2 id="description">Description</h2>
-    <ul>
-      <li>Popovers are a cross between a dialog and a tooltip</li>
-      <li>
-        Popovers are smaller contextual dialogs that are generally triggered by
-        a click
-      </li>
-      <li>They may or may not provide additional interactive controls</li>
-      <li>
-        Popovers display information or functionality related to a particular
-        item or control
-      </li>
-      <li>
-        Popovers can be dismissed via a close icon, clicking the control that
-        opened it, or by clicking anywhere outside of the popover
-      </li>
-      <li>
-        The amount of content in a popover should be relatively short, but they
-        can be scrollable if necessary
-      </li>
-      <li>
-        Popovers should be positioned based on the screen space available,
-      </li>
-    </ul>
-
-    <p>Use a popover instead of a tooltip or dialog when:</p>
-
-    <ul>
-      <li>You want a contextual relationship that a dialog can’t provide</li>
-      <li>You need to provide relatively simple interactions</li>
-      <li>You have more text/content than can comfortably fit in a tooltip</li>
-    </ul>
-    <div
-      class="bs-popover-left popover show fade d-block position-relative"
-      role="tooltip"
-    >
-      <div class="arrow" style="top: 90px"></div>
-      <h3 class="popover-header">Add note</h3>
-      <div class="popover-body">
-        <textarea
-          placeholder="Enter note here"
-          class="form-control"
-          name=""
-          id=""
-          rows="3"
-        ></textarea>
-      </div>
-      <div class="popover-toolbar">
-        <button
-          class="btn btn-outline-secondary btn-sm md-icon float-left"
-          type="button"
-        >
-          <i class="material-icons">image</i>
-        </button>
-        <button
-          class="btn btn-outline-secondary btn-sm md-icon float-left"
-          type="button"
-        >
-          <i class="material-icons">link</i>
-        </button>
-        <button class="btn btn-sm btn-primary float-right">Add</button>
-      </div>
-    </div>
-    <p>&nbsp;</p>
-    <div
-      class="bs-popover-right popover show fade d-block position-relative"
-      role="tooltip"
-    >
-      <div class="arrow" style="top: 90px"></div>
-      <div class="popover-body">
-        <p>
-          Simple search: Type a term in the search field and select the search
-          button.
-        </p>
-        <p>
-          Advanced search: Advanced boolean operators may be used. The default
-          operator when searching multiple terms is “AND”.
-        </p>
-        <a href="">Learn more</a>
-      </div>
-    </div>
   </div>
-  <div class="preview pv-sm">
+  <div class="preview">
     
   <div class="">
     <div class="d-flex mb-1">
+        <h2>.gov domains</h2>
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-1"
 
-      aria-label="View code for popover"
+      aria-label="View code for default banner"
 
       aria-expanded="false"
 
@@ -600,20 +519,110 @@
 
       type="button"
 
-      title="View code for popover"
+      title="View code for default banner"
 
     >
     <span class="material-icons">unfold_more</span> View code </button>
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!--Popover--&gt;
-&lt;div class=&quot;popover bs-popover-right&quot; role=&quot;tooltip&quot;&gt;
-  &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
-  &lt;h3 class=&quot;popover-header&quot;&gt;Popover title&lt;/h3&gt;
-  &lt;div class=&quot;popover-body&quot;&gt;
-    And here&#39;s some amazing content. It&#39;s very engaging. Right?
+      data-clipboard-text="&lt;!--Banner--&gt;
+&lt;section class=&quot;banner banner-dark&quot; aria-label=&quot;Official government website&quot;&gt;
+  &lt;div class=&quot;accordion&quot;&gt;
+    &lt;div class=&quot;d-md-none&quot;&gt;
+      &lt;button
+        class=&quot;btn accordion-btn&quot;
+        type=&quot;button&quot;
+        data-toggle=&quot;collapse&quot;
+        data-target=&quot;#gov-banner&quot;
+        aria-expanded=&quot;false&quot;
+        aria-controls=&quot;gov-banner&quot;
+      &gt;
+        &lt;div class=&quot;banner-inner&quot;&gt;
+          &lt;img
+            class=&quot;banner-header-flag mr-2&quot;
+            src=&quot;../assets/img//us_flag_small.png&quot;
+            alt=&quot;U.S. flag&quot;
+          /&gt;
+          &lt;div class=&quot;flex-fill&quot;&gt;
+            &lt;p class=&quot;banner-header-text&quot;&gt;
+              An official website of the United States government
+              &lt;span class=&quot;expand-btn&quot;
+                &gt;Here’s how you know
+                &lt;i class=&quot;material-icons&quot;&gt;keyboard_arrow_down&lt;/i&gt;&lt;/span
+              &gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;span class=&quot;close-btn&quot;&gt;
+            &lt;i class=&quot;material-icons&quot;&gt;close&lt;/i&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;d-none d-md-block&quot;&gt;
+      &lt;div class=&quot;banner-inner align-itens-center&quot;&gt;
+        &lt;img
+          class=&quot;banner-header-flag mr-2&quot;
+          src=&quot;../assets/img//us_flag_small.png&quot;
+          alt=&quot;U.S. flag&quot;
+        /&gt;
+
+        &lt;p class=&quot;banner-header-text&quot;&gt;
+          An official website of the United States government
+        &lt;/p&gt;
+
+        &lt;button
+          class=&quot;btn banner-btn ml-2&quot;
+          type=&quot;button&quot;
+          data-toggle=&quot;collapse&quot;
+          data-target=&quot;#gov-banner&quot;
+          aria-expanded=&quot;false&quot;
+          aria-controls=&quot;gov-banner&quot;
+        &gt;
+          Here’s how you know
+          &lt;i class=&quot;material-icons&quot;&gt;keyboard_arrow_down&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;banner-content collapse&quot; id=&quot;gov-banner&quot;&gt;
+      &lt;div class=&quot;row no-gutters-sm&quot;&gt;
+        &lt;div class=&quot;col-md-6 media&quot;&gt;
+          &lt;img
+            class=&quot;banner-icon align-self-start&quot;
+            src=&quot;../assets/img//icon-dot-gov.svg&quot;
+            role=&quot;img&quot;
+            alt=&quot;Dot gov&quot;
+          /&gt;
+          &lt;div class=&quot;media-body&quot;&gt;
+            &lt;p&gt;
+              &lt;strong&gt;The .gov means it’s official.&lt;/strong&gt;
+              &lt;br /&gt;
+              Federal government websites often end in .gov or .mil. Before
+              sharing sensitive information, make sure you’re on a federal
+              government site.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-6 media&quot;&gt;
+          &lt;img
+            class=&quot;banner-icon align-self-start&quot;
+            src=&quot;../assets/img//icon-https.svg&quot;
+            role=&quot;img&quot;
+            alt=&quot;Https&quot;
+          /&gt;
+          &lt;div class=&quot;media-body&quot;&gt;
+            &lt;p&gt;
+              &lt;strong&gt;The site is secure.&lt;/strong&gt;
+              &lt;br /&gt;
+              The &lt;strong&gt;https://&lt;/strong&gt; ensures that you are connecting to
+              the official website and that any information you provide is
+              encrypted and transmitted securely.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 "
 
       type="button"
@@ -625,76 +634,209 @@
       </div>
     </div>
     <div class="preview-size">
-      <!--Popover-->
-<div class="popover bs-popover-right" role="tooltip">
-  <div class="arrow"></div>
-  <h3 class="popover-header">Popover title</h3>
-  <div class="popover-body">
-    And here's some amazing content. It's very engaging. Right?
+      <!--Banner-->
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button
+        class="btn accordion-btn"
+        type="button"
+        data-toggle="collapse"
+        data-target="#gov-banner"
+        aria-expanded="false"
+        aria-controls="gov-banner"
+      >
+        <div class="banner-inner">
+          <img
+            class="banner-header-flag mr-2"
+            src="../assets/img//us_flag_small.png"
+            alt="U.S. flag"
+          />
+          <div class="flex-fill">
+            <p class="banner-header-text">
+              An official website of the United States government
+              <span class="expand-btn"
+                >Here’s how you know
+                <i class="material-icons">keyboard_arrow_down</i></span
+              >
+            </p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+        <img
+          class="banner-header-flag mr-2"
+          src="../assets/img//us_flag_small.png"
+          alt="U.S. flag"
+        />
+
+        <p class="banner-header-text">
+          An official website of the United States government
+        </p>
+
+        <button
+          class="btn banner-btn ml-2"
+          type="button"
+          data-toggle="collapse"
+          data-target="#gov-banner"
+          aria-expanded="false"
+          aria-controls="gov-banner"
+        >
+          Here’s how you know
+          <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img
+            class="banner-icon align-self-start"
+            src="../assets/img//icon-dot-gov.svg"
+            role="img"
+            alt="Dot gov"
+          />
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br />
+              Federal government websites often end in .gov or .mil. Before
+              sharing sensitive information, make sure you’re on a federal
+              government site.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 media">
+          <img
+            class="banner-icon align-self-start"
+            src="../assets/img//icon-https.svg"
+            role="img"
+            alt="Https"
+          />
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br />
+              The <strong>https://</strong> ensures that you are connecting to
+              the official website and that any information you provide is
+              encrypted and transmitted securely.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
     </div>
     <div class="collapse line-numbers pt-2" id="codebox-1">
       Example HTML usage:
         <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Popover--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popover bs-popover-right&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tooltip&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;arrow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popover-header&quot;</span>&gt;</span>Popover title<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popover-body&quot;</span>&gt;</span>
-    And here&#x27;s some amazing content. It&#x27;s very engaging. Right?
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Banner--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner banner-dark&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Official government website&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-md-none&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn accordion-btn&quot;</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+        <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+        <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#gov-banner&quot;</span>
+        <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+        <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;gov-banner&quot;</span>
+      &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-inner&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-header-flag mr-2&quot;</span>
+            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img//us_flag_small.png&quot;</span>
+            <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;U.S. flag&quot;</span>
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex-fill&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-header-text&quot;</span>&gt;</span>
+              An official website of the United States government
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;expand-btn&quot;</span>
+                &gt;</span>Here’s how you know
+                <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>keyboard_arrow_down<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>
+              &gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close-btn&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>close<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-md-block&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-inner align-itens-center&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-header-flag mr-2&quot;</span>
+          <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img//us_flag_small.png&quot;</span>
+          <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;U.S. flag&quot;</span>
+        /&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-header-text&quot;</span>&gt;</span>
+          An official website of the United States government
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn banner-btn ml-2&quot;</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+          <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+          <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#gov-banner&quot;</span>
+          <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+          <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;gov-banner&quot;</span>
+        &gt;</span>
+          Here’s how you know
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>keyboard_arrow_down<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-content collapse&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;gov-banner&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row no-gutters-sm&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 media&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-icon align-self-start&quot;</span>
+            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img//icon-dot-gov.svg&quot;</span>
+            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;img&quot;</span>
+            <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Dot gov&quot;</span>
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;media-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>The .gov means it’s official.<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+              Federal government websites often end in .gov or .mil. Before
+              sharing sensitive information, make sure you’re on a federal
+              government site.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 media&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-icon align-self-start&quot;</span>
+            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img//icon-https.svg&quot;</span>
+            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;img&quot;</span>
+            <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Https&quot;</span>
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;media-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>The site is secure.<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+              The <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>https://<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> ensures that you are connecting to
+              the official website and that any information you provide is
+              encrypted and transmitted securely.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
 
-  </div>
-
-  <div class="pattern">
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-container="body"
-      data-toggle="popover"
-      data-placement="top"
-      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-    >
-      Popover on top
-    </button>
-
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-container="body"
-      data-toggle="popover"
-      data-placement="right"
-      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-    >
-      Popover on right
-    </button>
-
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-container="body"
-      data-toggle="popover"
-      data-placement="bottom"
-      data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus."
-    >
-      Popover on bottom
-    </button>
-
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-container="body"
-      data-toggle="popover"
-      data-placement="left"
-      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-    >
-      Popover on left
-    </button>
   </div>
 </section>
     </main>

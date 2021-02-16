@@ -10481,6 +10481,46 @@ h3 {
   margin-top: 0;
 }
 
+.alert-site {
+  background-color: #9c3d10;
+  color: #fff;
+  margin-bottom: 0;
+}
+.alert-site::before {
+  background-color: #9c3d10;
+  width: 0;
+}
+.alert-site .alert-link {
+  color: #f0f0f0;
+  font-weight: normal;
+}
+.alert-site .alert-link:hover, .alert-site .alert-link.page-link:focus {
+  color: #fff;
+}
+.alert-site ul {
+  margin-left: -1.3rem;
+}
+
+.alert-summary {
+  background-color: #e7f6f8;
+  border: 1px solid #99deea;
+  border-radius: 0.25rem;
+}
+.alert-summary::before {
+  background-color: #e7f6f8;
+  width: 0;
+}
+.alert-summary .alert-link {
+  font-weight: normal;
+}
+.alert-summary ul {
+  margin-top: 1rem;
+  margin-left: -1.3rem;
+}
+.alert-summary ul li {
+  line-height: 1.7;
+}
+
 .badge {
   text-transform: uppercase;
   text-decoration: none;
@@ -11569,6 +11609,9 @@ h3 {
 .navbar li a.nav-link:focus, header .uspto-header-middle li a.nav-link:focus, .navbar .sidenav li > a:focus, header .uspto-header-middle .sidenav li > a:focus, .sidenav .navbar li > a:focus, .sidenav header .uspto-header-middle li > a:focus, header .sidenav .uspto-header-middle li > a:focus {
   background-color: #1a4480;
 }
+.navbar li a.nav-link.disabled, header .uspto-header-middle li a.nav-link.disabled, .navbar .sidenav li > a.disabled, header .uspto-header-middle .sidenav li > a.disabled, .sidenav .navbar li > a.disabled, .sidenav header .uspto-header-middle li > a.disabled, header .sidenav .uspto-header-middle li > a.disabled {
+  color: #c9c9c9 !important;
+}
 .navbar li.active a, header .uspto-header-middle li.active a {
   background-color: #1a4480;
 }
@@ -12493,49 +12536,49 @@ footer .uspto-footer-middle .btn-collapse span {
 main {
   width: 100%;
 }
-main > section {
+main > .pv-content {
   background: #fff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
   margin: 2rem 0;
 }
-main > section .pattern,
-main > section .preview {
+main > .pv-content .pattern,
+main > .pv-content .preview {
   padding: 2rem;
 }
-main > section .preview {
+main > .pv-content .preview {
   border-bottom: 1px solid #eee;
 }
-main > section .pattern {
+main > .pv-content .pattern {
   border-bottom: 1px solid #eee;
 }
-main > section .pv-xs .preview-size {
+main > .pv-content .pv-xs .preview-size {
   max-width: 15rem;
 }
-main > section .pv-sm .preview-size {
+main > .pv-content .pv-sm .preview-size {
   max-width: 30rem;
 }
-main > section .pv-md .preview-size {
+main > .pv-content .pv-md .preview-size {
   max-width: 50rem;
 }
-main > section .pv-lg .preview-size {
+main > .pv-content .pv-lg .preview-size {
   max-width: 75rem;
 }
-main > section .pv-only .modal {
+main > .pv-content .pv-only .modal {
   position: relative !important;
   display: block !important;
 }
-main > section .pv-only .dropdown-menu {
+main > .pv-content .pv-only .dropdown-menu {
   position: relative !important;
   display: block !important;
   float: none;
 }
-main > section .pv-only .toast {
+main > .pv-content .pv-only .toast {
   transition: opacity 0.15s linear;
   display: block;
   opacity: 1;
 }
-main > section .preview-size .popover {
+main > .pv-content .preview-size .popover {
   display: none;
 }
 
@@ -12733,6 +12776,10 @@ main > section .preview-size .popover {
   background-color: #e7f6f8;
   color: #212529;
 }
+.swatch-cyan-200 {
+  background-color: #99deea;
+  color: #212529;
+}
 .swatch-cyan-400 {
   background-color: #207ea0;
   color: #fff;
@@ -12830,6 +12877,10 @@ main > section .preview-size .popover {
   color: #fff;
 }
 .swatch-orange-700 {
+  background-color: #9c3d10;
+  color: #fff;
+}
+.swatch-orange-900 {
   background-color: #775540;
   color: #fff;
 }
