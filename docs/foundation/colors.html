@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" class="page-colors">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Colors
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
+          USPTO <span class="font-weight-light">Design System (Beta)</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
+     <img src="..//assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
+    </a>
+  </div>
+</div>
+
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="How to use USPTO Design System">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="foundation.html">Foundation
+    </option>
+    <option value="colors.html">Colors
+    </option>
+    <option value="grid.html">Grid
+    </option>
+    <option value="icons.html">Icons
+    </option>
+    <option value="links.html">Links
+    </option>
+    <option value="typography.html">Typography
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="foundation.html" data-parent="Foundation">Foundation</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="colors.html" data-parent="Colors">Colors</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#primary-ui-colors">Primary UI colors</a>
+            </li>
+            <li>
+              <a href="#full-brand-palette">Full brand palette</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="grid.html" data-parent="Grid">Grid</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="icons.html" data-parent="Icons">Icons</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#overview">Overview</a>
+            </li>
+            <li>
+              <a href="#usage">Usage</a>
+            </li>
+            <li>
+              <a href="#icon-color">Icon color</a>
+            </li>
+            <li>
+              <a href="#system-icons">System Icons</a>
+            </li>
+            <li>
+              <a href="#icon-sizing">Icon sizing</a>
+            </li>
+            <li>
+              <a href="#rotation">Rotation</a>
+            </li>
+            <li>
+              <a href="#animation">Animation</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="links.html" data-parent="Links">Links</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="typography.html" data-parent="Typography">Typography</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#fonts">Fonts</a>
+            </li>
+            <li>
+              <a href="#weights">Weights</a>
+            </li>
+            <li>
+              <a href="#styles">Styles</a>
+            </li>
+            <li>
+              <a href="#lists">Lists</a>
+            </li>
+            <li>
+              <a href="#colors">Colors</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+<section>
+  <div class="pattern">
+    <h1 id="primary-ui-colors">Primary UI colors</h1>
+    <p>
+      These are the primary colors used for UI elements. The primary colors have
+      semantic meanings associated with them.
+    </p>
+    <h2>Colors</h2>
+
+    <div class="row">
+   <div class="col-lg-2 col-md-4 col-sm-4">
+  <div class="color-swatch-tile mb-4">
+    <div class="color-swatch"
+         style="background-color: #005ea2;"></div>
+    <div class="color-name">
+      blue
+    </div>
+    <div class="color-value">
+      #005ea2
+    </div>
+  </div>
+  </div>
+    <div class="col-lg-2 col-md-4 col-sm-4">
+  <div class="color-swatch-tile mb-4">
+    <div class="color-swatch"
+         style="background-color: #008139;"></div>
+    <div class="color-name">
+      green
+    </div>
+    <div class="color-value">
+      #008139
+    </div>
+  </div>
+  </div>
+    <div class="col-lg-2 col-md-4 col-sm-4">
+  <div class="color-swatch-tile mb-4">
+    <div class="color-swatch"
+         style="background-color: #d83933;"></div>
+    <div class="color-name">
+      red
+    </div>
+    <div class="color-value">
+      #d83933
+    </div>
+  </div>
+  </div>
+    <div class="col-lg-2 col-md-4 col-sm-4">
+  <div class="color-swatch-tile mb-4">
+    <div class="color-swatch"
+         style="background-color: #ffbe2e;"></div>
+    <div class="color-name">
+      yellow
+    </div>
+    <div class="color-value">
+      #ffbe2e
+    </div>
+  </div>
+  </div>
+    <div class="col-lg-2 col-md-4 col-sm-4">
+  <div class="color-swatch-tile mb-4">
+    <div class="color-swatch"
+         style="background-color: #207ea0;"></div>
+    <div class="color-name">
+      cyan
+    </div>
+    <div class="color-value">
+      #207ea0
+    </div>
+  </div>
+  </div>
+    <div class="col-lg-2 col-md-4 col-sm-4">
+  <div class="color-swatch-tile mb-4">
+    <div class="color-swatch"
+         style="background-color: #757575;"></div>
+    <div class="color-name">
+      gray
+    </div>
+    <div class="color-value">
+      #757575
+    </div>
+  </div>
+  </div>
+    <div class="col-lg-2 col-md-4 col-sm-4">
+  <div class="color-swatch-tile mb-4">
+    <div class="color-swatch"
+         style="background-color: #f0f0f0;"></div>
+    <div class="color-name">
+      light
+    </div>
+    <div class="color-value">
+      #f0f0f0
+    </div>
+  </div>
+  </div>
+     </div>
+  </div>
+
+  <div class="pattern">
+    <h2 id="full-brand-palette">Full brand palette</h2>
+    <p>
+      This is the full USPTO color palette. However, many of these are rarely
+      used for UI elements.
+    </p>
+
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 position-relative swatch-primary">
+          <strong class="d-block">blue</strong>
+          #005ea2
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#eff6fb;
+          color:          "
+        >
+                blue-100
+              </div> -->
+        <div class="p-3 swatch-blue-100">
+          blue-100
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#005ea2;
+          color: #ffffff          "
+        >
+                blue-400
+              </div> -->
+        <div class="p-3 swatch-blue-400">
+          blue-400
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#1a4480;
+          color: #ffffff          "
+        >
+                blue-600
+              </div> -->
+        <div class="p-3 swatch-blue-600">
+          blue-600
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#162e51;
+          color: #ffffff          "
+        >
+                blue-700
+              </div> -->
+        <div class="p-3 swatch-blue-700">
+          blue-700
+        </div>
+
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 position-relative swatch-success">
+          <strong class="d-block">green</strong>
+          #008139
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#ecf3ec;
+          color:          "
+        >
+                green-100
+              </div> -->
+        <div class="p-3 swatch-green-100">
+          green-100
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#008139;
+          color: #ffffff          "
+        >
+                green-400
+              </div> -->
+        <div class="p-3 swatch-green-400">
+          green-400
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#216e1f;
+          color: #ffffff          "
+        >
+                green-600
+              </div> -->
+        <div class="p-3 swatch-green-600">
+          green-600
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#154c21;
+          color: #ffffff          "
+        >
+                green-700
+              </div> -->
+        <div class="p-3 swatch-green-700">
+          green-700
+        </div>
+
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 position-relative swatch-danger">
+          <strong class="d-block">red</strong>
+          #d83933
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#f4e3db;
+          color:          "
+        >
+                red-100
+              </div> -->
+        <div class="p-3 swatch-red-100">
+          red-100
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#d83933;
+          color: #ffffff          "
+        >
+                red-400
+              </div> -->
+        <div class="p-3 swatch-red-400">
+          red-400
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#b50909;
+          color: #ffffff          "
+        >
+                red-600
+              </div> -->
+        <div class="p-3 swatch-red-600">
+          red-600
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#8b0a03;
+          color: #ffffff          "
+        >
+                red-700
+              </div> -->
+        <div class="p-3 swatch-red-700">
+          red-700
+        </div>
+
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 position-relative swatch-warning">
+          <strong class="d-block">yellow</strong>
+          #ffbe2e
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#fdfbe4;
+          color:          "
+        >
+                yellow-50
+              </div> -->
+        <div class="p-3 swatch-yellow-50">
+          yellow-50
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#faf3d1;
+          color:          "
+        >
+                yellow-100
+              </div> -->
+        <div class="p-3 swatch-yellow-100">
+          yellow-100
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#ffbe2e;
+          color: #ffffff          "
+        >
+                yellow-400
+              </div> -->
+        <div class="p-3 swatch-yellow-400">
+          yellow-400
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#e5a000;
+          color: #ffffff          "
+        >
+                yellow-600
+              </div> -->
+        <div class="p-3 swatch-yellow-600">
+          yellow-600
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#c2850c;
+          color: #ffffff          "
+        >
+                yellow-700
+              </div> -->
+        <div class="p-3 swatch-yellow-700">
+          yellow-700
+        </div>
+
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 position-relative swatch-info">
+          <strong class="d-block">cyan</strong>
+          #207ea0
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#e7f6f8;
+          color:          "
+        >
+                cyan-100
+              </div> -->
+        <div class="p-3 swatch-cyan-100">
+          cyan-100
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#207ea0;
+          color: #ffffff          "
+        >
+                cyan-400
+              </div> -->
+        <div class="p-3 swatch-cyan-400">
+          cyan-400
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#1b6e8b;
+          color: #ffffff          "
+        >
+                cyan-600
+              </div> -->
+        <div class="p-3 swatch-cyan-600">
+          cyan-600
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#07648d;
+          color: #ffffff          "
+        >
+                cyan-700
+              </div> -->
+        <div class="p-3 swatch-cyan-700">
+          cyan-700
+        </div>
+
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 position-relative swatch-secondary">
+          <strong class="d-block">gray</strong>
+          #757575
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#cccccc;
+          color:          "
+        >
+                gray-100
+              </div> -->
+        <div class="p-3 swatch-gray-100">
+          gray-100
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#c9c9c9;
+          color:          "
+        >
+                gray-200
+              </div> -->
+        <div class="p-3 swatch-gray-200">
+          gray-200
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#adadad;
+          color:          "
+        >
+                gray-300
+              </div> -->
+        <div class="p-3 swatch-gray-300">
+          gray-300
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#757575;
+          color: #ffffff          "
+        >
+                gray-400
+              </div> -->
+        <div class="p-3 swatch-gray-400">
+          gray-400
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#5c5c5c;
+          color: #ffffff          "
+        >
+                gray-600
+              </div> -->
+        <div class="p-3 swatch-gray-600">
+          gray-600
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#2e2e2e;
+          color: #ffffff          "
+        >
+                gray-700
+              </div> -->
+        <div class="p-3 swatch-gray-700">
+          gray-700
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#1b1b1b;
+          color: #ffffff          "
+        >
+                gray-900
+              </div> -->
+        <div class="p-3 swatch-gray-900">
+          gray-900
+        </div>
+
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 position-relative swatch-light">
+          <strong class="d-block">light</strong>
+          #f0f0f0
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#ffffff;
+          color:          "
+        >
+                light-100
+              </div> -->
+        <div class="p-3 swatch-light-100">
+          light-100
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#f9f9f9;
+          color:          "
+        >
+                light-200
+              </div> -->
+        <div class="p-3 swatch-light-200">
+          light-200
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#f0f0f0;
+          color:          "
+        >
+                light-400
+              </div> -->
+        <div class="p-3 swatch-light-400">
+          light-400
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#e6e6e6;
+          color:          "
+        >
+                light-600
+              </div> -->
+        <div class="p-3 swatch-light-600">
+          light-600
+        </div>
+
+        <!--  <div
+          class="p-3"
+          style="background-color:#cfcfcf;
+          color:          "
+        >
+                light-700
+              </div> -->
+        <div class="p-3 swatch-light-700">
+          light-700
+        </div>
+
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 mb-2 text-white" style="background-color: #000000">
+          <strong class="d-block">black</strong>
+          #000000
+        </div>
+        <div class="p-3 mb-2 bd-white border">
+          <strong class="d-block">white</strong>
+          #ffffff
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p class="">Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme">Github repository</a>.</p>
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en" class="page-badges">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Labels and badges
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
+          USPTO <span class="font-weight-light">Design System (Beta)</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
+     <img src="..//assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
+    </a>
+  </div>
+</div>
+
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="How to use USPTO Design System">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="components.html">Components
+    </option>
+    <option value="alertsNotifications.html">Alerts and notifications
+    </option>
+    <option value="breadcrumbs.html">Breadcrumbs
+    </option>
+    <option value="buttons.html">Buttons
+    </option>
+    <option value="collapsiblePanels.html">Collapsible panels
+    </option>
+    <option value="dialogs.html">Dialogs
+    </option>
+    <option value="formControls.html">Form controls
+    </option>
+    <option value="forms.html">Forms
+    </option>
+    <option value="labelsAndBadges.html">Labels and badges
+    </option>
+    <option value="menus.html">Menus
+    </option>
+    <option value="pagination.html">Pagination
+    </option>
+    <option value="popovers.html">Popovers
+    </option>
+    <option value="progressLoading.html">Progress and loading
+    </option>
+    <option value="stepIndicators.html">Step indicators
+    </option>
+    <option value="tables.html">Tables
+    </option>
+    <option value="tabs.html">Tabs
+    </option>
+    <option value="tooltips.html">Tooltips
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="components.html" data-parent="Components">Components</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="alertsNotifications.html" data-parent="Alerts and notifications">Alerts and notifications</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#contextual-alerts">Contextual alerts</a>
+            </li>
+            <li>
+              <a href="#system-notifications">System notifications</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="breadcrumbs.html" data-parent="Breadcrumbs">Breadcrumbs</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="buttons.html" data-parent="Buttons">Buttons</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#button-styles">Button styles</a>
+            </li>
+            <li>
+              <a href="#button-sizes">Button sizes</a>
+            </li>
+            <li>
+              <a href="#button-groups">Button groups</a>
+            </li>
+            <li>
+              <a href="#toggle-buttons">Toggle buttons</a>
+            </li>
+            <li>
+              <a href="#dropdown-buttons">Dropdown buttons</a>
+            </li>
+            <li>
+              <a href="#split-buttons">Split buttons</a>
+            </li>
+            <li>
+              <a href="#icon-buttons">Icon buttons</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="collapsiblePanels.html" data-parent="Collapsible panels">Collapsible panels</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#behaviors">Behaviors</a>
+            </li>
+            <li>
+              <a href="#styles">Styles</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="dialogs.html" data-parent="Dialogs">Dialogs</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#confirmation">Confirmation</a>
+            </li>
+            <li>
+              <a href="#actionless">Actionless</a>
+            </li>
+            <li>
+              <a href="#modes">Modes</a>
+            </li>
+            <li>
+              <a href="#live">Live</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="formControls.html" data-parent="Form controls">Form controls</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#text-box">Text box</a>
+            </li>
+            <li>
+              <a href="#text-area">Text area</a>
+            </li>
+            <li>
+              <a href="#radio-buttons">Radio buttons</a>
+            </li>
+            <li>
+              <a href="#checkboxes">Checkboxes</a>
+            </li>
+            <li>
+              <a href="#toggle-switches">Toggle switches</a>
+            </li>
+            <li>
+              <a href="#select">Select</a>
+            </li>
+            <li>
+              <a href="#multi-select">Multi-select</a>
+            </li>
+            <li>
+              <a href="#date-picker">Date picker</a>
+            </li>
+            <li>
+              <a href="#date-input">Date input</a>
+            </li>
+            <li>
+              <a href="#time-picker">Time picker</a>
+            </li>
+            <li>
+              <a href="#slider">Slider</a>
+            </li>
+            <li>
+              <a href="#rich-text-editor">Rich text editor</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="forms.html" data-parent="Forms">Forms</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#overview">Overview</a>
+            </li>
+            <li>
+              <a href="#field-widths">Field widths</a>
+            </li>
+            <li>
+              <a href="#labels">Labels</a>
+            </li>
+            <li>
+              <a href="#optional-fields">Optional fields</a>
+            </li>
+            <li>
+              <a href="#form-validation">Form validation</a>
+            </li>
+            <li>
+              <a href="#help-text">Help text</a>
+            </li>
+            <li>
+              <a href="#form-groups">Form groups</a>
+            </li>
+            <li>
+              <a href="#input-character-limits">Input character limits</a>
+            </li>
+            <li>
+              <a href="#examples">Examples</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="labelsAndBadges.html" data-parent="Labels and badges">Labels and badges</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#labels">Labels</a>
+            </li>
+            <li>
+              <a href="#badges">Badges</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="menus.html" data-parent="Menus">Menus</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#submenus">Submenus</a>
+            </li>
+            <li>
+              <a href="#icons">Icons</a>
+            </li>
+            <li>
+              <a href="#form-controls">Form controls</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="pagination.html" data-parent="Pagination">Pagination</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#examples">Examples</a>
+            </li>
+            <li>
+              <a href="#sizing">Sizing</a>
+            </li>
+            <li>
+              <a href="#alignment">Alignment</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="popovers.html" data-parent="Popovers">Popovers</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="progressLoading.html" data-parent="Progress and loading">Progress and loading</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#progress-bars">Progress bars</a>
+            </li>
+            <li>
+              <a href="#load-spinners">Load spinners</a>
+            </li>
+            <li>
+              <a href="#Size">Spinner size</a>
+            </li>
+            <li>
+              <a href="#Spinner-examples">Spinner examples</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="stepIndicators.html" data-parent="Step indicators">Step indicators</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="tables.html" data-parent="Tables">Tables</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#styles">Styles</a>
+            </li>
+            <li>
+              <a href="#headers">Headers</a>
+            </li>
+            <li>
+              <a href="#sorting">Sorting</a>
+            </li>
+            <li>
+              <a href="#selection">Selection</a>
+            </li>
+            <li>
+              <a href="#row-action-buttons">Row action buttons</a>
+            </li>
+            <li>
+              <a href="#column-customization">Column customization</a>
+            </li>
+            <li>
+              <a href="#grouping">Grouping</a>
+            </li>
+            <li>
+              <a href="#expandable-rows">Expandable rows</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="tabs.html" data-parent="Tabs">Tabs</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#normal-tabs">Normal tabs</a>
+            </li>
+            <li>
+              <a href="#pill-tabs">Pill tabs</a>
+            </li>
+            <li>
+              <a href="#vertical-tabs">Vertical tabs</a>
+            </li>
+            <li>
+              <a href="#justified-tabs">Justified tabs</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="tooltips.html" data-parent="Tooltips">Tooltips</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#positioning">Positioning</a>
+            </li>
+            <li>
+              <a href="#content">Content</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+<section>
+  <div class="pattern">
+    <h1 id="labels">Labels</h1>
+    <p>
+      Labels are generally used to provide emphasis on a characteristic of an
+      object, e.g., the category of a document. They are generally actionless.
+    </p>
+    <p>Avoid mixing standard and subtle labels.</p>
+    <h2 id="standard">Standard</h2>
+    <p>
+      Use standard labels by default unless there are going to be many on the
+      screen at once.
+    </p>
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Standard labels</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="view code for standard labels"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for standard labels"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Standard badges--&gt;
+&lt;span class=&quot;badge badge-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;badge badge-secondary&quot;&gt;Secondary&lt;/span&gt;
+&lt;span class=&quot;badge badge-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge badge-danger&quot;&gt;Danger&lt;/span&gt;
+&lt;span class=&quot;badge badge-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge badge-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;badge badge-light&quot;&gt;Light&lt;/span&gt;
+&lt;span class=&quot;badge badge-dark&quot;&gt;Dark&lt;/span&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Standard badges-->
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Standard badges--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-primary&quot;</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-success&quot;</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-danger&quot;</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-warning&quot;</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-info&quot;</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-light&quot;</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-dark&quot;</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Pill labels</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="view code for pill labels"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for pill labels"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Pill badges--&gt;
+&lt;span class=&quot;badge badge-pill badge-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;badge badge-pill badge-secondary&quot;&gt;Secondary&lt;/span&gt;
+&lt;span class=&quot;badge badge-pill badge-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge badge-pill badge-danger&quot;&gt;Danger&lt;/span&gt;
+&lt;span class=&quot;badge badge-pill badge-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge badge-pill badge-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;badge badge-pill badge-light&quot;&gt;Light&lt;/span&gt;
+&lt;span class=&quot;badge badge-pill badge-dark&quot;&gt;Dark&lt;/span&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Pill badges-->
+<span class="badge badge-pill badge-primary">Primary</span>
+<span class="badge badge-pill badge-secondary">Secondary</span>
+<span class="badge badge-pill badge-success">Success</span>
+<span class="badge badge-pill badge-danger">Danger</span>
+<span class="badge badge-pill badge-warning">Warning</span>
+<span class="badge badge-pill badge-info">Info</span>
+<span class="badge badge-pill badge-light">Light</span>
+<span class="badge badge-pill badge-dark">Dark</span>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Pill badges--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-pill badge-primary&quot;</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-pill badge-secondary&quot;</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-pill badge-success&quot;</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-pill badge-danger&quot;</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-pill badge-warning&quot;</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-pill badge-info&quot;</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-pill badge-light&quot;</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-pill badge-dark&quot;</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Link labels</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="view code for link labels"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for link labels"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Links badges--&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-primary&quot;&gt;Primary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-secondary&quot;&gt;Secondary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-success&quot;&gt;Success&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-danger&quot;&gt;Danger&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-warning&quot;&gt;Warning&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-info&quot;&gt;Info&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-light&quot;&gt;Light&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-dark&quot;&gt;Dark&lt;/a&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Links badges-->
+<a href="#" class="badge badge-primary">Primary</a>
+<a href="#" class="badge badge-secondary">Secondary</a>
+<a href="#" class="badge badge-success">Success</a>
+<a href="#" class="badge badge-danger">Danger</a>
+<a href="#" class="badge badge-warning">Warning</a>
+<a href="#" class="badge badge-info">Info</a>
+<a href="#" class="badge badge-light">Light</a>
+<a href="#" class="badge badge-dark">Dark</a>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Links badges--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-primary&quot;</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-success&quot;</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-danger&quot;</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-warning&quot;</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-info&quot;</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-light&quot;</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-dark&quot;</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Subtle labels</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="view code for subtle labels"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for subtle labels"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Standard badges--&gt;
+&lt;span class=&quot;badge badge-primary subtle&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;badge badge-secondary subtle&quot;&gt;Secondary&lt;/span&gt;
+&lt;span class=&quot;badge badge-success subtle&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge badge-danger subtle&quot;&gt;Danger&lt;/span&gt;
+&lt;span class=&quot;badge badge-warning subtle&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge badge-info subtle&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;badge badge-dark subtle&quot;&gt;Dark&lt;/span&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Standard badges-->
+<span class="badge badge-primary subtle">Primary</span>
+<span class="badge badge-secondary subtle">Secondary</span>
+<span class="badge badge-success subtle">Success</span>
+<span class="badge badge-danger subtle">Danger</span>
+<span class="badge badge-warning subtle">Warning</span>
+<span class="badge badge-info subtle">Info</span>
+<span class="badge badge-dark subtle">Dark</span>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Standard badges--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-primary subtle&quot;</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary subtle&quot;</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-success subtle&quot;</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-danger subtle&quot;</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-warning subtle&quot;</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-info subtle&quot;</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-dark subtle&quot;</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h1 id="badges">Badges</h1>
+    <p>
+      Badges are generally used for emphasizing a numerical characteristic of an
+      object, e.g., the number of unread items in a folder.
+    </p>
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-5"
+
+      aria-label="view code for subtle badges"
+
+      aria-expanded="false"
+
+      data-target="#codebox-5"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for subtle badges"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;span class=&quot;badge badge-primary&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;badge badge-secondary&quot;&gt;200&lt;/span&gt;
+&lt;span class=&quot;badge badge-danger&quot;&gt;0&lt;/span&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <span class="badge badge-primary">5</span>
+<span class="badge badge-secondary">200</span>
+<span class="badge badge-danger">0</span>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-5">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-primary&quot;</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>200<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-danger&quot;</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview pv-xs">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-6"
+
+      aria-label="view code for menu badges"
+
+      aria-expanded="false"
+
+      data-target="#codebox-6"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for menu badges"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;ul class=&quot;list-group&quot;&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;
+    Inbox &lt;span class=&quot;badge badge-secondary float-right&quot;&gt;1,932&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;list-group-item active&quot;&gt;
+    Outbox &lt;span class=&quot;badge float-right&quot;&gt;2&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Spam&lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <ul class="list-group">
+  <li class="list-group-item">
+    Inbox <span class="badge badge-secondary float-right">1,932</span>
+  </li>
+  <li class="list-group-item active">
+    Outbox <span class="badge float-right">2</span>
+  </li>
+  <li class="list-group-item">Spam</li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-6">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-group-item&quot;</span>&gt;</span>
+    Inbox <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary float-right&quot;</span>&gt;</span>1,932<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-group-item active&quot;</span>&gt;</span>
+    Outbox <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge float-right&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-group-item&quot;</span>&gt;</span>Spam<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-7"
+
+      aria-label="view code for menu badges"
+
+      aria-expanded="false"
+
+      data-target="#codebox-7"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for menu badges"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
+  Notifications &lt;span class=&quot;badge badge-light&quot;&gt;4&lt;/span&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;unread messages&lt;/span&gt;
+&lt;/button&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <button type="button" class="btn btn-primary">
+  Notifications <span class="badge badge-light">4</span>
+  <span class="sr-only">unread messages</span>
+</button>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-7">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>
+  Notifications <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-light&quot;</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>unread messages<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-8"
+
+      aria-label="view code for menu badges"
+
+      aria-expanded="false"
+
+      data-target="#codebox-8"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for menu badges"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;h1&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h2&gt;
+&lt;h3&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;
+&lt;h4&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h4&gt;
+&lt;h5&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h5&gt;
+&lt;h6&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h6&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+<h2>Example heading <span class="badge badge-secondary">New</span></h2>
+<h3>Example heading <span class="badge badge-secondary">New</span></h3>
+<h4>Example heading <span class="badge badge-secondary">New</span></h4>
+<h5>Example heading <span class="badge badge-secondary">New</span></h5>
+<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-8">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Example heading <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>New<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Example heading <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>New<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Example heading <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>New<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Example heading <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>New<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Example heading <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>New<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>Example heading <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-secondary&quot;</span>&gt;</span>New<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p class="">Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme">Github repository</a>.</p>
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>

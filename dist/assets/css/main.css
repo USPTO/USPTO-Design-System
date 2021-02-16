@@ -11498,8 +11498,7 @@ h3 {
   border-width: 0.25rem !important;
 }
 
-.form-control-sm,
-.form-control-lg {
+.form-control-sm, .form-control-lg {
   border-radius: 0;
 }
 

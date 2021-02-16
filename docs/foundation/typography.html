@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en" class="page-typography">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Typography
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
+          USPTO <span class="font-weight-light">Design System (Beta)</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
+     <img src="..//assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
+    </a>
+  </div>
+</div>
+
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="How to use USPTO Design System">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="foundation.html">Foundation
+    </option>
+    <option value="colors.html">Colors
+    </option>
+    <option value="grid.html">Grid
+    </option>
+    <option value="icons.html">Icons
+    </option>
+    <option value="links.html">Links
+    </option>
+    <option value="typography.html">Typography
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="foundation.html" data-parent="Foundation">Foundation</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="colors.html" data-parent="Colors">Colors</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#primary-ui-colors">Primary UI colors</a>
+            </li>
+            <li>
+              <a href="#full-brand-palette">Full brand palette</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="grid.html" data-parent="Grid">Grid</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="icons.html" data-parent="Icons">Icons</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#overview">Overview</a>
+            </li>
+            <li>
+              <a href="#usage">Usage</a>
+            </li>
+            <li>
+              <a href="#icon-color">Icon color</a>
+            </li>
+            <li>
+              <a href="#system-icons">System Icons</a>
+            </li>
+            <li>
+              <a href="#icon-sizing">Icon sizing</a>
+            </li>
+            <li>
+              <a href="#rotation">Rotation</a>
+            </li>
+            <li>
+              <a href="#animation">Animation</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="links.html" data-parent="Links">Links</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="typography.html" data-parent="Typography">Typography</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#fonts">Fonts</a>
+            </li>
+            <li>
+              <a href="#weights">Weights</a>
+            </li>
+            <li>
+              <a href="#styles">Styles</a>
+            </li>
+            <li>
+              <a href="#lists">Lists</a>
+            </li>
+            <li>
+              <a href="#colors">Colors</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+<section>
+  <div class="pattern">
+    <h1 id="fonts">Fonts</h1>
+
+    <p>
+      Font load and fallback order:
+      <strong>Public Sans Web, Segoe UI, Helvetica, Arial</strong>
+    </p>
+
+    <h2 id="font-availability">Font availability</h2>
+
+    <dl>
+      <dt>
+        Public Sans Web -
+        <a href="https://public-sans.digital.gov/" target="_blank">Download</a>
+      </dt>
+      <dd>A strong, neutral, open source typeface for text or display.</dd>
+      <dt>Segoe UI</dt>
+      <dd>Ships with Windows Vista and newer and Microsoft Office.</dd>
+      <dt>Helvetica</dt>
+      <dd>Ships with OSX.</dd>
+      <dt>Arial</dt>
+      <dd>Ships with most operating systems.</dd>
+    </dl>
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h2 id="weights">Weights</h2>
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for input box"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for input box"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Font weight --&gt;
+&lt;p class=&quot;font-weight-bold&quot;&gt;700 - Bold text.&lt;/p&gt;
+&lt;p class=&quot;font-weight-bolder&quot;&gt;
+  Bolder - Bolder weight text (relative to the parent element).
+&lt;/p&gt;
+&lt;p class=&quot;font-weight-normal&quot;&gt;400 - Normal weight text.&lt;/p&gt;
+&lt;p class=&quot;font-weight-light&quot;&gt;300 - Light weight text.&lt;/p&gt;
+&lt;p class=&quot;font-weight-lighter&quot;&gt;
+  Lighter - Lighter weight text (relative to the parent element).
+&lt;/p&gt;
+&lt;p class=&quot;font-italic&quot;&gt;400 - Italic text.&lt;/p&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Font weight -->
+<p class="font-weight-bold">700 - Bold text.</p>
+<p class="font-weight-bolder">
+  Bolder - Bolder weight text (relative to the parent element).
+</p>
+<p class="font-weight-normal">400 - Normal weight text.</p>
+<p class="font-weight-light">300 - Light weight text.</p>
+<p class="font-weight-lighter">
+  Lighter - Lighter weight text (relative to the parent element).
+</p>
+<p class="font-italic">400 - Italic text.</p>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Font weight --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-bold&quot;</span>&gt;</span>700 - Bold text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-bolder&quot;</span>&gt;</span>
+  Bolder - Bolder weight text (relative to the parent element).
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-normal&quot;</span>&gt;</span>400 - Normal weight text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-light&quot;</span>&gt;</span>300 - Light weight text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-weight-lighter&quot;</span>&gt;</span>
+  Lighter - Lighter weight text (relative to the parent element).
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-italic&quot;</span>&gt;</span>400 - Italic text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="styles">Styles</h2>
+    <h3>Public Sans Web</h3>
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for input box"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for input box"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Font weight --&gt;
+&lt;table class=&quot;table table-borderless table-valign&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h1&lt;/td&gt;
+      &lt;td&gt;&lt;h1&gt;Regular 2.5rem&lt;/h1&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h2&lt;/td&gt;
+      &lt;td&gt;&lt;h2&gt;Semibold 1.5rem&lt;/h2&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h3&lt;/td&gt;
+      &lt;td&gt;&lt;h3&gt;Semibold 1.25rem&lt;/h3&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h4&lt;/td&gt;
+      &lt;td&gt;&lt;h4&gt;Semibold 1.125rem&lt;/h4&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h5&lt;/td&gt;
+      &lt;td&gt;&lt;h5&gt;Semibold 1rem&lt;/h5&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h6&lt;/td&gt;
+      &lt;td&gt;&lt;h6&gt;Semibold 0.875rem&lt;/h6&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Body&lt;/td&gt;
+      &lt;td&gt;&lt;div&gt;Regular 1rem&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Font weight -->
+<table class="table table-borderless table-valign">
+  <tbody>
+    <tr>
+      <td>h1</td>
+      <td><h1>Regular 2.5rem</h1></td>
+    </tr>
+    <tr>
+      <td>h2</td>
+      <td><h2>Semibold 1.5rem</h2></td>
+    </tr>
+    <tr>
+      <td>h3</td>
+      <td><h3>Semibold 1.25rem</h3></td>
+    </tr>
+    <tr>
+      <td>h4</td>
+      <td><h4>Semibold 1.125rem</h4></td>
+    </tr>
+    <tr>
+      <td>h5</td>
+      <td><h5>Semibold 1rem</h5></td>
+    </tr>
+    <tr>
+      <td>h6</td>
+      <td><h6>Semibold 0.875rem</h6></td>
+    </tr>
+    <tr>
+      <td>Body</td>
+      <td><div>Regular 1rem</div></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Font weight --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;table table-borderless table-valign&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Regular 2.5rem<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Semibold 1.5rem<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Semibold 1.25rem<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h4<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Semibold 1.125rem<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h5<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Semibold 1rem<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>h6<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>Semibold 0.875rem<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Body<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Regular 1rem<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="pairings">Pairings</h2>
+    <h1>Search for patents</h1>
+    <h2 class="text-muted mt-2">
+      New to Patent Searching? See this important information about searching
+      for patents
+    </h2>
+    <h6 class="text-muted">Jul 14, 2015</h6>
+    <hr />
+    <p>
+      Inventors are encouraged to search the USPTO's patent database to see if a
+      patent has already been filed or granted that is similar to your patent.
+      Patents may be searched in the USPTO Patent Full-Text and Image Database
+      (PatFT). The USPTO houses full text for patents issued from 1976 to the
+      present and PDF images for all patents from 1790 to the present.
+    </p>
+    <p>
+      All sequences (SEQ ID NOs.) and tables for listed patents or publications
+      are available for viewing, without downloading, by accessing the proper
+      document detail page and then submitting a SEQ ID NO or a mega table ID
+      number.
+    </p>
+    <h3>Global Patent Search Network (GPSN)</h3>
+    <p>
+      Global Patent Search Network (GPSN) enables users to search the full text
+      of multiple international patent collections. The initial collection
+      available will be Chinese patent documentation from the State Intellectual
+      Property Office (SIPO) of the People's Republic of China. Users can search
+      published applications, granted patents and utility models from 1985 to
+      2012. The data available includes full text Chinese patents, English
+      machine translations and full document images. This collection will be
+      periodically updated to include additional years of coverage.
+    </p>
+    <h4>Searching full text patents (since 1976)</h4>
+    <p>
+      Customize a search on all or a selected group of elements (fields) of a
+      patent.
+    </p>
+    <ul class="list-unstyled">
+      <li><a href="">Quick search</a></li>
+      <li><a href="">Advanced search</a></li>
+      <li><a href="">Patent number search</a></li>
+    </ul>
+    <p></p>
+    <h3>Patent Application Information Retrieval (PAIR)</h3>
+    <p>
+      The Patent Application Information Retrieval (PAIR) system provides IP
+      customers a safe, simple, and secure way to retrieve and download
+      information regarding patent application status.
+    </p>
+    <ul class="list-unstyled">
+      <li><a href="">Visit PAIR</a></li>
+    </ul>
+    <p></p>
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="Lists">Lists</h2>
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Unordered</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for unordered list"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for unordered list"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Unordered list --&gt;
+&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;
+    List item 3
+    &lt;ul&gt;
+      &lt;li&gt;Nested list item 1&lt;/li&gt;
+      &lt;li&gt;Nested list item 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Unordered list -->
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>
+    List item 3
+    <ul>
+      <li>Nested list item 1</li>
+      <li>Nested list item 2</li>
+    </ul>
+  </li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Unordered list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    List item 3
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+        <h2>Ordered</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for ordered list"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for ordered list"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Ordered list --&gt;
+&lt;ol&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;
+    List item 3
+    &lt;ol&gt;
+      &lt;li&gt;Nested list item 1&lt;/li&gt;
+      &lt;li&gt;Nested list item 2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Ordered list -->
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>
+    List item 3
+    <ol>
+      <li>Nested list item 1</li>
+      <li>Nested list item 2</li>
+    </ol>
+  </li>
+</ol>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Ordered list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    List item 3
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="pattern">
+    <h2 id="colors">Colors</h2>
+  </div>
+
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-5"
+
+      aria-label="View code for text colors"
+
+      aria-expanded="false"
+
+      data-target="#codebox-5"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for text colors"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Colors --&gt;
+&lt;p class=&quot;text-primary&quot;&gt;.text-primary&lt;/p&gt;
+&lt;p class=&quot;text-secondary&quot;&gt;.text-secondary&lt;/p&gt;
+&lt;p class=&quot;text-success&quot;&gt;.text-success&lt;/p&gt;
+&lt;p class=&quot;text-danger&quot;&gt;.text-danger&lt;/p&gt;
+&lt;p class=&quot;text-warning&quot;&gt;.text-warning&lt;/p&gt;
+&lt;p class=&quot;text-info&quot;&gt;.text-info&lt;/p&gt;
+&lt;p class=&quot;text-light bg-dark&quot;&gt;.text-light&lt;/p&gt;
+&lt;p class=&quot;text-dark&quot;&gt;.text-dark&lt;/p&gt;
+&lt;p class=&quot;text-body&quot;&gt;.text-body&lt;/p&gt;
+&lt;p class=&quot;text-muted&quot;&gt;.text-muted&lt;/p&gt;
+&lt;p class=&quot;text-white bg-dark&quot;&gt;.text-white&lt;/p&gt;
+
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Colors -->
+<p class="text-primary">.text-primary</p>
+<p class="text-secondary">.text-secondary</p>
+<p class="text-success">.text-success</p>
+<p class="text-danger">.text-danger</p>
+<p class="text-warning">.text-warning</p>
+<p class="text-info">.text-info</p>
+<p class="text-light bg-dark">.text-light</p>
+<p class="text-dark">.text-dark</p>
+<p class="text-body">.text-body</p>
+<p class="text-muted">.text-muted</p>
+<p class="text-white bg-dark">.text-white</p>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-5">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Colors --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-primary&quot;</span>&gt;</span>.text-primary<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-secondary&quot;</span>&gt;</span>.text-secondary<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-success&quot;</span>&gt;</span>.text-success<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-danger&quot;</span>&gt;</span>.text-danger<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-warning&quot;</span>&gt;</span>.text-warning<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-info&quot;</span>&gt;</span>.text-info<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-light bg-dark&quot;</span>&gt;</span>.text-light<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-dark&quot;</span>&gt;</span>.text-dark<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-body&quot;</span>&gt;</span>.text-body<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-muted&quot;</span>&gt;</span>.text-muted<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-white bg-dark&quot;</span>&gt;</span>.text-white<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p class="">Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme">Github repository</a>.</p>
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>

@@ -1,7 +1,7 @@
 {
   "name": "USPTO-DS",
-  "version": "0.0.2",
-  "description": "USPTO Design  System. Contains SASS, fonts, icons for building a USPTO styled application.",
+  "version": "2.0.4",
+  "description": "USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.",
   "directories": {
     "dist": "dist"
   },
@@ -9,12 +9,13 @@
     "build": "node ./scripts/build",
     "dev": "node ./scripts/dev",
     "serve": "node ./scripts/server",
+    "publish-site": "node ./scripts/publish-site",
     "pretty-scss": "prettier ./src/assets/scss/**/*.scss --write",
     "pretty-html": "prettier ./src/pages/**/*.html --write"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/USPTO/designpatterns.git"
+    "url": "https://github.com/USPTO/USPTO-DS-Theme.git"
   },
   "keywords": [
     "USPTO",
@@ -26,11 +27,13 @@
   ],
   "author": "USPTO",
   "contributors": [
+    "Scott Merker <scott.merker@uspto.gov>",
+    "Zoin Amir <zoin.amir@uspto.gov>",
     "Menka Kayan <menka.kayan@uspto.gov>"
   ],
   "private": true,
   "bugs": {
-    "url": "https://github.com/uspto/designpatterns/issues"
+    "url": "https://github.com/USPTO/USPTO-DS-Theme/issues"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" class="page-wizards">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Wizards
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img//us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img//icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
+          USPTO <span class="font-weight-light">Design System (Beta)</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
+     <img src="..//assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
+    </a>
+  </div>
+</div>
+
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="How to use USPTO Design System">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="patterns.html">Patterns
+    </option>
+    <option value="cards.html">Cards
+    </option>
+    <option value="dataFormats.html">Data formats
+    </option>
+    <option value="help.html">Help
+    </option>
+    <option value="search.html">Search
+    </option>
+    <option value="wizards.html">Wizards
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="patterns.html" data-parent="Patterns">Patterns</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="cards.html" data-parent="Cards">Cards</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#cards-overview">Cards overview</a>
+            </li>
+            <li>
+              <a href="#image-position-and-image-caps">Image position</a>
+            </li>
+            <li>
+              <a href="#background-variants">Background variants</a>
+            </li>
+            <li>
+              <a href="#headers-and-footers">Headers and footers</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="dataFormats.html" data-parent="Data formats">Data formats</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#date-and-time">Date and time</a>
+            </li>
+            <li>
+              <a href="#file-sizes">File sizes</a>
+            </li>
+            <li>
+              <a href="#deprecated">Deprecated</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="help.html" data-parent="Help">Help</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="search.html" data-parent="Search">Search</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="wizards.html" data-parent="Wizards">Wizards</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#steps">Steps</a>
+            </li>
+            <li>
+              <a href="#buttons">Buttons</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+<section>
+  <div class="pattern">
+    <h1>Wizards</h1>
+    <h3 id="purpose">Purpose</h3>
+    <p>Users need guidance filling out a complex form.</p>
+    <h3 id="description">Description</h3>
+    <p>
+      Splitting a complex form into multiple steps accomplishes a few things:
+    </p>
+    <ul>
+      <li>
+        Reduces cognitive overhead by organizing and presenting related input
+        fields
+      </li>
+      <li>Facilitates a potentially linear or evolving process</li>
+      <li>Can provide improved contextual or evolving help</li>
+    </ul>
+    <h3 id="basic-functionality">Basic functionality</h3>
+    <p>A wizard is usually composed of:</p>
+    <ul>
+      <li>A list of steps, either horizontally or vertically</li>
+      <li>A collection of form controls and help text organized into steps</li>
+      <li>Buttons for navigation</li>
+      <li>Validation</li>
+    </ul>
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h2 id="steps">Steps</h2>
+    <p>
+      In many cases it’s beneficial to show the list of steps a wizard will
+      have. Depending on the number of steps and space available<!-- , steps can be listed vertically or horizontally-->.
+    </p>
+    <h3 id="validation">Validation</h3>
+    <ul>
+      <li>
+        Indicate a step’s validity
+        <ul>
+          <li>
+            Show a check icon when valid (only if the user has left/submitted
+            the form with valid input)
+          </li>
+          <li>
+            Show a warning icon when invalid (only if the user has
+            left/submitted the form with errors)
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h3 id="navigation">Navigation</h3>
+    <ul>
+      <li>Allow for navigating to previous steps when possible</li>
+      <li>In some cases, skipping ahead is applicable</li>
+      <li>Navigation may evolve depending on previous steps</li>
+    </ul>
+  </div>
+  <div class="pattern">
+    <h2>Horizontal steps</h2>
+    <p>Use horizontal steps when there are 4 or less steps.</p>
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for horizontal steps"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for horizontal steps"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="
+&lt;!-- Horizontal steps--&gt;
+
+&lt;div
+  class=&quot;usa-step-indicator usa-step-indicator--counters-sm usa-step-indicator--center&quot;
+  aria-label=&quot;progress&quot;
+&gt;
+  &lt;ol class=&quot;usa-step-indicator__segments&quot;&gt;
+    &lt;li
+      class=&quot;usa-step-indicator__segment usa-step-indicator__segment--complete&quot;
+    &gt;
+      &lt;span class=&quot;usa-step-indicator__segment-label&quot;
+        &gt;Applicant information &lt;span class=&quot;usa-sr-only&quot;&gt;completed&lt;/span&gt;&lt;/span
+      &gt;
+    &lt;/li&gt;
+    &lt;li
+      class=&quot;usa-step-indicator__segment usa-step-indicator__segment--current&quot;
+      aria-current=&quot;true&quot;
+    &gt;
+      &lt;span class=&quot;usa-step-indicator__segment-label&quot;&gt;Mark information &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;usa-step-indicator__segment&quot;&gt;
+      &lt;span class=&quot;usa-step-indicator__segment-label&quot;
+        &gt;Goods and services &lt;span class=&quot;usa-sr-only&quot;&gt;not completed&lt;/span&gt;&lt;/span
+      &gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+&lt;h2 class=&quot;text-center mb-4&quot;&gt;
+  So far so good. Now, let&#39;s talk about your mark.
+&lt;/h2&gt;
+&lt;h4 class=&quot;mb-3&quot;&gt;First, what type of mark is this?&lt;/h4&gt;
+
+&lt;!-- learn more links --&gt;
+&lt;form&gt;
+  &lt;div class=&quot;form-check&quot;&gt;
+    &lt;input
+      class=&quot;form-check-input&quot;
+      type=&quot;radio&quot;
+      name=&quot;exampleRadios&quot;
+      id=&quot;exampleRadios1&quot;
+      value=&quot;option1&quot;
+      checked
+    /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios1&quot;&gt;
+      Standard characters
+    &lt;/label&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;
+      Use this option to register a mark that is comprised of word(s),
+      letter(s), number(s), or any combination thereof with no design element or
+      stylization. &lt;a href=&quot;#&quot;&gt;Learn more.&lt;/a&gt;
+    &lt;/small&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-check&quot;&gt;
+    &lt;input
+      class=&quot;form-check-input&quot;
+      type=&quot;radio&quot;
+      name=&quot;exampleRadios&quot;
+      id=&quot;exampleRadios2&quot;
+      value=&quot;option2&quot;
+    /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios2&quot;&gt; Special form &lt;/label&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;
+      Use this option if you wish to register a mark that is comprised of
+      stylized word(s), letter(s), and/or number(s), and/or a design element.
+      &lt;a href=&quot;#&quot;&gt;Learn more.&lt;/a&gt;
+    &lt;/small&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-check&quot;&gt;
+    &lt;input
+      class=&quot;form-check-input&quot;
+      type=&quot;radio&quot;
+      name=&quot;exampleRadios&quot;
+      id=&quot;exampleRadios3&quot;
+      value=&quot;option3&quot;
+    /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios3&quot;&gt; Sound mark &lt;/label&gt;
+    &lt;small class=&quot;form-text text-muted&quot;&gt;
+      A non-visual mark may be a sound, a scent, or otherwise non-visual mark.
+      &lt;a href=&quot;#&quot;&gt;Learn more.&lt;/a&gt;
+    &lt;/small&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;text-right mt-4&quot;&gt;
+    &lt;button class=&quot;btn btn-secondary&quot;&gt;Back&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Continue&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Horizontal steps-->
+
+<div
+  class="usa-step-indicator usa-step-indicator--counters-sm usa-step-indicator--center"
+  aria-label="progress"
+>
+  <ol class="usa-step-indicator__segments">
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+    >
+      <span class="usa-step-indicator__segment-label"
+        >Applicant information <span class="usa-sr-only">completed</span></span
+      >
+    </li>
+    <li
+      class="usa-step-indicator__segment usa-step-indicator__segment--current"
+      aria-current="true"
+    >
+      <span class="usa-step-indicator__segment-label">Mark information </span>
+    </li>
+    <li class="usa-step-indicator__segment">
+      <span class="usa-step-indicator__segment-label"
+        >Goods and services <span class="usa-sr-only">not completed</span></span
+      >
+    </li>
+  </ol>
+</div>
+<h2 class="text-center mb-4">
+  So far so good. Now, let's talk about your mark.
+</h2>
+<h4 class="mb-3">First, what type of mark is this?</h4>
+
+<!-- learn more links -->
+<form>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios1"
+      value="option1"
+      checked
+    />
+    <label class="form-check-label" for="exampleRadios1">
+      Standard characters
+    </label>
+    <small class="form-text text-muted">
+      Use this option to register a mark that is comprised of word(s),
+      letter(s), number(s), or any combination thereof with no design element or
+      stylization. <a href="#">Learn more.</a>
+    </small>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios2"
+      value="option2"
+    />
+    <label class="form-check-label" for="exampleRadios2"> Special form </label>
+    <small class="form-text text-muted">
+      Use this option if you wish to register a mark that is comprised of
+      stylized word(s), letter(s), and/or number(s), and/or a design element.
+      <a href="#">Learn more.</a>
+    </small>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="exampleRadios"
+      id="exampleRadios3"
+      value="option3"
+    />
+    <label class="form-check-label" for="exampleRadios3"> Sound mark </label>
+    <small class="form-text text-muted">
+      A non-visual mark may be a sound, a scent, or otherwise non-visual mark.
+      <a href="#">Learn more.</a>
+    </small>
+  </div>
+  <div class="text-right mt-4">
+    <button class="btn btn-secondary">Back</button>
+    <button class="btn btn-primary">Continue</button>
+  </div>
+</form>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Horizontal steps--&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-step-indicator usa-step-indicator--counters-sm usa-step-indicator--center&quot;</span>
+  <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;progress&quot;</span>
+&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-step-indicator__segments&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-step-indicator__segment usa-step-indicator__segment--complete&quot;</span>
+    &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-step-indicator__segment-label&quot;</span>
+        &gt;</span>Applicant information <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-sr-only&quot;</span>&gt;</span>completed<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>
+      &gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-step-indicator__segment usa-step-indicator__segment--current&quot;</span>
+      <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;true&quot;</span>
+    &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-step-indicator__segment-label&quot;</span>&gt;</span>Mark information <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-step-indicator__segment&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-step-indicator__segment-label&quot;</span>
+        &gt;</span>Goods and services <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usa-sr-only&quot;</span>&gt;</span>not completed<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>
+      &gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-center mb-4&quot;</span>&gt;</span>
+  So far so good. Now, let&#x27;s talk about your mark.
+<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>First, what type of mark is this?<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- learn more links --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span>
+      <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios&quot;</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios1&quot;</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option1&quot;</span>
+      <span class="hljs-attr">checked</span>
+    /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios1&quot;</span>&gt;</span>
+      Standard characters
+    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text text-muted&quot;</span>&gt;</span>
+      Use this option to register a mark that is comprised of word(s),
+      letter(s), number(s), or any combination thereof with no design element or
+      stylization. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Learn more.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span>
+      <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios&quot;</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios2&quot;</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option2&quot;</span>
+    /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios2&quot;</span>&gt;</span> Special form <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text text-muted&quot;</span>&gt;</span>
+      Use this option if you wish to register a mark that is comprised of
+      stylized word(s), letter(s), and/or number(s), and/or a design element.
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Learn more.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span>
+      <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios&quot;</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios3&quot;</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option3&quot;</span>
+    /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios3&quot;</span>&gt;</span> Sound mark <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text text-muted&quot;</span>&gt;</span>
+      A non-visual mark may be a sound, a scent, or otherwise non-visual mark.
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Learn more.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-right mt-4&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>Continue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+<section>
+  <div class="pattern">
+    <h2 id="buttons">Buttons</h2>
+    <p>
+      Buttons for a wizard can vary depending on the need. The primary actions
+      should be on the right, the secondary actions should be on the left.
+    </p>
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for wizards buttons"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for wizards buttons"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Button wizards --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-12 mb-3&quot;&gt;
+    &lt;button class=&quot;btn btn-primary float-right&quot;&gt;Continue&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col-12 mb-3 text-right&quot;&gt;
+    &lt;hr /&gt;
+    &lt;button class=&quot;btn btn-secondary&quot;&gt;Back&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Continue&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col-12 mb-3 text-right&quot;&gt;
+    &lt;hr /&gt;
+    &lt;button class=&quot;btn btn-secondary&quot;&gt;Back&lt;/button
+    &gt;&lt;button class=&quot;btn btn-secondary float-left&quot;&gt;Cancel&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Continue&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col-12 mb-3 text-right text-right&quot;&gt;
+    &lt;hr /&gt;
+    &lt;button class=&quot;btn btn-secondary&quot;&gt;Back&lt;/button
+    &gt;&lt;button class=&quot;btn btn-secondary float-left&quot;&gt;Cancel&lt;/button&gt;
+
+    &lt;button class=&quot;btn btn-secondary&quot;&gt;Save&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Continue&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;text-right mb-3 text-muted&quot;&gt;Last saved 02/07/21 10:45 AM&lt;/p&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Button wizards -->
+<div class="row">
+  <div class="col-12 mb-3">
+    <button class="btn btn-primary float-right">Continue</button>
+  </div>
+
+  <div class="col-12 mb-3 text-right">
+    <hr />
+    <button class="btn btn-secondary">Back</button>
+    <button class="btn btn-primary">Continue</button>
+  </div>
+
+  <div class="col-12 mb-3 text-right">
+    <hr />
+    <button class="btn btn-secondary">Back</button
+    ><button class="btn btn-secondary float-left">Cancel</button>
+    <button class="btn btn-primary">Continue</button>
+  </div>
+
+  <div class="col-12 mb-3 text-right text-right">
+    <hr />
+    <button class="btn btn-secondary">Back</button
+    ><button class="btn btn-secondary float-left">Cancel</button>
+
+    <button class="btn btn-secondary">Save</button>
+    <button class="btn btn-primary">Continue</button>
+  </div>
+</div>
+<p class="text-right mb-3 text-muted">Last saved 02/07/21 10:45 AM</p>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Button wizards --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-12 mb-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary float-right&quot;</span>&gt;</span>Continue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-12 mb-3 text-right&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>Continue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-12 mb-3 text-right&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>
+    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary float-left&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>Continue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-12 mb-3 text-right text-right&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>
+    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary float-left&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>Continue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-right mb-3 text-muted&quot;</span>&gt;</span>Last saved 02/07/21 10:45 AM<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p class="">Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme">Github repository</a>.</p>
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>
