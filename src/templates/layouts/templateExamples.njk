@@ -2,15 +2,17 @@
 <!--{% set navLinks = foundationNavLinks %}-->
 
 {% block main %}
-  <div class="d-sm-block d-md-none">
-    {% include 'templatesParts/_sidenav-dropdown.njk' %}
-  </div>
-  <div class="d-none d-sm-none d-md-block">
+<div class="row">
+  <div class="col-3"> {% include 'templatesParts/_sidenav.njk' %}</div>
+  <div class="col-9 border-left border-light "> {% block content%}{% endblock%}</div>
+</div>
+  
+  {# <div class="d-none d-sm-none d-md-block">
     {% include 'templatesParts/_sidenav.njk' %}
-  </div>
+  </div> #}
  
-  <main id="main-content">
+  {# <main id="">
     {% block content%}{% endblock%}
     </main>
-  </div>
+  </div> #}
 {% endblock %}

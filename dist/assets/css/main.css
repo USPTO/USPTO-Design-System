@@ -12493,49 +12493,49 @@ footer .uspto-footer-middle .btn-collapse span {
 main {
   width: 100%;
 }
-main > section {
+main > .pv-content {
   background: #fff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
   margin: 2rem 0;
 }
-main > section .pattern,
-main > section .preview {
+main > .pv-content .pattern,
+main > .pv-content .preview {
   padding: 2rem;
 }
-main > section .preview {
+main > .pv-content .preview {
   border-bottom: 1px solid #eee;
 }
-main > section .pattern {
+main > .pv-content .pattern {
   border-bottom: 1px solid #eee;
 }
-main > section .pv-xs .preview-size {
+main > .pv-content .pv-xs .preview-size {
   max-width: 15rem;
 }
-main > section .pv-sm .preview-size {
+main > .pv-content .pv-sm .preview-size {
   max-width: 30rem;
 }
-main > section .pv-md .preview-size {
+main > .pv-content .pv-md .preview-size {
   max-width: 50rem;
 }
-main > section .pv-lg .preview-size {
+main > .pv-content .pv-lg .preview-size {
   max-width: 75rem;
 }
-main > section .pv-only .modal {
+main > .pv-content .pv-only .modal {
   position: relative !important;
   display: block !important;
 }
-main > section .pv-only .dropdown-menu {
+main > .pv-content .pv-only .dropdown-menu {
   position: relative !important;
   display: block !important;
   float: none;
 }
-main > section .pv-only .toast {
+main > .pv-content .pv-only .toast {
   transition: opacity 0.15s linear;
   display: block;
   opacity: 1;
 }
-main > section .preview-size .popover {
+main > .pv-content .preview-size .popover {
   display: none;
 }
 

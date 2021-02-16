@@ -8,7 +8,7 @@
     {% include 'parts/_styles.njk' %}
     {% block head %}{% endblock %}
   </head>
-  <body class="parent-container">
+  <body class="">
     {% block body %}
       {% block skipnav %}{% include 'parts/skipnav.njk' %}
       {% endblock %}
@@ -24,7 +24,13 @@
         {% endblock %}
       </header>
 
-      <div class="main-container">
+      <div 
+      {% if page.containerType %}
+      class="{{page.containerType}}"
+      {% else %}
+      class="container"
+{% endif %}
+      >
         {% block main %}  
           main
         {% endblock %}

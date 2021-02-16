@@ -9,6 +9,7 @@ Object.assign(exports, {
         { href: '#system-notifications', text: 'System notifications' }
       ],
     },
+    { href: 'banner.html', text: 'Banner' },
     { href: 'breadcrumbs.html', text: 'Breadcrumbs' },
     {
       href: 'buttons.html', text: 'Buttons',
@@ -194,7 +195,8 @@ Object.assign(exports, {
   ],
   pageTemplateNavLinks: [
     { href: 'pageTemplate.html', text: 'Page templates' },
-    { href: 'documentationPage.html', text: 'Documentatin page' }
+    { href: 'documentationPage.html', text: 'Documentation page' },
+    { href: 'marketingPage.html', text: 'Marketing page' }
   ],
 
   resourcesNavLinks: [

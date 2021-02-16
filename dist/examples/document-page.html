@@ -22,7 +22,7 @@
 <!--Following are only for code preview -->
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
-  <body class="parent-container">
+  <body class="">
 <a class="skipnav" href="#main-content">
     Skip to main content
   </a>
@@ -128,19 +128,15 @@
   </nav>
 </div>      </header>
 
-      <div class="main-container">
-  <div class="d-sm-block d-md-none">
-<select class="form-control my-3" id="leftSideNav" >
-  
-    <option value="">Parent link</option>
-    <option value="">Parent link</option>
-    <option value="">Parent link</option>
-    <option value="">Parent link</option>
-  
-</select>  </div>
-  <div class="d-none d-sm-none d-md-block">
-<nav id="sidenav" aria-label="DPL Components">
- <ul class="sidenav">
+      <div 
+      class="container"
+      >
+<div class="row">
+  <div class="col-3"> 
+
+     
+      <nav id="sidenav" aria-label="Document page links">
+ <ul class="sidenav border-0">
       <li>
         <a href="#">Parent link</a>        
       </li>
@@ -169,10 +165,8 @@
       </li>
      
   </ul>
-</nav>  </div>
- 
-  <main id="main-content">
-<section class="p-4">
+</nav></div>
+  <div class="col-9 border-left border-light "> <section class="p-4">
   <h1>Page heading (h1)</h1>
 
   <p>
@@ -210,10 +204,63 @@
     with one to three levels and, as we mentioned, to display the sub-navigation
     of a given page.
   </p>
+
+  <!--Table-->
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Project name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Invoice</td>
+        <td>
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Templates</td>
+        <td>
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Payments</td>
+        <td>
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Account Management</td>
+        <td>
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
-    </main>
-  </div>
+</div>
+</div>
+  
+  
+ 
+  
       </div>
 
 

@@ -1,6 +1,6 @@
 {% extends 'layouts/components.njk' %} {% set page = { class: 'page-table',
 title: 'tables' } %} {% block content %}
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h1>Tables</h1>
     <h3 id="purpose">Purpose</h3>
@@ -40,7 +40,7 @@ title: 'tables' } %} {% block content %}
     </p>
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h2 id="styles">Styles</h2>
     <h3 id="standard">Standard</h3>
@@ -116,7 +116,7 @@ title: 'tables' } %} {% block content %}
     tablesColoredheaders }, '')}}
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h2 id="headers">Headers</h2>
     <h3 id="normal">Normal</h3>
@@ -150,7 +150,7 @@ title: 'tables' } %} {% block content %}
     headerHeaderless }, '')}}
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h2 id="sorting">Sorting</h2>
     <h3 id="single-sorting">Single sorting</h3>
@@ -186,7 +186,7 @@ title: 'tables' } %} {% block content %}
     sortingMulti }, '')}}
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h3 id="selection">Selection</h3>
     <p>
@@ -215,7 +215,7 @@ title: 'tables' } %} {% block content %}
     </p>
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h2 id="row-action-buttons">Row action buttons</h2>
     <p>
@@ -228,7 +228,7 @@ title: 'tables' } %} {% block content %}
     rowActioButtons }, 'Selection')}}
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h2 id="column-customization">Column customization</h2>
     <p>
@@ -242,7 +242,7 @@ title: 'tables' } %} {% block content %}
     columnCustomization }, '')}}
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h2 id="show-and-hide-columns-dialog">Show and hide columns dialog</h2>
     <p>This dialog provides the ability to show/hide columns as desired.</p>
@@ -252,7 +252,7 @@ title: 'tables' } %} {% block content %}
     dialog', code: showHideColumn }, '')}}
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h2 id="grouping">Grouping</h2>
     <p>
@@ -291,26 +291,30 @@ title: 'tables' } %} {% block content %}
             <strong>Event:</strong> Create <span class="text-muted">(2)</span>
           </td>
         </tr>
+
         <tr>
-          <td>
-            <span>Users</span>
-          </td>
-          <td>Create</td>
-          <td>
-            <span>10/21/14</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>Users</span>
-          </td>
-          <td>Create</td>
-          <td>
-            <span>10/19/14</span>
+          <td colspan="3">
+            <div class="ml-5">
+              <table class="table table-bordered m-0">
+                <tbody>
+                  <tr>
+                    <td>Users</td>
+                    <td>Create</td>
+                    <td>10/21/14</td>
+                  </tr>
+
+                  <tr>
+                    <td>Users</td>
+                    <td>Create</td>
+                    <td>10/21/14</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </td>
         </tr>
         <tr class="table-group">
-          <td class="" colspan="4">
+          <td class="" colspan="3">
             <i class="align-middle material-icons">keyboard_arrow_right</i>
             <strong>Event:</strong> Register
             <span class="text-muted">(2)</span>
@@ -320,7 +324,7 @@ title: 'tables' } %} {% block content %}
     </table>
   </div>
 </section>
-<section>
+<section class="pv-content">
   <div class="pattern">
     <h2 id="expandable-rows">Expandable rows</h2>
     <p>Expandable rows provide additional information about a row on demand.</p>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-sitealert">
+<html lang="en" class="page-banner">
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design  System. Contains SASS, fonts, icons for building a USPTO styled application.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Site alert
+ | Banner
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -491,21 +491,25 @@
   <main id="main-content">
 <section class="pv-content">
   <div class="pattern">
-    <h1>Site alert</h1>
+    <h1>Banner</h1>
 
-    <p>A site alert communicates urgent sitewide information.</p>
+    <p>
+      The banner identifies official websites of government organizations in the
+      United States. It also helps visitors understand how to tell that a
+      website is both official and secure.
+    </p>
   </div>
   <div class="preview">
     
   <div class="">
     <div class="d-flex mb-1">
-        <h2>Standard emergency site alert</h2>
+        <h2>.gov domains</h2>
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
       aria-controls="codebox-1"
 
-      aria-label="View code for standard site alert"
+      aria-label="View code for default banner"
 
       aria-expanded="false"
 
@@ -515,23 +519,110 @@
 
       type="button"
 
-      title="View code for standard site alert"
+      title="View code for default banner"
 
     >
     <span class="material-icons">unfold_more</span> View code </button>
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!-- Standard emergency site alert --&gt;
-&lt;div class=&quot;alert alert-site&quot; aria-label=&quot;Site alert&quot;&gt;
-  &lt;div class=&quot;alert-icon&quot;&gt;
-    &lt;i class=&quot;material-icons&quot;&gt;error&lt;/i&gt;
+      data-clipboard-text="&lt;!--Banner--&gt;
+&lt;section class=&quot;banner banner-dark&quot; aria-label=&quot;Official government website&quot;&gt;
+  &lt;div class=&quot;accordion&quot;&gt;
+    &lt;div class=&quot;d-md-none&quot;&gt;
+      &lt;button
+        class=&quot;btn accordion-btn&quot;
+        type=&quot;button&quot;
+        data-toggle=&quot;collapse&quot;
+        data-target=&quot;#gov-banner&quot;
+        aria-expanded=&quot;false&quot;
+        aria-controls=&quot;gov-banner&quot;
+      &gt;
+        &lt;div class=&quot;banner-inner&quot;&gt;
+          &lt;img
+            class=&quot;banner-header-flag mr-2&quot;
+            src=&quot;../assets/img//us_flag_small.png&quot;
+            alt=&quot;U.S. flag&quot;
+          /&gt;
+          &lt;div class=&quot;flex-fill&quot;&gt;
+            &lt;p class=&quot;banner-header-text&quot;&gt;
+              An official website of the United States government
+              &lt;span class=&quot;expand-btn&quot;
+                &gt;Here’s how you know
+                &lt;i class=&quot;material-icons&quot;&gt;keyboard_arrow_down&lt;/i&gt;&lt;/span
+              &gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;span class=&quot;close-btn&quot;&gt;
+            &lt;i class=&quot;material-icons&quot;&gt;close&lt;/i&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;d-none d-md-block&quot;&gt;
+      &lt;div class=&quot;banner-inner align-itens-center&quot;&gt;
+        &lt;img
+          class=&quot;banner-header-flag mr-2&quot;
+          src=&quot;../assets/img//us_flag_small.png&quot;
+          alt=&quot;U.S. flag&quot;
+        /&gt;
+
+        &lt;p class=&quot;banner-header-text&quot;&gt;
+          An official website of the United States government
+        &lt;/p&gt;
+
+        &lt;button
+          class=&quot;btn banner-btn ml-2&quot;
+          type=&quot;button&quot;
+          data-toggle=&quot;collapse&quot;
+          data-target=&quot;#gov-banner&quot;
+          aria-expanded=&quot;false&quot;
+          aria-controls=&quot;gov-banner&quot;
+        &gt;
+          Here’s how you know
+          &lt;i class=&quot;material-icons&quot;&gt;keyboard_arrow_down&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;banner-content collapse&quot; id=&quot;gov-banner&quot;&gt;
+      &lt;div class=&quot;row no-gutters-sm&quot;&gt;
+        &lt;div class=&quot;col-md-6 media&quot;&gt;
+          &lt;img
+            class=&quot;banner-icon align-self-start&quot;
+            src=&quot;../assets/img//icon-dot-gov.svg&quot;
+            role=&quot;img&quot;
+            alt=&quot;Dot gov&quot;
+          /&gt;
+          &lt;div class=&quot;media-body&quot;&gt;
+            &lt;p&gt;
+              &lt;strong&gt;The .gov means it’s official.&lt;/strong&gt;
+              &lt;br /&gt;
+              Federal government websites often end in .gov or .mil. Before
+              sharing sensitive information, make sure you’re on a federal
+              government site.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-6 media&quot;&gt;
+          &lt;img
+            class=&quot;banner-icon align-self-start&quot;
+            src=&quot;../assets/img//icon-https.svg&quot;
+            role=&quot;img&quot;
+            alt=&quot;Https&quot;
+          /&gt;
+          &lt;div class=&quot;media-body&quot;&gt;
+            &lt;p&gt;
+              &lt;strong&gt;The site is secure.&lt;/strong&gt;
+              &lt;br /&gt;
+              The &lt;strong&gt;https://&lt;/strong&gt; ensures that you are connecting to
+              the official website and that any information you provide is
+              encrypted and transmitted securely.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div&gt;
-    &lt;h4 class=&quot;alert-heading&quot;&gt;Emergency alert message&lt;/h4&gt;
-    Additional context and followup information including
-    &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;.
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 "
 
       type="button"
@@ -543,363 +634,211 @@
       </div>
     </div>
     <div class="preview-size">
-      <!-- Standard emergency site alert -->
-<div class="alert alert-site" aria-label="Site alert">
-  <div class="alert-icon">
-    <i class="material-icons">error</i>
+      <!--Banner-->
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button
+        class="btn accordion-btn"
+        type="button"
+        data-toggle="collapse"
+        data-target="#gov-banner"
+        aria-expanded="false"
+        aria-controls="gov-banner"
+      >
+        <div class="banner-inner">
+          <img
+            class="banner-header-flag mr-2"
+            src="../assets/img//us_flag_small.png"
+            alt="U.S. flag"
+          />
+          <div class="flex-fill">
+            <p class="banner-header-text">
+              An official website of the United States government
+              <span class="expand-btn"
+                >Here’s how you know
+                <i class="material-icons">keyboard_arrow_down</i></span
+              >
+            </p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+        <img
+          class="banner-header-flag mr-2"
+          src="../assets/img//us_flag_small.png"
+          alt="U.S. flag"
+        />
+
+        <p class="banner-header-text">
+          An official website of the United States government
+        </p>
+
+        <button
+          class="btn banner-btn ml-2"
+          type="button"
+          data-toggle="collapse"
+          data-target="#gov-banner"
+          aria-expanded="false"
+          aria-controls="gov-banner"
+        >
+          Here’s how you know
+          <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img
+            class="banner-icon align-self-start"
+            src="../assets/img//icon-dot-gov.svg"
+            role="img"
+            alt="Dot gov"
+          />
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br />
+              Federal government websites often end in .gov or .mil. Before
+              sharing sensitive information, make sure you’re on a federal
+              government site.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 media">
+          <img
+            class="banner-icon align-self-start"
+            src="../assets/img//icon-https.svg"
+            role="img"
+            alt="Https"
+          />
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br />
+              The <strong>https://</strong> ensures that you are connecting to
+              the official website and that any information you provide is
+              encrypted and transmitted securely.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div>
-    <h4 class="alert-heading">Emergency alert message</h4>
-    Additional context and followup information including
-    <a href="#" class="alert-link">an example link</a>.
-  </div>
-</div>
+</section>
     </div>
     <div class="collapse line-numbers pt-2" id="codebox-1">
       Example HTML usage:
         <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Standard emergency site alert --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-icon&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Banner--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner banner-dark&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Official government website&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-md-none&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn accordion-btn&quot;</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+        <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+        <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#gov-banner&quot;</span>
+        <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+        <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;gov-banner&quot;</span>
+      &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-inner&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-header-flag mr-2&quot;</span>
+            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img//us_flag_small.png&quot;</span>
+            <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;U.S. flag&quot;</span>
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex-fill&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-header-text&quot;</span>&gt;</span>
+              An official website of the United States government
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;expand-btn&quot;</span>
+                &gt;</span>Here’s how you know
+                <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>keyboard_arrow_down<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>
+              &gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close-btn&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>close<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-md-block&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-inner align-itens-center&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-header-flag mr-2&quot;</span>
+          <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img//us_flag_small.png&quot;</span>
+          <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;U.S. flag&quot;</span>
+        /&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-header-text&quot;</span>&gt;</span>
+          An official website of the United States government
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn banner-btn ml-2&quot;</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+          <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+          <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#gov-banner&quot;</span>
+          <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+          <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;gov-banner&quot;</span>
+        &gt;</span>
+          Here’s how you know
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>keyboard_arrow_down<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-content collapse&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;gov-banner&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row no-gutters-sm&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 media&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-icon align-self-start&quot;</span>
+            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img//icon-dot-gov.svg&quot;</span>
+            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;img&quot;</span>
+            <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Dot gov&quot;</span>
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;media-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>The .gov means it’s official.<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+              Federal government websites often end in .gov or .mil. Before
+              sharing sensitive information, make sure you’re on a federal
+              government site.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 media&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner-icon align-self-start&quot;</span>
+            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img//icon-https.svg&quot;</span>
+            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;img&quot;</span>
+            <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Https&quot;</span>
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;media-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>The site is secure.<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+              The <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>https://<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> ensures that you are connecting to
+              the official website and that any information you provide is
+              encrypted and transmitted securely.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-heading&quot;</span>&gt;</span>Emergency alert message<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-    Additional context and followup information including
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span>&gt;</span>an example link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-  </div>
-
-  </div>
-  <div class="preview">
-    
-  <div class="">
-    <div class="d-flex mb-1">
-        <h2>Site alert with no header</h2>
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
-
-      aria-controls="codebox-2"
-
-      aria-label="View code for site alert without header"
-
-      aria-expanded="false"
-
-      data-target="#codebox-2"
-
-      data-toggle="collapse"
-
-      type="button"
-
-      title="View code for site alert without header"
-
-    >
-    <span class="material-icons">unfold_more</span> View code </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
-
-      data-clipboard-text="&lt;!-- Site alert with no header --&gt;
-&lt;div class=&quot;alert alert-site&quot; aria-label=&quot;Site alert&quot;&gt;
-  &lt;div class=&quot;alert-icon&quot;&gt;
-    &lt;i class=&quot;material-icons&quot;&gt;error&lt;/i&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Additional context and followup information including
-    &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;.
-  &lt;/div&gt;
-&lt;/div&gt;
-"
-
-      type="button"
-
-      title="Copy code"
-
-    >
-    <span class="material-icons">content_copy</span> Copy code </button>
-      </div>
-    </div>
-    <div class="preview-size">
-      <!-- Site alert with no header -->
-<div class="alert alert-site" aria-label="Site alert">
-  <div class="alert-icon">
-    <i class="material-icons">error</i>
-  </div>
-  <div>
-    Additional context and followup information including
-    <a href="#" class="alert-link">an example link</a>.
-  </div>
-</div>
-    </div>
-    <div class="collapse line-numbers pt-2" id="codebox-2">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Site alert with no header --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-icon&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    Additional context and followup information including
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span>&gt;</span>an example link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-  </div>
-
-  </div>
-
-  <div class="preview">
-    
-  <div class="">
-    <div class="d-flex mb-1">
-        <h2>Site alert with list </h2>
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
-
-      aria-controls="codebox-3"
-
-      aria-label="View code for site alert with list"
-
-      aria-expanded="false"
-
-      data-target="#codebox-3"
-
-      data-toggle="collapse"
-
-      type="button"
-
-      title="View code for site alert with list"
-
-    >
-    <span class="material-icons">unfold_more</span> View code </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
-
-      data-clipboard-text="&lt;!-- Site alert with list --&gt;
-&lt;div class=&quot;alert alert-site&quot; aria-label=&quot;Site alert&quot;&gt;
-  &lt;div class=&quot;alert-icon&quot;&gt;
-    &lt;i class=&quot;material-icons&quot;&gt;error&lt;/i&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;h4 class=&quot;alert-heading&quot;&gt;Emergency alert message&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        The primary emergency message and
-        &lt;a class=&quot;alert-link&quot; href=&quot;javascript:void(0);&quot;&gt;a link&lt;/a&gt; for
-        supporting context.
-      &lt;/li&gt;
-      &lt;li&gt;
-        Another message,
-        &lt;a class=&quot;alert-link&quot; href=&quot;javascript:void(0);&quot;&gt;and another link&lt;/a&gt;.
-      &lt;/li&gt;
-      &lt;li&gt;A final emergency message.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-"
-
-      type="button"
-
-      title="Copy code"
-
-    >
-    <span class="material-icons">content_copy</span> Copy code </button>
-      </div>
-    </div>
-    <div class="preview-size">
-      <!-- Site alert with list -->
-<div class="alert alert-site" aria-label="Site alert">
-  <div class="alert-icon">
-    <i class="material-icons">error</i>
-  </div>
-  <div>
-    <h4 class="alert-heading">Emergency alert message</h4>
-    <ul>
-      <li>
-        The primary emergency message and
-        <a class="alert-link" href="javascript:void(0);">a link</a> for
-        supporting context.
-      </li>
-      <li>
-        Another message,
-        <a class="alert-link" href="javascript:void(0);">and another link</a>.
-      </li>
-      <li>A final emergency message.</li>
-    </ul>
-  </div>
-</div>
-    </div>
-    <div class="collapse line-numbers pt-2" id="codebox-3">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Site alert with list --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-icon&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-heading&quot;</span>&gt;</span>Emergency alert message<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-        The primary emergency message and
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>a link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> for
-        supporting context.
-      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-        Another message,
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>and another link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
-      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A final emergency message.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-  </div>
-
-  </div>
-  <div class="preview">
-    
-  <div class="">
-    <div class="d-flex mb-1">
-        <h2>Slim site alert</h2>
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
-
-      aria-controls="codebox-4"
-
-      aria-label="View code for slim site alert"
-
-      aria-expanded="false"
-
-      data-target="#codebox-4"
-
-      data-toggle="collapse"
-
-      type="button"
-
-      title="View code for slim site alert"
-
-    >
-    <span class="material-icons">unfold_more</span> View code </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
-
-      data-clipboard-text="&lt;!-- Slim site alert --&gt;
-&lt;div class=&quot;alert alert-site alert-sm&quot; aria-label=&quot;Site alert&quot;&gt;
-  &lt;div class=&quot;alert-icon&quot;&gt;
-    &lt;i class=&quot;material-icons&quot;&gt;error&lt;/i&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;strong&gt;Short alert message.&lt;/strong&gt; Additional context and followup
-    information including &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;.
-  &lt;/div&gt;
-&lt;/div&gt;
-"
-
-      type="button"
-
-      title="Copy code"
-
-    >
-    <span class="material-icons">content_copy</span> Copy code </button>
-      </div>
-    </div>
-    <div class="preview-size">
-      <!-- Slim site alert -->
-<div class="alert alert-site alert-sm" aria-label="Site alert">
-  <div class="alert-icon">
-    <i class="material-icons">error</i>
-  </div>
-  <div>
-    <strong>Short alert message.</strong> Additional context and followup
-    information including <a href="#" class="alert-link">an example link</a>.
-  </div>
-</div>
-    </div>
-    <div class="collapse line-numbers pt-2" id="codebox-4">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Slim site alert --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site alert-sm&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-icon&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Short alert message.<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Additional context and followup
-    information including <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span>&gt;</span>an example link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
-    </div>
-  </div>
-
-  </div>
-  <div class="preview">
-    
-  <div class="">
-    <div class="d-flex mb-1">
-        <h2>Site alert with no icon</h2>
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
-
-      aria-controls="codebox-5"
-
-      aria-label="View code for site alert without icon"
-
-      aria-expanded="false"
-
-      data-target="#codebox-5"
-
-      data-toggle="collapse"
-
-      type="button"
-
-      title="View code for site alert without icon"
-
-    >
-    <span class="material-icons">unfold_more</span> View code </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
-
-      data-clipboard-text="&lt;!-- Site alert with no icon --&gt;
-&lt;div class=&quot;alert alert-site&quot; aria-label=&quot;Site alert&quot;&gt;
-  &lt;div&gt;
-    Additional context and followup information including
-    &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;an example link&lt;/a&gt;.
-  &lt;/div&gt;
-&lt;/div&gt;
-"
-
-      type="button"
-
-      title="Copy code"
-
-    >
-    <span class="material-icons">content_copy</span> Copy code </button>
-      </div>
-    </div>
-    <div class="preview-size">
-      <!-- Site alert with no icon -->
-<div class="alert alert-site" aria-label="Site alert">
-  <div>
-    Additional context and followup information including
-    <a href="#" class="alert-link">an example link</a>.
-  </div>
-</div>
-    </div>
-    <div class="collapse line-numbers pt-2" id="codebox-5">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Site alert with no icon --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-site&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Site alert&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    Additional context and followup information including
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-link&quot;</span>&gt;</span>an example link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
 
   </div>
 </section>
-
     </main>
   </div>
       </div>
