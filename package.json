@@ -1,6 +1,6 @@
 {
   "name": "USPTO-DS",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.",
   "directories": {
     "dist": "dist"
