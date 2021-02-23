@@ -57,3 +57,7 @@ $('body').on('click', '#expand-all', function (e) {
   $('#myAccordion .collapse').collapse('show');
 });
 
+$('body').on('click', '#settingExample1 .dropdown-item', function (e) {  
+  $('#settingExample1 .dropdown-item').removeClass('active');  
+});
+

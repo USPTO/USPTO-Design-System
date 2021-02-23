@@ -256,15 +256,14 @@ Object.assign(exports, {
     */
     { href: 'help.html', text: 'Help' },
     { href: 'search.html', text: 'Search' },
-    /*
+    
     {
       href: 'settings.html', text: 'Settings',
       "children": [
-        { href: '#navigation', text: 'Navigation' },
-        { href: '#saving-changes', text: 'Saving changes' }
+        { href: '#navigation', text: 'Navigation' }
       ],
     },
-    { href: 'tours.html', text: 'Tours' },*/
+   /* { href: 'tours.html', text: 'Tours' },*/
     {
       href: 'wizards.html',
       text: 'Wizards',
