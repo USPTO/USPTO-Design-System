@@ -71,6 +71,15 @@ title: 'Tabs' } %} {% block content %}
   </div>
 </section>
 
+<section class="pv-content">
+  <div class="pattern"><h3 id="light-tabs">Light tabs</h3>
+  <p>Use when the tabs need less emphasis in relation to other navigational elements.</p></div>
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for light tabs', code:
+    tabsLight }, "")}}
+  </div>
+</section>
+
 {% endblock %} {% set tabsNormal %}
 <!--Normal tabs-->
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -299,6 +308,76 @@ title: 'Tabs' } %} {% block content %}
 {% endset%} {% set tabsJustified %}
 <!--Justified  tabs-->
 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link active"
+      id="home-tab"
+      data-toggle="tab"
+      href="#home1"
+      role="tab"
+      aria-controls="home"
+      aria-selected="true"
+      >Home</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="profile-tab"
+      data-toggle="tab"
+      href="#profile1"
+      role="tab"
+      aria-controls="profile"
+      aria-selected="false"
+      >Profile</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="contact-tab"
+      data-toggle="tab"
+      href="#contact1"
+      role="tab"
+      aria-controls="contact"
+      aria-selected="false"
+      >Contact</a
+    >
+  </li>
+</ul>
+<div class="border border-light border-top-0 p-2 tab-content" id="myTabContent">
+  <div
+    class="tab-pane fade show active"
+    id="home1"
+    role="tabpanel"
+    aria-labelledby="home-tab"
+  >
+    Nulla est ullamco ut irure incididunt nulla
+  </div>
+  <div
+    class="tab-pane fade"
+    id="profile1"
+    role="tabpanel"
+    aria-labelledby="profile-tab"
+  >
+    Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum
+  </div>
+  <div
+    class="tab-pane fade"
+    id="contact1"
+    role="tabpanel"
+    aria-labelledby="contact-tab"
+  >
+    Commodo esse dolore fugiat sint velit ullamco magna consequat voluptate
+    minim amet aliquip ipsum aute laboris nisi.
+  </div>
+</div>
+
+{% endset%}
+
+{% set tabsLight %}
+<!--Light  tabs-->
+<ul class="nav nav-tabs nav-fill nav-tabs-light" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a
       class="nav-link active"
