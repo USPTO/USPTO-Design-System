@@ -1,6 +1,6 @@
 {
   "name": "USPTO-DS",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.",
   "directories": {
     "dist": "dist"
@@ -43,7 +43,7 @@
     "nunjucks-extension-code-highlight": "*",
     "prismjs": "^1.23.0",
     "sass": "^1.32.7",
-    "usptostrap": "^2.0.5"
+    "usptostrap": "^2.0.6"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
