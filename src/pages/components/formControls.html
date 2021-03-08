@@ -268,6 +268,45 @@
     }, "")}}
   </div>
 </section>
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="time-picker" class="d-inline">Time picker</h2> <span class="badge badge-subtle-info">In progress</span>
+    <p>A time picker helps users select a specific time.</p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for time picker', code:
+    timePicker }, "")}}
+  </div>
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="slider" class="d-inline">Range slider</h2>  <span class="badge badge-subtle-info">In progress</span>
+    <p>
+      A range slider allows users to choose an approximate number from a range.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for range slider', code:
+    rangeSlider }, "")}}
+  </div>
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="rich-text-editor" class="d-inline">Rich text editor</h2>  <span class="badge badge-subtle-info">In progress</span>
+    <p>
+      The rich text editor allows for text input with additional formatting and
+      inline images/links. Only include the functionality/buttons/tools
+      necessary for the specific purpose.
+    </p>
+  </div>
+  <div class="preview pv-md">
+  {{ macros.viewCode({ ariaLabel: 'View code for rich text editor', code:
+    richTextEditor }, "")}}
+    
+  </div>
+</section>
 
 {% endblock %} {% set inputBox %}
 <!--Text box-->
@@ -696,4 +735,144 @@
     </div>
   </div>
 </fieldset>
+{% endset%} {% set timePicker %}
+<form class="usa-form row">
+  <div class="col-sm-3">
+    <label class="usa-label" for="fruit">Appointment time</label>
+    <span class="usa-hint" id="dobHint">hh:mm</span>
+    <div class="usa-combo-box">
+      <select class="usa-select" name="time" id="time" required>
+        <option value="00:00">12:00am</option>
+        <option value="00:30">12:30am</option>
+        <option value="01:00">1:00am</option>
+        <option value="01:30">1:30am</option>
+        <option value="02:00">2:00am</option>
+        <option value="02:30">2:30am</option>
+        <option value="03:00">3:00am</option>
+        <option value="03:30">3:30am</option>
+        <option value="04:00">4:00am</option>
+        <option value="04:30">4:30am</option>
+        <option value="05:00">5:00am</option>
+        <option value="05:30">5:30am</option>
+        <option value="06:00">6:00am</option>
+        <option value="06:30">6:30am</option>
+        <option value="07:00">7:00am</option>
+        <option value="07:30">7:30am</option>
+        <option value="08:00">8:00am</option>
+        <option value="08:30">8:30am</option>
+        <option value="09:00">9:00am</option>
+        <option value="09:30">9:30am</option>
+        <option value="10:00">10:00am</option>
+        <option value="10:30">10:30am</option>
+        <option value="11:00">11:00am</option>
+        <option value="11:30">11:30am</option>
+        <option value="12:00">12:00pm</option>
+        <option value="12:30">12:30pm</option>
+        <option value="13:00">1:00pm</option>
+        <option value="13:30">1:30pm</option>
+        <option value="14:00">2:00pm</option>
+        <option value="14:30">2:30pm</option>
+        <option value="15:00">3:00pm</option>
+        <option value="15:30">3:30pm</option>
+        <option value="16:00">4:00pm</option>
+        <option value="16:30">4:30pm</option>
+        <option value="17:00">5:00pm</option>
+        <option value="17:30">5:30pm</option>
+        <option value="18:00">6:00pm</option>
+        <option value="18:30">6:30pm</option>
+        <option value="19:00">7:00pm</option>
+        <option value="19:30">7:30pm</option>
+        <option value="20:00">8:00pm</option>
+        <option value="20:30">8:30pm</option>
+        <option value="21:00">9:00pm</option>
+        <option value="21:30">9:30pm</option>
+        <option value="22:00">10:00pm</option>
+        <option value="22:30">10:30pm</option>
+        <option value="23:00">11:00pm</option>
+        <option value="23:30">11:30pm</option>
+      </select>
+    </div>
+  </div>
+</form>
+{% endset%} {% set rangeSlider %}
+<!-- Range slider -->
+<div class="form-group">
+  <label for="customRange1">Range slider</label>
+  <input type="range" class="custom-range" id="customRange1" />
+</div>
 {% endset%}
+
+{% set richTextEditor %}
+<!-- Rich text editor -->
+ <div class="border border-secondary">
+      <div class="bg-light border-bottom border-secondary margin-0">     
+      <div class="btn-group border-right border-secondary" style="height:46px;">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Arial 
+            </button>
+            <div class="dropdown-menu" role="menu">
+            <a class="dropdown-item" href="#">Arial</a>
+            <a class="dropdown-item" href="#">Georgia</a>
+            <a class="dropdown-item" href="#">Courier</a>
+          </div> 
+        </div>
+       
+        <div class="btn-group border-right border-secondary">
+            <button
+              type="button"
+              data-toggle="tooltip"
+              data-placement="top"
+              title=""
+              class="btn  btn-icon-only"
+              data-original-title="Bold"
+            >
+              <i class="material-icons">format_bold</i
+              ><span class="sr-only">Bold</span>
+            </button>
+            <button
+              type="button"
+              data-toggle="tooltip"
+              data-placement="top"
+              title=""
+              class="btn btn-hover active btn-icon-only"
+              data-original-title="Italicize"
+            >
+              <i class="material-icons">format_italic</i><span class="sr-only">Italicize</span>
+            </button>
+            <button
+              type="button"
+              data-toggle="tooltip"
+              data-placement="top"
+              title=""
+              class="btn btn-hover btn-icon-only"
+              data-original-title="Underline"
+            >
+              <i class="material-icons">format_underline</i
+              ><span class="sr-only">Underline</span>
+            </button>
+          </div>
+          
+            <div class="btn-group  border-right border-secondary">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Ordered list"><i class="material-icons">format_list_numbered</i><span class="sr-only">Ordered list</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Unordered list"><i class="material-icons">format_list_bulleted</i><span class="sr-only">Unordered list</span></button>
+        </div>
+        <div class="btn-group  border-right border-secondary">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Indent"><i class="material-icons">format_indent_increase</i><span class="sr-only">Indent</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Outdent"><i class="material-icons">format_indent_decrease</i><span class="sr-only">Outdent</span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Insert link"><i class="material-icons">link</i><span class="sr-only">Insert link</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Insert image"><i class="material-icons">insert_photo</i><span class="sr-only">Insert image</span></button>
+        </div>
+      </div>
+    
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        class="form-control border-0"
+        placeholder="Enter note here..."
+      ></textarea>
+    </div>
+{% endset %}

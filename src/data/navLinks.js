@@ -42,6 +42,7 @@ Object.assign(exports, {
         { href: '#live', text: 'Live' }
       ],
     },
+    { href: 'siteAlert.html', text: 'Emergency site alert' },
     {
       href: 'formControls.html',
       text: 'Form controls',
@@ -56,7 +57,7 @@ Object.assign(exports, {
         { href: '#date-picker', text: 'Date picker' },
         { href: '#date-input', text: 'Date input' },
         { href: '#time-picker', text: 'Time picker' },
-        { href: '#slider', text: 'Slider' },
+        { href: '#slider', text: 'Range slider' },
         { href: '#rich-text-editor', text: 'Rich text editor' }
       ],
     },
@@ -114,7 +115,7 @@ Object.assign(exports, {
       ],
     },
    
-    { href: 'siteAlert.html', text: 'Site alert' },
+   
     { href: 'stepIndicators.html', text: 'Step indicators' },
     { href: 'summaryBox.html', text: 'Summary box' },
     {
@@ -138,7 +139,8 @@ Object.assign(exports, {
         { href: '#normal-tabs', text: 'Normal tabs' },
         { href: '#pill-tabs', text: 'Pill tabs' },
         { href: '#vertical-tabs', text: 'Vertical tabs' },
-        { href: '#justified-tabs', text: 'Justified tabs' }
+        { href: '#justified-tabs', text: 'Justified tabs' },
+        { href: '#light-tabs', text: 'Light tabs' }
       ],
     },
     //{ href: 'tags.html', text: 'Tags' },
@@ -256,15 +258,14 @@ Object.assign(exports, {
     */
     { href: 'help.html', text: 'Help' },
     { href: 'search.html', text: 'Search' },
-    /*
+    
     {
       href: 'settings.html', text: 'Settings',
       "children": [
-        { href: '#navigation', text: 'Navigation' },
-        { href: '#saving-changes', text: 'Saving changes' }
+        { href: '#navigation', text: 'Navigation' }
       ],
     },
-    { href: 'tours.html', text: 'Tours' },*/
+   /* { href: 'tours.html', text: 'Tours' },*/
     {
       href: 'wizards.html',
       text: 'Wizards',
