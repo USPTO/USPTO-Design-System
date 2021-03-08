@@ -72,11 +72,16 @@ title: 'Tabs' } %} {% block content %}
 </section>
 
 <section class="pv-content">
-  <div class="pattern"><h3 id="light-tabs">Light tabs</h3>
-  <p>Use when the tabs need less emphasis in relation to other navigational elements.</p></div>
+  <div class="pattern">
+    <h3 id="light-tabs">Light tabs</h3>
+    <p>
+      Use when the tabs need less emphasis in relation to other navigational
+      elements.
+    </p>
+  </div>
   <div class="preview pv-md">
-    {{ macros.viewCode({ ariaLabel: 'View code for light tabs', code:
-    tabsLight }, "")}}
+    {{ macros.viewCode({ ariaLabel: 'View code for light tabs', code: tabsLight
+    }, "")}}
   </div>
 </section>
 
@@ -373,9 +378,7 @@ title: 'Tabs' } %} {% block content %}
   </div>
 </div>
 
-{% endset%}
-
-{% set tabsLight %}
+{% endset%} {% set tabsLight %}
 <!--Light  tabs-->
 <ul class="nav nav-tabs nav-fill nav-tabs-light" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
