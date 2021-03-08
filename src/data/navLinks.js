@@ -55,12 +55,10 @@ Object.assign(exports, {
         { href: '#select', text: 'Select' },
         { href: '#multi-select', text: 'Multi-select' },
         { href: '#date-picker', text: 'Date picker' },
-        { href: '#date-input', text: 'Date input' }
-        
-        /*,
+        { href: '#date-input', text: 'Date input' },
         { href: '#time-picker', text: 'Time picker' },
-        { href: '#slider', text: 'Slider' },
-        { href: '#rich-text-editor', text: 'Rich text editor' } */
+        { href: '#slider', text: 'Range slider' },
+        { href: '#rich-text-editor', text: 'Rich text editor' }
       ],
     },
     {
