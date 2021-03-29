@@ -14,11 +14,15 @@ $(function () {
   $('ul.sidenav a[href="' + file + '"]').attr('aria-current', 'page')
 
   //add active class to top nav based on the side nav 
+  if ($("ul.sidenav")[0]){
   var parentFolder = $('ul.sidenav a').attr('data-parent');
   var locationFolder = location.pathname.split("/")[1];
   if (parentFolder.toLowerCase() === locationFolder) {
     $('ul.navbar-nav li a[title=' + parentFolder + ']').parent().addClass('active');
   }
+}
+
+
 
   //copy to clipboard  
   var clipboard = new ClipboardJS('.clipboard');
@@ -39,25 +43,27 @@ $(function () {
     console.log(location.href)
     console.log(file)
   })
+  function $controls(el) {
+    return $('#' + el.getAttribute('aria-controls'))
+  };
+  
+  /*
+   * Add collapsible panel functionality
+   */
+  $('body').on('click', '#collapse-all', function (e) {
+    e.preventDefault(e);
+    $('#myAccordion .collapse').collapse('hide');
+  });
+  $('body').on('click', '#expand-all', function (e) {
+    e.preventDefault(e);
+    $('#myAccordion .collapse').collapse('show');
+  });
+  
+  $('body').on('click', '#settingExample1 .dropdown-item', function (e) {  
+    $('#settingExample1 .dropdown-item').removeClass('active');  
+  });
+
 })
 
-function $controls(el) {
-  return $('#' + el.getAttribute('aria-controls'))
-};
 
-/*
- * Add collapsible panel functionality
- */
-$('body').on('click', '#collapse-all', function (e) {
-  e.preventDefault(e);
-  $('#myAccordion .collapse').collapse('hide');
-});
-$('body').on('click', '#expand-all', function (e) {
-  e.preventDefault(e);
-  $('#myAccordion .collapse').collapse('show');
-});
-
-$('body').on('click', '#settingExample1 .dropdown-item', function (e) {  
-  $('#settingExample1 .dropdown-item').removeClass('active');  
-});
 
