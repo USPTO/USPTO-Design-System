@@ -79,6 +79,10 @@ title: 'Dialogs' } %} {% block content %}
   </div>
   <div class="preview pv-only">
     {{ macros.viewCode({ ariaLabel: 'View code for dialog', code:
+    dialogDefaultLink }, "")}}
+  </div>
+  <div class="preview pv-only">
+    {{ macros.viewCode({ ariaLabel: 'View code for dialog', code:
     dialogFindReplace }, "")}}
   </div>
   <div class="preview pv-only">
@@ -290,6 +294,49 @@ title: 'Dialogs' } %} {% block content %}
         >
           Close
         </button>
+        <button type="button" class="btn btn-sm btn-primary">
+          Save changes
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endset%} {% set dialogDefaultLink %}
+<!--Dialog-->
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title">Rename file</h1>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form role="form" class="">
+          <div class="form-group">
+            <label for="tb123" class="control-label"
+              >Enter a new file name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="tb123"
+              value="dialogs.md"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-link" data-dismiss="modal">
+          Close
+        </button>
+        &nbsp;
         <button type="button" class="btn btn-sm btn-primary">
           Save changes
         </button>

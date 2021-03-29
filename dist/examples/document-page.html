@@ -26,7 +26,7 @@
 <a class="skipnav" href="#main-content">
     Skip to main content
   </a>
-<section class="banner banner-dark" aria-label="Official government website">
+<section class="banner" aria-label="Official government website">
   <div class="accordion">
     <div class="d-md-none">
       <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
@@ -87,6 +87,136 @@
     </div>
   </div>
 </section>      <header id="global-header">
+<div class="uspto-header-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <a href="https://www.uspto.gov" target="_blank" class="uspto-logo"
+          title="United States Patent and Trademark Office - An Agency of the Department of Commerce">
+            <span class="sr-only">
+            United States Patent and Trademark Office
+          </span>
+          </a>
+          <div class="ml-auto d-flex">
+            <!-- Dynamic menu zone -->
+            <!-- Do not customize this area -->
+            <div class="display-inline dyn-menuarea">
+              <!-- Patents -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://www.uspto.gov/patent';" aria-haspopup="false" aria-expanded="false">
+                  <span class="btn-text">Patents</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-lightbulb"></span></span>
+                </button>
+              </div>
+
+              <!-- Trademarks -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://www.uspto.gov/trademark';" aria-haspopup="false"
+                aria-expanded="false">
+                  <span class="btn-text">Trademarks</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-trademark"></span></span>
+                </button>
+              </div>
+
+              <!-- Fees and payment -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://fees.uspto.gov';" aria-haspopup="false" aria-expanded="false">
+                  <span class="btn-text">Fees and payment</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-dollar"></span></span>
+                </button>
+              </div>
+
+              <!-- Help -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle ex-btn-inverse" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                  <span class="btn-text">Help<span class="caret"></span></span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-question-circle"></span></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="https://www.uspto.gov/learning-resources" target="_blank"
+                    data-event-category="myuspto Header: Help menu" data-event-action="myuspto menu link clicked"
+                    data-event-label="FAQs">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="https://www.uspto.gov/about-us/contact-us" target="_blank"
+                    data-event-category="myuspto Header: Help menu" data-event-action="myuspto menu link clicked"
+                    data-event-label="Contact us">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /End dynamic menu zone -->
+
+            <!-- Sign-in/user menu -->
+
+            <!-- MyUSPTO Link -->
+            <div class="btn-group">
+              <a class="btn btn-default ex-btn-inverse my-link" href="https://my.uspto.gov">
+                <span class="btn-text">MyUSPTO</span>
+                <span class="btn-icon">
+                  <span class="uspto-icon-myuspto"></span></span>
+
+              </a>
+            </div>
+
+            <div class="btn-group">
+              <!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it's appropriate to show account information.
+               -->
+              <!-- BEGIN USER DROPDOWN MENU -->
+              <button type="button" class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="btn-text">John Doe<span class="caret"></span></span>
+                <span class="btn-icon">
+                  <span class="uspto-icon-user"></span></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a href="https://my.uspto.gov">
+                    <span class="uspto-icon-home"></span> MyUSPTO<span class="sr-only">console</span></a>
+                </li>
+                <li>
+                  <a href="https://account.uspto.gov">
+                    <span class="uspto-icon-user-white"></span>
+                    <span class="sr-only">Manage your</span>Account</a>
+                </li>
+                <li>
+                  <a href="https://my.uspto.gov/signout">
+                    <span class="uspto-icon-sign-out"></span> Sign out</a>
+                </li>
+              </ul>
+              <!-- END USER DROPDOWN MENU -->
+
+              <!--<a href="" class="btn btn-default user-link">Sign in</a>-->
+
+              <!--
+                  The code snippet for the .btn-group below will need to
+                  be conditionally displayed when it's appropriate to show
+                  the "Sign in" button.
+              -->
+              <!-- BEGIN SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+              <!-- <button
+                  class="btn btn-default ex-btn-inverse user-link"
+                  type="button"
+                  onclick="SIW.init({type:'modal'});">Sign in</button>-->
+              <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+            </div>
+          </div>
+          <!-- /.pull-right -->
+
+        </nav>
+      </div>
 <div class="uspto-header-middle ">
   <div class="flex-fill">
     <a class="navbar-brand" href="#" title="Project title">
@@ -138,10 +268,10 @@
       <nav id="sidenav" aria-label="Document page links">
  <ul class="sidenav border-0">
       <li>
-        <a href="#">Parent link</a>        
+        <a href="#"  data-parent="Parent link">Parent link</a>        
       </li>
       <li class="active">
-        <a href="#" aria-current="page">Parent link</a>
+        <a href="#" aria-current="page"  data-parent="">Parent link</a>
         <ul class="sidenav-sublist">
             <li>
               <a href="#">Child link</a>
@@ -158,10 +288,10 @@
         </ul>
       </li>
       <li>
-        <a href="#">Parent link</a>        
+        <a href="#" data-parent="Parent link">Parent link</a>        
       </li>
       <li>
-        <a href="#">Parent link</a>        
+        <a href="#" data-parent="Parent link">Parent link</a>        
       </li>
      
   </ul>
@@ -277,5 +407,12 @@
 <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
 <script src="../assets/vendor/clipboard/clipboard.min.js"></script>
 <script src="../assets/js/main.js"></script>
-<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+  <script src="../assets/js/fetchHeaderMenu.js"></script> 
+<script>
+  $(function () {
+     ptoDynamicHeader.loadMenu(); 
+  })
+</script>  </body>
 </html>

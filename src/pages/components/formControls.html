@@ -270,7 +270,8 @@
 </section>
 <section class="pv-content">
   <div class="pattern">
-    <h2 id="time-picker" class="d-inline">Time picker</h2> <span class="badge badge-subtle-info">In progress</span>
+    <h2 id="time-picker" class="d-inline">Time picker</h2>
+    <span class="badge badge-subtle-info">In progress</span>
     <p>A time picker helps users select a specific time.</p>
   </div>
   <div class="preview">
@@ -281,7 +282,8 @@
 
 <section class="pv-content">
   <div class="pattern">
-    <h2 id="slider" class="d-inline">Range slider</h2>  <span class="badge badge-subtle-info">In progress</span>
+    <h2 id="slider" class="d-inline">Range slider</h2>
+    <span class="badge badge-subtle-info">In progress</span>
     <p>
       A range slider allows users to choose an approximate number from a range.
     </p>
@@ -294,7 +296,8 @@
 
 <section class="pv-content">
   <div class="pattern">
-    <h2 id="rich-text-editor" class="d-inline">Rich text editor</h2>  <span class="badge badge-subtle-info">In progress</span>
+    <h2 id="rich-text-editor" class="d-inline">Rich text editor</h2>
+    <span class="badge badge-subtle-info">In progress</span>
     <p>
       The rich text editor allows for text input with additional formatting and
       inline images/links. Only include the functionality/buttons/tools
@@ -302,9 +305,8 @@
     </p>
   </div>
   <div class="preview pv-md">
-  {{ macros.viewCode({ ariaLabel: 'View code for rich text editor', code:
+    {{ macros.viewCode({ ariaLabel: 'View code for rich text editor', code:
     richTextEditor }, "")}}
-    
   </div>
 </section>
 
@@ -800,79 +802,143 @@
   <label for="customRange1">Range slider</label>
   <input type="range" class="custom-range" id="customRange1" />
 </div>
-{% endset%}
-
-{% set richTextEditor %}
+{% endset%} {% set richTextEditor %}
 <!-- Rich text editor -->
- <div class="border border-secondary">
-      <div class="bg-light border-bottom border-secondary margin-0">     
-      <div class="btn-group border-right border-secondary" style="height:46px;">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                Arial 
-            </button>
-            <div class="dropdown-menu" role="menu">
-            <a class="dropdown-item" href="#">Arial</a>
-            <a class="dropdown-item" href="#">Georgia</a>
-            <a class="dropdown-item" href="#">Courier</a>
-          </div> 
-        </div>
-       
-        <div class="btn-group border-right border-secondary">
-            <button
-              type="button"
-              data-toggle="tooltip"
-              data-placement="top"
-              title=""
-              class="btn  btn-icon-only"
-              data-original-title="Bold"
-            >
-              <i class="material-icons">format_bold</i
-              ><span class="sr-only">Bold</span>
-            </button>
-            <button
-              type="button"
-              data-toggle="tooltip"
-              data-placement="top"
-              title=""
-              class="btn btn-hover active btn-icon-only"
-              data-original-title="Italicize"
-            >
-              <i class="material-icons">format_italic</i><span class="sr-only">Italicize</span>
-            </button>
-            <button
-              type="button"
-              data-toggle="tooltip"
-              data-placement="top"
-              title=""
-              class="btn btn-hover btn-icon-only"
-              data-original-title="Underline"
-            >
-              <i class="material-icons">format_underline</i
-              ><span class="sr-only">Underline</span>
-            </button>
-          </div>
-          
-            <div class="btn-group  border-right border-secondary">
-            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Ordered list"><i class="material-icons">format_list_numbered</i><span class="sr-only">Ordered list</span></button>
-            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Unordered list"><i class="material-icons">format_list_bulleted</i><span class="sr-only">Unordered list</span></button>
-        </div>
-        <div class="btn-group  border-right border-secondary">
-            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Indent"><i class="material-icons">format_indent_increase</i><span class="sr-only">Indent</span></button>
-            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Outdent"><i class="material-icons">format_indent_decrease</i><span class="sr-only">Outdent</span></button>
-        </div>
-        <div class="btn-group">
-            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Insert link"><i class="material-icons">link</i><span class="sr-only">Insert link</span></button>
-            <button type="button" data-toggle="tooltip" data-placement="top" title="" class="btn btn-hover btn-icon-only" data-original-title="Insert image"><i class="material-icons">insert_photo</i><span class="sr-only">Insert image</span></button>
-        </div>
+<div class="border border-secondary">
+  <div class="bg-light border-bottom border-secondary margin-0">
+    <div class="btn-group border-right border-secondary" style="height: 46px">
+      <button
+        type="button"
+        class="btn btn-default dropdown-toggle"
+        data-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Arial
+      </button>
+      <div class="dropdown-menu" role="menu">
+        <a class="dropdown-item" href="#">Arial</a>
+        <a class="dropdown-item" href="#">Georgia</a>
+        <a class="dropdown-item" href="#">Courier</a>
       </div>
-    
-      <textarea
-        name=""
-        id=""
-        cols="30"
-        rows="10"
-        class="form-control border-0"
-        placeholder="Enter note here..."
-      ></textarea>
     </div>
+
+    <div class="btn-group border-right border-secondary">
+      <button
+        type="button"
+        data-toggle="tooltip"
+        data-placement="top"
+        title=""
+        class="btn btn-icon-only"
+        data-original-title="Bold"
+      >
+        <i class="material-icons">format_bold</i
+        ><span class="sr-only">Bold</span>
+      </button>
+      <button
+        type="button"
+        data-toggle="tooltip"
+        data-placement="top"
+        title=""
+        class="btn btn-hover active btn-icon-only"
+        data-original-title="Italicize"
+      >
+        <i class="material-icons">format_italic</i
+        ><span class="sr-only">Italicize</span>
+      </button>
+      <button
+        type="button"
+        data-toggle="tooltip"
+        data-placement="top"
+        title=""
+        class="btn btn-hover btn-icon-only"
+        data-original-title="Underline"
+      >
+        <i class="material-icons">format_underline</i
+        ><span class="sr-only">Underline</span>
+      </button>
+    </div>
+
+    <div class="btn-group border-right border-secondary">
+      <button
+        type="button"
+        data-toggle="tooltip"
+        data-placement="top"
+        title=""
+        class="btn btn-hover btn-icon-only"
+        data-original-title="Ordered list"
+      >
+        <i class="material-icons">format_list_numbered</i
+        ><span class="sr-only">Ordered list</span>
+      </button>
+      <button
+        type="button"
+        data-toggle="tooltip"
+        data-placement="top"
+        title=""
+        class="btn btn-hover btn-icon-only"
+        data-original-title="Unordered list"
+      >
+        <i class="material-icons">format_list_bulleted</i
+        ><span class="sr-only">Unordered list</span>
+      </button>
+    </div>
+    <div class="btn-group border-right border-secondary">
+      <button
+        type="button"
+        data-toggle="tooltip"
+        data-placement="top"
+        title=""
+        class="btn btn-hover btn-icon-only"
+        data-original-title="Indent"
+      >
+        <i class="material-icons">format_indent_increase</i
+        ><span class="sr-only">Indent</span>
+      </button>
+      <button
+        type="button"
+        data-toggle="tooltip"
+        data-placement="top"
+        title=""
+        class="btn btn-hover btn-icon-only"
+        data-original-title="Outdent"
+      >
+        <i class="material-icons">format_indent_decrease</i
+        ><span class="sr-only">Outdent</span>
+      </button>
+    </div>
+    <div class="btn-group">
+      <button
+        type="button"
+        data-toggle="tooltip"
+        data-placement="top"
+        title=""
+        class="btn btn-hover btn-icon-only"
+        data-original-title="Insert link"
+      >
+        <i class="material-icons">link</i
+        ><span class="sr-only">Insert link</span>
+      </button>
+      <button
+        type="button"
+        data-toggle="tooltip"
+        data-placement="top"
+        title=""
+        class="btn btn-hover btn-icon-only"
+        data-original-title="Insert image"
+      >
+        <i class="material-icons">insert_photo</i
+        ><span class="sr-only">Insert image</span>
+      </button>
+    </div>
+  </div>
+
+  <textarea
+    name=""
+    id=""
+    cols="30"
+    rows="10"
+    class="form-control border-0"
+    placeholder="Enter note here..."
+  ></textarea>
+</div>
 {% endset %}

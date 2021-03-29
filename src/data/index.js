@@ -54,7 +54,7 @@ module.exports = {
       {
         href: 'usage/how-to-use.html',
         text: 'Usage',
-        title: 'How to use USPTO Design System',
+        title: 'Usage',
       },
       {
         href: 'resources/resources.html',
