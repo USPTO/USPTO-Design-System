@@ -13,7 +13,7 @@
       {% block skipnav %}{% include 'parts/skipnav.njk' %}
       {% endblock %}
 
-      {% block banner %}{% include 'parts/banner.njk' %}
+      {% block banner %}{% include 'templatesParts/banner.njk' %}
       {% endblock %}
       <header id="global-header">
         {% block header %}
@@ -41,7 +41,7 @@
     {% block footer %}{% include 'templatesParts/_footer.njk' %}
     {% endblock %}
 
-    {% block scripts %}{% include 'parts/_scripts.njk' %}
+    {% block scripts %}{% include 'templatesParts/_scripts.njk' %}
     {% endblock %}
     {% block body_end %}{% endblock %}
   </body>
