@@ -44,16 +44,35 @@ title: 'Pagination' } %} {% block content %}
       The examples below show various configurations of pagination features.
     </p>
   </div>
-
+  <div class="pattern">
+    <h2 id="examples">Full pagination</h2>
+    <p>
+      The examples below show various configurations of pagination features.
+      Depending on the data, you may treat your pages as pages
+      <code class="highlighter-rouge">Page 2 of 6</code>.
+    </p>
+  </div>
   <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for full pagination', code:
+    paginationFull }, "")}}
+  </div>
+  <div class="preview d-none">
+    {{ macros.viewCode({ ariaLabel: 'View code for full pagination', code:
+    paginationPage }, "")}}
+  </div>
+  <div class="preview d-none">
     {{ macros.viewCode({ ariaLabel: 'View code for pagination', code: pagination
     }, "Pagination")}}
   </div>
-  <div class="preview">
+  <div class="preview d-none">
     {{ macros.viewCode({ ariaLabel: 'View code for pagination with icons', code:
     paginationIcons }, "Pagination with icons")}}
   </div>
   <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for pagination with page input',
+    code: paginationInput }, "")}}
+  </div>
+  <div class="preview d-none">
     {{ macros.viewCode({ ariaLabel: 'View code for disabled and active states of
     pagination', code: paginationActiveDisabled }, "Disabled and active
     states")}}
@@ -82,21 +101,250 @@ title: 'Pagination' } %} {% block content %}
 
 <section class="pv-content">
   <div class="pattern">
-    <h2 id="alignment">Alignment</h2>
-    <p>Change the alignment of pagination components with flexbox utilities.</p>
-  </div>
+    <h2 id="alignment">Example</h2>
+    <p class="mb-0 mt-3">Showing 5 of 25</p>
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th>Project name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Invoice</td>
+          <td>
+            <span>Add invoice confirmation</span>
+          </td>
+          <td>
+            <span>$4,500</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Templates</td>
+          <td>
+            <span>Refactor templates to use the new templating library</span>
+          </td>
+          <td>
+            <span>$9,000</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Payments</td>
+          <td>
+            <span>Process payments using third party api</span>
+          </td>
+          <td>
+            <span>$5,400</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Account Management</td>
+          <td>
+            <span>Improve account management workflow</span>
+          </td>
+          <td>
+            <span>$6,000</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Invoice</td>
+          <td>
+            <span>Add invoice confirmation</span>
+          </td>
+          <td>
+            <span>$4,500</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-  <div class="preview">
-    {{ macros.viewCode({ ariaLabel: 'View code for center pagination', code:
-    paginationCenter }, "Center align pagination")}}
-  </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'View code for right pagination', code:
-    paginationRight }, "Right align pagination")}}
+    <nav
+      class="pagination-bar float-right"
+      aria-label="Page navigation example"
+    >
+      <ul class="pagination">
+        <li class="page-item">
+          <a
+            class="page-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            href="#!"
+          >
+            <span>25 per page</span>
+          </a>
+          <div class="dropdown-menu" style="">
+            <a class="dropdown-item" href="#">10 per page</a>
+            <a class="dropdown-item active" href="#">25 per page</a>
+            <a class="dropdown-item" href="#">50 per page</a>
+            <a class="dropdown-item" href="#">75 per page</a>
+            <a class="dropdown-item" href="#">100 per page</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link md-icon" href="#">
+            <i class="material-icons">first_page</i>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link md-icon" href="#">
+            <i class="material-icons">navigate_before</i>
+          </a>
+        </li>
+        <li class="page-item">
+          <span class="page-link page-go" href="#!"
+            >Page
+            <select name="" id="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+            of 6</span
+          >
+        </li>
+
+        <li class="page-item">
+          <a class="page-link md-icon" href="#">
+            <i class="material-icons">navigate_next</i>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link md-icon" href="#">
+            <i class="material-icons">last_page</i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="clearfix"></div>
   </div>
 </section>
 
-{% endblock %} {% set pagination %}
+{% endblock %} {% set paginationFull %}
+<!--Full pagination-->
+<nav class="pagination-bar" aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a
+        class="page-link dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        href="#!"
+      >
+        <span>25 per page</span>
+      </a>
+      <div class="dropdown-menu" style="">
+        <a class="dropdown-item" href="#">10 per page</a>
+        <a class="dropdown-item active" href="#">25 per page</a>
+        <a class="dropdown-item" href="#">50 per page</a>
+        <a class="dropdown-item" href="#">75 per page</a>
+        <a class="dropdown-item" href="#">100 per page</a>
+      </div>
+    </li>
+  </ul>
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">first_page</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_before</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <span class="page-link page-go" href="#!"
+        >Page
+        <select name="" id="">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        of 6</span
+      >
+    </li>
+
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_next</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">last_page</i>
+      </a>
+    </li>
+  </ul>
+</nav>
+{% endset%} {% set paginationPage %}
+<!--Full pagination-->
+<nav class="pagination-bar" aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a
+        class="page-link dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        href="#!"
+      >
+        <span>25 per page</span>
+      </a>
+      <div class="dropdown-menu" style="">
+        <a class="dropdown-item" href="#">10 per page</a>
+        <a class="dropdown-item active" href="#">25 per page</a>
+        <a class="dropdown-item" href="#">50 per page</a>
+        <a class="dropdown-item" href="#">75 per page</a>
+        <a class="dropdown-item" href="#">100 per page</a>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_before</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a
+        class="page-link dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        href="#!"
+      >
+        <span>15/25</span>
+      </a>
+      <div class="dropdown-menu" style="">
+        <span class="ml-3">Jump to page</span>
+        <div class="input-group ml-3" style="width: 125px">
+          <input type="text" class="form-control" />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">Go</button>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_next</i>
+      </a>
+    </li>
+  </ul>
+</nav>
+{% endset%} {% set pagination %}
 <!--Pagination-->
 
 <ul class="pagination">
@@ -121,26 +369,13 @@ title: 'Pagination' } %} {% block content %}
 <nav aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 16 16"
-            class="bi bi-chevron-double-left"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-            />
-          </svg>
-        </span>
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">first_page</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_before</i>
       </a>
     </li>
     <li class="page-item">
@@ -154,26 +389,66 @@ title: 'Pagination' } %} {% block content %}
     </li>
 
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 16 16"
-            class="bi bi-chevron-double-right"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-            />
-          </svg>
-        </span>
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_next</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">last_page</i>
+      </a>
+    </li>
+  </ul>
+</nav>
+{% endset%} {% set paginationInput %}
+<!--Pagination with page input -->
+
+<nav class="pagination-bar" aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a
+        class="page-link dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        href="#!"
+      >
+        <span>25 per page</span>
+      </a>
+      <div class="dropdown-menu" style="">
+        <a class="dropdown-item" href="#">10 per page</a>
+        <a class="dropdown-item active" href="#">25 per page</a>
+        <a class="dropdown-item" href="#">50 per page</a>
+        <a class="dropdown-item" href="#">75 per page</a>
+        <a class="dropdown-item" href="#">100 per page</a>
+      </div>
+    </li>
+  </ul>
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">first_page</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_before</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <span class="page-link page-go" href="#!"
+        >Page <input type="text" value="1" /> of 6</span
+      >
+    </li>
+
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_next</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">last_page</i>
       </a>
     </li>
   </ul>
@@ -202,28 +477,126 @@ title: 'Pagination' } %} {% block content %}
 </ul>
 {% endset%} {% set paginationLarge %}
 <!--Pagination large-->
-<ul class="pagination pagination-lg">
-  <li class="page-item active" aria-current="page">
-    <span class="page-link">
-      1
-      <span class="sr-only">(current)</span>
-    </span>
-  </li>
-  <li class="page-item"><a class="page-link" href="#">2</a></li>
-  <li class="page-item"><a class="page-link" href="#">3</a></li>
-</ul>
+<nav class="pagination-bar pagination-lg" aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a
+        class="page-link dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        href="#!"
+      >
+        <span>25 per page</span>
+      </a>
+      <div class="dropdown-menu" style="">
+        <a class="dropdown-item" href="#">10 per page</a>
+        <a class="dropdown-item active" href="#">25 per page</a>
+        <a class="dropdown-item" href="#">50 per page</a>
+        <a class="dropdown-item" href="#">75 per page</a>
+        <a class="dropdown-item" href="#">100 per page</a>
+      </div>
+    </li>
+  </ul>
+  <ul class="pagination pagination-lg">
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">first_page</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_before</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <span class="page-link page-go" href="#!"
+        >Page
+        <select name="" id="">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        of 6</span
+      >
+    </li>
+
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_next</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">last_page</i>
+      </a>
+    </li>
+  </ul>
+</nav>
 {% endset%} {% set paginationSmall %}
 <!--Pagination small-->
-<ul class="pagination pagination-sm">
-  <li class="page-item active" aria-current="page">
-    <span class="page-link">
-      1
-      <span class="sr-only">(current)</span>
-    </span>
-  </li>
-  <li class="page-item"><a class="page-link" href="#">2</a></li>
-  <li class="page-item"><a class="page-link" href="#">3</a></li>
-</ul>
+<nav class="pagination-bar" aria-label="Page navigation example">
+  <ul class="pagination pagination-sm">
+    <li class="page-item">
+      <a
+        class="page-link dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        href="#!"
+      >
+        <span>25 per page</span>
+      </a>
+      <div class="dropdown-menu" style="">
+        <a class="dropdown-item" href="#">10 per page</a>
+        <a class="dropdown-item active" href="#">25 per page</a>
+        <a class="dropdown-item" href="#">50 per page</a>
+        <a class="dropdown-item" href="#">75 per page</a>
+        <a class="dropdown-item" href="#">100 per page</a>
+      </div>
+    </li>
+  </ul>
+  <ul class="pagination pagination-sm">
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">first_page</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_before</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <span class="page-link page-go" href="#!"
+        >Page
+        <select name="" id="">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        of 6</span
+      >
+    </li>
+
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">navigate_next</i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link md-icon" href="#">
+        <i class="material-icons">last_page</i>
+      </a>
+    </li>
+  </ul>
+</nav>
 {% endset%} {% set paginationCenter %}
 <!--Pagination center-->
 

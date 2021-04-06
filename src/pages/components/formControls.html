@@ -84,6 +84,10 @@
     {{ macros.viewCode({ ariaLabel: 'View code for custom radio button', code:
     radioButtonCustom }, "Radio button")}}
   </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for custom radio button', code:
+    radioButtonCustomTile }, "Tile radio button")}}
+  </div>
   <div class="preview">
     {{ macros.viewCode({ ariaLabel: 'View code for radio button', code:
     radioButton }, "Browser radio button")}}
@@ -137,6 +141,10 @@
   <div class="preview">
     {{ macros.viewCode({ ariaLabel: 'View code for custom checkboxes', code:
     checkboxesCustom }, "Checkboxes")}}
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for custom checkboxes', code:
+    checkboxesCustomTile }, "Tile checkboxes")}}
   </div>
   <div class="preview">
     {{ macros.viewCode({ ariaLabel: 'View code for checkboxes', code:
@@ -440,17 +448,43 @@
       >Custom radio disabled</label
     >
   </div>
-  <div class="custom-control custom-radio">
+</div>
+{% endset%} {% set radioButtonCustomTile%}
+<!--Custom radio button-->
+<div class="form-group">
+  <div class="custom-control custom-radio tile">
     <input
       type="radio"
-      id="customRadio4"
-      name="customRadio1"
+      id="customRadio5"
+      name="customRadio4"
       class="custom-control-input"
-      disabled=""
-      checked=""
+      checked
     />
-    <label class="custom-control-label" for="customRadio4"
-      >Custom radio disabled checked</label
+    <label class="custom-control-label" for="customRadio5"
+      >Custom radio checked</label
+    >
+  </div>
+  <div class="custom-control custom-radio tile">
+    <input
+      type="radio"
+      id="customRadio6"
+      name="customRadio4"
+      class="custom-control-input"
+    />
+    <label class="custom-control-label" for="customRadio6"
+      >Custom radio unchecked</label
+    >
+  </div>
+  <div class="custom-control custom-radio tile">
+    <input
+      type="radio"
+      id="customRadio7"
+      name="customRadio4"
+      class="custom-control-input"
+      disabled
+    />
+    <label class="custom-control-label" for="customRadio7"
+      >Custom radio disabled</label
     >
   </div>
 </div>
@@ -539,17 +573,37 @@
       >Custom checkbox disabled</label
     >
   </div>
-
-  <div class="custom-control custom-checkbox">
+</div>
+{% endset%} {% set checkboxesCustomTile%}
+<!--Custom radio button-->
+<div class="form-group">
+  <div class="custom-control custom-checkbox tile">
     <input
       type="checkbox"
       class="custom-control-input"
-      id="customCheck4"
-      disabled=""
-      checked=""
+      id="customCheck7"
+      checked
     />
-    <label class="custom-control-label" for="customCheck2"
-      >Custom checkbox disabled checked</label
+    <label class="custom-control-label" for="customCheck7"
+      >Custom checkbox checked</label
+    >
+  </div>
+
+  <div class="custom-control custom-checkbox tile">
+    <input type="checkbox" class="custom-control-input" id="customCheck8" />
+    <label class="custom-control-label" for="customCheck8"
+      >Custom checkbox unchecked</label
+    >
+  </div>
+  <div class="custom-control custom-checkbox tile">
+    <input
+      type="checkbox"
+      class="custom-control-input"
+      id="customCheck9"
+      disabled
+    />
+    <label class="custom-control-label" for="customCheck9"
+      >Custom checkbox disabled</label
     >
   </div>
 </div>
