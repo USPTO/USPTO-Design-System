@@ -290,6 +290,21 @@
 
 <section class="pv-content">
   <div class="pattern">
+    <h2 id="input-prefix-suffix" class="d-inline">Input prefix or suffix</h2>
+    <span class="badge badge-subtle-info">In progress</span>
+    <p>
+      Use input prefixes and suffixes to show symbols or abbreviations that help
+      users enter the right type of information in a form’s text input.
+    </p>
+  </div>
+  <div class="preview pv-xs">
+    {{ macros.viewCode({ ariaLabel: 'View code for input prefix and suffix',
+    code: InpputPrefixSuffix }, "")}}
+  </div>
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
     <h2 id="slider" class="d-inline">Range slider</h2>
     <span class="badge badge-subtle-info">In progress</span>
     <p>
@@ -395,7 +410,6 @@
       Disabled radio
     </label>
   </div>
-  
 </div>
 {% endset%} {% set radioButtonCustom%}
 <!--Custom radio button-->
@@ -861,6 +875,46 @@
     </div>
   </div>
 </form>
+{% endset%} {% set InpputPrefixSuffix %}
+<form>
+  <div class="form-group">
+    <label for="inputprefix">Credit card number</label>
+    <div class="input-group prefix mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="material-icons">credit_card</i>
+        </span>
+      </div>
+      <input
+        type="text"
+        id="inputprefix"
+        class="form-control"
+        placeholder="xxxx-xxxx-xxxx-xxxx"
+        aria-label="Credit card number"
+        aria-describedby="inputprefix"
+        required=""
+        pattern="[0-9]{13,16}"
+      />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputsuffix">Weight, in pounds</label>
+    <div class="input-group suffix mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="inputsuffix"
+        aria-label="Weight in lbs"
+        aria-describedby="lbs"
+      />
+      <div class="input-group-append">
+        <span class="input-group-text">lbs</span>
+      </div>
+    </div>
+  </div>
+</form>
+
 {% endset%} {% set rangeSlider %}
 <!-- Range slider -->
 <div class="form-group">

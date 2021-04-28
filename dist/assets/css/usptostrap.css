@@ -11627,6 +11627,44 @@ h3 {
   border-radius: 0;
 }
 
+.suffix.input-group .input-group-text, .prefix.input-group .input-group-text {
+  padding: 0.12rem 0.5rem !important;
+}
+
+.suffix .input-group-text {
+  background-color: transparent;
+  color: #757575;
+}
+.suffix.input-group-sm .input-group-text {
+  padding: 0.12rem 0.5rem !important;
+}
+.suffix.input-group-sm .input-group-text .material-icons {
+  font-size: 1rem;
+}
+.suffix.input-group-lg .input-group-text {
+  padding: 0.3rem 0.5rem !important;
+}
+.suffix.input-group-lg .input-group-text .material-icons {
+  font-size: 1.5rem;
+}
+
+.prefix .input-group-text {
+  background-color: transparent;
+  color: #757575;
+}
+.prefix.input-group-sm .input-group-text {
+  padding: 0.12rem 0.5rem !important;
+}
+.prefix.input-group-sm .input-group-text .material-icons {
+  font-size: 1rem;
+}
+.prefix.input-group-lg .input-group-text {
+  padding: 0.3rem 0.5rem !important;
+}
+.prefix.input-group-lg .input-group-text .material-icons {
+  font-size: 1.5rem;
+}
+
 .list-group-item-primary {
   background-color: #eff6fb;
   color: #1b1b1b;
