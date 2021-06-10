@@ -319,6 +319,9 @@
               <a href="#time-picker">Time picker</a>
             </li>
             <li>
+              <a href="#input-prefix-suffix">Input prefix &amp; suffix</a>
+            </li>
+            <li>
               <a href="#slider">Range slider</a>
             </li>
             <li>
@@ -1138,20 +1141,6 @@
       Disabled radio
     &lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;form-check&quot;&gt;
-    &lt;input
-      class=&quot;form-check-input&quot;
-      type=&quot;radio&quot;
-      name=&quot;exampleRadios1&quot;
-      id=&quot;exampleRadios4&quot;
-      value=&quot;option3&quot;
-      disabled=&quot;&quot;
-      checked=&quot;&quot;
-    /&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios3&quot;&gt;
-      Disabled radio
-    &lt;/label&gt;
-  &lt;/div&gt;
 &lt;/div&gt;
 "
 
@@ -1205,20 +1194,6 @@
       Disabled radio
     </label>
   </div>
-  <div class="form-check">
-    <input
-      class="form-check-input"
-      type="radio"
-      name="exampleRadios1"
-      id="exampleRadios4"
-      value="option3"
-      disabled=""
-      checked=""
-    />
-    <label class="form-check-label" for="exampleRadios3">
-      Disabled radio
-    </label>
-  </div>
 </div>
     </div>
     <div class="collapse line-numbers pt-2" id="codebox-5">
@@ -1260,20 +1235,6 @@
       <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios3&quot;</span>
       <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option3&quot;</span>
       <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>
-    /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios3&quot;</span>&gt;</span>
-      Disabled radio
-    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
-      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span>
-      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span>
-      <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exampleRadios1&quot;</span>
-      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleRadios4&quot;</span>
-      <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option3&quot;</span>
-      <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>
-      <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>
     /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleRadios3&quot;</span>&gt;</span>
       Disabled radio
@@ -1388,6 +1349,18 @@
       &gt;Custom checkbox disabled&lt;/label
     &gt;
   &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+    &lt;input
+      type=&quot;checkbox&quot;
+      class=&quot;custom-control-input&quot;
+      id=&quot;customCheck3&quot;
+      disabled=&quot;&quot;
+      checked=&quot;&quot;
+    /&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck2&quot;
+      &gt;Custom checkbox checked disabled&lt;/label
+    &gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 "
 
@@ -1432,6 +1405,18 @@
       >Custom checkbox disabled</label
     >
   </div>
+  <div class="custom-control custom-checkbox">
+    <input
+      type="checkbox"
+      class="custom-control-input"
+      id="customCheck3"
+      disabled=""
+      checked=""
+    />
+    <label class="custom-control-label" for="customCheck2"
+      >Custom checkbox checked disabled</label
+    >
+  </div>
 </div>
     </div>
     <div class="collapse line-numbers pt-2" id="codebox-6">
@@ -1467,6 +1452,18 @@
     /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck2&quot;</span>
       &gt;</span>Custom checkbox disabled&lt;/label
+    &gt;
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-checkbox&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck3&quot;</span>
+      <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>
+      <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>
+    /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck2&quot;</span>
+      &gt;</span>Custom checkbox checked disabled&lt;/label
     &gt;
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
@@ -1525,10 +1522,22 @@
       type=&quot;checkbox&quot;
       class=&quot;custom-control-input&quot;
       id=&quot;customCheck9&quot;
-      disabled
+      disabled=&quot;&quot;
     /&gt;
     &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck9&quot;
       &gt;Custom checkbox disabled&lt;/label
+    &gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-checkbox tile&quot;&gt;
+    &lt;input
+      type=&quot;checkbox&quot;
+      class=&quot;custom-control-input&quot;
+      id=&quot;customCheck9&quot;
+      disabled=&quot;&quot;
+      checked=&quot;&quot;
+    /&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck9&quot;
+      &gt;Custom checkbox checked disabled&lt;/label
     &gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -1568,10 +1577,22 @@
       type="checkbox"
       class="custom-control-input"
       id="customCheck9"
-      disabled
+      disabled=""
     />
     <label class="custom-control-label" for="customCheck9"
       >Custom checkbox disabled</label
+    >
+  </div>
+  <div class="custom-control custom-checkbox tile">
+    <input
+      type="checkbox"
+      class="custom-control-input"
+      id="customCheck9"
+      disabled=""
+      checked=""
+    />
+    <label class="custom-control-label" for="customCheck9"
+      >Custom checkbox checked disabled</label
     >
   </div>
 </div>
@@ -1604,10 +1625,22 @@
       <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
       <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span>
       <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck9&quot;</span>
-      <span class="hljs-attr">disabled</span>
+      <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>
     /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck9&quot;</span>
       &gt;</span>Custom checkbox disabled&lt;/label
+    &gt;
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-checkbox tile&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck9&quot;</span>
+      <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>
+      <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>
+    /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck9&quot;</span>
+      &gt;</span>Custom checkbox checked disabled&lt;/label
     &gt;
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
@@ -2944,6 +2977,179 @@
 
 <section class="pv-content">
   <div class="pattern">
+    <h2 id="input-prefix-suffix" class="d-inline">Input prefix or suffix</h2>
+    <span class="badge badge-subtle-info">In progress</span>
+    <p>
+      Use input prefixes and suffixes to show symbols or abbreviations that help
+      users enter the right type of information in a form’s text input.
+    </p>
+  </div>
+  <div class="preview pv-xs">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-16"
+
+      aria-label="View code for input prefix and suffix"
+
+      aria-expanded="false"
+
+      data-target="#codebox-16"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for input prefix and suffix"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;inputprefix&quot;&gt;Credit card number&lt;/label&gt;
+    &lt;div class=&quot;input-group prefix mb-3&quot;&gt;
+      &lt;div class=&quot;input-group-prepend&quot;&gt;
+        &lt;span class=&quot;input-group-text&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;credit_card&lt;/i&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;input
+        type=&quot;text&quot;
+        id=&quot;inputprefix&quot;
+        class=&quot;form-control creditCardText&quot;
+        placeholder=&quot;xxxx-xxxx-xxxx-xxxx&quot;
+        aria-label=&quot;Credit card number&quot;
+        aria-describedby=&quot;inputprefix&quot;
+        required=&quot;&quot;
+        pattern=&quot;[0-9]{13,16}&quot;
+        maxlength=&quot;19&quot;
+      /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;inputsuffix&quot;&gt;Weight, in pounds&lt;/label&gt;
+    &lt;div class=&quot;input-group suffix mb-3&quot;&gt;
+      &lt;input
+        type=&quot;text&quot;
+        class=&quot;form-control&quot;
+        id=&quot;inputsuffix&quot;
+        aria-label=&quot;Weight in lbs&quot;
+        aria-describedby=&quot;lbs&quot;
+      /&gt;
+      &lt;div class=&quot;input-group-append&quot;&gt;
+        &lt;span class=&quot;input-group-text&quot;&gt;lbs&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <form>
+  <div class="form-group">
+    <label for="inputprefix">Credit card number</label>
+    <div class="input-group prefix mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="material-icons">credit_card</i>
+        </span>
+      </div>
+      <input
+        type="text"
+        id="inputprefix"
+        class="form-control creditCardText"
+        placeholder="xxxx-xxxx-xxxx-xxxx"
+        aria-label="Credit card number"
+        aria-describedby="inputprefix"
+        required=""
+        pattern="[0-9]{13,16}"
+        maxlength="19"
+      />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputsuffix">Weight, in pounds</label>
+    <div class="input-group suffix mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="inputsuffix"
+        aria-label="Weight in lbs"
+        aria-describedby="lbs"
+      />
+      <div class="input-group-append">
+        <span class="input-group-text">lbs</span>
+      </div>
+    </div>
+  </div>
+</form>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-16">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;inputprefix&quot;</span>&gt;</span>Credit card number<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group prefix mb-3&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group-prepend&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group-text&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>credit_card<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+        <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;inputprefix&quot;</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control creditCardText&quot;</span>
+        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;xxxx-xxxx-xxxx-xxxx&quot;</span>
+        <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Credit card number&quot;</span>
+        <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;inputprefix&quot;</span>
+        <span class="hljs-attr">required</span>=<span class="hljs-string">&quot;&quot;</span>
+        <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;[0-9]{13,16}&quot;</span>
+        <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;19&quot;</span>
+      /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;inputsuffix&quot;</span>&gt;</span>Weight, in pounds<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group suffix mb-3&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
+        <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;inputsuffix&quot;</span>
+        <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Weight in lbs&quot;</span>
+        <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;lbs&quot;</span>
+      /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group-append&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group-text&quot;</span>&gt;</span>lbs<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
     <h2 id="slider" class="d-inline">Range slider</h2>
     <span class="badge badge-subtle-info">In progress</span>
     <p>
@@ -2957,13 +3163,13 @@
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
-      aria-controls="codebox-16"
+      aria-controls="codebox-17"
 
       aria-label="View code for range slider"
 
       aria-expanded="false"
 
-      data-target="#codebox-16"
+      data-target="#codebox-17"
 
       data-toggle="collapse"
 
@@ -2997,7 +3203,7 @@
   <input type="range" class="custom-range" id="customRange1" />
 </div>
     </div>
-    <div class="collapse line-numbers pt-2" id="codebox-16">
+    <div class="collapse line-numbers pt-2" id="codebox-17">
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Range slider --&gt;</span>
@@ -3028,13 +3234,13 @@
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
-      aria-controls="codebox-17"
+      aria-controls="codebox-18"
 
       aria-label="View code for rich text editor"
 
       aria-expanded="false"
 
-      data-target="#codebox-17"
+      data-target="#codebox-18"
 
       data-toggle="collapse"
 
@@ -3334,7 +3540,7 @@
   ></textarea>
 </div>
     </div>
-    <div class="collapse line-numbers pt-2" id="codebox-17">
+    <div class="collapse line-numbers pt-2" id="codebox-18">
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Rich text editor --&gt;</span>
