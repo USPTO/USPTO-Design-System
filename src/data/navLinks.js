@@ -57,6 +57,7 @@ Object.assign(exports, {
         { href: '#date-picker', text: 'Date picker' },
         { href: '#date-input', text: 'Date input' },
         { href: '#time-picker', text: 'Time picker' },
+        { href: '#input-prefix-suffix', text: 'Input prefix & suffix' },
         { href: '#slider', text: 'Range slider' },
         { href: '#rich-text-editor', text: 'Rich text editor' }
       ],
