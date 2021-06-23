@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="page-document">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Search page
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <a href="https://www.uspto.gov" target="_blank" class="uspto-logo"
+          title="United States Patent and Trademark Office - An Agency of the Department of Commerce">
+            <span class="sr-only">
+            United States Patent and Trademark Office
+          </span>
+          </a>
+          <div class="ml-auto d-flex">
+            <!-- Dynamic menu zone -->
+            <!-- Do not customize this area -->
+            <div class="display-inline dyn-menuarea">
+              <!-- Patents -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://www.uspto.gov/patent';" aria-haspopup="false" aria-expanded="false">
+                  <span class="btn-text">Patents</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-lightbulb"></span></span>
+                </button>
+              </div>
+
+              <!-- Trademarks -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://www.uspto.gov/trademark';" aria-haspopup="false"
+                aria-expanded="false">
+                  <span class="btn-text">Trademarks</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-trademark"></span></span>
+                </button>
+              </div>
+
+              <!-- Fees and payment -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://fees.uspto.gov';" aria-haspopup="false" aria-expanded="false">
+                  <span class="btn-text">Fees and payment</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-dollar"></span></span>
+                </button>
+              </div>
+
+              <!-- Help -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle ex-btn-inverse" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                  <span class="btn-text">Help<span class="caret"></span></span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-question-circle"></span></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="https://www.uspto.gov/learning-resources" target="_blank"
+                    data-event-category="myuspto Header: Help menu" data-event-action="myuspto menu link clicked"
+                    data-event-label="FAQs">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="https://www.uspto.gov/about-us/contact-us" target="_blank"
+                    data-event-category="myuspto Header: Help menu" data-event-action="myuspto menu link clicked"
+                    data-event-label="Contact us">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /End dynamic menu zone -->
+
+            <!-- Sign-in/user menu -->
+
+            <!-- MyUSPTO Link -->
+            <div class="btn-group">
+              <a class="btn btn-default ex-btn-inverse my-link" href="https://my.uspto.gov">
+                <span class="btn-text">MyUSPTO</span>
+                <span class="btn-icon">
+                  <span class="uspto-icon-myuspto"></span></span>
+
+              </a>
+            </div>
+
+            <div class="btn-group">
+              <!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it's appropriate to show account information.
+               -->
+              <!-- BEGIN USER DROPDOWN MENU -->
+              <button type="button" class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="btn-text">John Doe<span class="caret"></span></span>
+                <span class="btn-icon">
+                  <span class="uspto-icon-user"></span></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a href="https://my.uspto.gov">
+                    <span class="uspto-icon-home"></span> MyUSPTO<span class="sr-only">console</span></a>
+                </li>
+                <li>
+                  <a href="https://account.uspto.gov">
+                    <span class="uspto-icon-user-white"></span>
+                    <span class="sr-only">Manage your</span>Account</a>
+                </li>
+                <li>
+                  <a href="https://my.uspto.gov/signout">
+                    <span class="uspto-icon-sign-out"></span> Sign out</a>
+                </li>
+              </ul>
+              <!-- END USER DROPDOWN MENU -->
+
+              <!--<a href="" class="btn btn-default user-link">Sign in</a>-->
+
+              <!--
+                  The code snippet for the .btn-group below will need to
+                  be conditionally displayed when it's appropriate to show
+                  the "Sign in" button.
+              -->
+              <!-- BEGIN SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+              <!-- <button
+                  class="btn btn-default ex-btn-inverse user-link"
+                  type="button"
+                  onclick="SIW.init({type:'modal'});">Sign in</button>-->
+              <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+            </div>
+          </div>
+          <!-- /.pull-right -->
+
+        </nav>
+      </div>
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="#" title="Project title">
+          Project title
+    </a>
+  
+  </div>
+</div>
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div 
+      class="main"
+      >
+
+<section class="jumbotron jumbotron-fluid bg-cyan rounded-0">
+  <div class="container px-5">
+    <div class="input-group mb-1">
+      <div class="input-group-prepend">
+        <button
+          class="btn btn-primary dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Patents
+        </button>
+        <div class="dropdown-menu" style="">
+          <a class="dropdown-item" href="#">Patents</a>
+          <a class="dropdown-item" href="#">Trademark</a>
+          <a class="dropdown-item" href="#">Application</a>
+        </div>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Text input with dropdown button"
+        value=" Patent"
+      />
+
+      <div class="input-group-append">
+        <button class="btn btn-primary md-icon" type="button">
+          <i class="material-icons">search</i>
+        </button>
+      </div>
+    </div>
+    <div class="help-block d-none">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-12">
+      <p class="mb-4">
+        20 total results for
+        <span class="font-italic font-weight-semi-bold">Patent</span>
+      </p>
+
+      <div class="mb-4">
+        <h3>
+          <a href="">Unified Event API</a>
+        </h3>
+        <div class="text-muted mb-1">
+          https://developer-sit.etc.uspto.gov/api-catalog/unified-event-api
+        </div>
+        <p>
+          USPTO sponsors/hosts a wide variety of public facing events daily.
+          USPTO publishes information about these events on
+          <span class="font-weight-bold">patent</span> ...
+        </p>
+        <div></div>
+      </div>
+      <div class="mb-4">
+        <h3>
+          <a href="">Patent grant data/XML</a>
+        </h3>
+        <div class="text-muted mb-1">
+          https://developer-sit.etc.uspto.gov/product/patent-grant-dataxml
+        </div>
+        <p>
+          Contains (JAN 2002 - Present) the full text, images/drawings, and
+          complex work units (tables, mathematical expressions, chemical
+          structures, and genetic sequence data) of each patent grant (excludes
+          reexaminations) issued weekly (Tuesdays) in CY2016. The file format is
+          extensible Markup Language...
+        </p>
+        <div></div>
+      </div>
+
+      <div class="mb-4">
+        <h3>
+          <a href="">Patent Filing Data</a>
+        </h3>
+        <div class="text-muted mb-1">
+          https://developer-sit.etc.uspto.gov/product/patent-grant-dataxml
+        </div>
+        <p>
+          This visual shows the incoming
+          <span class="font-weight-bold">patent</span> application workload for
+          UPR, RCE, & design filings. This visual shows the incoming patent
+          application workload for UPR, RCE, & design filings ...
+        </p>
+        <div></div>
+      </div>
+
+      <div class="mb-4">
+        <h3>
+          <a href="">Explore. Discover. Create</a>
+        </h3>
+        <div class="text-muted mb-1">
+          https://developer-sit.etc.uspto.gov/product/patent-grant-dataxml
+        </div>
+        <p>
+          Data tells you what's happening. A good story is not only engaging but
+          gives you insight as to why the data matters. The
+          <span class="font-weight-bold">patent</span> and Trademark Office
+          wants to make information more transparent and useful ...
+        </p>
+        <div></div>
+      </div>
+
+      <div class="mb-4">
+        <h3>
+          <a href="">Patent Filing Data</a>
+        </h3>
+        <span class="text-muted mb-1"
+          >https://developer-sit.etc.uspto.gov/product/patent-grant-dataxml</span
+        >
+        <p>
+          This visual shows the incoming
+          <span class="font-weight-bold">patent</span> application workload for
+          UPR, RCE, & design filings. This visual shows the incoming patent
+          application workload for UPR, RCE, & design filings ...
+        </p>
+        <div></div>
+      </div>
+
+      <nav
+        class="pagination-bar justify-content-end my-5"
+        aria-label="Page navigation"
+      >
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link md-icon" href="#">
+              <i class="material-icons">first_page</i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link md-icon" href="#">
+              <i class="material-icons">navigate_before</i>
+            </a>
+          </li>
+          <li class="page-item">
+            <span class="page-link page-go" href="#!"
+              >Page
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              of 6</span
+            >
+          </li>
+
+          <li class="page-item">
+            <a class="page-link md-icon" href="#">
+              <i class="material-icons">navigate_next</i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link md-icon" href="#">
+              <i class="material-icons">last_page</i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</section>
+
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    Footer
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+  <script src="../assets/js/fetchHeaderMenu.js"></script> 
+<script>
+  $(function () {
+     ptoDynamicHeader.loadMenu(); 
+  })
+</script>  </body>
+</html>

@@ -198,8 +198,21 @@ Object.assign(exports, {
   ],
   pageTemplateNavLinks: [
     { href: 'pageTemplate.html', text: 'Page templates' },
+    {
+      href: 'error-page.html',
+      text: 'Error page',
+      "children": [
+        { href: '#404-error', text: '404 error' },
+        { href: '#server-error', text: 'Server error' }
+      ],
+    },  
     { href: 'documentationPage.html', text: 'Documentation page' },
-    { href: 'marketingPage.html', text: 'Marketing page' }
+    { href: 'landingPage.html', text: 'Landing page' },
+    { href: 'marketingPage.html', text: 'Marketing page' },
+    { href: 'searchPage.html', text: 'Search result page' }
+    
+    
+    
   ],
 
   resourcesNavLinks: [

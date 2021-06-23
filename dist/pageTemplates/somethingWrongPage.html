@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Page Template
+ | Something went wrong page template
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -155,11 +155,11 @@
     </option>
     <option value="documentationPage.html">Documentation page
     </option>
+    <option value="somethingWrongPage.html">General error page
+    </option>
     <option value="landingPage.html">Landing page
     </option>
     <option value="marketingPage.html">Marketing page
-    </option>
-    <option value="searchPage.html">Search result page
     </option>
 </select>  </div>
   <div class="d-none d-sm-none d-md-block">
@@ -173,16 +173,15 @@
       <li>
         <a href="error-page.html" data-parent="Error page">Error page</a>
         <ul class="sidenav-sublist">
-            <li>
-              <a href="#404-error">404 error</a>
-            </li>
-            <li>
-              <a href="#server-error">Server error</a>
-            </li>
         </ul>
       </li>
       <li>
         <a href="documentationPage.html" data-parent="Documentation page">Documentation page</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="somethingWrongPage.html" data-parent="General error page">General error page</a>
         <ul class="sidenav-sublist">
         </ul>
       </li>
@@ -196,17 +195,24 @@
         <ul class="sidenav-sublist">
         </ul>
       </li>
-      <li>
-        <a href="searchPage.html" data-parent="Search result page">Search result page</a>
-        <ul class="sidenav-sublist">
-        </ul>
-      </li>
   </ul>
 </nav>  </div>
   <main id="main-content">
 <section class="pv-content">
   <div class="pattern">
-    <h1>This is Template Page</h1>
+    <h1>Server error page</h1>
+    <h3>Something went wrong page</h3>
+    <div class="py-4">
+      <p>
+        The Internal Server Error is a very general HTTP status code that means
+        something has gone wrong on the web site's server
+      </p>
+    </div>
+    <a
+      href="..//examples/something-went-wrong-page.html"
+      target="_blank"
+      >Something went wrong page</a
+    >
   </div>
 </section>
 

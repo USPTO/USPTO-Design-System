@@ -75,6 +75,45 @@ $(function () {
   });
 
 })
+/*
+   * Character count
+   */
+
+$('#textinput, #textareainput').keyup(function () {
+  var max = $(this).siblings().children('#charNum').attr('data-value');
+  //console.log(max);
+  var len = $(this)
+    .val()
+    .length;
+
+  if (len >= 1 & len <= max) {
+    var char = max - len;
+    $(this).siblings().children('#charNum').text(char);
+     $(this).siblings().children('#charTxt').text("characters left");
+    $(this).removeClass('is-invalid');
+    $(this)
+      .siblings('small.help-text')
+      .removeClass('invalid-feedback');
+  } else if (len > max) {
+    var char = max - len;
+    char = Math.abs(char);
+     $(this).siblings().children('#charNum').text(char);
+     $(this).siblings().children('#charTxt').text("characters over limit");
+    $(this).addClass('is-invalid');
+    $(this)
+      .siblings('small.help-text')
+      .addClass('invalid-feedback');
+  } else if (len === 0) {
+     $(this).siblings().children('#charNum').text(max);
+     $(this).siblings().children('#charTxt').text("characters allowed");
+    $(this).removeClass('is-invalid');
+    $(this)
+      .siblings('small.help-text')
+      .removeClass('invalid-feedback');
+  }
+
+});
+
 
 
 

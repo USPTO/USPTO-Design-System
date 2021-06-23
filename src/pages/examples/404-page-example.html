@@ -1,0 +1,39 @@
+{% extends "layouts/templateDefault.njk" %} {% set page = {
+class:'page-document', title: 'Marketing page', containerType:'main' } %} {%
+block main %}
+<section class="p-4">
+  <div class="p-5">
+    <!-- This template can be used for most types of error pages -->
+    <!-- Remove these comments when you build your error pages -->
+
+    <!-- Describe the error in the main heading -->
+    <h1 class="mb-4">Page not found</h1>
+
+    <!-- Explain what caused the error in the lead text -->
+    <h2 class="font-weight-normal mb-3">
+      We’re sorry, we can’t find the page you're looking for. It might have been
+      removed, changed its name, or is otherwise unavailable.
+    </h2>
+
+    <!-- Provide instructions how the user can address or fix the error -->
+    <p>
+      If you typed the URL directly, check your spelling and capitalization. Our
+      URLs look like this: <strong>&lt;www.uspto.gov/example&gt;</strong>.
+    </p>
+    <p>
+      Visit our homepage for helpful tools and resources, or contact us and
+      we’ll point you in the right direction.
+    </p>
+
+    <!-- Use buttons for main actions user can take, such as visiting the homepage or a contact page -->
+    <div class="my-5">
+      <a href="javascript:void();" class="btn btn-primary"> Visit homepage </a>
+      <button class="btn btn-outline-primary" type="button">Contact Us</button>
+    </div>
+
+    <!-- Error code if appropriate -->
+    <p class="text-secondary mt-5"><strong>Error code:</strong> 404</p>
+  </div>
+</section>
+
+{% endblock %}

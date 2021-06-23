@@ -1,0 +1,42 @@
+{% extends 'layouts/pageTemplates.njk' %} {% set navLinkIndex = 1 %} {% set page
+= { class: 'page-template', title: '404 page template' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Error pages</h1>
+  </div>
+  <div class="pattern">
+    <h2 id="404-error">404-page</h2>
+    <h5>A 404 page informs users that a requested page doesn’t exist.</h5>
+    <div class="py-4">
+      <p>
+        A 404 page informs users that a requested page doesn’t exist. This kind
+        of error can be frustrating or confusing. Straightforward
+        <a href="https://www.plainlanguage.gov/" target="_blank"
+          >plain language</a
+        >
+        can help. Use a 404 page to explain the error and instruct the user what
+        to do next.
+      </p>
+    </div>
+    <a href="{{ relativeRoot }}/examples/404-page-example.html" target="_blank"
+      >404-page example</a
+    >
+  </div>
+  <div class="pattern">
+    <h2 id="server-error">Server error page</h2>
+    <h5>Something went wrong page</h5>
+    <div class="py-4">
+      <p>
+        The Internal Server Error is a very general HTTP status code that means
+        something has gone wrong on the web site's server
+      </p>
+    </div>
+    <a
+      href="{{ relativeRoot }}/examples/something-went-wrong-page.html"
+      target="_blank"
+      >Something went wrong page</a
+    >
+  </div>
+</section>
+
+{% endblock %}

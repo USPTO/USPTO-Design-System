@@ -1,0 +1,178 @@
+{% extends "layouts/templateDefault.njk" %} {% set page = {
+class:'page-document', title: 'Search page', containerType:'main' } %} {% block
+main %}
+
+<section class="jumbotron jumbotron-fluid bg-cyan rounded-0">
+  <div class="container px-5">
+    <div class="input-group mb-1">
+      <div class="input-group-prepend">
+        <button
+          class="btn btn-primary dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Patents
+        </button>
+        <div class="dropdown-menu" style="">
+          <a class="dropdown-item" href="#">Patents</a>
+          <a class="dropdown-item" href="#">Trademark</a>
+          <a class="dropdown-item" href="#">Application</a>
+        </div>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Text input with dropdown button"
+        value=" Patent"
+      />
+
+      <div class="input-group-append">
+        <button class="btn btn-primary md-icon" type="button">
+          <i class="material-icons">search</i>
+        </button>
+      </div>
+    </div>
+    <div class="help-block d-none">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-12">
+      <p class="mb-4">
+        20 total results for
+        <span class="font-italic font-weight-semi-bold">Patent</span>
+      </p>
+
+      <div class="mb-4">
+        <h3>
+          <a href="">Unified Event API</a>
+        </h3>
+        <div class="text-muted mb-1">
+          https://developer-sit.etc.uspto.gov/api-catalog/unified-event-api
+        </div>
+        <p>
+          USPTO sponsors/hosts a wide variety of public facing events daily.
+          USPTO publishes information about these events on
+          <span class="font-weight-bold">patent</span> ...
+        </p>
+        <div></div>
+      </div>
+      <div class="mb-4">
+        <h3>
+          <a href="">Patent grant data/XML</a>
+        </h3>
+        <div class="text-muted mb-1">
+          https://developer-sit.etc.uspto.gov/product/patent-grant-dataxml
+        </div>
+        <p>
+          Contains (JAN 2002 - Present) the full text, images/drawings, and
+          complex work units (tables, mathematical expressions, chemical
+          structures, and genetic sequence data) of each patent grant (excludes
+          reexaminations) issued weekly (Tuesdays) in CY2016. The file format is
+          extensible Markup Language...
+        </p>
+        <div></div>
+      </div>
+
+      <div class="mb-4">
+        <h3>
+          <a href="">Patent Filing Data</a>
+        </h3>
+        <div class="text-muted mb-1">
+          https://developer-sit.etc.uspto.gov/product/patent-grant-dataxml
+        </div>
+        <p>
+          This visual shows the incoming
+          <span class="font-weight-bold">patent</span> application workload for
+          UPR, RCE, & design filings. This visual shows the incoming patent
+          application workload for UPR, RCE, & design filings ...
+        </p>
+        <div></div>
+      </div>
+
+      <div class="mb-4">
+        <h3>
+          <a href="">Explore. Discover. Create</a>
+        </h3>
+        <div class="text-muted mb-1">
+          https://developer-sit.etc.uspto.gov/product/patent-grant-dataxml
+        </div>
+        <p>
+          Data tells you what's happening. A good story is not only engaging but
+          gives you insight as to why the data matters. The
+          <span class="font-weight-bold">patent</span> and Trademark Office
+          wants to make information more transparent and useful ...
+        </p>
+        <div></div>
+      </div>
+
+      <div class="mb-4">
+        <h3>
+          <a href="">Patent Filing Data</a>
+        </h3>
+        <span class="text-muted mb-1"
+          >https://developer-sit.etc.uspto.gov/product/patent-grant-dataxml</span
+        >
+        <p>
+          This visual shows the incoming
+          <span class="font-weight-bold">patent</span> application workload for
+          UPR, RCE, & design filings. This visual shows the incoming patent
+          application workload for UPR, RCE, & design filings ...
+        </p>
+        <div></div>
+      </div>
+
+      <nav
+        class="pagination-bar justify-content-end my-5"
+        aria-label="Page navigation"
+      >
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link md-icon" href="#">
+              <i class="material-icons">first_page</i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link md-icon" href="#">
+              <i class="material-icons">navigate_before</i>
+            </a>
+          </li>
+          <li class="page-item">
+            <span class="page-link page-go" href="#!"
+              >Page
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              of 6</span
+            >
+          </li>
+
+          <li class="page-item">
+            <a class="page-link md-icon" href="#">
+              <i class="material-icons">navigate_next</i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link md-icon" href="#">
+              <i class="material-icons">last_page</i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</section>
+
+{% endblock %}
