@@ -24,6 +24,7 @@ Object.assign(exports, {
       ],
     },
     { href: 'carousel.html', text: 'Carousel' },
+    { href: 'character-count.html', text: 'Character count' },
     {
       href: 'collapsiblePanels.html',
       text: 'Collapsible panels',
