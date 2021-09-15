@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en" class="page-anatomy">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Anatomy
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
+          USPTO <span class="font-weight-light">Design System (Beta)</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
+     <img src="../assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
+    </a>
+  </div>
+</div>
+
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
+              Page templates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="Usage">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="foundation.html">Foundation
+    </option>
+    <option value="anatomy.html">Anatomy of a webpage
+    </option>
+    <option value="audio-video.html">Audio and video
+    </option>
+    <option value="colors.html">Colors
+    </option>
+    <option value="grid.html">Grid
+    </option>
+    <option value="icons.html">Icons
+    </option>
+    <option value="images.html">Images
+    </option>
+    <option value="links.html">Links
+    </option>
+    <option value="typography.html">Typography
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="foundation.html" data-parent="Foundation">Foundation</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="anatomy.html" data-parent="Anatomy of a webpage">Anatomy of a webpage</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="audio-video.html" data-parent="Audio and video">Audio and video</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="colors.html" data-parent="Colors">Colors</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#primary-ui-colors">Primary UI colors</a>
+            </li>
+            <li>
+              <a href="#full-brand-palette">Full brand palette</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="grid.html" data-parent="Grid">Grid</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="icons.html" data-parent="Icons">Icons</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#overview">Overview</a>
+            </li>
+            <li>
+              <a href="#usage">Usage</a>
+            </li>
+            <li>
+              <a href="#icon-color">Icon color</a>
+            </li>
+            <li>
+              <a href="#system-icons">System Icons</a>
+            </li>
+            <li>
+              <a href="#icon-sizing">Icon sizing</a>
+            </li>
+            <li>
+              <a href="#rotation">Rotation</a>
+            </li>
+            <li>
+              <a href="#animation">Animation</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="images.html" data-parent="Images">Images</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="links.html" data-parent="Links">Links</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="typography.html" data-parent="Typography">Typography</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#fonts">Fonts</a>
+            </li>
+            <li>
+              <a href="#weights">Weights</a>
+            </li>
+            <li>
+              <a href="#styles">Styles</a>
+            </li>
+            <li>
+              <a href="#lists">Lists</a>
+            </li>
+            <li>
+              <a href="#colors">Colors</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Anatomy of a webpage</h1>
+  </div>
+  <div class="preview">
+    <h2>A Simple HTML Document</h2>
+
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for doctype"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for doctype"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Title of the page&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;First heading&lt;/h1&gt;
+    &lt;h2&gt;Second heading&lt;/h2&gt;
+    &lt;p&gt;First paragraph&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;First list item&lt;/li&gt;
+      &lt;li&gt;Second list item&lt;/li&gt;
+      &lt;li&gt;Third list item&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;section&gt;
+      &lt;h2&gt;First section&lt;/h2&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+        reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
+        Voluptatum ducimus voluptates voluptas?
+      &lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Second section&lt;/h2&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+        reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
+        Voluptatum ducimus voluptates voluptas?
+      &lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the page</title>
+  </head>
+
+  <body>
+    <h1>First heading</h1>
+    <h2>Second heading</h2>
+    <p>First paragraph</p>
+    <ol>
+      <li>First list item</li>
+      <li>Second list item</li>
+      <li>Third list item</li>
+    </ol>
+    <section>
+      <h2>First section</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+        reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
+        Voluptatum ducimus voluptates voluptas?
+      </p>
+    </section>
+    <section>
+      <h2>Second section</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+        reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
+        Voluptatum ducimus voluptates voluptas?
+      </p>
+    </section>
+  </body>
+</html>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title of the page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>First heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Second heading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>First paragraph<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>First list item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Second list item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Third list item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>First section<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+        reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
+        Voluptatum ducimus voluptates voluptas?
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Second section<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+        reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
+        Voluptatum ducimus voluptates voluptas?
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h2>Header</h2>
+    <p>
+      The <code>&lt;header&gt;</code> element represents a container for
+      introductory content or a set of navigational links.
+    </p>
+    <p>A <code>&lt;header&gt;</code> element typically contains:</p>
+    <ul>
+      <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+      <li>logo or icon</li>
+      <li>authorship information</li>
+    </ul>
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for header"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for header"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;header id=&quot;global-header&quot;&gt;
+  &lt;div class=&quot;uspto-header-top&quot;&gt;
+    &lt;nav class=&quot;navbar navbar-expand-lg navbar-dark&quot;&gt;
+      &lt;a
+        href=&quot;https://www.uspto.gov&quot;
+        target=&quot;_blank&quot;
+        class=&quot;uspto-logo&quot;
+        title=&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;
+      &gt;
+        &lt;span class=&quot;sr-only&quot;&gt; United States Patent and Trademark Office &lt;/span&gt;
+      &lt;/a&gt;
+      &lt;div class=&quot;ml-auto d-flex&quot;&gt;
+        &lt;!-- Dynamic menu zone --&gt;
+        &lt;!-- Do not customize this area --&gt;
+        &lt;div class=&quot;display-inline dyn-menuarea&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;
+                &gt;Patents&amp;nbsp;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span
+              &gt;&lt;span class=&quot;btn-icon&quot;
+                &gt;&lt;span class=&quot;icon uspto-icon-lightbulb&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class=&quot;dropdown-menu dropdown-menu-right patent-menu&quot;&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;https://patentcenter.uspto.gov&quot; target=&quot;_blank&quot;
+                  &gt;Patent Center&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;http://patft.uspto.gov/netahtml/PTO/search-bool.html&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Search patents&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;http://appft.uspto.gov/netahtml/PTO/search-bool.html&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Patent applications search&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://ppair-my.uspto.gov/pair/PrivatePair&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Check private filing status&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;http://portal.uspto.gov/pair/PublicPair&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Check public filing status&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://efs-my.uspto.gov/EFSWebUIRegistered/EFSWebRegistered&quot;
+                  target=&quot;_blank&quot;
+                  &gt;File patents&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;https://ptab.uspto.gov/#/login&quot; target=&quot;_blank&quot;
+                  &gt;Patent and Trial Appeal Board&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://assignment.uspto.gov/patent/index.html#/patent/search&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Search assignment&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;https://epas.uspto.gov/&quot; target=&quot;_blank&quot;
+                  &gt;Record assignment&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://certifiedcopycenter.uspto.gov/app/&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Order certified patent documents&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;http://www.uspto.gov/web/offices/pac/mpep/index.html&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Manual of Patent Examining Procedure&lt;/a
+                &gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;
+                &gt;Trademarks&amp;nbsp;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span
+              &gt;&lt;span class=&quot;btn-icon&quot;
+                &gt;&lt;span class=&quot;icon uspto-icon-trademark&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class=&quot;dropdown-menu dropdown-menu-right trademark-menu&quot;&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;http://tmsearch.uspto.gov/bin/gate.exe?f=login&amp;amp;p_lang=english&amp;amp;p_d=trmk&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Search trademarks&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://www.uspto.gov/trademarks-application-process/filing-online&quot;
+                  target=&quot;_blank&quot;
+                  &gt;File trademark forms&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;http://tsdr.uspto.gov/&quot; target=&quot;_blank&quot;
+                  &gt;View status, documents, and registration certificates&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;http://estta.uspto.gov/&quot; target=&quot;_blank&quot;
+                  &gt;File Trademark Trial and Appeal Board forms&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;http://ttabvue.uspto.gov/ttabvue/v&quot; target=&quot;_blank&quot;
+                  &gt;View Trademark Trial and Appeal Board proceedings&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;https://tmog.uspto.gov/#&quot; target=&quot;_blank&quot;
+                  &gt;Search Trademark Official Gazette&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;https://etas.uspto.gov/&quot; target=&quot;_blank&quot;
+                  &gt;Record assignment&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://assignment.uspto.gov/trademark/index.html#/trademark/search&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Search assignment&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://certifiedcopycenter.uspto.gov/app/&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Order certified trademark documents&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://tmep.uspto.gov/RDMS/TMEP/current#/current/d1e2.html&quot;
+                  target=&quot;_blank&quot;
+                  &gt;View Trademark Manual of Examining Procedure&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://idm-tmng.uspto.gov/id-master-list-public.html&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Search the ID Manual&lt;/a
+                &gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;
+                &gt;Fees and payment&amp;nbsp;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span
+              &gt;&lt;span class=&quot;btn-icon&quot;
+                &gt;&lt;span class=&quot;icon uspto-icon-dollar&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class=&quot;dropdown-menu dropdown-menu-right fees-menu&quot;&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;https://fees.uspto.gov/&quot; target=&quot;_blank&quot;
+                  &gt;Fees Self-Service&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://fees.uspto.gov/FinancialManager&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Financial Manager&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;https://fees.uspto.gov/MaintenanceFees&quot; target=&quot;_blank&quot;
+                  &gt;Patent Maintenance Fees Storefront&lt;/a
+                &gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;&gt;Help&amp;nbsp;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span
+              &gt;&lt;span class=&quot;btn-icon&quot;
+                &gt;&lt;span class=&quot;icon uspto-icon-question-circle&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class=&quot;dropdown-menu dropdown-menu-right fees-menu&quot;&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;http://www.uspto.gov/learning-resources&quot;
+                  target=&quot;_blank&quot;
+                  &gt;FAQs&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;http://www.uspto.gov/about-us/contact-us&quot;
+                  target=&quot;_blank&quot;
+                  &gt;Contact us&lt;/a
+                &gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- /End dynamic menu zone --&gt;
+
+        &lt;!-- Sign-in/user menu --&gt;
+
+        &lt;!-- MyUSPTO Link --&gt;
+        &lt;div class=&quot;btn-group&quot;&gt;
+          &lt;a
+            class=&quot;btn btn-default ex-btn-inverse my-link&quot;
+            href=&quot;https://my.uspto.gov&quot;
+          &gt;
+            &lt;span class=&quot;btn-text&quot;&gt;MyUSPTO&lt;/span&gt;
+            &lt;span class=&quot;btn-icon&quot;&gt;
+              &lt;span class=&quot;uspto-icon-myuspto&quot;&gt;&lt;/span
+            &gt;&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;btn-group&quot;&gt;
+          &lt;!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it&#39;s appropriate to show account information.
+               --&gt;
+          &lt;!-- BEGIN USER DROPDOWN MENU --&gt;
+          &lt;button
+            type=&quot;button&quot;
+            class=&quot;btn btn-default dropdown-toggle ex-btn-inverse user-link&quot;
+            data-toggle=&quot;dropdown&quot;
+            aria-haspopup=&quot;true&quot;
+            aria-expanded=&quot;false&quot;
+          &gt;
+            &lt;span class=&quot;btn-text&quot;&gt;John Doe&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+            &lt;span class=&quot;btn-icon&quot;&gt; &lt;span class=&quot;uspto-icon-user&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://my.uspto.gov&quot;&gt;
+                &lt;span class=&quot;uspto-icon-home&quot;&gt;&lt;/span&gt; MyUSPTO&lt;span
+                  class=&quot;sr-only&quot;
+                  &gt;console&lt;/span
+                &gt;&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://account.uspto.gov&quot;&gt;
+                &lt;span class=&quot;uspto-icon-user-white&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Manage your&lt;/span&gt;Account&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://my.uspto.gov/signout&quot;&gt;
+                &lt;span class=&quot;uspto-icon-sign-out&quot;&gt;&lt;/span&gt; Sign out&lt;/a
+              &gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;!-- END USER DROPDOWN MENU --&gt;
+
+          &lt;!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET--&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- /.pull-right --&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;uspto-header-middle&quot;&gt;
+    &lt;div class=&quot;flex-fill&quot;&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot; title=&quot;Project title&quot;&gt; Project title &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;uspto-header-bottom&quot;&gt;
+    &lt;nav
+      class=&quot;navbar navbar-expand-md navbar-dark&quot;
+      aria-label=&quot;header sub navigation&quot;
+    &gt;
+      &lt;button
+        class=&quot;navbar-toggler&quot;
+        type=&quot;button&quot;
+        data-toggle=&quot;collapse&quot;
+        data-target=&quot;#navbarNav&quot;
+        aria-controls=&quot;navbarNav&quot;
+        aria-expanded=&quot;false&quot;
+        aria-label=&quot;Toggle navigation&quot;
+      &gt;
+        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+        &lt;ul class=&quot;navbar-nav mr-auto&quot;&gt;
+          &lt;li class=&quot;nav-item active&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;
+              &gt;Home &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a
+            &gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item dropdown&quot;&gt;
+            &lt;a
+              class=&quot;nav-link dropdown-toggle&quot;
+              href=&quot;#&quot;
+              id=&quot;navbarDropdown&quot;
+              role=&quot;button&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              Dropdown
+            &lt;/a&gt;
+            &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+              &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a
+              class=&quot;nav-link disabled&quot;
+              href=&quot;#&quot;
+              tabindex=&quot;-1&quot;
+              aria-disabled=&quot;true&quot;
+              &gt;Disabled&lt;/a
+            &gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <header id="global-header">
+  <div class="uspto-header-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a
+        href="https://www.uspto.gov"
+        target="_blank"
+        class="uspto-logo"
+        title="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+      >
+        <span class="sr-only"> United States Patent and Trademark Office </span>
+      </a>
+      <div class="ml-auto d-flex">
+        <!-- Dynamic menu zone -->
+        <!-- Do not customize this area -->
+        <div class="display-inline dyn-menuarea">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text"
+                >Patents&nbsp;<span class="caret"></span></span
+              ><span class="btn-icon"
+                ><span class="icon uspto-icon-lightbulb"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right patent-menu">
+              <li>
+                <a href="https://patentcenter.uspto.gov" target="_blank"
+                  >Patent Center</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://patft.uspto.gov/netahtml/PTO/search-bool.html"
+                  target="_blank"
+                  >Search patents</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://appft.uspto.gov/netahtml/PTO/search-bool.html"
+                  target="_blank"
+                  >Patent applications search</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://ppair-my.uspto.gov/pair/PrivatePair"
+                  target="_blank"
+                  >Check private filing status</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://portal.uspto.gov/pair/PublicPair"
+                  target="_blank"
+                  >Check public filing status</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://efs-my.uspto.gov/EFSWebUIRegistered/EFSWebRegistered"
+                  target="_blank"
+                  >File patents</a
+                >
+              </li>
+              <li>
+                <a href="https://ptab.uspto.gov/#/login" target="_blank"
+                  >Patent and Trial Appeal Board</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://assignment.uspto.gov/patent/index.html#/patent/search"
+                  target="_blank"
+                  >Search assignment</a
+                >
+              </li>
+              <li>
+                <a href="https://epas.uspto.gov/" target="_blank"
+                  >Record assignment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://certifiedcopycenter.uspto.gov/app/"
+                  target="_blank"
+                  >Order certified patent documents</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.uspto.gov/web/offices/pac/mpep/index.html"
+                  target="_blank"
+                  >Manual of Patent Examining Procedure</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text"
+                >Trademarks&nbsp;<span class="caret"></span></span
+              ><span class="btn-icon"
+                ><span class="icon uspto-icon-trademark"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right trademark-menu">
+              <li>
+                <a
+                  href="http://tmsearch.uspto.gov/bin/gate.exe?f=login&amp;p_lang=english&amp;p_d=trmk"
+                  target="_blank"
+                  >Search trademarks</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.uspto.gov/trademarks-application-process/filing-online"
+                  target="_blank"
+                  >File trademark forms</a
+                >
+              </li>
+              <li>
+                <a href="http://tsdr.uspto.gov/" target="_blank"
+                  >View status, documents, and registration certificates</a
+                >
+              </li>
+              <li>
+                <a href="http://estta.uspto.gov/" target="_blank"
+                  >File Trademark Trial and Appeal Board forms</a
+                >
+              </li>
+              <li>
+                <a href="http://ttabvue.uspto.gov/ttabvue/v" target="_blank"
+                  >View Trademark Trial and Appeal Board proceedings</a
+                >
+              </li>
+              <li>
+                <a href="https://tmog.uspto.gov/#" target="_blank"
+                  >Search Trademark Official Gazette</a
+                >
+              </li>
+              <li>
+                <a href="https://etas.uspto.gov/" target="_blank"
+                  >Record assignment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://assignment.uspto.gov/trademark/index.html#/trademark/search"
+                  target="_blank"
+                  >Search assignment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://certifiedcopycenter.uspto.gov/app/"
+                  target="_blank"
+                  >Order certified trademark documents</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://tmep.uspto.gov/RDMS/TMEP/current#/current/d1e2.html"
+                  target="_blank"
+                  >View Trademark Manual of Examining Procedure</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://idm-tmng.uspto.gov/id-master-list-public.html"
+                  target="_blank"
+                  >Search the ID Manual</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text"
+                >Fees and payment&nbsp;<span class="caret"></span></span
+              ><span class="btn-icon"
+                ><span class="icon uspto-icon-dollar"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right fees-menu">
+              <li>
+                <a href="https://fees.uspto.gov/" target="_blank"
+                  >Fees Self-Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fees.uspto.gov/FinancialManager"
+                  target="_blank"
+                  >Financial Manager</a
+                >
+              </li>
+              <li>
+                <a href="https://fees.uspto.gov/MaintenanceFees" target="_blank"
+                  >Patent Maintenance Fees Storefront</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Help&nbsp;<span class="caret"></span></span
+              ><span class="btn-icon"
+                ><span class="icon uspto-icon-question-circle"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right fees-menu">
+              <li>
+                <a
+                  href="http://www.uspto.gov/learning-resources"
+                  target="_blank"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.uspto.gov/about-us/contact-us"
+                  target="_blank"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /End dynamic menu zone -->
+
+        <!-- Sign-in/user menu -->
+
+        <!-- MyUSPTO Link -->
+        <div class="btn-group">
+          <a
+            class="btn btn-default ex-btn-inverse my-link"
+            href="https://my.uspto.gov"
+          >
+            <span class="btn-text">MyUSPTO</span>
+            <span class="btn-icon">
+              <span class="uspto-icon-myuspto"></span
+            ></span>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it's appropriate to show account information.
+               -->
+          <!-- BEGIN USER DROPDOWN MENU -->
+          <button
+            type="button"
+            class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="btn-text">John Doe<span class="caret"></span></span>
+            <span class="btn-icon"> <span class="uspto-icon-user"></span></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="https://my.uspto.gov">
+                <span class="uspto-icon-home"></span> MyUSPTO<span
+                  class="sr-only"
+                  >console</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="https://account.uspto.gov">
+                <span class="uspto-icon-user-white"></span>
+                <span class="sr-only">Manage your</span>Account</a
+              >
+            </li>
+            <li>
+              <a href="https://my.uspto.gov/signout">
+                <span class="uspto-icon-sign-out"></span> Sign out</a
+              >
+            </li>
+          </ul>
+          <!-- END USER DROPDOWN MENU -->
+
+          <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+        </div>
+      </div>
+      <!-- /.pull-right -->
+    </nav>
+  </div>
+  <div class="uspto-header-middle">
+    <div class="flex-fill">
+      <a class="navbar-brand" href="#" title="Project title"> Project title </a>
+    </div>
+  </div>
+  <div class="uspto-header-bottom">
+    <nav
+      class="navbar navbar-expand-md navbar-dark"
+      aria-label="header sub navigation"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;global-header&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-header-top&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar navbar-expand-lg navbar-dark&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+        <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.uspto.gov&quot;</span>
+        <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-logo&quot;</span>
+        <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;</span>
+      &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span> United States Patent and Trademark Office <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ml-auto d-flex&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Dynamic menu zone --&gt;</span>
+        <span class="hljs-comment">&lt;!-- Do not customize this area --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;display-inline dyn-menuarea&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>
+                &gt;</span>Patents<span class="hljs-symbol">&amp;nbsp;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>
+                &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon uspto-icon-lightbulb&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right patent-menu&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://patentcenter.uspto.gov&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Patent Center&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://patft.uspto.gov/netahtml/PTO/search-bool.html&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Search patents&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://appft.uspto.gov/netahtml/PTO/search-bool.html&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Patent applications search&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://ppair-my.uspto.gov/pair/PrivatePair&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Check private filing status&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://portal.uspto.gov/pair/PublicPair&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Check public filing status&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://efs-my.uspto.gov/EFSWebUIRegistered/EFSWebRegistered&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>File patents&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://ptab.uspto.gov/#/login&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Patent and Trial Appeal Board&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://assignment.uspto.gov/patent/index.html#/patent/search&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Search assignment&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://epas.uspto.gov/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Record assignment&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://certifiedcopycenter.uspto.gov/app/&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Order certified patent documents&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://www.uspto.gov/web/offices/pac/mpep/index.html&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Manual of Patent Examining Procedure&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>
+                &gt;</span>Trademarks<span class="hljs-symbol">&amp;nbsp;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>
+                &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon uspto-icon-trademark&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right trademark-menu&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://tmsearch.uspto.gov/bin/gate.exe?f=login<span class="hljs-symbol">&amp;amp;</span>p_lang=english<span class="hljs-symbol">&amp;amp;</span>p_d=trmk&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Search trademarks&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.uspto.gov/trademarks-application-process/filing-online&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>File trademark forms&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://tsdr.uspto.gov/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>View status, documents, and registration certificates&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://estta.uspto.gov/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>File Trademark Trial and Appeal Board forms&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://ttabvue.uspto.gov/ttabvue/v&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>View Trademark Trial and Appeal Board proceedings&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://tmog.uspto.gov/#&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Search Trademark Official Gazette&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://etas.uspto.gov/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Record assignment&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://assignment.uspto.gov/trademark/index.html#/trademark/search&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Search assignment&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://certifiedcopycenter.uspto.gov/app/&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Order certified trademark documents&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://tmep.uspto.gov/RDMS/TMEP/current#/current/d1e2.html&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>View Trademark Manual of Examining Procedure&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://idm-tmng.uspto.gov/id-master-list-public.html&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Search the ID Manual&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>
+                &gt;</span>Fees and payment<span class="hljs-symbol">&amp;nbsp;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>
+                &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon uspto-icon-dollar&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right fees-menu&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://fees.uspto.gov/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Fees Self-Service&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://fees.uspto.gov/FinancialManager&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Financial Manager&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://fees.uspto.gov/MaintenanceFees&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Patent Maintenance Fees Storefront&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>Help<span class="hljs-symbol">&amp;nbsp;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>
+                &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon uspto-icon-question-circle&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right fees-menu&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://www.uspto.gov/learning-resources&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>FAQs&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://www.uspto.gov/about-us/contact-us&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  &gt;</span>Contact us&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- /End dynamic menu zone --&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- Sign-in/user menu --&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- MyUSPTO Link --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default ex-btn-inverse my-link&quot;</span>
+            <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://my.uspto.gov&quot;</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>MyUSPTO<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-myuspto&quot;</span>&gt;</span>&lt;/span
+            &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+          <span class="hljs-comment">&lt;!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it&#x27;s appropriate to show account information.
+               --&gt;</span>
+          <span class="hljs-comment">&lt;!-- BEGIN USER DROPDOWN MENU --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+            <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default dropdown-toggle ex-btn-inverse user-link&quot;</span>
+            <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+            <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+            <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>John Doe<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-user&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://my.uspto.gov&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-home&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> MyUSPTO<span class="hljs-tag">&lt;<span class="hljs-name">span</span>
+                  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>
+                  &gt;</span>console&lt;/span
+                &gt;&lt;/a
+              &gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://account.uspto.gov&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-user-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Manage your<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Account&lt;/a
+              &gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://my.uspto.gov/signout&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-sign-out&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Sign out&lt;/a
+              &gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-comment">&lt;!-- END USER DROPDOWN MENU --&gt;</span>
+
+          <span class="hljs-comment">&lt;!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET--&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- /.pull-right --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-header-middle&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex-fill&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-brand&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Project title&quot;</span>&gt;</span> Project title <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-header-bottom&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar navbar-expand-md navbar-dark&quot;</span>
+      <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;header sub navigation&quot;</span>
+    &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-toggler&quot;</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+        <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+        <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#navbarNav&quot;</span>
+        <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;navbarNav&quot;</span>
+        <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+        <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Toggle navigation&quot;</span>
+      &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-toggler-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collapse navbar-collapse&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;navbarNav&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-nav mr-auto&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item active&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+              &gt;</span>Home <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&lt;/a
+            &gt;
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item dropdown&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link dropdown-toggle&quot;</span>
+              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;navbarDropdown&quot;</span>
+              <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              Dropdown
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;navbarDropdown&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-divider&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link disabled&quot;</span>
+              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+              <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>
+              <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">&quot;true&quot;</span>
+              &gt;</span>Disabled&lt;/a
+            &gt;
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+<section class="pv-content">
+  <div class="pattern">
+    <h2>Footer</h2>
+    <p>
+      The <code>&lt;footer&gt;</code> tag defines a footer for a document or
+      section.
+    </p>
+    <p>A <code>&lt;footer&gt;</code> element typically contains:</p>
+    <ul>
+      <li>authorship, copyright, contact information</li>
+      <li>sitemap and back to top links</li>
+    </ul>
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for footer"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for footer"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;footer class=&quot;footer py-3&quot;&gt;
+  &lt;div class=&quot;container text-center&quot;&gt;
+    &lt;p&gt;Need help? Questions?&lt;/p&gt;
+    &lt;p&gt;
+      &lt;a href=&quot;mailto:email@uspto.gov&quot; class=&quot;text-white-50&quot;&gt;email@uspto.gov&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions?</p>
+    <p>
+      <a href="mailto:email@uspto.gov" class="text-white-50">email@uspto.gov</a>
+    </p>
+  </div>
+</footer>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer py-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container text-center&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Need help? Questions?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:email@uspto.gov&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-white-50&quot;</span>&gt;</span>email@uspto.gov<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p>Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme" target="_blank" class="text-white-50">Github repository</a>.</p>
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>

@@ -1,0 +1,84 @@
+{% extends 'layouts/components.njk' %} {% set page = { class:
+'page-character-count', title: 'Process list' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Process list</h1>
+
+    <p>
+      A process list displays the steps or stages of important instructions or
+      processes.
+    </p>
+  </div>
+
+  <div class="preview pv-lg">
+    {{ macros.viewCode({ ariaLabel: 'View code for process list', code:
+    defaultProcessList }, "")}}
+  </div>
+
+  <div class="preview pv-lg">
+    {{ macros.viewCode({ ariaLabel: 'View code for no text process list', code:
+    customProcessList }, "")}}
+  </div>
+</section>
+
+{% endblock %} {% set defaultProcessList %}
+<!-- Default process list  -->
+<ol class="process-list">
+  <li class="process-list-item">
+    <h4 class="process-list-heading">Start a process</h4>
+    <p class="margin-top-05">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
+      ipsum sed pharetra gravida, orci magna rhoncus neque.
+    </p>
+    <ul>
+      <li>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
+        ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio
+        lorem non turpis.
+      </li>
+      <li>
+        Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat
+        condimentum.
+      </li>
+      <li>Aliquam erat volutpat. Sed quis velit.</li>
+    </ul>
+  </li>
+  <li class="process-list-item">
+    <h4 class="process-list-heading">Proceed to the second step</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
+      ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio
+      lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula
+      volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla
+      facilisi. Nulla libero. Vivamus pharetra posuere sapien.
+    </p>
+  </li>
+  <li class="process-list-item">
+    <h4 class="process-list-heading">Complete the step-by-step process</h4>
+    <p>
+      Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat
+      condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla
+      libero. Vivamus pharetra posuere sapien.
+    </p>
+  </li>
+</ol>
+{% endset%} {% set customProcessList %}
+<!-- No text process list   -->
+<ol class="process-list">
+  <li class="process-list-item padding-bottom-4">
+    <p class="process-list-heading font-sans-xl line-height-sans-1">
+      Start a process.
+    </p>
+  </li>
+  <li class="process-list-item padding-bottom-4">
+    <p class="process-list-heading font-sans-xl line-height-sans-1">
+      Proceed to the second step.
+    </p>
+  </li>
+  <li class="process-list-item">
+    <p class="process-list-heading font-sans-xl line-height-sans-1">
+      Complete the step-by-step process.
+    </p>
+  </li>
+</ol>
+{% endset%}

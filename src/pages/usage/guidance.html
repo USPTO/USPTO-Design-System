@@ -1,0 +1,62 @@
+{% extends 'layouts/usage.njk' %} {% set page = { class: 'page-usage', title:
+'How to use USPTO Design System' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <!--<h1>{{page.title}}</h1> -->
+    <h1>Design Guidance for using Section 508 Requirements</h1>
+    <h2>Prerequisites</h2>
+    <p>
+      Before utilizing Section 508 guidance, ensure you are familar with the
+      purpose amd scope of standards developed by the
+      <a href="https://www.w3.org" target="_blank"
+        >World Wide Web Consortium (W3C)</a
+      >, and
+      <a href="https://www.w3.org/WAI/standards-guidelines/wcag" target="_blank"
+        >Web Content Accessibility Guidelines (WCAG)</a
+      >, includings WCAG 2.0 and WCAG 2.1.
+    </p>
+
+    <h3>Introduction</h3>
+    <p>
+      This document is to be used by developers who create user interface
+      functionality, and need to understand the applicability of and the
+      specific requirements for compliance with Web Content Accessibility
+      Guideline (WCAG). The WCAG requirements have a long history of development
+      and is still evolving. The section below provides the steps to use for
+      ensuring compliance in the development of user interface components.
+    </p>
+
+    <h3>How to Use</h3>
+    <ul>
+      <li>Start with the UI element you plan to use in your design.</li>
+      <li>
+        Review the
+        <a href="{{relativeRoot}}assets/documents/Section-508-UI-Mapping.xlsx"
+          >Level A and AA compliance chart</a
+        >
+      </li>
+      <li>
+        For specific detaIls regarding how to meet he applicable WCAG success
+        criteria for the UI element, you may refer to the list provided below.
+      </li>
+      <li>
+        Implement the design and coding per the success criteria and the
+        guidelines in the
+        <a href="../components/components.html">Component Section</a> of the
+        USPTO Design System.
+      </li>
+    </ul>
+    <h3>List of Level A to AAA WCAG 2.0/2.1 Success Criteria</h3>
+    <p>
+      <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank"
+        >WCAG (Quick Reference)</a
+      >
+    </p>
+    <h3>WCAG Compliance Chart</h3>
+    <a href="{{relativeRoot}}assets/documents/Section-508-UI-Mapping.xlsx"
+      >WCAG 2.0/2.1 Level A Requirements</a
+    >
+  </div>
+</section>
+
+{% endblock %}

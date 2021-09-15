@@ -62,6 +62,16 @@ $(function () {
   $('body').on('click', '#settingExample1 .dropdown-item', function (e) {  
     $('#settingExample1 .dropdown-item').removeClass('active');  
   });
+
+
+  /*
+   * Show hide left navigation on multistep page
+   */
+  $('body').on('click', '.showLeftNavigation', function (e) {
+    e.preventDefault(e);
+    $('.leftNavigation').toggleClass('d-none d-lg-block d-xl-block');
+  });
+
   /*
    * Credit card validation
    */
@@ -111,7 +121,6 @@ $('#textinput, #textareainput').keyup(function () {
       .siblings('small.help-text')
       .removeClass('invalid-feedback');
   }
-
 });
 
 

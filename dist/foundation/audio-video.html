@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-links">
+<html lang="en" class="page-audio-video">
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Links
+ | Audio and Video
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -264,70 +264,286 @@
 
 <section class="pv-content">
   <div class="pattern">
-    <h1>Links</h1>
-    <h2>Links within paragraphs</h2>
-    <p>
-      By default, links contained within a paragraph &lt;p&gt; tag will be blue
-      in color and underlined.
-    </p>
+    <h1>Audio</h1>
 
+    <p>
+      The HTML <code>&lt;audio&gt;</code> element is used to play an audio file
+      on a web page.
+    </p>
     <ul>
+      <li>A text alternative must be provided to the user</li>
       <li>
-        Visited links will appear
-        <span style="color: purple; text-decoration: underline"
-          >purple and underlined</span
-        >
+        Captions should be provided for all prerecorded content in synchronized
+        media
       </li>
+      <ul>
+        <li>
+          Captions of all dialogue and important sounds should be visible.
+        </li>
+        <li>
+          An alternative for time-based media or audio descriptions must be
+          provided.
+        </li>
+      </ul>
       <li>
-        Override the default appearance of links contained in paragraphs only if
-        necessary
+        Users should be advised when any user interface component setting
+        changes or receives focus, if it affects the context is affected, prior
+        to their implementation.
       </li>
-      <li>
-        Links not contained within a paragraph should follow the individual
-        component/pattern styling as defined
-        <ul>
-          <li>
-            In general, links contained within interface components will not be
-            underlined
-          </li>
-        </ul>
-      </li>
+      <li>Also see WCAG 4.1.1 and 4.1.2 for markup requirements.</li>
     </ul>
-
-    <blockquote>
-      <h5 id="example">Example</h5>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-        <a href="#">porttitor ex vestibulum</a>, iaculis metus a, suscipit leo.
-        Nullam ut rutrum nibh, vitae congue nisl. Cum sociis natoque penatibus
-        et magnis dis parturient montes, nascetur ridiculus mus.
-        <a href="#">Duis suscipit turpis ut tincidunt</a> dapibus. Etiam id
-        tristique nisi. Mauris non maximus ex, lacinia bibendum purus. Proin sit
-        amet mi ac massa tempus aliquet. In pellentesque facilisis odio nec
-        ultricies. <a href="#">Quisque metus magna</a>, aliquam a sollicitudin
-        at, mollis id massa.
-      </p>
-    </blockquote>
   </div>
-  <div class="pattern">
-    <h2 id="externaloff-site-links">External/off-site links</h2>
-    <p>
-      Where necessary, add the “<em>icon-external-link</em>”
-      <i class="material-icons">launch</i> icon to inform users that the link
-      they are visiting is an external website.
-    </p>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Audio</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
 
-    <blockquote>
-      <h5 id="example-1">Example</h5>
-      <p>
-        Lorem ipsum dolor sit amet.
-        <a href="#">Quisque porttitor ex vestibulum</a>
-        <i class="icon icon-external-link"></i>, consectetur adipiscing elit.
-      </p>
-      <p>&nbsp;</p>
-    </blockquote>
+      aria-controls="codebox-1"
+
+      aria-label="View code for audio"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for audio"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;audio controls&gt;
+  &lt;source src=&quot;../assets/img/uspto-audio.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+  &lt;p&gt;
+    Your browser does not support embeded audio. Here is a
+    &lt;a href=&quot;../assets/img/uspto-audio.mp3&quot;&gt;link to the audio&lt;/a&gt; instead.
+  &lt;/p&gt;
+&lt;/audio&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <audio controls>
+  <source src="../assets/img/uspto-audio.mp3" type="audio/mpeg" />
+  <p>
+    Your browser does not support embeded audio. Here is a
+    <a href="../assets/img/uspto-audio.mp3">link to the audio</a> instead.
+  </p>
+</audio>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img/uspto-audio.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    Your browser does not support embeded audio. Here is a
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;../assets/img/uspto-audio.mp3&quot;</span>&gt;</span>link to the audio<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> instead.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
   </div>
 </section>
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Video</h1>
+
+    <p>
+      The HTML <code>&lt;video&gt;</code> element is used to show a video on a
+      web page.
+    </p>
+    <ul>
+      <li>A text alternative must be provided to the user.</li>
+      <li>
+        Captions must be provided for all prerecorded content in synchronized
+        media.
+      </li>
+      <ul>
+        <li>
+          Captions of all dialogue and important sounds should be visible.
+        </li>
+      </ul>
+      <li>
+        A correct reading sequence should be programmed when the sequence in
+        which content is presented affects meaning.
+      </li>
+      <li>Also see WCAG 4.1.1 and 4.1.2 for markup requirements.</li>
+    </ul>
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Video</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for video"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for video"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;video id=&quot;myVideoWithControls&quot; width=&quot;350&quot; height=&quot;200&quot; controls&gt;
+  &lt;source src=&quot;../assets/img/uspto-video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  Your browser does not support embeded video.
+&lt;/video&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <video id="myVideoWithControls" width="350" height="200" controls>
+  <source src="../assets/img/uspto-video.mp4" type="video/mp4" />
+  Your browser does not support embeded video.
+</video>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myVideoWithControls&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;350&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;200&quot;</span> <span class="hljs-attr">controls</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img/uspto-video.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> /&gt;</span>
+  Your browser does not support embeded video.
+<span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Captions and subtitles video</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for captions and subtitles
+    video"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for captions and subtitles
+    video"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;video
+  id=&quot;myVideoWithCaptions&quot;
+  width=&quot;350&quot;
+  height=&quot;200&quot;
+  controls
+  preload=&quot;metadata&quot;
+&gt;
+  &lt;source src=&quot;../assets/img/uspto-video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;track
+    label=&quot;English&quot;
+    kind=&quot;subtitles&quot;
+    srclang=&quot;en&quot;
+    src=&quot;../assets/img/captions-en.vtt&quot;
+    default
+  /&gt;
+  Your browser does not support embeded video.
+&lt;/video&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <video
+  id="myVideoWithCaptions"
+  width="350"
+  height="200"
+  controls
+  preload="metadata"
+>
+  <source src="../assets/img/uspto-video.mp4" type="video/mp4" />
+  <track
+    label="English"
+    kind="subtitles"
+    srclang="en"
+    src="../assets/img/captions-en.vtt"
+    default
+  />
+  Your browser does not support embeded video.
+</video>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">video</span>
+  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myVideoWithCaptions&quot;</span>
+  <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;350&quot;</span>
+  <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;200&quot;</span>
+  <span class="hljs-attr">controls</span>
+  <span class="hljs-attr">preload</span>=<span class="hljs-string">&quot;metadata&quot;</span>
+&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img/uspto-video.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">track</span>
+    <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;English&quot;</span>
+    <span class="hljs-attr">kind</span>=<span class="hljs-string">&quot;subtitles&quot;</span>
+    <span class="hljs-attr">srclang</span>=<span class="hljs-string">&quot;en&quot;</span>
+    <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img/captions-en.vtt&quot;</span>
+    <span class="hljs-attr">default</span>
+  /&gt;</span>
+  Your browser does not support embeded video.
+<span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
     </main>
   </div>
       </div>

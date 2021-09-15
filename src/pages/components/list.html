@@ -1,0 +1,57 @@
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-list',
+title: 'List' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <h1>List</h1>
+
+    <p>A list organizes information into discrete sequential sections.</p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for unordered list', code:
+    listUnordered }, "Unordered list")}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for ordered list', code:
+    listOrdered }, "Ordered list")}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for unstyled list', code:
+    listUnstyled }, "Unstyled list")}}
+  </div>
+</section>
+{% endblock %} {% set listUnordered %}
+<!--Unordered list -->
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>
+    List item 3
+    <ul>
+      <li>Nested list item 1</li>
+      <li>Nested list item 2</li>
+    </ul>
+  </li>
+</ul>
+
+{% endset%} {% set listOrdered %}
+<!--Ordered list -->
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>
+    List item 3
+    <ol>
+      <li>Nested list item 1</li>
+      <li>Nested list item 2</li>
+    </ol>
+  </li>
+</ol>
+
+{% endset%} {% set listUnstyled %}
+<!--Unstyled list-->
+<ul class="list-unstyled">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+{% endset%}

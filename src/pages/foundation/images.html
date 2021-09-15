@@ -1,0 +1,75 @@
+{% extends 'layouts/foundation.njk' %} {% set page = { class: 'page-images',
+title: 'Images' } %} {% block content %}
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Images</h1>
+
+    <p>Images can improve the design and the appearance of a web page.</p>
+    <ul>
+      <li>A text alternative must be provided to the user.</li>
+      <li>
+        Color should not be the only visual means of conveying information,
+        indicating an action, prompting a response, or distinguishing a visual
+        element.
+      </li>
+      <li>
+        Receiving focus should not initiate a change of context. See WCAG 1.4.13
+        for content on hover or focus requirements.
+      </li>
+      <li>
+        The image view should not be restricted, unless a specific display
+        orientation is essential.
+      </li>
+      <li>
+        A contrast ratio of 4:5:1 should be provided. WCAG 1.4.3 for exceptions.
+      </li>
+      <li>
+        Except for captions and images of text, allow text to be resized without
+        assistive technology up to 200% without loss of content or
+        functionality.
+      </li>
+      <li>Also see WCAG 1.4.12, 4.1.1 and 4.1.2 for markup requirements.</li>
+    </ul>
+  </div>
+  <div class="preview">
+    <h2>Image</h2>
+    <p>
+      The HTML <code>&lt;img&gt;</code> tag is used to embed an image in a web
+      page.
+    </p>
+    <ul>
+      <li>src - Specifies the path to the image</li>
+      <li>alt - Specifies an alternate text for the image</li>
+    </ul>
+    {{ macros.viewCode({ ariaLabel: 'View code for image', code: defaultImage },
+    "")}}
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for responsive image', code:
+    responsiveImage }, "Responsive images")}}
+  </div>
+
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for responsive image', code:
+    thumbnailImage }, "Thumbnail image")}}
+  </div>
+</section>
+{% endblock %} {% set defaultImage %}
+<img
+  src="{{ img }}uspto-square.png"
+  alt="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+/>
+{% endset%} {% set responsiveImage %}
+<img
+  src="{{ img }}uspto-rectangle.png"
+  class="img-fluid"
+  alt="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+/>
+{% endset%} {% set thumbnailImage %}
+<img
+  src="{{ img }}uspto-square.png"
+  class="img-thumbnail"
+  alt="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+/>
+{% endset%}

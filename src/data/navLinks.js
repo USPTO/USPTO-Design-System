@@ -106,6 +106,7 @@ Object.assign(exports, {
     ],
     },
     { href: 'popovers.html', text: 'Popovers' },
+    //{ href: 'process-list.html', text: 'Process list' },
     {
       href: 'progressLoading.html',
       text: 'Progress and loading',
@@ -157,6 +158,8 @@ Object.assign(exports, {
   ],
   foundationNavLinks: [
     { href: 'foundation.html', text: 'Foundation' },
+    { href: 'anatomy.html', text: 'Anatomy of a webpage' },
+    { href: 'audio-video.html', text: 'Audio and video' },
     {
       href: 'colors.html',
       text: 'Colors',
@@ -179,6 +182,7 @@ Object.assign(exports, {
         { href: '#animation', text: 'Animation' }
       ],
     },
+    { href: 'images.html', text: 'Images' },
    // { href: 'layouts.html', text: 'Layouts' },
     { href: 'links.html', text: 'Links' },
     {
@@ -210,6 +214,7 @@ Object.assign(exports, {
     { href: 'documentationPage.html', text: 'Documentation page' },
     { href: 'landingPage.html', text: 'Landing page' },
     { href: 'marketingPage.html', text: 'Marketing page' },
+    { href: 'multistepPage.html', text: 'Multistep form page' },
     { href: 'searchPage.html', text: 'Search result page' }
     
     
@@ -228,7 +233,8 @@ Object.assign(exports, {
     }
   ],
   usageNavLinks: [
-    { href: 'how-to-use.html', text: 'Usage' }
+    { href: 'how-to-use.html', text: 'Usage' },
+    { href: 'guidance.html', text: 'Section 508 Guidance' }
   ],
   patternsNavLinks: [
     { href: 'patterns.html', text: 'Patterns' },

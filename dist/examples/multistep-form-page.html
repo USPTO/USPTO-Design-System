@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" class="page-document">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Multistep form
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <a href="https://www.uspto.gov" target="_blank" class="uspto-logo"
+          title="United States Patent and Trademark Office - An Agency of the Department of Commerce">
+            <span class="sr-only">
+            United States Patent and Trademark Office
+          </span>
+          </a>
+          <div class="ml-auto d-flex">
+            <!-- Dynamic menu zone -->
+            <!-- Do not customize this area -->
+            <div class="display-inline dyn-menuarea">
+              <!-- Patents -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://www.uspto.gov/patent';" aria-haspopup="false" aria-expanded="false">
+                  <span class="btn-text">Patents</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-lightbulb"></span></span>
+                </button>
+              </div>
+
+              <!-- Trademarks -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://www.uspto.gov/trademark';" aria-haspopup="false"
+                aria-expanded="false">
+                  <span class="btn-text">Trademarks</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-trademark"></span></span>
+                </button>
+              </div>
+
+              <!-- Fees and payment -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://fees.uspto.gov';" aria-haspopup="false" aria-expanded="false">
+                  <span class="btn-text">Fees and payment</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-dollar"></span></span>
+                </button>
+              </div>
+
+              <!-- Help -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle ex-btn-inverse" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                  <span class="btn-text">Help<span class="caret"></span></span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-question-circle"></span></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="https://www.uspto.gov/learning-resources" target="_blank"
+                    data-event-category="myuspto Header: Help menu" data-event-action="myuspto menu link clicked"
+                    data-event-label="FAQs">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="https://www.uspto.gov/about-us/contact-us" target="_blank"
+                    data-event-category="myuspto Header: Help menu" data-event-action="myuspto menu link clicked"
+                    data-event-label="Contact us">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /End dynamic menu zone -->
+
+            <!-- Sign-in/user menu -->
+
+            <!-- MyUSPTO Link -->
+            <div class="btn-group">
+              <a class="btn btn-default ex-btn-inverse my-link" href="https://my.uspto.gov">
+                <span class="btn-text">MyUSPTO</span>
+                <span class="btn-icon">
+                  <span class="uspto-icon-myuspto"></span></span>
+
+              </a>
+            </div>
+
+            <div class="btn-group">
+              <!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it's appropriate to show account information.
+               -->
+              <!-- BEGIN USER DROPDOWN MENU -->
+              <button type="button" class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="btn-text">John Doe<span class="caret"></span></span>
+                <span class="btn-icon">
+                  <span class="uspto-icon-user"></span></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a href="https://my.uspto.gov">
+                    <span class="uspto-icon-home"></span> MyUSPTO<span class="sr-only">console</span></a>
+                </li>
+                <li>
+                  <a href="https://account.uspto.gov">
+                    <span class="uspto-icon-user-white"></span>
+                    <span class="sr-only">Manage your</span>Account</a>
+                </li>
+                <li>
+                  <a href="https://my.uspto.gov/signout">
+                    <span class="uspto-icon-sign-out"></span> Sign out</a>
+                </li>
+              </ul>
+              <!-- END USER DROPDOWN MENU -->
+
+              <!--<a href="" class="btn btn-default user-link">Sign in</a>-->
+
+              <!--
+                  The code snippet for the .btn-group below will need to
+                  be conditionally displayed when it's appropriate to show
+                  the "Sign in" button.
+              -->
+              <!-- BEGIN SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+              <!-- <button
+                  class="btn btn-default ex-btn-inverse user-link"
+                  type="button"
+                  onclick="SIW.init({type:'modal'});">Sign in</button>-->
+              <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+            </div>
+          </div>
+          <!-- /.pull-right -->
+
+        </nav>
+      </div>
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="#" title="Project title">
+          Project title
+    </a>
+  
+  </div>
+</div>
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div 
+      class="main"
+      >
+<div class="bg-light">
+  <section class="container bg-white">
+    <div class="row p-4 border-bottom border-1 border-light">
+      <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
+        <h1 class="pb-3">Individual form title</h1>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
+        <!-- Small counters step indicator-->
+        <div
+          class="usa-step-indicator usa-step-indicator--counters-sm mb-0"
+          aria-label="progress"
+        >
+          <ol class="usa-step-indicator__segments">
+            <li
+              class="
+                usa-step-indicator__segment usa-step-indicator__segment--current
+              "
+            >
+              <span class="usa-step-indicator__segment-label"
+                >Profile <span class="usa-sr-only">completed</span></span
+              >
+            </li>
+            <li class="usa-step-indicator__segment">
+              <span class="usa-step-indicator__segment-label"
+                >Deployment <span class="usa-sr-only">not completed</span></span
+              >
+            </li>
+            <li class="usa-step-indicator__segment" aria-current="true">
+              <span class="usa-step-indicator__segment-label"
+                >Billing <span class="usa-sr-only">not completed</span>
+              </span>
+            </li>
+            <li class="usa-step-indicator__segment">
+              <span class="usa-step-indicator__segment-label"
+                >Notification
+                <span class="usa-sr-only">not completed</span></span
+              >
+            </li>
+            <li class="usa-step-indicator__segment">
+              <span class="usa-step-indicator__segment-label"
+                >Review and submit
+                <span class="usa-sr-only">not completed</span></span
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-12 d-block d-lg-none d-xl-none bg-white p-2 pl-4">
+        <button
+          class="btn btn-outline-secondary md-icon ml-2 showLeftNavigation"
+          type="button"
+          title="Show and hide left navigation"
+        >
+          <i class="material-icons">menu</i> &nbsp; Show/hide menu
+        </button>
+      </div>
+      <div
+        class="
+          col-xl-3 col-lg-3 col-md-12 col-sm-12
+          p-0
+          d-none d-lg-block d-xl-block
+          bg-white
+          border-right border-1 border-light
+          leftNavigation
+        "
+      >
+        <p class="p-4 small m-0">
+          OMB No. 0000-0000 (Exp. 00/00/0000) Under the Paperwork Reduction Act
+          of 1995, no persons are required to respond to a collection of
+          information unless it displays a valid OMB control number.
+        </p>
+        <div class="accordion navigation" id="AccordionNavigationExample">
+          <div>
+            <div id="heading-1">
+              <h3 class="accordion-heading">
+                <button
+                  class="btn btn-white btn-block text-left active"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse-1"
+                  aria-expanded="true"
+                  aria-controls="collapse-1"
+                >
+                  <i class="material-icons collapsed-icon">add</i>
+                  <i class="material-icons expanded-icon">remove</i>
+                  <span> Profile </span>
+                </button>
+              </h3>
+            </div>
+            <div
+              id="collapse-1"
+              class="collapse show"
+              aria-labelledby="heading-1"
+            >
+              <div>
+                <ul class="sidenav">
+                  <li class="success">
+                    <a href="#" data-parent="Parent link"> Step 1 </a>
+                  </li>
+                  <li class="error">
+                    <a href="#" data-parent="Parent link"> Step 2 </a>
+                  </li>
+                  <li class="active">
+                    <a href="#" aria-current="page" data-parent=""> Step 3 </a>
+                  </li>
+                  <li><a href="#" data-parent="Parent link"> Step 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="heading-2">
+              <h3 class="accordion-heading">
+                <button
+                  class="btn btn-white btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse-2"
+                  aria-expanded="false"
+                  aria-controls="collapse-2"
+                >
+                  <i class="material-icons collapsed-icon">add</i>
+                  <i class="material-icons expanded-icon">remove</i> Deployment
+                </button>
+              </h3>
+            </div>
+            <div id="collapse-2" class="collapse" aria-labelledby="heading-2">
+              <div>
+                <ul class="sidenav">
+                  <li><a href="#" data-parent="Parent link"> Step 1</a></li>
+                  <li><a href="#" data-parent="Parent link"> Step 2</a></li>
+                  <li><a href="#" data-parent="Parent link"> Step 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="heading-3">
+              <h3 class="accordion-heading">
+                <button
+                  class="btn btn-white btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse-3"
+                  aria-expanded="false"
+                  aria-controls="collapse-3"
+                >
+                  <i class="material-icons collapsed-icon">add</i>
+                  <i class="material-icons expanded-icon">remove</i> Billing
+                </button>
+              </h3>
+            </div>
+            <div id="collapse-3" class="collapse" aria-labelledby="heading-3">
+              <div>
+                <ul class="sidenav">
+                  <li><a href="#" data-parent="Parent link"> Step 1</a></li>
+                  <li><a href="#" data-parent="Parent link"> Step 2</a></li>
+                  <li><a href="#" data-parent="Parent link"> Step 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="heading-3">
+              <h3 class="accordion-heading">
+                <button
+                  class="btn btn-white btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse-4"
+                  aria-expanded="false"
+                  aria-controls="collapse-4"
+                >
+                  <i class="material-icons collapsed-icon">add</i>
+                  <i class="material-icons expanded-icon">remove</i>
+                  Notification
+                </button>
+              </h3>
+            </div>
+            <div id="collapse-4" class="collapse" aria-labelledby="heading-3">
+              <div>
+                <ul class="sidenav">
+                  <li><a href="#" data-parent="Parent link"> Step 1</a></li>
+                  <li><a href="#" data-parent="Parent link"> Step 2</a></li>
+                  <li><a href="#" data-parent="Parent link"> Step 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="heading-3">
+              <h3 class="accordion-heading">
+                <button
+                  class="btn btn-white btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse-5"
+                  aria-expanded="false"
+                  aria-controls="collapse-5"
+                >
+                  <i class="material-icons collapsed-icon">add</i>
+                  <i class="material-icons expanded-icon">remove</i> Review and
+                  submit
+                </button>
+              </h3>
+            </div>
+            <div id="collapse-5" class="collapse" aria-labelledby="heading-3">
+              <div>
+                <ul class="sidenav">
+                  <li><a href="#" data-parent="Parent link"> Step 1</a></li>
+                  <li><a href="#" data-parent="Parent link"> Step 2</a></li>
+                  <li><a href="#" data-parent="Parent link"> Step 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 bg-white">
+        <div class="">
+          <form>
+            <h2 class="mx-3 my-4">Mailing address</h2>
+            <div class="form-group col-md-4">
+              <label for="exampleFGStreetAddress">Address line 1</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFGStreetAddress"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="exampleFGStreetAddress2"
+                >Address line 2
+                <span class="text-muted">(optional)</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFGStreetAddress2"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="exampleFXCity1">City</label>
+              <input type="text" class="form-control" id="exampleFXCity1" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="exampleFXState2">State</label>
+              <select class="form-control" id="exampleFXState2">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="exampleFXZip2">Zip code</label>
+              <input type="text" class="form-control" id="exampleFXZip2" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-12 border-light border-top bg-white p-4 text-left">
+        <button type="button" class="btn btn-secondary">Previous</button>
+        <button type="button" class="btn btn-link">Cancel</button>
+        <button type="button" class="btn btn-primary float-right">
+          Continue
+        </button>
+        <button type="button" class="btn btn-outline-secondary float-right">
+          Save progress
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    Footer
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+  <script src="../assets/js/fetchHeaderMenu.js"></script> 
+<script>
+  $(function () {
+     ptoDynamicHeader.loadMenu(); 
+  })
+</script>  </body>
+</html>

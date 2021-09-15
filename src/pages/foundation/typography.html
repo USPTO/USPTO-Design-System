@@ -107,20 +107,6 @@ title: 'Typography' } %} {% block content %}
 
 <section class="pv-content">
   <div class="pattern">
-    <h2 id="Lists">Lists</h2>
-  </div>
-  <div class="preview pv-md">
-    {{ macros.viewCode({ ariaLabel: 'View code for unordered list', code:
-    unorderedList }, "Unordered")}}
-  </div>
-  <div class="preview pv-md">
-    {{ macros.viewCode({ ariaLabel: 'View code for ordered list', code:
-    orderedList }, "Ordered")}}
-  </div>
-</section>
-
-<section class="pv-content">
-  <div class="pattern">
     <h2 id="colors">Colors</h2>
   </div>
 
@@ -176,32 +162,6 @@ title: 'Typography' } %} {% block content %}
     </tr>
   </tbody>
 </table>
-{% endset%} {% set unorderedList %}
-<!--Unordered list -->
-<ul>
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li>
-    List item 3
-    <ul>
-      <li>Nested list item 1</li>
-      <li>Nested list item 2</li>
-    </ul>
-  </li>
-</ul>
-{% endset%} {% set orderedList %}
-<!--Ordered list -->
-<ol>
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li>
-    List item 3
-    <ol>
-      <li>Nested list item 1</li>
-      <li>Nested list item 2</li>
-    </ol>
-  </li>
-</ol>
 {% endset%} {% set colors %}
 <!--Colors -->
 <p class="text-primary">.text-primary</p>

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" class="page-list">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | List
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
+          USPTO <span class="font-weight-light">Design System (Beta)</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
+     <img src="../assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
+    </a>
+  </div>
+</div>
+
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
+              Page templates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="Usage">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="components.html">Components
+    </option>
+    <option value="alertsNotifications.html">Alerts and notifications
+    </option>
+    <option value="banner.html">Banner
+    </option>
+    <option value="breadcrumbs.html">Breadcrumbs
+    </option>
+    <option value="buttons.html">Buttons
+    </option>
+    <option value="carousel.html">Carousel
+    </option>
+    <option value="character-count.html">Character count
+    </option>
+    <option value="collapsiblePanels.html">Collapsible panels
+    </option>
+    <option value="dialogs.html">Dialogs
+    </option>
+    <option value="siteAlert.html">Emergency site alert
+    </option>
+    <option value="formControls.html">Form controls
+    </option>
+    <option value="forms.html">Forms
+    </option>
+    <option value="labelsAndBadges.html">Labels and badges
+    </option>
+    <option value="menus.html">Menus
+    </option>
+    <option value="pagination.html">Pagination
+    </option>
+    <option value="popovers.html">Popovers
+    </option>
+    <option value="progressLoading.html">Progress and loading
+    </option>
+    <option value="stepIndicators.html">Step indicators
+    </option>
+    <option value="summaryBox.html">Summary box
+    </option>
+    <option value="tables.html">Tables
+    </option>
+    <option value="tabs.html">Tabs
+    </option>
+    <option value="tooltips.html">Tooltips
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="components.html" data-parent="Components">Components</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="alertsNotifications.html" data-parent="Alerts and notifications">Alerts and notifications</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#contextual-alerts">Contextual alerts</a>
+            </li>
+            <li>
+              <a href="#system-notifications">System notifications</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="banner.html" data-parent="Banner">Banner</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="breadcrumbs.html" data-parent="Breadcrumbs">Breadcrumbs</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="buttons.html" data-parent="Buttons">Buttons</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#button-styles">Button styles</a>
+            </li>
+            <li>
+              <a href="#button-sizes">Button sizes</a>
+            </li>
+            <li>
+              <a href="#button-groups">Button groups</a>
+            </li>
+            <li>
+              <a href="#toggle-buttons">Toggle buttons</a>
+            </li>
+            <li>
+              <a href="#dropdown-buttons">Dropdown buttons</a>
+            </li>
+            <li>
+              <a href="#split-buttons">Split buttons</a>
+            </li>
+            <li>
+              <a href="#icon-buttons">Icon buttons</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="carousel.html" data-parent="Carousel">Carousel</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="character-count.html" data-parent="Character count">Character count</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="collapsiblePanels.html" data-parent="Collapsible panels">Collapsible panels</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#behaviors">Behaviors</a>
+            </li>
+            <li>
+              <a href="#styles">Styles</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="dialogs.html" data-parent="Dialogs">Dialogs</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#confirmation">Confirmation</a>
+            </li>
+            <li>
+              <a href="#actionless">Actionless</a>
+            </li>
+            <li>
+              <a href="#modes">Modes</a>
+            </li>
+            <li>
+              <a href="#live">Live</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="siteAlert.html" data-parent="Emergency site alert">Emergency site alert</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="formControls.html" data-parent="Form controls">Form controls</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#text-box">Text box</a>
+            </li>
+            <li>
+              <a href="#text-area">Text area</a>
+            </li>
+            <li>
+              <a href="#radio-buttons">Radio buttons</a>
+            </li>
+            <li>
+              <a href="#checkboxes">Checkboxes</a>
+            </li>
+            <li>
+              <a href="#toggle-switches">Toggle switches</a>
+            </li>
+            <li>
+              <a href="#select">Select</a>
+            </li>
+            <li>
+              <a href="#multi-select">Multi-select</a>
+            </li>
+            <li>
+              <a href="#date-picker">Date picker</a>
+            </li>
+            <li>
+              <a href="#date-input">Date input</a>
+            </li>
+            <li>
+              <a href="#time-picker">Time picker</a>
+            </li>
+            <li>
+              <a href="#input-prefix-suffix">Input prefix &amp; suffix</a>
+            </li>
+            <li>
+              <a href="#slider">Range slider</a>
+            </li>
+            <li>
+              <a href="#rich-text-editor">Rich text editor</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="forms.html" data-parent="Forms">Forms</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#overview">Overview</a>
+            </li>
+            <li>
+              <a href="#field-widths">Field widths</a>
+            </li>
+            <li>
+              <a href="#labels">Labels</a>
+            </li>
+            <li>
+              <a href="#optional-fields">Optional fields</a>
+            </li>
+            <li>
+              <a href="#form-validation">Form validation</a>
+            </li>
+            <li>
+              <a href="#help-text">Help text</a>
+            </li>
+            <li>
+              <a href="#form-groups">Form groups</a>
+            </li>
+            <li>
+              <a href="#input-character-limits">Input character limits</a>
+            </li>
+            <li>
+              <a href="#examples">Examples</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="labelsAndBadges.html" data-parent="Labels and badges">Labels and badges</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#labels">Labels</a>
+            </li>
+            <li>
+              <a href="#badges">Badges</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="menus.html" data-parent="Menus">Menus</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#submenus">Submenus</a>
+            </li>
+            <li>
+              <a href="#icons">Icons</a>
+            </li>
+            <li>
+              <a href="#form-controls">Form controls</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="pagination.html" data-parent="Pagination">Pagination</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#examples">Examples</a>
+            </li>
+            <li>
+              <a href="#sizing">Sizing</a>
+            </li>
+            <li>
+              <a href="#alignment">Alignment</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="popovers.html" data-parent="Popovers">Popovers</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="progressLoading.html" data-parent="Progress and loading">Progress and loading</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#progress-bars">Progress bars</a>
+            </li>
+            <li>
+              <a href="#load-spinners">Load spinners</a>
+            </li>
+            <li>
+              <a href="#Size">Spinner size</a>
+            </li>
+            <li>
+              <a href="#Spinner-examples">Spinner examples</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="stepIndicators.html" data-parent="Step indicators">Step indicators</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="summaryBox.html" data-parent="Summary box">Summary box</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="tables.html" data-parent="Tables">Tables</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#styles">Styles</a>
+            </li>
+            <li>
+              <a href="#headers">Headers</a>
+            </li>
+            <li>
+              <a href="#sorting">Sorting</a>
+            </li>
+            <li>
+              <a href="#selection">Selection</a>
+            </li>
+            <li>
+              <a href="#row-action-buttons">Row action buttons</a>
+            </li>
+            <li>
+              <a href="#column-customization">Column customization</a>
+            </li>
+            <li>
+              <a href="#grouping">Grouping</a>
+            </li>
+            <li>
+              <a href="#expandable-rows">Expandable rows</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="tabs.html" data-parent="Tabs">Tabs</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#normal-tabs">Normal tabs</a>
+            </li>
+            <li>
+              <a href="#pill-tabs">Pill tabs</a>
+            </li>
+            <li>
+              <a href="#vertical-tabs">Vertical tabs</a>
+            </li>
+            <li>
+              <a href="#justified-tabs">Justified tabs</a>
+            </li>
+            <li>
+              <a href="#light-tabs">Light tabs</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="tooltips.html" data-parent="Tooltips">Tooltips</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#positioning">Positioning</a>
+            </li>
+            <li>
+              <a href="#content">Content</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+<section class="pv-content">
+  <div class="pattern">
+    <h1>List</h1>
+
+    <p>A list organizes information into discrete sequential sections.</p>
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Unordered list</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for unordered list"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for unordered list"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Unordered list --&gt;
+&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;
+    List item 3
+    &lt;ul&gt;
+      &lt;li&gt;Nested list item 1&lt;/li&gt;
+      &lt;li&gt;Nested list item 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Unordered list -->
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>
+    List item 3
+    <ul>
+      <li>Nested list item 1</li>
+      <li>Nested list item 2</li>
+    </ul>
+  </li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Unordered list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    List item 3
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Ordered list</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for ordered list"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for ordered list"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Ordered list --&gt;
+&lt;ol&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;
+    List item 3
+    &lt;ol&gt;
+      &lt;li&gt;Nested list item 1&lt;/li&gt;
+      &lt;li&gt;Nested list item 2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Ordered list -->
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>
+    List item 3
+    <ol>
+      <li>Nested list item 1</li>
+      <li>Nested list item 2</li>
+    </ol>
+  </li>
+</ol>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Ordered list --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    List item 3
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Unstyled list</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for unstyled list"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for unstyled list"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Unstyled list--&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Unstyled list-->
+<ul class="list-unstyled">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Unstyled list--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p>Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme" target="_blank" class="text-white-50">Github repository</a>.</p>
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>

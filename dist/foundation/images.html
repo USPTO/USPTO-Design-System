@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-links">
+<html lang="en" class="page-images">
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Links
+ | Images
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -264,68 +264,220 @@
 
 <section class="pv-content">
   <div class="pattern">
-    <h1>Links</h1>
-    <h2>Links within paragraphs</h2>
-    <p>
-      By default, links contained within a paragraph &lt;p&gt; tag will be blue
-      in color and underlined.
-    </p>
+    <h1>Images</h1>
 
+    <p>Images can improve the design and the appearance of a web page.</p>
     <ul>
+      <li>A text alternative must be provided to the user.</li>
       <li>
-        Visited links will appear
-        <span style="color: purple; text-decoration: underline"
-          >purple and underlined</span
-        >
+        Color should not be the only visual means of conveying information,
+        indicating an action, prompting a response, or distinguishing a visual
+        element.
       </li>
       <li>
-        Override the default appearance of links contained in paragraphs only if
-        necessary
+        Receiving focus should not initiate a change of context. See WCAG 1.4.13
+        for content on hover or focus requirements.
       </li>
       <li>
-        Links not contained within a paragraph should follow the individual
-        component/pattern styling as defined
-        <ul>
-          <li>
-            In general, links contained within interface components will not be
-            underlined
-          </li>
-        </ul>
+        The image view should not be restricted, unless a specific display
+        orientation is essential.
       </li>
+      <li>
+        A contrast ratio of 4:5:1 should be provided. WCAG 1.4.3 for exceptions.
+      </li>
+      <li>
+        Except for captions and images of text, allow text to be resized without
+        assistive technology up to 200% without loss of content or
+        functionality.
+      </li>
+      <li>Also see WCAG 1.4.12, 4.1.1 and 4.1.2 for markup requirements.</li>
     </ul>
-
-    <blockquote>
-      <h5 id="example">Example</h5>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-        <a href="#">porttitor ex vestibulum</a>, iaculis metus a, suscipit leo.
-        Nullam ut rutrum nibh, vitae congue nisl. Cum sociis natoque penatibus
-        et magnis dis parturient montes, nascetur ridiculus mus.
-        <a href="#">Duis suscipit turpis ut tincidunt</a> dapibus. Etiam id
-        tristique nisi. Mauris non maximus ex, lacinia bibendum purus. Proin sit
-        amet mi ac massa tempus aliquet. In pellentesque facilisis odio nec
-        ultricies. <a href="#">Quisque metus magna</a>, aliquam a sollicitudin
-        at, mollis id massa.
-      </p>
-    </blockquote>
   </div>
-  <div class="pattern">
-    <h2 id="externaloff-site-links">External/off-site links</h2>
+  <div class="preview">
+    <h2>Image</h2>
     <p>
-      Where necessary, add the “<em>icon-external-link</em>”
-      <i class="material-icons">launch</i> icon to inform users that the link
-      they are visiting is an external website.
+      The HTML <code>&lt;img&gt;</code> tag is used to embed an image in a web
+      page.
     </p>
+    <ul>
+      <li>src - Specifies the path to the image</li>
+      <li>alt - Specifies an alternate text for the image</li>
+    </ul>
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
 
-    <blockquote>
-      <h5 id="example-1">Example</h5>
-      <p>
-        Lorem ipsum dolor sit amet.
-        <a href="#">Quisque porttitor ex vestibulum</a>
-        <i class="icon icon-external-link"></i>, consectetur adipiscing elit.
-      </p>
-      <p>&nbsp;</p>
-    </blockquote>
+      aria-controls="codebox-1"
+
+      aria-label="View code for image"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for image"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;img
+  src=&quot;../assets/img/uspto-square.png&quot;
+  alt=&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;
+/&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <img
+  src="../assets/img/uspto-square.png"
+  alt="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+/>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img/uspto-square.png&quot;</span>
+  <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;</span>
+/&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Responsive images</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for responsive image"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for responsive image"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;img
+  src=&quot;../assets/img/uspto-rectangle.png&quot;
+  class=&quot;img-fluid&quot;
+  alt=&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;
+/&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <img
+  src="../assets/img/uspto-rectangle.png"
+  class="img-fluid"
+  alt="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+/>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img/uspto-rectangle.png&quot;</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;img-fluid&quot;</span>
+  <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;</span>
+/&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Thumbnail image</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for responsive image"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for responsive image"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;img
+  src=&quot;../assets/img/uspto-square.png&quot;
+  class=&quot;img-thumbnail&quot;
+  alt=&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;
+/&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <img
+  src="../assets/img/uspto-square.png"
+  class="img-thumbnail"
+  alt="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+/>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img/uspto-square.png&quot;</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;img-thumbnail&quot;</span>
+  <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;</span>
+/&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
   </div>
 </section>
     </main>
