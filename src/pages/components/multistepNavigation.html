@@ -1,0 +1,163 @@
+{% extends 'layouts/components.njk' %} {% set page = { class:
+'page-multistepNavigation', title: 'Multistep navigation' } %} {% block content
+%}
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Multistep navigation</h1>
+    <p>
+      A multistep navigation is used for long processes that divides the main
+      task into subtasks. This navigation lets the user quickly identify their
+      current progress in completing the task and navigate forwards and
+      backwards between steps if needed.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for default multistep
+    navigation', code: multistepDefault }, "")}}
+  </div>
+</section>
+{% endblock %} {% set multistepDefault %}
+<!--Multistep navigation-->
+<div class="accordion navigation" id="AccordionNavigationExample">
+  <div>
+    <div id="heading-1">
+      <h3 class="accordion-heading">
+        <button
+          class="btn btn-white btn-block text-left active"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapse-1"
+          aria-expanded="true"
+          aria-controls="collapse-1"
+        >
+          <i class="material-icons collapsed-icon">add</i>
+          <i class="material-icons expanded-icon">remove</i>
+          <span> Profile </span>
+        </button>
+      </h3>
+    </div>
+    <div id="collapse-1" class="collapse show" aria-labelledby="heading-1">
+      <div>
+        <ul class="sidenav">
+          <li class="success">
+            <a href="#" data-parent="Parent link"> Step 1 </a>
+          </li>
+          <li class="error">
+            <a href="#" data-parent="Parent link"> Step 2 </a>
+          </li>
+          <li class="active">
+            <a href="#" aria-current="page" data-parent=""> Step 3 </a>
+          </li>
+          <li><a href="#" data-parent="Parent link"> Step 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="heading-2">
+      <h3 class="accordion-heading">
+        <button
+          class="btn btn-white btn-block text-left collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapse-2"
+          aria-expanded="false"
+          aria-controls="collapse-2"
+        >
+          <i class="material-icons collapsed-icon">add</i>
+          <i class="material-icons expanded-icon">remove</i> Deployment
+        </button>
+      </h3>
+    </div>
+    <div id="collapse-2" class="collapse" aria-labelledby="heading-2">
+      <div>
+        <ul class="sidenav">
+          <li><a href="#" data-parent="Parent link"> Step 1</a></li>
+          <li><a href="#" data-parent="Parent link"> Step 2</a></li>
+          <li><a href="#" data-parent="Parent link"> Step 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="heading-3">
+      <h3 class="accordion-heading">
+        <button
+          class="btn btn-white btn-block text-left collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapse-3"
+          aria-expanded="false"
+          aria-controls="collapse-3"
+        >
+          <i class="material-icons collapsed-icon">add</i>
+          <i class="material-icons expanded-icon">remove</i> Billing
+        </button>
+      </h3>
+    </div>
+    <div id="collapse-3" class="collapse" aria-labelledby="heading-3">
+      <div>
+        <ul class="sidenav">
+          <li><a href="#" data-parent="Parent link"> Step 1</a></li>
+          <li><a href="#" data-parent="Parent link"> Step 2</a></li>
+          <li><a href="#" data-parent="Parent link"> Step 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="heading-3">
+      <h3 class="accordion-heading">
+        <button
+          class="btn btn-white btn-block text-left collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapse-4"
+          aria-expanded="false"
+          aria-controls="collapse-4"
+        >
+          <i class="material-icons collapsed-icon">add</i>
+          <i class="material-icons expanded-icon">remove</i>
+          Notification
+        </button>
+      </h3>
+    </div>
+    <div id="collapse-4" class="collapse" aria-labelledby="heading-3">
+      <div>
+        <ul class="sidenav">
+          <li><a href="#" data-parent="Parent link"> Step 1</a></li>
+          <li><a href="#" data-parent="Parent link"> Step 2</a></li>
+          <li><a href="#" data-parent="Parent link"> Step 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="heading-3">
+      <h3 class="accordion-heading">
+        <button
+          class="btn btn-white btn-block text-left collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapse-5"
+          aria-expanded="false"
+          aria-controls="collapse-5"
+        >
+          <i class="material-icons collapsed-icon">add</i>
+          <i class="material-icons expanded-icon">remove</i> Review and submit
+        </button>
+      </h3>
+    </div>
+    <div id="collapse-5" class="collapse" aria-labelledby="heading-3">
+      <div>
+        <ul class="sidenav">
+          <li><a href="#" data-parent="Parent link"> Step 1</a></li>
+          <li><a href="#" data-parent="Parent link"> Step 2</a></li>
+          <li><a href="#" data-parent="Parent link"> Step 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endset%}

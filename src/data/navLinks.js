@@ -95,6 +95,7 @@ Object.assign(exports, {
         { href: '#form-controls', text: 'Form controls' }
       ],
     },
+    { href: 'multistepNavigation.html', text: 'Multistep navigation' },
     //{ href: 'metadata.html', text: 'Metadata' },
     {
       href: 'pagination.html',
