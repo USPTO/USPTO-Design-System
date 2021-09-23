@@ -90,7 +90,7 @@
 <div class="uspto-header-middle ">
   <div class="flex-fill">
     <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
-          USPTO <span class="font-weight-light">Design System (Beta)</span>
+          USPTO <span class="font-weight-light">Design System</span>
     </a>
     <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
      <img src="../assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
@@ -151,11 +151,17 @@
 <select class="form-control my-3" id="leftSideNav" >
     <option value="foundation.html">Foundation
     </option>
+    <option value="anatomy.html">Anatomy of a webpage
+    </option>
+    <option value="audio-video.html">Audio and video
+    </option>
     <option value="colors.html">Colors
     </option>
     <option value="grid.html">Grid
     </option>
     <option value="icons.html">Icons
+    </option>
+    <option value="images.html">Images
     </option>
     <option value="links.html">Links
     </option>
@@ -167,6 +173,16 @@
   <ul class="sidenav">
       <li>
         <a href="foundation.html" data-parent="Foundation">Foundation</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="anatomy.html" data-parent="Anatomy of a webpage">Anatomy of a webpage</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="audio-video.html" data-parent="Audio and video">Audio and video</a>
         <ul class="sidenav-sublist">
         </ul>
       </li>
@@ -210,6 +226,11 @@
             <li>
               <a href="#animation">Animation</a>
             </li>
+        </ul>
+      </li>
+      <li>
+        <a href="images.html" data-parent="Images">Images</a>
+        <ul class="sidenav-sublist">
         </ul>
       </li>
       <li>
@@ -559,174 +580,6 @@
 
 <section class="pv-content">
   <div class="pattern">
-    <h2 id="Lists">Lists</h2>
-  </div>
-  <div class="preview pv-md">
-    
-  <div class="">
-    <div class="d-flex mb-1">
-        <h2>Unordered</h2>
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
-
-      aria-controls="codebox-3"
-
-      aria-label="View code for unordered list"
-
-      aria-expanded="false"
-
-      data-target="#codebox-3"
-
-      data-toggle="collapse"
-
-      type="button"
-
-      title="View code for unordered list"
-
-    >
-    <span class="material-icons">unfold_more</span> View code </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
-
-      data-clipboard-text="&lt;!--Unordered list --&gt;
-&lt;ul&gt;
-  &lt;li&gt;List item 1&lt;/li&gt;
-  &lt;li&gt;List item 2&lt;/li&gt;
-  &lt;li&gt;
-    List item 3
-    &lt;ul&gt;
-      &lt;li&gt;Nested list item 1&lt;/li&gt;
-      &lt;li&gt;Nested list item 2&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-"
-
-      type="button"
-
-      title="Copy code"
-
-    >
-    <span class="material-icons">content_copy</span> Copy code </button>
-      </div>
-    </div>
-    <div class="preview-size">
-      <!--Unordered list -->
-<ul>
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li>
-    List item 3
-    <ul>
-      <li>Nested list item 1</li>
-      <li>Nested list item 2</li>
-    </ul>
-  </li>
-</ul>
-    </div>
-    <div class="collapse line-numbers pt-2" id="codebox-3">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Unordered list --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    List item 3
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
-    </div>
-  </div>
-
-  </div>
-  <div class="preview pv-md">
-    
-  <div class="">
-    <div class="d-flex mb-1">
-        <h2>Ordered</h2>
-      <div class=" ml-auto">
-        <button class="btn btn-sm btn-light md-icon collapsed"
-
-      aria-controls="codebox-4"
-
-      aria-label="View code for ordered list"
-
-      aria-expanded="false"
-
-      data-target="#codebox-4"
-
-      data-toggle="collapse"
-
-      type="button"
-
-      title="View code for ordered list"
-
-    >
-    <span class="material-icons">unfold_more</span> View code </button>
-        <button class="btn btn-sm btn-light md-icon clipboard"      
-
-      data-clipboard-text="&lt;!--Ordered list --&gt;
-&lt;ol&gt;
-  &lt;li&gt;List item 1&lt;/li&gt;
-  &lt;li&gt;List item 2&lt;/li&gt;
-  &lt;li&gt;
-    List item 3
-    &lt;ol&gt;
-      &lt;li&gt;Nested list item 1&lt;/li&gt;
-      &lt;li&gt;Nested list item 2&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-"
-
-      type="button"
-
-      title="Copy code"
-
-    >
-    <span class="material-icons">content_copy</span> Copy code </button>
-      </div>
-    </div>
-    <div class="preview-size">
-      <!--Ordered list -->
-<ol>
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li>
-    List item 3
-    <ol>
-      <li>Nested list item 1</li>
-      <li>Nested list item 2</li>
-    </ol>
-  </li>
-</ol>
-    </div>
-    <div class="collapse line-numbers pt-2" id="codebox-4">
-      Example HTML usage:
-        <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Ordered list --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    List item 3
-    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Nested list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>        </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<section class="pv-content">
-  <div class="pattern">
     <h2 id="colors">Colors</h2>
   </div>
 
@@ -737,13 +590,13 @@
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
-      aria-controls="codebox-5"
+      aria-controls="codebox-3"
 
       aria-label="View code for text colors"
 
       aria-expanded="false"
 
-      data-target="#codebox-5"
+      data-target="#codebox-3"
 
       data-toggle="collapse"
 
@@ -792,7 +645,7 @@
 <p class="text-muted">.text-muted</p>
 <p class="text-white bg-dark">.text-white</p>
     </div>
-    <div class="collapse line-numbers pt-2" id="codebox-5">
+    <div class="collapse line-numbers pt-2" id="codebox-3">
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Colors --&gt;</span>
