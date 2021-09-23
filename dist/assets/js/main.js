@@ -62,6 +62,16 @@ $(function () {
   $('body').on('click', '#settingExample1 .dropdown-item', function (e) {  
     $('#settingExample1 .dropdown-item').removeClass('active');  
   });
+
+
+  /*
+   * Show hide left navigation on multistep page
+   */
+  $('body').on('click', '.showLeftNavigation', function (e) {
+    e.preventDefault(e);
+    $('.leftNavigation').toggleClass('d-none d-lg-block d-xl-block');
+  });
+
   /*
    * Credit card validation
    */
@@ -75,6 +85,44 @@ $(function () {
   });
 
 })
+/*
+   * Character count
+   */
+
+$('#textinput, #textareainput').keyup(function () {
+  var max = $(this).siblings().children('#charNum').attr('data-value');
+  //console.log(max);
+  var len = $(this)
+    .val()
+    .length;
+
+  if (len >= 1 & len <= max) {
+    var char = max - len;
+    $(this).siblings().children('#charNum').text(char);
+     $(this).siblings().children('#charTxt').text("characters left");
+    $(this).removeClass('is-invalid');
+    $(this)
+      .siblings('small.help-text')
+      .removeClass('invalid-feedback');
+  } else if (len > max) {
+    var char = max - len;
+    char = Math.abs(char);
+     $(this).siblings().children('#charNum').text(char);
+     $(this).siblings().children('#charTxt').text("characters over limit");
+    $(this).addClass('is-invalid');
+    $(this)
+      .siblings('small.help-text')
+      .addClass('invalid-feedback');
+  } else if (len === 0) {
+     $(this).siblings().children('#charNum').text(max);
+     $(this).siblings().children('#charTxt').text("characters allowed");
+    $(this).removeClass('is-invalid');
+    $(this)
+      .siblings('small.help-text')
+      .removeClass('invalid-feedback');
+  }
+});
+
 
 
 

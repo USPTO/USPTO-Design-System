@@ -24,6 +24,7 @@ Object.assign(exports, {
       ],
     },
     { href: 'carousel.html', text: 'Carousel' },
+    { href: 'character-count.html', text: 'Character count' },
     {
       href: 'collapsiblePanels.html',
       text: 'Collapsible panels',
@@ -94,6 +95,7 @@ Object.assign(exports, {
         { href: '#form-controls', text: 'Form controls' }
       ],
     },
+    { href: 'multistepNavigation.html', text: 'Multistep navigation' },
     //{ href: 'metadata.html', text: 'Metadata' },
     {
       href: 'pagination.html',
@@ -105,6 +107,7 @@ Object.assign(exports, {
     ],
     },
     { href: 'popovers.html', text: 'Popovers' },
+    //{ href: 'process-list.html', text: 'Process list' },
     {
       href: 'progressLoading.html',
       text: 'Progress and loading',
@@ -156,6 +159,8 @@ Object.assign(exports, {
   ],
   foundationNavLinks: [
     { href: 'foundation.html', text: 'Foundation' },
+    { href: 'anatomy.html', text: 'Anatomy of a webpage' },
+    { href: 'audio-video.html', text: 'Audio and video' },
     {
       href: 'colors.html',
       text: 'Colors',
@@ -178,6 +183,7 @@ Object.assign(exports, {
         { href: '#animation', text: 'Animation' }
       ],
     },
+    { href: 'images.html', text: 'Images' },
    // { href: 'layouts.html', text: 'Layouts' },
     { href: 'links.html', text: 'Links' },
     {
@@ -198,8 +204,22 @@ Object.assign(exports, {
   ],
   pageTemplateNavLinks: [
     { href: 'pageTemplate.html', text: 'Page templates' },
+    {
+      href: 'error-page.html',
+      text: 'Error page',
+      "children": [
+        { href: '#404-error', text: '404 error' },
+        { href: '#server-error', text: 'Server error' }
+      ],
+    },  
     { href: 'documentationPage.html', text: 'Documentation page' },
-    { href: 'marketingPage.html', text: 'Marketing page' }
+    { href: 'landingPage.html', text: 'Landing page' },
+    { href: 'marketingPage.html', text: 'Marketing page' },
+    { href: 'multistepPage.html', text: 'Multistep form page' },
+    { href: 'searchPage.html', text: 'Search result page' }
+    
+    
+    
   ],
 
   resourcesNavLinks: [
@@ -214,7 +234,8 @@ Object.assign(exports, {
     }
   ],
   usageNavLinks: [
-    { href: 'how-to-use.html', text: 'Usage' }
+    { href: 'how-to-use.html', text: 'Usage' },
+    { href: 'guidance.html', text: 'Section 508 Guidance' }
   ],
   patternsNavLinks: [
     { href: 'patterns.html', text: 'Patterns' },

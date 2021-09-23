@@ -1,0 +1,118 @@
+{% extends 'layouts/foundation.njk' %} {% set page = { class:
+'page-audio-video', title: 'Audio and Video' } %} {% block content %}
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Audio</h1>
+
+    <p>
+      The HTML <code>&lt;audio&gt;</code> element is used to play an audio file
+      on a web page.
+    </p>
+    <ul>
+      <li>A text alternative must be provided to the user</li>
+      <li>
+        Captions should be provided for all prerecorded content in synchronized
+        media
+      </li>
+      <ul>
+        <li>
+          Captions of all dialogue and important sounds should be visible.
+        </li>
+        <li>
+          An alternative for time-based media or audio descriptions must be
+          provided.
+        </li>
+      </ul>
+      <li>
+        Users should be advised when any user interface component setting
+        changes or receives focus, if it affects the context is affected, prior
+        to their implementation.
+      </li>
+      <li>Also see WCAG 4.1.1 and 4.1.2 for markup requirements.</li>
+    </ul>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for audio', code: defaultAudio },
+    "Audio")}}
+  </div>
+</section>
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Video</h1>
+
+    <p>
+      The HTML <code>&lt;video&gt;</code> element is used to show a video on a
+      web page.
+    </p>
+    <ul>
+      <li>A text alternative must be provided to the user.</li>
+      <li>
+        Captions must be provided for all prerecorded content in synchronized
+        media.
+      </li>
+      <ul>
+        <li>
+          Captions of all dialogue and important sounds should be visible.
+        </li>
+      </ul>
+      <li>
+        A correct reading sequence should be programmed when the sequence in
+        which content is presented affects meaning.
+      </li>
+      <li>Also see WCAG 4.1.1 and 4.1.2 for markup requirements.</li>
+    </ul>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for video', code: defaultVideo },
+    "Video")}}
+  </div>
+
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for captions and subtitles
+    video', code: captionVideo }, "Captions and subtitles video")}}
+  </div>
+</section>
+
+{% endblock %} {% set defaultVideo %}
+<video id="myVideoWithControls" width="350" height="200" controls>
+  <source src="{{ img }}uspto-video.mp4" type="video/mp4" />
+  Your browser does not support embeded video.
+</video>
+{% endset%} {% set autoplayVideo %}
+<video id="myVideoAuptoPlay" width="350" height="200" autoplay muted>
+  <source src="{{ img }}uspto-video.mp4" type="video/mp4" />
+  Your browser does not support embeded video.
+</video>
+{% endset%} {% set captionVideo %}
+<video
+  id="myVideoWithCaptions"
+  width="350"
+  height="200"
+  controls
+  preload="metadata"
+>
+  <source src="{{ img }}uspto-video.mp4" type="video/mp4" />
+  <track
+    label="English"
+    kind="subtitles"
+    srclang="en"
+    src="{{ img }}captions-en.vtt"
+    default
+  />
+  Your browser does not support embeded video.
+</video>
+{% endset%} {% set defaultAudio %}
+<audio controls>
+  <source src="{{ img }}uspto-audio.mp3" type="audio/mpeg" />
+  <p>
+    Your browser does not support embeded audio. Here is a
+    <a href="{{ img }}uspto-audio.mp3">link to the audio</a> instead.
+  </p>
+</audio>
+{% endset%} {% set defaultAudioAuto %}
+<audio controls autoplay loop id="testAudio">
+  <source src="{{ img }}uspto-audio.mp3" type="audio/mpeg" />
+  Your browser does not support embeded audio.
+</audio>
+{% endset%}

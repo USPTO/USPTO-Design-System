@@ -1,0 +1,47 @@
+{% extends 'layouts/components.njk' %} {% set page = { class:
+'page-character-count', title: 'Character count' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Character count</h1>
+
+    <p>
+      Character count helps users know how much text they can enter when there
+      is a limit on the number of characters.
+    </p>
+  </div>
+
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for text input', code:
+    inputCharacterCount }, "")}}
+  </div>
+
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for textarea', code:
+    textareaCharacterCount }, "")}}
+  </div>
+</section>
+
+{% endblock %} {% set inputCharacterCount %}
+<!-- Text input  -->
+<div class="form-group">
+  <label for="textinput">Text input</label>
+  <div class="form-hint">This is an input with a character counter.</div>
+  <input type="text" class="form-control" id="textinput" />
+  <small class="help-text">
+    <span id="charNum" data-value="15">15</span>
+    <span id="charTxt">characters allowed</span></small
+  >
+</div>
+{% endset%} {% set textareaCharacterCount %}
+<!-- Textarea   -->
+<div class="form-group">
+  <label for="textareainput">Textarea</label>
+  <div class="form-hint">This is a textarea with a character counter.</div>
+
+  <textarea class="form-control" id="textareainput" rows="2"></textarea>
+  <small class="help-text">
+    <span id="charNum" data-value="50">50</span>
+    <span id="charTxt">characters allowed</span></small
+  >
+</div>
+{% endset%}

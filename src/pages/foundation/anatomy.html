@@ -1,0 +1,496 @@
+{% extends 'layouts/foundation.njk' %} {% set page = { class: 'page-anatomy',
+title: 'Anatomy' } %} {% block content %}
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Anatomy of a webpage</h1>
+  </div>
+  <div class="preview">
+    <h2>A Simple HTML Document</h2>
+
+    {{ macros.viewCode({ ariaLabel: 'View code for doctype', code: doctype },
+    "")}}
+  </div>
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h2>Header</h2>
+    <p>
+      The <code>&lt;header&gt;</code> element represents a container for
+      introductory content or a set of navigational links.
+    </p>
+    <p>A <code>&lt;header&gt;</code> element typically contains:</p>
+    <ul>
+      <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+      <li>logo or icon</li>
+      <li>authorship information</li>
+    </ul>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for header', code: headerExample
+    }, "")}}
+  </div>
+</section>
+<section class="pv-content">
+  <div class="pattern">
+    <h2>Footer</h2>
+    <p>
+      The <code>&lt;footer&gt;</code> tag defines a footer for a document or
+      section.
+    </p>
+    <p>A <code>&lt;footer&gt;</code> element typically contains:</p>
+    <ul>
+      <li>authorship, copyright, contact information</li>
+      <li>sitemap and back to top links</li>
+    </ul>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for footer', code: footerExample
+    }, "")}}
+  </div>
+</section>
+
+{% endblock %} {% set doctype %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the page</title>
+  </head>
+
+  <body>
+    <h1>First heading</h1>
+    <h2>Second heading</h2>
+    <p>First paragraph</p>
+    <ol>
+      <li>First list item</li>
+      <li>Second list item</li>
+      <li>Third list item</li>
+    </ol>
+    <section>
+      <h2>First section</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+        reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
+        Voluptatum ducimus voluptates voluptas?
+      </p>
+    </section>
+    <section>
+      <h2>Second section</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+        reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
+        Voluptatum ducimus voluptates voluptas?
+      </p>
+    </section>
+  </body>
+</html>
+{% endset%} {% set headerExample %}
+<header id="global-header">
+  <div class="uspto-header-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a
+        href="https://www.uspto.gov"
+        target="_blank"
+        class="uspto-logo"
+        title="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+      >
+        <span class="sr-only"> United States Patent and Trademark Office </span>
+      </a>
+      <div class="ml-auto d-flex">
+        <!-- Dynamic menu zone -->
+        <!-- Do not customize this area -->
+        <div class="display-inline dyn-menuarea">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text"
+                >Patents&nbsp;<span class="caret"></span></span
+              ><span class="btn-icon"
+                ><span class="icon uspto-icon-lightbulb"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right patent-menu">
+              <li>
+                <a href="https://patentcenter.uspto.gov" target="_blank"
+                  >Patent Center</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://patft.uspto.gov/netahtml/PTO/search-bool.html"
+                  target="_blank"
+                  >Search patents</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://appft.uspto.gov/netahtml/PTO/search-bool.html"
+                  target="_blank"
+                  >Patent applications search</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://ppair-my.uspto.gov/pair/PrivatePair"
+                  target="_blank"
+                  >Check private filing status</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://portal.uspto.gov/pair/PublicPair"
+                  target="_blank"
+                  >Check public filing status</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://efs-my.uspto.gov/EFSWebUIRegistered/EFSWebRegistered"
+                  target="_blank"
+                  >File patents</a
+                >
+              </li>
+              <li>
+                <a href="https://ptab.uspto.gov/#/login" target="_blank"
+                  >Patent and Trial Appeal Board</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://assignment.uspto.gov/patent/index.html#/patent/search"
+                  target="_blank"
+                  >Search assignment</a
+                >
+              </li>
+              <li>
+                <a href="https://epas.uspto.gov/" target="_blank"
+                  >Record assignment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://certifiedcopycenter.uspto.gov/app/"
+                  target="_blank"
+                  >Order certified patent documents</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.uspto.gov/web/offices/pac/mpep/index.html"
+                  target="_blank"
+                  >Manual of Patent Examining Procedure</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text"
+                >Trademarks&nbsp;<span class="caret"></span></span
+              ><span class="btn-icon"
+                ><span class="icon uspto-icon-trademark"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right trademark-menu">
+              <li>
+                <a
+                  href="http://tmsearch.uspto.gov/bin/gate.exe?f=login&amp;p_lang=english&amp;p_d=trmk"
+                  target="_blank"
+                  >Search trademarks</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.uspto.gov/trademarks-application-process/filing-online"
+                  target="_blank"
+                  >File trademark forms</a
+                >
+              </li>
+              <li>
+                <a href="http://tsdr.uspto.gov/" target="_blank"
+                  >View status, documents, and registration certificates</a
+                >
+              </li>
+              <li>
+                <a href="http://estta.uspto.gov/" target="_blank"
+                  >File Trademark Trial and Appeal Board forms</a
+                >
+              </li>
+              <li>
+                <a href="http://ttabvue.uspto.gov/ttabvue/v" target="_blank"
+                  >View Trademark Trial and Appeal Board proceedings</a
+                >
+              </li>
+              <li>
+                <a href="https://tmog.uspto.gov/#" target="_blank"
+                  >Search Trademark Official Gazette</a
+                >
+              </li>
+              <li>
+                <a href="https://etas.uspto.gov/" target="_blank"
+                  >Record assignment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://assignment.uspto.gov/trademark/index.html#/trademark/search"
+                  target="_blank"
+                  >Search assignment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://certifiedcopycenter.uspto.gov/app/"
+                  target="_blank"
+                  >Order certified trademark documents</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://tmep.uspto.gov/RDMS/TMEP/current#/current/d1e2.html"
+                  target="_blank"
+                  >View Trademark Manual of Examining Procedure</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://idm-tmng.uspto.gov/id-master-list-public.html"
+                  target="_blank"
+                  >Search the ID Manual</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text"
+                >Fees and payment&nbsp;<span class="caret"></span></span
+              ><span class="btn-icon"
+                ><span class="icon uspto-icon-dollar"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right fees-menu">
+              <li>
+                <a href="https://fees.uspto.gov/" target="_blank"
+                  >Fees Self-Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fees.uspto.gov/FinancialManager"
+                  target="_blank"
+                  >Financial Manager</a
+                >
+              </li>
+              <li>
+                <a href="https://fees.uspto.gov/MaintenanceFees" target="_blank"
+                  >Patent Maintenance Fees Storefront</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Help&nbsp;<span class="caret"></span></span
+              ><span class="btn-icon"
+                ><span class="icon uspto-icon-question-circle"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right fees-menu">
+              <li>
+                <a
+                  href="http://www.uspto.gov/learning-resources"
+                  target="_blank"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.uspto.gov/about-us/contact-us"
+                  target="_blank"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /End dynamic menu zone -->
+
+        <!-- Sign-in/user menu -->
+
+        <!-- MyUSPTO Link -->
+        <div class="btn-group">
+          <a
+            class="btn btn-default ex-btn-inverse my-link"
+            href="https://my.uspto.gov"
+          >
+            <span class="btn-text">MyUSPTO</span>
+            <span class="btn-icon">
+              <span class="uspto-icon-myuspto"></span
+            ></span>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it's appropriate to show account information.
+               -->
+          <!-- BEGIN USER DROPDOWN MENU -->
+          <button
+            type="button"
+            class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="btn-text">John Doe<span class="caret"></span></span>
+            <span class="btn-icon"> <span class="uspto-icon-user"></span></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="https://my.uspto.gov">
+                <span class="uspto-icon-home"></span> MyUSPTO<span
+                  class="sr-only"
+                  >console</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="https://account.uspto.gov">
+                <span class="uspto-icon-user-white"></span>
+                <span class="sr-only">Manage your</span>Account</a
+              >
+            </li>
+            <li>
+              <a href="https://my.uspto.gov/signout">
+                <span class="uspto-icon-sign-out"></span> Sign out</a
+              >
+            </li>
+          </ul>
+          <!-- END USER DROPDOWN MENU -->
+
+          <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+        </div>
+      </div>
+      <!-- /.pull-right -->
+    </nav>
+  </div>
+  <div class="uspto-header-middle">
+    <div class="flex-fill">
+      <a class="navbar-brand" href="#" title="Project title"> Project title </a>
+    </div>
+  </div>
+  <div class="uspto-header-bottom">
+    <nav
+      class="navbar navbar-expand-md navbar-dark"
+      aria-label="header sub navigation"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+{% endset%} {% set footerExample %}
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions?</p>
+    <p>
+      <a href="mailto:email@uspto.gov" class="text-white-50">email@uspto.gov</a>
+    </p>
+  </div>
+</footer>
+{% endset%} {% set sectionExample %}
+<section>
+  <h2>Lorem ipsum dolor sit amet</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis
+    exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit
+    optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus
+    voluptates voluptas?
+  </p>
+  <h2>Lorem ipsum dolor sit amet</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis
+    exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit
+    optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus
+    voluptates voluptas?
+  </p>
+</section>
+{% endset%}
