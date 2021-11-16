@@ -249,6 +249,7 @@ Object.assign(exports, {
           { href: '#headers-and-footers', text: 'Headers and footers' }
       ],
     },
+    { href: 'collection.html', text: 'Collection' },
     {
       href: 'dataFormats.html',
       text: 'Data formats',
