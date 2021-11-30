@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en" class="page-collection">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Collection
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
+          USPTO <span class="font-weight-light">Design System</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
+     <img src="../assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
+    </a>
+  </div>
+</div>
+
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
+              Page templates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="Usage">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="patterns.html">Patterns
+    </option>
+    <option value="cards.html">Cards
+    </option>
+    <option value="collection.html">Collection
+    </option>
+    <option value="dataFormats.html">Data formats
+    </option>
+    <option value="help.html">Help
+    </option>
+    <option value="search.html">Search
+    </option>
+    <option value="settings.html">Settings
+    </option>
+    <option value="wizards.html">Wizards
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="patterns.html" data-parent="Patterns">Patterns</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="cards.html" data-parent="Cards">Cards</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#cards-overview">Cards overview</a>
+            </li>
+            <li>
+              <a href="#image-position-and-image-caps">Image position</a>
+            </li>
+            <li>
+              <a href="#background-variants">Background variants</a>
+            </li>
+            <li>
+              <a href="#headers-and-footers">Headers and footers</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="collection.html" data-parent="Collection">Collection</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="dataFormats.html" data-parent="Data formats">Data formats</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#date-and-time">Date and time</a>
+            </li>
+            <li>
+              <a href="#file-sizes">File sizes</a>
+            </li>
+            <li>
+              <a href="#deprecated">Deprecated</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="help.html" data-parent="Help">Help</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="search.html" data-parent="Search">Search</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="settings.html" data-parent="Settings">Settings</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#navigation">Navigation</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="wizards.html" data-parent="Wizards">Wizards</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#steps">Steps</a>
+            </li>
+            <li>
+              <a href="#buttons">Buttons</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Collection</h1>
+
+    <p>
+      A collection displays a compact list of multiple related items like
+      articles or events. The list links each item to its original source.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Default</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for default collection"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for default collection"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Default collection --&gt;
+&lt;ul class=&quot;collection&quot;&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a href=&quot;https://www.performance.gov/presidents-winners-press-release/&quot;
+          &gt;Gears of Government President’s Award winners&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;p class=&quot;collection-description&quot;&gt;
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      &lt;/p&gt;
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;More information&quot;&gt;
+        &lt;li class=&quot;collection-meta-item&quot;&gt;
+          By Sondra Ainsworth and Constance Lu
+        &lt;/li&gt;
+        &lt;li class=&quot;collection-meta-item&quot;&gt;
+          &lt;time datetime=&quot;2020-09-30T12:00:00+01:00&quot;&gt; September 30, 2020 &lt;/time&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;Topics&quot;&gt;
+        &lt;li class=&quot;collection-meta-item tag tag-new&quot;&gt;New&lt;/li&gt;
+        &lt;li class=&quot;collection-meta-item tag&quot;&gt;PMA&lt;/li&gt;
+        &lt;li class=&quot;collection-meta-item tag&quot;&gt;OMB&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a href=&quot;https://www.performance.gov/sba-wosb-dashboard/&quot;
+          &gt;Women-owned small business dashboard&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;p class=&quot;collection-description&quot;&gt;
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      &lt;/p&gt;
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;More information&quot;&gt;
+        &lt;li class=&quot;collection-meta-item&quot;&gt;By Constance Lu&lt;/li&gt;
+        &lt;li class=&quot;collection-meta-item&quot;&gt;
+          &lt;time datetime=&quot;2020-09-30T12:00:00+01:00&quot;&gt; September 30, 2020 &lt;/time&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;Topics&quot;&gt;
+        &lt;li class=&quot;collection-meta-item tag&quot;&gt;SBA&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Default collection -->
+<ul class="collection">
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/presidents-winners-press-release/"
+          >Gears of Government President’s Award winners</a
+        >
+      </h3>
+      <p class="collection-description">
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      </p>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item">
+          By Sondra Ainsworth and Constance Lu
+        </li>
+        <li class="collection-meta-item">
+          <time datetime="2020-09-30T12:00:00+01:00"> September 30, 2020 </time>
+        </li>
+      </ul>
+
+      <ul class="collection-meta" aria-label="Topics">
+        <li class="collection-meta-item tag tag-new">New</li>
+        <li class="collection-meta-item tag">PMA</li>
+        <li class="collection-meta-item tag">OMB</li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/sba-wosb-dashboard/"
+          >Women-owned small business dashboard</a
+        >
+      </h3>
+      <p class="collection-description">
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      </p>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item">By Constance Lu</li>
+        <li class="collection-meta-item">
+          <time datetime="2020-09-30T12:00:00+01:00"> September 30, 2020 </time>
+        </li>
+      </ul>
+
+      <ul class="collection-meta" aria-label="Topics">
+        <li class="collection-meta-item tag">SBA</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Default collection --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.performance.gov/presidents-winners-press-release/&quot;</span>
+          &gt;</span>Gears of Government President’s Award winners&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-description&quot;</span>&gt;</span>
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;More information&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item&quot;</span>&gt;</span>
+          By Sondra Ainsworth and Constance Lu
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2020-09-30T12:00:00+01:00&quot;</span>&gt;</span> September 30, 2020 <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Topics&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item tag tag-new&quot;</span>&gt;</span>New<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item tag&quot;</span>&gt;</span>PMA<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item tag&quot;</span>&gt;</span>OMB<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.performance.gov/sba-wosb-dashboard/&quot;</span>
+          &gt;</span>Women-owned small business dashboard&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-description&quot;</span>&gt;</span>
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;More information&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item&quot;</span>&gt;</span>By Constance Lu<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2020-09-30T12:00:00+01:00&quot;</span>&gt;</span> September 30, 2020 <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Topics&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item tag&quot;</span>&gt;</span>SBA<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Media thumbnail</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for media thumbnail collection"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for media thumbnail collection"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Media thumbnail collection --&gt;
+&lt;ul class=&quot;collection&quot;&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;img
+      class=&quot;collection-img&quot;
+      src=&quot;../assets/img/wosb1.jpg&quot;
+      alt=&quot;Gears of Government Awards - President&#39;s Award&quot;
+    /&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a href=&quot;https://www.performance.gov/presidents-winners-press-release/&quot;
+          &gt;Gears of Government President’s Award winners&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;p class=&quot;collection-description&quot;&gt;
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      &lt;/p&gt;
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;More information&quot;&gt;
+        &lt;li class=&quot;collection-meta-item&quot;&gt;
+          By Sondra Ainsworth and Constance Lu
+        &lt;/li&gt;
+        &lt;li class=&quot;collection-meta-item&quot;&gt;
+          &lt;time datetime=&quot;2020-09-30T12:00:00+01:00&quot;&gt; September 30, 2020 &lt;/time&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;Topics&quot;&gt;
+        &lt;li class=&quot;collection-meta-item tag tag-new&quot;&gt;New&lt;/li&gt;
+        &lt;li class=&quot;collection-meta-item tag&quot;&gt;PMA&lt;/li&gt;
+        &lt;li class=&quot;collection-meta-item tag&quot;&gt;OMB&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;img
+      class=&quot;collection-img&quot;
+      src=&quot;../assets/img/wosb1.jpg&quot;
+      alt=&quot;Woman Owned Small Business Federal Contracts&quot;
+    /&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a href=&quot;https://www.performance.gov/sba-wosb-dashboard/&quot;
+          &gt;Women-owned small business dashboard&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;p class=&quot;collection-description&quot;&gt;
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      &lt;/p&gt;
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;More information&quot;&gt;
+        &lt;li class=&quot;collection-meta-item&quot;&gt;By Constance Lu&lt;/li&gt;
+        &lt;li class=&quot;collection-meta-item&quot;&gt;
+          &lt;time datetime=&quot;2020-09-30T12:00:00+01:00&quot;&gt; September 30, 2020 &lt;/time&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;Topics&quot;&gt;
+        &lt;li class=&quot;collection-meta-item tag&quot;&gt;SBA&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Media thumbnail collection -->
+<ul class="collection">
+  <li class="collection-item">
+    <img
+      class="collection-img"
+      src="../assets/img/wosb1.jpg"
+      alt="Gears of Government Awards - President's Award"
+    />
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/presidents-winners-press-release/"
+          >Gears of Government President’s Award winners</a
+        >
+      </h3>
+      <p class="collection-description">
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      </p>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item">
+          By Sondra Ainsworth and Constance Lu
+        </li>
+        <li class="collection-meta-item">
+          <time datetime="2020-09-30T12:00:00+01:00"> September 30, 2020 </time>
+        </li>
+      </ul>
+
+      <ul class="collection-meta" aria-label="Topics">
+        <li class="collection-meta-item tag tag-new">New</li>
+        <li class="collection-meta-item tag">PMA</li>
+        <li class="collection-meta-item tag">OMB</li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <img
+      class="collection-img"
+      src="../assets/img/wosb1.jpg"
+      alt="Woman Owned Small Business Federal Contracts"
+    />
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/sba-wosb-dashboard/"
+          >Women-owned small business dashboard</a
+        >
+      </h3>
+      <p class="collection-description">
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      </p>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item">By Constance Lu</li>
+        <li class="collection-meta-item">
+          <time datetime="2020-09-30T12:00:00+01:00"> September 30, 2020 </time>
+        </li>
+      </ul>
+
+      <ul class="collection-meta" aria-label="Topics">
+        <li class="collection-meta-item tag">SBA</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Media thumbnail collection --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-img&quot;</span>
+      <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img/wosb1.jpg&quot;</span>
+      <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Gears of Government Awards - President&#x27;s Award&quot;</span>
+    /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.performance.gov/presidents-winners-press-release/&quot;</span>
+          &gt;</span>Gears of Government President’s Award winners&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-description&quot;</span>&gt;</span>
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;More information&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item&quot;</span>&gt;</span>
+          By Sondra Ainsworth and Constance Lu
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2020-09-30T12:00:00+01:00&quot;</span>&gt;</span> September 30, 2020 <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Topics&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item tag tag-new&quot;</span>&gt;</span>New<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item tag&quot;</span>&gt;</span>PMA<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item tag&quot;</span>&gt;</span>OMB<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-img&quot;</span>
+      <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../assets/img/wosb1.jpg&quot;</span>
+      <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Woman Owned Small Business Federal Contracts&quot;</span>
+    /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.performance.gov/sba-wosb-dashboard/&quot;</span>
+          &gt;</span>Women-owned small business dashboard&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-description&quot;</span>&gt;</span>
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;More information&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item&quot;</span>&gt;</span>By Constance Lu<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2020-09-30T12:00:00+01:00&quot;</span>&gt;</span> September 30, 2020 <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Topics&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item tag&quot;</span>&gt;</span>SBA<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Calendar display</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="View code for calendar display collection"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for calendar display collection"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Calendar display collection --&gt;
+&lt;ul class=&quot;collection&quot;&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;div
+      class=&quot;collection-calendar-date&quot;
+      href=&quot;https://www.performance.gov/presidents-winners-press-release/&quot;
+    &gt;
+      &lt;time datetime=&quot;2020-09-30T12:00:00+01:00&quot;&gt;
+        &lt;span class=&quot;collection-calendar-date-month&quot;&gt;SEP&lt;/span&gt;
+        &lt;span class=&quot;collection-calendar-date-day&quot;&gt;30&lt;/span&gt;
+      &lt;/time&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a href=&quot;https://www.performance.gov/presidents-winners-press-release/&quot;
+          &gt;Gears of Government President’s Award winners&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;p class=&quot;collection-description&quot;&gt;
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;div
+      class=&quot;collection-calendar-date&quot;
+      href=&quot;https://www.performance.gov/sba-wosb-dashboard/&quot;
+    &gt;
+      &lt;time datetime=&quot;2020-10-15T12:00:00+01:00&quot;&gt;
+        &lt;span class=&quot;collection-calendar-date-month&quot;&gt;OCT&lt;/span&gt;
+        &lt;span class=&quot;collection-calendar-date-day&quot;&gt;15&lt;/span&gt;
+      &lt;/time&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a href=&quot;https://www.performance.gov/sba-wosb-dashboard/&quot;
+          &gt;Women-owned small business dashboard&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;p class=&quot;collection-description&quot;&gt;
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Calendar display collection -->
+<ul class="collection">
+  <li class="collection-item">
+    <div
+      class="collection-calendar-date"
+      href="https://www.performance.gov/presidents-winners-press-release/"
+    >
+      <time datetime="2020-09-30T12:00:00+01:00">
+        <span class="collection-calendar-date-month">SEP</span>
+        <span class="collection-calendar-date-day">30</span>
+      </time>
+    </div>
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/presidents-winners-press-release/"
+          >Gears of Government President’s Award winners</a
+        >
+      </h3>
+      <p class="collection-description">
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      </p>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div
+      class="collection-calendar-date"
+      href="https://www.performance.gov/sba-wosb-dashboard/"
+    >
+      <time datetime="2020-10-15T12:00:00+01:00">
+        <span class="collection-calendar-date-month">OCT</span>
+        <span class="collection-calendar-date-day">15</span>
+      </time>
+    </div>
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/sba-wosb-dashboard/"
+          >Women-owned small business dashboard</a
+        >
+      </h3>
+      <p class="collection-description">
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      </p>
+    </div>
+  </li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Calendar display collection --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-calendar-date&quot;</span>
+      <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.performance.gov/presidents-winners-press-release/&quot;</span>
+    &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2020-09-30T12:00:00+01:00&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-calendar-date-month&quot;</span>&gt;</span>SEP<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-calendar-date-day&quot;</span>&gt;</span>30<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.performance.gov/presidents-winners-press-release/&quot;</span>
+          &gt;</span>Gears of Government President’s Award winners&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-description&quot;</span>&gt;</span>
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-calendar-date&quot;</span>
+      <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.performance.gov/sba-wosb-dashboard/&quot;</span>
+    &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2020-10-15T12:00:00+01:00&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-calendar-date-month&quot;</span>&gt;</span>OCT<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-calendar-date-day&quot;</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.performance.gov/sba-wosb-dashboard/&quot;</span>
+          &gt;</span>Women-owned small business dashboard&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-description&quot;</span>&gt;</span>
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Headings only</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for headings only collection"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for headings only collection"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Headings only collection --&gt;
+&lt;ul class=&quot;collection collection--condensed&quot;&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a href=&quot;https://digital.gov/guides/mobile-principles/?dg&quot;
+          &gt;The eight principles of mobile-friendliness&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;More information&quot;&gt;
+        &lt;li class=&quot;collection-meta-item position-relative&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;public&lt;/i&gt;
+          Digital.gov
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a href=&quot;https://designsystem.digital.gov/maturity-model/&quot;
+          &gt;The USWDS maturity model&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;More information&quot;&gt;
+        &lt;li class=&quot;collection-meta-item position-relative&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;public&lt;/i&gt;
+          U.S. Web Design System
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a href=&quot;javascript:void(0);&quot;&gt;A news item that’s on our own site&lt;/a&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a
+          href=&quot;https://18f.gsa.gov/2020/11/24/the-key-role-of-product-owners-in-federated-data-projects/&quot;
+          &gt;The key role of product owners in federated data projects&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;More information&quot;&gt;
+        &lt;li class=&quot;collection-meta-item position-relative&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;public&lt;/i&gt;
+          18F
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;collection-item&quot;&gt;
+    &lt;div class=&quot;collection-body&quot;&gt;
+      &lt;h3 class=&quot;collection-heading&quot;&gt;
+        &lt;a
+          href=&quot;https://www.performance.gov/September-2020-Updates-Show-Progress/&quot;
+          &gt;Progress on Cross-Agency Priority (CAP) goals and Agency Priority
+          Goals (APGs)&lt;/a
+        &gt;
+      &lt;/h3&gt;
+      &lt;ul class=&quot;collection-meta&quot; aria-label=&quot;More information&quot;&gt;
+        &lt;li class=&quot;collection-meta-item position-relative&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;public&lt;/i&gt;
+          Performance.gov
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Headings only collection -->
+<ul class="collection collection--condensed">
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://digital.gov/guides/mobile-principles/?dg"
+          >The eight principles of mobile-friendliness</a
+        >
+      </h3>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item position-relative">
+          <i class="material-icons">public</i>
+          Digital.gov
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://designsystem.digital.gov/maturity-model/"
+          >The USWDS maturity model</a
+        >
+      </h3>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item position-relative">
+          <i class="material-icons">public</i>
+          U.S. Web Design System
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="javascript:void(0);">A news item that’s on our own site</a>
+      </h3>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a
+          href="https://18f.gsa.gov/2020/11/24/the-key-role-of-product-owners-in-federated-data-projects/"
+          >The key role of product owners in federated data projects</a
+        >
+      </h3>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item position-relative">
+          <i class="material-icons">public</i>
+          18F
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a
+          href="https://www.performance.gov/September-2020-Updates-Show-Progress/"
+          >Progress on Cross-Agency Priority (CAP) goals and Agency Priority
+          Goals (APGs)</a
+        >
+      </h3>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item position-relative">
+          <i class="material-icons">public</i>
+          Performance.gov
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Headings only collection --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection collection--condensed&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://digital.gov/guides/mobile-principles/?dg&quot;</span>
+          &gt;</span>The eight principles of mobile-friendliness&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;More information&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item position-relative&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>public<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+          Digital.gov
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://designsystem.digital.gov/maturity-model/&quot;</span>
+          &gt;</span>The USWDS maturity model&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;More information&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item position-relative&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>public<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+          U.S. Web Design System
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>A news item that’s on our own site<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+          <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://18f.gsa.gov/2020/11/24/the-key-role-of-product-owners-in-federated-data-projects/&quot;</span>
+          &gt;</span>The key role of product owners in federated data projects&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;More information&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item position-relative&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>public<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+          18F
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-body&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+          <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.performance.gov/September-2020-Updates-Show-Progress/&quot;</span>
+          &gt;</span>Progress on Cross-Agency Priority (CAP) goals and Agency Priority
+          Goals (APGs)&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;More information&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collection-meta-item position-relative&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>public<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+          Performance.gov
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p>Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme" target="_blank" class="text-white-50">Github repository</a>.</p>
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>
