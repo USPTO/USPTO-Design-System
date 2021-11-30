@@ -1,0 +1,283 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = {
+class: 'page-collection', title: 'Collection' } %} {% block content %}
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Collection</h1>
+
+    <p>
+      A collection displays a compact list of multiple related items like
+      articles or events. The list links each item to its original source.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for default collection', code:
+    collectionDefault }, 'Default' )}}
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for media thumbnail collection',
+    code: collectionMediaThumbnail }, 'Media thumbnail' )}}
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for calendar display collection',
+    code: collectionCalendarDisplay }, 'Calendar display' )}}
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for headings only collection',
+    code: collectionHeadingOnly }, 'Headings only' )}}
+  </div>
+</section>
+
+{% endblock %} {% set collectionDefault%}
+<!-- Default collection -->
+<ul class="collection">
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/presidents-winners-press-release/"
+          >Gears of Government President’s Award winners</a
+        >
+      </h3>
+      <p class="collection-description">
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      </p>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item">
+          By Sondra Ainsworth and Constance Lu
+        </li>
+        <li class="collection-meta-item">
+          <time datetime="2020-09-30T12:00:00+01:00"> September 30, 2020 </time>
+        </li>
+      </ul>
+
+      <ul class="collection-meta" aria-label="Topics">
+        <li class="collection-meta-item tag tag-new">New</li>
+        <li class="collection-meta-item tag">PMA</li>
+        <li class="collection-meta-item tag">OMB</li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/sba-wosb-dashboard/"
+          >Women-owned small business dashboard</a
+        >
+      </h3>
+      <p class="collection-description">
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      </p>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item">By Constance Lu</li>
+        <li class="collection-meta-item">
+          <time datetime="2020-09-30T12:00:00+01:00"> September 30, 2020 </time>
+        </li>
+      </ul>
+
+      <ul class="collection-meta" aria-label="Topics">
+        <li class="collection-meta-item tag">SBA</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+{% endset %} {% set collectionMediaThumbnail%}
+<!-- Media thumbnail collection -->
+<ul class="collection">
+  <li class="collection-item">
+    <img
+      class="collection-img"
+      src="{{relativeRoot}}assets/img/wosb1.jpg"
+      alt="Gears of Government Awards - President's Award"
+    />
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/presidents-winners-press-release/"
+          >Gears of Government President’s Award winners</a
+        >
+      </h3>
+      <p class="collection-description">
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      </p>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item">
+          By Sondra Ainsworth and Constance Lu
+        </li>
+        <li class="collection-meta-item">
+          <time datetime="2020-09-30T12:00:00+01:00"> September 30, 2020 </time>
+        </li>
+      </ul>
+
+      <ul class="collection-meta" aria-label="Topics">
+        <li class="collection-meta-item tag tag-new">New</li>
+        <li class="collection-meta-item tag">PMA</li>
+        <li class="collection-meta-item tag">OMB</li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <img
+      class="collection-img"
+      src="{{relativeRoot}}assets/img/wosb1.jpg"
+      alt="Woman Owned Small Business Federal Contracts"
+    />
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/sba-wosb-dashboard/"
+          >Women-owned small business dashboard</a
+        >
+      </h3>
+      <p class="collection-description">
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      </p>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item">By Constance Lu</li>
+        <li class="collection-meta-item">
+          <time datetime="2020-09-30T12:00:00+01:00"> September 30, 2020 </time>
+        </li>
+      </ul>
+
+      <ul class="collection-meta" aria-label="Topics">
+        <li class="collection-meta-item tag">SBA</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+{% endset %} {% set collectionCalendarDisplay%}
+<!-- Calendar display collection -->
+<ul class="collection">
+  <li class="collection-item">
+    <div
+      class="collection-calendar-date"
+      href="https://www.performance.gov/presidents-winners-press-release/"
+    >
+      <time datetime="2020-09-30T12:00:00+01:00">
+        <span class="collection-calendar-date-month">SEP</span>
+        <span class="collection-calendar-date-day">30</span>
+      </time>
+    </div>
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/presidents-winners-press-release/"
+          >Gears of Government President’s Award winners</a
+        >
+      </h3>
+      <p class="collection-description">
+        Today, the Administration announces the winners of the Gears of
+        Government President’s Award. This program recognizes the contributions
+        of individuals and teams across the federal workforce who make a
+        profound difference in the lives of the American people.
+      </p>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div
+      class="collection-calendar-date"
+      href="https://www.performance.gov/sba-wosb-dashboard/"
+    >
+      <time datetime="2020-10-15T12:00:00+01:00">
+        <span class="collection-calendar-date-month">OCT</span>
+        <span class="collection-calendar-date-day">15</span>
+      </time>
+    </div>
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://www.performance.gov/sba-wosb-dashboard/"
+          >Women-owned small business dashboard</a
+        >
+      </h3>
+      <p class="collection-description">
+        In honor of National Women’s Small Business Month, we’ve partnered with
+        SBA’s Office of Government Contracting and Business Development and
+        Office of Program Performance, Analysis, and Evaluation to highlight the
+        Women-Owned Small Businesses (WOSBs) data dashboard!
+      </p>
+    </div>
+  </li>
+</ul>
+{% endset %} {% set collectionHeadingOnly%}
+<!-- Headings only collection -->
+<ul class="collection collection--condensed">
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://digital.gov/guides/mobile-principles/?dg"
+          >The eight principles of mobile-friendliness</a
+        >
+      </h3>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item position-relative">
+          <i class="material-icons">public</i>
+          Digital.gov
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="https://designsystem.digital.gov/maturity-model/"
+          >The USWDS maturity model</a
+        >
+      </h3>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item position-relative">
+          <i class="material-icons">public</i>
+          U.S. Web Design System
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a href="javascript:void(0);">A news item that’s on our own site</a>
+      </h3>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a
+          href="https://18f.gsa.gov/2020/11/24/the-key-role-of-product-owners-in-federated-data-projects/"
+          >The key role of product owners in federated data projects</a
+        >
+      </h3>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item position-relative">
+          <i class="material-icons">public</i>
+          18F
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="collection-item">
+    <div class="collection-body">
+      <h3 class="collection-heading">
+        <a
+          href="https://www.performance.gov/September-2020-Updates-Show-Progress/"
+          >Progress on Cross-Agency Priority (CAP) goals and Agency Priority
+          Goals (APGs)</a
+        >
+      </h3>
+      <ul class="collection-meta" aria-label="More information">
+        <li class="collection-meta-item position-relative">
+          <i class="material-icons">public</i>
+          Performance.gov
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+{% endset %}
