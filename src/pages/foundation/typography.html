@@ -50,16 +50,23 @@ title: 'Typography' } %} {% block content %}
 <section class="pv-content">
   <div class="pattern">
     <h2 id="styles">Blockquotes</h2>
-    <p>Add a <code class="highlighter-rouge">&lt;footer class=&quot;blockquote-footer&quot;&gt;</code> for identifying the source. Wrap the name of the source work in <code class="highlighter-rouge">&lt;cite&gt;</code>.</p> 
+    <p>
+      Add a
+      <code class="highlighter-rouge"
+        >&lt;footer class=&quot;blockquote-footer&quot;&gt;</code
+      >
+      for identifying the source. Wrap the name of the source work in
+      <code class="highlighter-rouge">&lt;cite&gt;</code>.
+    </p>
   </div>
   <div class="preview pv-md">
-    {{ macros.viewCode({ ariaLabel: 'View code for blockquotes', code: blockquotes
-    }, "")}}
+    {{ macros.viewCode({ ariaLabel: 'View code for blockquotes', code:
+    blockquotes }, "")}}
   </div>
-   
-   <div class="preview pv-md">
-    {{ macros.viewCode({ ariaLabel: 'View code for blockquotes', code: blockquotesNaming
-    }, "")}}
+
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for blockquotes', code:
+    blockquotesNaming }, "")}}
   </div>
 </section>
 
@@ -195,28 +202,42 @@ title: 'Typography' } %} {% block content %}
 {% endset%} {% set blockquotes %}
 <!--Blockquote -->
 <blockquote class="blockquote">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+    erat a ante.
+  </p>
 </blockquote>
-{% endset%}
-
-{% set blockquotesNaming %}
+{% endset%} {% set blockquotesNaming %}
 <!--Blockquote -->
 <blockquote class="blockquote">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+    erat a ante.
+  </p>
+  <footer class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </footer>
 </blockquote>
-{% endset%}
-{% set blockquotesAlignmentCenter %}
+{% endset%} {% set blockquotesAlignmentCenter %}
 <!--Blockquote -->
 <blockquote class="blockquote text-center">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+    erat a ante.
+  </p>
+  <footer class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </footer>
 </blockquote>
-{% endset%}
-{% set blockquotesAlignmentRight %}
+{% endset%} {% set blockquotesAlignmentRight %}
 <!--Blockquote -->
 <blockquote class="blockquote text-right">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+    erat a ante.
+  </p>
+  <footer class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </footer>
 </blockquote>
 {% endset%}
