@@ -78,6 +78,7 @@ Object.assign(exports, {
         { href: '#examples', text: 'Examples' }
       ],
     },
+    { href: 'list.html', text: 'List' },
     {
       href: 'labelsAndBadges.html',
       text: 'Labels and badges',
@@ -107,7 +108,7 @@ Object.assign(exports, {
     ],
     },
     { href: 'popovers.html', text: 'Popovers' },
-    //{ href: 'process-list.html', text: 'Process list' },
+    { href: 'process-list.html', text: 'Process list' },
     {
       href: 'progressLoading.html',
       text: 'Progress and loading',
@@ -120,6 +121,7 @@ Object.assign(exports, {
     },
    
    
+    { href: 'siteAlert.html', text: 'Site alert' },
     { href: 'stepIndicators.html', text: 'Step indicators' },
     { href: 'summaryBox.html', text: 'Summary box' },
     {
