@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-links">
+<html lang="en" class="page-template">
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Links
+ | Apps launch page template
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -149,182 +149,82 @@
       <div class="main-container">
   <div class="d-sm-block d-md-none">
 <select class="form-control my-3" id="leftSideNav" >
-    <option value="foundation.html">Foundation
+    <option value="pageTemplate.html">Page templates
     </option>
-    <option value="anatomy.html">Anatomy of a webpage
+    <option value="error-page.html">Error page
     </option>
-    <option value="audio-video.html">Audio and video
+    <option value="documentationPage.html">Documentation page
     </option>
-    <option value="colors.html">Colors
+    <option value="landingPage.html">Landing page
     </option>
-    <option value="grid.html">Grid
+    <option value="launchPage.html">Launch page
     </option>
-    <option value="icons.html">Icons
+    <option value="marketingPage.html">Marketing page
     </option>
-    <option value="images.html">Images
+    <option value="multistepPage.html">Multistep form page
     </option>
-    <option value="links.html">Links
-    </option>
-    <option value="typography.html">Typography
+    <option value="searchPage.html">Search result page
     </option>
 </select>  </div>
   <div class="d-none d-sm-none d-md-block">
 <nav id="sidenav" aria-label="DPL Components">
   <ul class="sidenav">
       <li>
-        <a href="foundation.html" data-parent="Foundation">Foundation</a>
+        <a href="pageTemplate.html" data-parent="Page templates">Page templates</a>
         <ul class="sidenav-sublist">
         </ul>
       </li>
       <li>
-        <a href="anatomy.html" data-parent="Anatomy of a webpage">Anatomy of a webpage</a>
-        <ul class="sidenav-sublist">
-        </ul>
-      </li>
-      <li>
-        <a href="audio-video.html" data-parent="Audio and video">Audio and video</a>
-        <ul class="sidenav-sublist">
-        </ul>
-      </li>
-      <li>
-        <a href="colors.html" data-parent="Colors">Colors</a>
+        <a href="error-page.html" data-parent="Error page">Error page</a>
         <ul class="sidenav-sublist">
             <li>
-              <a href="#primary-ui-colors">Primary UI colors</a>
+              <a href="#404-error">404 error</a>
             </li>
             <li>
-              <a href="#full-brand-palette">Full brand palette</a>
+              <a href="#server-error">Server error</a>
             </li>
         </ul>
       </li>
       <li>
-        <a href="grid.html" data-parent="Grid">Grid</a>
+        <a href="documentationPage.html" data-parent="Documentation page">Documentation page</a>
         <ul class="sidenav-sublist">
         </ul>
       </li>
       <li>
-        <a href="icons.html" data-parent="Icons">Icons</a>
-        <ul class="sidenav-sublist">
-            <li>
-              <a href="#overview">Overview</a>
-            </li>
-            <li>
-              <a href="#usage">Usage</a>
-            </li>
-            <li>
-              <a href="#icon-color">Icon color</a>
-            </li>
-            <li>
-              <a href="#system-icons">System Icons</a>
-            </li>
-            <li>
-              <a href="#icon-sizing">Icon sizing</a>
-            </li>
-            <li>
-              <a href="#iconathon">Iconathon - Intellectual Property Symbols</a>
-            </li>
-        </ul>
-      </li>
-      <li>
-        <a href="images.html" data-parent="Images">Images</a>
+        <a href="landingPage.html" data-parent="Landing page">Landing page</a>
         <ul class="sidenav-sublist">
         </ul>
       </li>
       <li>
-        <a href="links.html" data-parent="Links">Links</a>
+        <a href="launchPage.html" data-parent="Launch page">Launch page</a>
         <ul class="sidenav-sublist">
         </ul>
       </li>
       <li>
-        <a href="typography.html" data-parent="Typography">Typography</a>
+        <a href="marketingPage.html" data-parent="Marketing page">Marketing page</a>
         <ul class="sidenav-sublist">
-            <li>
-              <a href="#fonts">Fonts</a>
-            </li>
-            <li>
-              <a href="#weights">Weights</a>
-            </li>
-            <li>
-              <a href="#styles">Styles</a>
-            </li>
-            <li>
-              <a href="#lists">Lists</a>
-            </li>
-            <li>
-              <a href="#colors">Colors</a>
-            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="multistepPage.html" data-parent="Multistep form page">Multistep form page</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="searchPage.html" data-parent="Search result page">Search result page</a>
+        <ul class="sidenav-sublist">
         </ul>
       </li>
   </ul>
 </nav>  </div>
   <main id="main-content">
-
 <section class="pv-content">
   <div class="pattern">
-    <h1>Links</h1>
-    <h2>Links within paragraphs</h2>
-    <p>
-      By default, links contained within a paragraph &lt;p&gt; tag will be blue
-      in color and underlined.
-    </p>
-
-    <ul>
-      <li>
-        Visited links will appear
-        <span style="color: purple; text-decoration: underline"
-          >purple and underlined</span
-        >
-      </li>
-      <li>
-        Override the default appearance of links contained in paragraphs only if
-        necessary
-      </li>
-      <li>
-        Links not contained within a paragraph should follow the individual
-        component/pattern styling as defined
-        <ul>
-          <li>
-            In general, links contained within interface components will not be
-            underlined
-          </li>
-        </ul>
-      </li>
-    </ul>
-
-    <blockquote>
-      <h5 id="example">Example</h5>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-        <a href="#">porttitor ex vestibulum</a>, iaculis metus a, suscipit leo.
-        Nullam ut rutrum nibh, vitae congue nisl. Cum sociis natoque penatibus
-        et magnis dis parturient montes, nascetur ridiculus mus.
-        <a href="#">Duis suscipit turpis ut tincidunt</a> dapibus. Etiam id
-        tristique nisi. Mauris non maximus ex, lacinia bibendum purus. Proin sit
-        amet mi ac massa tempus aliquet. In pellentesque facilisis odio nec
-        ultricies. <a href="#">Quisque metus magna</a>, aliquam a sollicitudin
-        at, mollis id massa.
-      </p>
-    </blockquote>
-  </div>
-  <div class="pattern">
-    <h2 id="externaloff-site-links">External/off-site links</h2>
-    <p>
-      Where necessary, add the “<em>icon-external-link</em>”
-      <i class="material-icons">launch</i> icon to inform users that the link
-      they are visiting is an external website.
-    </p>
-
-    <blockquote>
-      <h5 id="example-1">Example</h5>
-      <p>
-        Lorem ipsum dolor sit amet.
-        <a href="#">Quisque porttitor ex vestibulum</a>
-        <i class="icon icon-external-link"></i>, consectetur adipiscing elit.
-      </p>
-      <p>&nbsp;</p>
-    </blockquote>
+    <h1>Apps launch page</h1>
+    <a href="..//examples/launch-page.html" target="_blank">Apps launch page</a>
   </div>
 </section>
+
     </main>
   </div>
       </div>

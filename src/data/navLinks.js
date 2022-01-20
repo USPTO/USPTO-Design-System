@@ -181,8 +181,9 @@ Object.assign(exports, {
         { href: '#icon-color', text: 'Icon color' },
         { href: '#system-icons', text: 'System Icons' },
         { href: '#icon-sizing', text: 'Icon sizing' },
-        { href: '#rotation', text: 'Rotation' },
-        { href: '#animation', text: 'Animation' }
+        //{ href: '#rotation', text: 'Rotation' },
+        //{ href: '#animation', text: 'Animation' },
+        { href: '#iconathon', text: 'Iconathon - Intellectual Property Symbols' }
       ],
     },
     { href: 'images.html', text: 'Images' },
@@ -216,6 +217,7 @@ Object.assign(exports, {
     },  
     { href: 'documentationPage.html', text: 'Documentation page' },
     { href: 'landingPage.html', text: 'Landing page' },
+    { href: 'launchPage.html', text: 'Launch page' },
     { href: 'marketingPage.html', text: 'Marketing page' },
     { href: 'multistepPage.html', text: 'Multistep form page' },
     { href: 'searchPage.html', text: 'Search result page' }

@@ -1,5 +1,4 @@
-{% extends 'layouts/foundation.njk' %} {% set page = { class: 'page-icons',
-title: 'Icons' } %} {% block content %}
+{% extends 'layouts/foundation.njk' %} {% set page = { class: 'page-icons', title: 'Icons' } %} {% block content %}
 
 <section class="pv-content">
   <div class="pattern">
@@ -7,25 +6,14 @@ title: 'Icons' } %} {% block content %}
     <h4 id="about-font-awesome-5">About Material design icons</h4>
 
     <ul>
-      <li>
-        Material design icons is the official icon set from Google. These icons
-        are simple, modern and ensure readability and clarity at both large and
-        small sizes, these icons have been optimized for beautiful display on
-        all common platforms and display resolutions.
-      </li>
+      <li>Material design icons is the official icon set from Google. These icons are simple, modern and ensure readability and clarity at both large and small sizes, these icons have been optimized for beautiful display on all common platforms and display resolutions.</li>
       <li>
         Material design icons on
-        <a
-          href="https://github.com/google/material-design-icons"
-          target="_blank"
-          >GitHub</a
-        >.
+        <a href="https://github.com/google/material-design-icons" target="_blank">GitHub</a>.
       </li>
       <li>
         A complete list of available icons is available in the
-        <a href="https://material.io/resources/icons/?style=baseline"
-          >icon gallery</a
-        >.
+        <a href="https://material.io/resources/icons/?style=baseline">icon gallery</a>.
       </li>
     </ul>
   </div>
@@ -37,56 +25,32 @@ title: 'Icons' } %} {% block content %}
 
     <ul>
       <li>
-        Add Material design icons to your project by either using the version
-        included in this USPTO Design System, or from
-        <a
-          href="https://google.github.io/material-design-icons/"
-          target="_blank"
-          >https://google.github.io/material-design-icons/</a
-        >.
+        Add Material design icons to your project by either using the version included in this USPTO Design System, or from
+        <a href="https://google.github.io/material-design-icons/" target="_blank">https://google.github.io/material-design-icons/</a>.
       </li>
 
       <li>
         Full capabilities documentation can be viewed on the
-        <a
-          href="https://material.io/resources/icons/?style=baseline"
-          target="_blank"
-          >Material icons resources page</a
-        >.
+        <a href="https://material.io/resources/icons/?style=baseline" target="_blank">Material icons resources page</a>.
       </li>
     </ul>
   </div>
 
-  <div class="preview pv-sm">
-    {{ macros.viewCode({ ariaLabel: 'view code for material design icon', code:
-    usageIcons }, '')}}
-  </div>
+  <div class="preview pv-sm">{{ macros.viewCode({ ariaLabel: 'view code for material design icon', code: usageIcons }, '')}}</div>
 </section>
 
 <section class="pv-content">
   <div class="pattern">
     <h3 id="icon-color">Icon color</h3>
 
-    <p>
-      Material design icons automatically inherit the color of the associated
-      class or container around them.
-    </p>
+    <p>Material design icons automatically inherit the color of the associated class or container around them.</p>
 
     <ul>
-      <li>
-        Use either a colored circle with a white icon, or a colored icon; not
-        both together. If necessary, you may use a dark circle to add emphasis
-        to warning icons.
-      </li>
-      <li>
-        Always ensure final icon usage is 508 compliant for color contrast.
-      </li>
+      <li>Use either a colored circle with a white icon, or a colored icon; not both together. If necessary, you may use a dark circle to add emphasis to warning icons.</li>
+      <li>Always ensure final icon usage is 508 compliant for color contrast.</li>
     </ul>
   </div>
-  <div class="preview pv-sm">
-    {{ macros.viewCode({ ariaLabel: 'view code for material design icon colors',
-    code: colorsIcons }, '')}}
-  </div>
+  <div class="preview pv-sm">{{ macros.viewCode({ ariaLabel: 'view code for material design icon colors', code: colorsIcons }, '')}}</div>
 </section>
 
 <section class="pv-content">
@@ -95,10 +59,7 @@ title: 'Icons' } %} {% block content %}
 
     <ul>
       <li>System icons should always be one solid color.</li>
-      <li>
-        System icons should either be black, white, or any other primary UI
-        color.
-      </li>
+      <li>System icons should either be black, white, or any other primary UI color.</li>
       <li>System icons can be placed in colored circles.</li>
     </ul>
   </div>
@@ -110,8 +71,7 @@ title: 'Icons' } %} {% block content %}
 
     <ul>
       <li>
-        Material design icons can be scaled to any size, in accordance with
-        material design icons guidelines. The default being 1.35rem.
+        Material design icons can be scaled to any size, in accordance with material design icons guidelines. The default being 1.35rem.
         <br />
 
         CSS rules for the standard material design sizing guidelines:
@@ -125,16 +85,47 @@ title: 'Icons' } %} {% block content %}
           <li><code>.material-icons.md-10x { font-size: 13.5rem; }</code></li>
         </ul>
       </li>
-      <li>
-        When scaling icons, ensure the sizes used appear sharp on standard and
-        high DPI screens.
-      </li>
+      <li>When scaling icons, ensure the sizes used appear sharp on standard and high DPI screens.</li>
     </ul>
   </div>
 
-  <div class="preview pv-md">
-    {{ macros.viewCode({ ariaLabel: 'view code for material design icon size',
-    code: sizeIcons }, '')}}
+  <div class="preview pv-md">{{ macros.viewCode({ ariaLabel: 'view code for material design icon size', code: sizeIcons }, '')}}</div>
+</section>
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="iconathon" class="d-inline-block pb-4">Iconathon - Intellectual Property Symbols</h2>
+    <span class="badge badge-subtle-info ml-2">Proposed</span>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-utility-patent"></i> icon-utility-patent</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-patent-pending"></i> icon-patent-pending</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-plant-patent"></i> icon-plant-patent</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-pro-se"></i> icon-pro-se</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-invention"></i> icon-invention</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-maker"></i> icon-maker</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-intellectual-property"></i> icon-intellectual-property</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-design-patent"></i> icon-design-patent</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-prior-art"></i> icon-prior-art</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-small-inventor"></i> icon-small-inventor</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-large-inventor"></i> icon-large-inventor</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-infringement"></i> icon-infringement</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-trade-secret"></i> icon-trade-secret</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-micro-entity-inventor"></i> icon-micro-entity-inventor</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-service-mark"></i> icon-service-mark</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-counterfeit"></i> icon-counterfeit</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-ptotrademark"></i> icon-ptotrademark</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-stem"></i> icon-stem</div>
+      <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-pro-bono"></i> icon-pro-bono</div>
+    </div>
+    <h3 class="mt-4">About</h3>
+    <p>These icons were created during the <a href="http://www.uspto.gov/about-us/organizational-offices/office-under-secretary-and-director/intellectual-property-iconathon" target="_blank">USPTO Iconathon</a>, a workshop to create a set of icons that represent intellectual property concepts that don’t have a universal and recognized icon to represent them. Partnering with the <a href="https://thenounproject.com/" target="_blank">Noun Project</a>, we called on students, civic activists, artists, and intellectual property enthusiasts to collaborate, brainstorm, and sketch designs.</p>
+  <h3  class="mt-4">Usage</h3>
+  <ul>
+    <li>As complementary artwork for headings (H1,H2,H3)</li>
+    <li>On welcome and/or marketing pages only</li>
+    <li>Featured icons in website billboard sections</li>
+    <li>Alongside lists of anchor links</li>
+  </ul>
+  <p>Download the original SVG/PNG files at <a href="https://thenounproject.com/USPTO/" target="_blank">thenounproject.com/USPTO</a></p>
   </div>
 </section>
 
