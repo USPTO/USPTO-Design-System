@@ -535,35 +535,16 @@
     <h1>Dialogs</h1>
 
     <h2 id="purpose">Purpose</h2>
-    <p>
-      Dialogs provide the user with a focused way of accomplishing, confirming,
-      or viewing something without entirely leaving a screen or page.
-    </p>
+    <p>Dialogs provide the user with a focused way of accomplishing, confirming, or viewing something without entirely leaving a screen or page.</p>
 
     <h2 id="description">Description</h2>
     <ul>
-      <li>
-        Dialogs are useful for interactions that are relatively quick (less than
-        a couple minutes)
-      </li>
-      <li>
-        Dialogs float above the application until the user has taken a desired
-        action or dismissed the dialog
-      </li>
-      <li>
-        Dialogs can be used for managing settings, editing/creating simple
-        objects, confirming an action, or any other set of information/actions
-        that warrant not leaving the page
-      </li>
+      <li>Dialogs are useful for interactions that are relatively quick (less than a couple minutes)</li>
+      <li>Dialogs float above the application until the user has taken a desired action or dismissed the dialog</li>
+      <li>Dialogs can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page</li>
       <li>Dialogs are usually opened from a click action</li>
-      <li>
-        Dialogs may or may not block interactions “behind” or “under” the dialog
-        (see <a href="#modes">modes</a>)
-      </li>
-      <li>
-        If there is a non-destructive dismiss/cancel, dialogs can be closed by
-        clicking outside of the dialog
-      </li>
+      <li>Dialogs may or may not block interactions “behind” or “under” the dialog (see <a href="#modes">modes</a>)</li>
+      <li>If there is a non-destructive dismiss/cancel, dialogs can be closed by clicking outside of the dialog</li>
     </ul>
 
     <h2 id="components">Components</h2>
@@ -575,36 +556,21 @@
       <li>Dismiss (X) icon if a non-destructive ‘cancel/done’ is applicable</li>
     </ul>
     <h5>Content</h5>
-
     <ul>
-      <li>
-        Can contain text or UI controls focused on a particular task, process,
-        or entitiy
-      </li>
-      <li>
-        Can scroll independently depending on the content, creating a pinned
-        header/footer
-      </li>
+      <li>Can contain text or UI controls focused on a particular task, process, or entitiy</li>
+      <li>Can scroll independently depending on the content, creating a pinned header/footer</li>
     </ul>
     <h5>Footer</h5>
 
     <ul>
       <li>Contains action buttons</li>
       <li>Primary action buttons are right aligned</li>
-      <li>Cancel/previous buttons are left aligned</li>
-      <li>
-        Use button styles that match the actions/priority, but if there more
-        than two buttons with similar actions/priority, use the default button
-        style for them all
-      </li>
-      <li>
-        Buttons should use action verbs that describe by themselves what will
-        happen on click (e.g., ‘Delete user’ instead of ‘Ok’)
-      </li>
+      <li>In some circumstances cancel/previous may be left aligned</li>
+      <li>Use button styles that match the actions/priority, but if there more than two buttons with similar actions/priority, use the default button style for them all</li>
+      <li>Buttons should use action verbs that describe by themselves what will happen on click (e.g., ‘Delete user’ instead of ‘Ok’)</li>
     </ul>
   </div>
   <div class="preview pv-only">
-    
   <div class="">
     <div class="d-flex mb-1">
       <div class=" ml-auto">
@@ -634,41 +600,21 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title&quot;&gt;Rename file&lt;/h1&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;close&quot;
-          data-dismiss=&quot;modal&quot;
-          aria-label=&quot;Close&quot;
-        &gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-body&quot;&gt;
         &lt;form role=&quot;form&quot; class=&quot;&quot;&gt;
           &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label for=&quot;tb12&quot; class=&quot;control-label&quot;
-              &gt;Enter a new file name&lt;/label
-            &gt;
-            &lt;input
-              type=&quot;text&quot;
-              class=&quot;form-control&quot;
-              id=&quot;tb12&quot;
-              value=&quot;dialogs.md&quot;
-            /&gt;
+            &lt;label for=&quot;tb12&quot; class=&quot;control-label&quot;&gt;Enter a new file name&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;tb12&quot; value=&quot;dialogs.md&quot; /&gt;
           &lt;/div&gt;
         &lt;/form&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
-          data-dismiss=&quot;modal&quot;
-        &gt;
-          Close
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;
-          Save changes
-        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Save changes&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -690,41 +636,21 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Rename file</h1>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
         <form role="form" class="">
           <div class="form-group">
-            <label for="tb12" class="control-label"
-              >Enter a new file name</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="tb12"
-              value="dialogs.md"
-            />
+            <label for="tb12" class="control-label">Enter a new file name</label>
+            <input type="text" class="form-control" id="tb12" value="dialogs.md" />
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-        >
-          Close
-        </button>
-        <button type="button" class="btn btn-sm btn-primary">
-          Save changes
-        </button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -739,51 +665,29 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Rename file<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
-        &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;form&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;tb12&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;control-label&quot;</span>
-              &gt;</span>Enter a new file name&lt;/label
-            &gt;
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
-              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
-              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
-              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tb12&quot;</span>
-              <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;dialogs.md&quot;</span>
-            /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;tb12&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;control-label&quot;</span>&gt;</span>Enter a new file name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tb12&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;dialogs.md&quot;</span> /&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-        &gt;</span>
-          Close
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>
-          Save changes
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-
-  </div>
+</div>
   <div class="preview pv-only">
-    
   <div class="">
     <div class="d-flex mb-1">
       <div class=" ml-auto">
@@ -813,38 +717,22 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title&quot;&gt;Rename file&lt;/h1&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;close&quot;
-          data-dismiss=&quot;modal&quot;
-          aria-label=&quot;Close&quot;
-        &gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-body&quot;&gt;
         &lt;form role=&quot;form&quot; class=&quot;&quot;&gt;
           &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label for=&quot;tb123&quot; class=&quot;control-label&quot;
-              &gt;Enter a new file name&lt;/label
-            &gt;
-            &lt;input
-              type=&quot;text&quot;
-              class=&quot;form-control&quot;
-              id=&quot;tb123&quot;
-              value=&quot;dialogs.md&quot;
-            /&gt;
+            &lt;label for=&quot;tb123&quot; class=&quot;control-label&quot;&gt;Enter a new file name&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;tb123&quot; value=&quot;dialogs.md&quot; /&gt;
           &lt;/div&gt;
         &lt;/form&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-link&quot; data-dismiss=&quot;modal&quot;&gt;
-          Close
-        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
         &amp;nbsp;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;
-          Save changes
-        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Save changes&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -866,38 +754,22 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Rename file</h1>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
         <form role="form" class="">
           <div class="form-group">
-            <label for="tb123" class="control-label"
-              >Enter a new file name</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="tb123"
-              value="dialogs.md"
-            />
+            <label for="tb123" class="control-label">Enter a new file name</label>
+            <input type="text" class="form-control" id="tb123" value="dialogs.md" />
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-link" data-dismiss="modal">
-          Close
-        </button>
+        <button type="button" class="btn btn-sm btn-link" data-dismiss="modal">Close</button>
         &nbsp;
-        <button type="button" class="btn btn-sm btn-primary">
-          Save changes
-        </button>
+        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -912,48 +784,30 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Rename file<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
-        &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;form&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;tb123&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;control-label&quot;</span>
-              &gt;</span>Enter a new file name&lt;/label
-            &gt;
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
-              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
-              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
-              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tb123&quot;</span>
-              <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;dialogs.md&quot;</span>
-            /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;tb123&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;control-label&quot;</span>&gt;</span>Enter a new file name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tb123&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;dialogs.md&quot;</span> /&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-link&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>
-          Close
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-link&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-symbol">&amp;nbsp;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>
-          Save changes
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-
-  </div>
+</div>
   <div class="preview pv-only">
-    
   <div class="">
     <div class="d-flex mb-1">
       <div class=" ml-auto">
@@ -983,12 +837,7 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title&quot;&gt;Find and replace&lt;/h1&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;close&quot;
-          data-dismiss=&quot;modal&quot;
-          aria-label=&quot;Close&quot;
-        &gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
@@ -996,76 +845,27 @@
         &lt;form role=&quot;form&quot;&gt;
           &lt;div class=&quot;form-group&quot;&gt;
             &lt;label for=&quot;exampleFormControlInput1&quot;&gt;Find&lt;/label&gt;
-            &lt;input
-              type=&quot;text&quot;
-              class=&quot;form-control&quot;
-              id=&quot;exampleFormControlInput1&quot;
-            /&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleFormControlInput1&quot; /&gt;
           &lt;/div&gt;
           &lt;div class=&quot;form-group&quot;&gt;
             &lt;label for=&quot;exampleFormControlInput2&quot;&gt;Replace with&lt;/label&gt;
-            &lt;input
-              type=&quot;email&quot;
-              class=&quot;form-control&quot;
-              id=&quot;exampleFormControlInput2&quot;
-            /&gt;
+            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleFormControlInput2&quot; /&gt;
           &lt;/div&gt;
           &lt;div class=&quot;form-check&quot;&gt;
-            &lt;input
-              class=&quot;form-check-input&quot;
-              type=&quot;checkbox&quot;
-              value=&quot;&quot;
-              id=&quot;defaultCheck1&quot;
-              checked=&quot;&quot;
-            /&gt;
-            &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck1&quot;&gt;
-              Match case
-            &lt;/label&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck1&quot; checked=&quot;&quot; /&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck1&quot;&gt; Match case &lt;/label&gt;
           &lt;/div&gt;
           &lt;div class=&quot;form-check&quot;&gt;
-            &lt;input
-              class=&quot;form-check-input&quot;
-              type=&quot;checkbox&quot;
-              value=&quot;&quot;
-              id=&quot;defaultCheck2&quot;
-              checked=&quot;&quot;
-            /&gt;
-            &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck2&quot;&gt;
-              Whole word
-            &lt;/label&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck2&quot; checked=&quot;&quot; /&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck2&quot;&gt; Whole word &lt;/label&gt;
           &lt;/div&gt;
         &lt;/form&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
-          data-dismiss=&quot;modal&quot;
-        &gt;
-          Find
-        &lt;/button&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
-          data-dismiss=&quot;modal&quot;
-          disabled=&quot;&quot;
-        &gt;
-          Replace
-        &lt;/button&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
-          data-dismiss=&quot;modal&quot;
-        &gt;
-          Replace all
-        &lt;/button&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
-          data-dismiss=&quot;modal&quot;
-        &gt;
-          Done
-        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Find&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot; disabled=&quot;&quot;&gt;Replace&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Replace all&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Done&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -1087,12 +887,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Find and replace</h1>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -1100,76 +895,27 @@
         <form role="form">
           <div class="form-group">
             <label for="exampleFormControlInput1">Find</label>
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-            />
+            <input type="text" class="form-control" id="exampleFormControlInput1" />
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput2">Replace with</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput2"
-            />
+            <input type="email" class="form-control" id="exampleFormControlInput2" />
           </div>
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="defaultCheck1"
-              checked=""
-            />
-            <label class="form-check-label" for="defaultCheck1">
-              Match case
-            </label>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="" />
+            <label class="form-check-label" for="defaultCheck1"> Match case </label>
           </div>
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="defaultCheck2"
-              checked=""
-            />
-            <label class="form-check-label" for="defaultCheck2">
-              Whole word
-            </label>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked="" />
+            <label class="form-check-label" for="defaultCheck2"> Whole word </label>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-        >
-          Find
-        </button>
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-          disabled=""
-        >
-          Replace
-        </button>
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-        >
-          Replace all
-        </button>
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-        >
-          Done
-        </button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Find</button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal" disabled="">Replace</button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Replace all</button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Done</button>
       </div>
     </div>
   </div>
@@ -1184,12 +930,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Find and replace<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
-        &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1197,86 +938,35 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;form&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlInput1&quot;</span>&gt;</span>Find<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
-              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
-              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
-              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlInput1&quot;</span>
-            /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlInput1&quot;</span> /&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlInput2&quot;</span>&gt;</span>Replace with<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
-              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span>
-              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
-              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlInput2&quot;</span>
-            /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlInput2&quot;</span> /&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
-              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span>
-              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
-              <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>
-              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck1&quot;</span>
-              <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>
-            /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck1&quot;</span>&gt;</span>
-              Match case
-            <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck1&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck1&quot;</span>&gt;</span> Match case <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
-              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span>
-              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
-              <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>
-              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck2&quot;</span>
-              <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>
-            /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck2&quot;</span>&gt;</span>
-              Whole word
-            <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultCheck2&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-check-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;defaultCheck2&quot;</span>&gt;</span> Whole word <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-        &gt;</span>
-          Find
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-          <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>
-        &gt;</span>
-          Replace
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-        &gt;</span>
-          Replace all
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-        &gt;</span>
-          Done
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Find<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Replace<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Replace all<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Done<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-
-  </div>
+</div>
   <div class="preview pv-only">
-    
   <div class="">
     <div class="d-flex mb-1">
       <div class=" ml-auto">
@@ -1306,12 +996,7 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title text-success&quot;&gt;Thank you!&lt;/h1&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;close&quot;
-          data-dismiss=&quot;modal&quot;
-          aria-label=&quot;Close&quot;
-        &gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
@@ -1319,16 +1004,8 @@
         &lt;p&gt;Your request has been submitted.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
-          data-dismiss=&quot;modal&quot;
-        &gt;
-          Back
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-success&quot;&gt;
-          View request
-        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Back&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-success&quot;&gt;View request&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -1350,12 +1027,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title text-success">Thank you!</h1>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -1363,16 +1035,8 @@
         <p>Your request has been submitted.</p>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-        >
-          Back
-        </button>
-        <button type="button" class="btn btn-sm btn-success">
-          View request
-        </button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-sm btn-success">View request</button>
       </div>
     </div>
   </div>
@@ -1387,12 +1051,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title text-success&quot;</span>&gt;</span>Thank you!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
-        &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1400,35 +1059,21 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Your request has been submitted.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-        &gt;</span>
-          Back
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-success&quot;</span>&gt;</span>
-          View request
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-success&quot;</span>&gt;</span>View request<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-
-  </div>
+</div>
   <div class="pattern pv-only">
     <h1 id="confirmation">Confirmation</h1>
 
-    <p>
-      A confirmation dialog is short, simple dialog that ensures the user is
-      performing an action intentionally. This is especially useful for
-      dangerous or irreversible operations.
-    </p>
+    <p>A confirmation dialog is short, simple dialog that ensures the user is performing an action intentionally. This is especially useful for dangerous or irreversible operations.</p>
   </div>
   <div class="preview pv-only">
-    
   <div class="">
     <div class="d-flex mb-1">
       <div class=" ml-auto">
@@ -1458,12 +1103,7 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title text-danger&quot;&gt;Delete this user&lt;/h1&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;close&quot;
-          data-dismiss=&quot;modal&quot;
-          aria-label=&quot;Close&quot;
-        &gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
@@ -1471,13 +1111,7 @@
         &lt;p&gt;All user information will be deleted.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
-          data-dismiss=&quot;modal&quot;
-        &gt;
-          Cancel
-        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Cancel&lt;/button&gt;
         &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Delete user&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1500,12 +1134,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title text-danger">Delete this user</h1>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -1513,13 +1142,7 @@
         <p>All user information will be deleted.</p>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-        >
-          Cancel
-        </button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-sm btn-danger">Delete user</button>
       </div>
     </div>
@@ -1535,12 +1158,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title text-danger&quot;</span>&gt;</span>Delete this user<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
-        &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1548,13 +1166,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>All user information will be deleted.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-        &gt;</span>
-          Cancel
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-danger&quot;</span>&gt;</span>Delete user<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1562,10 +1174,8 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-
-  </div>
+</div>
   <div class="preview pv-only">
-    
   <div class="">
     <div class="d-flex mb-1">
       <div class=" ml-auto">
@@ -1595,12 +1205,7 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title&quot;&gt;Abandon changes?&lt;/h1&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;close&quot;
-          data-dismiss=&quot;modal&quot;
-          aria-label=&quot;Close&quot;
-        &gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
@@ -1608,16 +1213,8 @@
         &lt;p&gt;You have unsaved changes. Your changes will be lost.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
-          data-dismiss=&quot;modal&quot;
-        &gt;
-          Leave this page
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;
-          Stay on this page
-        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Leave this page&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Stay on this page&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -1639,12 +1236,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Abandon changes?</h1>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -1652,16 +1244,8 @@
         <p>You have unsaved changes. Your changes will be lost.</p>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-        >
-          Leave this page
-        </button>
-        <button type="button" class="btn btn-sm btn-primary">
-          Stay on this page
-        </button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Leave this page</button>
+        <button type="button" class="btn btn-sm btn-primary">Stay on this page</button>
       </div>
     </div>
   </div>
@@ -1676,12 +1260,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Abandon changes?<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
-        &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1689,36 +1268,23 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You have unsaved changes. Your changes will be lost.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
-          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
-          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
-        &gt;</span>
-          Leave this page
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>
-          Stay on this page
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Leave this page<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>Stay on this page<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-
-  </div>
+</div>
 
   <div class="pattern">
     <h1 id="actionless">Actionless</h1>
 
-    <p>
-      An actionless dialog may block user interaction for a period of time,
-      usually until something finishes or some other event occurs.
-    </p>
+    <p>An actionless dialog may block user interaction for a period of time, usually until something finishes or some other event occurs.</p>
   </div>
 
   <div class="preview pv-only">
-    
   <div class="">
     <div class="d-flex mb-1">
       <div class=" ml-auto">
@@ -1751,16 +1317,7 @@
           &lt;div class=&quot;pull-left&quot;&gt;Uploading document...&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;progress&quot;&gt;
-          &lt;div
-            class=&quot;progress-bar&quot;
-            role=&quot;progressbar&quot;
-            style=&quot;width: 65%&quot;
-            aria-valuenow=&quot;25&quot;
-            aria-valuemin=&quot;0&quot;
-            aria-valuemax=&quot;100&quot;
-          &gt;
-            25%
-          &lt;/div&gt;
+          &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 65%&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;25%&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1786,16 +1343,7 @@
           <div class="pull-left">Uploading document...</div>
         </div>
         <div class="progress">
-          <div
-            class="progress-bar"
-            role="progressbar"
-            style="width: 65%"
-            aria-valuenow="25"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            25%
-          </div>
+          <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
         </div>
       </div>
     </div>
@@ -1814,16 +1362,7 @@
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pull-left&quot;</span>&gt;</span>Uploading document...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
-            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-bar&quot;</span>
-            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;progressbar&quot;</span>
-            <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 65%&quot;</span>
-            <span class="hljs-attr">aria-valuenow</span>=<span class="hljs-string">&quot;25&quot;</span>
-            <span class="hljs-attr">aria-valuemin</span>=<span class="hljs-string">&quot;0&quot;</span>
-            <span class="hljs-attr">aria-valuemax</span>=<span class="hljs-string">&quot;100&quot;</span>
-          &gt;</span>
-            25%
-          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-bar&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;progressbar&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 65%&quot;</span> <span class="hljs-attr">aria-valuenow</span>=<span class="hljs-string">&quot;25&quot;</span> <span class="hljs-attr">aria-valuemin</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-valuemax</span>=<span class="hljs-string">&quot;100&quot;</span>&gt;</span>25%<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1831,32 +1370,16 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-
-  </div>
+</div>
 
   <div class="pattern">
     <h1 id="modes">Modes</h1>
-    <p>
-      Dialogs can prevent the user from performing actions behind/around the
-      dialog if desired. There are 3 general modes:
-    </p>
+    <p>Dialogs can prevent the user from performing actions behind/around the dialog if desired. There are 3 general modes:</p>
 
     <ul>
-      <li>
-        <strong>Modal</strong>: A modal dialog <strong>prevents</strong> the
-        user from interacting with all other areas of the application until the
-        dialog is dismissed.
-      </li>
-      <li>
-        <strong>Modeless</strong>: A modeless dialog <strong>allows</strong> the
-        user interact with all other areas of the application without dismissing
-        the dialog.
-      </li>
-      <li>
-        <strong>Mixed-modal</strong>: A mixed-modal dialog may block
-        <strong>some</strong> areas of the application, but not others. E.g., a
-        dialog pertaining to one document, but not another visible document.
-      </li>
+      <li><strong>Modal</strong>: A modal dialog <strong>prevents</strong> the user from interacting with all other areas of the application until the dialog is dismissed.</li>
+      <li><strong>Modeless</strong>: A modeless dialog <strong>allows</strong> the user interact with all other areas of the application without dismissing the dialog.</li>
+      <li><strong>Mixed-modal</strong>: A mixed-modal dialog may block <strong>some</strong> areas of the application, but not others. E.g., a dialog pertaining to one document, but not another visible document.</li>
     </ul>
   </div>
 
@@ -1865,44 +1388,19 @@
   </div>
 
   <div class="pattern">
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-toggle="modal"
-      data-target="#exampleModalLive"
-    >
-      Show demo modal
-    </button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLive">Show demo modal</button>
 
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-toggle="modal"
-      data-target="#staticBackdropLive"
-    >
-      Show static backdrop modal
-    </button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdropLive">Show static backdrop modal</button>
   </div>
 </section>
 
 <!--Modal examples-->
-<div
-  class="modal fade"
-  id="exampleModalLive"
-  tabindex="-1"
-  aria-labelledby="exampleModalLiveLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title" id="exampleModalLiveLabel">Modal title</h1>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -1910,58 +1408,27 @@
         <p>Woohoo, you're reading this text in a modal!</p>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-        >
-          Close
-        </button>
-        <button type="button" class="btn btn-sm btn-primary">
-          Save changes
-        </button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
 
-<div
-  class="modal fade"
-  id="staticBackdropLive"
-  data-backdrop="static"
-  data-keyboard="false"
-  tabindex="-1"
-  aria-labelledby="staticBackdropLiveLabel"
-  style="display: none"
-  aria-hidden="true"
->
+<div class="modal fade" id="staticBackdropLive" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLiveLabel" style="display: none" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title" id="staticBackdropLiveLabel">Modal title</h3>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>
-          I will not close if you click outside me. Don't even try to press
-          escape key.
-        </p>
+        <p>I will not close if you click outside me. Don't even try to press escape key.</p>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-sm btn-secondary"
-          data-dismiss="modal"
-        >
-          Close
-        </button>
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-sm btn-primary">Understood</button>
       </div>
     </div>
