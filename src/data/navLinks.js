@@ -180,10 +180,11 @@ Object.assign(exports, {
         { href: '#usage', text: 'Usage' },
         { href: '#icon-color', text: 'Icon color' },
         { href: '#system-icons', text: 'System Icons' },
-        { href: '#icon-sizing', text: 'Icon sizing' }
+        { href: '#icon-sizing', text: 'Icon sizing' },
+        { href: '#iconathon', text: 'Iconathon - Intellectual Property Symbols' }
         //{ href: '#rotation', text: 'Rotation' },
         //{ href: '#animation', text: 'Animation' },
-        //{ href: '#iconathon', text: 'Iconathon - Intellectual Property Symbols' }
+        
       ],
     },
     { href: 'images.html', text: 'Images' },
