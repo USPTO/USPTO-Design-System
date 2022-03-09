@@ -1,69 +1,260 @@
-{% extends "layouts/templateDefault.njk" %} {% set page = { class:'page-document', title: 'Apps launch page', containerType:'main' } %} {% block main %}
+{% extends "layouts/templateDefault.njk" %} {% set page = {
+class:'page-document', title: 'Apps launch page', containerType:'main' } %} {%
+block main %}
 <section class="p-4 container">
   <h1>Page heading</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla velit minima cumque. Eum, voluptate. Laboriosam deserunt esse quis quaerat reiciendis accusantium ipsum.</p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla velit
+    minima cumque. Eum, voluptate. Laboriosam deserunt esse quis quaerat
+    reiciendis accusantium ipsum.
+  </p>
   <div class="card mb-2">
     <div class="card-body row">
-      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block"><img src="{{relativeRoot}}assets/img/robot.png" alt="app image" title="App name" width="65" class="img-thumbnail" /></div>
+      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block">
+        <img
+          src="{{relativeRoot}}assets/img/robot.png"
+          alt="app image"
+          title="App name"
+          width="65"
+          class="img-thumbnail"
+        />
+      </div>
       <div class="col-10 col-sm-10 col-md-8 col-lg-9">
         <h3 class="d-inline-block mb-0">App name</h3>
-        <div class="badge badge-subtle-info ml-2 small align-top" role="button" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="right" title="" data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."><span class="small">alpha</span></div>
+        <div
+          class="badge badge-subtle-info ml-2 small align-top"
+          role="button"
+          data-toggle="popover"
+          data-trigger="hover"
+          data-html="true"
+          data-placement="right"
+          title=""
+          data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."
+        >
+          <span class="small">alpha</span>
+        </div>
         <p class="text-muted mb-0">Version 2.1</p>
-        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla velit minima cumque <a href="#" role="button" data-toggle="modal" data-target="#moreInfo" title="Click for more info">[more...]</a></p>
+        <p class="mb-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla
+          velit minima cumque
+          <a
+            href="#"
+            role="button"
+            data-toggle="modal"
+            data-target="#moreInfo"
+            title="Click for more info"
+            >[more...]</a
+          >
+        </p>
       </div>
-      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2"><button class="btn btn-primary mt-3 float-md-right" title="Click to launch the lab">Launch</button></div>
+      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2">
+        <button
+          class="btn btn-primary mt-3 float-md-right"
+          title="Click to launch the lab"
+        >
+          Launch
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="card mb-2">
     <div class="card-body row">
-      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block"><img src="{{relativeRoot}}assets/img/id-proofing.png" alt="app image" title="App name" width="65" class="img-thumbnail" /></div>
+      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block">
+        <img
+          src="{{relativeRoot}}assets/img/id-proofing.png"
+          alt="app image"
+          title="App name"
+          width="65"
+          class="img-thumbnail"
+        />
+      </div>
       <div class="col-10 col-sm-10 col-md-8 col-lg-9">
         <h3 class="d-inline-block mb-0">App name</h3>
-        <div class="badge badge-subtle-info ml-2 small align-top" role="button" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="right" title="" data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."><span class="small">alpha</span></div>
+        <div
+          class="badge badge-subtle-info ml-2 small align-top"
+          role="button"
+          data-toggle="popover"
+          data-trigger="hover"
+          data-html="true"
+          data-placement="right"
+          title=""
+          data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."
+        >
+          <span class="small">alpha</span>
+        </div>
         <p class="text-muted mb-0">Version 2.1</p>
-        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla velit minima cumque <a href="#" role="button" data-toggle="modal" data-target="#moreInfo" title="Click for more info">[more...]</a></p>
+        <p class="mb-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla
+          velit minima cumque
+          <a
+            href="#"
+            role="button"
+            data-toggle="modal"
+            data-target="#moreInfo"
+            title="Click for more info"
+            >[more...]</a
+          >
+        </p>
       </div>
-      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2"><button class="btn btn-primary mt-3 float-md-right" title="Click to launch the lab">Launch</button></div>
+      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2">
+        <button
+          class="btn btn-primary mt-3 float-md-right"
+          title="Click to launch the lab"
+        >
+          Launch
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="card mb-2">
     <div class="card-body row">
-      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block"><img src="{{relativeRoot}}assets/img/robot.png" alt="app image" title="App name" width="65" class="img-thumbnail" /></div>
+      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block">
+        <img
+          src="{{relativeRoot}}assets/img/robot.png"
+          alt="app image"
+          title="App name"
+          width="65"
+          class="img-thumbnail"
+        />
+      </div>
       <div class="col-10 col-sm-10 col-md-8 col-lg-9">
         <h3 class="d-inline-block mb-0">App name</h3>
-        <div class="badge badge-subtle-info ml-2 small align-top" role="button" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="right" title="" data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."><span class="small">alpha</span></div>
+        <div
+          class="badge badge-subtle-info ml-2 small align-top"
+          role="button"
+          data-toggle="popover"
+          data-trigger="hover"
+          data-html="true"
+          data-placement="right"
+          title=""
+          data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."
+        >
+          <span class="small">alpha</span>
+        </div>
         <p class="text-muted mb-0">Version 2.1</p>
-        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla velit minima cumque <a href="#" role="button" data-toggle="modal" data-target="#moreInfo" title="Click for more info">[more...]</a></p>
+        <p class="mb-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla
+          velit minima cumque
+          <a
+            href="#"
+            role="button"
+            data-toggle="modal"
+            data-target="#moreInfo"
+            title="Click for more info"
+            >[more...]</a
+          >
+        </p>
       </div>
-      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2"><button class="btn btn-primary mt-3 float-md-right" title="Click to launch the lab">Launch</button></div>
+      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2">
+        <button
+          class="btn btn-primary mt-3 float-md-right"
+          title="Click to launch the lab"
+        >
+          Launch
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="card mb-2">
     <div class="card-body row">
-      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block"><img src="{{relativeRoot}}assets/img/id-proofing.png" alt="app image" title="App name" width="65" class="img-thumbnail" /></div>
+      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block">
+        <img
+          src="{{relativeRoot}}assets/img/id-proofing.png"
+          alt="app image"
+          title="App name"
+          width="65"
+          class="img-thumbnail"
+        />
+      </div>
       <div class="col-10 col-sm-10 col-md-8 col-lg-9">
         <h3 class="d-inline-block mb-0">App name</h3>
-        <div class="badge badge-subtle-info ml-2 small align-top" role="button" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="right" title="" data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."><span class="small">alpha</span></div>
+        <div
+          class="badge badge-subtle-info ml-2 small align-top"
+          role="button"
+          data-toggle="popover"
+          data-trigger="hover"
+          data-html="true"
+          data-placement="right"
+          title=""
+          data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."
+        >
+          <span class="small">alpha</span>
+        </div>
         <p class="text-muted mb-0">Version 2.1</p>
-        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla velit minima cumque <a href="#" role="button" data-toggle="modal" data-target="#moreInfo" title="Click for more info">[more...]</a></p>
+        <p class="mb-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla
+          velit minima cumque
+          <a
+            href="#"
+            role="button"
+            data-toggle="modal"
+            data-target="#moreInfo"
+            title="Click for more info"
+            >[more...]</a
+          >
+        </p>
       </div>
-      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2"><button class="btn btn-primary mt-3 float-md-right" title="Click to launch the lab">Launch</button></div>
+      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2">
+        <button
+          class="btn btn-primary mt-3 float-md-right"
+          title="Click to launch the lab"
+        >
+          Launch
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="card mb-2">
     <div class="card-body row">
-      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block"><img src="{{relativeRoot}}assets/img/ai-search.png" alt="app image" title="App name" width="65" class="img-thumbnail" /></div>
+      <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-none d-sm-block">
+        <img
+          src="{{relativeRoot}}assets/img/ai-search.png"
+          alt="app image"
+          title="App name"
+          width="65"
+          class="img-thumbnail"
+        />
+      </div>
       <div class="col-sm-10 col-md-8 col-lg-9">
         <h3 class="d-inline-block mb-0">App name</h3>
-        <div class="badge badge-subtle-info ml-2 small align-top" role="button" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="right" title="" data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."><span class="small">alpha</span></div>
+        <div
+          class="badge badge-subtle-info ml-2 small align-top"
+          role="button"
+          data-toggle="popover"
+          data-trigger="hover"
+          data-html="true"
+          data-placement="right"
+          title=""
+          data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."
+        >
+          <span class="small">alpha</span>
+        </div>
         <p class="text-muted mb-0">Version 2.1</p>
-        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla velit minima cumque <a href="#" role="button" data-toggle="modal" data-target="#moreInfo" title="Click for more info">[more...]</a></p>
+        <p class="mb-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla
+          velit minima cumque
+          <a
+            href="#"
+            role="button"
+            data-toggle="modal"
+            data-target="#moreInfo"
+            title="Click for more info"
+            >[more...]</a
+          >
+        </p>
       </div>
-      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2"><button class="btn btn-primary mt-3 float-md-right" title="Click to launch the lab">Launch</button></div>
+      <div class="col-sm-10 offset-sm-2 col-md-2 offset-md-0 col-lg-2">
+        <button
+          class="btn btn-primary mt-3 float-md-right"
+          title="Click to launch the lab"
+        >
+          Launch
+        </button>
+      </div>
     </div>
   </div>
 
@@ -73,30 +264,65 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title">More information</h1>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
             <span aria-hidden="true">×</span>
           </button>
         </div>
         <div class="modal-body">
-        <div class="row">
-        <div class="col-3 col-sm-2"><img src="{{relativeRoot}}assets/img/robot.png" alt="app image" title="App name" width="60" class="img-thumbnail" /></div>
-        <div class="col-sm-10">
-        <h3 class="d-inline-block mb-0">App name</h3>          
-        <div class="badge badge-subtle-info ml-2 small align-top" role="button" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="right" title="" data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."><span class="small">alpha</span></div>
-<p class="text-muted mb-0">Version 2.1</p>
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla velit minima cumque. Eum, voluptate. Laboriosam deserunt esse quis quaerat reiciendis accusantium ipsum, id iure porro aspernatur odit accusamus exercitationem!</p>
-        </div>
-        </div>
-            
+          <div class="row">
+            <div class="col-3 col-sm-2">
+              <img
+                src="{{relativeRoot}}assets/img/robot.png"
+                alt="app image"
+                title="App name"
+                width="60"
+                class="img-thumbnail"
+              />
+            </div>
+            <div class="col-sm-10">
+              <h3 class="d-inline-block mb-0">App name</h3>
+              <div
+                class="badge badge-subtle-info ml-2 small align-top"
+                role="button"
+                data-toggle="popover"
+                data-trigger="hover"
+                data-html="true"
+                data-placement="right"
+                title=""
+                data-content="This product is in <strong>Alpha</strong> phase, the first phase of software testing and hasn't been released to customers."
+              >
+                <span class="small">alpha</span>
+              </div>
+              <p class="text-muted mb-0">Version 2.1</p>
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                nulla velit minima cumque. Eum, voluptate. Laboriosam deserunt
+                esse quis quaerat reiciendis accusantium ipsum, id iure porro
+                aspernatur odit accusamus exercitationem!
+              </p>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn  btn-primary" title="Click to launch the lab">Launch</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            title="Click to launch the lab"
+          >
+            Launch
+          </button>
         </div>
       </div>
     </div>
   </div>
-
 
   <!--End of Dialog window for [More]-->
 </section>

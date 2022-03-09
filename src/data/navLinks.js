@@ -179,9 +179,9 @@ Object.assign(exports, {
         { href: '#overview', text: 'Overview' },
         { href: '#usage', text: 'Usage' },
         { href: '#icon-color', text: 'Icon color' },
-        { href: '#system-icons', text: 'System Icons' },
+        { href: '#system-icons', text: 'System icons' },
         { href: '#icon-sizing', text: 'Icon sizing' },
-        { href: '#iconathon', text: 'Iconathon - Intellectual Property Symbols' }
+        { href: '#iconathon', text: 'USPTO - Intellectual Property Symbols' }
         //{ href: '#rotation', text: 'Rotation' },
         //{ href: '#animation', text: 'Animation' },
         
@@ -264,16 +264,16 @@ Object.assign(exports, {
         { href: '#deprecated', text: 'Deprecated' }
       ],
     },
-    /*
+    
     {
       href: 'fileUpload.html',
       text: 'File upload',
       "children": [
         { href: '#single-file-upload', text: 'Single file upload' },
-        { href: '#multi-file-upload', text: 'Multi file upload' }
+        { href: '#multi-file-upload', text: 'Multiple file upload' }
       ],
     },
-    {
+   /* {
       href: 'filters.html',
       text: 'Filters',
       "children": [
