@@ -135,7 +135,8 @@ Object.assign(exports, {
         { href: '#row-action-buttons', text: 'Row action buttons' },
         { href: '#column-customization', text: 'Column customization' },
         { href: '#grouping', text: 'Grouping' },
-        { href: '#expandable-rows', text: 'Expandable rows' }
+        { href: '#expandable-rows', text: 'Expandable rows' },
+        { href: '#datatable', text: 'Datatable' }
       ],
     },
     {

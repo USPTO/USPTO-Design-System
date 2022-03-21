@@ -1,26 +1,17 @@
-{% extends 'layouts/components.njk' %} {% set page = { class: 'page-table',
-title: 'tables' } %} {% block content %}
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-table', title: 'tables' } %} {% block content %}
 <section class="pv-content">
   <div class="pattern">
     <h1>Tables</h1>
     <h3 id="purpose">Purpose</h3>
-    <p>
-      Users need to see structured data in a manner that makes the data
-      readable, scannable, and comparable.
-    </p>
+    <p>Users need to see structured data in a manner that makes the data readable, scannable, and comparable.</p>
     <h3 id="description">Description</h3>
     <p>
-      Tables provide customizable views of tabular data with features including
-      sorting and managing columns. Tables are useful when a collection of data
-      requires vertical alignment through columns for quick scanning and
-      discovery of information, as well as for data that with many attributes
-      that requires sorting, grouping, and a user customizable display.
+      Tables provide customizable views of tabular data with features including sorting and managing columns. Tables are useful when a collection of data
+      requires vertical alignment through columns for quick scanning and discovery of information, as well as for data that with many attributes that requires
+      sorting, grouping, and a user customizable display.
     </p>
     <h3 id="basic-functionality">Basic functionality</h3>
-    <p>
-      Tables list a collection of items in rows that have similar attributes,
-      usually with headers to label each attribute.
-    </p>
+    <p>Tables list a collection of items in rows that have similar attributes, usually with headers to label each attribute.</p>
     <p>The following functionality can be provided by tables:</p>
     <ul>
       <li>Sorting by columns</li>
@@ -33,10 +24,8 @@ title: 'tables' } %} {% block content %}
       <li>Expanding rows</li>
     </ul>
     <p>
-      A table’s complexity and needs can vary greatly. This pattern provides
-      many different features a table <em>may</em> have. Features can be mixed
-      and matched based on your needs. Don’t include features unless they’re
-      actually needed.
+      A table’s complexity and needs can vary greatly. This pattern provides many different features a table <em>may</em> have. Features can be mixed and
+      matched based on your needs. Don’t include features unless they’re actually needed.
     </p>
   </div>
 </section>
@@ -46,75 +35,40 @@ title: 'tables' } %} {% block content %}
     <h3 id="standard">Standard</h3>
     <p>A standard table has subtle row borders.</p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for standard table', code:
-    tablesStandard }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for standard table', code: tablesStandard }, '')}}</div>
   <div class="pattern">
     <h3 id="striped">Striped</h3>
-    <p>
-      A striped table adds an alternating row background color, increasing
-      usability for wider tables.
-    </p>
+    <p>A striped table adds an alternating row background color, increasing usability for wider tables.</p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for striped table', code:
-    tablesStriped }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for striped table', code: tablesStriped }, '')}}</div>
   <div class="pattern">
     <h3 id="bordered">Bordered</h3>
-    <p>
-      A bordered table adds column and row borders, increasing usability for
-      content-dense tables.
-    </p>
+    <p>A bordered table adds column and row borders, increasing usability for content-dense tables.</p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for bordered table', code:
-    tablesBordered }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for bordered table', code: tablesBordered }, '')}}</div>
   <div class="pattern">
     <h3 id="borderless">Borderless</h3>
-    <p>
-      A borderless table removes all borders, decreasing clutter for simple
-      tables.
-    </p>
+    <p>A borderless table removes all borders, decreasing clutter for simple tables.</p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for borderless table', code:
-    tablesBorderless }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for borderless table', code: tablesBorderless }, '')}}</div>
   <div class="pattern">
     <h3 id="row-hover">Row hover</h3>
     <p>Rows can have a hover effect to indicate click interactions.</p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for hover row table', code:
-    tablesRowhover }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for hover row table', code: tablesRowhover }, '')}}</div>
   <div class="pattern">
     <h3 id="condensed">Condensed</h3>
-    <p>
-      Use the condensed style, which reduces cell padding, for very large
-      amounts of data.
-    </p>
+    <p>Use the condensed style, which reduces cell padding, for very large amounts of data.</p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for condensed table', code:
-    tablesCondensed }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for condensed table', code: tablesCondensed }, '')}}</div>
   <div class="pattern">
     <h3 id="colored-headers">Table shading</h3>
     <p>
       Similar to other components, the available styles are
-      <code class="highlighter-rouge"
-        >.table-{primary, success, info, warning, danger}</code
-      >.
+      <code class="highlighter-rouge">.table-{primary, success, info, warning, danger}</code>.
     </p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for colored header table', code:
-    tablesColoredheaders }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for colored header table', code: tablesColoredheaders }, '')}}</div>
 </section>
 <section class="pv-content">
   <div class="pattern">
@@ -122,143 +76,91 @@ title: 'tables' } %} {% block content %}
     <h3 id="normal">Normal</h3>
     <p>A normal header scrolls with the data.</p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for normal table header', code:
-    headerNormal }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for normal table header', code: headerNormal }, '')}}</div>
   <div class="pattern">
     <h3 id="fixed">Fixed</h3>
-    <p>
-      A fixed header remains visible as the table body is scrolled. This is
-      useful for larger amounts of data.
-    </p>
+    <p>A fixed header remains visible as the table body is scrolled. This is useful for larger amounts of data.</p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for fixed table header', code:
-    headerFixed }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for fixed table header', code: headerFixed }, '')}}</div>
   <div class="pattern">
     <h3 id="headerless">Headerless</h3>
     <p>
-      If the content of the table is self-explanatory for your users, it may not
-      need a header. Provide an alternative for sorting, if necessary (e.g., a
+      If the content of the table is self-explanatory for your users, it may not need a header. Provide an alternative for sorting, if necessary (e.g., a
       toolbar with a dropdown).
     </p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for headerless table', code:
-    headerHeaderless }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for headerless table', code: headerHeaderless }, '')}}</div>
 </section>
 <section class="pv-content">
   <div class="pattern">
     <h2 id="sorting">Sorting</h2>
     <h3 id="single-sorting">Single sorting</h3>
     <p>
-      Clicking a header cell sets that column as the currently sorted column.
-      The first click should sort
-      <code class="highlighter-rouge">descending</code>, the second click should
-      sort <code class="highlighter-rouge">ascending</code>.
+      Clicking a header cell sets that column as the currently sorted column. The first click should sort
+      <code class="highlighter-rouge">descending</code>, the second click should sort <code class="highlighter-rouge">ascending</code>.
     </p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for single sorting table', code:
-    sortingSingle }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for single sorting table', code: sortingSingle }, '')}}</div>
   <div class="pattern">
     <h3 id="multi-sorting">Multi sorting</h3>
+    <p>When a table is sorted by multiple columns, the sort order is indicated by the superscript numbers.</p>
     <p>
-      When a table is sorted by multiple columns, the sort order is indicated by
-      the superscript numbers.
-    </p>
-    <p>
-      Performing a <code class="highlighter-rouge">shift+click</code> on a
-      header cell should add that column to the sorted list. A second
-      <code class="highlighter-rouge">shift+click</code> on the same header cell
-      should toggle the sort direction. A third
-      <code class="highlighter-rouge">shift+click</code> on the same header cell
-      should remove that column from the sort list. A left click should clear
-      the sort list and then behave as a single sort.
+      Performing a <code class="highlighter-rouge">shift+click</code> on a header cell should add that column to the sorted list. A second
+      <code class="highlighter-rouge">shift+click</code> on the same header cell should toggle the sort direction. A third
+      <code class="highlighter-rouge">shift+click</code> on the same header cell should remove that column from the sort list. A left click should clear the
+      sort list and then behave as a single sort.
     </p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for multi sorting table', code:
-    sortingMulti }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for multi sorting table', code: sortingMulti }, '')}}</div>
 </section>
 <section class="pv-content">
   <div class="pattern">
     <h3 id="selection">Selection</h3>
     <p>
-      Checkboxes are generally the best way to facilitate multi-row selection,
-      especially if clicking a row already has a different action (e.g., opening
-      an email).
+      Checkboxes are generally the best way to facilitate multi-row selection, especially if clicking a row already has a different action (e.g., opening an
+      email).
     </p>
     <ul>
       <li>Checking a checkbox should highlight the corresponding row.</li>
+      <li>If there’s a control for selecting all/none, it should represent the current state of the row selection, including an indeterminate state.</li>
       <li>
-        If there’s a control for selecting all/none, it should represent the
-        current state of the row selection, including an indeterminate state.
-      </li>
-      <li>
-        <code class="highlighter-rouge">shift+click</code> should select all
-        items between the previoulsy clicked checkbox and the currently clicked
-        checkbox.
+        <code class="highlighter-rouge">shift+click</code> should select all items between the previoulsy clicked checkbox and the currently clicked checkbox.
       </li>
     </ul>
   </div>
   <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for Selection', code: Selection
-    }, 'Selection')}}
-    <p class="help-block" style="color: #ccc">
-      Note: checkboxes are disabled for demo purposes.
-    </p>
+    {{ macros.viewCode({ ariaLabel: 'view code for Selection', code: Selection }, 'Selection')}}
+    <p class="help-block" style="color: #ccc">Note: checkboxes are disabled for demo purposes.</p>
   </div>
 </section>
 <section class="pv-content">
   <div class="pattern">
     <h2 id="row-action-buttons">Row action buttons</h2>
-    <p>
-      Buttons with the <code class="highlighter-rouge">btn-hover</code> and
-      <code class="highlighter-rouge">btn-icon-only</code> classes.
-    </p>
+    <p>Buttons with the <code class="highlighter-rouge">btn-hover</code> and <code class="highlighter-rouge">btn-icon-only</code> classes.</p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for row action button', code:
-    rowActioButtons }, 'Selection')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for row action button', code: rowActioButtons }, 'Selection')}}</div>
 </section>
 <section class="pv-content">
   <div class="pattern">
     <h2 id="column-customization">Column customization</h2>
     <p>
-      To provide column customization, add an icon to the top right corner of
-      the table. Clicking on the icon will show the
+      To provide column customization, add an icon to the top right corner of the table. Clicking on the icon will show the
       <code class="highlighter-rouge">Show and hide columns</code> dialog.
     </p>
   </div>
-  <div class="preview pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for Column customization', code:
-    columnCustomization }, '')}}
-  </div>
+  <div class="preview pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for Column customization', code: columnCustomization }, '')}}</div>
 </section>
 <section class="pv-content">
   <div class="pattern">
     <h2 id="show-and-hide-columns-dialog">Show and hide columns dialog</h2>
     <p>This dialog provides the ability to show/hide columns as desired.</p>
   </div>
-  <div class="preview pv-only pv-lg">
-    {{ macros.viewCode({ ariaLabel: 'view code for Show and hide columns
-    dialog', code: showHideColumn }, '')}}
-  </div>
+  <div class="preview pv-only pv-lg">{{ macros.viewCode({ ariaLabel: 'view code for Show and hide columns dialog', code: showHideColumn }, '')}}</div>
 </section>
 <section class="pv-content">
   <div class="pattern">
     <h2 id="grouping">Grouping</h2>
-    <p>
-      Row grouping allows users to show and hide sets of rows that share a
-      similar attribute.
-    </p>
+    <p>Row grouping allows users to show and hide sets of rows that share a similar attribute.</p>
   </div>
   <div class="pattern">
     <table class="table table-sortable table-bordered">
@@ -333,12 +235,7 @@ title: 'tables' } %} {% block content %}
     <p>Expandable rows provide additional information about a row on demand.</p>
   </div>
   <div class="pattern">
-    <table
-      data-pl-expandable-rows=""
-      role="grid"
-      style="table-layout: fixed"
-      class="table table-bordered"
-    >
+    <table data-pl-expandable-rows="" role="grid" style="table-layout: fixed" class="table table-bordered">
       <thead class="thead-light">
         <tr role="row">
           <th scope="col" role="columnheader" style="width: 36px">
@@ -412,6 +309,528 @@ title: 'tables' } %} {% block content %}
     </table>
   </div>
 </section>
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="datatable">Data table</h2>
+    <p>
+      DataTables is a
+      <a href="https://www.datatables.net/" target="_blank">plug-in</a> for the jQuery Javascript library. It is a highly flexible tool, built upon the
+      foundations of progressive enhancement, that adds all of these advanced features to any HTML table.
+    </p>
+  </div>
+  
+  <div class="pattern">
+    <h2>Usage</h2>
+    <p>The Javascript shown below is used to initialise the datatable:</p>
+    <pre class="language-js pt-0">    <code>
+  $(document).ready(function() {
+    $('#example').DataTable();
+  });
+</code></pre>
+
+    <p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
+    <ul>
+      <li>
+        <a href="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" target="_blank"
+          >https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js</a
+        >
+      </li>
+      <li>
+        <a href="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js" target="_blank"
+          >https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="pattern">
+    <table id="dataTableExample" class="table table-striped table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Office</th>
+          <th>Age</th>
+          <th>Start date</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tiger Nixon</td>
+          <td>System Architect</td>
+          <td>Edinburgh</td>
+          <td>61</td>
+          <td>2011/04/25</td>
+          <td>$320,800</td>
+        </tr>
+        <tr>
+          <td>Garrett Winters</td>
+          <td>Accountant</td>
+          <td>Tokyo</td>
+          <td>63</td>
+          <td>2011/07/25</td>
+          <td>$170,750</td>
+        </tr>
+        <tr>
+          <td>Ashton Cox</td>
+          <td>Junior Technical Author</td>
+          <td>San Francisco</td>
+          <td>66</td>
+          <td>2009/01/12</td>
+          <td>$86,000</td>
+        </tr>
+        <tr>
+          <td>Cedric Kelly</td>
+          <td>Senior Javascript Developer</td>
+          <td>Edinburgh</td>
+          <td>22</td>
+          <td>2012/03/29</td>
+          <td>$433,060</td>
+        </tr>
+        <tr>
+          <td>Airi Satou</td>
+          <td>Accountant</td>
+          <td>Tokyo</td>
+          <td>33</td>
+          <td>2008/11/28</td>
+          <td>$162,700</td>
+        </tr>
+        <tr>
+          <td>Brielle Williamson</td>
+          <td>Integration Specialist</td>
+          <td>New York</td>
+          <td>61</td>
+          <td>2012/12/02</td>
+          <td>$372,000</td>
+        </tr>
+        <tr>
+          <td>Herrod Chandler</td>
+          <td>Sales Assistant</td>
+          <td>San Francisco</td>
+          <td>59</td>
+          <td>2012/08/06</td>
+          <td>$137,500</td>
+        </tr>
+        <tr>
+          <td>Rhona Davidson</td>
+          <td>Integration Specialist</td>
+          <td>Tokyo</td>
+          <td>55</td>
+          <td>2010/10/14</td>
+          <td>$327,900</td>
+        </tr>
+        <tr>
+          <td>Colleen Hurst</td>
+          <td>Javascript Developer</td>
+          <td>San Francisco</td>
+          <td>39</td>
+          <td>2009/09/15</td>
+          <td>$205,500</td>
+        </tr>
+        <tr>
+          <td>Sonya Frost</td>
+          <td>Software Engineer</td>
+          <td>Edinburgh</td>
+          <td>23</td>
+          <td>2008/12/13</td>
+          <td>$103,600</td>
+        </tr>
+        <tr>
+          <td>Jena Gaines</td>
+          <td>Office Manager</td>
+          <td>London</td>
+          <td>30</td>
+          <td>2008/12/19</td>
+          <td>$90,560</td>
+        </tr>
+        <tr>
+          <td>Quinn Flynn</td>
+          <td>Support Lead</td>
+          <td>Edinburgh</td>
+          <td>22</td>
+          <td>2013/03/03</td>
+          <td>$342,000</td>
+        </tr>
+        <tr>
+          <td>Charde Marshall</td>
+          <td>Regional Director</td>
+          <td>San Francisco</td>
+          <td>36</td>
+          <td>2008/10/16</td>
+          <td>$470,600</td>
+        </tr>
+        <tr>
+          <td>Haley Kennedy</td>
+          <td>Senior Marketing Designer</td>
+          <td>London</td>
+          <td>43</td>
+          <td>2012/12/18</td>
+          <td>$313,500</td>
+        </tr>
+        <tr>
+          <td>Tatyana Fitzpatrick</td>
+          <td>Regional Director</td>
+          <td>London</td>
+          <td>19</td>
+          <td>2010/03/17</td>
+          <td>$385,750</td>
+        </tr>
+        <tr>
+          <td>Michael Silva</td>
+          <td>Marketing Designer</td>
+          <td>London</td>
+          <td>66</td>
+          <td>2012/11/27</td>
+          <td>$198,500</td>
+        </tr>
+        <tr>
+          <td>Paul Byrd</td>
+          <td>Chief Financial Officer (CFO)</td>
+          <td>New York</td>
+          <td>64</td>
+          <td>2010/06/09</td>
+          <td>$725,000</td>
+        </tr>
+        <tr>
+          <td>Gloria Little</td>
+          <td>Systems Administrator</td>
+          <td>New York</td>
+          <td>59</td>
+          <td>2009/04/10</td>
+          <td>$237,500</td>
+        </tr>
+        <tr>
+          <td>Bradley Greer</td>
+          <td>Software Engineer</td>
+          <td>London</td>
+          <td>41</td>
+          <td>2012/10/13</td>
+          <td>$132,000</td>
+        </tr>
+        <tr>
+          <td>Dai Rios</td>
+          <td>Personnel Lead</td>
+          <td>Edinburgh</td>
+          <td>35</td>
+          <td>2012/09/26</td>
+          <td>$217,500</td>
+        </tr>
+        <tr>
+          <td>Jenette Caldwell</td>
+          <td>Development Lead</td>
+          <td>New York</td>
+          <td>30</td>
+          <td>2011/09/03</td>
+          <td>$345,000</td>
+        </tr>
+        <tr>
+          <td>Yuri Berry</td>
+          <td>Chief Marketing Officer (CMO)</td>
+          <td>New York</td>
+          <td>40</td>
+          <td>2009/06/25</td>
+          <td>$675,000</td>
+        </tr>
+        <tr>
+          <td>Caesar Vance</td>
+          <td>Pre-Sales Support</td>
+          <td>New York</td>
+          <td>21</td>
+          <td>2011/12/12</td>
+          <td>$106,450</td>
+        </tr>
+        <tr>
+          <td>Doris Wilder</td>
+          <td>Sales Assistant</td>
+          <td>Sydney</td>
+          <td>23</td>
+          <td>2010/09/20</td>
+          <td>$85,600</td>
+        </tr>
+        <tr>
+          <td>Angelica Ramos</td>
+          <td>Chief Executive Officer (CEO)</td>
+          <td>London</td>
+          <td>47</td>
+          <td>2009/10/09</td>
+          <td>$1,200,000</td>
+        </tr>
+        <tr>
+          <td>Gavin Joyce</td>
+          <td>Developer</td>
+          <td>Edinburgh</td>
+          <td>42</td>
+          <td>2010/12/22</td>
+          <td>$92,575</td>
+        </tr>
+        <tr>
+          <td>Jennifer Chang</td>
+          <td>Regional Director</td>
+          <td>Singapore</td>
+          <td>28</td>
+          <td>2010/11/14</td>
+          <td>$357,650</td>
+        </tr>
+        <tr>
+          <td>Brenden Wagner</td>
+          <td>Software Engineer</td>
+          <td>San Francisco</td>
+          <td>28</td>
+          <td>2011/06/07</td>
+          <td>$206,850</td>
+        </tr>
+        <tr>
+          <td>Fiona Green</td>
+          <td>Chief Operating Officer (COO)</td>
+          <td>San Francisco</td>
+          <td>48</td>
+          <td>2010/03/11</td>
+          <td>$850,000</td>
+        </tr>
+        <tr>
+          <td>Shou Itou</td>
+          <td>Regional Marketing</td>
+          <td>Tokyo</td>
+          <td>20</td>
+          <td>2011/08/14</td>
+          <td>$163,000</td>
+        </tr>
+        <tr>
+          <td>Michelle House</td>
+          <td>Integration Specialist</td>
+          <td>Sydney</td>
+          <td>37</td>
+          <td>2011/06/02</td>
+          <td>$95,400</td>
+        </tr>
+        <tr>
+          <td>Suki Burks</td>
+          <td>Developer</td>
+          <td>London</td>
+          <td>53</td>
+          <td>2009/10/22</td>
+          <td>$114,500</td>
+        </tr>
+        <tr>
+          <td>Prescott Bartlett</td>
+          <td>Technical Author</td>
+          <td>London</td>
+          <td>27</td>
+          <td>2011/05/07</td>
+          <td>$145,000</td>
+        </tr>
+        <tr>
+          <td>Gavin Cortez</td>
+          <td>Team Leader</td>
+          <td>San Francisco</td>
+          <td>22</td>
+          <td>2008/10/26</td>
+          <td>$235,500</td>
+        </tr>
+        <tr>
+          <td>Martena Mccray</td>
+          <td>Post-Sales support</td>
+          <td>Edinburgh</td>
+          <td>46</td>
+          <td>2011/03/09</td>
+          <td>$324,050</td>
+        </tr>
+        <tr>
+          <td>Unity Butler</td>
+          <td>Marketing Designer</td>
+          <td>San Francisco</td>
+          <td>47</td>
+          <td>2009/12/09</td>
+          <td>$85,675</td>
+        </tr>
+        <tr>
+          <td>Howard Hatfield</td>
+          <td>Office Manager</td>
+          <td>San Francisco</td>
+          <td>51</td>
+          <td>2008/12/16</td>
+          <td>$164,500</td>
+        </tr>
+        <tr>
+          <td>Hope Fuentes</td>
+          <td>Secretary</td>
+          <td>San Francisco</td>
+          <td>41</td>
+          <td>2010/02/12</td>
+          <td>$109,850</td>
+        </tr>
+        <tr>
+          <td>Vivian Harrell</td>
+          <td>Financial Controller</td>
+          <td>San Francisco</td>
+          <td>62</td>
+          <td>2009/02/14</td>
+          <td>$452,500</td>
+        </tr>
+        <tr>
+          <td>Timothy Mooney</td>
+          <td>Office Manager</td>
+          <td>London</td>
+          <td>37</td>
+          <td>2008/12/11</td>
+          <td>$136,200</td>
+        </tr>
+        <tr>
+          <td>Jackson Bradshaw</td>
+          <td>Director</td>
+          <td>New York</td>
+          <td>65</td>
+          <td>2008/09/26</td>
+          <td>$645,750</td>
+        </tr>
+        <tr>
+          <td>Olivia Liang</td>
+          <td>Support Engineer</td>
+          <td>Singapore</td>
+          <td>64</td>
+          <td>2011/02/03</td>
+          <td>$234,500</td>
+        </tr>
+        <tr>
+          <td>Bruno Nash</td>
+          <td>Software Engineer</td>
+          <td>London</td>
+          <td>38</td>
+          <td>2011/05/03</td>
+          <td>$163,500</td>
+        </tr>
+        <tr>
+          <td>Sakura Yamamoto</td>
+          <td>Support Engineer</td>
+          <td>Tokyo</td>
+          <td>37</td>
+          <td>2009/08/19</td>
+          <td>$139,575</td>
+        </tr>
+        <tr>
+          <td>Thor Walton</td>
+          <td>Developer</td>
+          <td>New York</td>
+          <td>61</td>
+          <td>2013/08/11</td>
+          <td>$98,540</td>
+        </tr>
+        <tr>
+          <td>Finn Camacho</td>
+          <td>Support Engineer</td>
+          <td>San Francisco</td>
+          <td>47</td>
+          <td>2009/07/07</td>
+          <td>$87,500</td>
+        </tr>
+        <tr>
+          <td>Serge Baldwin</td>
+          <td>Data Coordinator</td>
+          <td>Singapore</td>
+          <td>64</td>
+          <td>2012/04/09</td>
+          <td>$138,575</td>
+        </tr>
+        <tr>
+          <td>Zenaida Frank</td>
+          <td>Software Engineer</td>
+          <td>New York</td>
+          <td>63</td>
+          <td>2010/01/04</td>
+          <td>$125,250</td>
+        </tr>
+        <tr>
+          <td>Zorita Serrano</td>
+          <td>Software Engineer</td>
+          <td>San Francisco</td>
+          <td>56</td>
+          <td>2012/06/01</td>
+          <td>$115,000</td>
+        </tr>
+        <tr>
+          <td>Jennifer Acosta</td>
+          <td>Junior Javascript Developer</td>
+          <td>Edinburgh</td>
+          <td>43</td>
+          <td>2013/02/01</td>
+          <td>$75,650</td>
+        </tr>
+        <tr>
+          <td>Cara Stevens</td>
+          <td>Sales Assistant</td>
+          <td>New York</td>
+          <td>46</td>
+          <td>2011/12/06</td>
+          <td>$145,600</td>
+        </tr>
+        <tr>
+          <td>Hermione Butler</td>
+          <td>Regional Director</td>
+          <td>London</td>
+          <td>47</td>
+          <td>2011/03/21</td>
+          <td>$356,250</td>
+        </tr>
+        <tr>
+          <td>Lael Greer</td>
+          <td>Systems Administrator</td>
+          <td>London</td>
+          <td>21</td>
+          <td>2009/02/27</td>
+          <td>$103,500</td>
+        </tr>
+        <tr>
+          <td>Jonas Alexander</td>
+          <td>Developer</td>
+          <td>San Francisco</td>
+          <td>30</td>
+          <td>2010/07/14</td>
+          <td>$86,500</td>
+        </tr>
+        <tr>
+          <td>Shad Decker</td>
+          <td>Regional Director</td>
+          <td>Edinburgh</td>
+          <td>51</td>
+          <td>2008/11/13</td>
+          <td>$183,000</td>
+        </tr>
+        <tr>
+          <td>Michael Bruce</td>
+          <td>Javascript Developer</td>
+          <td>Singapore</td>
+          <td>29</td>
+          <td>2011/06/27</td>
+          <td>$183,000</td>
+        </tr>
+        <tr>
+          <td>Donna Snider</td>
+          <td>Customer Support</td>
+          <td>New York</td>
+          <td>27</td>
+          <td>2011/01/25</td>
+          <td>$112,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="mt-5 mb-0 text-muted">Example uses https://datatables.net/examples/styling/bootstrap4.html for demo purposes.</p>
+  </div>
+</section>
+{% endblock %} {% block scripts %}
+
+<script src="{{relativeRoot}}assets/vendor/jquery/jquery.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/popper/popper.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/prism.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="{{relativeRoot}}assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="{{relativeRoot}}assets/js/main.js"></script>
+<script src="{{relativeRoot}}assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+  <script src="{{relativeRoot}}assets/js/jquery.dataTables.min.js"></script>
+<script src="{{relativeRoot}}assets/js/dataTables.bootstrap4.min.js"></script>
+<script src="{{relativeRoot}}assets/js/scripts.js"></script>
+
 {% endblock %} {% set tablesStandard %}
 <!--Table-->
 <table class="table">
@@ -816,48 +1235,12 @@ title: 'tables' } %} {% block content %}
   </thead>
 </table>
 <div style="overflow: auto; max-height: 200px; border-top: none">
-  <table
-    class="table table-striped"
-    style="border: none; margin-bottom: 0; border-top: none"
-  >
+  <table class="table table-striped" style="border: none; margin-bottom: 0; border-top: none">
     <thead style="border: none; height: 0; overflow: hidden">
       <tr>
-        <th
-          style="
-            width: 25%;
-            height: 0;
-            line-height: 0;
-            font-size: 0;
-            padding: 0;
-            border: 0;
-          "
-        >
-          Project name
-        </th>
-        <th
-          style="
-            width: 50%;
-            height: 0;
-            line-height: 0;
-            font-size: 0;
-            padding: 0;
-            border: 0;
-          "
-        >
-          Description
-        </th>
-        <th
-          style="
-            width: 25%;
-            height: 0;
-            line-height: 0;
-            font-size: 0;
-            padding: 0;
-            border: 0;
-          "
-        >
-          Price
-        </th>
+        <th style="width: 25%; height: 0; line-height: 0; font-size: 0; padding: 0; border: 0">Project name</th>
+        <th style="width: 50%; height: 0; line-height: 0; font-size: 0; padding: 0; border: 0">Description</th>
+        <th style="width: 25%; height: 0; line-height: 0; font-size: 0; padding: 0; border: 0">Price</th>
       </tr>
     </thead>
     <tbody>
@@ -1067,20 +1450,9 @@ title: 'tables' } %} {% block content %}
 <table role="grid" class="table table-sortable table-bordered">
   <thead class="thead-light">
     <tr role="row">
-      <th
-        scope="col"
-        role="columnheader"
-        aria-sort="ascending"
-        class="sortable active"
-      >
-        Project name <i class="align-middle material-icons">height</i>
-      </th>
-      <th scope="col" role="columnheader" aria-sort="none" class="sortable">
-        Description <i class="align-middle material-icons">north</i>
-      </th>
-      <th scope="col" role="columnheader" aria-sort="none">
-        Price <i class="align-middle material-icons">height</i>
-      </th>
+      <th scope="col" role="columnheader" aria-sort="ascending" class="sortable active">Project name <i class="align-middle material-icons">height</i></th>
+      <th scope="col" role="columnheader" aria-sort="none" class="sortable">Description <i class="align-middle material-icons">north</i></th>
+      <th scope="col" role="columnheader" aria-sort="none">Price <i class="align-middle material-icons">height</i></th>
     </tr>
   </thead>
   <tbody>
@@ -1127,22 +1499,8 @@ title: 'tables' } %} {% block content %}
 <table role="grid" class="table table-sortable table-bordered">
   <thead class="thead-light">
     <tr role="row">
-      <th
-        scope="col"
-        role="columnheader"
-        aria-sort="other"
-        class="sortable active"
-      >
-        Event <sup>1</sup> <i class="align-middle material-icons">south</i>
-      </th>
-      <th
-        scope="col"
-        role="columnheader"
-        aria-sort="none"
-        class="sortable active"
-      >
-        Date <sup>2</sup> <i class="align-middle material-icons">north</i>
-      </th>
+      <th scope="col" role="columnheader" aria-sort="other" class="sortable active">Event <sup>1</sup> <i class="align-middle material-icons">south</i></th>
+      <th scope="col" role="columnheader" aria-sort="none" class="sortable active">Date <sup>2</sup> <i class="align-middle material-icons">north</i></th>
       <th>Module <i class="align-middle material-icons">height</i></th>
     </tr>
   </thead>
@@ -1252,21 +1610,11 @@ title: 'tables' } %} {% block content %}
         <span>2 days ago</span>
       </td>
       <td class="text-right">
-        <button
-          class="btn btn-sm btn-icon-only"
-          title=""
-          data-toggle="tooltip"
-          data-original-title="Delete"
-        >
+        <button class="btn btn-sm btn-icon-only" title="" data-toggle="tooltip" data-original-title="Delete">
           <i class="material-icons">close</i>
           <span class="sr-only">Delete</span>
         </button>
-        <button
-          class="btn btn-sm btn-icon-only"
-          title=""
-          data-toggle="tooltip"
-          data-original-title="More options"
-        >
+        <button class="btn btn-sm btn-icon-only" title="" data-toggle="tooltip" data-original-title="More options">
           <i class="material-icons">more_vert</i>
           <span class="sr-only">More</span>
         </button>
@@ -1278,21 +1626,11 @@ title: 'tables' } %} {% block content %}
         <span>2 days ago</span>
       </td>
       <td class="text-right">
-        <button
-          class="btn btn-sm btn-icon-only"
-          title=""
-          data-toggle="tooltip"
-          data-original-title="Delete"
-        >
+        <button class="btn btn-sm btn-icon-only" title="" data-toggle="tooltip" data-original-title="Delete">
           <i class="material-icons">close</i>
           <span class="sr-only">Delete</span>
         </button>
-        <button
-          class="btn btn-sm btn-icon-only"
-          title=""
-          data-toggle="tooltip"
-          data-original-title="More options"
-        >
+        <button class="btn btn-sm btn-icon-only" title="" data-toggle="tooltip" data-original-title="More options">
           <i class="material-icons">more_vert</i>
           <span class="sr-only">More</span>
         </button>
@@ -1304,21 +1642,11 @@ title: 'tables' } %} {% block content %}
         <span>2 days ago</span>
       </td>
       <td class="text-right">
-        <button
-          class="btn btn-sm btn-icon-only"
-          title=""
-          data-toggle="tooltip"
-          data-original-title="Delete"
-        >
+        <button class="btn btn-sm btn-icon-only" title="" data-toggle="tooltip" data-original-title="Delete">
           <i class="material-icons">close</i>
           <span class="sr-only">Delete</span>
         </button>
-        <button
-          class="btn btn-sm btn-icon-only"
-          title=""
-          data-toggle="tooltip"
-          data-original-title="More options"
-        >
+        <button class="btn btn-sm btn-icon-only" title="" data-toggle="tooltip" data-original-title="More options">
           <i class="material-icons">more_vert</i>
           <span class="sr-only">More</span>
         </button>
@@ -1330,21 +1658,11 @@ title: 'tables' } %} {% block content %}
         <span>2 days ago</span>
       </td>
       <td class="text-right">
-        <button
-          class="btn btn-sm btn-icon-only"
-          title=""
-          data-toggle="tooltip"
-          data-original-title="Delete"
-        >
+        <button class="btn btn-sm btn-icon-only" title="" data-toggle="tooltip" data-original-title="Delete">
           <i class="material-icons">close</i>
           <span class="sr-only">Delete</span>
         </button>
-        <button
-          class="btn btn-sm btn-icon-only"
-          title=""
-          data-toggle="tooltip"
-          data-original-title="More options"
-        >
+        <button class="btn btn-sm btn-icon-only" title="" data-toggle="tooltip" data-original-title="More options">
           <i class="material-icons">more_vert</i>
           <span class="sr-only">More</span>
         </button>
@@ -1361,14 +1679,7 @@ title: 'tables' } %} {% block content %}
       <th>Description</th>
       <th>Price</th>
       <th class="table-config-column text-right" style="width: 45px">
-        <button
-          type="button"
-          data-container="body"
-          title=""
-          data-toggle="tooltip"
-          data-original-title="Show and hide columns"
-          class="btn btn-sm btn-icon-only"
-        >
+        <button type="button" data-container="body" title="" data-toggle="tooltip" data-original-title="Show and hide columns" class="btn btn-sm btn-icon-only">
           <i class="material-icons">more_horiz</i>
         </button>
       </th>
@@ -1421,12 +1732,7 @@ title: 'tables' } %} {% block content %}
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Show and hide columns</h1>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -1444,117 +1750,39 @@ title: 'tables' } %} {% block content %}
                 value="option0"
                 checked
               />
-              <label class="custom-control-label" for="optionsCheckboxes0"
-                >Select all</label
-              >
+              <label class="custom-control-label" for="optionsCheckboxes0">Select all</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                disabled
-                name="optionsCheckboxes"
-                id="optionsCheckboxes1"
-                value="option1"
-              />
-              <label class="custom-control-label" for="optionsCheckboxes1"
-                >Thumbnail</label
-              >
+              <input type="checkbox" class="custom-control-input" disabled name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" />
+              <label class="custom-control-label" for="optionsCheckboxes1">Thumbnail</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                disabled
-                name="optionsCheckboxes"
-                id="optionsCheckboxes2"
-                value="option2"
-              />
-              <label class="custom-control-label" for="optionsCheckboxes2"
-                >Word mark</label
-              >
+              <input type="checkbox" class="custom-control-input" disabled name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" />
+              <label class="custom-control-label" for="optionsCheckboxes2">Word mark</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                disabled
-                name="optionsCheckboxes"
-                id="optionsCheckboxes3"
-                value="option3"
-                checked
-              />
-              <label class="custom-control-label" for="optionsCheckboxes3"
-                >Review source</label
-              >
+              <input type="checkbox" class="custom-control-input" disabled name="optionsCheckboxes" id="optionsCheckboxes3" value="option3" checked />
+              <label class="custom-control-label" for="optionsCheckboxes3">Review source</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                disabled
-                name="optionsCheckboxes"
-                id="optionsCheckboxes4"
-                value="option4"
-              />
-              <label class="custom-control-label" for="optionsCheckboxes4"
-                >Review type</label
-              >
+              <input type="checkbox" class="custom-control-input" disabled name="optionsCheckboxes" id="optionsCheckboxes4" value="option4" />
+              <label class="custom-control-label" for="optionsCheckboxes4">Review type</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                disabled
-                name="optionsCheckboxes"
-                id="optionsCheckboxes5"
-                value="option5"
-                checked
-              />
-              <label class="custom-control-label" for="optionsCheckboxes5"
-                >Review revision</label
-              >
+              <input type="checkbox" class="custom-control-input" disabled name="optionsCheckboxes" id="optionsCheckboxes5" value="option5" checked />
+              <label class="custom-control-label" for="optionsCheckboxes5">Review revision</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                disabled
-                name="optionsCheckboxes"
-                id="optionsCheckboxes6"
-                value="option6"
-              />
-              <label class="custom-control-label" for="optionsCheckboxes6"
-                >Mentor</label
-              >
+              <input type="checkbox" class="custom-control-input" disabled name="optionsCheckboxes" id="optionsCheckboxes6" value="option6" />
+              <label class="custom-control-label" for="optionsCheckboxes6">Mentor</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                disabled
-                name="optionsCheckboxes"
-                id="optionsCheckboxes7"
-                value="option7"
-                checked
-              />
-              <label class="custom-control-label" for="optionsCheckboxes7"
-                >Class</label
-              >
+              <input type="checkbox" class="custom-control-input" disabled name="optionsCheckboxes" id="optionsCheckboxes7" value="option7" checked />
+              <label class="custom-control-label" for="optionsCheckboxes7">Class</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                disabled
-                name="optionsCheckboxes"
-                id="optionsCheckboxes8"
-                value="option8"
-                checked
-              />
-              <label class="custom-control-label" for="optionsCheckboxes8"
-                >Owner</label
-              >
+              <input type="checkbox" class="custom-control-input" disabled name="optionsCheckboxes" id="optionsCheckboxes8" value="option8" checked />
+              <label class="custom-control-label" for="optionsCheckboxes8">Owner</label>
             </div>
           </div>
         </form>

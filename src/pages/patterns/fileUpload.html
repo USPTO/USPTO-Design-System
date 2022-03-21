@@ -14,7 +14,6 @@ class: 'page-fileupload', title: 'File upload' } %} {% block content %}
     {{ macros.viewCode({ ariaLabel: 'view code for single file upload', code:
     singleFileUpload }, '')}}
   </div>
-  
 </section>
 
 <section class="pv-content">
@@ -38,10 +37,24 @@ class: 'page-fileupload', title: 'File upload' } %} {% block content %}
   </div>
 </section>
 
-{% endblock %} {% block scripts %}{% include 'templatesParts/_scripts.njk' %}
+{% endblock %} 
+{% block scripts %}
+
+<script src="{{relativeRoot}}assets/vendor/jquery/jquery.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/popper/popper.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/prism.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="{{relativeRoot}}assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="{{relativeRoot}}assets/js/main.js"></script>
+<script src="{{relativeRoot}}assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
 <script src="{{relativeRoot}}assets/js/scripts.js"></script>
 
-{% endblock %} {% set singleFileUpload %}
+{% endblock %}
+
+
+ {% set singleFileUpload %}
 <!--Single file upload -->
 <form>
   <div class="custom-file">
