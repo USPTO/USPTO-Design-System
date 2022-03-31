@@ -11554,6 +11554,46 @@ h3 {
     width: 5rem;
   }
 }
+.event_date, .event_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 0.25rem;
+  float: left;
+}
+
+.event_date {
+  background-color: #e7f6f8;
+  border: 1px solid #cccccc;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 0.625rem;
+  text-align: center;
+  margin: 0 0.625rem 0 0.313rem;
+}
+
+.event_img {
+  margin-right: 0.625rem;
+}
+
+#event-calendar-section .list-group-item {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.date-view .date-view-item {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+.date-view .date-view-item + .date-view-item::before {
+  content: " ·";
+  margin-right: 0.6rem;
+}
+.date-view.small .date-view-item {
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+}
+
 .custom-control + .custom-control {
   margin-top: 0.75rem;
 }
@@ -13043,6 +13083,130 @@ footer .uspto-footer-middle .btn-collapse span {
 .uspto-icon-lightbulb:before {
   content: "";
   color: #fff;
+}
+
+.icon-ip:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/icons/iconathon-icons/IPicons-large.svg");
+}
+
+.icon-utility-patent:after {
+  width: 48px;
+  height: 48px;
+  background-position: 0 0;
+}
+
+.icon-patent-pending:after {
+  width: 48px;
+  height: 48px;
+  background-position: -64px 0;
+}
+
+.icon-plant-patent:after {
+  width: 48px;
+  height: 48px;
+  background-position: -128px 0;
+}
+
+.icon-pro-se:after {
+  width: 48px;
+  height: 48px;
+  background-position: -192px 0;
+}
+
+.icon-invention:after {
+  width: 48px;
+  height: 48px;
+  background-position: -256px 0;
+}
+
+.icon-maker:after {
+  width: 48px;
+  height: 48px;
+  background-position: -320px 0;
+}
+
+.icon-intellectual-property:after {
+  width: 48px;
+  height: 48px;
+  background-position: -384px 0;
+}
+
+.icon-design-patent:after {
+  width: 48px;
+  height: 48px;
+  background-position: -448px 0;
+}
+
+.icon-prior-art:after {
+  width: 48px;
+  height: 48px;
+  background-position: -512px 0;
+}
+
+.icon-small-inventor:after {
+  width: 48px;
+  height: 48px;
+  background-position: -576px 0;
+}
+
+.icon-large-inventor:after {
+  width: 48px;
+  height: 48px;
+  background-position: -640px 0;
+}
+
+.icon-infringement:after {
+  width: 48px;
+  height: 48px;
+  background-position: -704px 0;
+}
+
+.icon-trade-secret:after {
+  width: 48px;
+  height: 48px;
+  background-position: -768px 0;
+}
+
+.icon-micro-entity-inventor:after {
+  width: 48px;
+  height: 48px;
+  background-position: -832px 0;
+}
+
+.icon-service-mark:after {
+  width: 48px;
+  height: 48px;
+  background-position: -896px 0;
+}
+
+.icon-counterfeit:after {
+  width: 48px;
+  height: 48px;
+  background-position: -960px 0;
+}
+
+.icon-ptotrademark:after {
+  width: 48px;
+  height: 48px;
+  background-position: 0 -64px;
+}
+
+.icon-stem:after {
+  width: 48px;
+  height: 48px;
+  background-position: -64px -64px;
+}
+
+.icon-pro-bono:after {
+  width: 48px;
+  height: 48px;
+  background-position: -128px -64px;
 }
 
 .text-muted {

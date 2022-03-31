@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="en" class="page-document">
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Mater details page
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="">
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <a href="https://www.uspto.gov" target="_blank" class="uspto-logo"
+          title="United States Patent and Trademark Office - An Agency of the Department of Commerce">
+            <span class="sr-only">
+            United States Patent and Trademark Office
+          </span>
+          </a>
+          <div class="ml-auto d-flex">
+            <!-- Dynamic menu zone -->
+            <!-- Do not customize this area -->
+            <div class="display-inline dyn-menuarea">
+              <!-- Patents -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://www.uspto.gov/patent';" aria-haspopup="false" aria-expanded="false">
+                  <span class="btn-text">Patents</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-lightbulb"></span></span>
+                </button>
+              </div>
+
+              <!-- Trademarks -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://www.uspto.gov/trademark';" aria-haspopup="false"
+                aria-expanded="false">
+                  <span class="btn-text">Trademarks</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-trademark"></span></span>
+                </button>
+              </div>
+
+              <!-- Fees and payment -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default ex-btn-inverse"
+                onclick="location.href = 'https://fees.uspto.gov';" aria-haspopup="false" aria-expanded="false">
+                  <span class="btn-text">Fees and payment</span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-dollar"></span></span>
+                </button>
+              </div>
+
+              <!-- Help -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle ex-btn-inverse" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                  <span class="btn-text">Help<span class="caret"></span></span>
+                  <span class="btn-icon">
+                    <span class="uspto-icon-question-circle"></span></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="https://www.uspto.gov/learning-resources" target="_blank"
+                    data-event-category="myuspto Header: Help menu" data-event-action="myuspto menu link clicked"
+                    data-event-label="FAQs">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="https://www.uspto.gov/about-us/contact-us" target="_blank"
+                    data-event-category="myuspto Header: Help menu" data-event-action="myuspto menu link clicked"
+                    data-event-label="Contact us">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /End dynamic menu zone -->
+
+            <!-- Sign-in/user menu -->
+
+            <!-- MyUSPTO Link -->
+            <div class="btn-group">
+              <a class="btn btn-default ex-btn-inverse my-link" href="https://my.uspto.gov">
+                <span class="btn-text">MyUSPTO</span>
+                <span class="btn-icon">
+                  <span class="uspto-icon-myuspto"></span></span>
+
+              </a>
+            </div>
+
+            <div class="btn-group">
+              <!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it's appropriate to show account information.
+               -->
+              <!-- BEGIN USER DROPDOWN MENU -->
+              <button type="button" class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="btn-text">John Doe<span class="caret"></span></span>
+                <span class="btn-icon">
+                  <span class="uspto-icon-user"></span></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a href="https://my.uspto.gov">
+                    <span class="uspto-icon-home"></span> MyUSPTO<span class="sr-only">console</span></a>
+                </li>
+                <li>
+                  <a href="https://account.uspto.gov">
+                    <span class="uspto-icon-user-white"></span>
+                    <span class="sr-only">Manage your</span>Account</a>
+                </li>
+                <li>
+                  <a href="https://my.uspto.gov/signout">
+                    <span class="uspto-icon-sign-out"></span> Sign out</a>
+                </li>
+              </ul>
+              <!-- END USER DROPDOWN MENU -->
+
+              <!--<a href="" class="btn btn-default user-link">Sign in</a>-->
+
+              <!--
+                  The code snippet for the .btn-group below will need to
+                  be conditionally displayed when it's appropriate to show
+                  the "Sign in" button.
+              -->
+              <!-- BEGIN SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+              <!-- <button
+                  class="btn btn-default ex-btn-inverse user-link"
+                  type="button"
+                  onclick="SIW.init({type:'modal'});">Sign in</button>-->
+              <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+            </div>
+          </div>
+          <!-- /.pull-right -->
+
+        </nav>
+      </div>
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="#" title="Project title">
+          Project title
+    </a>
+  
+  </div>
+</div>
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div 
+      class="main"
+      >
+
+<div class="bg-light">
+  <div class="container-fluid">
+    <section class="row pt-3">
+      <div class="col-12">
+        <ul class="nav nav-tabs" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="pills-saved-tab"
+              data-toggle="pill"
+              href="#pills-saved"
+              role="tab"
+              aria-controls="pills-saved"
+              aria-selected="true"
+              ><strong>Saved submissions</strong></a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="pills-applications-tab"
+              data-toggle="pill"
+              href="#pills-applications"
+              role="tab"
+              aria-controls="pills-applications"
+              aria-selected="false"
+              ><strong>Applications</strong></a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="pills-correspondence-tab"
+              data-toggle="pill"
+              href="#pills-correspondence"
+              role="tab"
+              aria-controls="pills-correspondence"
+              aria-selected="false"
+              ><strong>Correspondence</strong></a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="pills-receipt-tab"
+              data-toggle="pill"
+              href="#pills-receipt"
+              role="tab"
+              aria-controls="pills-receipt"
+              aria-selected="false"
+              ><strong>Receipt history</strong></a
+            >
+          </li>
+        </ul>
+        <div class="bg-white shadow-sm">
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade"
+              id="pills-saved"
+              role="tabpanel"
+              aria-labelledby="pills-saved-tab"
+            >
+              <div class="p-5 mb-4">
+                <h2>Saved submission area</h2>
+                saved Nulla est ullamco ut irure incididunt nulla
+              </div>
+            </div>
+            <div
+              class="tab-pane fade active show"
+              id="pills-applications"
+              role="tabpanel"
+              aria-labelledby="pills-applications-tab"
+            >
+              <div class="row mb-4">
+                <div
+                  class="col-12 py-2 border-bottom border-light"
+                  style="1background-color: #f9f9f9"
+                >
+                  <button
+                    class="btn btn-outline-primary btn-sm md-icon shadow-none customerNumber-btn"
+                    type="button"
+                  >
+                    <i class="material-icons">perm_contact_calendar</i> &nbsp;
+                    <span class="d-none d-md-inline-block"
+                      >Customer number
+                    </span>
+                  </button>
+                  <button
+                    class="btn btn-outline-primary btn-sm md-icon shadow-none tablePage-btn"
+                    type="button"
+                  >
+                    <i class="material-icons">assignment</i> &nbsp;
+                    <span class="d-none d-md-inline-block"
+                      >Go to table page
+                    </span>
+                  </button>
+                  <div class="d-inline-block float-right">
+                    <div class="input-group d-inline">
+                      <button
+                        class="btn btn-outline-primary btn-sm md-icon shadow-none"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i class="material-icons">download</i> &nbsp;
+                        <span class="d-none d-md-inline-block"
+                          >Download XML</span
+                        >
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"
+                          >Download XML data for this page</a
+                        >
+                        <a class="dropdown-item" href="#"
+                          >Download XML data for all pages</a
+                        >
+                      </div>
+                    </div>
+                    <a
+                      class="btn btn-outline-primary btn-sm md-icon shadow-none"
+                      href=""
+                      ><i class="material-icons">print</i> &nbsp;
+                      <span class="d-none d-md-inline-block">Print</span></a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-xl-2 col-lg-3 col-md-12 col-sm-12 pr-lg-0 border-light border-right"
+                >
+                  <div
+                    class="bg-white clearfix col-12 d-block d-lg-none d-xl-none p-2 text-center"
+                  >
+                    <button
+                      class="btn btn-outline-secondary btn-sm md-icon showLeftNavigation"
+                      type="button"
+                      title="Show and hide left navigation"
+                    >
+                      <i class="material-icons">menu</i> &nbsp; Show/hide
+                      filters
+                    </button>
+                  </div>
+                  <div
+                    class="d-none d-lg-block d-xl-block leftNavigation"
+                    id="left-navigation"
+                  >
+                    <div
+                      class="p-3 border-bottom border-light clearfix"
+                      style="background-color: #f9f9f9"
+                    >
+                      <h3 class="d-inline-block float-left m-0">Refine by</h3>
+                      <a href="" class="small float-right d-inline-block"
+                        >Reset</a
+                      >
+                    </div>
+                    <div class="px-3 pt-3">
+                      <div class="form-group">
+                        <label for="attDocketNumber" class="mt-2"
+                          >Attorney docket #</label
+                        >
+                        <select
+                          class="form-control form-control-sm"
+                          id="attDocketNumber"
+                        >
+                          <option>Select</option>
+                          <option value="value1">Exact match</option>
+                          <option value="value2">Starts with</option>
+                          <option value="value3">Contains</option>
+                        </select>
+                        <input
+                          type="text"
+                          class="form-control form-control-sm mt-2"
+                          id="attDocketNumberInput"
+                          name="attDocketNumberInput"
+                          placeholder="e.g. xxxxxxx"
+                        />
+                        <!--<small  class="form-text text-muted">e.g. xxxxxxx</small>-->
+                      </div>
+                    </div>
+                    <div class="px-3 pt-3">
+                      <div class="form-group">
+                        <label for="applicationNumber" class="mt-2"
+                          >Application #</label
+                        >
+                        <select
+                          class="form-control form-control-sm"
+                          id="applicationNumber"
+                        >
+                          <option>Select</option>
+                          <option value="value1">Contains</option>
+                          <option value="value2">Begins with</option>
+                          <option value="value3">Does not contain</option>
+                          <option value="value4">Exact match</option>
+                        </select>
+                        <textarea
+                          class="form-control form-control-sm mt-2"
+                          id="applicationNumberInput"
+                          name="applicationNumberInput"
+                          placeholder="e.g. xxxxxxx, xxxxxxx"
+                        ></textarea>
+                        <small class="form-text text-muted"
+                          >Separate by coma
+                        </small>
+                      </div>
+                    </div>
+                    <div class="px-3 pt-3">
+                      <div class="form-group">
+                        <label for="applicationNumber" class="mt-2"
+                          >Status category</label
+                        >
+                        <select
+                          class="form-control form-control-sm"
+                          id="statusCategory"
+                        >
+                          <option>Select</option>
+                          <option value="">All</option>
+                          <option value="NEW">New</option>
+                          <option value="PENDING">Pending</option>
+                          <option value="ISSUED">Issued</option>
+                          <option value="ABANDONED">Abandoned</option>
+                          <option value="OTHER">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="px-3 pt-3">
+                      <div class="form-group" id="statusDate">
+                        <label for="applicationNumber" class="mt-2"
+                          >Status date</label
+                        >
+                        <select class="form-control form-control-sm">
+                          <option>Select</option>
+                          <option value="1">Last 1 Days</option>
+                          <option value="3">Last 3 Days</option>
+                          <option value="7">Last 7 Days</option>
+                          <option value="30">Last 30 Days</option>
+                          <option value="45">Last 45 Days</option>
+                          <option value="90">Last 90 Days</option>
+                          <option value="180">Last 180 Days</option>
+                          <option value="365">Last 365 Days</option>
+                          <!---->
+                          <option value="custom" class="">Custom range</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="px-3 text-right form-group">
+                      <button type="button" class="btn btn-sm btn-primary">
+                        Apply filter
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-10 col-lg-9 col-md-12 col-sm-12 pl-0">
+                  <div class="pb-2 pr-2 pl-md-2">
+                    <table
+                      id="dataTableTest"
+                      class="table table-striped table-bordered table-sm"
+                    >
+                      <thead class="thead-light">
+                        <tr>
+                          <th data-orderable="false">
+                            <input type="checkbox" aria-label="select all" />
+                          </th>
+                          <th>Application #</th>
+                          <th>Customer #</th>
+                          <th>Attorney docket #</th>
+                          <th>Status date</th>
+                          <th>Status category</th>
+                          <th>Submission</th>
+                          <!--<th data-orderable="false"><i  class="material-icons">more_vert</i></th>-->
+                          <th
+                            data-orderable="false"
+                            class="table-config-column text-right"
+                            style="width: 20px"
+                          >
+                            <button
+                              type="button"
+                              data-container="body"
+                              title=""
+                              data-toggle="tooltip"
+                              data-original-title="Show and hide columns"
+                              class="btn btn-sm btn-icon-only p-0"
+                            >
+                              <i class="material-icons">more_vert</i>
+                            </button>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 1" />
+                          </td>
+                          <td><a href="#">PCT/US98/05866 </a></td>
+                          <td>22850</td>
+                          <td>CASE-03312</td>
+                          <td>06/28/1999</td>
+                          <td>OTHER</td>
+                          <td>Unavailable</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 2" />
+                          </td>
+                          <td><a href="#">PCT/US97/14639 </a></td>
+                          <td>59</td>
+                          <td>9596-16PC</td>
+                          <td>12/10/1998</td>
+                          <td>OTHER</td>
+                          <td>Unavailable</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 3" />
+                          </td>
+                          <td><a href="#">PCT/US97/14630 </a></td>
+                          <td>22850</td>
+                          <td>MMT96-15PAPC</td>
+                          <td>11/19/2002</td>
+                          <td>OTHER</td>
+                          <td>Unavailable</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 4" />
+                          </td>
+                          <td><a href="#">PCT/US21/99005 </a></td>
+                          <td>59</td>
+                          <td>test</td>
+                          <td>11/24/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 5" />
+                          </td>
+                          <td><a href="#">PCT/US21/98035 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>12/14/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 6" />
+                          </td>
+                          <td><a href="#">PCT/US21/98034 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>12/14/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 7" />
+                          </td>
+                          <td><a href="#">PCT/US21/98030 </a></td>
+                          <td>59</td>
+                          <td>test</td>
+                          <td>08/27/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 8" />
+                          </td>
+                          <td><a href="#">PCT/US21/98029 </a></td>
+                          <td>59</td>
+                          <td>test</td>
+                          <td>08/27/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 9" />
+                          </td>
+                          <td><a href="#">PCT/US21/98026 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>08/25/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 10" />
+                          </td>
+                          <td><a href="#">PCT/US21/98025 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>08/03/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 11" />
+                          </td>
+                          <td><a href="#">PCT/US21/97023 </a></td>
+                          <td>59</td>
+                          <td>UN - 1</td>
+                          <td>07/19/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 12" />
+                          </td>
+                          <td><a href="#">PCT/US21/97021 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>06/18/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 13" />
+                          </td>
+                          <td><a href="#">PCT/US21/97020 </a></td>
+                          <td>59</td>
+                          <td>test</td>
+                          <td>05/18/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 14" />
+                          </td>
+                          <td><a href="#">PCT/US21/97019 </a></td>
+                          <td>59</td>
+                          <td>test</td>
+                          <td>05/11/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 15" />
+                          </td>
+                          <td><a href="#">PCT/US21/97018 </a></td>
+                          <td>59</td>
+                          <td>testmay2720211</td>
+                          <td>04/23/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 16" />
+                          </td>
+                          <td><a href="#">PCT/US21/97017 </a></td>
+                          <td>59</td>
+                          <td>testMay2720211</td>
+                          <td>04/23/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 17" />
+                          </td>
+                          <td><a href="#">PCT/US21/97009 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>08/30/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 18" />
+                          </td>
+                          <td><a href="#">PCT/US21/97008 </a></td>
+                          <td>59</td>
+                          <td>testMay2720211</td>
+                          <td>05/22/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 19" />
+                          </td>
+                          <td><a href="#">PCT/US21/97007 </a></td>
+                          <td>59</td>
+                          <td>testMay2720211</td>
+                          <td>04/15/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 20" />
+                          </td>
+                          <td><a href="#">PCT/US21/97006 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>04/08/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 21" />
+                          </td>
+                          <td><a href="#">PCT/US21/97005 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>04/01/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 22" />
+                          </td>
+                          <td><a href="#">PCT/US21/97004 </a></td>
+                          <td>59</td>
+                          <td>ADK1212</td>
+                          <td>03/10/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 23" />
+                          </td>
+                          <td><a href="#">PCT/US21/97003 </a></td>
+                          <td>59</td>
+                          <td>TEST !@#$%^&amp;*()_+</td>
+                          <td>02/15/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 24" />
+                          </td>
+                          <td><a href="#">PCT/US21/97002 </a></td>
+                          <td>59</td>
+                          <td>T1</td>
+                          <td>02/03/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 25" />
+                          </td>
+                          <td><a href="#">PCT/US21/97001 </a></td>
+                          <td>59</td>
+                          <td>T1</td>
+                          <td>01/29/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 26" />
+                          </td>
+                          <td><a href="#">PCT/US21/97000 </a></td>
+                          <td>59</td>
+                          <td>Test 4/28</td>
+                          <td>01/27/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 27" />
+                          </td>
+                          <td><a href="#">PCT/US21/71860 </a></td>
+                          <td>27752</td>
+                          <td>15904-WO-DW</td>
+                          <td>12/14/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 28" />
+                          </td>
+                          <td><a href="#">PCT/US21/71857 </a></td>
+                          <td>27752</td>
+                          <td>15907M-WO-DW</td>
+                          <td>11/05/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 29" />
+                          </td>
+                          <td><a href="#">PCT/US21/71856 </a></td>
+                          <td>27752</td>
+                          <td>15906-WO-DW</td>
+                          <td>11/05/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 30" />
+                          </td>
+                          <td><a href="#">PCT/US21/71855 </a></td>
+                          <td>27752</td>
+                          <td>15905-WO-DW</td>
+                          <td>11/05/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 31" />
+                          </td>
+                          <td><a href="#">PCT/US21/71854 </a></td>
+                          <td>27752</td>
+                          <td>15904-WO-DW</td>
+                          <td>11/05/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 32" />
+                          </td>
+                          <td><a href="#">PCT/US21/71853 </a></td>
+                          <td>27752</td>
+                          <td>15903M-WO-DW</td>
+                          <td>11/05/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 33" />
+                          </td>
+                          <td><a href="#">PCT/US21/54882 </a></td>
+                          <td>27752</td>
+                          <td>15909M-WO-JC</td>
+                          <td>11/05/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 34" />
+                          </td>
+                          <td><a href="#">PCT/US21/54881 </a></td>
+                          <td>27752</td>
+                          <td>CM05257M-WO-JC</td>
+                          <td>11/05/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 35" />
+                          </td>
+                          <td><a href="#">PCT/US21/15359 </a></td>
+                          <td>11951</td>
+                          <td>F245618</td>
+                          <td>10/27/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 36" />
+                          </td>
+                          <td><a href="#">PCT/US21/15358 </a></td>
+                          <td>11951</td>
+                          <td>ADK9888</td>
+                          <td>10/27/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 37" />
+                          </td>
+                          <td><a href="#">PCT/US21/15356 </a></td>
+                          <td>11951</td>
+                          <td>ADK2020</td>
+                          <td>10/27/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 38" />
+                          </td>
+                          <td><a href="#">PCT/US21/15355 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>10/27/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 39" />
+                          </td>
+                          <td><a href="#">PCT/US21/15349 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>10/22/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 40" />
+                          </td>
+                          <td><a href="#">PCT/US21/15316 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>07/30/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 41" />
+                          </td>
+                          <td><a href="#">PCT/US21/15314 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>07/23/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 42" />
+                          </td>
+                          <td><a href="#">PCT/US21/15312 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>07/20/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 43" />
+                          </td>
+                          <td><a href="#">PCT/US21/15304 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>07/08/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 44" />
+                          </td>
+                          <td><a href="#">PCT/US21/15303 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>07/07/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 45" />
+                          </td>
+                          <td><a href="#">PCT/US21/15301 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>07/07/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 46" />
+                          </td>
+                          <td><a href="#">PCT/US21/15298 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>07/07/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 47" />
+                          </td>
+                          <td><a href="#">PCT/US21/15288 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>06/30/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 48" />
+                          </td>
+                          <td><a href="#">PCT/US21/15282 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>06/03/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 49" />
+                          </td>
+                          <td><a href="#">PCT/US21/15279 </a></td>
+                          <td>22850</td>
+                          <td>RO-US-FEES2</td>
+                          <td>05/26/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 50" />
+                          </td>
+                          <td><a href="#">PCT/US21/12129 </a></td>
+                          <td>110</td>
+                          <td>40851WOPCT</td>
+                          <td>08/24/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 51" />
+                          </td>
+                          <td><a href="#">PCT/US21/12126 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>08/25/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 52" />
+                          </td>
+                          <td><a href="#">PCT/US21/12122 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>08/25/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 53" />
+                          </td>
+                          <td><a href="#">PCT/US21/12121 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>08/24/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 54" />
+                          </td>
+                          <td><a href="#">PCT/US21/12116 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>08/24/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 55" />
+                          </td>
+                          <td><a href="#">PCT/US21/12098 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>08/02/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 56" />
+                          </td>
+                          <td><a href="#">PCT/US21/12021 </a></td>
+                          <td>110</td>
+                          <td>1554</td>
+                          <td>01/28/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 57" />
+                          </td>
+                          <td><a href="#">PCT/US2019/085211</a></td>
+                          <td>110</td>
+                          <td>ATTRNY_DK_NO</td>
+                          <td>12/23/2019</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 58" />
+                          </td>
+                          <td><a href="#">PCT/US2019/068741</a></td>
+                          <td>59</td>
+                          <td>ADK1234</td>
+                          <td>12/05/2019</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 59" />
+                          </td>
+                          <td><a href="#">PCT/US20/99003 </a></td>
+                          <td>59</td>
+                          <td>TEW</td>
+                          <td>06/22/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 60" />
+                          </td>
+                          <td><a href="#">PCT/US20/98715 </a></td>
+                          <td>110</td>
+                          <td>tes1234</td>
+                          <td>05/11/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 61" />
+                          </td>
+                          <td><a href="#">PCT/US20/98024 </a></td>
+                          <td>59</td>
+                          <td>2333</td>
+                          <td>05/27/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 62" />
+                          </td>
+                          <td><a href="#">PCT/US20/98022 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>05/13/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 63" />
+                          </td>
+                          <td><a href="#">PCT/US20/98021 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>05/10/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 64" />
+                          </td>
+                          <td><a href="#">PCT/US20/98018 </a></td>
+                          <td>59</td>
+                          <td>1</td>
+                          <td>08/14/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 65" />
+                          </td>
+                          <td><a href="#">PCT/US20/98017 </a></td>
+                          <td>59</td>
+                          <td>tst</td>
+                          <td>08/04/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 66" />
+                          </td>
+                          <td><a href="#">PCT/US20/98016 </a></td>
+                          <td>59</td>
+                          <td>Test 5/3</td>
+                          <td>05/20/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 67" />
+                          </td>
+                          <td><a href="#">PCT/US20/98015 </a></td>
+                          <td>59</td>
+                          <td>Test !@#$%^*()_+</td>
+                          <td>05/20/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 68" />
+                          </td>
+                          <td><a href="#">PCT/US20/98002 </a></td>
+                          <td>59</td>
+                          <td>33333</td>
+                          <td>04/26/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 69" />
+                          </td>
+                          <td><a href="#">PCT/US20/97013 </a></td>
+                          <td>59</td>
+                          <td>img ers</td>
+                          <td>11/20/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 70" />
+                          </td>
+                          <td><a href="#">PCT/US20/97010 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>11/10/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 71" />
+                          </td>
+                          <td><a href="#">PCT/US20/97009 </a></td>
+                          <td>59</td>
+                          <td>Test %^&amp;amp;*</td>
+                          <td>11/09/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 72" />
+                          </td>
+                          <td><a href="#">PCT/US20/97008 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>11/09/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 73" />
+                          </td>
+                          <td><a href="#">PCT/US20/97007 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>11/09/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 74" />
+                          </td>
+                          <td><a href="#">PCT/US20/97006 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>11/09/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 75" />
+                          </td>
+                          <td><a href="#">PCT/US20/97005 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>11/09/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 76" />
+                          </td>
+                          <td><a href="#">PCT/US20/97004 </a></td>
+                          <td>59</td>
+                          <td>tst</td>
+                          <td>09/28/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 77" />
+                          </td>
+                          <td><a href="#">PCT/US20/97003 </a></td>
+                          <td>59</td>
+                          <td>tes1234</td>
+                          <td>05/05/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 78" />
+                          </td>
+                          <td><a href="#">PCT/US20/97002 </a></td>
+                          <td>59</td>
+                          <td>tes1234</td>
+                          <td>03/02/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 79" />
+                          </td>
+                          <td><a href="#">PCT/US20/97000 </a></td>
+                          <td>59</td>
+                          <td>TT !@#$%^&amp;amp;*()_+</td>
+                          <td>01/01/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 80" />
+                          </td>
+                          <td><a href="#">PCT/US20/80042 </a></td>
+                          <td>110</td>
+                          <td>1234</td>
+                          <td>03/23/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 81" />
+                          </td>
+                          <td><a href="#">PCT/US20/78887 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>05/14/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 82" />
+                          </td>
+                          <td><a href="#">PCT/US20/70692 </a></td>
+                          <td>168452</td>
+                          <td>1234</td>
+                          <td>03/23/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 83" />
+                          </td>
+                          <td><a href="#">PCT/US20/70655 </a></td>
+                          <td>110</td>
+                          <td>teste</td>
+                          <td>02/22/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 84" />
+                          </td>
+                          <td><a href="#">PCT/US20/70648 </a></td>
+                          <td>110</td>
+                          <td>tester</td>
+                          <td>02/16/2021</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 85" />
+                          </td>
+                          <td><a href="#">PCT/US20/70607 </a></td>
+                          <td>110</td>
+                          <td>tester</td>
+                          <td>12/11/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 86" />
+                          </td>
+                          <td><a href="#">PCT/US20/70511 </a></td>
+                          <td>22850</td>
+                          <td>-</td>
+                          <td>08/11/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 87" />
+                          </td>
+                          <td><a href="#">PCT/US20/70509 </a></td>
+                          <td>22850</td>
+                          <td>-</td>
+                          <td>08/11/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 88" />
+                          </td>
+                          <td><a href="#">PCT/US20/70055 </a></td>
+                          <td>10701</td>
+                          <td>-</td>
+                          <td>10/27/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 89" />
+                          </td>
+                          <td><a href="#">PCT/US20/70030 </a></td>
+                          <td>10559</td>
+                          <td>-</td>
+                          <td>07/24/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 90" />
+                          </td>
+                          <td><a href="#">PCT/US20/60306 </a></td>
+                          <td>59</td>
+                          <td>-</td>
+                          <td>01/01/2017</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 91" />
+                          </td>
+                          <td><a href="#">PCT/US20/58888 </a></td>
+                          <td>110</td>
+                          <td>1234567</td>
+                          <td>12/16/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 92" />
+                          </td>
+                          <td><a href="#">PCT/US20/58887 </a></td>
+                          <td>110</td>
+                          <td>464651</td>
+                          <td>12/15/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 93" />
+                          </td>
+                          <td><a href="#">PCT/US20/58886 </a></td>
+                          <td>110</td>
+                          <td>123456789</td>
+                          <td>12/15/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 94" />
+                          </td>
+                          <td><a href="#">PCT/US20/54858 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>08/03/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 95" />
+                          </td>
+                          <td><a href="#">PCT/US20/54857 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>07/20/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 96" />
+                          </td>
+                          <td><a href="#">PCT/US20/52375 </a></td>
+                          <td>110</td>
+                          <td>demonumber2</td>
+                          <td>06/10/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 97" />
+                          </td>
+                          <td><a href="#">PCT/US20/42454 </a></td>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>12/28/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 98" />
+                          </td>
+                          <td><a href="#">PCT/US20/42396 </a></td>
+                          <td>110</td>
+                          <td>464651</td>
+                          <td>11/20/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" aria-label="select row 99" />
+                          </td>
+                          <td><a href="#">PCT/US20/40792 </a></td>
+                          <td>27752</td>
+                          <td>CM3410-DW</td>
+                          <td>07/08/2010</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              aria-label="select row 100"
+                            />
+                          </td>
+                          <td><a href="#">PCT/US20/32891 </a></td>
+                          <td>110</td>
+                          <td>AVDE101</td>
+                          <td>01/28/2020</td>
+                          <td>NEW</td>
+                          <td><a href="#">Preview</a></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-correspondence"
+              role="tabpanel"
+              aria-labelledby="pills-correspondence-tab"
+            >
+              <div class="p-5 mb-4">
+                <h2>Correspondence area</h2>
+                correspondence Commodo esse dolore fugiat sint velit ullamco
+                magna consequat voluptate minim amet aliquip ipsum aute laboris
+                nisi.
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-receipt"
+              role="tabpanel"
+              aria-labelledby="pills-receipt-tab"
+            >
+              <div class="p-5 mb-4">
+                <h2>Receipt history area</h2>
+                receipt history Commodo esse dolore fugiat sint velit ullamco
+                magna consequat voluptate minim amet aliquip ipsum aute laboris
+                nisi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+<script src="../assets/js/jquery.dataTables.min.js"></script>
+<script src="../assets/js/dataTables.bootstrap4.min.js"></script>
+<script src="../assets/js/scripts.js"></script>
+       </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    Footer
+  </div>
+</footer>
+
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+<script src="../assets/js/jquery.dataTables.min.js"></script>
+<script src="../assets/js/dataTables.bootstrap4.min.js"></script>
+<script src="../assets/js/scripts.js"></script>
+  </body>
+</html>
