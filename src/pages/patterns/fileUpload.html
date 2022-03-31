@@ -37,8 +37,7 @@ class: 'page-fileupload', title: 'File upload' } %} {% block content %}
   </div>
 </section>
 
-{% endblock %} 
-{% block scripts %}
+{% endblock %} {% block scripts %}
 
 <script src="{{relativeRoot}}assets/vendor/jquery/jquery.min.js"></script>
 <script src="{{relativeRoot}}assets/vendor/popper/popper.min.js"></script>
@@ -51,10 +50,7 @@ class: 'page-fileupload', title: 'File upload' } %} {% block content %}
 <script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
 <script src="{{relativeRoot}}assets/js/scripts.js"></script>
 
-{% endblock %}
-
-
- {% set singleFileUpload %}
+{% endblock %} {% set singleFileUpload %}
 <!--Single file upload -->
 <form>
   <div class="custom-file">

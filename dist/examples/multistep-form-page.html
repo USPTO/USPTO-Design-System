@@ -566,15 +566,28 @@
           </form>
         </div>
       </div>
-      <div class="col-12 border-light border-top bg-white p-4 text-left">
-        <button type="button" class="btn btn-secondary">Previous</button>
-        <button type="button" class="btn btn-link">Cancel</button>
-        <button type="button" class="btn btn-primary float-right">
-          Continue
-        </button>
-        <button type="button" class="btn btn-outline-secondary float-right">
-          Save progress
-        </button>
+      <div class="col-12 border-light border-top bg-white p-4">
+        <section id="bottomButtons">
+          <button type="button" class="btn btn-primary float-right">
+            Continue
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary float-right mr-sm-2"
+            disabled=""
+          >
+            Save progress
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary float-right mr-sm-2 m-0"
+          >
+            Back
+          </button>
+          <button type="button" class="btn btn-link mt-4 mt-sm-2">
+            Cancel
+          </button>
+        </section>
       </div>
     </div>
   </section>

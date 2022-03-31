@@ -136,7 +136,7 @@ Object.assign(exports, {
         { href: '#column-customization', text: 'Column customization' },
         { href: '#grouping', text: 'Grouping' },
         { href: '#expandable-rows', text: 'Expandable rows' },
-        { href: '#datatable', text: 'Datatable' }
+        { href: '#datatable', text: 'DataTables.net' }
       ],
     },
     {
@@ -222,7 +222,8 @@ Object.assign(exports, {
     { href: 'launchPage.html', text: 'Launch page' },
     { href: 'marketingPage.html', text: 'Marketing page' },
     { href: 'multistepPage.html', text: 'Multistep form page' },
-    { href: 'searchPage.html', text: 'Search result page' }
+    { href: 'searchPage.html', text: 'Search result page' },
+    { href: 'tabbedDocketPage.html', text: 'Tabbed docket page' }
     
     
     

@@ -14181,6 +14181,12 @@ main > .pv-content .preview-size .popover {
     margin-bottom: 0;
   }
 }
+@media (max-width: 576px) {
+  #bottomButtons button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
 .dl-horizontal dd:before,
 .dl-horizontal dd:after {
   content: " ";
@@ -14205,6 +14211,15 @@ main > .pv-content .preview-size .popover {
 }
 .pl-main .pl-sub-main {
   opacity: 0.6;
+}
+
+.table-config-column {
+  width: 32px;
+  text-align: center;
+}
+
+.table-config-column:hover, .table-config-column.page-link:focus {
+  background-color: #f0f0f0;
 }
 
 .img-thumbnail {
