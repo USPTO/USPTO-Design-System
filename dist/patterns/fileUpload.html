@@ -157,6 +157,8 @@
     </option>
     <option value="dataFormats.html">Data formats
     </option>
+    <option value="fileUpload.html">File upload
+    </option>
     <option value="help.html">Help
     </option>
     <option value="search.html">Search
@@ -211,6 +213,17 @@
         </ul>
       </li>
       <li>
+        <a href="fileUpload.html" data-parent="File upload">File upload</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#single-file-upload">Single file upload</a>
+            </li>
+            <li>
+              <a href="#multi-file-upload">Multiple file upload</a>
+            </li>
+        </ul>
+      </li>
+      <li>
         <a href="help.html" data-parent="Help">Help</a>
         <ul class="sidenav-sublist">
         </ul>
@@ -246,6 +259,535 @@
 <section class="pv-content">
   <div class="pattern">
     <h1>File upload</h1>
+    <h2 id="single-file-upload">Single file upload</h2>
+    <p>
+      Single file upload, where the file is uploaded when the form is submitted.
+    </p>
+  </div>
+
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="view code for single file upload"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for single file upload"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Single file upload --&gt;
+&lt;form&gt;
+  &lt;div class=&quot;custom-file&quot;&gt;
+    &lt;input type=&quot;file&quot; class=&quot;form-control custom-file-input&quot; id=&quot;customFile&quot; /&gt;
+    &lt;label class=&quot;custom-file-label&quot; for=&quot;customFile&quot;&gt;Select file&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Single file upload -->
+<form>
+  <div class="custom-file">
+    <input type="file" class="form-control custom-file-input" id="customFile" />
+    <label class="custom-file-label" for="customFile">Select file</label>
+  </div>
+</form>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Single file upload --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-file&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;file&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control custom-file-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customFile&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-file-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customFile&quot;</span>&gt;</span>Select file<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="multi-file-upload">Multiple file upload</h2>
+    <p>
+      This shows how to facilitate uploading multiple files to the same field
+      (e.g., an attachments field), where the files are uploaded as soon as
+      they’re selected rather than when the form is submitted.
+    </p>
+  </div>
+
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="view code for multi file upload"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for multi file upload"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Multi file upload --&gt;
+&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;exampleFormControlFile&quot;&gt;Example multiple files input&lt;/label&gt;
+    &lt;input
+      type=&quot;file&quot;
+      class=&quot;form-control-file&quot;
+      id=&quot;exampleFormControlFile&quot;
+      multiple=&quot;&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Multi file upload -->
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlFile">Example multiple files input</label>
+    <input
+      type="file"
+      class="form-control-file"
+      id="exampleFormControlFile"
+      multiple=""
+    />
+  </div>
+</form>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Multi file upload --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFormControlFile&quot;</span>&gt;</span>Example multiple files input<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;file&quot;</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control-file&quot;</span>
+      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFormControlFile&quot;</span>
+      <span class="hljs-attr">multiple</span>=<span class="hljs-string">&quot;&quot;</span>
+    /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Drag and drop file upload</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-3"
+
+      aria-label="view code for multi file upload"
+
+      aria-expanded="false"
+
+      data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="view code for multi file upload"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Drag and drop file upload --&gt;
+&lt;form&gt;
+  &lt;div class=&quot;multiple-upload-primary&quot;&gt;
+    &lt;input type=&quot;file&quot; class=&quot;input-file&quot; multiple=&quot;&quot; /&gt;
+    &lt;div class=&quot;input-upload-area&quot; role=&quot;button&quot;&gt;
+      &lt;i class=&quot;material-icons md-3x&quot;&gt;cloud_upload&lt;/i&gt;
+      &lt;h3&gt;Drag and drop files here&lt;/h3&gt;
+      &lt;p&gt;or&lt;/p&gt;
+      &lt;div class=&quot;btn btn-upload&quot;&gt;Browse files&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;px-2 mt-5&quot;&gt;&lt;strong&gt;Total documents uploaded: xxx&lt;/strong&gt;&lt;/p&gt;
+  &lt;table class=&quot;table table-outline mt-2&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;i class=&quot;material-icons align-bottom&quot;&gt;description&lt;/i&gt; File name
+          &lt;span class=&quot;text-muted&quot;&gt;(0KB)&lt;/span&gt;
+          &lt;div class=&quot;small text-danger ml-4&quot;&gt;Error uploading file.&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td style=&quot;width: 105px&quot;&gt;
+          &lt;div class=&quot;input-group&quot;&gt;
+            &lt;button
+              class=&quot;btn btn-icon-only btn-sm&quot;
+              type=&quot;button&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              Preview &lt;i class=&quot;material-icons align-bottom&quot;&gt;more_vert&lt;/i&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;More&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class=&quot;dropdown-menu dropdown-menu-right&quot; style=&quot;&quot;&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Edit&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Remove&lt;/a&gt;
+              &lt;div role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Download&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;i class=&quot;material-icons align-bottom&quot;&gt;description&lt;/i&gt; File name
+          &lt;span class=&quot;text-muted&quot;&gt;(5KB)&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;div class=&quot;input-group&quot;&gt;
+            &lt;button
+              class=&quot;btn btn-icon-only btn-sm&quot;
+              type=&quot;button&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              Preview &lt;i class=&quot;material-icons align-bottom&quot;&gt;more_vert&lt;/i&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;More&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class=&quot;dropdown-menu dropdown-menu-right&quot; style=&quot;&quot;&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Edit&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Remove&lt;/a&gt;
+              &lt;div role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Download&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;i class=&quot;material-icons align-bottom&quot;&gt;description&lt;/i&gt; File name
+          &lt;span class=&quot;text-muted&quot;&gt;(3KB)&lt;/span&gt;
+
+          &lt;div class=&quot;progress w-25 ml-4&quot; style=&quot;height: 10px&quot;&gt;
+            &lt;div
+              class=&quot;progress-bar&quot;
+              role=&quot;progressbar&quot;
+              style=&quot;width: 20%&quot;
+              aria-valuenow=&quot;10&quot;
+              aria-valuemin=&quot;0&quot;
+              aria-valuemax=&quot;100&quot;
+            &gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;div class=&quot;input-group&quot;&gt;
+            &lt;button
+              class=&quot;btn btn-icon-only btn-sm&quot;
+              type=&quot;button&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              Preview &lt;i class=&quot;material-icons align-bottom&quot;&gt;more_vert&lt;/i&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;More&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class=&quot;dropdown-menu dropdown-menu-right&quot; style=&quot;&quot;&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Edit&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Remove&lt;/a&gt;
+              &lt;div role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Download&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/form&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Drag and drop file upload -->
+<form>
+  <div class="multiple-upload-primary">
+    <input type="file" class="input-file" multiple="" />
+    <div class="input-upload-area" role="button">
+      <i class="material-icons md-3x">cloud_upload</i>
+      <h3>Drag and drop files here</h3>
+      <p>or</p>
+      <div class="btn btn-upload">Browse files</div>
+    </div>
+  </div>
+  <p class="px-2 mt-5"><strong>Total documents uploaded: xxx</strong></p>
+  <table class="table table-outline mt-2">
+    <tbody>
+      <tr>
+        <td>
+          <i class="material-icons align-bottom">description</i> File name
+          <span class="text-muted">(0KB)</span>
+          <div class="small text-danger ml-4">Error uploading file.</div>
+        </td>
+        <td style="width: 105px">
+          <div class="input-group">
+            <button
+              class="btn btn-icon-only btn-sm"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Preview <i class="material-icons align-bottom">more_vert</i>
+              <span class="sr-only">More</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="">
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Remove</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Download</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="material-icons align-bottom">description</i> File name
+          <span class="text-muted">(5KB)</span>
+        </td>
+        <td>
+          <div class="input-group">
+            <button
+              class="btn btn-icon-only btn-sm"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Preview <i class="material-icons align-bottom">more_vert</i>
+              <span class="sr-only">More</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="">
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Remove</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Download</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="material-icons align-bottom">description</i> File name
+          <span class="text-muted">(3KB)</span>
+
+          <div class="progress w-25 ml-4" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 20%"
+              aria-valuenow="10"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </td>
+        <td>
+          <div class="input-group">
+            <button
+              class="btn btn-icon-only btn-sm"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Preview <i class="material-icons align-bottom">more_vert</i>
+              <span class="sr-only">More</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="">
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Remove</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Download</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Drag and drop file upload --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;multiple-upload-primary&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;file&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-file&quot;</span> <span class="hljs-attr">multiple</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-upload-area&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons md-3x&quot;</span>&gt;</span>cloud_upload<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Drag and drop files here<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>or<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-upload&quot;</span>&gt;</span>Browse files<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;px-2 mt-5&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Total documents uploaded: xxx<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;table table-outline mt-2&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons align-bottom&quot;</span>&gt;</span>description<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> File name
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-muted&quot;</span>&gt;</span>(0KB)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;small text-danger ml-4&quot;</span>&gt;</span>Error uploading file.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 105px&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-icon-only btn-sm&quot;</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              Preview <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons align-bottom&quot;</span>&gt;</span>more_vert<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>More<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Edit<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Remove<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;separator&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-divider&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Download<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons align-bottom&quot;</span>&gt;</span>description<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> File name
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-muted&quot;</span>&gt;</span>(5KB)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-icon-only btn-sm&quot;</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              Preview <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons align-bottom&quot;</span>&gt;</span>more_vert<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>More<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Edit<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Remove<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;separator&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-divider&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Download<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons align-bottom&quot;</span>&gt;</span>description<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> File name
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-muted&quot;</span>&gt;</span>(3KB)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress w-25 ml-4&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 10px&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;progress-bar&quot;</span>
+              <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;progressbar&quot;</span>
+              <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 20%&quot;</span>
+              <span class="hljs-attr">aria-valuenow</span>=<span class="hljs-string">&quot;10&quot;</span>
+              <span class="hljs-attr">aria-valuemin</span>=<span class="hljs-string">&quot;0&quot;</span>
+              <span class="hljs-attr">aria-valuemax</span>=<span class="hljs-string">&quot;100&quot;</span>
+            &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-icon-only btn-sm&quot;</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              Preview <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons align-bottom&quot;</span>&gt;</span>more_vert<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>More<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Edit<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Remove<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;separator&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-divider&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Download<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
   </div>
 </section>
 
@@ -261,6 +803,7 @@
   </div>
 </footer>
 
+
 <script src="../assets/vendor/jquery/jquery.min.js"></script>
 <script src="../assets/vendor/popper/popper.min.js"></script>
 <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
@@ -268,5 +811,9 @@
 <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
 <script src="../assets/vendor/clipboard/clipboard.min.js"></script>
 <script src="../assets/js/main.js"></script>
-<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+<script src="../assets/js/scripts.js"></script>
+
+  </body>
 </html>

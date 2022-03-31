@@ -78,6 +78,7 @@ Object.assign(exports, {
         { href: '#examples', text: 'Examples' }
       ],
     },
+    { href: 'list.html', text: 'List' },
     {
       href: 'labelsAndBadges.html',
       text: 'Labels and badges',
@@ -107,7 +108,7 @@ Object.assign(exports, {
     ],
     },
     { href: 'popovers.html', text: 'Popovers' },
-    //{ href: 'process-list.html', text: 'Process list' },
+    { href: 'process-list.html', text: 'Process list' },
     {
       href: 'progressLoading.html',
       text: 'Progress and loading',
@@ -120,6 +121,7 @@ Object.assign(exports, {
     },
    
    
+    { href: 'siteAlert.html', text: 'Site alert' },
     { href: 'stepIndicators.html', text: 'Step indicators' },
     { href: 'summaryBox.html', text: 'Summary box' },
     {
@@ -133,7 +135,8 @@ Object.assign(exports, {
         { href: '#row-action-buttons', text: 'Row action buttons' },
         { href: '#column-customization', text: 'Column customization' },
         { href: '#grouping', text: 'Grouping' },
-        { href: '#expandable-rows', text: 'Expandable rows' }
+        { href: '#expandable-rows', text: 'Expandable rows' },
+        { href: '#datatable', text: 'DataTables.net' }
       ],
     },
     {
@@ -177,10 +180,12 @@ Object.assign(exports, {
         { href: '#overview', text: 'Overview' },
         { href: '#usage', text: 'Usage' },
         { href: '#icon-color', text: 'Icon color' },
-        { href: '#system-icons', text: 'System Icons' },
+        { href: '#system-icons', text: 'System icons' },
         { href: '#icon-sizing', text: 'Icon sizing' },
-        { href: '#rotation', text: 'Rotation' },
-        { href: '#animation', text: 'Animation' }
+        { href: '#iconathon', text: 'USPTO - Intellectual Property Symbols' }
+        //{ href: '#rotation', text: 'Rotation' },
+        //{ href: '#animation', text: 'Animation' },
+        
       ],
     },
     { href: 'images.html', text: 'Images' },
@@ -214,9 +219,11 @@ Object.assign(exports, {
     },  
     { href: 'documentationPage.html', text: 'Documentation page' },
     { href: 'landingPage.html', text: 'Landing page' },
+    { href: 'launchPage.html', text: 'Launch page' },
     { href: 'marketingPage.html', text: 'Marketing page' },
     { href: 'multistepPage.html', text: 'Multistep form page' },
-    { href: 'searchPage.html', text: 'Search result page' }
+    { href: 'searchPage.html', text: 'Search result page' },
+    { href: 'tabbedDocketPage.html', text: 'Tabbed docket page' }
     
     
     
@@ -259,16 +266,16 @@ Object.assign(exports, {
         { href: '#deprecated', text: 'Deprecated' }
       ],
     },
-    /*
+    
     {
       href: 'fileUpload.html',
       text: 'File upload',
       "children": [
         { href: '#single-file-upload', text: 'Single file upload' },
-        { href: '#multi-file-upload', text: 'Multi file upload' }
+        { href: '#multi-file-upload', text: 'Multiple file upload' }
       ],
     },
-    {
+   /* {
       href: 'filters.html',
       text: 'Filters',
       "children": [

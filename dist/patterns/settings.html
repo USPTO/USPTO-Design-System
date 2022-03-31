@@ -157,6 +157,8 @@
     </option>
     <option value="dataFormats.html">Data formats
     </option>
+    <option value="fileUpload.html">File upload
+    </option>
     <option value="help.html">Help
     </option>
     <option value="search.html">Search
@@ -211,6 +213,17 @@
         </ul>
       </li>
       <li>
+        <a href="fileUpload.html" data-parent="File upload">File upload</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#single-file-upload">Single file upload</a>
+            </li>
+            <li>
+              <a href="#multi-file-upload">Multiple file upload</a>
+            </li>
+        </ul>
+      </li>
+      <li>
         <a href="help.html" data-parent="Help">Help</a>
         <ul class="sidenav-sublist">
         </ul>
@@ -248,22 +261,36 @@
     <h1>Settings</h1>
     <h4 id="purpose">Purpose</h4>
 
-    <p>Some system behaviors and settings may need to change depending on the user.</p>
+    <p>
+      Some system behaviors and settings may need to change depending on the
+      user.
+    </p>
 
     <h4 id="description">Description</h4>
 
-    <p>Settings should be implemented when there is functionality and behaviors that may need to be changed to meet a user’s needs, such as notification settings, account settings, and other system behaviors.</p>
+    <p>
+      Settings should be implemented when there is functionality and behaviors
+      that may need to be changed to meet a user’s needs, such as notification
+      settings, account settings, and other system behaviors.
+    </p>
 
     <p>Avoid the urge to “just make it a setting”. Only add a setting if:</p>
 
     <ul>
       <li>More than 15% of your users will change the setting</li>
-      <li>It’s infrequently changed by users. If it’s frequently changed, consider making it more available</li>
+      <li>
+        It’s infrequently changed by users. If it’s frequently changed, consider
+        making it more available
+      </li>
     </ul>
 
     <h4 id="basic-functionality">Basic functionality</h4>
 
-    <p>Depending on the application type, settings can appear as a dedicated page or as a modal dialog. The complexity of the settings panel can vary drastically between applications.</p>
+    <p>
+      Depending on the application type, settings can appear as a dedicated page
+      or as a modal dialog. The complexity of the settings panel can vary
+      drastically between applications.
+    </p>
 
     <p>The settings panel can be composed of:</p>
 
@@ -279,9 +306,14 @@
   <div class="pattern">
     <h3 id="navigation">Navigation</h3>
 
-    <p>Use tabs if there are 5 or less sections of settings without nesting, otherwise use tree navigation. Hierarchical tree navigation is preferred over nested levels of tabs and improves discoverability.</p>
+    <p>
+      Use tabs if there are 5 or less sections of settings without nesting,
+      otherwise use tree navigation. Hierarchical tree navigation is preferred
+      over nested levels of tabs and improves discoverability.
+    </p>
   </div>
   <div class="preview pv-only">
+    
   <div class="">
     <div class="d-flex mb-1">
         <h2>Flat navigation</h2>
@@ -313,58 +345,178 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title&quot;&gt;Settings&lt;/h1&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;close&quot;
+          data-dismiss=&quot;modal&quot;
+          aria-label=&quot;Close&quot;
+        &gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-body pt-0 pb-0&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
           &lt;div class=&quot;col-3 p-2&quot;&gt;
-            &lt;div class=&quot;border-0&quot; id=&quot;v-pills-tab&quot; role=&quot;tablist&quot; aria-orientation=&quot;vertical&quot;&gt;
-              &lt;h4 class=&quot;dropdown-header text-secondary text-uppercase bg-light pt-2 pb-2&quot;&gt;General&lt;/h4&gt;
-              &lt;a class=&quot;dropdown-item active&quot; id=&quot;v-pills-profile-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-profile&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-profile&quot; aria-selected=&quot;true&quot;&gt;Profile&lt;/a&gt;
-              &lt;a class=&quot;dropdown-item&quot; id=&quot;v-pills-deployment-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-deployment&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-deployment&quot; aria-selected=&quot;false&quot;&gt;Deployment&lt;/a&gt;
-              &lt;a class=&quot;dropdown-item&quot; id=&quot;v-pills-billing-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-billing&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-billing&quot; aria-selected=&quot;false&quot;&gt;Billing&lt;/a&gt;
-              &lt;h4 class=&quot;dropdown-header text-secondary text-uppercase bg-light pt-32 pb-2&quot;&gt;System&lt;/h4&gt;
-              &lt;a class=&quot;dropdown-item&quot; id=&quot;v-pills-notification-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-notification&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-notification&quot; aria-selected=&quot;true&quot;&gt;Notification&lt;/a&gt;
-              &lt;a class=&quot;dropdown-item&quot; id=&quot;v-pills-emails-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-emails&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-emails&quot; aria-selected=&quot;false&quot;&gt;Emails&lt;/a&gt;
-              &lt;a class=&quot;dropdown-item&quot; id=&quot;v-pills-sshkeys-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-sshkeys&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-sshkeys&quot; aria-selected=&quot;false&quot;&gt;SSH keys&lt;/a&gt;
+            &lt;div
+              class=&quot;border-0&quot;
+              id=&quot;v-pills-tab&quot;
+              role=&quot;tablist&quot;
+              aria-orientation=&quot;vertical&quot;
+            &gt;
+              &lt;h4
+                class=&quot;dropdown-header text-secondary text-uppercase bg-light pt-2 pb-2&quot;
+              &gt;
+                General
+              &lt;/h4&gt;
+              &lt;a
+                class=&quot;dropdown-item active&quot;
+                id=&quot;v-pills-profile-tab&quot;
+                data-toggle=&quot;pill&quot;
+                href=&quot;#v-pills-profile&quot;
+                role=&quot;tab&quot;
+                aria-controls=&quot;v-pills-profile&quot;
+                aria-selected=&quot;true&quot;
+                &gt;Profile&lt;/a
+              &gt;
+              &lt;a
+                class=&quot;dropdown-item&quot;
+                id=&quot;v-pills-deployment-tab&quot;
+                data-toggle=&quot;pill&quot;
+                href=&quot;#v-pills-deployment&quot;
+                role=&quot;tab&quot;
+                aria-controls=&quot;v-pills-deployment&quot;
+                aria-selected=&quot;false&quot;
+                &gt;Deployment&lt;/a
+              &gt;
+              &lt;a
+                class=&quot;dropdown-item&quot;
+                id=&quot;v-pills-billing-tab&quot;
+                data-toggle=&quot;pill&quot;
+                href=&quot;#v-pills-billing&quot;
+                role=&quot;tab&quot;
+                aria-controls=&quot;v-pills-billing&quot;
+                aria-selected=&quot;false&quot;
+                &gt;Billing&lt;/a
+              &gt;
+              &lt;h4
+                class=&quot;dropdown-header text-secondary text-uppercase bg-light pt-32 pb-2&quot;
+              &gt;
+                System
+              &lt;/h4&gt;
+              &lt;a
+                class=&quot;dropdown-item&quot;
+                id=&quot;v-pills-notification-tab&quot;
+                data-toggle=&quot;pill&quot;
+                href=&quot;#v-pills-notification&quot;
+                role=&quot;tab&quot;
+                aria-controls=&quot;v-pills-notification&quot;
+                aria-selected=&quot;true&quot;
+                &gt;Notification&lt;/a
+              &gt;
+              &lt;a
+                class=&quot;dropdown-item&quot;
+                id=&quot;v-pills-emails-tab&quot;
+                data-toggle=&quot;pill&quot;
+                href=&quot;#v-pills-emails&quot;
+                role=&quot;tab&quot;
+                aria-controls=&quot;v-pills-emails&quot;
+                aria-selected=&quot;false&quot;
+                &gt;Emails&lt;/a
+              &gt;
+              &lt;a
+                class=&quot;dropdown-item&quot;
+                id=&quot;v-pills-sshkeys-tab&quot;
+                data-toggle=&quot;pill&quot;
+                href=&quot;#v-pills-sshkeys&quot;
+                role=&quot;tab&quot;
+                aria-controls=&quot;v-pills-sshkeys&quot;
+                aria-selected=&quot;false&quot;
+                &gt;SSH keys&lt;/a
+              &gt;
             &lt;/div&gt;
           &lt;/div&gt;
           &lt;div class=&quot;col-9 border-left border-light p-3&quot;&gt;
             &lt;div class=&quot;tab-content&quot; id=&quot;v-pills-tabContent&quot;&gt;
-              &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-profile-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade show active&quot;
+                id=&quot;v-pills-profile&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-profile-tab&quot;
+              &gt;
                 &lt;h3 class=&quot;mb-3&quot;&gt;Profile&lt;/h3&gt;
 
                 &lt;form class=&quot;col-6&quot;&gt;
                   &lt;div class=&quot;form-group&quot;&gt;
                     &lt;label for=&quot;exampleUserName&quot;&gt;Username&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleUserName&quot; value=&quot;jsmith12&quot; disabled /&gt;
+                    &lt;input
+                      type=&quot;text&quot;
+                      class=&quot;form-control&quot;
+                      id=&quot;exampleUserName&quot;
+                      value=&quot;jsmith12&quot;
+                      disabled
+                    /&gt;
                   &lt;/div&gt;
                   &lt;div class=&quot;form-group&quot;&gt;
                     &lt;label for=&quot;exampleName&quot;&gt;Name&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleName&quot; value=&quot;John Smith&quot; /&gt;
+                    &lt;input
+                      type=&quot;text&quot;
+                      class=&quot;form-control&quot;
+                      id=&quot;exampleName&quot;
+                      value=&quot;John Smith&quot;
+                    /&gt;
                   &lt;/div&gt;
                   &lt;div class=&quot;form-group&quot;&gt;
                     &lt;label for=&quot;exampleIFInputEmail&quot;&gt;Email address&lt;/label&gt;
-                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleIFInputEmail&quot; value=&quot;john.smith@gmail.com&quot; /&gt;
+                    &lt;input
+                      type=&quot;email&quot;
+                      class=&quot;form-control&quot;
+                      id=&quot;exampleIFInputEmail&quot;
+                      value=&quot;john.smith@gmail.com&quot;
+                    /&gt;
                   &lt;/div&gt;
-                  &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Save changes&lt;/button&gt;
+                  &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;
+                    Save changes
+                  &lt;/button&gt;
                 &lt;/form&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-deployment&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-deployment-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-deployment&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-deployment-tab&quot;
+              &gt;
                 &lt;h3&gt;Deployment&lt;/h3&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-billing&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-billing-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-billing&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-billing-tab&quot;
+              &gt;
                 &lt;h3&gt;Billing&lt;/h3&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-notification&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-notification-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-notification&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-notification-tab&quot;
+              &gt;
                 &lt;h3&gt;Notification&lt;/h3&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-emails&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-emails-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-emails&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-emails-tab&quot;
+              &gt;
                 &lt;h3&gt;Emails&lt;/h3&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-sshkeys&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-sshkeys-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-sshkeys&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-sshkeys-tab&quot;
+              &gt;
                 &lt;h3&gt;SSH keys&lt;/h3&gt;
               &lt;/div&gt;
             &lt;/div&gt;
@@ -392,58 +544,178 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Settings</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body pt-0 pb-0">
         <div class="row">
           <div class="col-3 p-2">
-            <div class="border-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <h4 class="dropdown-header text-secondary text-uppercase bg-light pt-2 pb-2">General</h4>
-              <a class="dropdown-item active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
-              <a class="dropdown-item" id="v-pills-deployment-tab" data-toggle="pill" href="#v-pills-deployment" role="tab" aria-controls="v-pills-deployment" aria-selected="false">Deployment</a>
-              <a class="dropdown-item" id="v-pills-billing-tab" data-toggle="pill" href="#v-pills-billing" role="tab" aria-controls="v-pills-billing" aria-selected="false">Billing</a>
-              <h4 class="dropdown-header text-secondary text-uppercase bg-light pt-32 pb-2">System</h4>
-              <a class="dropdown-item" id="v-pills-notification-tab" data-toggle="pill" href="#v-pills-notification" role="tab" aria-controls="v-pills-notification" aria-selected="true">Notification</a>
-              <a class="dropdown-item" id="v-pills-emails-tab" data-toggle="pill" href="#v-pills-emails" role="tab" aria-controls="v-pills-emails" aria-selected="false">Emails</a>
-              <a class="dropdown-item" id="v-pills-sshkeys-tab" data-toggle="pill" href="#v-pills-sshkeys" role="tab" aria-controls="v-pills-sshkeys" aria-selected="false">SSH keys</a>
+            <div
+              class="border-0"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <h4
+                class="dropdown-header text-secondary text-uppercase bg-light pt-2 pb-2"
+              >
+                General
+              </h4>
+              <a
+                class="dropdown-item active"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="true"
+                >Profile</a
+              >
+              <a
+                class="dropdown-item"
+                id="v-pills-deployment-tab"
+                data-toggle="pill"
+                href="#v-pills-deployment"
+                role="tab"
+                aria-controls="v-pills-deployment"
+                aria-selected="false"
+                >Deployment</a
+              >
+              <a
+                class="dropdown-item"
+                id="v-pills-billing-tab"
+                data-toggle="pill"
+                href="#v-pills-billing"
+                role="tab"
+                aria-controls="v-pills-billing"
+                aria-selected="false"
+                >Billing</a
+              >
+              <h4
+                class="dropdown-header text-secondary text-uppercase bg-light pt-32 pb-2"
+              >
+                System
+              </h4>
+              <a
+                class="dropdown-item"
+                id="v-pills-notification-tab"
+                data-toggle="pill"
+                href="#v-pills-notification"
+                role="tab"
+                aria-controls="v-pills-notification"
+                aria-selected="true"
+                >Notification</a
+              >
+              <a
+                class="dropdown-item"
+                id="v-pills-emails-tab"
+                data-toggle="pill"
+                href="#v-pills-emails"
+                role="tab"
+                aria-controls="v-pills-emails"
+                aria-selected="false"
+                >Emails</a
+              >
+              <a
+                class="dropdown-item"
+                id="v-pills-sshkeys-tab"
+                data-toggle="pill"
+                href="#v-pills-sshkeys"
+                role="tab"
+                aria-controls="v-pills-sshkeys"
+                aria-selected="false"
+                >SSH keys</a
+              >
             </div>
           </div>
           <div class="col-9 border-left border-light p-3">
             <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+              >
                 <h3 class="mb-3">Profile</h3>
 
                 <form class="col-6">
                   <div class="form-group">
                     <label for="exampleUserName">Username</label>
-                    <input type="text" class="form-control" id="exampleUserName" value="jsmith12" disabled />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleUserName"
+                      value="jsmith12"
+                      disabled
+                    />
                   </div>
                   <div class="form-group">
                     <label for="exampleName">Name</label>
-                    <input type="text" class="form-control" id="exampleName" value="John Smith" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleName"
+                      value="John Smith"
+                    />
                   </div>
                   <div class="form-group">
                     <label for="exampleIFInputEmail">Email address</label>
-                    <input type="email" class="form-control" id="exampleIFInputEmail" value="john.smith@gmail.com" />
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleIFInputEmail"
+                      value="john.smith@gmail.com"
+                    />
                   </div>
-                  <button class="btn btn-primary" type="submit">Save changes</button>
+                  <button class="btn btn-primary" type="submit">
+                    Save changes
+                  </button>
                 </form>
               </div>
-              <div class="tab-pane fade" id="v-pills-deployment" role="tabpanel" aria-labelledby="v-pills-deployment-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-deployment"
+                role="tabpanel"
+                aria-labelledby="v-pills-deployment-tab"
+              >
                 <h3>Deployment</h3>
               </div>
-              <div class="tab-pane fade" id="v-pills-billing" role="tabpanel" aria-labelledby="v-pills-billing-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-billing"
+                role="tabpanel"
+                aria-labelledby="v-pills-billing-tab"
+              >
                 <h3>Billing</h3>
               </div>
-              <div class="tab-pane fade" id="v-pills-notification" role="tabpanel" aria-labelledby="v-pills-notification-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-notification"
+                role="tabpanel"
+                aria-labelledby="v-pills-notification-tab"
+              >
                 <h3>Notification</h3>
               </div>
-              <div class="tab-pane fade" id="v-pills-emails" role="tabpanel" aria-labelledby="v-pills-emails-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-emails"
+                role="tabpanel"
+                aria-labelledby="v-pills-emails-tab"
+              >
                 <h3>Emails</h3>
               </div>
-              <div class="tab-pane fade" id="v-pills-sshkeys" role="tabpanel" aria-labelledby="v-pills-sshkeys-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-sshkeys"
+                role="tabpanel"
+                aria-labelledby="v-pills-sshkeys-tab"
+              >
                 <h3>SSH keys</h3>
               </div>
             </div>
@@ -463,58 +735,178 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
+          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
+          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
+        &gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body pt-0 pb-0&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-3 p-2&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;border-0&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-tab&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span> <span class="hljs-attr">aria-orientation</span>=<span class="hljs-string">&quot;vertical&quot;</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header text-secondary text-uppercase bg-light pt-2 pb-2&quot;</span>&gt;</span>General<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item active&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-profile-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-profile&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-profile&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-deployment-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-deployment&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-deployment&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>Deployment<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-billing-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-billing&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-billing&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>Billing<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header text-secondary text-uppercase bg-light pt-32 pb-2&quot;</span>&gt;</span>System<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-notification-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-notification&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-notification&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>Notification<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-emails-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-emails&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-emails&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>Emails<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-sshkeys-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-sshkeys&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-sshkeys&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>SSH keys<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;border-0&quot;</span>
+              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-tab&quot;</span>
+              <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span>
+              <span class="hljs-attr">aria-orientation</span>=<span class="hljs-string">&quot;vertical&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header text-secondary text-uppercase bg-light pt-2 pb-2&quot;</span>
+              &gt;</span>
+                General
+              <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item active&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-profile-tab&quot;</span>
+                <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span>
+                <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-profile&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+                <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-profile&quot;</span>
+                <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span>
+                &gt;</span>Profile&lt;/a
+              &gt;
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-deployment-tab&quot;</span>
+                <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span>
+                <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-deployment&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+                <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-deployment&quot;</span>
+                <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>
+                &gt;</span>Deployment&lt;/a
+              &gt;
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-billing-tab&quot;</span>
+                <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span>
+                <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-billing&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+                <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-billing&quot;</span>
+                <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>
+                &gt;</span>Billing&lt;/a
+              &gt;
+              <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header text-secondary text-uppercase bg-light pt-32 pb-2&quot;</span>
+              &gt;</span>
+                System
+              <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-notification-tab&quot;</span>
+                <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span>
+                <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-notification&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+                <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-notification&quot;</span>
+                <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span>
+                &gt;</span>Notification&lt;/a
+              &gt;
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-emails-tab&quot;</span>
+                <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span>
+                <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-emails&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+                <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-emails&quot;</span>
+                <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>
+                &gt;</span>Emails&lt;/a
+              &gt;
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-sshkeys-tab&quot;</span>
+                <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;pill&quot;</span>
+                <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#v-pills-sshkeys&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+                <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;v-pills-sshkeys&quot;</span>
+                <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>
+                &gt;</span>SSH keys&lt;/a
+              &gt;
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-9 border-left border-light p-3&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-tabContent&quot;</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade show active&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-profile&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-profile-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade show active&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-profile&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-profile-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 
                 <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-6&quot;</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleUserName&quot;</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleUserName&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;jsmith12&quot;</span> <span class="hljs-attr">disabled</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
+                      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleUserName&quot;</span>
+                      <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;jsmith12&quot;</span>
+                      <span class="hljs-attr">disabled</span>
+                    /&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleName&quot;</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleName&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;John Smith&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
+                      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleName&quot;</span>
+                      <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;John Smith&quot;</span>
+                    /&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleIFInputEmail&quot;</span>&gt;</span>Email address<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleIFInputEmail&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;john.smith@gmail.com&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
+                      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleIFInputEmail&quot;</span>
+                      <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;john.smith@gmail.com&quot;</span>
+                    /&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>
+                    Save changes
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-deployment&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-deployment-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-deployment&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-deployment-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Deployment<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-billing&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-billing-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-billing&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-billing-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Billing<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-notification&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-notification-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-notification&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-notification-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Notification<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-emails&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-emails-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-emails&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-emails-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Emails<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-sshkeys&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-sshkeys-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-sshkeys&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-sshkeys-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>SSH keys<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -526,9 +918,11 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-</div>
+
+  </div>
 
   <div class="preview pv-only">
+    
   <div class="">
     <div class="d-flex mb-1">
         <h2>Tree navigation</h2>
@@ -560,37 +954,65 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title&quot;&gt;Settings&lt;/h1&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;close&quot;
+          data-dismiss=&quot;modal&quot;
+          aria-label=&quot;Close&quot;
+        &gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-body pt-0 pb-0&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
           &lt;div class=&quot;col-3 p-0&quot;&gt;
-            
             &lt;div class=&quot;accordion navigation&quot; id=&quot;AccordionNavigationExample&quot;&gt;
-            &lt;h4 class=&quot;dropdown-header text-secondary text-uppercase bg-light p-3&quot;&gt;General&lt;/h4&gt;
-           
+              &lt;h4
+                class=&quot;dropdown-header text-secondary text-uppercase bg-light p-3&quot;
+              &gt;
+                General
+              &lt;/h4&gt;
+
               &lt;div class=&quot;clearfix&quot;&gt;
                 &lt;div id=&quot;heading-0&quot;&gt;
                   &lt;h3 class=&quot;accordion-heading&quot;&gt;
-                    &lt;button class=&quot;btn btn-white btn-block text-left collapsed&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapse-0&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-0&quot;&gt;
+                    &lt;button
+                      class=&quot;btn btn-white btn-block text-left collapsed&quot;
+                      type=&quot;button&quot;
+                      data-toggle=&quot;collapse&quot;
+                      data-target=&quot;#collapse-0&quot;
+                      aria-expanded=&quot;false&quot;
+                      aria-controls=&quot;collapse-0&quot;
+                    &gt;
                       &lt;i class=&quot;material-icons collapsed-icon invisible&quot;&gt;add&lt;/i&gt;
-                      &lt;i class=&quot;material-icons expanded-icon invisible&quot;&gt;remove&lt;/i&gt;
+                      &lt;i class=&quot;material-icons expanded-icon invisible&quot;
+                        &gt;remove&lt;/i
+                      &gt;
                       Profile
                     &lt;/button&gt;
                   &lt;/h3&gt;
                 &lt;/div&gt;
                 &lt;div id=&quot;heading-1&quot;&gt;
                   &lt;h3 class=&quot;accordion-heading&quot;&gt;
-                    &lt;button class=&quot;btn btn-white btn-block text-left active&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapse-1&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;collapse-1&quot;&gt;
+                    &lt;button
+                      class=&quot;btn btn-white btn-block text-left active&quot;
+                      type=&quot;button&quot;
+                      data-toggle=&quot;collapse&quot;
+                      data-target=&quot;#collapse-1&quot;
+                      aria-expanded=&quot;true&quot;
+                      aria-controls=&quot;collapse-1&quot;
+                    &gt;
                       &lt;i class=&quot;material-icons collapsed-icon&quot;&gt;add&lt;/i&gt;
                       &lt;i class=&quot;material-icons expanded-icon&quot;&gt;remove&lt;/i&gt;
                       &lt;span&gt; Account &lt;/span&gt;
                     &lt;/button&gt;
                   &lt;/h3&gt;
                 &lt;/div&gt;
-                &lt;div id=&quot;collapse-1&quot; class=&quot;collapse show&quot; aria-labelledby=&quot;heading-1&quot;&gt;
+                &lt;div
+                  id=&quot;collapse-1&quot;
+                  class=&quot;collapse show&quot;
+                  aria-labelledby=&quot;heading-1&quot;
+                &gt;
                   &lt;div&gt;
                     &lt;ul class=&quot;sidenav&quot;&gt;
                       &lt;li class=&quot;success&quot;&gt;
@@ -600,7 +1022,9 @@
                         &lt;a href=&quot;#&quot; data-parent=&quot;Parent link&quot;&gt;Password &lt;/a&gt;
                       &lt;/li&gt;
                       &lt;li class=&quot;active&quot;&gt;
-                        &lt;a href=&quot;#&quot; aria-current=&quot;page&quot; data-parent=&quot;&quot;&gt; Billing &lt;/a&gt;
+                        &lt;a href=&quot;#&quot; aria-current=&quot;page&quot; data-parent=&quot;&quot;&gt;
+                          Billing
+                        &lt;/a&gt;
                       &lt;/li&gt;
                       &lt;li&gt;
                         &lt;a href=&quot;#&quot; data-parent=&quot;Parent link&quot;&gt; Advanced&lt;/a&gt;
@@ -609,14 +1033,22 @@
                   &lt;/div&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
-               &lt;h4 class=&quot;dropdown-header text-secondary text-uppercase bg-light p-3&quot;&gt;System&lt;/h4&gt;
-               &lt;div&gt;
-                
+              &lt;h4
+                class=&quot;dropdown-header text-secondary text-uppercase bg-light p-3&quot;
+              &gt;
+                System
+              &lt;/h4&gt;
+              &lt;div&gt;
                 &lt;div id=&quot;heading-2&quot;&gt;
                   &lt;h3 class=&quot;accordion-heading&quot;&gt;
-                    &lt;button class=&quot;btn btn-white btn-block text-left collapsed&quot; type=&quot;button&quot;&gt;
+                    &lt;button
+                      class=&quot;btn btn-white btn-block text-left collapsed&quot;
+                      type=&quot;button&quot;
+                    &gt;
                       &lt;i class=&quot;material-icons collapsed-icon invisible&quot;&gt;add&lt;/i&gt;
-                      &lt;i class=&quot;material-icons expanded-icon invisible&quot;&gt;remove&lt;/i&gt;
+                      &lt;i class=&quot;material-icons expanded-icon invisible&quot;
+                        &gt;remove&lt;/i
+                      &gt;
                       Notifications
                     &lt;/button&gt;
                   &lt;/h3&gt;
@@ -625,9 +1057,14 @@
               &lt;div&gt;
                 &lt;div id=&quot;heading-3&quot;&gt;
                   &lt;h3 class=&quot;accordion-heading&quot;&gt;
-                    &lt;button class=&quot;btn btn-white btn-block text-left collapsed&quot; type=&quot;button&quot;&gt;
+                    &lt;button
+                      class=&quot;btn btn-white btn-block text-left collapsed&quot;
+                      type=&quot;button&quot;
+                    &gt;
                       &lt;i class=&quot;material-icons collapsed-icon invisible&quot;&gt;add&lt;/i&gt;
-                      &lt;i class=&quot;material-icons expanded-icon invisible&quot;&gt;remove&lt;/i&gt;
+                      &lt;i class=&quot;material-icons expanded-icon invisible&quot;
+                        &gt;remove&lt;/i
+                      &gt;
                       Emails
                     &lt;/button&gt;
                   &lt;/h3&gt;
@@ -636,13 +1073,25 @@
               &lt;div&gt;
                 &lt;div id=&quot;heading-3&quot;&gt;
                   &lt;h3 class=&quot;accordion-heading&quot;&gt;
-                    &lt;button class=&quot;btn btn-white btn-block text-left collapsed&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapse-4&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapse-4&quot;&gt;
+                    &lt;button
+                      class=&quot;btn btn-white btn-block text-left collapsed&quot;
+                      type=&quot;button&quot;
+                      data-toggle=&quot;collapse&quot;
+                      data-target=&quot;#collapse-4&quot;
+                      aria-expanded=&quot;false&quot;
+                      aria-controls=&quot;collapse-4&quot;
+                    &gt;
                       &lt;i class=&quot;material-icons collapsed-icon&quot;&gt;add&lt;/i&gt;
-                      &lt;i class=&quot;material-icons expanded-icon&quot;&gt;remove&lt;/i&gt; SSH keys
+                      &lt;i class=&quot;material-icons expanded-icon&quot;&gt;remove&lt;/i&gt; SSH
+                      keys
                     &lt;/button&gt;
                   &lt;/h3&gt;
                 &lt;/div&gt;
-                &lt;div id=&quot;collapse-4&quot; class=&quot;collapse&quot; aria-labelledby=&quot;heading-3&quot;&gt;
+                &lt;div
+                  id=&quot;collapse-4&quot;
+                  class=&quot;collapse&quot;
+                  aria-labelledby=&quot;heading-3&quot;
+                &gt;
                   &lt;div&gt;
                     &lt;ul class=&quot;sidenav&quot;&gt;
                       &lt;li&gt;&lt;a href=&quot;#&quot; data-parent=&quot;Parent link&quot;&gt; Step 1&lt;/a&gt;&lt;/li&gt;
@@ -652,25 +1101,43 @@
                 &lt;/div&gt;
               &lt;/div&gt;
             &lt;/div&gt;
-
-            
           &lt;/div&gt;
           &lt;div class=&quot;col-9 border-left border-light p-3&quot;&gt;
             &lt;div class=&quot;tab-content&quot; id=&quot;v-pills-tabContent&quot;&gt;
-              &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-profile-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade show active&quot;
+                id=&quot;v-pills-profile&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-profile-tab&quot;
+              &gt;
                 &lt;form&gt;
                   &lt;h2 class=&quot;mx-3 my-4&quot;&gt;Billing information&lt;/h2&gt;
                   &lt;div class=&quot;form-group col-md-8&quot;&gt;
                     &lt;label for=&quot;exampleFGStreetAddress&quot;&gt;Address line 1&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleFGStreetAddress&quot; /&gt;
+                    &lt;input
+                      type=&quot;text&quot;
+                      class=&quot;form-control&quot;
+                      id=&quot;exampleFGStreetAddress&quot;
+                    /&gt;
                   &lt;/div&gt;
                   &lt;div class=&quot;form-group col-md-8&quot;&gt;
-                    &lt;label for=&quot;exampleFGStreetAddress2&quot;&gt;Address line 2 &lt;span class=&quot;text-muted&quot;&gt;(optional)&lt;/span&gt;&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleFGStreetAddress2&quot; /&gt;
+                    &lt;label for=&quot;exampleFGStreetAddress2&quot;
+                      &gt;Address line 2
+                      &lt;span class=&quot;text-muted&quot;&gt;(optional)&lt;/span&gt;&lt;/label
+                    &gt;
+                    &lt;input
+                      type=&quot;text&quot;
+                      class=&quot;form-control&quot;
+                      id=&quot;exampleFGStreetAddress2&quot;
+                    /&gt;
                   &lt;/div&gt;
                   &lt;div class=&quot;form-group col-md-8&quot;&gt;
                     &lt;label for=&quot;exampleFXCity1&quot;&gt;City&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleFXCity1&quot; /&gt;
+                    &lt;input
+                      type=&quot;text&quot;
+                      class=&quot;form-control&quot;
+                      id=&quot;exampleFXCity1&quot;
+                    /&gt;
                   &lt;/div&gt;
                   &lt;div class=&quot;form-group col-md-6&quot;&gt;
                     &lt;label for=&quot;exampleFXState2&quot;&gt;State&lt;/label&gt;
@@ -730,26 +1197,57 @@
                   &lt;/div&gt;
                   &lt;div class=&quot;form-group col-md-4&quot;&gt;
                     &lt;label for=&quot;exampleFXZip2&quot;&gt;Zip code&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleFXZip2&quot; /&gt;
+                    &lt;input
+                      type=&quot;text&quot;
+                      class=&quot;form-control&quot;
+                      id=&quot;exampleFXZip2&quot;
+                    /&gt;
                   &lt;/div&gt;
                   &lt;div class=&quot;form-group col-md-4&quot;&gt;
-                    &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Save changes&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;
+                      Save changes
+                    &lt;/button&gt;
                   &lt;/div&gt;
                 &lt;/form&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-deployment&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-deployment-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-deployment&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-deployment-tab&quot;
+              &gt;
                 &lt;h3&gt;Deployment&lt;/h3&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-billing&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-billing-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-billing&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-billing-tab&quot;
+              &gt;
                 &lt;h3&gt;Billing&lt;/h3&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-notification&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-notification-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-notification&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-notification-tab&quot;
+              &gt;
                 &lt;h3&gt;Notification&lt;/h3&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-emails&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-emails-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-emails&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-emails-tab&quot;
+              &gt;
                 &lt;h3&gt;Emails&lt;/h3&gt;
               &lt;/div&gt;
-              &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-sshkeys&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-sshkeys-tab&quot;&gt;
+              &lt;div
+                class=&quot;tab-pane fade&quot;
+                id=&quot;v-pills-sshkeys&quot;
+                role=&quot;tabpanel&quot;
+                aria-labelledby=&quot;v-pills-sshkeys-tab&quot;
+              &gt;
                 &lt;h3&gt;SSH keys&lt;/h3&gt;
               &lt;/div&gt;
             &lt;/div&gt;
@@ -777,37 +1275,65 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Settings</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body pt-0 pb-0">
         <div class="row">
           <div class="col-3 p-0">
-            
             <div class="accordion navigation" id="AccordionNavigationExample">
-            <h4 class="dropdown-header text-secondary text-uppercase bg-light p-3">General</h4>
-           
+              <h4
+                class="dropdown-header text-secondary text-uppercase bg-light p-3"
+              >
+                General
+              </h4>
+
               <div class="clearfix">
                 <div id="heading-0">
                   <h3 class="accordion-heading">
-                    <button class="btn btn-white btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-0" aria-expanded="false" aria-controls="collapse-0">
+                    <button
+                      class="btn btn-white btn-block text-left collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse-0"
+                      aria-expanded="false"
+                      aria-controls="collapse-0"
+                    >
                       <i class="material-icons collapsed-icon invisible">add</i>
-                      <i class="material-icons expanded-icon invisible">remove</i>
+                      <i class="material-icons expanded-icon invisible"
+                        >remove</i
+                      >
                       Profile
                     </button>
                   </h3>
                 </div>
                 <div id="heading-1">
                   <h3 class="accordion-heading">
-                    <button class="btn btn-white btn-block text-left active" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                    <button
+                      class="btn btn-white btn-block text-left active"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse-1"
+                      aria-expanded="true"
+                      aria-controls="collapse-1"
+                    >
                       <i class="material-icons collapsed-icon">add</i>
                       <i class="material-icons expanded-icon">remove</i>
                       <span> Account </span>
                     </button>
                   </h3>
                 </div>
-                <div id="collapse-1" class="collapse show" aria-labelledby="heading-1">
+                <div
+                  id="collapse-1"
+                  class="collapse show"
+                  aria-labelledby="heading-1"
+                >
                   <div>
                     <ul class="sidenav">
                       <li class="success">
@@ -817,7 +1343,9 @@
                         <a href="#" data-parent="Parent link">Password </a>
                       </li>
                       <li class="active">
-                        <a href="#" aria-current="page" data-parent=""> Billing </a>
+                        <a href="#" aria-current="page" data-parent="">
+                          Billing
+                        </a>
                       </li>
                       <li>
                         <a href="#" data-parent="Parent link"> Advanced</a>
@@ -826,14 +1354,22 @@
                   </div>
                 </div>
               </div>
-               <h4 class="dropdown-header text-secondary text-uppercase bg-light p-3">System</h4>
-               <div>
-                
+              <h4
+                class="dropdown-header text-secondary text-uppercase bg-light p-3"
+              >
+                System
+              </h4>
+              <div>
                 <div id="heading-2">
                   <h3 class="accordion-heading">
-                    <button class="btn btn-white btn-block text-left collapsed" type="button">
+                    <button
+                      class="btn btn-white btn-block text-left collapsed"
+                      type="button"
+                    >
                       <i class="material-icons collapsed-icon invisible">add</i>
-                      <i class="material-icons expanded-icon invisible">remove</i>
+                      <i class="material-icons expanded-icon invisible"
+                        >remove</i
+                      >
                       Notifications
                     </button>
                   </h3>
@@ -842,9 +1378,14 @@
               <div>
                 <div id="heading-3">
                   <h3 class="accordion-heading">
-                    <button class="btn btn-white btn-block text-left collapsed" type="button">
+                    <button
+                      class="btn btn-white btn-block text-left collapsed"
+                      type="button"
+                    >
                       <i class="material-icons collapsed-icon invisible">add</i>
-                      <i class="material-icons expanded-icon invisible">remove</i>
+                      <i class="material-icons expanded-icon invisible"
+                        >remove</i
+                      >
                       Emails
                     </button>
                   </h3>
@@ -853,13 +1394,25 @@
               <div>
                 <div id="heading-3">
                   <h3 class="accordion-heading">
-                    <button class="btn btn-white btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                    <button
+                      class="btn btn-white btn-block text-left collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse-4"
+                      aria-expanded="false"
+                      aria-controls="collapse-4"
+                    >
                       <i class="material-icons collapsed-icon">add</i>
-                      <i class="material-icons expanded-icon">remove</i> SSH keys
+                      <i class="material-icons expanded-icon">remove</i> SSH
+                      keys
                     </button>
                   </h3>
                 </div>
-                <div id="collapse-4" class="collapse" aria-labelledby="heading-3">
+                <div
+                  id="collapse-4"
+                  class="collapse"
+                  aria-labelledby="heading-3"
+                >
                   <div>
                     <ul class="sidenav">
                       <li><a href="#" data-parent="Parent link"> Step 1</a></li>
@@ -869,25 +1422,43 @@
                 </div>
               </div>
             </div>
-
-            
           </div>
           <div class="col-9 border-left border-light p-3">
             <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+              >
                 <form>
                   <h2 class="mx-3 my-4">Billing information</h2>
                   <div class="form-group col-md-8">
                     <label for="exampleFGStreetAddress">Address line 1</label>
-                    <input type="text" class="form-control" id="exampleFGStreetAddress" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFGStreetAddress"
+                    />
                   </div>
                   <div class="form-group col-md-8">
-                    <label for="exampleFGStreetAddress2">Address line 2 <span class="text-muted">(optional)</span></label>
-                    <input type="text" class="form-control" id="exampleFGStreetAddress2" />
+                    <label for="exampleFGStreetAddress2"
+                      >Address line 2
+                      <span class="text-muted">(optional)</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFGStreetAddress2"
+                    />
                   </div>
                   <div class="form-group col-md-8">
                     <label for="exampleFXCity1">City</label>
-                    <input type="text" class="form-control" id="exampleFXCity1" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFXCity1"
+                    />
                   </div>
                   <div class="form-group col-md-6">
                     <label for="exampleFXState2">State</label>
@@ -947,26 +1518,57 @@
                   </div>
                   <div class="form-group col-md-4">
                     <label for="exampleFXZip2">Zip code</label>
-                    <input type="text" class="form-control" id="exampleFXZip2" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFXZip2"
+                    />
                   </div>
                   <div class="form-group col-md-4">
-                    <button class="btn btn-primary" type="submit">Save changes</button>
+                    <button class="btn btn-primary" type="submit">
+                      Save changes
+                    </button>
                   </div>
                 </form>
               </div>
-              <div class="tab-pane fade" id="v-pills-deployment" role="tabpanel" aria-labelledby="v-pills-deployment-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-deployment"
+                role="tabpanel"
+                aria-labelledby="v-pills-deployment-tab"
+              >
                 <h3>Deployment</h3>
               </div>
-              <div class="tab-pane fade" id="v-pills-billing" role="tabpanel" aria-labelledby="v-pills-billing-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-billing"
+                role="tabpanel"
+                aria-labelledby="v-pills-billing-tab"
+              >
                 <h3>Billing</h3>
               </div>
-              <div class="tab-pane fade" id="v-pills-notification" role="tabpanel" aria-labelledby="v-pills-notification-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-notification"
+                role="tabpanel"
+                aria-labelledby="v-pills-notification-tab"
+              >
                 <h3>Notification</h3>
               </div>
-              <div class="tab-pane fade" id="v-pills-emails" role="tabpanel" aria-labelledby="v-pills-emails-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-emails"
+                role="tabpanel"
+                aria-labelledby="v-pills-emails-tab"
+              >
                 <h3>Emails</h3>
               </div>
-              <div class="tab-pane fade" id="v-pills-sshkeys" role="tabpanel" aria-labelledby="v-pills-sshkeys-tab">
+              <div
+                class="tab-pane fade"
+                id="v-pills-sshkeys"
+                role="tabpanel"
+                aria-labelledby="v-pills-sshkeys-tab"
+              >
                 <h3>SSH keys</h3>
               </div>
             </div>
@@ -986,37 +1588,65 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
+          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
+          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
+        &gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body pt-0 pb-0&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-3 p-0&quot;</span>&gt;</span>
-            
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion navigation&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;AccordionNavigationExample&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header text-secondary text-uppercase bg-light p-3&quot;</span>&gt;</span>General<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-           
+              <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header text-secondary text-uppercase bg-light p-3&quot;</span>
+              &gt;</span>
+                General
+              <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;clearfix&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;heading-0&quot;</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion-heading&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left collapsed&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#collapse-0&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;collapse-0&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left collapsed&quot;</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                      <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+                      <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#collapse-0&quot;</span>
+                      <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+                      <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;collapse-0&quot;</span>
+                    &gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons collapsed-icon invisible&quot;</span>&gt;</span>add<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons expanded-icon invisible&quot;</span>&gt;</span>remove<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons expanded-icon invisible&quot;</span>
+                        &gt;</span>remove&lt;/i
+                      &gt;
                       Profile
                     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;heading-1&quot;</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion-heading&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left active&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#collapse-1&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;collapse-1&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left active&quot;</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                      <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+                      <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#collapse-1&quot;</span>
+                      <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;true&quot;</span>
+                      <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;collapse-1&quot;</span>
+                    &gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons collapsed-icon&quot;</span>&gt;</span>add<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons expanded-icon&quot;</span>&gt;</span>remove<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span> Account <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;collapse-1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collapse show&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;heading-1&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;collapse-1&quot;</span>
+                  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collapse show&quot;</span>
+                  <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;heading-1&quot;</span>
+                &gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav&quot;</span>&gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;success&quot;</span>&gt;</span>
@@ -1026,7 +1656,9 @@
                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;Parent link&quot;</span>&gt;</span>Password <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                       <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;active&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span> Billing <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+                          Billing
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                       <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;Parent link&quot;</span>&gt;</span> Advanced<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -1035,14 +1667,22 @@
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-               <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header text-secondary text-uppercase bg-light p-3&quot;</span>&gt;</span>System<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-               <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                
+              <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header text-secondary text-uppercase bg-light p-3&quot;</span>
+              &gt;</span>
+                System
+              <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;heading-2&quot;</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion-heading&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left collapsed&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left collapsed&quot;</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                    &gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons collapsed-icon invisible&quot;</span>&gt;</span>add<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons expanded-icon invisible&quot;</span>&gt;</span>remove<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons expanded-icon invisible&quot;</span>
+                        &gt;</span>remove&lt;/i
+                      &gt;
                       Notifications
                     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
@@ -1051,9 +1691,14 @@
               <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;heading-3&quot;</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion-heading&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left collapsed&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left collapsed&quot;</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                    &gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons collapsed-icon invisible&quot;</span>&gt;</span>add<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons expanded-icon invisible&quot;</span>&gt;</span>remove<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons expanded-icon invisible&quot;</span>
+                        &gt;</span>remove&lt;/i
+                      &gt;
                       Emails
                     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
@@ -1062,13 +1707,25 @@
               <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;heading-3&quot;</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accordion-heading&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left collapsed&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#collapse-4&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;collapse-4&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-white btn-block text-left collapsed&quot;</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                      <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+                      <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#collapse-4&quot;</span>
+                      <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+                      <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;collapse-4&quot;</span>
+                    &gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons collapsed-icon&quot;</span>&gt;</span>add<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons expanded-icon&quot;</span>&gt;</span>remove<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> SSH keys
+                      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons expanded-icon&quot;</span>&gt;</span>remove<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> SSH
+                      keys
                     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;collapse-4&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collapse&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;heading-3&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;collapse-4&quot;</span>
+                  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+                  <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;heading-3&quot;</span>
+                &gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav&quot;</span>&gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;Parent link&quot;</span>&gt;</span> Step 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -1078,25 +1735,43 @@
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-            
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-9 border-left border-light p-3&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-tabContent&quot;</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade show active&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-profile&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-profile-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade show active&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-profile&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-profile-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mx-3 my-4&quot;</span>&gt;</span>Billing information<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group col-md-8&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFGStreetAddress&quot;</span>&gt;</span>Address line 1<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFGStreetAddress&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
+                      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFGStreetAddress&quot;</span>
+                    /&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group col-md-8&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFGStreetAddress2&quot;</span>&gt;</span>Address line 2 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-muted&quot;</span>&gt;</span>(optional)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFGStreetAddress2&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFGStreetAddress2&quot;</span>
+                      &gt;</span>Address line 2
+                      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-muted&quot;</span>&gt;</span>(optional)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&lt;/label
+                    &gt;
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
+                      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFGStreetAddress2&quot;</span>
+                    /&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group col-md-8&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFXCity1&quot;</span>&gt;</span>City<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFXCity1&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
+                      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFXCity1&quot;</span>
+                    /&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group col-md-6&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFXState2&quot;</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
@@ -1156,26 +1831,57 @@
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group col-md-4&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFXZip2&quot;</span>&gt;</span>Zip code<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFXZip2&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+                      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
+                      <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFXZip2&quot;</span>
+                    /&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group col-md-4&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>
+                      Save changes
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-deployment&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-deployment-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-deployment&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-deployment-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Deployment<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-billing&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-billing-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-billing&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-billing-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Billing<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-notification&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-notification-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-notification&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-notification-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Notification<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-emails&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-emails-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-emails&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-emails-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Emails<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-sshkeys&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-sshkeys-tab&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+                <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v-pills-sshkeys&quot;</span>
+                <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+                <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;v-pills-sshkeys-tab&quot;</span>
+              &gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>SSH keys<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1187,9 +1893,11 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-</div>
+
+  </div>
 
   <div class="preview pv-only">
+    
   <div class="">
     <div class="d-flex mb-1">
         <h2>Tab navigation</h2>
@@ -1220,61 +1928,164 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title&quot;&gt;Settings&lt;/h1&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;close&quot;
+          data-dismiss=&quot;modal&quot;
+          aria-label=&quot;Close&quot;
+        &gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-body&quot;&gt;
         &lt;!--Justified  tabs--&gt;
-        &lt;ul class=&quot;nav nav-tabs nav-fill nav-tabs-light&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+        &lt;ul
+          class=&quot;nav nav-tabs nav-fill nav-tabs-light&quot;
+          id=&quot;myTab&quot;
+          role=&quot;tablist&quot;
+        &gt;
           &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-            &lt;a class=&quot;nav-link active&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot; role=&quot;tab&quot; aria-controls=&quot;profile&quot; aria-selected=&quot;true&quot;&gt;Profile&lt;/a&gt;
+            &lt;a
+              class=&quot;nav-link active&quot;
+              id=&quot;profile-tab&quot;
+              data-toggle=&quot;tab&quot;
+              href=&quot;#profile&quot;
+              role=&quot;tab&quot;
+              aria-controls=&quot;profile&quot;
+              aria-selected=&quot;true&quot;
+              &gt;Profile&lt;/a
+            &gt;
           &lt;/li&gt;
           &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; id=&quot;deployments-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#deployments&quot; role=&quot;tab&quot; aria-controls=&quot;deployments&quot; aria-selected=&quot;false&quot;&gt;Deployments&lt;/a&gt;
+            &lt;a
+              class=&quot;nav-link&quot;
+              id=&quot;deployments-tab&quot;
+              data-toggle=&quot;tab&quot;
+              href=&quot;#deployments&quot;
+              role=&quot;tab&quot;
+              aria-controls=&quot;deployments&quot;
+              aria-selected=&quot;false&quot;
+              &gt;Deployments&lt;/a
+            &gt;
           &lt;/li&gt;
           &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; id=&quot;billing-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#billing&quot; role=&quot;tab&quot; aria-controls=&quot;billing&quot; aria-selected=&quot;false&quot;&gt;Billing&lt;/a&gt;
+            &lt;a
+              class=&quot;nav-link&quot;
+              id=&quot;billing-tab&quot;
+              data-toggle=&quot;tab&quot;
+              href=&quot;#billing&quot;
+              role=&quot;tab&quot;
+              aria-controls=&quot;billing&quot;
+              aria-selected=&quot;false&quot;
+              &gt;Billing&lt;/a
+            &gt;
           &lt;/li&gt;
           &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; id=&quot;notifications-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#notifications&quot; role=&quot;tab&quot; aria-controls=&quot;notifications&quot; aria-selected=&quot;false&quot;&gt;Notifications&lt;/a&gt;
+            &lt;a
+              class=&quot;nav-link&quot;
+              id=&quot;notifications-tab&quot;
+              data-toggle=&quot;tab&quot;
+              href=&quot;#notifications&quot;
+              role=&quot;tab&quot;
+              aria-controls=&quot;notifications&quot;
+              aria-selected=&quot;false&quot;
+              &gt;Notifications&lt;/a
+            &gt;
           &lt;/li&gt;
           &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; id=&quot;sshkeys-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#sshkeys&quot; role=&quot;tab&quot; aria-controls=&quot;sshkeys&quot; aria-selected=&quot;false&quot;&gt;SSH Keys&lt;/a&gt;
+            &lt;a
+              class=&quot;nav-link&quot;
+              id=&quot;sshkeys-tab&quot;
+              data-toggle=&quot;tab&quot;
+              href=&quot;#sshkeys&quot;
+              role=&quot;tab&quot;
+              aria-controls=&quot;sshkeys&quot;
+              aria-selected=&quot;false&quot;
+              &gt;SSH Keys&lt;/a
+            &gt;
           &lt;/li&gt;
         &lt;/ul&gt;
-        &lt;div class=&quot;border border-light border-top-0 p-4 tab-content&quot; id=&quot;myTabContent&quot;&gt;
-          &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot;&gt;
+        &lt;div
+          class=&quot;border border-light border-top-0 p-4 tab-content&quot;
+          id=&quot;myTabContent&quot;
+        &gt;
+          &lt;div
+            class=&quot;tab-pane fade show active&quot;
+            id=&quot;profile&quot;
+            role=&quot;tabpanel&quot;
+            aria-labelledby=&quot;profile-tab&quot;
+          &gt;
             &lt;h3 class=&quot;mb-3&quot;&gt;Receive email notifications when&lt;/h3&gt;
             &lt;div class=&quot;form-group&quot;&gt;
               &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck1&quot; checked=&quot;&quot; /&gt;
-                &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck1&quot;&gt;My case is transferred to another examining attorney&lt;/label&gt;
+                &lt;input
+                  type=&quot;checkbox&quot;
+                  class=&quot;custom-control-input&quot;
+                  id=&quot;customCheck1&quot;
+                  checked=&quot;&quot;
+                /&gt;
+                &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck1&quot;
+                  &gt;My case is transferred to another examining attorney&lt;/label
+                &gt;
               &lt;/div&gt;
             &lt;/div&gt;
             &lt;div class=&quot;form-group&quot;&gt;
               &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck2&quot; checked=&quot;&quot; /&gt;
-                &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck2&quot;&gt;New classes added&lt;/label&gt;
+                &lt;input
+                  type=&quot;checkbox&quot;
+                  class=&quot;custom-control-input&quot;
+                  id=&quot;customCheck2&quot;
+                  checked=&quot;&quot;
+                /&gt;
+                &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck2&quot;
+                  &gt;New classes added&lt;/label
+                &gt;
               &lt;/div&gt;
             &lt;/div&gt;
             &lt;div class=&quot;form-group&quot;&gt;
               &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck3&quot; checked=&quot;&quot; /&gt;
-                &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck3&quot;&gt;Classes originally paid for are deleted&lt;/label&gt;
+                &lt;input
+                  type=&quot;checkbox&quot;
+                  class=&quot;custom-control-input&quot;
+                  id=&quot;customCheck3&quot;
+                  checked=&quot;&quot;
+                /&gt;
+                &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck3&quot;
+                  &gt;Classes originally paid for are deleted&lt;/label
+                &gt;
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;tab-pane fade&quot; id=&quot;deployments&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;deployments-tab&quot;&gt;
+          &lt;div
+            class=&quot;tab-pane fade&quot;
+            id=&quot;deployments&quot;
+            role=&quot;tabpanel&quot;
+            aria-labelledby=&quot;deployments-tab&quot;
+          &gt;
             &lt;h3 class=&quot;mb-3&quot;&gt;Deployments&lt;/h3&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;tab-pane fade&quot; id=&quot;billing&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;contact-tab&quot;&gt;
+          &lt;div
+            class=&quot;tab-pane fade&quot;
+            id=&quot;billing&quot;
+            role=&quot;tabpanel&quot;
+            aria-labelledby=&quot;contact-tab&quot;
+          &gt;
             &lt;h3 class=&quot;mb-3&quot;&gt;Billing&lt;/h3&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;tab-pane fade&quot; id=&quot;notifications&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;contact-tab&quot;&gt;
+          &lt;div
+            class=&quot;tab-pane fade&quot;
+            id=&quot;notifications&quot;
+            role=&quot;tabpanel&quot;
+            aria-labelledby=&quot;contact-tab&quot;
+          &gt;
             &lt;h3 class=&quot;mb-3&quot;&gt;Notifications&lt;/h3&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;tab-pane fade&quot; id=&quot;sshkeys&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;contact-tab&quot;&gt;
+          &lt;div
+            class=&quot;tab-pane fade&quot;
+            id=&quot;sshkeys&quot;
+            role=&quot;tabpanel&quot;
+            aria-labelledby=&quot;contact-tab&quot;
+          &gt;
             &lt;h3 class=&quot;mb-3&quot;&gt;SSH Keys&lt;/h3&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1299,61 +2110,164 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Settings</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
         <!--Justified  tabs-->
-        <ul class="nav nav-tabs nav-fill nav-tabs-light" id="myTab" role="tablist">
+        <ul
+          class="nav nav-tabs nav-fill nav-tabs-light"
+          id="myTab"
+          role="tablist"
+        >
           <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
+            <a
+              class="nav-link active"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#profile"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="true"
+              >Profile</a
+            >
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="deployments-tab" data-toggle="tab" href="#deployments" role="tab" aria-controls="deployments" aria-selected="false">Deployments</a>
+            <a
+              class="nav-link"
+              id="deployments-tab"
+              data-toggle="tab"
+              href="#deployments"
+              role="tab"
+              aria-controls="deployments"
+              aria-selected="false"
+              >Deployments</a
+            >
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="billing-tab" data-toggle="tab" href="#billing" role="tab" aria-controls="billing" aria-selected="false">Billing</a>
+            <a
+              class="nav-link"
+              id="billing-tab"
+              data-toggle="tab"
+              href="#billing"
+              role="tab"
+              aria-controls="billing"
+              aria-selected="false"
+              >Billing</a
+            >
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="notifications-tab" data-toggle="tab" href="#notifications" role="tab" aria-controls="notifications" aria-selected="false">Notifications</a>
+            <a
+              class="nav-link"
+              id="notifications-tab"
+              data-toggle="tab"
+              href="#notifications"
+              role="tab"
+              aria-controls="notifications"
+              aria-selected="false"
+              >Notifications</a
+            >
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="sshkeys-tab" data-toggle="tab" href="#sshkeys" role="tab" aria-controls="sshkeys" aria-selected="false">SSH Keys</a>
+            <a
+              class="nav-link"
+              id="sshkeys-tab"
+              data-toggle="tab"
+              href="#sshkeys"
+              role="tab"
+              aria-controls="sshkeys"
+              aria-selected="false"
+              >SSH Keys</a
+            >
           </li>
         </ul>
-        <div class="border border-light border-top-0 p-4 tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div
+          class="border border-light border-top-0 p-4 tab-content"
+          id="myTabContent"
+        >
+          <div
+            class="tab-pane fade show active"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
             <h3 class="mb-3">Receive email notifications when</h3>
             <div class="form-group">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1" checked="" />
-                <label class="custom-control-label" for="customCheck1">My case is transferred to another examining attorney</label>
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customCheck1"
+                  checked=""
+                />
+                <label class="custom-control-label" for="customCheck1"
+                  >My case is transferred to another examining attorney</label
+                >
               </div>
             </div>
             <div class="form-group">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck2" checked="" />
-                <label class="custom-control-label" for="customCheck2">New classes added</label>
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customCheck2"
+                  checked=""
+                />
+                <label class="custom-control-label" for="customCheck2"
+                  >New classes added</label
+                >
               </div>
             </div>
             <div class="form-group">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck3" checked="" />
-                <label class="custom-control-label" for="customCheck3">Classes originally paid for are deleted</label>
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customCheck3"
+                  checked=""
+                />
+                <label class="custom-control-label" for="customCheck3"
+                  >Classes originally paid for are deleted</label
+                >
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="deployments" role="tabpanel" aria-labelledby="deployments-tab">
+          <div
+            class="tab-pane fade"
+            id="deployments"
+            role="tabpanel"
+            aria-labelledby="deployments-tab"
+          >
             <h3 class="mb-3">Deployments</h3>
           </div>
-          <div class="tab-pane fade" id="billing" role="tabpanel" aria-labelledby="contact-tab">
+          <div
+            class="tab-pane fade"
+            id="billing"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
             <h3 class="mb-3">Billing</h3>
           </div>
-          <div class="tab-pane fade" id="notifications" role="tabpanel" aria-labelledby="contact-tab">
+          <div
+            class="tab-pane fade"
+            id="notifications"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
             <h3 class="mb-3">Notifications</h3>
           </div>
-          <div class="tab-pane fade" id="sshkeys" role="tabpanel" aria-labelledby="contact-tab">
+          <div
+            class="tab-pane fade"
+            id="sshkeys"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
             <h3 class="mb-3">SSH Keys</h3>
           </div>
         </div>
@@ -1371,61 +2285,164 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
+          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
+          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
+        &gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
         <span class="hljs-comment">&lt;!--Justified  tabs--&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav nav-tabs nav-fill nav-tabs-light&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myTab&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav nav-tabs nav-fill nav-tabs-light&quot;</span>
+          <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myTab&quot;</span>
+          <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span>
+        &gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;presentation&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link active&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;profile-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#profile&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;profile&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link active&quot;</span>
+              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;profile-tab&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#profile&quot;</span>
+              <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;profile&quot;</span>
+              <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span>
+              &gt;</span>Profile&lt;/a
+            &gt;
           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;presentation&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;deployments-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#deployments&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;deployments&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>Deployments<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span>
+              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;deployments-tab&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#deployments&quot;</span>
+              <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;deployments&quot;</span>
+              <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>
+              &gt;</span>Deployments&lt;/a
+            &gt;
           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;presentation&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;billing-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#billing&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;billing&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>Billing<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span>
+              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;billing-tab&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#billing&quot;</span>
+              <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;billing&quot;</span>
+              <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>
+              &gt;</span>Billing&lt;/a
+            &gt;
           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;presentation&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;notifications-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#notifications&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;notifications&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>Notifications<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span>
+              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;notifications-tab&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#notifications&quot;</span>
+              <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;notifications&quot;</span>
+              <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>
+              &gt;</span>Notifications&lt;/a
+            &gt;
           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;presentation&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;sshkeys-tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#sshkeys&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;sshkeys&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>SSH Keys<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span>
+              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;sshkeys-tab&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#sshkeys&quot;</span>
+              <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+              <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;sshkeys&quot;</span>
+              <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>
+              &gt;</span>SSH Keys&lt;/a
+            &gt;
           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;border border-light border-top-0 p-4 tab-content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myTabContent&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade show active&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;profile&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;profile-tab&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;border border-light border-top-0 p-4 tab-content&quot;</span>
+          <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myTabContent&quot;</span>
+        &gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade show active&quot;</span>
+            <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;profile&quot;</span>
+            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+            <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;profile-tab&quot;</span>
+          &gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>Receive email notifications when<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-checkbox&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck1&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck1&quot;</span>&gt;</span>My case is transferred to another examining attorney<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
+                  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span>
+                  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck1&quot;</span>
+                  <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>
+                /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck1&quot;</span>
+                  &gt;</span>My case is transferred to another examining attorney&lt;/label
+                &gt;
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-checkbox&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck2&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck2&quot;</span>&gt;</span>New classes added<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
+                  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span>
+                  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck2&quot;</span>
+                  <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>
+                /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck2&quot;</span>
+                  &gt;</span>New classes added&lt;/label
+                &gt;
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control custom-checkbox&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck3&quot;</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck3&quot;</span>&gt;</span>Classes originally paid for are deleted<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+                  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
+                  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-input&quot;</span>
+                  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customCheck3&quot;</span>
+                  <span class="hljs-attr">checked</span>=<span class="hljs-string">&quot;&quot;</span>
+                /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;custom-control-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customCheck3&quot;</span>
+                  &gt;</span>Classes originally paid for are deleted&lt;/label
+                &gt;
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;deployments&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;deployments-tab&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+            <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;deployments&quot;</span>
+            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+            <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;deployments-tab&quot;</span>
+          &gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>Deployments<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;billing&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;contact-tab&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+            <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;billing&quot;</span>
+            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+            <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;contact-tab&quot;</span>
+          &gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>Billing<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;notifications&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;contact-tab&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+            <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;notifications&quot;</span>
+            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+            <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;contact-tab&quot;</span>
+          &gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>Notifications<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;sshkeys&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;contact-tab&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane fade&quot;</span>
+            <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;sshkeys&quot;</span>
+            <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span>
+            <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;contact-tab&quot;</span>
+          &gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>SSH Keys<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1435,7 +2452,8 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-</div>
+
+  </div>
 </section>
 
 <section class="pv-content">
@@ -1444,11 +2462,15 @@
 
     <p>
       There should be a
-      <code class="highlighter-rouge">Save changes</code> button on every panel with savable changes. The buttons should be disabled if there have not yet been any changes. If the user attempts to navigate away with unsaved changes, the application or browser should ask them to confirm.
+      <code class="highlighter-rouge">Save changes</code> button on every panel
+      with savable changes. The buttons should be disabled if there have not yet
+      been any changes. If the user attempts to navigate away with unsaved
+      changes, the application or browser should ask them to confirm.
     </p>
   </div>
 
   <div class="preview pv-only">
+    
   <div class="">
     <div class="d-flex mb-1">
       <div class=" ml-auto">
@@ -1478,7 +2500,12 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title&quot;&gt;Abandon changes?&lt;/h1&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;close&quot;
+          data-dismiss=&quot;modal&quot;
+          aria-label=&quot;Close&quot;
+        &gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
@@ -1486,8 +2513,16 @@
         &lt;p&gt;You have unsaved changes. Your changes will be lost.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Leave this page&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Stay on this page&lt;/button&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;btn btn-sm btn-secondary&quot;
+          data-dismiss=&quot;modal&quot;
+        &gt;
+          Leave this page
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;
+          Stay on this page
+        &lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -1509,7 +2544,12 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Abandon changes?</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -1517,8 +2557,16 @@
         <p>You have unsaved changes. Your changes will be lost.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Leave this page</button>
-        <button type="button" class="btn btn-sm btn-primary">Stay on this page</button>
+        <button
+          type="button"
+          class="btn btn-sm btn-secondary"
+          data-dismiss="modal"
+        >
+          Leave this page
+        </button>
+        <button type="button" class="btn btn-sm btn-primary">
+          Stay on this page
+        </button>
       </div>
     </div>
   </div>
@@ -1533,7 +2581,12 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Abandon changes?<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
+          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
+          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
+        &gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1541,16 +2594,26 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You have unsaved changes. Your changes will be lost.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Leave this page<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>Stay on this page<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
+        &gt;</span>
+          Leave this page
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>
+          Stay on this page
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-</div>
+
+  </div>
   <div class="preview pv-only">
+    
   <div class="">
     <div class="d-flex mb-1">
       <div class=" ml-auto">
@@ -1580,7 +2643,12 @@
     &lt;div class=&quot;modal-content&quot;&gt;
       &lt;div class=&quot;modal-header&quot;&gt;
         &lt;h1 class=&quot;modal-title&quot;&gt;Abandon changes?&lt;/h1&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;close&quot;
+          data-dismiss=&quot;modal&quot;
+          aria-label=&quot;Close&quot;
+        &gt;
           &lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;
@@ -1588,8 +2656,16 @@
         &lt;p&gt;You have unsaved changes. Your changes will be lost.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close settings&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Keep settings open&lt;/button&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;btn btn-sm btn-secondary&quot;
+          data-dismiss=&quot;modal&quot;
+        &gt;
+          Close settings
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;
+          Keep settings open
+        &lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -1611,7 +2687,12 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Abandon changes?</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -1619,8 +2700,16 @@
         <p>You have unsaved changes. Your changes will be lost.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close settings</button>
-        <button type="button" class="btn btn-sm btn-primary">Keep settings open</button>
+        <button
+          type="button"
+          class="btn btn-sm btn-secondary"
+          data-dismiss="modal"
+        >
+          Close settings
+        </button>
+        <button type="button" class="btn btn-sm btn-primary">
+          Keep settings open
+        </button>
       </div>
     </div>
   </div>
@@ -1635,7 +2724,12 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span>&gt;</span>Abandon changes?<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;close&quot;</span>
+          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
+          <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>
+        &gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1643,15 +2737,24 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You have unsaved changes. Your changes will be lost.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>Close settings<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>Keep settings open<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
+        &gt;</span>
+          Close settings
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>&gt;</span>
+          Keep settings open
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
-</div>
+
+  </div>
 </section>
 
     </main>

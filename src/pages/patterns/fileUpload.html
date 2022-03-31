@@ -4,7 +4,203 @@ class: 'page-fileupload', title: 'File upload' } %} {% block content %}
 <section class="pv-content">
   <div class="pattern">
     <h1>{{page.title}}</h1>
+    <h2 id="single-file-upload">Single file upload</h2>
+    <p>
+      Single file upload, where the file is uploaded when the form is submitted.
+    </p>
+  </div>
+
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'view code for single file upload', code:
+    singleFileUpload }, '')}}
   </div>
 </section>
 
-{% endblock %}
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="multi-file-upload">Multiple file upload</h2>
+    <p>
+      This shows how to facilitate uploading multiple files to the same field
+      (e.g., an attachments field), where the files are uploaded as soon as
+      they’re selected rather than when the form is submitted.
+    </p>
+  </div>
+
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'view code for multi file upload', code:
+    multiFileUpload }, '')}}
+  </div>
+
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'view code for multi file upload', code:
+    dragndropFileUpload }, 'Drag and drop file upload')}}
+  </div>
+</section>
+
+{% endblock %} {% block scripts %}
+
+<script src="{{relativeRoot}}assets/vendor/jquery/jquery.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/popper/popper.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/prism.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="{{relativeRoot}}assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="{{relativeRoot}}assets/js/main.js"></script>
+<script src="{{relativeRoot}}assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+<script src="{{relativeRoot}}assets/js/scripts.js"></script>
+
+{% endblock %} {% set singleFileUpload %}
+<!--Single file upload -->
+<form>
+  <div class="custom-file">
+    <input type="file" class="form-control custom-file-input" id="customFile" />
+    <label class="custom-file-label" for="customFile">Select file</label>
+  </div>
+</form>
+{% endset%} {% set singleFileUpload1 %}
+<!--Single file upload -->
+<form>
+  <div class="input-group">
+    <div class="custom-file">
+      <input
+        type="file"
+        class="form-control custom-file-input"
+        id="inputGroupFile"
+      />
+      <label
+        class="custom-file-label"
+        for="inputGroupFile"
+        aria-describedby="inputGroupFileAddon"
+        >Select file</label
+      >
+    </div>
+    <div class="input-group-append">
+      <span class="input-group-text rounded-0" id="inputGroupFileAddon"
+        >Upload</span
+      >
+    </div>
+  </div>
+</form>
+{% endset%} {% set multiFileUpload %}
+<!--Multi file upload -->
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlFile">Example multiple files input</label>
+    <input
+      type="file"
+      class="form-control-file"
+      id="exampleFormControlFile"
+      multiple=""
+    />
+  </div>
+</form>
+{% endset%} {% set dragndropFileUpload %}
+<!--Drag and drop file upload -->
+<form>
+  <div class="multiple-upload-primary">
+    <input type="file" class="input-file" multiple="" />
+    <div class="input-upload-area" role="button">
+      <i class="material-icons md-3x">cloud_upload</i>
+      <h3>Drag and drop files here</h3>
+      <p>or</p>
+      <div class="btn btn-upload">Browse files</div>
+    </div>
+  </div>
+  <p class="px-2 mt-5"><strong>Total documents uploaded: xxx</strong></p>
+  <table class="table table-outline mt-2">
+    <tbody>
+      <tr>
+        <td>
+          <i class="material-icons align-bottom">description</i> File name
+          <span class="text-muted">(0KB)</span>
+          <div class="small text-danger ml-4">Error uploading file.</div>
+        </td>
+        <td style="width: 105px">
+          <div class="input-group">
+            <button
+              class="btn btn-icon-only btn-sm"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Preview <i class="material-icons align-bottom">more_vert</i>
+              <span class="sr-only">More</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="">
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Remove</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Download</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="material-icons align-bottom">description</i> File name
+          <span class="text-muted">(5KB)</span>
+        </td>
+        <td>
+          <div class="input-group">
+            <button
+              class="btn btn-icon-only btn-sm"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Preview <i class="material-icons align-bottom">more_vert</i>
+              <span class="sr-only">More</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="">
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Remove</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Download</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="material-icons align-bottom">description</i> File name
+          <span class="text-muted">(3KB)</span>
+
+          <div class="progress w-25 ml-4" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 20%"
+              aria-valuenow="10"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </td>
+        <td>
+          <div class="input-group">
+            <button
+              class="btn btn-icon-only btn-sm"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Preview <i class="material-icons align-bottom">more_vert</i>
+              <span class="sr-only">More</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="">
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Remove</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Download</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+{% endset%}

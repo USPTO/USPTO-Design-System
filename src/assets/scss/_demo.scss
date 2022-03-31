@@ -142,6 +142,14 @@ main {
     }
   }
 }
+
+@media(max-width: 576px) {
+  #bottomButtons button {
+      width: 100%;
+  margin-bottom: .5rem;
+  }
+}
+
 .dl-horizontal {
   dd:before,
   dd:after {
@@ -170,6 +178,13 @@ main {
   }
 }
 
+.table-config-column {
+  width: 32px;
+  text-align: center;
+}
+.table-config-column:hover {
+  background-color: #f0f0f0;
+}
 // .collapsing {
 //   transition: .3s transform linear;
 // }
@@ -270,4 +285,18 @@ main {
   .main-container {
     flex-direction: column !important;
   }
+}
+
+
+/* multiple file upload */
+.input-upload-area:hover, .dragover {background: #f0f0f0; 
+  -moz-transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  -o-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition:transform 0.3s ease-in-out;
+  -ms-transition:transform 0.3s ease-in-out;
 }
