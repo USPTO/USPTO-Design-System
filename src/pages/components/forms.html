@@ -435,11 +435,12 @@ title: 'Forms' } %} {% block content %}
       class="form-control"
       id="exampleIFInputEmail"
       aria-describedby="emailHelp"
+      required
     />
   </div>
   <div class="form-group">
     <label for="exampleIFInputPassword">Password</label>
-    <input type="password" class="form-control" id="exampleIFInputPassword" />
+    <input type="password" class="form-control" id="exampleIFInputPassword" required />
   </div>
   <button class="btn btn-primary" type="submit">Sign in</button>
 </form>
@@ -452,12 +453,12 @@ title: 'Forms' } %} {% block content %}
   </p>
   <div class="form-group">
     <label for="exampleHTFullName">Full name</label>
-    <input type="text" class="form-control" id="exampleHTFullName" />
+    <input type="text" class="form-control" id="exampleHTFullName" required />
   </div>
   <div class="form-group">
     <label for="exampleHTInputEmail">Email</label>
     <p class="form-hint">This is how people will contact you.</p>
-    <input type="email" class="form-control" id="exampleHTInputEmail" />
+    <input type="email" class="form-control" id="exampleHTInputEmail" required />
   </div>
   <div class="form-group">
     <label for="examplePopover">Popover</label>
@@ -472,6 +473,7 @@ title: 'Forms' } %} {% block content %}
       data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>"
       data-original-title=""
       title=""
+      required
     />
   </div>
 </form>
@@ -482,16 +484,16 @@ title: 'Forms' } %} {% block content %}
   <p class="form-text text-muted">Some other help text and information.</p>
   <div class="form-group">
     <label for="exampleFGInputEmail">Email</label>
-    <input type="email" class="form-control" id="exampleFGInputEmail" />
+    <input type="email" class="form-control" id="exampleFGInputEmail" required />
   </div>
   <div class="form-group">
     <label for="exampleFGFullName">Full name</label>
-    <input type="text" class="form-control" id="exampleFGFullName" />
+    <input type="text" class="form-control" id="exampleFGFullName" required />
   </div>
   <h3 class="mt-4">Shipping details</h3>
   <div class="form-group">
     <label for="exampleFGStreetAddress">Address line 1</label>
-    <input type="text" class="form-control" id="exampleFGStreetAddress" />
+    <input type="text" class="form-control" id="exampleFGStreetAddress" required />
   </div>
   <div class="form-group">
     <label for="exampleFGStreetAddress2"
@@ -509,6 +511,7 @@ title: 'Forms' } %} {% block content %}
       class="form-control is-invalid no-icon"
       id="exampleCLFormControlTextarea1"
       rows="3"
+      required
     >
 This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea
     >
@@ -523,6 +526,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
       class="form-control"
       id="exampleCLFormControlTextarea2"
       rows="3"
+      required
     ></textarea>
   </div>
 
@@ -534,6 +538,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
         class="form-control"
         id="exampleCLMaxValue"
         maxlength="25"
+        required
       />
     </div>
   </div>
@@ -544,7 +549,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   <div class="form-group row">
     <div class="col-md-6">
       <label for="exampleFXInputEmail1">Email</label>
-      <input type="email" class="form-control" id="exampleFXInputEmail1" />
+      <input type="email" class="form-control" id="exampleFXInputEmail1" required />
       <small id="FXemailHelp1" class="form-text text-muted"
         >Your email will be used to log in.</small
       >
@@ -553,19 +558,19 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   <div class="form-group row">
     <div class="col-md-6">
       <label for="exampleFXFullName1">Full name</label>
-      <input type="text" class="form-control" id="exampleFXFullName1" />
+      <input type="text" class="form-control" id="exampleFXFullName1" required />
     </div>
   </div>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXCity1">City</label>
+      <label for="exampleFXCity1">City</label> required
       <input type="text" class="form-control" id="exampleFXCity1" />
     </div>
   </div>
   <div class="form-group row">
     <div class="col-md-4">
       <label for="exampleFXState1">State</label>
-      <select class="form-control" id="exampleFXState1">
+      <select class="form-control" id="exampleFXState1" required>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -631,6 +636,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
           id="exampleFXRadios1"
           value="option1"
           checked
+          required
         />
         <label class="form-check-label" for="exampleFXRadios1"> UPS </label>
       </div>
@@ -680,6 +686,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
         class="form-control is-invalid no-icon"
         id="exampleFXInputEmail2"
         value="john.smith@gmail.com"
+        required
       />
       <span class="invalid-feedback">Email must end with uspto.gov.</span>
     </div>
@@ -695,6 +702,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
         class="form-control is-invalid no-icon"
         id="exampleFXEmployeeID2"
         value="238942a"
+        required
       />
       <span class="invalid-feedback">Employee ID must be numeric.</span>
     </div>
@@ -702,7 +710,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   <div class="form-group row">
     <div class="col-md-2">
       <label for="exampleFXTitle1">Title</label>
-      <select class="form-control" id="exampleFXTitle1">
+      <select class="form-control" id="exampleFXTitle1" required>
         <option value="Mr.">Mr.</option>
         <option value="Mrs.">Mrs.</option>
         <option value="Miss">Miss</option>
@@ -718,6 +726,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
         class="form-control"
         id="exampleFXInputFirstName2"
         value="John"
+        required
       />
     </div>
   </div>
@@ -743,6 +752,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
         class="form-control is-invalid no-icon"
         id="exampleFXInputLastName2"
         value=""
+        required
       />
       <span class="invalid-feedback">This field is required.</span>
     </div>
@@ -755,6 +765,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
         class="form-control"
         id="exampleFXInputTelephone2"
         value="John"
+        required
       />
     </div>
   </div>
@@ -762,7 +773,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   <div class="form-group row">
     <div class="col-md-6">
       <label for="exampleFXInputCountry2">Country</label>
-      <select class="form-control" id="exampleFXInputCountry2">
+      <select class="form-control" id="exampleFXInputCountry2" required>
         <option value="AF">Afghanistan</option>
         <option value="AX">Åland Islands</option>
         <option value="AL">Albania</option>
@@ -1033,14 +1044,14 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   <div class="form-group row">
     <div class="col-md-6">
       <label for="exampleFXCity2">City</label>
-      <input type="text" class="form-control" id="exampleFXCity2" />
+      <input type="text" class="form-control" id="exampleFXCity2" required />
     </div>
   </div>
 
   <div class="form-group row">
     <div class="col-md-4">
       <label for="exampleFXState2">State</label>
-      <select class="form-control" id="exampleFXState2">
+      <select class="form-control" id="exampleFXState2" required>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -1096,7 +1107,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
     </div>
     <div class="col-md-2">
       <label for="exampleFXZip2">Zip code</label>
-      <input type="text" class="form-control" id="exampleFXZip2" />
+      <input type="text" class="form-control" id="exampleFXZip2" required />
     </div>
   </div>
   <div class="form-group row">
