@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-dialogs">
+<html lang="en" class="page-dialogs" >
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
@@ -22,7 +22,7 @@
 <!--Following are only for code preview -->
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
-  <body class="parent-container">
+  <body class="parent-container" >
 <a class="skipnav" href="#main-content">
     Skip to main content
   </a>
@@ -357,6 +357,9 @@
               <a href="#labels">Labels</a>
             </li>
             <li>
+              <a href="#required-fields">Required fields</a>
+            </li>
+            <li>
               <a href="#optional-fields">Optional fields</a>
             </li>
             <li>
@@ -663,7 +666,7 @@
       &lt;div class=&quot;modal-footer&quot;&gt;
         &lt;button
           type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
+          class=&quot;btn btn-sm btn-outline-primary&quot;
           data-dismiss=&quot;modal&quot;
         &gt;
           Close
@@ -719,7 +722,7 @@
       <div class="modal-footer">
         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
           data-dismiss="modal"
         >
           Close
@@ -768,7 +771,7 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
           <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-outline-primary&quot;</span>
           <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
         &gt;</span>
           Close
@@ -1039,16 +1042,16 @@
         &lt;/form&gt;
       &lt;/div&gt;
       &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button
+         &lt;button
           type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
+          class=&quot;btn btn-sm btn-outline-primary mr-auto&quot;
           data-dismiss=&quot;modal&quot;
         &gt;
-          Find
+          Close
         &lt;/button&gt;
         &lt;button
           type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
+          class=&quot;btn btn-sm btn-outline-primary&quot;
           data-dismiss=&quot;modal&quot;
           disabled=&quot;&quot;
         &gt;
@@ -1056,17 +1059,18 @@
         &lt;/button&gt;
         &lt;button
           type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
+          class=&quot;btn btn-sm btn-outline-primary&quot;
           data-dismiss=&quot;modal&quot;
         &gt;
           Replace all
         &lt;/button&gt;
+       
         &lt;button
           type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
+          class=&quot;btn btn-sm btn-primary&quot;
           data-dismiss=&quot;modal&quot;
         &gt;
-          Done
+          Find
         &lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1143,16 +1147,16 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button
+         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary mr-auto"
           data-dismiss="modal"
         >
-          Find
+          Close
         </button>
         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
           data-dismiss="modal"
           disabled=""
         >
@@ -1160,17 +1164,18 @@
         </button>
         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
           data-dismiss="modal"
         >
           Replace all
         </button>
+       
         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-primary"
           data-dismiss="modal"
         >
-          Done
+          Find
         </button>
       </div>
     </div>
@@ -1240,16 +1245,16 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
           <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-outline-primary mr-auto&quot;</span>
           <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
         &gt;</span>
-          Find
+          Close
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
           <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-outline-primary&quot;</span>
           <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
           <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>
         &gt;</span>
@@ -1257,17 +1262,18 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
           <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-outline-primary&quot;</span>
           <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
         &gt;</span>
           Replace all
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+       
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
           <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-primary&quot;</span>
           <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
         &gt;</span>
-          Done
+          Find
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1323,7 +1329,7 @@
       &lt;div class=&quot;modal-footer&quot;&gt;
         &lt;button
           type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
+          class=&quot;btn btn-sm btn-outline-primary&quot;
           data-dismiss=&quot;modal&quot;
         &gt;
           Back
@@ -1367,7 +1373,7 @@
       <div class="modal-footer">
         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
           data-dismiss="modal"
         >
           Back
@@ -1404,7 +1410,7 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
           <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-outline-primary&quot;</span>
           <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
         &gt;</span>
           Back
@@ -1475,7 +1481,7 @@
       &lt;div class=&quot;modal-footer&quot;&gt;
         &lt;button
           type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
+          class=&quot;btn btn-sm btn-outline-primary&quot;
           data-dismiss=&quot;modal&quot;
         &gt;
           Cancel
@@ -1517,7 +1523,7 @@
       <div class="modal-footer">
         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
           data-dismiss="modal"
         >
           Cancel
@@ -1552,7 +1558,7 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
           <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-outline-primary&quot;</span>
           <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
         &gt;</span>
           Cancel
@@ -1612,7 +1618,7 @@
       &lt;div class=&quot;modal-footer&quot;&gt;
         &lt;button
           type=&quot;button&quot;
-          class=&quot;btn btn-sm btn-secondary&quot;
+          class=&quot;btn btn-sm btn-outline-primary&quot;
           data-dismiss=&quot;modal&quot;
         &gt;
           Leave this page
@@ -1656,7 +1662,7 @@
       <div class="modal-footer">
         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
           data-dismiss="modal"
         >
           Leave this page
@@ -1693,7 +1699,7 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-footer&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
           <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
-          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-secondary&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-sm btn-outline-primary&quot;</span>
           <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">&quot;modal&quot;</span>
         &gt;</span>
           Leave this page
@@ -1914,7 +1920,7 @@
       <div class="modal-footer">
         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
           data-dismiss="modal"
         >
           Close
@@ -1959,7 +1965,7 @@
       <div class="modal-footer">
         <button
           type="button"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
           data-dismiss="modal"
         >
           Close

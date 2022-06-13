@@ -14487,6 +14487,10 @@ main > .pv-content .pv-only .modal {
   position: relative !important;
   display: block !important;
 }
+main > .pv-content .pv-only .gototop {
+  display: inline-block;
+  position: relative;
+}
 main > .pv-content .pv-only .dropdown-menu {
   position: relative !important;
   display: block !important;
