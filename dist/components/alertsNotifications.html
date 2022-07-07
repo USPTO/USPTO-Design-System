@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-alertsNotifications">
+<html lang="en" class="page-alertsNotifications" >
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
@@ -22,7 +22,7 @@
 <!--Following are only for code preview -->
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
-  <body class="parent-container">
+  <body class="parent-container" >
 <a class="skipnav" href="#main-content">
     Skip to main content
   </a>
@@ -357,6 +357,9 @@
               <a href="#labels">Labels</a>
             </li>
             <li>
+              <a href="#required-fields">Required fields</a>
+            </li>
+            <li>
               <a href="#optional-fields">Optional fields</a>
             </li>
             <li>
@@ -547,7 +550,7 @@
         Contextual alerts are positioned above the area or form they relate to
       </li>
       <li>They are often triggered by a user interaction</li>
-      <li>They can be closable and can have other action buttons or links.</li>
+      <li>They can be closable and can have other action buttons or links</li>
       <li>
         Alerts with low importance (info or success) can close automatically
         after 20 seconds
@@ -561,19 +564,19 @@
     <ul>
       <li>
         <strong>Info</strong> alerts should be used when there are tips or
-        information that a user can benefit from.
+        information that a user can benefit from
       </li>
       <li>
         <strong>Success</strong> alerts should be used when an action was
-        performed successfully.
+        performed successfully
       </li>
       <li>
         <strong>Warning</strong> alerts should be used when an action is out of
-        the ordinary or might not be desired.
+        the ordinary or might not be desired
       </li>
       <li>
         <strong>Danger</strong> alerts should be used when the system has failed
-        to perform an action, or when the user has made an error.
+        to perform an action, or when the user has made an error
       </li>
     </ul>
   </div>
@@ -868,14 +871,175 @@
 </section>
 <section class="pv-content">
   <div class="pattern">
-    <h1 id="system-notifications">System notifications</h1>
+    <h1 id="system-notifications">Inline Informational Messages</h1>
 
     <h2 id="purpose-1">Purpose</h2>
+    <p>
+      Inline informational messages are used to present a local message or
+      return feedback as the result of a user action.
+    </p>
+
+    <h2 id="description-1">Description</h2>
+
+    <ul>
+      <li>
+        Inline informational messages are positioned inline near the specific
+        content they relate to
+      </li>
+      <li>They span the full-width of the section in which they relate to</li>
+      <li>They include a severity indicator (top-border bar)</li>
+      <li>
+        They include a title and supporting text to add clarity or optional
+        actions
+      </li>
+    </ul>
+    <h2>Types:</h2>
+    <ul>
+      <li>
+        <strong>Info</strong> messages should be used when there are tips or
+        information that a user can benefit from
+      </li>
+      <li>
+        <strong>Success</strong> messages should be used when an action was
+        performed successfully
+      </li>
+      <li>
+        <strong>Warning</strong> messages should be used when an action is out
+        of the ordinary or might not be desired
+      </li>
+      <li>
+        <strong>Danger</strong> messages should be used when the system has
+        failed to perform an action, or when the user has made an error
+      </li>
+    </ul>
+  </div>
+  <div class="preview pv-md">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for inline standard alerts"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for inline standard alerts"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;div class=&quot;mb-2 alert alert-info inline&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    &lt;h4 class=&quot;alert-heading&quot;&gt;Information&lt;/h4&gt;
+    This is an inline informational message.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-2 alert alert-success inline&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    &lt;h4 class=&quot;alert-heading&quot;&gt;Success&lt;/h4&gt;
+    This is an inline informational message.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-2 alert alert-warning inline&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    &lt;h4 class=&quot;alert-heading&quot;&gt;Warning&lt;/h4&gt;
+    This is an inline informational message.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-2 alert alert-danger inline&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    &lt;h4 class=&quot;alert-heading&quot;&gt;Danger&lt;/h4&gt;
+    This is an inline informational message.
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <div class="mb-2 alert alert-info inline" role="alert">
+  <div>
+    <h4 class="alert-heading">Information</h4>
+    This is an inline informational message.
+  </div>
+</div>
+<div class="mb-2 alert alert-success inline" role="alert">
+  <div>
+    <h4 class="alert-heading">Success</h4>
+    This is an inline informational message.
+  </div>
+</div>
+<div class="mb-2 alert alert-warning inline" role="alert">
+  <div>
+    <h4 class="alert-heading">Warning</h4>
+    This is an inline informational message.
+  </div>
+</div>
+<div class="mb-2 alert alert-danger inline" role="alert">
+  <div>
+    <h4 class="alert-heading">Danger</h4>
+    This is an inline informational message.
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-4">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-2 alert alert-info inline&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;alert&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-heading&quot;</span>&gt;</span>Information<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    This is an inline informational message.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-2 alert alert-success inline&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;alert&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-heading&quot;</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    This is an inline informational message.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-2 alert alert-warning inline&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;alert&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-heading&quot;</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    This is an inline informational message.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-2 alert alert-danger inline&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;alert&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert-heading&quot;</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    This is an inline informational message.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+<section class="pv-content">
+  <div class="pattern">
+    <h1 id="system-notifications">System notifications</h1>
+
+    <h2 id="purpose-2">Purpose</h2>
     <p>
       Users need to be aware of important information related to the system.
     </p>
 
-    <h2 id="description-1">Description</h2>
+    <h2 id="description-2">Description</h2>
 
     <ul>
       <li>
@@ -885,7 +1049,7 @@
         They are usually triggered by events <em>unrelated</em> to the user’s
         interactions
       </li>
-      <li>They can be closable and can have other action buttons or links.</li>
+      <li>They can be closable and can have other action buttons or links</li>
       <li>
         Notifications with low importance (info or success) can close
         automatically after 20 seconds (if desired)
@@ -913,13 +1077,13 @@
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
-      aria-controls="codebox-4"
+      aria-controls="codebox-5"
 
       aria-label="View code for system notification"
 
       aria-expanded="false"
 
-      data-target="#codebox-4"
+      data-target="#codebox-5"
 
       data-toggle="collapse"
 
@@ -975,7 +1139,7 @@
   <div class="toast-body">Message sent to Jerry.</div>
 </div>
     </div>
-    <div class="collapse line-numbers pt-2" id="codebox-4">
+    <div class="collapse line-numbers pt-2" id="codebox-5">
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--System alert--&gt;</span>

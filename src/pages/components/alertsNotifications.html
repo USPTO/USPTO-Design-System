@@ -15,7 +15,7 @@ content %}
         Contextual alerts are positioned above the area or form they relate to
       </li>
       <li>They are often triggered by a user interaction</li>
-      <li>They can be closable and can have other action buttons or links.</li>
+      <li>They can be closable and can have other action buttons or links</li>
       <li>
         Alerts with low importance (info or success) can close automatically
         after 20 seconds
@@ -29,19 +29,19 @@ content %}
     <ul>
       <li>
         <strong>Info</strong> alerts should be used when there are tips or
-        information that a user can benefit from.
+        information that a user can benefit from
       </li>
       <li>
         <strong>Success</strong> alerts should be used when an action was
-        performed successfully.
+        performed successfully
       </li>
       <li>
         <strong>Warning</strong> alerts should be used when an action is out of
-        the ordinary or might not be desired.
+        the ordinary or might not be desired
       </li>
       <li>
         <strong>Danger</strong> alerts should be used when the system has failed
-        to perform an action, or when the user has made an error.
+        to perform an action, or when the user has made an error
       </li>
     </ul>
   </div>
@@ -60,14 +60,63 @@ content %}
 </section>
 <section class="pv-content">
   <div class="pattern">
-    <h1 id="system-notifications">System notifications</h1>
+    <h1 id="system-notifications">Inline Informational Messages</h1>
 
     <h2 id="purpose-1">Purpose</h2>
+    <p>
+      Inline informational messages are used to present a local message or
+      return feedback as the result of a user action.
+    </p>
+
+    <h2 id="description-1">Description</h2>
+
+    <ul>
+      <li>
+        Inline informational messages are positioned inline near the specific
+        content they relate to
+      </li>
+      <li>They span the full-width of the section in which they relate to</li>
+      <li>They include a severity indicator (top-border bar)</li>
+      <li>
+        They include a title and supporting text to add clarity or optional
+        actions
+      </li>
+    </ul>
+    <h2>Types:</h2>
+    <ul>
+      <li>
+        <strong>Info</strong> messages should be used when there are tips or
+        information that a user can benefit from
+      </li>
+      <li>
+        <strong>Success</strong> messages should be used when an action was
+        performed successfully
+      </li>
+      <li>
+        <strong>Warning</strong> messages should be used when an action is out
+        of the ordinary or might not be desired
+      </li>
+      <li>
+        <strong>Danger</strong> messages should be used when the system has
+        failed to perform an action, or when the user has made an error
+      </li>
+    </ul>
+  </div>
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for inline standard alerts',
+    code: standardInlineAlerts }, '')}}
+  </div>
+</section>
+<section class="pv-content">
+  <div class="pattern">
+    <h1 id="system-notifications">System notifications</h1>
+
+    <h2 id="purpose-2">Purpose</h2>
     <p>
       Users need to be aware of important information related to the system.
     </p>
 
-    <h2 id="description-1">Description</h2>
+    <h2 id="description-2">Description</h2>
 
     <ul>
       <li>
@@ -77,7 +126,7 @@ content %}
         They are usually triggered by events <em>unrelated</em> to the user’s
         interactions
       </li>
-      <li>They can be closable and can have other action buttons or links.</li>
+      <li>They can be closable and can have other action buttons or links</li>
       <li>
         Notifications with low importance (info or success) can close
         automatically after 20 seconds (if desired)
@@ -173,5 +222,30 @@ content %}
     </button>
   </div>
   <div class="toast-body">Message sent to Jerry.</div>
+</div>
+{% endset%} {% set standardInlineAlerts %}
+<div class="mb-2 alert alert-info inline" role="alert">
+  <div>
+    <h4 class="alert-heading">Information</h4>
+    This is an inline informational message.
+  </div>
+</div>
+<div class="mb-2 alert alert-success inline" role="alert">
+  <div>
+    <h4 class="alert-heading">Success</h4>
+    This is an inline informational message.
+  </div>
+</div>
+<div class="mb-2 alert alert-warning inline" role="alert">
+  <div>
+    <h4 class="alert-heading">Warning</h4>
+    This is an inline informational message.
+  </div>
+</div>
+<div class="mb-2 alert alert-danger inline" role="alert">
+  <div>
+    <h4 class="alert-heading">Danger</h4>
+    This is an inline informational message.
+  </div>
 </div>
 {% endset%}

@@ -109,11 +109,28 @@ title: 'Forms' } %} {% block content %}
 
 <section class="pv-content">
   <div class="pattern">
-    <h2 id="optional-fields">Optional fields</h2>
+    <h1 id="required-fields">Required fields</h1>
+
+    <p>
+      Add asterisk symbol (<code class="highlighter-rouge">*</code>) to the
+      required fields with
+      <code class="highlighter-rouge">.required</code> class to the form label.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for required fields', code:
+    requiredFields }, "")}}
+  </div>
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1 id="optional-fields">Optional fields</h1>
 
     <p>
       Add <code class="highlighter-rouge">(optional)</code> to the optional
-      fields.
+      fields with <code class="highlighter-rouge">.optional</code> class to the
+      form label.
     </p>
   </div>
   <div class="preview pv-sm">
@@ -358,29 +375,53 @@ title: 'Forms' } %} {% block content %}
 <!--Form labels-->
 <form>
   <div class="form-group">
-    <label for="exampleFLInputEmail">Email address</label>
+    <p class="text-right">
+      <span class="text-danger">*</span> indicates required
+    </p>
+  </div>
+  <div class="form-group">
+    <label for="exampleFLInputEmail" class="required">Email address</label>
     <input
       type="email"
       class="form-control"
       id="exampleFLInputEmail"
-      aria-describedby="emailHelp"
+      required
+      aria-required="true"
     />
   </div>
   <div class="form-group">
-    <label for="examplFLeInputPassword">Password</label>
-    <input type="password" class="form-control" id="examplFLeInputPassword" />
+    <label for="examplFLeInputPassword" class="required">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="examplFLeInputPassword"
+      required
+      aria-required="true"
+    />
+  </div>
+</form>
+{% endset%} {% set requiredFields %}
+<!--Required fields-->
+<form>
+  <div class="form-group">
+    <label for="exampleOFStreetAddress" class="required"
+      >Street address 1</label
+    >
+    <input
+      type="email"
+      class="form-control"
+      id="exampleOFStreetAddress"
+      required
+      aria-required="true"
+    />
   </div>
 </form>
 {% endset%} {% set optionalFields %}
 <!--Optional fields-->
 <form>
   <div class="form-group">
-    <label for="exampleOFStreetAddress">Street address 1</label>
-    <input type="email" class="form-control" id="exampleOFStreetAddress" />
-  </div>
-  <div class="form-group">
-    <label for="exampleOFStreetAddress2"
-      >Street address 2 <span class="text-muted">(optional)</span></label
+    <label for="exampleOFStreetAddress2" class="optional"
+      >Street address 2</label
     >
     <input type="email" class="form-control" id="exampleOFStreetAddress2" />
   </div>
@@ -389,14 +430,14 @@ title: 'Forms' } %} {% block content %}
 <!-- Form validation -->
 <form>
   <div class="form-group">
-    <label for="validationServer01">Invalid</label>
+    <label for="validationServer01" class="required">Invalid</label>
     <input
       type="text"
       value="john.smith@gmail"
       class="form-control is-invalid"
       id="validationServer01"
-      aria-describedby="validationServer03Feedback"
       required
+      aria-required="true"
     />
     <div id="validationServer01Feedback" class="invalid-feedback">
       This email address is not valid.
@@ -404,13 +445,13 @@ title: 'Forms' } %} {% block content %}
   </div>
 
   <div class="form-group">
-    <label for="validationServer02">Required</label>
+    <label for="validationServer02" class="required">Required</label>
     <input
       type="text"
       class="form-control is-invalid"
       id="validationServer02"
-      aria-describedby="validationServer03Feedback"
       required
+      aria-required="true"
     />
     <div id="validationServer02Feedback" class="invalid-feedback">
       This field is required.
@@ -429,17 +470,24 @@ title: 'Forms' } %} {% block content %}
     <div>The email or password you entered is incorrect.</div>
   </div>
   <div class="form-group">
-    <label for="exampleIFInputEmail">Email address</label>
+    <label for="exampleIFInputEmail" class="required">Email address</label>
     <input
       type="email"
       class="form-control"
       id="exampleIFInputEmail"
-      aria-describedby="emailHelp"
+      required
+      aria-required="true"
     />
   </div>
   <div class="form-group">
-    <label for="exampleIFInputPassword">Password</label>
-    <input type="password" class="form-control" id="exampleIFInputPassword" />
+    <label for="exampleIFInputPassword" class="required">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleIFInputPassword"
+      aria-required="true"
+      required
+    />
   </div>
   <button class="btn btn-primary" type="submit">Sign in</button>
 </form>
@@ -451,16 +499,28 @@ title: 'Forms' } %} {% block content %}
     This information will appear on your public profile.
   </p>
   <div class="form-group">
-    <label for="exampleHTFullName">Full name</label>
-    <input type="text" class="form-control" id="exampleHTFullName" />
+    <label for="exampleHTFullName" class="required">Full name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleHTFullName"
+      aria-required="true"
+      required
+    />
   </div>
   <div class="form-group">
-    <label for="exampleHTInputEmail">Email</label>
+    <label for="exampleHTInputEmail" class="required">Email</label>
     <p class="form-hint">This is how people will contact you.</p>
-    <input type="email" class="form-control" id="exampleHTInputEmail" />
+    <input
+      type="email"
+      class="form-control"
+      id="exampleHTInputEmail"
+      aria-required="true"
+      required
+    />
   </div>
   <div class="form-group">
-    <label for="examplePopover">Popover</label>
+    <label for="examplePopover" class="required">Popover</label>
     <input
       type="password"
       class="form-control"
@@ -472,6 +532,8 @@ title: 'Forms' } %} {% block content %}
       data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>"
       data-original-title=""
       title=""
+      required
+      aria-required="true"
     />
   </div>
 </form>
@@ -481,22 +543,40 @@ title: 'Forms' } %} {% block content %}
   <h3>Personal information</h3>
   <p class="form-text text-muted">Some other help text and information.</p>
   <div class="form-group">
-    <label for="exampleFGInputEmail">Email</label>
-    <input type="email" class="form-control" id="exampleFGInputEmail" />
+    <label for="exampleFGInputEmail" class="required">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleFGInputEmail"
+      aria-required="true"
+      required
+    />
   </div>
   <div class="form-group">
-    <label for="exampleFGFullName">Full name</label>
-    <input type="text" class="form-control" id="exampleFGFullName" />
+    <label for="exampleFGFullName" class="required">Full name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleFGFullName"
+      aria-required="true"
+      required
+    />
   </div>
   <h3 class="mt-4">Shipping details</h3>
   <div class="form-group">
-    <label for="exampleFGStreetAddress">Address line 1</label>
-    <input type="text" class="form-control" id="exampleFGStreetAddress" />
+    <label for="exampleFGStreetAddress" class="required">Address line 1</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleFGStreetAddress"
+      aria-required="true"
+      required
+    />
   </div>
   <div class="form-group">
-    <label for="exampleFGStreetAddress2"
-      >Address line 2 <span class="text-muted">(optional)</span></label
-    >
+    <label for="exampleFGStreetAddress2" class="optional"
+      >Address line 2
+    </label>
     <input type="text" class="form-control" id="exampleFGStreetAddress2" />
   </div>
 </form>
@@ -504,11 +584,15 @@ title: 'Forms' } %} {% block content %}
 <!-- Input character limit -->
 <form>
   <div class="form-group">
-    <label for="exampleCLFormControlTextarea1">Description</label>
+    <label for="exampleCLFormControlTextarea1" class="required"
+      >Description</label
+    >
     <textarea
       class="form-control is-invalid no-icon"
       id="exampleCLFormControlTextarea1"
       rows="3"
+      required
+      aria-required="true"
     >
 This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea
     >
@@ -518,22 +602,28 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   </div>
 
   <div class="form-group">
-    <label for="exampleCLFormControlTextarea2">Description</label>
+    <label for="exampleCLFormControlTextarea2" class="required"
+      >Description</label
+    >
     <textarea
       class="form-control"
       id="exampleCLFormControlTextarea2"
       rows="3"
+      required
+      aria-required="true"
     ></textarea>
   </div>
 
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleCLMaxValue">Max 25</label>
+      <label for="exampleCLMaxValue" class="required">Max 25</label>
       <input
         type="text"
         class="form-control"
         id="exampleCLMaxValue"
         maxlength="25"
+        required
+        aria-required="true"
       />
     </div>
   </div>
@@ -543,8 +633,14 @@ This textfield has exceed the character limit by 10 characters. The user can sti
 <form>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXInputEmail1">Email</label>
-      <input type="email" class="form-control" id="exampleFXInputEmail1" />
+      <label for="exampleFXInputEmail1" class="required">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFXInputEmail1"
+        aria-required="true"
+        required
+      />
       <small id="FXemailHelp1" class="form-text text-muted"
         >Your email will be used to log in.</small
       >
@@ -552,20 +648,37 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   </div>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXFullName1">Full name</label>
-      <input type="text" class="form-control" id="exampleFXFullName1" />
+      <label for="exampleFXFullName1" class="required">Full name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFXFullName1"
+        aria-required="true"
+        required
+      />
     </div>
   </div>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXCity1">City</label>
-      <input type="text" class="form-control" id="exampleFXCity1" />
+      <label for="exampleFXCity1" class="required">City</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFXCity1"
+        aria-required="true"
+        required
+      />
     </div>
   </div>
   <div class="form-group row">
     <div class="col-md-4">
-      <label for="exampleFXState1">State</label>
-      <select class="form-control" id="exampleFXState1">
+      <label for="exampleFXState1" class="required">State</label>
+      <select
+        class="form-control"
+        id="exampleFXState1"
+        aria-required="true"
+        required
+      >
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -622,7 +735,7 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   </div>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXShipping1">Shipping</label>
+      <label for="exampleFXShipping1" class="required">Shipping</label>
       <div class="form-check">
         <input
           class="form-check-input"
@@ -631,6 +744,8 @@ This textfield has exceed the character limit by 10 characters. The user can sti
           id="exampleFXRadios1"
           value="option1"
           checked
+          required
+          aria-required="true"
         />
         <label class="form-check-label" for="exampleFXRadios1"> UPS </label>
       </div>
@@ -674,19 +789,23 @@ This textfield has exceed the character limit by 10 characters. The user can sti
 
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXInputEmail2">USPTO email address</label>
+      <label for="exampleFXInputEmail2" class="required"
+        >USPTO email address</label
+      >
       <input
         type="email"
         class="form-control is-invalid no-icon"
         id="exampleFXInputEmail2"
         value="john.smith@gmail.com"
+        required
+        aria-required="true"
       />
       <span class="invalid-feedback">Email must end with uspto.gov.</span>
     </div>
   </div>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXEmployeeID2"
+      <label for="exampleFXEmployeeID2" class="required"
         >Employee ID
         <!--<a href="#" class="float-right">Find my Employee ID</a>--></label
       >
@@ -695,14 +814,21 @@ This textfield has exceed the character limit by 10 characters. The user can sti
         class="form-control is-invalid no-icon"
         id="exampleFXEmployeeID2"
         value="238942a"
+        required
+        aria-required="true"
       />
       <span class="invalid-feedback">Employee ID must be numeric.</span>
     </div>
   </div>
   <div class="form-group row">
     <div class="col-md-2">
-      <label for="exampleFXTitle1">Title</label>
-      <select class="form-control" id="exampleFXTitle1">
+      <label for="exampleFXTitle1" class="required">Title</label>
+      <select
+        class="form-control"
+        id="exampleFXTitle1"
+        aria-required="true"
+        required
+      >
         <option value="Mr.">Mr.</option>
         <option value="Mrs.">Mrs.</option>
         <option value="Miss">Miss</option>
@@ -712,21 +838,23 @@ This textfield has exceed the character limit by 10 characters. The user can sti
 
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXInputFirstName2">First name</label>
+      <label for="exampleFXInputFirstName2" class="required">First name</label>
       <input
         type="text"
         class="form-control"
         id="exampleFXInputFirstName2"
         value="John"
+        required
+        aria-required="true"
       />
     </div>
   </div>
 
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXInputMiddleName2"
-        >Middle name <span class="text-muted">(optional)</span></label
-      >
+      <label for="exampleFXInputMiddleName2" class="optional"
+        >Middle name
+      </label>
       <input
         type="text"
         class="form-control"
@@ -737,32 +865,43 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   </div>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXInputLastName2">Last name</label>
+      <label for="exampleFXInputLastName2" class="required">Last name</label>
       <input
         type="email"
         class="form-control is-invalid no-icon"
         id="exampleFXInputLastName2"
         value=""
+        required
+        aria-required="true"
       />
       <span class="invalid-feedback">This field is required.</span>
     </div>
   </div>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXInputTelephone2">Telephone number</label>
+      <label for="exampleFXInputTelephone2" class="required"
+        >Telephone number</label
+      >
       <input
         type="text"
         class="form-control"
         id="exampleFXInputTelephone2"
         value="John"
+        required
+        aria-required="true"
       />
     </div>
   </div>
   <h3>Address</h3>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXInputCountry2">Country</label>
-      <select class="form-control" id="exampleFXInputCountry2">
+      <label for="exampleFXInputCountry2" class="required">Country</label>
+      <select
+        class="form-control"
+        id="exampleFXInputCountry2"
+        aria-required="true"
+        required
+      >
         <option value="AF">Afghanistan</option>
         <option value="AX">Åland Islands</option>
         <option value="AL">Albania</option>
@@ -1017,30 +1156,49 @@ This textfield has exceed the character limit by 10 characters. The user can sti
   </div>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXStreetAddress">Address line 1</label>
-      <input type="text" class="form-control" id="exampleFXStreetAddress" />
+      <label for="exampleFXStreetAddress" class="required"
+        >Address line 1</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFXStreetAddress"
+        aria-required="true"
+        required
+      />
     </div>
   </div>
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXStreetAddress2"
-        >Address line 2 <span class="text-muted">(optional)</span></label
-      >
+      <label for="exampleFXStreetAddress2" class="optional"
+        >Address line 2
+      </label>
       <input type="text" class="form-control" id="exampleFXStreetAddress2" />
     </div>
   </div>
 
   <div class="form-group row">
     <div class="col-md-6">
-      <label for="exampleFXCity2">City</label>
-      <input type="text" class="form-control" id="exampleFXCity2" />
+      <label for="exampleFXCity2" class="required">City</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFXCity2"
+        aria-required="true"
+        required
+      />
     </div>
   </div>
 
   <div class="form-group row">
     <div class="col-md-4">
-      <label for="exampleFXState2">State</label>
-      <select class="form-control" id="exampleFXState2">
+      <label for="exampleFXState2" class="required">State</label>
+      <select
+        class="form-control"
+        id="exampleFXState2"
+        aria-required="true"
+        required
+      >
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -1095,8 +1253,14 @@ This textfield has exceed the character limit by 10 characters. The user can sti
       </select>
     </div>
     <div class="col-md-2">
-      <label for="exampleFXZip2">Zip code</label>
-      <input type="text" class="form-control" id="exampleFXZip2" />
+      <label for="exampleFXZip2" class="required">Zip code</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFXZip2"
+        aria-required="true"
+        required
+      />
     </div>
   </div>
   <div class="form-group row">

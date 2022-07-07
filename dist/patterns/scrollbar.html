@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-tours" >
+<html lang="en" class="page-scrollbar" >
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Tours
+ | Scrollbar
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -272,9 +272,212 @@
 
 <section class="pv-content">
   <div class="pattern">
-    <h1>Tours</h1>
+    <h1>Custom scrollbar</h1>
+    <h2>Purpose</h2>
+    <p>Custom scrollbar will override the default scrollbar style.</p>
   </div>
+  <div class="pattern">
+    <h2 id="custom-scrollbar">Custom scrollbar</h2>
+    <p>Use the <code class="highlighter-rouge">scrollbar-custom</code> class.</p>
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for custom scrollbar"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for custom scrollbar"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Custom scrollbar --&gt;
+&lt;div class=&quot;scrollbar-custom p-3&quot; style=&quot;height: 150px; overflow: auto&quot;&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  &lt;/p&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Custom scrollbar -->
+<div class="scrollbar-custom p-3" style="height: 150px; overflow: auto">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  </p>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Custom scrollbar --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;scrollbar-custom p-3&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 150px; overflow: auto&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="pattern">
+    <h2 id="custom-scrollbar-sm">Custom scrollbar small</h2>
+    <p>
+      For small custom scrollbar, use the
+      <code class="highlighter-rouge">scrollbar-custom-sm</code> with
+      <code class="highlighter-rouge">scrollbar-custom</code> class.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for small custom scrollbar"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for small custom scrollbar"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Custom scrollbar --&gt;
+&lt;div class=&quot;scrollbar-custom scrollbar-custom-sm p-3&quot; style=&quot;height: 150px; overflow: auto&quot;&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  &lt;/p&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Custom scrollbar -->
+<div class="scrollbar-custom scrollbar-custom-sm p-3" style="height: 150px; overflow: auto">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  </p>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Custom scrollbar --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;scrollbar-custom scrollbar-custom-sm p-3&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 150px; overflow: auto&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+
+  
 </section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="custom-scrollbar-sm">Custom scrollbar variants</h2>
+    <p>
+      Custom scrollbar include their own variant classes for quickly changing the look and feel of a scrollbar.
+      Different custom scrollbar require the use of
+      <code class="highlighter-rouge"
+        >.scrollbar-custom-* {primary, success, warning, info, secondary, danger, light, dark }</code
+      >.
+    </p>
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-7 col-xl-4">
+        <div class="scrollbar-custom p-3" id="myScrollBar" style="height: 150px; overflow: auto">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur
+          similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea
+          corrupti culpa ut exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia
+          assumenda? Ratione, tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+        </p>
+      </div>
+
+      <div class="form-group pt-4">
+        <label for="chooseScrollbar" class="mt-2">Change custom scrollbar</label>
+        <select class="form-control" id="chooseScrollbar">         
+          <option value="custom">Default custom scrollbar</option>
+          <option value="danger">Danger</option>
+          <option value="info">Info</option>
+          <option value="primary">Primary</option>
+          <option value="success">Success</option>
+          <option value="warning">Warning</option>
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+        </select>
+      </div>
+      <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="smallScrollbar" />
+              <label class="custom-control-label" for="smallScrollbar">Make smaller</label>
+            </div>
+          </div>
+    </div>
+  </div>
+  </section>
+
     </main>
   </div>
       </div>
@@ -284,7 +487,6 @@
   <div class="container text-center">
     <p>Need help? Questions? Need to report a bug?</p>
     <p>Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme" target="_blank" class="text-white-50">Github repository</a>.</p>
-    <p>Created and maintained with <span class="text-danger md-xs material-icons">favorite</span> by the Experience Design Team @ the USPTO</p>
   </div>
 </footer>
 

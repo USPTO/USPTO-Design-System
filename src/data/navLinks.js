@@ -70,6 +70,7 @@ Object.assign(exports, {
         { href: '#overview', text: 'Overview' },
         { href: '#field-widths', text: 'Field widths' },
         { href: '#labels', text: 'Labels' },
+        { href: '#required-fields', text: 'Required fields' },
         { href: '#optional-fields', text: 'Optional fields' },
         { href: '#form-validation', text: 'Form validation' },
         { href: '#help-text', text: 'Help text' },
@@ -121,7 +122,7 @@ Object.assign(exports, {
     },
    
    
-    { href: 'siteAlert.html', text: 'Site alert' },
+      { href: 'siteAlert.html', text: 'Site alert' },
     { href: 'stepIndicators.html', text: 'Step indicators' },
     { href: 'summaryBox.html', text: 'Summary box' },
     {
@@ -257,6 +258,7 @@ Object.assign(exports, {
       ],
     },
     { href: 'collection.html', text: 'Collection' },
+    { href: 'scrollbar.html', text: 'Custom scrollbar' },
     {
       href: 'dataFormats.html',
       text: 'Data formats',
@@ -275,6 +277,7 @@ Object.assign(exports, {
         { href: '#multi-file-upload', text: 'Multiple file upload' }
       ],
     },
+    { href: 'gototop.html', text: 'Go to top' },
    /* {
       href: 'filters.html',
       text: 'Filters',
@@ -286,7 +289,7 @@ Object.assign(exports, {
       ],
     },
     */
-    { href: 'help.html', text: 'Help' },
+    { href: 'help.html', text: 'Help' },    
     { href: 'search.html', text: 'Search' },
     
     {

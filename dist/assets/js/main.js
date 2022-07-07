@@ -84,6 +84,63 @@ $(function () {
     $(this).val(foo);
   });
 
+  //Change custom scrollbar
+
+$("body").on("change", "#chooseScrollbar", function (e) {
+  e.preventDefault(e);
+  
+  var valueSelected = this.value;
+  if (valueSelected === "") {
+    $("#myScrollBar").removeClass();
+  } else {
+    $("#myScrollBar").removeClass();
+    $("#myScrollBar").addClass("scrollbar-custom-" + valueSelected);
+  }
+
+   if (valueSelected === "custom") {
+    $("#myScrollBar").removeClass();
+     $("#myScrollBar").addClass("scrollbar-custom");
+  } 
+  if ($("input#smallScrollbar").is(":checked")) {
+    $("#myScrollBar").addClass("scrollbar-custom-sm");
+  }
+
+});
+
+$('body').on('click', 'input#smallScrollbar', function (e) {  
+  if ($("input#smallScrollbar").is(":checked")) {
+    $("#myScrollBar").addClass("scrollbar-custom-sm");
+  } else {
+    $("#myScrollBar").removeClass("scrollbar-custom-sm");
+  }
+});
+
+//got to top
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+
+  if ($(this).scrollTop() > 200) {
+    $("#pagetop").fadeIn();
+  } else {
+    $("#pagetop").fadeOut();
+  }
+});
+
+$("#pagetop").bind("click", function (event) {
+ // $(this).fadeOut();
+  var $anchor = $(this);  
+  $("html, body")
+    .stop()
+    .animate(
+      {
+        scrollTop: $($anchor.attr("href")).offset().top,
+      },
+      1200,
+      "easeInOutExpo"
+    );
+  event.preventDefault();
+});
+
 })
 /*
    * Character count
@@ -121,6 +178,7 @@ $('#textinput, #textareainput').keyup(function () {
       .siblings('small.help-text')
       .removeClass('invalid-feedback');
   }
+
 });
 
 

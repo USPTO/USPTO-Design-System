@@ -1,0 +1,43 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = {
+class: 'page-gototop', title: 'Go to top', id: 'page-top' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <h1 id="date-and-time">Go to top</h1>
+
+   <p>Go to top provide easy way to scroll to the top of the web page without manual scrolling.</p>
+ 
+  </div>
+
+  <div class="preview pv-only">
+    {{ macros.viewCode({ ariaLabel: 'View code for dialog', code:
+    gototop }, "")}}
+  </div>
+  <div style="height:2000px;">
+ <a href="#page-top" class="gototop primary" title="Go to top" id="pagetop"><i class="material-icons align-middle">arrow_upward</i> Top</a>
+
+  </div>
+</section>
+
+
+
+{% endblock %}
+{% block scripts %}
+
+<script src="{{relativeRoot}}assets/vendor/jquery/jquery.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/popper/popper.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+<script src="{{relativeRoot}}assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/prism.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="{{relativeRoot}}assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="{{relativeRoot}}assets/js/main.js"></script>
+<script src="{{relativeRoot}}assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+
+
+{% endblock %}
+
+{% set gototop %}
+<!--Go to top-->
+<a href="#page-top" class="gototop primary" title="Go to top"><i class="material-icons align-middle">arrow_upward</i> Top</a>
+{% endset%}

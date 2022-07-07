@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-wizards">
+<html lang="en" class="page-wizards" >
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
@@ -22,7 +22,7 @@
 <!--Following are only for code preview -->
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
-  <body class="parent-container">
+  <body class="parent-container" >
 <a class="skipnav" href="#main-content">
     Skip to main content
   </a>
@@ -155,9 +155,13 @@
     </option>
     <option value="collection.html">Collection
     </option>
+    <option value="scrollbar.html">Custom scrollbar
+    </option>
     <option value="dataFormats.html">Data formats
     </option>
     <option value="fileUpload.html">File upload
+    </option>
+    <option value="gototop.html">Go to top
     </option>
     <option value="help.html">Help
     </option>
@@ -199,6 +203,11 @@
         </ul>
       </li>
       <li>
+        <a href="scrollbar.html" data-parent="Custom scrollbar">Custom scrollbar</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
         <a href="dataFormats.html" data-parent="Data formats">Data formats</a>
         <ul class="sidenav-sublist">
             <li>
@@ -221,6 +230,11 @@
             <li>
               <a href="#multi-file-upload">Multiple file upload</a>
             </li>
+        </ul>
+      </li>
+      <li>
+        <a href="gototop.html" data-parent="Go to top">Go to top</a>
+        <ul class="sidenav-sublist">
         </ul>
       </li>
       <li>
@@ -424,7 +438,7 @@
     &lt;/small&gt;
   &lt;/div&gt;
   &lt;div class=&quot;text-right mt-4&quot;&gt;
-    &lt;button class=&quot;btn btn-secondary&quot;&gt;Back&lt;/button&gt;
+    &lt;button class=&quot;btn btn-outline-primary&quot;&gt;Back&lt;/button&gt;
     &lt;button class=&quot;btn btn-primary&quot;&gt;Continue&lt;/button&gt;
   &lt;/div&gt;
 &lt;/form&gt;
@@ -521,7 +535,7 @@
     </small>
   </div>
   <div class="text-right mt-4">
-    <button class="btn btn-secondary">Back</button>
+    <button class="btn btn-outline-primary">Back</button>
     <button class="btn btn-primary">Continue</button>
   </div>
 </form>
@@ -611,7 +625,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-right mt-4&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-primary&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>Continue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>        </div>
@@ -661,23 +675,23 @@
 
   &lt;div class=&quot;col-12 mb-3 text-right&quot;&gt;
     &lt;hr /&gt;
-    &lt;button class=&quot;btn btn-secondary&quot;&gt;Back&lt;/button&gt;
+    &lt;button class=&quot;btn btn-outline-primary&quot;&gt;Back&lt;/button&gt;
     &lt;button class=&quot;btn btn-primary&quot;&gt;Continue&lt;/button&gt;
   &lt;/div&gt;
 
   &lt;div class=&quot;col-12 mb-3 text-right&quot;&gt;
     &lt;hr /&gt;
-    &lt;button class=&quot;btn btn-secondary&quot;&gt;Back&lt;/button
-    &gt;&lt;button class=&quot;btn btn-secondary float-left&quot;&gt;Cancel&lt;/button&gt;
+    &lt;button class=&quot;btn btn-outline-primary&quot;&gt;Back&lt;/button
+    &gt;&lt;button class=&quot;btn btn-outline-primary float-left&quot;&gt;Cancel&lt;/button&gt;
     &lt;button class=&quot;btn btn-primary&quot;&gt;Continue&lt;/button&gt;
   &lt;/div&gt;
 
   &lt;div class=&quot;col-12 mb-3 text-right text-right&quot;&gt;
     &lt;hr /&gt;
-    &lt;button class=&quot;btn btn-secondary&quot;&gt;Back&lt;/button
-    &gt;&lt;button class=&quot;btn btn-secondary float-left&quot;&gt;Cancel&lt;/button&gt;
+    &lt;button class=&quot;btn btn-outline-primary&quot;&gt;Back&lt;/button
+    &gt;&lt;button class=&quot;btn btn-outline-primary float-left&quot;&gt;Cancel&lt;/button&gt;
 
-    &lt;button class=&quot;btn btn-secondary&quot;&gt;Save&lt;/button&gt;
+    &lt;button class=&quot;btn btn-outline-primary&quot;&gt;Save&lt;/button&gt;
     &lt;button class=&quot;btn btn-primary&quot;&gt;Continue&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -701,23 +715,23 @@
 
   <div class="col-12 mb-3 text-right">
     <hr />
-    <button class="btn btn-secondary">Back</button>
+    <button class="btn btn-outline-primary">Back</button>
     <button class="btn btn-primary">Continue</button>
   </div>
 
   <div class="col-12 mb-3 text-right">
     <hr />
-    <button class="btn btn-secondary">Back</button
-    ><button class="btn btn-secondary float-left">Cancel</button>
+    <button class="btn btn-outline-primary">Back</button
+    ><button class="btn btn-outline-primary float-left">Cancel</button>
     <button class="btn btn-primary">Continue</button>
   </div>
 
   <div class="col-12 mb-3 text-right text-right">
     <hr />
-    <button class="btn btn-secondary">Back</button
-    ><button class="btn btn-secondary float-left">Cancel</button>
+    <button class="btn btn-outline-primary">Back</button
+    ><button class="btn btn-outline-primary float-left">Cancel</button>
 
-    <button class="btn btn-secondary">Save</button>
+    <button class="btn btn-outline-primary">Save</button>
     <button class="btn btn-primary">Continue</button>
   </div>
 </div>
@@ -734,23 +748,23 @@
 
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-12 mb-3 text-right&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-primary&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>Continue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-12 mb-3 text-right&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Back&lt;/button
-    &gt;<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary float-left&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-primary&quot;</span>&gt;</span>Back&lt;/button
+    &gt;<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-primary float-left&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>Continue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-12 mb-3 text-right text-right&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Back&lt;/button
-    &gt;<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary float-left&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-primary&quot;</span>&gt;</span>Back&lt;/button
+    &gt;<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-primary float-left&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-secondary&quot;</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-outline-primary&quot;</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>Continue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>

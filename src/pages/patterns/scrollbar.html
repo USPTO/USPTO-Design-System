@@ -1,0 +1,96 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = { class: 'page-scrollbar', title:
+'Scrollbar' } %} {% block content %}
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Custom scrollbar</h1>
+    <h2>Purpose</h2>
+    <p>Custom scrollbar will override the default scrollbar style.</p>
+  </div>
+  <div class="pattern">
+    <h2 id="custom-scrollbar">Custom scrollbar</h2>
+    <p>Use the <code class="highlighter-rouge">scrollbar-custom</code> class.</p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for custom scrollbar', code: basicScrollbar }, '' )}}
+  </div>
+  <div class="pattern">
+    <h2 id="custom-scrollbar-sm">Custom scrollbar small</h2>
+    <p>
+      For small custom scrollbar, use the
+      <code class="highlighter-rouge">scrollbar-custom-sm</code> with
+      <code class="highlighter-rouge">scrollbar-custom</code> class.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for small custom scrollbar', code: basicScrollbarSmall }, '' )}}
+  </div>
+
+  
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="custom-scrollbar-sm">Custom scrollbar variants</h2>
+    <p>
+      Custom scrollbar include their own variant classes for quickly changing the look and feel of a scrollbar.
+      Different custom scrollbar require the use of
+      <code class="highlighter-rouge"
+        >.scrollbar-custom-* {primary, success, warning, info, secondary, danger, light, dark }</code
+      >.
+    </p>
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-7 col-xl-4">
+        <div class="scrollbar-custom p-3" id="myScrollBar" style="height: 150px; overflow: auto">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur
+          similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea
+          corrupti culpa ut exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia
+          assumenda? Ratione, tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+        </p>
+      </div>
+
+      <div class="form-group pt-4">
+        <label for="chooseScrollbar" class="mt-2">Change custom scrollbar</label>
+        <select class="form-control" id="chooseScrollbar">         
+          <option value="custom">Default custom scrollbar</option>
+          <option value="danger">Danger</option>
+          <option value="info">Info</option>
+          <option value="primary">Primary</option>
+          <option value="success">Success</option>
+          <option value="warning">Warning</option>
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+        </select>
+      </div>
+      <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="smallScrollbar" />
+              <label class="custom-control-label" for="smallScrollbar">Make smaller</label>
+            </div>
+          </div>
+    </div>
+  </div>
+  </section>
+
+{% endblock %} {% set basicScrollbar%}
+<!-- Custom scrollbar -->
+<div class="scrollbar-custom p-3" style="height: 150px; overflow: auto">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  </p>
+</div>
+{% endset %} {% set basicScrollbarSmall%}
+<!-- Custom scrollbar -->
+<div class="scrollbar-custom scrollbar-custom-sm p-3" style="height: 150px; overflow: auto">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  </p>
+</div>
+{% endset %}

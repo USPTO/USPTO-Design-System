@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-tours" >
+<html lang="en" class="page-gototop" >
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Tours
+ | Go to top
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -22,7 +22,7 @@
 <!--Following are only for code preview -->
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
 <link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
-  <body class="parent-container" >
+  <body class="parent-container"  id="page-top">
 <a class="skipnav" href="#main-content">
     Skip to main content
   </a>
@@ -269,12 +269,72 @@
   </ul>
 </nav>  </div>
   <main id="main-content">
-
 <section class="pv-content">
   <div class="pattern">
-    <h1>Tours</h1>
+    <h1 id="date-and-time">Go to top</h1>
+
+   <p>Go to top provide easy way to scroll to the top of the web page without manual scrolling.</p>
+ 
+  </div>
+
+  <div class="preview pv-only">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for dialog"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for dialog"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Go to top--&gt;
+&lt;a href=&quot;#page-top&quot; class=&quot;gototop primary&quot; title=&quot;Go to top&quot;&gt;&lt;i class=&quot;material-icons align-middle&quot;&gt;arrow_upward&lt;/i&gt; Top&lt;/a&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Go to top-->
+<a href="#page-top" class="gototop primary" title="Go to top"><i class="material-icons align-middle">arrow_upward</i> Top</a>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Go to top--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#page-top&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;gototop primary&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Go to top&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons align-middle&quot;</span>&gt;</span>arrow_upward<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Top<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div style="height:2000px;">
+ <a href="#page-top" class="gototop primary" title="Go to top" id="pagetop"><i class="material-icons align-middle">arrow_upward</i> Top</a>
+
   </div>
 </section>
+
+
+
     </main>
   </div>
       </div>
@@ -284,16 +344,21 @@
   <div class="container text-center">
     <p>Need help? Questions? Need to report a bug?</p>
     <p>Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme" target="_blank" class="text-white-50">Github repository</a>.</p>
-    <p>Created and maintained with <span class="text-danger md-xs material-icons">favorite</span> by the Experience Design Team @ the USPTO</p>
   </div>
 </footer>
 
+
 <script src="../assets/vendor/jquery/jquery.min.js"></script>
 <script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
 <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
 <script src="../assets/vendor/prismjs/prism.js"></script>
 <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
 <script src="../assets/vendor/clipboard/clipboard.min.js"></script>
 <script src="../assets/js/main.js"></script>
-<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+
+
+  </body>
 </html>
