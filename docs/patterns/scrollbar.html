@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" class="page-scrollbar" >
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Scrollbar
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container" >
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
+          USPTO <span class="font-weight-light">Design System</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="https://github.com/USPTO/USPTO-DS-Theme" title="View on Github" >
+     <img src="../assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> View on Github
+    </a>
+  </div>
+</div>
+
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
+              Page templates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="Usage">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="patterns.html">Patterns
+    </option>
+    <option value="cards.html">Cards
+    </option>
+    <option value="collection.html">Collection
+    </option>
+    <option value="scrollbar.html">Custom scrollbar
+    </option>
+    <option value="dataFormats.html">Data formats
+    </option>
+    <option value="fileUpload.html">File upload
+    </option>
+    <option value="gototop.html">Go to top
+    </option>
+    <option value="help.html">Help
+    </option>
+    <option value="search.html">Search
+    </option>
+    <option value="settings.html">Settings
+    </option>
+    <option value="wizards.html">Wizards
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="patterns.html" data-parent="Patterns">Patterns</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="cards.html" data-parent="Cards">Cards</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#cards-overview">Cards overview</a>
+            </li>
+            <li>
+              <a href="#image-position-and-image-caps">Image position</a>
+            </li>
+            <li>
+              <a href="#background-variants">Background variants</a>
+            </li>
+            <li>
+              <a href="#headers-and-footers">Headers and footers</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="collection.html" data-parent="Collection">Collection</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="scrollbar.html" data-parent="Custom scrollbar">Custom scrollbar</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="dataFormats.html" data-parent="Data formats">Data formats</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#date-and-time">Date and time</a>
+            </li>
+            <li>
+              <a href="#file-sizes">File sizes</a>
+            </li>
+            <li>
+              <a href="#deprecated">Deprecated</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="fileUpload.html" data-parent="File upload">File upload</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#single-file-upload">Single file upload</a>
+            </li>
+            <li>
+              <a href="#multi-file-upload">Multiple file upload</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="gototop.html" data-parent="Go to top">Go to top</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="help.html" data-parent="Help">Help</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="search.html" data-parent="Search">Search</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="settings.html" data-parent="Settings">Settings</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#navigation">Navigation</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="wizards.html" data-parent="Wizards">Wizards</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#steps">Steps</a>
+            </li>
+            <li>
+              <a href="#buttons">Buttons</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Custom scrollbar</h1>
+    <h2>Purpose</h2>
+    <p>Custom scrollbar will override the default scrollbar style.</p>
+  </div>
+  <div class="pattern">
+    <h2 id="custom-scrollbar">Custom scrollbar</h2>
+    <p>Use the <code class="highlighter-rouge">scrollbar-custom</code> class.</p>
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for custom scrollbar"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for custom scrollbar"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Custom scrollbar --&gt;
+&lt;div class=&quot;scrollbar-custom p-3&quot; style=&quot;height: 150px; overflow: auto&quot;&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  &lt;/p&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Custom scrollbar -->
+<div class="scrollbar-custom p-3" style="height: 150px; overflow: auto">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  </p>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Custom scrollbar --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;scrollbar-custom p-3&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 150px; overflow: auto&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="pattern">
+    <h2 id="custom-scrollbar-sm">Custom scrollbar small</h2>
+    <p>
+      For small custom scrollbar, use the
+      <code class="highlighter-rouge">scrollbar-custom-sm</code> with
+      <code class="highlighter-rouge">scrollbar-custom</code> class.
+    </p>
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for small custom scrollbar"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for small custom scrollbar"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Custom scrollbar --&gt;
+&lt;div class=&quot;scrollbar-custom scrollbar-custom-sm p-3&quot; style=&quot;height: 150px; overflow: auto&quot;&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  &lt;/p&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Custom scrollbar -->
+<div class="scrollbar-custom scrollbar-custom-sm p-3" style="height: 150px; overflow: auto">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  </p>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Custom scrollbar --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;scrollbar-custom scrollbar-custom-sm p-3&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 150px; overflow: auto&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur similique
+    ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea corrupti culpa ut
+    exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione,
+    tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+
+  
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="custom-scrollbar-sm">Custom scrollbar variants</h2>
+    <p>
+      Custom scrollbar include their own variant classes for quickly changing the look and feel of a scrollbar.
+      Different custom scrollbar require the use of
+      <code class="highlighter-rouge"
+        >.scrollbar-custom-* {primary, success, warning, info, secondary, danger, light, dark }</code
+      >.
+    </p>
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-7 col-xl-4">
+        <div class="scrollbar-custom p-3" id="myScrollBar" style="height: 150px; overflow: auto">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia assumenda? Ratione, tenetur
+          similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus, necessitatibus accusantium! Delectus ea
+          corrupti culpa ut exercitationem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, mollitia
+          assumenda? Ratione, tenetur similique ipsam voluptate, nihil dolorem nam quam ipsa ducimus?
+        </p>
+      </div>
+
+      <div class="form-group pt-4">
+        <label for="chooseScrollbar" class="mt-2">Change custom scrollbar</label>
+        <select class="form-control" id="chooseScrollbar">         
+          <option value="custom">Default custom scrollbar</option>
+          <option value="danger">Danger</option>
+          <option value="info">Info</option>
+          <option value="primary">Primary</option>
+          <option value="success">Success</option>
+          <option value="warning">Warning</option>
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+        </select>
+      </div>
+      <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="smallScrollbar" />
+              <label class="custom-control-label" for="smallScrollbar">Make smaller</label>
+            </div>
+          </div>
+    </div>
+  </div>
+  </section>
+
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p>Create an issue on our <a href="https://github.com/USPTO/USPTO-DS-Theme" target="_blank" class="text-white-50">Github repository</a>.</p>
+    <p>Created and maintained with <span class="text-danger md-xs material-icons">favorite</span> by the Experience Design Team @ the USPTO</p>
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>
