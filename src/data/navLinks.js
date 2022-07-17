@@ -122,7 +122,7 @@ Object.assign(exports, {
     },
    
    
-      { href: 'siteAlert.html', text: 'Site alert' },
+     // { href: 'siteAlert.html', text: 'Site alert' },
     { href: 'stepIndicators.html', text: 'Step indicators' },
     { href: 'summaryBox.html', text: 'Summary box' },
     {
@@ -137,6 +137,7 @@ Object.assign(exports, {
         { href: '#column-customization', text: 'Column customization' },
         { href: '#grouping', text: 'Grouping' },
         { href: '#expandable-rows', text: 'Expandable rows' },
+        { href: '#add-new-row', text: 'Add new row' },
         { href: '#datatable', text: 'DataTables.net' }
       ],
     },
