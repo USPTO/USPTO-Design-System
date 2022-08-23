@@ -1,0 +1,24 @@
+{% extends 'layouts/foundation.njk' %} {% set page = { class: 'page-layouts',
+title: 'Browser support' } %} {% block content %}
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Browser support</h1>
+    <h2>Modern web browsers</h2>
+    <p>
+      USPTO Design System components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and basic experience regardless of their browser, although those experiences will render significantly better in newer browsers.
+    </p>
+    <p>
+      The USPTO Design System supports the latest, stable releases of all major browsers and platforms. <a href="https://www.w3.org/standards/" target="_blank">Learn more about web browser standards.</a>
+    </p>
+    <h2>Mobile devices and browsers</h2>
+    <p>
+      Generally speaking, the USPTO Design System supports the latest versions of each major platform’s default browsers. Mobile browser support will greatly depend on the manner in which your UI was implemented. Because this library is built on top of Boostrap, all mobile devices supported by <a href="https://getbootstrap.com/docs/4.0/getting-started/browsers-devices/#mobile-devices" target="_blank">Boostrap will render accurately</a>.
+    </p>
+    <h2>Internet Explorer</h2>
+    <p>
+      Internet Explorer 10+ is supported, including Edge; IE9 and down is not. Please be aware that some CSS3 properties and HTML5 elements are not fully supported in IE10, or require prefixed properties for full functionality.  If your application requires or targets legacy browser compatibility, we recommend using our older <a href="https://uspto.github.io/designpatterns/" target="_blank">USPTO Design Pattern Library.</a>
+    </p>
+  </div>
+</section>
+{% endblock %}
