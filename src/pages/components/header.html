@@ -1,0 +1,590 @@
+{% extends 'layouts/components.njk' %} {% set page = { class: 'page-header',
+title: 'Header' } %} {% block content %}
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Header</h1>
+    <p>
+        A header helps users identify where they are and provides a quick,
+        organized way to reach the main sections of a website.
+      </p>
+      <p><a href="https://prod-cicm.uspto.gov/gitlab/myuspto/USPTO-Global-Header-Footer/tree/master" target="_blank">Get USPTO global header from GitLab</a></p>
+  </div>
+  
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for header', code: header },
+    "")}}
+  </div>
+  <div class="pattern">
+    <h2>Header with megamenu</h2>
+    <p>
+      The header with a megamenu is similar in design but covering the whole
+      width of the page. The megamenu allows for the inclusion of more links in
+      dropdown menus. 
+    </p>
+    <p>You can convert any dropdown menu to megamenu after
+      adding <code class="highlighter-rouge">megamenu</code> class to navigation
+      dropdown of the header.</p>
+  </div>
+  <div class="preview">
+    {{ macros.viewCode({ ariaLabel: 'View code for megamenu', code: megaMenu },
+    "")}}
+  </div>
+</section>
+{% endblock %}
+
+{% set header %}
+<!--Header-->
+<header id="global-header">
+  <div class="uspto-header-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a
+        href="https://www.uspto.gov"
+        target="_blank"
+        class="uspto-logo"
+        title="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+      >
+        <span class="sr-only"> United States Patent and Trademark Office </span>
+      </a>
+      <div class="ml-auto d-flex">
+        <!-- Dynamic menu zone -->
+        <!-- Do not customize this area -->
+        <div class="display-inline dyn-menuarea">
+          <!-- Patents -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://www.uspto.gov/patent';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Patents</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-lightbulb"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Trademarks -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://www.uspto.gov/trademark';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Trademarks</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-trademark"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Fees and payment -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://fees.uspto.gov';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Fees and payment</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-dollar"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Help -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Help<span class="caret"></span></span>
+              <span class="btn-icon">
+                <span class="uspto-icon-question-circle"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a
+                  href="https://www.uspto.gov/learning-resources"
+                  target="_blank"
+                  data-event-category="myuspto Header: Help menu"
+                  data-event-action="myuspto menu link clicked"
+                  data-event-label="FAQs"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.uspto.gov/about-us/contact-us"
+                  target="_blank"
+                  data-event-category="myuspto Header: Help menu"
+                  data-event-action="myuspto menu link clicked"
+                  data-event-label="Contact us"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /End dynamic menu zone -->
+
+        <!-- Sign-in/user menu -->
+
+        <!-- MyUSPTO Link -->
+        <div class="btn-group">
+          <a
+            class="btn btn-default ex-btn-inverse my-link"
+            href="https://my.uspto.gov"
+          >
+            <span class="btn-text">MyUSPTO</span>
+            <span class="btn-icon">
+              <span class="uspto-icon-myuspto"></span
+            ></span>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <!--
+                    The code snippet for the .btn-group below will need to
+                    be conditionally displayed when the user is signed in
+                    and it's appropriate to show account information.
+                   -->
+          <!-- BEGIN USER DROPDOWN MENU -->
+          <button
+            type="button"
+            class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="btn-text">John Doe<span class="caret"></span></span>
+            <span class="btn-icon"> <span class="uspto-icon-user"></span></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="https://my.uspto.gov">
+                <span class="uspto-icon-home"></span> MyUSPTO<span
+                  class="sr-only"
+                  >console</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="https://account.uspto.gov">
+                <span class="uspto-icon-user-white"></span>
+                <span class="sr-only">Manage your</span>Account</a
+              >
+            </li>
+            <li>
+              <a href="https://my.uspto.gov/signout">
+                <span class="uspto-icon-sign-out"></span> Sign out</a
+              >
+            </li>
+          </ul>
+          <!-- END USER DROPDOWN MENU -->
+
+          <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+        </div>
+      </div>
+      <!-- /.pull-right -->
+    </nav>
+  </div>
+  <div class="uspto-header-middle">
+    <div class="flex-fill">
+      <a class="navbar-brand" href="#" title="Project title"> Project title </a>
+    </div>
+  </div>
+  <div class="uspto-header-bottom">
+    <nav
+      class="navbar navbar-expand-md navbar-dark"
+      aria-label="header sub navigation"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <h6 class="dropdown-header">Heading</h6>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+{% endset%} {% set megaMenu %}
+<!--Header with megamenu-->
+<header id="global-header">
+  <div class="uspto-header-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a
+        href="https://www.uspto.gov"
+        target="_blank"
+        class="uspto-logo"
+        title="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+      >
+        <span class="sr-only"> United States Patent and Trademark Office </span>
+      </a>
+      <div class="ml-auto d-flex">
+        <!-- Dynamic menu zone -->
+        <!-- Do not customize this area -->
+        <div class="display-inline dyn-menuarea">
+          <!-- Patents -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://www.uspto.gov/patent';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Patents</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-lightbulb"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Trademarks -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://www.uspto.gov/trademark';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Trademarks</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-trademark"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Fees and payment -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://fees.uspto.gov';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Fees and payment</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-dollar"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Help -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Help<span class="caret"></span></span>
+              <span class="btn-icon">
+                <span class="uspto-icon-question-circle"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a
+                  href="https://www.uspto.gov/learning-resources"
+                  target="_blank"
+                  data-event-category="myuspto Header: Help menu"
+                  data-event-action="myuspto menu link clicked"
+                  data-event-label="FAQs"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.uspto.gov/about-us/contact-us"
+                  target="_blank"
+                  data-event-category="myuspto Header: Help menu"
+                  data-event-action="myuspto menu link clicked"
+                  data-event-label="Contact us"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /End dynamic menu zone -->
+
+        <!-- Sign-in/user menu -->
+
+        <!-- MyUSPTO Link -->
+        <div class="btn-group">
+          <a
+            class="btn btn-default ex-btn-inverse my-link"
+            href="https://my.uspto.gov"
+          >
+            <span class="btn-text">MyUSPTO</span>
+            <span class="btn-icon">
+              <span class="uspto-icon-myuspto"></span
+            ></span>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it's appropriate to show account information.
+               -->
+          <!-- BEGIN USER DROPDOWN MENU -->
+          <button
+            type="button"
+            class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="btn-text">John Doe<span class="caret"></span></span>
+            <span class="btn-icon"> <span class="uspto-icon-user"></span></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="https://my.uspto.gov">
+                <span class="uspto-icon-home"></span> MyUSPTO<span
+                  class="sr-only"
+                  >console</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="https://account.uspto.gov">
+                <span class="uspto-icon-user-white"></span>
+                <span class="sr-only">Manage your</span>Account</a
+              >
+            </li>
+            <li>
+              <a href="https://my.uspto.gov/signout">
+                <span class="uspto-icon-sign-out"></span> Sign out</a
+              >
+            </li>
+          </ul>
+          <!-- END USER DROPDOWN MENU -->
+
+          <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+        </div>
+      </div>
+      <!-- /.pull-right -->
+    </nav>
+  </div>
+  <div class="uspto-header-middle">
+    <div class="flex-fill">
+      <a class="navbar-brand" href="#" title="Project title"> Project title </a>
+    </div>
+  </div>
+  <div class="uspto-header-bottom">
+    <nav
+      class="navbar navbar-expand-md navbar-dark"
+      aria-label="header sub navigation"
+    >
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Home</a>
+          </li>
+
+          <li class="nav-item dropdown megamenu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >New submission <span class="caret"></span
+            ></a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Regular submissions</h6>
+                  <a class="dropdown-item" href="#">Utility-Nonprovisional</a>
+                  <a class="dropdown-item" href="#">Utility-Provisional</a>
+                  <a class="dropdown-item" href="#">Design</a>
+                  <a class="dropdown-item" href="#">U.S. 371 National stage</a>
+                </div>
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">International applications</h6>
+                  <a class="dropdown-item" href="#"
+                    >International application (PCT)</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    >International design application(Hague)</a
+                  >
+                </div>
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Patent initiatives</h6>
+                  <a class="dropdown-item" href="#">TrackOne</a>
+                  <a class="dropdown-item" href="#"
+                    >Accelerated Examination – Utility</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    >Accelerated Examination – Design</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Existing submissions <span class="caret"></span
+            ></a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col mb-md-0">
+                  <a class="dropdown-item" href="#">
+                    Prior Art Submission into a Patent File under 37 CFR
+                    1.501</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    File third-party preissuance submission</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown megamenu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Petitions <span class="caret"></span
+            ></a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Petitions - pending</h6>
+                  <a class="dropdown-item" href="#">
+                    Petition to make special based on age</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(1) or (2))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(1) or(2) with Assigned Patent
+                    Number)</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(3))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(3) with Assigned Patent Number)</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Accept Late Payment of Issue Fee - Unintentional
+                    Late Payment (37 CFR 1.137(a))</a
+                  >
+                </div>
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Petitions - issued</h6>
+                  <a class="dropdown-item" href="#">
+                    Petition to Accept Unintentional Delayed Payment of the
+                    Maintenance Fee (37 CFR 1.378(b))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Correct Assignee After Payment of Issue Fee (37
+                    CFR 3.81(b))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition for Revival of an Application for Continuity
+                    Purposes Only (37 CFR 1.137(a))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition for Revival of an Application based on Failure to
+                    Notify the Office of a Foreign or International Filing (37
+                    CFR 1.137(f))</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown megamenu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Post grant <span class="caret"></span
+            ></a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Reexam &amp; reissue</h6>
+                  <a class="dropdown-item" href="#"
+                    >Request for Reexam - by Patent Owner</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    >Request for Reexam - by Third Party</a
+                  >
+                  <a class="dropdown-item" href="#">Request for Reissue</a>
+                </div>
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Supplemental examination</h6>
+                  <a class="dropdown-item" href="#"
+                    >Request for Supplemental Examination</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+   
+      </div>
+    </nav>
+  </div>
+</header>
+{%endset%}

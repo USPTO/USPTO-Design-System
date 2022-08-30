@@ -4,28 +4,78 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        {% if page.class == "page-marketing" %}
+          <li class="nav-item dropdown megamenu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Megamenu dropdown <span class="caret"></span
+            ></a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Heading</h6>
+                  <a class="dropdown-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut mattis lacus. Nam porttitor consectetur arcu, ut vehicula odio auctor eget.</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Fusce id porta lectus, sit amet egestas lorem. Donec euismod at felis vel hendrerit. Vestibulum fermentum eget tellus eget ullamcorper.</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut mattis lacus. Nam porttitor consectetur arcu, ut vehicula odio auctor eget.</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Donec iaculis ligula tortor, at tristique turpis mattis id. </a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut mattis lacus. Nam porttitor consectetur arcu, ut vehicula odio auctor eget.</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut mattis lacus. Nam porttitor consectetur arcu, ut vehicula odio auctor eget.</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Donec iaculis ligula tortor, at tristique turpis mattis id. </a
+                  >
+                </div>
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Heading</h6>
+                  <a class="dropdown-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut mattis lacus. Nam porttitor consectetur arcu, ut vehicula odio auctor eget.</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut mattis lacus. Nam porttitor consectetur arcu, ut vehicula odio auctor eget.</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Fusce id porta lectus, sit amet egestas lorem. Donec euismod at felis vel hendrerit. Vestibulum fermentum eget tellus eget ullamcorper.</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Vestibulum fermentum eget tellus eget ullamcorper. Maecenas ullamcorper mauris in viverra dictum. Donec aliquet nisi et viverra convallis.</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endif %}
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
 
     </div>
   </nav>
