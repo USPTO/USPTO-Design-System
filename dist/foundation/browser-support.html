@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-links" >
+<html lang="en" class="page-layouts" >
   <head>
 <meta charset="UTF-8">
 <meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Links
+ | Browser support
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -268,68 +268,22 @@
 
 <section class="pv-content">
   <div class="pattern">
-    <h1>Links</h1>
-    <h2>Links within paragraphs</h2>
+    <h1>Browser support</h1>
+    <h2>Modern web browsers</h2>
     <p>
-      By default, links contained within a paragraph &lt;p&gt; tag will be blue
-      in color and underlined.
+      USPTO Design System components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and basic experience regardless of their browser, although those experiences will render significantly better in newer browsers.
     </p>
-
-    <ul>
-      <li>
-        Visited links will appear
-        <span style="color: purple; text-decoration: underline"
-          >purple and underlined</span
-        >
-      </li>
-      <li>
-        Override the default appearance of links contained in paragraphs only if
-        necessary
-      </li>
-      <li>
-        Links not contained within a paragraph should follow the individual
-        component/pattern styling as defined
-        <ul>
-          <li>
-            In general, links contained within interface components will not be
-            underlined
-          </li>
-        </ul>
-      </li>
-    </ul>
-
-    <blockquote>
-      <h5 id="example">Example</h5>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-        <a href="#">porttitor ex vestibulum</a>, iaculis metus a, suscipit leo.
-        Nullam ut rutrum nibh, vitae congue nisl. Cum sociis natoque penatibus
-        et magnis dis parturient montes, nascetur ridiculus mus.
-        <a href="#">Duis suscipit turpis ut tincidunt</a> dapibus. Etiam id
-        tristique nisi. Mauris non maximus ex, lacinia bibendum purus. Proin sit
-        amet mi ac massa tempus aliquet. In pellentesque facilisis odio nec
-        ultricies. <a href="#">Quisque metus magna</a>, aliquam a sollicitudin
-        at, mollis id massa.
-      </p>
-    </blockquote>
-  </div>
-  <div class="pattern">
-    <h2 id="externaloff-site-links">External/off-site links</h2>
     <p>
-      Where necessary, add the “<em>icon-external-link</em>”
-      <i class="material-icons">launch</i> icon to inform users that the link
-      they are visiting is an external website.
+      The USPTO Design System supports the latest, stable releases of all major browsers and platforms. <a href="https://www.w3.org/standards/" target="_blank">Learn more about web browser standards.</a>
     </p>
-
-    <blockquote>
-      <h5 id="example-1">Example</h5>
-      <p>
-        Lorem ipsum dolor sit amet.
-        <a href="#">Quisque porttitor ex vestibulum</a>
-        <i class="icon icon-external-link"></i>, consectetur adipiscing elit.
-      </p>
-      <p>&nbsp;</p>
-    </blockquote>
+    <h2>Mobile devices and browsers</h2>
+    <p>
+      Generally speaking, the USPTO Design System supports the latest versions of each major platform’s default browsers. Mobile browser support will greatly depend on the manner in which your UI was implemented. Because this library is built on top of Boostrap, all mobile devices supported by <a href="https://getbootstrap.com/docs/4.0/getting-started/browsers-devices/#mobile-devices" target="_blank">Boostrap will render accurately</a>.
+    </p>
+    <h2>Internet Explorer</h2>
+    <p>
+      Internet Explorer 10+ is supported, including Edge; IE9 and down is not. Please be aware that some CSS3 properties and HTML5 elements are not fully supported in IE10, or require prefixed properties for full functionality.  If your application requires or targets legacy browser compatibility, we recommend using our older <a href="https://uspto.github.io/designpatterns/" target="_blank">USPTO Design Pattern Library.</a>
+    </p>
   </div>
 </section>
     </main>
