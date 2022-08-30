@@ -1,0 +1,2323 @@
+<!DOCTYPE html>
+<html lang="en" class="page-header" >
+  <head>
+<meta charset="UTF-8">
+<meta name="description" content="USPTO Design System. Contains SASS, fonts, icons for building USPTO applications.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+
+<title>USPTO Design System
+ | Header
+</title><link rel="stylesheet" href="../assets/css/main.css">
+<!--Add USWDS dependencies for USWDS components -->
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-datepicker.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-step-indicator.css">
+<link type="text/css" rel="stylesheet" href="../assets/css/uswds-overrides.css">
+<!--Following are only for code preview -->
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/themes/prism.css" data-noprefix/>
+<link type="text/css" rel="stylesheet" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" data-noprefix/>  </head>
+  <body class="parent-container" >
+<a class="skipnav" href="#main-content">
+    Skip to main content
+  </a>
+<section class="banner banner-dark" aria-label="Official government website">
+  <div class="accordion">
+    <div class="d-md-none">
+      <button class="btn accordion-btn" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+          aria-expanded="false" aria-controls="gov-banner-demo">
+        <div class="banner-inner">
+          <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+          <div class="flex-fill">
+            <p class="banner-header-text">An official website of the United States government
+                <span class="expand-btn">Here’s how you know
+                  <i class="material-icons">keyboard_arrow_down</i></span></p>
+          </div>
+          <span class="close-btn">
+            <i class="material-icons ">close</i>
+          </span>
+        </div>
+      </button>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="banner-inner align-itens-center">
+
+        <img class="banner-header-flag mr-2" src="../assets/img/us_flag_small.png" alt="U.S. flag">
+
+        <p class="banner-header-text">An official website of the United States government</p>
+
+        <button class="btn banner-btn ml-2" type="button" data-toggle="collapse" data-target="#gov-banner-demo"
+            aria-expanded="false" aria-controls="gov-banner-demo">
+            Here’s how you know
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+      </div>
+    </div>
+    <div class="banner-content collapse" id="gov-banner-demo">
+      <div class="row no-gutters-sm">
+        <div class="col-md-6 media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="media-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+                Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
+                you’re on a federal government site.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-6  media">
+          <img class="banner-icon align-self-start" src="../assets/img/icon-https.svg" role="img" alt="Https">
+          <div class="media-body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br>
+                The <strong>https://</strong> ensures that you are connecting to the official website and that any
+                information you provide is encrypted and transmitted securely.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <header id="global-header">
+<div class="uspto-header-middle ">
+  <div class="flex-fill">
+    <a class="navbar-brand" href="../index.html" title="USPTO Design System Home">
+          USPTO <span class="font-weight-light">Design System</span>
+    </a>
+    <a class="float-right mr-4 mt-2" href="" title="" >
+     <img src="../assets/img/GitHub-Mark-32px.png" alt="View on GitHub" style="width:22px; vertical-align:top;"> 
+    </a>
+  </div>
+</div>
+
+<div class="uspto-header-bottom">
+  <nav class="navbar navbar-expand-md navbar-dark " aria-label="header sub navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../foundation/foundation.html" title="Foundation">
+              Foundation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../components/components.html" title="Components">
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html" title="Patterns">
+              Patterns
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pageTemplates/pageTemplate.html" title="Page templates">
+              Page templates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usage/how-to-use.html" title="Usage">
+              Usage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources/resources.html" title="Resources">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html" title="About">
+              About
+            </a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>      </header>
+
+      <div class="main-container">
+  <div class="d-sm-block d-md-none">
+<select class="form-control my-3" id="leftSideNav" >
+    <option value="components.html">Components
+    </option>
+    <option value="alertsNotifications.html">Alerts and notifications
+    </option>
+    <option value="banner.html">Banner
+    </option>
+    <option value="breadcrumbs.html">Breadcrumbs
+    </option>
+    <option value="buttons.html">Buttons
+    </option>
+    <option value="carousel.html">Carousel
+    </option>
+    <option value="character-count.html">Character count
+    </option>
+    <option value="collapsiblePanels.html">Collapsible panels
+    </option>
+    <option value="dialogs.html">Dialogs
+    </option>
+    <option value="siteAlert.html">Emergency site alert
+    </option>
+    <option value="formControls.html">Form controls
+    </option>
+    <option value="forms.html">Forms
+    </option>
+    <option value="list.html">List
+    </option>
+    <option value="labelsAndBadges.html">Labels and badges
+    </option>
+    <option value="menus.html">Menus
+    </option>
+    <option value="multistepNavigation.html">Multistep navigation
+    </option>
+    <option value="pagination.html">Pagination
+    </option>
+    <option value="popovers.html">Popovers
+    </option>
+    <option value="process-list.html">Process list
+    </option>
+    <option value="progressLoading.html">Progress and loading
+    </option>
+    <option value="stepIndicators.html">Step indicators
+    </option>
+    <option value="summaryBox.html">Summary box
+    </option>
+    <option value="tables.html">Tables
+    </option>
+    <option value="tabs.html">Tabs
+    </option>
+    <option value="tooltips.html">Tooltips
+    </option>
+</select>  </div>
+  <div class="d-none d-sm-none d-md-block">
+<nav id="sidenav" aria-label="DPL Components">
+  <ul class="sidenav">
+      <li>
+        <a href="components.html" data-parent="Components">Components</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="alertsNotifications.html" data-parent="Alerts and notifications">Alerts and notifications</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#contextual-alerts">Contextual alerts</a>
+            </li>
+            <li>
+              <a href="#system-notifications">System notifications</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="banner.html" data-parent="Banner">Banner</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="breadcrumbs.html" data-parent="Breadcrumbs">Breadcrumbs</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="buttons.html" data-parent="Buttons">Buttons</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#button-styles">Button styles</a>
+            </li>
+            <li>
+              <a href="#button-sizes">Button sizes</a>
+            </li>
+            <li>
+              <a href="#button-groups">Button groups</a>
+            </li>
+            <li>
+              <a href="#toggle-buttons">Toggle buttons</a>
+            </li>
+            <li>
+              <a href="#dropdown-buttons">Dropdown buttons</a>
+            </li>
+            <li>
+              <a href="#split-buttons">Split buttons</a>
+            </li>
+            <li>
+              <a href="#icon-buttons">Icon buttons</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="carousel.html" data-parent="Carousel">Carousel</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="character-count.html" data-parent="Character count">Character count</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="collapsiblePanels.html" data-parent="Collapsible panels">Collapsible panels</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#behaviors">Behaviors</a>
+            </li>
+            <li>
+              <a href="#styles">Styles</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="dialogs.html" data-parent="Dialogs">Dialogs</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#confirmation">Confirmation</a>
+            </li>
+            <li>
+              <a href="#actionless">Actionless</a>
+            </li>
+            <li>
+              <a href="#modes">Modes</a>
+            </li>
+            <li>
+              <a href="#live">Live</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="siteAlert.html" data-parent="Emergency site alert">Emergency site alert</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="formControls.html" data-parent="Form controls">Form controls</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#text-box">Text box</a>
+            </li>
+            <li>
+              <a href="#text-area">Text area</a>
+            </li>
+            <li>
+              <a href="#radio-buttons">Radio buttons</a>
+            </li>
+            <li>
+              <a href="#checkboxes">Checkboxes</a>
+            </li>
+            <li>
+              <a href="#toggle-switches">Toggle switches</a>
+            </li>
+            <li>
+              <a href="#select">Select</a>
+            </li>
+            <li>
+              <a href="#multi-select">Multi-select</a>
+            </li>
+            <li>
+              <a href="#date-picker">Date picker</a>
+            </li>
+            <li>
+              <a href="#date-input">Date input</a>
+            </li>
+            <li>
+              <a href="#time-picker">Time picker</a>
+            </li>
+            <li>
+              <a href="#input-prefix-suffix">Input prefix &amp; suffix</a>
+            </li>
+            <li>
+              <a href="#slider">Range slider</a>
+            </li>
+            <li>
+              <a href="#rich-text-editor">Rich text editor</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="forms.html" data-parent="Forms">Forms</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#overview">Overview</a>
+            </li>
+            <li>
+              <a href="#field-widths">Field widths</a>
+            </li>
+            <li>
+              <a href="#labels">Labels</a>
+            </li>
+            <li>
+              <a href="#required-fields">Required fields</a>
+            </li>
+            <li>
+              <a href="#optional-fields">Optional fields</a>
+            </li>
+            <li>
+              <a href="#form-validation">Form validation</a>
+            </li>
+            <li>
+              <a href="#help-text">Help text</a>
+            </li>
+            <li>
+              <a href="#form-groups">Form groups</a>
+            </li>
+            <li>
+              <a href="#input-character-limits">Input character limits</a>
+            </li>
+            <li>
+              <a href="#examples">Examples</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="list.html" data-parent="List">List</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="labelsAndBadges.html" data-parent="Labels and badges">Labels and badges</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#labels">Labels</a>
+            </li>
+            <li>
+              <a href="#badges">Badges</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="menus.html" data-parent="Menus">Menus</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#submenus">Submenus</a>
+            </li>
+            <li>
+              <a href="#icons">Icons</a>
+            </li>
+            <li>
+              <a href="#form-controls">Form controls</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="multistepNavigation.html" data-parent="Multistep navigation">Multistep navigation</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="pagination.html" data-parent="Pagination">Pagination</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#examples">Examples</a>
+            </li>
+            <li>
+              <a href="#sizing">Sizing</a>
+            </li>
+            <li>
+              <a href="#alignment">Alignment</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="popovers.html" data-parent="Popovers">Popovers</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="process-list.html" data-parent="Process list">Process list</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="progressLoading.html" data-parent="Progress and loading">Progress and loading</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#progress-bars">Progress bars</a>
+            </li>
+            <li>
+              <a href="#load-spinners">Load spinners</a>
+            </li>
+            <li>
+              <a href="#Size">Spinner size</a>
+            </li>
+            <li>
+              <a href="#Spinner-examples">Spinner examples</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="stepIndicators.html" data-parent="Step indicators">Step indicators</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="summaryBox.html" data-parent="Summary box">Summary box</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="tables.html" data-parent="Tables">Tables</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#styles">Styles</a>
+            </li>
+            <li>
+              <a href="#headers">Headers</a>
+            </li>
+            <li>
+              <a href="#sorting">Sorting</a>
+            </li>
+            <li>
+              <a href="#selection">Selection</a>
+            </li>
+            <li>
+              <a href="#row-action-buttons">Row action buttons</a>
+            </li>
+            <li>
+              <a href="#column-customization">Column customization</a>
+            </li>
+            <li>
+              <a href="#grouping">Grouping</a>
+            </li>
+            <li>
+              <a href="#expandable-rows">Expandable rows</a>
+            </li>
+            <li>
+              <a href="#add-new-row">Add new row</a>
+            </li>
+            <li>
+              <a href="#datatable">DataTables.net</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="tabs.html" data-parent="Tabs">Tabs</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#normal-tabs">Normal tabs</a>
+            </li>
+            <li>
+              <a href="#pill-tabs">Pill tabs</a>
+            </li>
+            <li>
+              <a href="#vertical-tabs">Vertical tabs</a>
+            </li>
+            <li>
+              <a href="#justified-tabs">Justified tabs</a>
+            </li>
+            <li>
+              <a href="#light-tabs">Light tabs</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a href="tooltips.html" data-parent="Tooltips">Tooltips</a>
+        <ul class="sidenav-sublist">
+            <li>
+              <a href="#positioning">Positioning</a>
+            </li>
+            <li>
+              <a href="#content">Content</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</nav>  </div>
+  <main id="main-content">
+
+<section class="pv-content">
+  <div class="pattern">
+    <h1>Header</h1>
+    <p>
+        A header helps users identify where they are and provides a quick,
+        organized way to reach the main sections of a website.
+      </p>
+      <p><a href="https://prod-cicm.uspto.gov/gitlab/myuspto/USPTO-Global-Header-Footer/tree/master" target="_blank">Get USPTO global header from GitLab</a></p>
+  </div>
+  
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-1"
+
+      aria-label="View code for header"
+
+      aria-expanded="false"
+
+      data-target="#codebox-1"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for header"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Header--&gt;
+&lt;header id=&quot;global-header&quot;&gt;
+  &lt;div class=&quot;uspto-header-top&quot;&gt;
+    &lt;nav class=&quot;navbar navbar-expand-lg navbar-dark&quot;&gt;
+      &lt;a
+        href=&quot;https://www.uspto.gov&quot;
+        target=&quot;_blank&quot;
+        class=&quot;uspto-logo&quot;
+        title=&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;
+      &gt;
+        &lt;span class=&quot;sr-only&quot;&gt; United States Patent and Trademark Office &lt;/span&gt;
+      &lt;/a&gt;
+      &lt;div class=&quot;ml-auto d-flex&quot;&gt;
+        &lt;!-- Dynamic menu zone --&gt;
+        &lt;!-- Do not customize this area --&gt;
+        &lt;div class=&quot;display-inline dyn-menuarea&quot;&gt;
+          &lt;!-- Patents --&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default ex-btn-inverse&quot;
+              onclick=&quot;location.href = &#39;https://www.uspto.gov/patent&#39;;&quot;
+              aria-haspopup=&quot;false&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;&gt;Patents&lt;/span&gt;
+              &lt;span class=&quot;btn-icon&quot;&gt;
+                &lt;span class=&quot;uspto-icon-lightbulb&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Trademarks --&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default ex-btn-inverse&quot;
+              onclick=&quot;location.href = &#39;https://www.uspto.gov/trademark&#39;;&quot;
+              aria-haspopup=&quot;false&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;&gt;Trademarks&lt;/span&gt;
+              &lt;span class=&quot;btn-icon&quot;&gt;
+                &lt;span class=&quot;uspto-icon-trademark&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Fees and payment --&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default ex-btn-inverse&quot;
+              onclick=&quot;location.href = &#39;https://fees.uspto.gov&#39;;&quot;
+              aria-haspopup=&quot;false&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;&gt;Fees and payment&lt;/span&gt;
+              &lt;span class=&quot;btn-icon&quot;&gt;
+                &lt;span class=&quot;uspto-icon-dollar&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Help --&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;&gt;Help&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+              &lt;span class=&quot;btn-icon&quot;&gt;
+                &lt;span class=&quot;uspto-icon-question-circle&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://www.uspto.gov/learning-resources&quot;
+                  target=&quot;_blank&quot;
+                  data-event-category=&quot;myuspto Header: Help menu&quot;
+                  data-event-action=&quot;myuspto menu link clicked&quot;
+                  data-event-label=&quot;FAQs&quot;
+                  &gt;FAQs&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://www.uspto.gov/about-us/contact-us&quot;
+                  target=&quot;_blank&quot;
+                  data-event-category=&quot;myuspto Header: Help menu&quot;
+                  data-event-action=&quot;myuspto menu link clicked&quot;
+                  data-event-label=&quot;Contact us&quot;
+                  &gt;Contact us&lt;/a
+                &gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- /End dynamic menu zone --&gt;
+
+        &lt;!-- Sign-in/user menu --&gt;
+
+        &lt;!-- MyUSPTO Link --&gt;
+        &lt;div class=&quot;btn-group&quot;&gt;
+          &lt;a
+            class=&quot;btn btn-default ex-btn-inverse my-link&quot;
+            href=&quot;https://my.uspto.gov&quot;
+          &gt;
+            &lt;span class=&quot;btn-text&quot;&gt;MyUSPTO&lt;/span&gt;
+            &lt;span class=&quot;btn-icon&quot;&gt;
+              &lt;span class=&quot;uspto-icon-myuspto&quot;&gt;&lt;/span
+            &gt;&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;btn-group&quot;&gt;
+          &lt;!--
+                    The code snippet for the .btn-group below will need to
+                    be conditionally displayed when the user is signed in
+                    and it&#39;s appropriate to show account information.
+                   --&gt;
+          &lt;!-- BEGIN USER DROPDOWN MENU --&gt;
+          &lt;button
+            type=&quot;button&quot;
+            class=&quot;btn btn-default dropdown-toggle ex-btn-inverse user-link&quot;
+            data-toggle=&quot;dropdown&quot;
+            aria-haspopup=&quot;true&quot;
+            aria-expanded=&quot;false&quot;
+          &gt;
+            &lt;span class=&quot;btn-text&quot;&gt;John Doe&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+            &lt;span class=&quot;btn-icon&quot;&gt; &lt;span class=&quot;uspto-icon-user&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://my.uspto.gov&quot;&gt;
+                &lt;span class=&quot;uspto-icon-home&quot;&gt;&lt;/span&gt; MyUSPTO&lt;span
+                  class=&quot;sr-only&quot;
+                  &gt;console&lt;/span
+                &gt;&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://account.uspto.gov&quot;&gt;
+                &lt;span class=&quot;uspto-icon-user-white&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Manage your&lt;/span&gt;Account&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://my.uspto.gov/signout&quot;&gt;
+                &lt;span class=&quot;uspto-icon-sign-out&quot;&gt;&lt;/span&gt; Sign out&lt;/a
+              &gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;!-- END USER DROPDOWN MENU --&gt;
+
+          &lt;!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET--&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- /.pull-right --&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;uspto-header-middle&quot;&gt;
+    &lt;div class=&quot;flex-fill&quot;&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot; title=&quot;Project title&quot;&gt; Project title &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;uspto-header-bottom&quot;&gt;
+    &lt;nav
+      class=&quot;navbar navbar-expand-md navbar-dark&quot;
+      aria-label=&quot;header sub navigation&quot;
+    &gt;
+      &lt;button
+        class=&quot;navbar-toggler&quot;
+        type=&quot;button&quot;
+        data-toggle=&quot;collapse&quot;
+        data-target=&quot;#navbarNav&quot;
+        aria-controls=&quot;navbarNav&quot;
+        aria-expanded=&quot;false&quot;
+        aria-label=&quot;Toggle navigation&quot;
+      &gt;
+        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+        &lt;ul class=&quot;navbar-nav mr-auto&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;
+              &gt;Home &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a
+            &gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item dropdown&quot;&gt;
+            &lt;a
+              class=&quot;nav-link dropdown-toggle&quot;
+              href=&quot;#&quot;
+              id=&quot;navbarDropdown&quot;
+              role=&quot;button&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              Dropdown
+            &lt;/a&gt;
+            &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
+                &lt;h6 class=&quot;dropdown-header&quot;&gt;Heading&lt;/h6&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+              &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a
+              class=&quot;nav-link disabled&quot;
+              href=&quot;#&quot;
+              tabindex=&quot;-1&quot;
+              aria-disabled=&quot;true&quot;
+              &gt;Disabled&lt;/a
+            &gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Header-->
+<header id="global-header">
+  <div class="uspto-header-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a
+        href="https://www.uspto.gov"
+        target="_blank"
+        class="uspto-logo"
+        title="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+      >
+        <span class="sr-only"> United States Patent and Trademark Office </span>
+      </a>
+      <div class="ml-auto d-flex">
+        <!-- Dynamic menu zone -->
+        <!-- Do not customize this area -->
+        <div class="display-inline dyn-menuarea">
+          <!-- Patents -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://www.uspto.gov/patent';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Patents</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-lightbulb"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Trademarks -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://www.uspto.gov/trademark';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Trademarks</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-trademark"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Fees and payment -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://fees.uspto.gov';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Fees and payment</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-dollar"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Help -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Help<span class="caret"></span></span>
+              <span class="btn-icon">
+                <span class="uspto-icon-question-circle"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a
+                  href="https://www.uspto.gov/learning-resources"
+                  target="_blank"
+                  data-event-category="myuspto Header: Help menu"
+                  data-event-action="myuspto menu link clicked"
+                  data-event-label="FAQs"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.uspto.gov/about-us/contact-us"
+                  target="_blank"
+                  data-event-category="myuspto Header: Help menu"
+                  data-event-action="myuspto menu link clicked"
+                  data-event-label="Contact us"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /End dynamic menu zone -->
+
+        <!-- Sign-in/user menu -->
+
+        <!-- MyUSPTO Link -->
+        <div class="btn-group">
+          <a
+            class="btn btn-default ex-btn-inverse my-link"
+            href="https://my.uspto.gov"
+          >
+            <span class="btn-text">MyUSPTO</span>
+            <span class="btn-icon">
+              <span class="uspto-icon-myuspto"></span
+            ></span>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <!--
+                    The code snippet for the .btn-group below will need to
+                    be conditionally displayed when the user is signed in
+                    and it's appropriate to show account information.
+                   -->
+          <!-- BEGIN USER DROPDOWN MENU -->
+          <button
+            type="button"
+            class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="btn-text">John Doe<span class="caret"></span></span>
+            <span class="btn-icon"> <span class="uspto-icon-user"></span></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="https://my.uspto.gov">
+                <span class="uspto-icon-home"></span> MyUSPTO<span
+                  class="sr-only"
+                  >console</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="https://account.uspto.gov">
+                <span class="uspto-icon-user-white"></span>
+                <span class="sr-only">Manage your</span>Account</a
+              >
+            </li>
+            <li>
+              <a href="https://my.uspto.gov/signout">
+                <span class="uspto-icon-sign-out"></span> Sign out</a
+              >
+            </li>
+          </ul>
+          <!-- END USER DROPDOWN MENU -->
+
+          <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+        </div>
+      </div>
+      <!-- /.pull-right -->
+    </nav>
+  </div>
+  <div class="uspto-header-middle">
+    <div class="flex-fill">
+      <a class="navbar-brand" href="#" title="Project title"> Project title </a>
+    </div>
+  </div>
+  <div class="uspto-header-bottom">
+    <nav
+      class="navbar navbar-expand-md navbar-dark"
+      aria-label="header sub navigation"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <h6 class="dropdown-header">Heading</h6>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-1">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Header--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;global-header&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-header-top&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar navbar-expand-lg navbar-dark&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+        <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.uspto.gov&quot;</span>
+        <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-logo&quot;</span>
+        <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;</span>
+      &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span> United States Patent and Trademark Office <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ml-auto d-flex&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Dynamic menu zone --&gt;</span>
+        <span class="hljs-comment">&lt;!-- Do not customize this area --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;display-inline dyn-menuarea&quot;</span>&gt;</span>
+          <span class="hljs-comment">&lt;!-- Patents --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;location.href = &#x27;https://www.uspto.gov/patent&#x27;;&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;false&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>Patents<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-lightbulb&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span class="hljs-comment">&lt;!-- Trademarks --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;location.href = &#x27;https://www.uspto.gov/trademark&#x27;;&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;false&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>Trademarks<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-trademark&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span class="hljs-comment">&lt;!-- Fees and payment --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;location.href = &#x27;https://fees.uspto.gov&#x27;;&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;false&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>Fees and payment<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-dollar&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span class="hljs-comment">&lt;!-- Help --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>Help<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-question-circle&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.uspto.gov/learning-resources&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  <span class="hljs-attr">data-event-category</span>=<span class="hljs-string">&quot;myuspto Header: Help menu&quot;</span>
+                  <span class="hljs-attr">data-event-action</span>=<span class="hljs-string">&quot;myuspto menu link clicked&quot;</span>
+                  <span class="hljs-attr">data-event-label</span>=<span class="hljs-string">&quot;FAQs&quot;</span>
+                  &gt;</span>FAQs&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.uspto.gov/about-us/contact-us&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  <span class="hljs-attr">data-event-category</span>=<span class="hljs-string">&quot;myuspto Header: Help menu&quot;</span>
+                  <span class="hljs-attr">data-event-action</span>=<span class="hljs-string">&quot;myuspto menu link clicked&quot;</span>
+                  <span class="hljs-attr">data-event-label</span>=<span class="hljs-string">&quot;Contact us&quot;</span>
+                  &gt;</span>Contact us&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- /End dynamic menu zone --&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- Sign-in/user menu --&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- MyUSPTO Link --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default ex-btn-inverse my-link&quot;</span>
+            <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://my.uspto.gov&quot;</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>MyUSPTO<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-myuspto&quot;</span>&gt;</span>&lt;/span
+            &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+          <span class="hljs-comment">&lt;!--
+                    The code snippet for the .btn-group below will need to
+                    be conditionally displayed when the user is signed in
+                    and it&#x27;s appropriate to show account information.
+                   --&gt;</span>
+          <span class="hljs-comment">&lt;!-- BEGIN USER DROPDOWN MENU --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+            <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default dropdown-toggle ex-btn-inverse user-link&quot;</span>
+            <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+            <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+            <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>John Doe<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-user&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://my.uspto.gov&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-home&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> MyUSPTO<span class="hljs-tag">&lt;<span class="hljs-name">span</span>
+                  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>
+                  &gt;</span>console&lt;/span
+                &gt;&lt;/a
+              &gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://account.uspto.gov&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-user-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Manage your<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Account&lt;/a
+              &gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://my.uspto.gov/signout&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-sign-out&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Sign out&lt;/a
+              &gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-comment">&lt;!-- END USER DROPDOWN MENU --&gt;</span>
+
+          <span class="hljs-comment">&lt;!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET--&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- /.pull-right --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-header-middle&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex-fill&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-brand&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Project title&quot;</span>&gt;</span> Project title <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-header-bottom&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar navbar-expand-md navbar-dark&quot;</span>
+      <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;header sub navigation&quot;</span>
+    &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-toggler&quot;</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+        <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span>
+        <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#navbarNav&quot;</span>
+        <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;navbarNav&quot;</span>
+        <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+        <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Toggle navigation&quot;</span>
+      &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-toggler-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collapse navbar-collapse&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;navbarNav&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-nav mr-auto&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+              &gt;</span>Home <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&lt;/a
+            &gt;
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item dropdown&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link dropdown-toggle&quot;</span>
+              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+              <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;navbarDropdown&quot;</span>
+              <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              Dropdown
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;navbarDropdown&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header&quot;</span>&gt;</span>Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-divider&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link disabled&quot;</span>
+              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+              <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>
+              <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">&quot;true&quot;</span>
+              &gt;</span>Disabled&lt;/a
+            &gt;
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="pattern">
+    <h2>Header with megamenu</h2>
+    <p>
+      The header with a megamenu is similar in design but covering the whole
+      width of the page. The megamenu allows for the inclusion of more links in
+      dropdown menus. 
+    </p>
+    <p>You can convert any dropdown menu to megamenu after
+      adding <code class="highlighter-rouge">megamenu</code> class to navigation
+      dropdown of the header.</p>
+  </div>
+  <div class="preview">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-2"
+
+      aria-label="View code for megamenu"
+
+      aria-expanded="false"
+
+      data-target="#codebox-2"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for megamenu"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!--Header with megamenu--&gt;
+&lt;header id=&quot;global-header&quot;&gt;
+  &lt;div class=&quot;uspto-header-top&quot;&gt;
+    &lt;nav class=&quot;navbar navbar-expand-lg navbar-dark&quot;&gt;
+      &lt;a
+        href=&quot;https://www.uspto.gov&quot;
+        target=&quot;_blank&quot;
+        class=&quot;uspto-logo&quot;
+        title=&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;
+      &gt;
+        &lt;span class=&quot;sr-only&quot;&gt; United States Patent and Trademark Office &lt;/span&gt;
+      &lt;/a&gt;
+      &lt;div class=&quot;ml-auto d-flex&quot;&gt;
+        &lt;!-- Dynamic menu zone --&gt;
+        &lt;!-- Do not customize this area --&gt;
+        &lt;div class=&quot;display-inline dyn-menuarea&quot;&gt;
+          &lt;!-- Patents --&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default ex-btn-inverse&quot;
+              onclick=&quot;location.href = &#39;https://www.uspto.gov/patent&#39;;&quot;
+              aria-haspopup=&quot;false&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;&gt;Patents&lt;/span&gt;
+              &lt;span class=&quot;btn-icon&quot;&gt;
+                &lt;span class=&quot;uspto-icon-lightbulb&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Trademarks --&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default ex-btn-inverse&quot;
+              onclick=&quot;location.href = &#39;https://www.uspto.gov/trademark&#39;;&quot;
+              aria-haspopup=&quot;false&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;&gt;Trademarks&lt;/span&gt;
+              &lt;span class=&quot;btn-icon&quot;&gt;
+                &lt;span class=&quot;uspto-icon-trademark&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Fees and payment --&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default ex-btn-inverse&quot;
+              onclick=&quot;location.href = &#39;https://fees.uspto.gov&#39;;&quot;
+              aria-haspopup=&quot;false&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;&gt;Fees and payment&lt;/span&gt;
+              &lt;span class=&quot;btn-icon&quot;&gt;
+                &lt;span class=&quot;uspto-icon-dollar&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Help --&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button
+              type=&quot;button&quot;
+              class=&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;
+              data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot;
+              aria-expanded=&quot;false&quot;
+            &gt;
+              &lt;span class=&quot;btn-text&quot;&gt;Help&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+              &lt;span class=&quot;btn-icon&quot;&gt;
+                &lt;span class=&quot;uspto-icon-question-circle&quot;&gt;&lt;/span
+              &gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://www.uspto.gov/learning-resources&quot;
+                  target=&quot;_blank&quot;
+                  data-event-category=&quot;myuspto Header: Help menu&quot;
+                  data-event-action=&quot;myuspto menu link clicked&quot;
+                  data-event-label=&quot;FAQs&quot;
+                  &gt;FAQs&lt;/a
+                &gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a
+                  href=&quot;https://www.uspto.gov/about-us/contact-us&quot;
+                  target=&quot;_blank&quot;
+                  data-event-category=&quot;myuspto Header: Help menu&quot;
+                  data-event-action=&quot;myuspto menu link clicked&quot;
+                  data-event-label=&quot;Contact us&quot;
+                  &gt;Contact us&lt;/a
+                &gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- /End dynamic menu zone --&gt;
+
+        &lt;!-- Sign-in/user menu --&gt;
+
+        &lt;!-- MyUSPTO Link --&gt;
+        &lt;div class=&quot;btn-group&quot;&gt;
+          &lt;a
+            class=&quot;btn btn-default ex-btn-inverse my-link&quot;
+            href=&quot;https://my.uspto.gov&quot;
+          &gt;
+            &lt;span class=&quot;btn-text&quot;&gt;MyUSPTO&lt;/span&gt;
+            &lt;span class=&quot;btn-icon&quot;&gt;
+              &lt;span class=&quot;uspto-icon-myuspto&quot;&gt;&lt;/span
+            &gt;&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;btn-group&quot;&gt;
+          &lt;!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it&#39;s appropriate to show account information.
+               --&gt;
+          &lt;!-- BEGIN USER DROPDOWN MENU --&gt;
+          &lt;button
+            type=&quot;button&quot;
+            class=&quot;btn btn-default dropdown-toggle ex-btn-inverse user-link&quot;
+            data-toggle=&quot;dropdown&quot;
+            aria-haspopup=&quot;true&quot;
+            aria-expanded=&quot;false&quot;
+          &gt;
+            &lt;span class=&quot;btn-text&quot;&gt;John Doe&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+            &lt;span class=&quot;btn-icon&quot;&gt; &lt;span class=&quot;uspto-icon-user&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://my.uspto.gov&quot;&gt;
+                &lt;span class=&quot;uspto-icon-home&quot;&gt;&lt;/span&gt; MyUSPTO&lt;span
+                  class=&quot;sr-only&quot;
+                  &gt;console&lt;/span
+                &gt;&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://account.uspto.gov&quot;&gt;
+                &lt;span class=&quot;uspto-icon-user-white&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Manage your&lt;/span&gt;Account&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://my.uspto.gov/signout&quot;&gt;
+                &lt;span class=&quot;uspto-icon-sign-out&quot;&gt;&lt;/span&gt; Sign out&lt;/a
+              &gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;!-- END USER DROPDOWN MENU --&gt;
+
+          &lt;!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET--&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- /.pull-right --&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;uspto-header-middle&quot;&gt;
+    &lt;div class=&quot;flex-fill&quot;&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot; title=&quot;Project title&quot;&gt; Project title &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;uspto-header-bottom&quot;&gt;
+    &lt;nav
+      class=&quot;navbar navbar-expand-md navbar-dark&quot;
+      aria-label=&quot;header sub navigation&quot;
+    &gt;
+      &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+        &lt;ul class=&quot;navbar-nav&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;#!&quot;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+
+          &lt;li class=&quot;nav-item dropdown megamenu&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;
+              &gt;New submission &lt;span class=&quot;caret&quot;&gt;&lt;/span
+            &gt;&lt;/a&gt;
+            &lt;div class=&quot;dropdown-menu&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col mb-md-0&quot;&gt;
+                  &lt;h6 class=&quot;dropdown-header&quot;&gt;Regular submissions&lt;/h6&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Utility-Nonprovisional&lt;/a&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Utility-Provisional&lt;/a&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Design&lt;/a&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;U.S. 371 National stage&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col mb-md-0&quot;&gt;
+                  &lt;h6 class=&quot;dropdown-header&quot;&gt;International applications&lt;/h6&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;
+                    &gt;International application (PCT)&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;
+                    &gt;International design application(Hague)&lt;/a
+                  &gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col mb-md-0&quot;&gt;
+                  &lt;h6 class=&quot;dropdown-header&quot;&gt;Patent initiatives&lt;/h6&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;TrackOne&lt;/a&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;
+                    &gt;Accelerated Examination – Utility&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;
+                    &gt;Accelerated Examination – Design&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item dropdown&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;
+              &gt;Existing submissions &lt;span class=&quot;caret&quot;&gt;&lt;/span
+            &gt;&lt;/a&gt;
+            &lt;div class=&quot;dropdown-menu&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col mb-md-0&quot;&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Prior Art Submission into a Patent File under 37 CFR
+                    1.501&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    File third-party preissuance submission&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item dropdown megamenu&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;
+              &gt;Petitions &lt;span class=&quot;caret&quot;&gt;&lt;/span
+            &gt;&lt;/a&gt;
+            &lt;div class=&quot;dropdown-menu&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col mb-md-0&quot;&gt;
+                  &lt;h6 class=&quot;dropdown-header&quot;&gt;Petitions - pending&lt;/h6&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition to make special based on age&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition to withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(1) or (2))&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(1) or(2) with Assigned Patent
+                    Number)&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(3))&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(3) with Assigned Patent Number)&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition to Accept Late Payment of Issue Fee - Unintentional
+                    Late Payment (37 CFR 1.137(a))&lt;/a
+                  &gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col mb-md-0&quot;&gt;
+                  &lt;h6 class=&quot;dropdown-header&quot;&gt;Petitions - issued&lt;/h6&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition to Accept Unintentional Delayed Payment of the
+                    Maintenance Fee (37 CFR 1.378(b))&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition to Correct Assignee After Payment of Issue Fee (37
+                    CFR 3.81(b))&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition for Revival of an Application for Continuity
+                    Purposes Only (37 CFR 1.137(a))&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                    Petition for Revival of an Application based on Failure to
+                    Notify the Office of a Foreign or International Filing (37
+                    CFR 1.137(f))&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item dropdown megamenu&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;
+              &gt;Post grant &lt;span class=&quot;caret&quot;&gt;&lt;/span
+            &gt;&lt;/a&gt;
+            &lt;div class=&quot;dropdown-menu&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col mb-md-0&quot;&gt;
+                  &lt;h6 class=&quot;dropdown-header&quot;&gt;Reexam &amp;amp; reissue&lt;/h6&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;
+                    &gt;Request for Reexam - by Patent Owner&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;
+                    &gt;Request for Reexam - by Third Party&lt;/a
+                  &gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Request for Reissue&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col mb-md-0&quot;&gt;
+                  &lt;h6 class=&quot;dropdown-header&quot;&gt;Supplemental examination&lt;/h6&gt;
+                  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;
+                    &gt;Request for Supplemental Examination&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+   
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!--Header with megamenu-->
+<header id="global-header">
+  <div class="uspto-header-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a
+        href="https://www.uspto.gov"
+        target="_blank"
+        class="uspto-logo"
+        title="United States Patent and Trademark Office - An Agency of the Department of Commerce"
+      >
+        <span class="sr-only"> United States Patent and Trademark Office </span>
+      </a>
+      <div class="ml-auto d-flex">
+        <!-- Dynamic menu zone -->
+        <!-- Do not customize this area -->
+        <div class="display-inline dyn-menuarea">
+          <!-- Patents -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://www.uspto.gov/patent';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Patents</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-lightbulb"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Trademarks -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://www.uspto.gov/trademark';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Trademarks</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-trademark"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Fees and payment -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default ex-btn-inverse"
+              onclick="location.href = 'https://fees.uspto.gov';"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Fees and payment</span>
+              <span class="btn-icon">
+                <span class="uspto-icon-dollar"></span
+              ></span>
+            </button>
+          </div>
+
+          <!-- Help -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle ex-btn-inverse"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="btn-text">Help<span class="caret"></span></span>
+              <span class="btn-icon">
+                <span class="uspto-icon-question-circle"></span
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a
+                  href="https://www.uspto.gov/learning-resources"
+                  target="_blank"
+                  data-event-category="myuspto Header: Help menu"
+                  data-event-action="myuspto menu link clicked"
+                  data-event-label="FAQs"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.uspto.gov/about-us/contact-us"
+                  target="_blank"
+                  data-event-category="myuspto Header: Help menu"
+                  data-event-action="myuspto menu link clicked"
+                  data-event-label="Contact us"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /End dynamic menu zone -->
+
+        <!-- Sign-in/user menu -->
+
+        <!-- MyUSPTO Link -->
+        <div class="btn-group">
+          <a
+            class="btn btn-default ex-btn-inverse my-link"
+            href="https://my.uspto.gov"
+          >
+            <span class="btn-text">MyUSPTO</span>
+            <span class="btn-icon">
+              <span class="uspto-icon-myuspto"></span
+            ></span>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it's appropriate to show account information.
+               -->
+          <!-- BEGIN USER DROPDOWN MENU -->
+          <button
+            type="button"
+            class="btn btn-default dropdown-toggle ex-btn-inverse user-link"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="btn-text">John Doe<span class="caret"></span></span>
+            <span class="btn-icon"> <span class="uspto-icon-user"></span></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="https://my.uspto.gov">
+                <span class="uspto-icon-home"></span> MyUSPTO<span
+                  class="sr-only"
+                  >console</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="https://account.uspto.gov">
+                <span class="uspto-icon-user-white"></span>
+                <span class="sr-only">Manage your</span>Account</a
+              >
+            </li>
+            <li>
+              <a href="https://my.uspto.gov/signout">
+                <span class="uspto-icon-sign-out"></span> Sign out</a
+              >
+            </li>
+          </ul>
+          <!-- END USER DROPDOWN MENU -->
+
+          <!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET-->
+        </div>
+      </div>
+      <!-- /.pull-right -->
+    </nav>
+  </div>
+  <div class="uspto-header-middle">
+    <div class="flex-fill">
+      <a class="navbar-brand" href="#" title="Project title"> Project title </a>
+    </div>
+  </div>
+  <div class="uspto-header-bottom">
+    <nav
+      class="navbar navbar-expand-md navbar-dark"
+      aria-label="header sub navigation"
+    >
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Home</a>
+          </li>
+
+          <li class="nav-item dropdown megamenu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >New submission <span class="caret"></span
+            ></a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Regular submissions</h6>
+                  <a class="dropdown-item" href="#">Utility-Nonprovisional</a>
+                  <a class="dropdown-item" href="#">Utility-Provisional</a>
+                  <a class="dropdown-item" href="#">Design</a>
+                  <a class="dropdown-item" href="#">U.S. 371 National stage</a>
+                </div>
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">International applications</h6>
+                  <a class="dropdown-item" href="#"
+                    >International application (PCT)</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    >International design application(Hague)</a
+                  >
+                </div>
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Patent initiatives</h6>
+                  <a class="dropdown-item" href="#">TrackOne</a>
+                  <a class="dropdown-item" href="#"
+                    >Accelerated Examination – Utility</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    >Accelerated Examination – Design</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Existing submissions <span class="caret"></span
+            ></a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col mb-md-0">
+                  <a class="dropdown-item" href="#">
+                    Prior Art Submission into a Patent File under 37 CFR
+                    1.501</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    File third-party preissuance submission</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown megamenu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Petitions <span class="caret"></span
+            ></a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Petitions - pending</h6>
+                  <a class="dropdown-item" href="#">
+                    Petition to make special based on age</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(1) or (2))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(1) or(2) with Assigned Patent
+                    Number)</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(3))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(3) with Assigned Patent Number)</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Accept Late Payment of Issue Fee - Unintentional
+                    Late Payment (37 CFR 1.137(a))</a
+                  >
+                </div>
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Petitions - issued</h6>
+                  <a class="dropdown-item" href="#">
+                    Petition to Accept Unintentional Delayed Payment of the
+                    Maintenance Fee (37 CFR 1.378(b))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition to Correct Assignee After Payment of Issue Fee (37
+                    CFR 3.81(b))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition for Revival of an Application for Continuity
+                    Purposes Only (37 CFR 1.137(a))</a
+                  >
+                  <a class="dropdown-item" href="#">
+                    Petition for Revival of an Application based on Failure to
+                    Notify the Office of a Foreign or International Filing (37
+                    CFR 1.137(f))</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown megamenu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Post grant <span class="caret"></span
+            ></a>
+            <div class="dropdown-menu">
+              <div class="row">
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Reexam &amp; reissue</h6>
+                  <a class="dropdown-item" href="#"
+                    >Request for Reexam - by Patent Owner</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    >Request for Reexam - by Third Party</a
+                  >
+                  <a class="dropdown-item" href="#">Request for Reissue</a>
+                </div>
+                <div class="col mb-md-0">
+                  <h6 class="dropdown-header">Supplemental examination</h6>
+                  <a class="dropdown-item" href="#"
+                    >Request for Supplemental Examination</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+   
+      </div>
+    </nav>
+  </div>
+</header>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-2">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Header with megamenu--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;global-header&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-header-top&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar navbar-expand-lg navbar-dark&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+        <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.uspto.gov&quot;</span>
+        <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-logo&quot;</span>
+        <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;United States Patent and Trademark Office - An Agency of the Department of Commerce&quot;</span>
+      &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span> United States Patent and Trademark Office <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ml-auto d-flex&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Dynamic menu zone --&gt;</span>
+        <span class="hljs-comment">&lt;!-- Do not customize this area --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;display-inline dyn-menuarea&quot;</span>&gt;</span>
+          <span class="hljs-comment">&lt;!-- Patents --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;location.href = &#x27;https://www.uspto.gov/patent&#x27;;&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;false&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>Patents<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-lightbulb&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span class="hljs-comment">&lt;!-- Trademarks --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;location.href = &#x27;https://www.uspto.gov/trademark&#x27;;&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;false&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>Trademarks<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-trademark&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span class="hljs-comment">&lt;!-- Fees and payment --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;location.href = &#x27;https://fees.uspto.gov&#x27;;&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;false&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>Fees and payment<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-dollar&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span class="hljs-comment">&lt;!-- Help --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default dropdown-toggle ex-btn-inverse&quot;</span>
+              <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+              <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>Help<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-question-circle&quot;</span>&gt;</span>&lt;/span
+              &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.uspto.gov/learning-resources&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  <span class="hljs-attr">data-event-category</span>=<span class="hljs-string">&quot;myuspto Header: Help menu&quot;</span>
+                  <span class="hljs-attr">data-event-action</span>=<span class="hljs-string">&quot;myuspto menu link clicked&quot;</span>
+                  <span class="hljs-attr">data-event-label</span>=<span class="hljs-string">&quot;FAQs&quot;</span>
+                  &gt;</span>FAQs&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.uspto.gov/about-us/contact-us&quot;</span>
+                  <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                  <span class="hljs-attr">data-event-category</span>=<span class="hljs-string">&quot;myuspto Header: Help menu&quot;</span>
+                  <span class="hljs-attr">data-event-action</span>=<span class="hljs-string">&quot;myuspto menu link clicked&quot;</span>
+                  <span class="hljs-attr">data-event-label</span>=<span class="hljs-string">&quot;Contact us&quot;</span>
+                  &gt;</span>Contact us&lt;/a
+                &gt;
+              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- /End dynamic menu zone --&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- Sign-in/user menu --&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- MyUSPTO Link --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default ex-btn-inverse my-link&quot;</span>
+            <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://my.uspto.gov&quot;</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>MyUSPTO<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-myuspto&quot;</span>&gt;</span>&lt;/span
+            &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-group&quot;</span>&gt;</span>
+          <span class="hljs-comment">&lt;!--
+                The code snippet for the .btn-group below will need to
+                be conditionally displayed when the user is signed in
+                and it&#x27;s appropriate to show account information.
+               --&gt;</span>
+          <span class="hljs-comment">&lt;!-- BEGIN USER DROPDOWN MENU --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+            <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default dropdown-toggle ex-btn-inverse user-link&quot;</span>
+            <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+            <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span>
+            <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-text&quot;</span>&gt;</span>John Doe<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn-icon&quot;</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-user&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://my.uspto.gov&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-home&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> MyUSPTO<span class="hljs-tag">&lt;<span class="hljs-name">span</span>
+                  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>
+                  &gt;</span>console&lt;/span
+                &gt;&lt;/a
+              &gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://account.uspto.gov&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-user-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Manage your<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Account&lt;/a
+              &gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://my.uspto.gov/signout&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-icon-sign-out&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Sign out&lt;/a
+              &gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-comment">&lt;!-- END USER DROPDOWN MENU --&gt;</span>
+
+          <span class="hljs-comment">&lt;!-- END SIGN IN BUTTON TO OPEN SIGN-IN WIDGET--&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- /.pull-right --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-header-middle&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex-fill&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-brand&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Project title&quot;</span>&gt;</span> Project title <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uspto-header-bottom&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>
+      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar navbar-expand-md navbar-dark&quot;</span>
+      <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;header sub navigation&quot;</span>
+    &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collapse navbar-collapse&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;navbarNav&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-nav&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item dropdown megamenu&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link dropdown-toggle&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              &gt;</span>New submission <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span>&lt;/span
+            &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col mb-md-0&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header&quot;</span>&gt;</span>Regular submissions<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Utility-Nonprovisional<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Utility-Provisional<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Design<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>U.S. 371 National stage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col mb-md-0&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header&quot;</span>&gt;</span>International applications<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+                    &gt;</span>International application (PCT)&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+                    &gt;</span>International design application(Hague)&lt;/a
+                  &gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col mb-md-0&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header&quot;</span>&gt;</span>Patent initiatives<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>TrackOne<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+                    &gt;</span>Accelerated Examination – Utility&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+                    &gt;</span>Accelerated Examination – Design&lt;/a
+                  &gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item dropdown&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link dropdown-toggle&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              &gt;</span>Existing submissions <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span>&lt;/span
+            &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col mb-md-0&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Prior Art Submission into a Patent File under 37 CFR
+                    1.501&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    File third-party preissuance submission&lt;/a
+                  &gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item dropdown megamenu&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link dropdown-toggle&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              &gt;</span>Petitions <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span>&lt;/span
+            &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col mb-md-0&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header&quot;</span>&gt;</span>Petitions - pending<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition to make special based on age&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition to withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(1) or (2))&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(1) or(2) with Assigned Patent
+                    Number)&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(3))&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition to Withdraw from Issue after Payment of the Issue
+                    Fee (37 CFR 1.313(c)(3) with Assigned Patent Number)&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition to Accept Late Payment of Issue Fee - Unintentional
+                    Late Payment (37 CFR 1.137(a))&lt;/a
+                  &gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col mb-md-0&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header&quot;</span>&gt;</span>Petitions - issued<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition to Accept Unintentional Delayed Payment of the
+                    Maintenance Fee (37 CFR 1.378(b))&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition to Correct Assignee After Payment of Issue Fee (37
+                    CFR 3.81(b))&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition for Revival of an Application for Continuity
+                    Purposes Only (37 CFR 1.137(a))&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    Petition for Revival of an Application based on Failure to
+                    Notify the Office of a Foreign or International Filing (37
+                    CFR 1.137(f))&lt;/a
+                  &gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item dropdown megamenu&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link dropdown-toggle&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span>
+              &gt;</span>Post grant <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;caret&quot;</span>&gt;</span>&lt;/span
+            &gt;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col mb-md-0&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header&quot;</span>&gt;</span>Reexam <span class="hljs-symbol">&amp;amp;</span> reissue<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+                    &gt;</span>Request for Reexam - by Patent Owner&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+                    &gt;</span>Request for Reexam - by Third Party&lt;/a
+                  &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Request for Reissue<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col mb-md-0&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-header&quot;</span>&gt;</span>Supplemental examination<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>
+                    &gt;</span>Request for Supplemental Examination&lt;/a
+                  &gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+   
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+    </main>
+  </div>
+      </div>
+
+
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>Need help? Questions? Need to report a bug?</p>
+    <p>Create an issue on <a href="https://github.com/USPTO/USPTO-DS-Theme" target="_blank" class="text-white-50">Github</a>.</p>
+    <p>Created and maintained with <span class="text-danger md-xs material-icons">favorite</span> by the Experience Design (XD) Team @ the USPTO</p>
+  </div>
+</footer>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/prismjs/prism.js"></script>
+<script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor/uswds/uswds.min.js"></script>  </body>
+</html>
