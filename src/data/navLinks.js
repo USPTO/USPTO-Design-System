@@ -120,9 +120,9 @@ Object.assign(exports, {
         { href: '#Spinner-examples', text: 'Spinner examples' }
       ],
     },
-   
-   
-      { href: 'siteAlert.html', text: 'Site alert' },
+
+
+     // { href: 'siteAlert.html', text: 'Site alert' },
     { href: 'stepIndicators.html', text: 'Step indicators' },
     { href: 'summaryBox.html', text: 'Summary box' },
     {
@@ -137,6 +137,7 @@ Object.assign(exports, {
         { href: '#column-customization', text: 'Column customization' },
         { href: '#grouping', text: 'Grouping' },
         { href: '#expandable-rows', text: 'Expandable rows' },
+        { href: '#add-new-row', text: 'Add new row' },
         { href: '#datatable', text: 'DataTables.net' }
       ],
     },
@@ -163,6 +164,7 @@ Object.assign(exports, {
   ],
   foundationNavLinks: [
     { href: 'foundation.html', text: 'Foundation' },
+    { href: 'browser-support.html', text: 'Browser support' },
     { href: 'anatomy.html', text: 'Anatomy of a webpage' },
     { href: 'audio-video.html', text: 'Audio and video' },
     {
@@ -186,7 +188,7 @@ Object.assign(exports, {
         { href: '#iconathon', text: 'USPTO - Intellectual Property Symbols' }
         //{ href: '#rotation', text: 'Rotation' },
         //{ href: '#animation', text: 'Animation' },
-        
+
       ],
     },
     { href: 'images.html', text: 'Images' },
@@ -217,7 +219,7 @@ Object.assign(exports, {
         { href: '#404-error', text: '404 error' },
         { href: '#server-error', text: 'Server error' }
       ],
-    },  
+    },
     { href: 'documentationPage.html', text: 'Documentation page' },
     { href: 'landingPage.html', text: 'Landing page' },
     { href: 'launchPage.html', text: 'Launch page' },
@@ -225,9 +227,9 @@ Object.assign(exports, {
     { href: 'multistepPage.html', text: 'Multistep form page' },
     { href: 'searchPage.html', text: 'Search result page' },
     { href: 'tabbedDocketPage.html', text: 'Tabbed docket page' }
-    
-    
-    
+
+
+
   ],
 
   resourcesNavLinks: [
@@ -268,7 +270,7 @@ Object.assign(exports, {
         { href: '#deprecated', text: 'Deprecated' }
       ],
     },
-    
+
     {
       href: 'fileUpload.html',
       text: 'File upload',
@@ -289,9 +291,9 @@ Object.assign(exports, {
       ],
     },
     */
-    { href: 'help.html', text: 'Help' },    
+    { href: 'help.html', text: 'Help' },
     { href: 'search.html', text: 'Search' },
-    
+
     {
       href: 'settings.html', text: 'Settings',
       "children": [

@@ -141,6 +141,20 @@ $("#pagetop").bind("click", function (event) {
   event.preventDefault();
 });
 
+// add new row
+$("body").on("click", ".btn-addRow1", function (e) {
+  var newrow =
+  '<tr><td><input type="text" class="form-control form-control-sm" /></td><td><input type="text" class="form-control form-control-sm" /></td><td><input type="text" class="form-control form-control-sm col-9 d-inline " /> <button type="button" data-container="body" title="" data-toggle="tooltip" data-original-title="Submit" class="btn btn-icon-only p-0"><i class="material-icons text-success">check_circle</i></button><button type="button" data-container="body" title="" data-toggle="tooltip" data-original-title="Remove" class="btn btn-icon-only p-0"><i class="material-icons text-danger">remove_circle_outline</i></button></td></tr>';
+$('.addNewRow').before(newrow);
+$("[data-toggle=tooltip]").tooltip();
+});
+$("body").on("click", ".btn-addRow", function (e) {
+  var newrow =
+    '<tr><td><input type="text" class="form-control form-control-sm" /></td><td><input type="text" class="form-control form-control-sm" /></td><td><input type="text" class="form-control form-control-sm col-9 d-inline " /> <button type="button" data-container="body" title="" data-toggle="tooltip" data-original-title="Submit" class="btn btn-icon-only p-0"><i class="material-icons text-success">check_circle</i></button><button type="button" data-container="body" title="" data-toggle="tooltip" data-original-title="Remove" class="btn btn-icon-only p-0"><i class="material-icons text-danger">remove_circle_outline</i></button></td></tr>';
+  $(this).parent().parent().after(newrow);
+  $("[data-toggle=tooltip]").tooltip();
+});
+
 })
 /*
    * Character count
