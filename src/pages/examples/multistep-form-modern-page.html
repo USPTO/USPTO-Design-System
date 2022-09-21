@@ -44,7 +44,7 @@ block main %}
 
                 <li class="usa-step-indicator__segment">
                   <span class="usa-step-indicator__segment-label"
-                    >Notificationnot
+                    >Notification
                     <span class="usa-sr-only">not completed</span></span
                   >
                 </li>
@@ -256,18 +256,19 @@ block main %}
               <form>
                 <h2 class="mx-3 my-4">Mailing address</h2>
                 <div class="form-group col-md-4">
-                  <label for="exampleFGStreetAddress">Address line 1</label>
+                  <label for="exampleFGStreetAddress" class="required"
+                    >Address line 1</label
+                  >
                   <input
                     type="text"
                     class="form-control"
-                    id="exampleFGStreetAddress"
+                    id="exampleFGStreetAddress" required  aria-required="true"
                   />
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="exampleFGStreetAddress2"
+                  <label for="exampleFGStreetAddress2" class="optional"
                     >Address line 2
-                    <span class="text-muted">(optional)</span></label
-                  >
+                  </label>
                   <input
                     type="text"
                     class="form-control"
@@ -275,12 +276,12 @@ block main %}
                   />
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="exampleFXCity1">City</label>
-                  <input type="text" class="form-control" id="exampleFXCity1" />
+                  <label for="exampleFXCity1" class="required">City</label>
+                  <input type="text" class="form-control" id="exampleFXCity1" required  aria-required="true" />
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="exampleFXState2">State</label>
-                  <select class="form-control" id="exampleFXState2">
+                  <label for="exampleFXState2" class="required">State</label>
+                  <select class="form-control" id="exampleFXState2" required  aria-required="true">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -335,8 +336,8 @@ block main %}
                   </select>
                 </div>
                 <div class="form-group col-md-2">
-                  <label for="exampleFXZip2">Zip code</label>
-                  <input type="text" class="form-control" id="exampleFXZip2" />
+                  <label for="exampleFXZip2" class="required">Zip code</label>
+                  <input type="text" class="form-control" id="exampleFXZip2" required  aria-required="true" />
                 </div>
               </form>
             </div>
