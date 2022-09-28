@@ -1,6 +1,6 @@
 {
   "name": "USPTO-DS",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "USPTO Design System - Guidance Website",
   "directories": {
     "dist": "dist"
@@ -44,7 +44,7 @@
     "nunjucks-extension-code-highlight": "*",
     "prismjs": "^1.23.0",
     "sass": "^1.34.1",
-    "usptostrap": "^2.2.2"
+    "usptostrap": "^2.2.3"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
