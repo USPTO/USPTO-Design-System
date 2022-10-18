@@ -201,6 +201,7 @@ Object.assign(exports, {
         { href: '#fonts', text: 'Fonts' },
         { href: '#weights', text: 'Weights' },
         { href: '#styles', text: 'Styles' },
+        { href: '#responsive-size', text: 'Responsive headings' },
         { href: '#lists', text: 'Lists' },
         { href: '#colors', text: 'Colors' }
       ],

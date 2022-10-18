@@ -155,6 +155,28 @@ $("body").on("click", ".btn-addRow", function (e) {
   $("[data-toggle=tooltip]").tooltip();
 });
 
+//Add new phone number
+$("body").on("click", ".addPhoneNumber-btn", function (e) {
+  var numItems = $ ('form div.form-group.row').length
+if (numItems >= 5){
+  $('#phoneNumber-Modal').modal('show');
+//alert('acced');
+return false;
+}
+  $("[data-toggle=tooltip]").tooltip('hide');
+  var newrow =
+  '<div class="form-group row"><div class="col-8 col-sm-8 col-md-7 col-lg-6 col-xl-3"><label for="telephoneNumber">Telephone number</label><input type="text" class="form-control" id="telephoneNumber" /></div><div class="col-3 col-sm-5 col-md-2 col-lg-2 col-xl-1"><label for="extension">Ext.</label><input type="text" class="form-control" id="extension" maxlength="5" /></div><button type="button" class="btn md-icon mt-4 pl-0 deletePhoneNumber-btn" data-toggle="tooltip" data-placement="right" title="Delete phone number" data-original-title="Delete phone number"><i class="material-icons">delete</i></button></div>';
+$('form').append(newrow);
+$("[data-toggle=tooltip]").tooltip();
+console.log(numItems);
+});
+//delete new phone number
+$("body").on("click", ".deletePhoneNumber-btn", function (e) {
+  $("[data-toggle=tooltip]").tooltip('hide');
+  $(this).parent('div.row').remove();
+});
+
+
 })
 /*
    * Character count

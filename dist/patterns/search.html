@@ -302,8 +302,8 @@
     <span class="material-icons">unfold_more</span> View code </button>
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
-      data-clipboard-text="&lt;!-- Basic search --&gt;
-&lt;div class=&quot;input-group&quot;&gt;
+      data-clipboard-text="&lt;!-- Basic search with icon button --&gt;
+&lt;div class=&quot;input-group mb-4&quot;&gt;
   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search this blog&quot; /&gt;
   &lt;div class=&quot;input-group-append&quot;&gt;
     &lt;button class=&quot;btn btn-primary md-icon&quot; type=&quot;button&quot;&gt;
@@ -311,6 +311,14 @@
     &lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+&lt;!-- Basic search with text button --&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search this blog&quot; /&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;Search&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
 "
 
       type="button"
@@ -322,8 +330,8 @@
       </div>
     </div>
     <div class="preview-size">
-      <!-- Basic search -->
-<div class="input-group">
+      <!-- Basic search with icon button -->
+<div class="input-group mb-4">
   <input type="text" class="form-control" placeholder="Search this blog" />
   <div class="input-group-append">
     <button class="btn btn-primary md-icon" type="button">
@@ -331,23 +339,38 @@
     </button>
   </div>
 </div>
+<!-- Basic search with text button -->
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Search this blog" />
+  <div class="input-group-append">
+    <button class="btn btn-primary" type="button">Search</button>
+  </div>
+</div>
     </div>
     <div class="collapse line-numbers pt-2" id="codebox-1">
       Example HTML usage:
         <div class="codeArea">
-<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Basic search --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group&quot;</span>&gt;</span>
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Basic search with icon button --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group mb-4&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Search this blog&quot;</span> /&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group-append&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary md-icon&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>search<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Basic search with text button --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Search this blog&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group-append&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
     </div>
   </div>
 
   </div>
+  
   <div class="preview pv-sm">
     
   <div class="">
@@ -436,7 +459,7 @@
     
   <div class="">
     <div class="d-flex mb-1">
-        <h2>Scoped</h2>
+        <h2>Sizing</h2>
       <div class=" ml-auto">
         <button class="btn btn-sm btn-light md-icon collapsed"
 
@@ -447,6 +470,123 @@
       aria-expanded="false"
 
       data-target="#codebox-3"
+
+      data-toggle="collapse"
+
+      type="button"
+
+      title="View code for basic search"
+
+    >
+    <span class="material-icons">unfold_more</span> View code </button>
+        <button class="btn btn-sm btn-light md-icon clipboard"      
+
+      data-clipboard-text="&lt;!-- Size --&gt;
+&lt;p&gt;
+  Add &lt;code class=&quot;highlighter-rouge&quot;&gt;.input-group-sm&lt;/code&gt; and
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;.input-group-lg&lt;/code&gt; to the
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;.input-group&lt;/code&gt; to chang the size.
+&lt;/p&gt;
+
+&lt;!-- Basic search with small button --&gt;
+&lt;div class=&quot;input-group input-group-sm mb-3&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search this blog&quot; /&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;
+    &lt;button class=&quot;btn btn-primary md-icon&quot; type=&quot;button&quot;&gt;
+      &lt;i class=&quot;material-icons&quot;&gt;search&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group input-group-lg&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search this blog&quot; /&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;
+    &lt;button class=&quot;btn btn-primary md-icon&quot; type=&quot;button&quot;&gt;
+      &lt;i class=&quot;material-icons md-lg&quot;&gt;search&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+"
+
+      type="button"
+
+      title="Copy code"
+
+    >
+    <span class="material-icons">content_copy</span> Copy code </button>
+      </div>
+    </div>
+    <div class="preview-size">
+      <!-- Size -->
+<p>
+  Add <code class="highlighter-rouge">.input-group-sm</code> and
+  <code class="highlighter-rouge">.input-group-lg</code> to the
+  <code class="highlighter-rouge">.input-group</code> to chang the size.
+</p>
+
+<!-- Basic search with small button -->
+<div class="input-group input-group-sm mb-3">
+  <input type="text" class="form-control" placeholder="Search this blog" />
+  <div class="input-group-append">
+    <button class="btn btn-primary md-icon" type="button">
+      <i class="material-icons">search</i>
+    </button>
+  </div>
+</div>
+<div class="input-group input-group-lg">
+  <input type="text" class="form-control" placeholder="Search this blog" />
+  <div class="input-group-append">
+    <button class="btn btn-primary md-icon" type="button">
+      <i class="material-icons md-lg">search</i>
+    </button>
+  </div>
+</div>
+    </div>
+    <div class="collapse line-numbers pt-2" id="codebox-3">
+      Example HTML usage:
+        <div class="codeArea">
+<pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Size --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  Add <span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlighter-rouge&quot;</span>&gt;</span>.input-group-sm<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> and
+  <span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlighter-rouge&quot;</span>&gt;</span>.input-group-lg<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> to the
+  <span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlighter-rouge&quot;</span>&gt;</span>.input-group<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> to chang the size.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Basic search with small button --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group input-group-sm mb-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Search this blog&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group-append&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary md-icon&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons&quot;</span>&gt;</span>search<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group input-group-lg&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Search this blog&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input-group-append&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary md-icon&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;material-icons md-lg&quot;</span>&gt;</span>search<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="preview pv-sm">
+    
+  <div class="">
+    <div class="d-flex mb-1">
+        <h2>Scoped</h2>
+      <div class=" ml-auto">
+        <button class="btn btn-sm btn-light md-icon collapsed"
+
+      aria-controls="codebox-4"
+
+      aria-label="View code for basic search"
+
+      aria-expanded="false"
+
+      data-target="#codebox-4"
 
       data-toggle="collapse"
 
@@ -556,7 +696,6 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-
 "
 
       type="button"
@@ -667,7 +806,7 @@
   </div>
 </div>
     </div>
-    <div class="collapse line-numbers pt-2" id="codebox-3">
+    <div class="collapse line-numbers pt-2" id="codebox-4">
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Scoped search --&gt;</span>
