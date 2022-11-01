@@ -11,9 +11,14 @@ class: 'page-search', title: 'Search' } %} {% block content %}
     {{ macros.viewCode({ ariaLabel: 'View code for basic search', code:
     basicSearch }, 'Basic' )}}
   </div>
+  
   <div class="preview pv-sm">
     {{ macros.viewCode({ ariaLabel: 'View code for basic search', code:
     advanceSearch }, 'With advance' )}}
+  </div>
+  <div class="preview pv-sm">
+    {{ macros.viewCode({ ariaLabel: 'View code for basic search', code:
+    sizingSearch }, 'Sizing' )}}
   </div>
   <div class="preview pv-sm">
     {{ macros.viewCode({ ariaLabel: 'View code for basic search', code:
@@ -22,8 +27,8 @@ class: 'page-search', title: 'Search' } %} {% block content %}
 </section>
 
 {% endblock %} {% set basicSearch%}
-<!-- Basic search -->
-<div class="input-group">
+<!-- Basic search with icon button -->
+<div class="input-group mb-4">
   <input type="text" class="form-control" placeholder="Search this blog" />
   <div class="input-group-append">
     <button class="btn btn-primary md-icon" type="button">
@@ -31,6 +36,14 @@ class: 'page-search', title: 'Search' } %} {% block content %}
     </button>
   </div>
 </div>
+<!-- Basic search with text button -->
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Search this blog" />
+  <div class="input-group-append">
+    <button class="btn btn-primary" type="button">Search</button>
+  </div>
+</div>
+
 {% endset %} {% set advanceSearch%}
 <!-- Advance search -->
 <div class="input-group">
@@ -144,5 +157,29 @@ class: 'page-search', title: 'Search' } %} {% block content %}
     </div>
   </div>
 </div>
+{% endset %} {% set sizingSearch%}
+<!-- Size -->
+<p>
+  Add <code class="highlighter-rouge">.input-group-sm</code> and
+  <code class="highlighter-rouge">.input-group-lg</code> to the
+  <code class="highlighter-rouge">.input-group</code> to chang the size.
+</p>
 
+<!-- Basic search with small button -->
+<div class="input-group input-group-sm mb-3">
+  <input type="text" class="form-control" placeholder="Search this blog" />
+  <div class="input-group-append">
+    <button class="btn btn-primary md-icon" type="button">
+      <i class="material-icons">search</i>
+    </button>
+  </div>
+</div>
+<div class="input-group input-group-lg">
+  <input type="text" class="form-control" placeholder="Search this blog" />
+  <div class="input-group-append">
+    <button class="btn btn-primary md-icon" type="button">
+      <i class="material-icons md-lg">search</i>
+    </button>
+  </div>
+</div>
 {% endset %}
