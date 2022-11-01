@@ -45,6 +45,19 @@ title: 'Typography' } %} {% block content %}
     {{ macros.viewCode({ ariaLabel: 'View code for input box', code: fontStyles
     }, "")}}
   </div>
+  
+</section>
+
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="responsive-size">Responsive heading size</h2>
+    <p>Add <code class="highlighter-rouge">.text-responsive</code> on h1 - h5 to make them responsive in size.</p>
+  </div>
+  <div class="preview pv-md">
+    
+    {{ macros.viewCode({ ariaLabel: 'View code for responsive heading', code: responsiveHeadings
+    }, "")}}
+  </div>
 </section>
 
 <section class="pv-content">
@@ -185,7 +198,15 @@ title: 'Typography' } %} {% block content %}
     </tr>
   </tbody>
 </table>
-{% endset%} {% set colors %}
+{% endset%} 
+{% set responsiveHeadings %}
+<h1 class="text-responsive"> This is heading 1 </h1>
+<h2 class="text-responsive"> This is heading 2 </h2>
+<h3 class="text-responsive"> This is heading 3 </h3>
+<h4 class="text-responsive"> This is heading 4 </h4>
+<h5 class="text-responsive"> This is heading 5 </h5>
+{% endset %}
+{% set colors %}
 <!--Colors -->
 <p class="text-primary">.text-primary</p>
 <p class="text-secondary">.text-secondary</p>
