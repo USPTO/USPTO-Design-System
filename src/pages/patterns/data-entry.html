@@ -1,0 +1,145 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = { class: 'data-entry', title: 'Data entry', id: 'data-entry' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <h1 id="dataEntry">Data entry</h1>
+    
+  </div>
+  <div class="pattern">
+    <h2 id="phoneNumber" class="mb-4">Phone number</h2>
+    <h3  class="mb-4">Example 1</h3>
+    
+    <form action="" id="enter-phone">
+      <div class="form-group row">
+        <div class="col-6 col-sm-6 col-md-5 col-lg-4 col-xl-2">
+          <label for="PhoneNumber">Phone number</label>
+          <input type="tel" class="form-control" name="PhoneNumber" />
+        </div>
+        <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+          <label for="extension">Ext.</label>
+          <input type="text" class="form-control" id="extension" maxlength="5" />
+        </div>
+        <button type="button" class="btn md-icon mt-4 pl-0 add-new-phone-btn" >
+          <i class="material-icons" data-toggle="tooltip" title="Add new phone number" data-placement="top" data-original-title="Add new phone number">add</i>
+        </button>
+      </div>
+      <div class="form-group row newPhoneRow d-none">
+        <div class="col-6 col-sm-6 col-md-5 col-lg-4 col-xl-2">
+          <label for="PhoneNumberNew" class="sr-only">Phone number</label>
+          <input type="tel" class="form-control" name="PhoneNumberNew" />
+        </div>
+        <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+          <label for="extensionNew"  class="sr-only">Ext.</label>
+          <input type="text" class="form-control" id="extensionNew" maxlength="5" />
+        </div>
+        <button type="button" class="btn md-icon  pl-0 delete-new-phone-btn"><i class="material-icons"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete phone number">delete</i></button>
+      </div>
+    </form>
+<p class="mb-4">&nbsp;</p>
+<h3  class="mb-4">Example 2</h3>
+    <form action="" id="enter-phone1">
+      <div class="mb-1">Phone number</div>
+      <div class="form-group row">
+          <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+              <label for="PhoneType" class="sr-only">Phone</label>
+              <select type="tel" class="form-control" id="PhoneType" >
+                  <option value="cell">Cell</option>
+                  <option value="home">Home</option>
+                  <option value="work" selected>Work</option>                        
+                  </select>
+            </div>
+        <div class="col-5 col-sm-5 col-md-5 col-lg-4 col-xl-2">
+          <label for="PhoneNumber" class="sr-only">Phone</label>
+          <input type="tel" class="form-control" id="work" />
+        </div>
+        <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+          <label for="extension"  class="sr-only">Ext.</label>
+          <input type="text" class="form-control" id="extension" maxlength="5" />
+        </div>
+        <button type="button" class="btn md-icon  pl-0 add-new-phone-btn1" >
+          <i class="material-icons" data-toggle="tooltip" title="Add new phone number" data-placement="top" data-original-title="Add new phone number">add</i>
+        </button>
+      </div>
+      <div class="form-group row newPhoneRow1 d-none">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <label for="PhoneType" class="sr-only">Phone</label>
+            <select type="tel" class="form-control" id="PhoneType" >
+                <option value="cell">Cell</option>
+                <option value="home" selected>Home</option>
+                <option value="work" >Work</option>                        
+                </select>
+          </div>
+      <div class="col-5 col-sm-5 col-md-5 col-lg-4 col-xl-2">
+        <label for="PhoneNumber" class="sr-only">Phone</label>
+        <input type="tel" class="form-control" id="mobile" />
+      </div>
+      <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+        <label for="extension"  class="sr-only">Ext.</label>
+        <input type="text" class="form-control" id="extension" maxlength="5" />
+      </div>
+      <button type="button" class="btn md-icon  pl-0 delete-new-phone-btn1">
+        <i class="material-icons"  data-toggle="tooltip" title="Delete phone number" data-placement="top" data-original-title="Add new phone number">delete</i>
+      </button>
+    </div>
+    </form>
+  </div>
+   <div class="pattern">
+   
+    <h3  class="mb-4">Usage (Optional)</h3>
+ 
+    <p><strong>Plugin: <a href="https://intl-tel-input.com/" target="_blank">International Telephone Input</a></strong><br>A JavaScript plugin for entering and validating international telephone numbers. It adds a flag dropdown to any input, detects the user's country, displays a relevant placeholder and provides formatting/validation methods.</p>
+    <p>The Javascript shown below is used to initialise</p>
+    
+    <pre class="language-js pt-0">    <code>   
+      &lt;input type="tel" id="phone"&gt;  
+      &lt;script src="path/to/intlTelInput.js"&gt;&lt;/script&gt; 
+      &lt;script&gt; 
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        // any initialisation options go here
+      });
+      &lt;/script&gt; </code></pre>
+   <p class="text-muted">GitHub link: https://github.com/jackocnr/intl-tel-input</p> 
+  </div>
+</section>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="phoneNumber-Modal" aria-labelledby="trainingModeTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title">2 phone numbers allowed</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <i class="material-icons md-3x text-warning">warning</i>
+
+        <p>Only 2 phone numbers allowed at a time.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-outline-secondary cancelTrainingMode-btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+
+<script src="{{relativeRoot}}assets/vendor/jquery/jquery.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/popper/popper.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/prism.js"></script>
+<script src="{{relativeRoot}}assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="{{relativeRoot}}assets/vendor/clipboard/clipboard.min.js"></script>
+<script src="{{relativeRoot}}assets/js/main.js"></script>
+<script src="{{relativeRoot}}assets/vendor/uswds/uswds.min.js"></script>
+<script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
+<script src="{{relativeRoot}}assets/js/jquery.dataTables.min.js"></script>
+<script src="{{relativeRoot}}assets/js/dataTables.bootstrap4.min.js"></script>
+<script src="{{relativeRoot}}assets/js/intlTelInput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script src="{{relativeRoot}}assets/js/scripts.js"></script>
+
+{% endblock %}

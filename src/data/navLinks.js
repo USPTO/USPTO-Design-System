@@ -262,6 +262,7 @@ Object.assign(exports, {
     },
     { href: 'collection.html', text: 'Collection' },
     { href: 'scrollbar.html', text: 'Custom scrollbar' },
+    { href: 'data-entry.html', text: 'Data entry' },
     {
       href: 'dataFormats.html',
       text: 'Data formats',
@@ -293,6 +294,7 @@ Object.assign(exports, {
     },
     */
     { href: 'help.html', text: 'Help' },
+    { href: 'toolbar.html', text: 'Interactive toolbar' },
     { href: 'search.html', text: 'Search' },
 
     {

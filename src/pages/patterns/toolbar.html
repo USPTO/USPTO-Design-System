@@ -1,0 +1,74 @@
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = { class: 'page-test', title: 'Go to top', id: 'page-top' } %} {% block content %}
+<section class="pv-content">
+  <div class="pattern">
+    <h1 id="InteractiveToolbar">Interactive toolbar</h1>
+  </div>
+  <div class="pattern">
+    <h2 id="textToolbar" class="mb-4">Text toolbar</h2>
+    <div class="row">
+      <div class="col-8 col-sm-7 col-md-6">
+        <!--Breadcrumbs-->
+        <nav aria-label="breadcrumb" role="navigation">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Library</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Another long list of items</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-4 col-sm-5 col-md-6 text-right toolbar">
+        <a class="btn btn-outline-primary md-icon shadow-none btn-sm" href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Visit USPTO website"
+          ><i class="material-icons">public</i> &nbsp; <span class="d-none d-lg-inline-block">USPTO</span></a
+        >
+        <a class="btn btn-outline-primary md-icon shadow-none btn-sm" href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Download"
+          ><i class="material-icons">download</i> &nbsp; <span class="d-none d-lg-inline-block">Download</span></a
+        >
+        <a class="btn btn-outline-primary md-icon shadow-none btn-sm" href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Print"
+          ><i class="material-icons">print</i> &nbsp; <span class="d-none d-lg-inline-block">Print</span></a
+        >
+      </div>
+    </div>
+
+    <hr />
+    <div class="row">
+      <div class="col-6 mt-2">
+        <div class="form-group">
+          <label for="chooseButtonToolbar" class="mt-2">Change toolbar</label>
+          <select class="form-control col-4" id="chooseButtonToolbar">
+            <option selected="" value="">Select</option>
+            <option value="primary" selected>Primary</option>
+            <option value="secondary">Secondary</option>
+            <option value="danger">Danger</option>
+            <option value="info">Info</option>
+            <option value="success">Success</option>
+            <option value="warning">Warning</option>
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+          </select>
+        </div>
+        <!--Custom radio button-->
+        <div class="form-group">
+          <label for="">Select</label>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="buttonSizeToolbar2" name="buttonSizeToolbar" class="custom-control-input" value="sm" checked="" />
+            <label class="custom-control-label" for="buttonSizeToolbar2">Default</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="buttonSizeToolbar1" name="buttonSizeToolbar" class="custom-control-input" value="default" />
+            <label class="custom-control-label" for="buttonSizeToolbar1">Medium</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="buttonSizeToolbar3" name="buttonSizeToolbar" class="custom-control-input" value="lg" />
+            <label class="custom-control-label" for="buttonSizeToolbar3">Large</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
