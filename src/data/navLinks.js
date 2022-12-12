@@ -250,6 +250,7 @@ Object.assign(exports, {
   ],
   patternsNavLinks: [
     { href: 'patterns.html', text: 'Patterns' },
+    { href: 'data-entry.html', text: 'Advanced data entry' },
     {
       href: 'cards.html',
       text: 'Cards',
@@ -293,6 +294,7 @@ Object.assign(exports, {
     },
     */
     { href: 'help.html', text: 'Help' },
+    { href: 'toolbar.html', text: 'Interactive toolbar' },
     { href: 'search.html', text: 'Search' },
 
     {

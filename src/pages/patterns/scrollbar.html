@@ -1,9 +1,9 @@
 {% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = { class: 'page-scrollbar', title:
-'Scrollbar' } %} {% block content %}
+'Scrollbars' } %} {% block content %}
 
 <section class="pv-content">
   <div class="pattern">
-    <h1>Custom scrollbar</h1>
+    <h1>Custom scrollbars</h1>
     <h2>Purpose</h2>
     <p>Custom scrollbar will override the default scrollbar style.</p>
   </div>
@@ -26,7 +26,7 @@
     {{ macros.viewCode({ ariaLabel: 'View code for small custom scrollbar', code: basicScrollbarSmall }, '' )}}
   </div>
 
-  
+
 </section>
 
 <section class="pv-content">
@@ -52,7 +52,7 @@
 
       <div class="form-group pt-4">
         <label for="chooseScrollbar" class="mt-2">Change custom scrollbar</label>
-        <select class="form-control" id="chooseScrollbar">         
+        <select class="form-control" id="chooseScrollbar">
           <option value="custom">Default custom scrollbar</option>
           <option value="danger">Danger</option>
           <option value="info">Info</option>

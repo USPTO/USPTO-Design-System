@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
 
 <title>USPTO Design System
- | Scrollbar
+ | Scrollbars
 </title><link rel="stylesheet" href="../assets/css/main.css">
 <!--Add USWDS dependencies for USWDS components -->
 <link type="text/css" rel="stylesheet" href="../assets/css/uswds-combobox.css">
@@ -154,6 +154,8 @@
 <select class="form-control my-3" id="leftSideNav" >
     <option value="patterns.html">Patterns
     </option>
+    <option value="data-entry.html">Advanced data entry
+    </option>
     <option value="cards.html">Cards
     </option>
     <option value="collection.html">Collection
@@ -168,6 +170,8 @@
     </option>
     <option value="help.html">Help
     </option>
+    <option value="toolbar.html">Interactive toolbar
+    </option>
     <option value="search.html">Search
     </option>
     <option value="settings.html">Settings
@@ -180,6 +184,11 @@
   <ul class="sidenav">
       <li>
         <a href="patterns.html" data-parent="Patterns">Patterns</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
+        <a href="data-entry.html" data-parent="Advanced data entry">Advanced data entry</a>
         <ul class="sidenav-sublist">
         </ul>
       </li>
@@ -246,6 +255,11 @@
         </ul>
       </li>
       <li>
+        <a href="toolbar.html" data-parent="Interactive toolbar">Interactive toolbar</a>
+        <ul class="sidenav-sublist">
+        </ul>
+      </li>
+      <li>
         <a href="search.html" data-parent="Search">Search</a>
         <ul class="sidenav-sublist">
         </ul>
@@ -275,7 +289,7 @@
 
 <section class="pv-content">
   <div class="pattern">
-    <h1>Custom scrollbar</h1>
+    <h1>Custom scrollbars</h1>
     <h2>Purpose</h2>
     <p>Custom scrollbar will override the default scrollbar style.</p>
   </div>
@@ -434,7 +448,7 @@
 
   </div>
 
-  
+
 </section>
 
 <section class="pv-content">
@@ -460,7 +474,7 @@
 
       <div class="form-group pt-4">
         <label for="chooseScrollbar" class="mt-2">Change custom scrollbar</label>
-        <select class="form-control" id="chooseScrollbar">         
+        <select class="form-control" id="chooseScrollbar">
           <option value="custom">Default custom scrollbar</option>
           <option value="danger">Danger</option>
           <option value="info">Info</option>

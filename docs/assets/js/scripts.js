@@ -65,7 +65,125 @@ $( document ).ready(function() {
          $('.sorting_disabled').removeClass('sorting_asc');
          
 
-         
+       
+// Phone number1 with dropdwon
+var phoneInputID = 'input[name="PhoneNumber"]';
+var input = document.querySelector(phoneInputID);
+
+  var iti = window.intlTelInput(input, {
+     allowDropdown: false,    
+    formatOnDisplay: true,    
+    hiddenInput: "full_number",    
+     nationalMode: false,
+     onlyCountries: ['us'],    
+     separateDialCode: true,
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"
+  });
+  var phoneInputIDNew = 'input[name="PhoneNumberNew"]';
+var inputNew = document.querySelector(phoneInputIDNew);
+
+  var iti = window.intlTelInput(inputNew, {
+     allowDropdown: false,    
+    formatOnDisplay: true,    
+    hiddenInput: "full_number",    
+     nationalMode: false,
+     onlyCountries: ['us'],    
+     separateDialCode: true,
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"
+  });
+
+  var phoneInputIDMobile = '#mobile';
+var inputMobile = document.querySelector(phoneInputIDMobile);
+
+  var iti = window.intlTelInput(inputMobile, {
+     allowDropdown: false,    
+    formatOnDisplay: true,    
+    hiddenInput: "full_number",    
+     nationalMode: false,
+     onlyCountries: ['us'],    
+     separateDialCode: true,
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"
+  });
+  var phoneInputIDWork = '#work';
+var inputWork = document.querySelector(phoneInputIDWork);
+
+  var iti = window.intlTelInput(inputWork, {
+     allowDropdown: false,    
+    formatOnDisplay: true,    
+    hiddenInput: "full_number",    
+     nationalMode: false,
+     onlyCountries: ['us'],    
+     separateDialCode: true,
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"
+  });
+
+
+  $(phoneInputID).on("countrychange", function(event) {
+    // Get the selected country data to know which country is selected.
+    var selectedCountryData = iti.getSelectedCountryData();
+    // Get an example number for the selected country to use as placeholder.
+    newPlaceholder = intlTelInputUtils.getExampleNumber(selectedCountryData.iso2, true, intlTelInputUtils.numberFormat.INTERNATIONAL),
+
+      // Reset the phone number input.
+      iti.setNumber("");
+
+    // Convert placeholder as exploitable mask by replacing all 1-9 numbers with 0s
+    mask = newPlaceholder.replace(/[1-9]/g, "0");
+
+    // Apply the new mask for the input
+   // $(this).mask(mask);
+   $('input[name="PhoneNumber"]').mask(mask);
+   $('input[name="PhoneNumberNew"]').mask(mask);
+   $('#mobile').mask(mask);
+   $('#work').mask(mask);
+    
+   // console.log($(this).mask(mask));
+  });
+
+  // When the plugin loads for the first time, we have to trigger the "countrychange" event manually, 
+  // but after making sure that the plugin is fully loaded by associating handler to the promise of the 
+  // plugin instance.
+
+  iti.promise.then(function() {
+    $(phoneInputID).trigger("countrychange");
+  });  
+
+
+  //Add new phone number
+$("body").on("click", ".add-new-phone-btn", function (e) {
+  $('.newPhoneRow').removeClass('d-none');
+  
+if ($("form#enter-phone").hasClass("added")){
+  $('#phoneNumber-Modal').modal('show');
+//alert('acced');
+return false;
+}
+$("form#enter-phone").addClass("added");
+});
+$("body").on("click", ".delete-new-phone-btn", function (e) {
+  $('.newPhoneRow').addClass('d-none');
+  $("form#enter-phone").removeClass("added");
+});
+
+//Add new phone number1
+$("body").on("click", ".add-new-phone-btn1", function (e) {
+  $('.newPhoneRow1').removeClass('d-none');
+  
+if ($("form#enter-phone1").hasClass("added")){
+  $('#phoneNumber-Modal').modal('show');
+//alert('acced');
+return false;
+}
+$("form#enter-phone1").addClass("added");
+});
+$("body").on("click", ".delete-new-phone-btn1", function (e) {
+  $('.newPhoneRow1').addClass('d-none');
+  $("form#enter-phone1").removeClass("added");
+});
+
+
+
+
         
          //::::::::::
     });
