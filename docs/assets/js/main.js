@@ -140,6 +140,25 @@ $("#pagetop").bind("click", function (event) {
     );
   event.preventDefault();
 });
+//change toolbar size and color
+$("body").on("change", "#chooseButtonToolbar, input[name='buttonSizeToolbar']", function (e) {
+  e.preventDefault(e);
+ 
+ var valueSelected = $("#chooseButtonToolbar").val();
+  $(".toolbar a").removeClass('btn-outline-primary btn-outline-danger btn-outline-secondary btn-outline-info btn-outline-success btn-outline-warning btn-outline-light btn-outline-dark');
+if (valueSelected === "") {
+  $(".toolbar a").addClass("btn-outline-primary"); 
+} else {
+  $(".toolbar a").addClass("btn-outline-" + valueSelected); 
+}     
+console.log("select value: "+ valueSelected);
+//radio button size value
+var btnSize = $('input[name="buttonSizeToolbar"]:checked').val();
+$('.toolbar a').removeClass('btn-lg btn-sm');
+$('.toolbar a').addClass("btn-" + btnSize);
+
+});
+
 
 // add new row
 $("body").on("click", ".btn-addRow1", function (e) {

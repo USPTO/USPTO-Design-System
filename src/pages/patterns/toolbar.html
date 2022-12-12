@@ -1,10 +1,10 @@
-{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = { class: 'page-test', title: 'Go to top', id: 'page-top' } %} {% block content %}
+{% extends 'layouts/patterns.njk' %} {% set navLinkIndex = 1 %} {% set page = { class: 'page-toolbar', title: 'Interactive toolbars', id: 'page-toolbar' } %} {% block content %}
 <section class="pv-content">
   <div class="pattern">
-    <h1 id="InteractiveToolbar">Interactive toolbar</h1>
+    <h1 id="InteractiveToolbar">Interactive toolbars</h1>
   </div>
   <div class="pattern">
-    <h2 id="textToolbar" class="mb-4">Text toolbar</h2>
+    <h2 id="textToolbar" class="mb-4">Text toolbar (simple, pulled right)</h2>
     <div class="row">
       <div class="col-8 col-sm-7 col-md-6">
         <!--Breadcrumbs-->
@@ -37,7 +37,7 @@
     <div class="row">
       <div class="col-6 mt-2">
         <div class="form-group">
-          <label for="chooseButtonToolbar" class="mt-2">Change toolbar</label>
+          <label for="chooseButtonToolbar" class="mt-2">Explore text toolbar styles:</label>
           <select class="form-control col-4" id="chooseButtonToolbar">
             <option selected="" value="">Select</option>
             <option value="primary" selected>Primary</option>

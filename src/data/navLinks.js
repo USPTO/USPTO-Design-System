@@ -250,6 +250,7 @@ Object.assign(exports, {
   ],
   patternsNavLinks: [
     { href: 'patterns.html', text: 'Patterns' },
+    { href: 'data-entry.html', text: 'Advanced data entry' },
     {
       href: 'cards.html',
       text: 'Cards',
@@ -262,7 +263,6 @@ Object.assign(exports, {
     },
     { href: 'collection.html', text: 'Collection' },
     { href: 'scrollbar.html', text: 'Custom scrollbar' },
-    { href: 'data-entry.html', text: 'Data entry' },
     {
       href: 'dataFormats.html',
       text: 'Data formats',
