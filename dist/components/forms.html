@@ -865,10 +865,10 @@
 
       data-clipboard-text="&lt;!--Form labels--&gt;
 &lt;form&gt;
+  &lt;h2&gt;Access your account&lt;/h2&gt;
   &lt;div class=&quot;form-group&quot;&gt;
-    &lt;p class=&quot;text-right&quot;&gt;
-      &lt;span class=&quot;text-danger&quot;&gt;*&lt;/span&gt; indicates required
-    &lt;/p&gt;
+    &lt;p&gt;Required fields are marked with an asterisk (&lt;span class=&quot;text-danger&quot;&gt;*&lt;/span&gt;).&lt;/p&gt;
+    
   &lt;/div&gt;
   &lt;div class=&quot;form-group&quot;&gt;
     &lt;label for=&quot;exampleFLInputEmail&quot; class=&quot;required&quot;&gt;Email address&lt;/label&gt;
@@ -904,10 +904,10 @@
     <div class="preview-size">
       <!--Form labels-->
 <form>
+  <h2>Access your account</h2>
   <div class="form-group">
-    <p class="text-right">
-      <span class="text-danger">*</span> indicates required
-    </p>
+    <p>Required fields are marked with an asterisk (<span class="text-danger">*</span>).</p>
+    
   </div>
   <div class="form-group">
     <label for="exampleFLInputEmail" class="required">Email address</label>
@@ -936,10 +936,10 @@
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!--Form labels--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Access your account<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-right&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-danger&quot;</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> indicates required
-    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Required fields are marked with an asterisk (<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-danger&quot;</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>).<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFLInputEmail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;required&quot;</span>&gt;</span>Email address<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
@@ -1747,7 +1747,8 @@
         <button class="btn btn-sm btn-light md-icon clipboard"      
 
       data-clipboard-text="&lt;!-- Form group --&gt;
-&lt;form&gt;
+&lt;form&gt; 
+  
   &lt;h3&gt;Personal information&lt;/h3&gt;
   &lt;p class=&quot;form-text text-muted&quot;&gt;Some other help text and information.&lt;/p&gt;
   &lt;div class=&quot;form-group&quot;&gt;
@@ -1800,7 +1801,8 @@
     </div>
     <div class="preview-size">
       <!-- Form group -->
-<form>
+<form> 
+  
   <h3>Personal information</h3>
   <p class="form-text text-muted">Some other help text and information.</p>
   <div class="form-group">
@@ -1846,7 +1848,8 @@
       Example HTML usage:
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Form group --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span> 
+  
   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Personal information<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text text-muted&quot;</span>&gt;</span>Some other help text and information.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
@@ -2147,19 +2150,20 @@ This textfield has exceed the character limit by 10 characters. The user can sti
 
       data-clipboard-text="&lt;!-- Form example 1 --&gt;
 &lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;p&gt;Required fields are marked with an asterisk (&lt;span class=&quot;text-danger&quot;&gt;*&lt;/span&gt;).&lt;/p&gt;    
+  &lt;/div&gt;
   &lt;div class=&quot;form-group row&quot;&gt;
     &lt;div class=&quot;col-md-6&quot;&gt;
       &lt;label for=&quot;exampleFXInputEmail1&quot; class=&quot;required&quot;&gt;Email&lt;/label&gt;
+      &lt;p class=&quot;form-hint&quot;&gt;Your email will be used to log in.&lt;/p&gt;
       &lt;input
         type=&quot;email&quot;
         class=&quot;form-control&quot;
         id=&quot;exampleFXInputEmail1&quot;
         aria-required=&quot;true&quot;
         required
-      /&gt;
-      &lt;small id=&quot;FXemailHelp1&quot; class=&quot;form-text text-muted&quot;
-        &gt;Your email will be used to log in.&lt;/small
-      &gt;
+      /&gt;      
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;form-group row&quot;&gt;
@@ -2302,19 +2306,20 @@ This textfield has exceed the character limit by 10 characters. The user can sti
     <div class="preview-size">
       <!-- Form example 1 -->
 <form>
+  <div class="form-group">
+    <p>Required fields are marked with an asterisk (<span class="text-danger">*</span>).</p>    
+  </div>
   <div class="form-group row">
     <div class="col-md-6">
       <label for="exampleFXInputEmail1" class="required">Email</label>
+      <p class="form-hint">Your email will be used to log in.</p>
       <input
         type="email"
         class="form-control"
         id="exampleFXInputEmail1"
         aria-required="true"
         required
-      />
-      <small id="FXemailHelp1" class="form-text text-muted"
-        >Your email will be used to log in.</small
-      >
+      />      
     </div>
   </div>
   <div class="form-group row">
@@ -2450,19 +2455,20 @@ This textfield has exceed the character limit by 10 characters. The user can sti
         <div class="codeArea">
 <pre><code class="hljs language-xml"><span class="hljs-comment">&lt;!-- Form example 1 --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Required fields are marked with an asterisk (<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-danger&quot;</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>).<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>    
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group row&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;exampleFXInputEmail1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;required&quot;</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-hint&quot;</span>&gt;</span>Your email will be used to log in.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
         <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span>
         <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>
         <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;exampleFXInputEmail1&quot;</span>
         <span class="hljs-attr">aria-required</span>=<span class="hljs-string">&quot;true&quot;</span>
         <span class="hljs-attr">required</span>
-      /&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;FXemailHelp1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-text text-muted&quot;</span>
-        &gt;</span>Your email will be used to log in.&lt;/small
-      &gt;
+      /&gt;</span>      
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group row&quot;</span>&gt;</span>
