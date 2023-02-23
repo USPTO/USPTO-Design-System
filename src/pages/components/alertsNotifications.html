@@ -57,6 +57,10 @@ content %}
     {{ macros.viewCode({ ariaLabel: 'View code for no icon alerts', code:
     noIconsAlerts }, 'No icon alerts')}}
   </div>
+  <div class="preview pv-md">
+    {{ macros.viewCode({ ariaLabel: 'View code for  dismiss alerts', code:
+    dismissAlerts }, ' Dismiss alerts')}}
+  </div>
 </section>
 <section class="pv-content">
   <div class="pattern">
@@ -206,7 +210,47 @@ content %}
     <a href="#" class="alert-link">an example link</a>.
   </div>
 </div>
-{% endset%} {% set systemNotification %}
+{% endset%}
+{% set dismissAlerts %}
+<p>If an Alert is informational only and does not contain information critical to the usage of the application, then it can be made dismissible.</p>
+<!--Dismiss alerts-->
+<div class="mb-2 alert alert-info d-flex" role="alert">
+  <div class="alert-icon"><i class="material-icons">info</i></div>
+  <div class="flex-grow-1">
+    <h4 class="alert-heading">Use appropriate heading level</h4>
+    This is a info alert with
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+  <div class="mb-auto">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+<div class="mb-2 alert alert-info d-flex" role="alert">
+  <div class="flex-grow-1">
+    This is a info regular alert with
+    <a href="#" class="alert-link">1an example link</a>.
+  </div>
+  <div class="mb-auto">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+<div class="mb-2 alert alert-info alert-sm d-flex" role="alert">
+  <div class="flex-grow-1">
+    This is a info slim alert with
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+  <div class="mb-auto">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+{% endset%}
+{% set systemNotification %}
 <!--System alert-->
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
