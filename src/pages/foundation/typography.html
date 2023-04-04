@@ -151,6 +151,43 @@ title: 'Typography' } %} {% block content %}
     "")}}
   </div>
 </section>
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="lineHeight">Line height</h2>
+    <p>Add line height classes  according to context of the text, different line heights require the use of  <code>.line-height-* {xs, sm, md, lg, xl, 2x, 3x}</code>.</p>
+    <!-- <ul class="list-unstyled">
+      <li><code>.line-height-xs</code></li>
+      <li><code>.line-height-sm</code></li>
+      <li><code>.line-height-md</code></li>
+      <li><code>.line-height-lg</code></li>
+      <li><code>.line-height-xl</code></li>
+      <li><code>.line-height-2x</code></li>
+      <li><code>.line-height-3x</code></li>
+      
+    </ul> -->
+  </div>
+
+  <div class="preview pv-md">
+    
+<h3>Example</h3>
+<p>Line height class: <code id="lh-code">.line-height-md</code></p>
+   <p id="lh">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat sequi possimus illo consectetur architecto, culpa inventore neque aspernatur odio fuga veritatis quisquam soluta numquam facere. Natus eveniet voluptatibus inventore. Cupiditate fugiat sequi possimus illo consectetur architecto, culpa inventore neque aspernatur odio fuga veritatis quisquam soluta numquam facere. Natus eveniet voluptatibus inventore. Cupiditate fugiat sequi possimus illo consectetur architecto eveniet voluptatibus.</p>
+  
+   <div class="form-group col-4 ml-n3">
+    <label for="chooseLineHeight" class="mt-2">Change line height</label>
+    <select class="form-control" id="chooseLineHeight">
+      
+      <option value="xs">Extra small</option>
+      <option value="sm">Small</option>
+      <option value="md" selected>Default (medium)</option>
+      <option value="lg">Large</option>
+      <option value="xl">Extra large</option>
+      <option value="2x">Double</option>
+      <option value="3x">Triple</option>
+    </select>
+  </div>
+  </div>
+</section>
 
 {% endblock %} {% set fontWeight %}
 <!--Font weight -->
@@ -261,4 +298,10 @@ title: 'Typography' } %} {% block content %}
     Someone famous in <cite title="Source Title">Source Title</cite>
   </footer>
 </blockquote>
+{% endset%}
+{% set lineHeight %}
+<!--Line heights -->
+<p>line height text</p>
+
+
 {% endset%}

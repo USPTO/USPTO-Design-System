@@ -203,7 +203,8 @@ Object.assign(exports, {
         { href: '#styles', text: 'Styles' },
         { href: '#responsive-size', text: 'Responsive headings' },
         { href: '#lists', text: 'Lists' },
-        { href: '#colors', text: 'Colors' }
+        { href: '#colors', text: 'Colors' },
+        { href: '#lineHeight', text: 'Line height' }
       ],
     },
   ],
