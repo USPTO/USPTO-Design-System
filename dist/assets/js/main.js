@@ -106,6 +106,19 @@ $("body").on("change", "#chooseScrollbar", function (e) {
   }
 
 });
+//Change custom scrollbar
+
+$("body").on("change", "#chooseLineHeight", function (e) {
+  e.preventDefault(e);
+  
+  var valueSelected = this.value;
+  valueSelected = "line-height-" + valueSelected
+  
+  $("#lh").removeClass().addClass(valueSelected);
+  $("#lh-code").html(valueSelected);
+
+});
+
 
 $('body').on('click', 'input#smallScrollbar', function (e) {  
   if ($("input#smallScrollbar").is(":checked")) {
