@@ -6,7 +6,7 @@ View the Design System: [https://uspto.github.io/USPTO-Design-System/index.html]
 Use the Design System: The USPTO Design System v2.x theme can be [found here](https://github.com/USPTO/USPTO-DS-Theme)
 
 
-## Installing
+## Installing the USPTO DS Reference/documentation site locally
 Install the project's dependencies with:
 ```
 npm install

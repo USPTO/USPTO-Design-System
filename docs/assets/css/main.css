@@ -12765,6 +12765,34 @@ h5.text-responsive, .h5.text-responsive {
   font-size: calc(100% + 0.2vw + 0.2vh);
 }
 
+.line-height-xs {
+  line-height: 1.15 !important;
+}
+
+.line-height-sm {
+  line-height: 1.35 !important;
+}
+
+.line-height-md {
+  line-height: 1.5 !important;
+}
+
+.line-height-lg {
+  line-height: 1.62 !important;
+}
+
+.line-height-xl {
+  line-height: 1.75 !important;
+}
+
+.line-height-2x {
+  line-height: 2 !important;
+}
+
+.line-height-3x {
+  line-height: 2.5 !important;
+}
+
 a:hover, a.page-link:focus, a:focus {
   text-decoration: underline;
 }
