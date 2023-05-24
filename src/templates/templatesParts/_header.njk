@@ -133,6 +133,33 @@
     <a class="navbar-brand" href="#" title="Project title">
           Project title
     </a>
+  {% if page.title == "Language selector" %}
+  <button type="button" role="button" id="spainishLanguage" class="btn btn-primary btn-sm float-right mr-2 mt-1"><span lang="es" xml:lang="es">Español</span></button>
+  {% endif %}
+   {% if page.title == "Multiple language selector" %}
+  <div class="float-right input-group-append">
+                  <button class="btn btn-primary dropdown-toggle mr-2 mt-1" type="button" id="language-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Languages</button>
+                  <div class="dropdown-menu dropdown-menu-left" aria-labelledby="language-options" style="">
+                    <a class="dropdown-item" href="#"><span lang="ar" xml:lang="ar"><strong>العربية</strong> (Arabic)</span></a>                    
+                    <a class="dropdown-item" href="#"><span lang="en" xml:lang="en"><strong>English</strong></span></a>
+                    <a class="dropdown-item" href="#"><span lang="es" xml:lang="es"> <strong>Español</strong> (Spanish) </span></a>
+                    <a class="dropdown-item" href="#"><span lang="fr" xml:lang="fr"> <strong>Français</strong> (French) </span></a>
+                    <a class="dropdown-item" href="#"><span lang="it" xml:lang="it"> <strong>Italiano</strong> (Italian) </span></a>                    
+                  </div>
+                </div>
+  {% endif %}
+  {% if page.title == "Unstyled language selector" %}
+  <div class="float-right input-group-append">
+                  <button class="btn btn-link dropdown-toggle mr-2 mt-1" type="button" id="language-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Languages</button>
+                  <div class="dropdown-menu dropdown-menu-left" aria-labelledby="language-options" style="">
+                    <a class="dropdown-item" href="#"><span lang="ar" xml:lang="ar"><strong>العربية</strong> (Arabic)</span></a>                    
+                    <a class="dropdown-item" href="#"><span lang="en" xml:lang="en"><strong>English</strong></span></a>
+                    <a class="dropdown-item" href="#"><span lang="es" xml:lang="es"> <strong>Español</strong> (Spanish) </span></a>
+                    <a class="dropdown-item" href="#"><span lang="fr" xml:lang="fr"> <strong>Français</strong> (French) </span></a>
+                    <a class="dropdown-item" href="#"><span lang="it" xml:lang="it"> <strong>Italiano</strong> (Italian) </span></a>                    
+                  </div>
+                </div>
+  {% endif %}
   
   </div>
 </div>
