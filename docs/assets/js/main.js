@@ -208,6 +208,13 @@ $("body").on("click", ".deletePhoneNumber-btn", function (e) {
   $(this).parent('div.row').remove();
 });
 
+// language page
+$("body").on("click", "#spainishLanguage", function (e) {
+  $(location).prop('href', 'languages/es-landing-page.html');
+});
+$("body").on("click", "#englishLanguage", function (e) {
+  $(location).prop('href', '../language-selector.html');
+});
 
 })
 /*

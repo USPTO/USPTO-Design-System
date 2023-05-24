@@ -2,7 +2,7 @@
 class: 'page-language-selector', title: 'Language selector', id: 'language-selector' } %} {% block content %}
 <section class="pv-content">
   <div class="pattern">
-    <h1 id="date-and-time" class="d-inline">Language selector</h1><span class="badge badge-subtle-info ml-3 position-relative" style="top: -10px;">Proposed </span>
+    <h1 id="date-and-time" class="d-inline">Language selector</h1><span class="badge badge-subtle-warning ml-3 position-relative" style="top: -10px;">Proposed / not final </span>
     <h2 id="purpose">Purpose</h2>
     <p>The consistent placement, interface, and behavior of the language selection component allows users to easily find and access content in the language the user is most comfortable in.</p>
 
@@ -13,21 +13,21 @@ class: 'page-language-selector', title: 'Language selector', id: 'language-selec
     <p>Allow users to select their preferred language when visiting a website in two languages.</p>
     {{ macros.viewCode({ ariaLabel: 'View code for dialog', code:
     languageSelector }, "")}}
-    <a class="btn btn-link mt-5" href="../examples/language-selector.html" target="_blank">Demo language selector with two languages</a>
+    <a class="btn btn-link mt-5" href="../examples/language-selector.html" target="_blank">Demo: Language selector with two languages</a>
   </div>
   <div class="preview">
     <h2>Language selector with three or more languages</h2>
     <p>Give users the ability to select their preferred language when visiting a website available in three or more languages.</p>
     {{ macros.viewCode({ ariaLabel: 'View code for dialog', code:
     languageSelectorMultiple }, "")}}
-    <a class="btn btn-link mt-5" href="../examples/multiple-language-selector.html" target="_blank">Demo language selector with two languages</a>
+    <a class="btn btn-link mt-5" href="../examples/multiple-language-selector.html" target="_blank">Demo: Language selector with multiple languages</a>
   </div>
   <div class="preview">
     <h2>Language selector unstyled</h2>
     <p>Use the unstyled version of the language button if your implementation calls for a link.</p>
     {{ macros.viewCode({ ariaLabel: 'View code for dialog', code:
     languageSelectorUnstyled }, "")}}
-    <a class="btn btn-link mt-5" href="../examples/unstyled-language-selector.html" target="_blank">Demo language selector unstyled</a>
+    <a class="btn btn-link mt-5" href="../examples/unstyled-language-selector.html" target="_blank">Demo: Language selector unstyled</a>
   </div>
 </section>
 

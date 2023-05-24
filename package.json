@@ -1,7 +1,7 @@
 {
-  "name": "USPTO-DS",
+  "name": "USPTO-DS-Docs",
   "version": "2.2.7",
-  "description": "USPTO Design System - Guidance Website",
+  "description": "USPTO Design System - Guidance (Docs) Website",
   "directories": {
     "dist": "dist"
   },
@@ -15,16 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/USPTO/USPTO-DS-Theme.git"
+    "url": "https://github.com/USPTO/USPTO-Design-System.git"
   },
   "keywords": [
     "USPTO",
     "USPTO DS",
     "USPTO Design System",
     "USPTO Pattern Library",
-    "ip",
-    "dpl",
-    "icons"
+    "dpl"
   ],
   "author": "USPTO",
   "contributors": [
