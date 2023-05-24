@@ -296,7 +296,7 @@ Object.assign(exports, {
     */
     { href: 'help.html', text: 'Help' },
     { href: 'toolbar.html', text: 'Interactive toolbar' },
-    { href: 'LanguageSelector.html', text: 'Language selector' },
+    { href: 'languageSelector.html', text: 'Language selector' },
     { href: 'search.html', text: 'Search' },
 
     {
