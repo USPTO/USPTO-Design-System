@@ -1,5 +1,5 @@
 {% extends "layouts/templateDefault.njk" %} {% set page = {
-class:'page-document', title: '500 Error Page', containerType:'main' } %} {%
+class:'page-document', title: '503 Error Page', containerType:'main' } %} {%
 block main %}
 <section class="p-4">
   <div class="p-5">
@@ -7,11 +7,11 @@ block main %}
     <!-- Remove these comments when you build your error pages -->
 
     <!-- Describe the error in the main heading -->
-    <h1 class="mb-4">Something went wrong</h1>
+    <h1 class="mb-4">Service unavailable</h1>
 
     <!-- Explain what caused the error in the lead text -->
     <h2 class="font-weight-normal mb-3">
-      The server encountered an internal error and your request could not be completed.  Please refresh the page and try again.
+      The service you requested is not available at this time.  Please refresh the page and try again.
     </h2>
     <p>
         If this error persists, please <a href="https://www.uspto.gov/about-us/contact-us" target="_blank">contact us</a>.
@@ -19,7 +19,7 @@ block main %}
     </p>
 
     <!-- Error code if appropriate -->
-    <p class="text-secondary mt-5"><strong>Error code:</strong> 500</p>
+    <p class="text-secondary mt-5"><strong>Error code:</strong> 503</p>
   </div>
 </section>
 
