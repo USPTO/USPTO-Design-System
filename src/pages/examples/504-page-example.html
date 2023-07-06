@@ -1,0 +1,26 @@
+{% extends "layouts/templateDefault.njk" %} {% set page = {
+class:'page-document', title: '504 Error Page', containerType:'main' } %} {%
+block main %}
+<section class="p-4">
+  <div class="p-5">
+    <!-- This template can be used for most types of error pages -->
+    <!-- Remove these comments when you build your error pages -->
+
+    <!-- Describe the error in the main heading -->
+    <h1 class="mb-4">Gateway timeout</h1>
+
+    <!-- Explain what caused the error in the lead text -->
+    <h2 class="font-weight-normal mb-3">
+      This page is taking too long to load and could not complete your request.  We are sorry for the inconvenience.  Please refresh the page and try again.
+    </h2>
+    <p>
+        If this error persists, please <a href="https://www.uspto.gov/about-us/contact-us" target="_blank">contact us</a>.
+        
+    </p>
+
+    <!-- Error code if appropriate -->
+    <p class="text-secondary mt-5"><strong>Error code:</strong> 504</p>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layouts/templateDefault.njk" %} {% set page = {
+class:'page-document', title: '301 Error Page', containerType:'main' } %} {%
+block main %}
+<section class="p-4">
+  <div class="p-5">
+    <!-- This template can be used for most types of error pages -->
+    <!-- Remove these comments when you build your error pages -->
+
+    <!-- Describe the error in the main heading -->
+    <h1 class="mb-4">Moved permanently</h1>
+
+    <!-- Explain what caused the error in the lead text -->
+    <h2 class="font-weight-normal mb-3">
+      The <b>Item Name</b> requested has been moved permanently to <a href="#">new complete page URL</a>.
+    </h2>
+    <p>
+        If you believe you are seeing this message in error, please <a href="https://www.uspto.gov/about-us/contact-us" target="_blank">contact us</a>.
+        
+    </p>
+
+    <!-- Error code if appropriate -->
+    <p class="text-secondary mt-5"><strong>Error code:</strong> 301</p>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,6 +1,6 @@
 {
   "name": "USPTO-DS-Docs",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "USPTO Design System - Guidance (Docs) Website",
   "directories": {
     "dist": "dist"

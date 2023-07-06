@@ -216,10 +216,10 @@ Object.assign(exports, {
     { href: 'pageTemplate.html', text: 'Page templates' },
     {
       href: 'error-page.html',
-      text: 'Error page',
+      text: 'Error pages',
       "children": [
         { href: '#404-error', text: '404 error' },
-        { href: '#server-error', text: 'Server error' }
+        { href: '#server-error', text: 'Additional error pages' }
       ],
     },
     { href: 'documentationPage.html', text: 'Documentation page' },
