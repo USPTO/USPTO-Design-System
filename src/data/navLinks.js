@@ -246,9 +246,9 @@ Object.assign(exports, {
     }
   ],
   usageNavLinks: [
-    { href: 'how-to-use.html', text: 'Usage' },
-    { href: 'component-placement-guidelines.html', text: 'Component placement guidelines' },
-    { href: 'guidance.html', text: 'Section 508 Guidance' }
+    { href: 'how-to-use.html', text: 'General usage' },
+    { href: 'component-placement-guidelines.html', text: 'Component placement guide' },
+    { href: 'guidance.html', text: 'Section 508 guide' }
   ],
   patternsNavLinks: [
     { href: 'patterns.html', text: 'Patterns' },
