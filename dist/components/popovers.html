@@ -550,9 +550,9 @@
         Popovers are smaller contextual dialogs that are generally triggered by
         a click
       </li>
-      <li>They may or may not provide additional interactive controls</li>
+      
       <li>
-        Popovers display information or functionality related to a particular
+        Popovers display information related to a particular
         item or control
       </li>
       <li>
@@ -560,11 +560,10 @@
         opened it, or by clicking anywhere outside of the popover
       </li>
       <li>
-        The amount of content in a popover should be relatively short, but they
-        can be scrollable if necessary
+        The amount of content in a popover should be relatively short
       </li>
       <li>
-        Popovers should be positioned based on the screen space available,
+        Popovers should be positioned based on the screen space available
       </li>
     </ul>
 
@@ -572,56 +571,40 @@
 
     <ul>
       <li>You want a contextual relationship that a dialog can’t provide</li>
-      <li>You need to provide relatively simple interactions</li>
+      
       <li>You have more text/content than can comfortably fit in a tooltip</li>
     </ul>
+    <p class="mb-4"><strong>Note:</strong> Currently, popovers do not manage keyboard focus order. Therefore, in order for the popover to remain accessible for all users, avoid adding interactive controls to the popover (i.e. links, buttons, other form elements). If interactive controls are needed, consider using a modal dialog instead.  For more information, please visit the <a href="https://getbootstrap.com/docs/5.0/components/popovers/" target="_blank">Bootstrap Popover Component webpage.</a>  </p>
+  
     <div
       class="bs-popover-left popover show fade d-block position-relative"
       role="tooltip"
     >
-      <div class="arrow" style="top: 90px"></div>
-      <h3 class="popover-header">Add note</h3>
+      <div class="arrow" style="top: 33px"></div>      
       <div class="popover-body">
-        <textarea
-          placeholder="Enter note here"
-          class="form-control"
-          name=""
-          id=""
-          rows="3"
-        ></textarea>
-      </div>
-      <div class="popover-toolbar">
-        <button
-          class="btn btn-outline-secondary btn-sm md-icon float-left"
-          type="button"
-        >
-          <i class="material-icons">image</i>
-        </button>
-        <button
-          class="btn btn-outline-secondary btn-sm md-icon float-left"
-          type="button"
-        >
-          <i class="material-icons">link</i>
-        </button>
-        <button class="btn btn-sm btn-primary float-right">Add</button>
-      </div>
+        <p  class="mb-0">
+          <strong>Simple search: </strong>Type a term in the search field and select the <em>search
+          button</em>. 
+        </p>
+      </div>      
     </div>
     <p>&nbsp;</p>
     <div
       class="bs-popover-right popover show fade d-block position-relative"
       role="tooltip"
     >
-      <div class="arrow" style="top: 90px"></div>
+      <div class="arrow" style="top: 118px"></div>
+      <h3 class="popover-header">Search</h3>
       <div class="popover-body">
-        <p>
-          Simple search: Type a term in the search field and select the search
-          button.
-        </p>
-        <p>
-          Advanced search: Advanced boolean operators may be used. The default
-          operator when searching multiple terms is “AND”.
-        </p>
-        <a href="">Learn more</a>
+        <p class="mb-0">
+          <strong>Advanced search: </strong>Advanced boolean operators may be used. The default
+          operator when searching multiple terms is "AND". For full list of available operators, refer below:
+        </p> 
+      <ul  class="mb-0">
+          <li>AND</li>
+<li>OR</li><li>NOT</li>
+<li>AND NOT</li>
+</ul>
       </div>
     </div>
   </div>
