@@ -19,6 +19,99 @@ $( document ).ready(function() {
       $('.input-file').click();
     });
 
+    
+    $('#multiFileUpload').on('change', function(e) {
+      e.preventDefault();
+      $('.input-upload-area, .successArea').addClass('d-none');
+      $('.progressArea').removeClass("d-none"); 
+      setTimeout(function() {
+      $('.input-upload-area, .progressArea').addClass('d-none');
+      $('.successArea').removeClass("d-none");
+      $('.newFile').addClass('table-success').removeClass('d-none');
+      $('.newFile1').removeClass('d-none');
+    }, 1500); 
+    setTimeout(function() {
+      $('.successArea, .progressArea').addClass('d-none');
+      $('.input-upload-area').removeClass("d-none");
+      $('.newFile').removeClass('table-success');
+      $('.newFile1').removeClass('table-success');
+    }, 4000);
+    
+    });
+    $('.cancelMultiUpload').on('click', function(e) {
+      // e.preventDefault();
+      // e.stopPropagation();
+      // $('.successArea, .progressArea').addClass("d-none");
+      // $('.input-upload-area').removeClass('d-none');
+      // $('.newFile').removeClass('table-success').addClass('d-none');
+      // $('.newFile1').addClass('d-none');
+    });
+   
+//:::: NEW file upload
+//Number of file
+function getTotalDocs() {  
+  var rowCount = $('#FileUploadTable tbody tr').length;
+  $('#totalDocuments').html(rowCount);
+}
+
+
+
+$("body").on("click", ".deleteFile-btn", function (e) {
+  e.preventDefault(e);
+  $(this).parents('td').parents('tr').addClass('deleteThisRow')
+  var fileName = $(this).parents('td').parents('tr').children('td').eq(1).text();
+  $('.deleteFileName').html(fileName);
+$('#deleteFileModal').modal();
+});
+$("body").on("click", ".closeUploadedFile", function (e) {
+  e.preventDefault(e);
+  $('.deleteThisRow').removeClass();  
+});
+$("body").on("click", ".deleteUploadedFile", function (e) {
+  e.preventDefault(e);
+  $('.deleteThisRow').remove(); 
+  $('#deleteFileModal').modal('hide');
+  if ( $('#FileUploadTable tbody').children().length > 0 ) {
+    getTotalDocs();   
+} else {
+  $('#FileUploadTable tbody').html("<tr class='noFilesUploaded'><td class='text-center'>No files uploaded</td></tr>");
+  $('#totalDocuments').html("0");
+}
+$(".topUploadMsg").html("");
+var deletedFile = $('.deleteFileName').text();
+var alertMsg = "<div class='mb-2 alert alert-success alert-sm d-flex' role='alert'><div class='alert-icon'><i class='material-icons'>check_circle</i></div><div class='flex-grow-1'>File <strong><i>"+ deletedFile +"<i></strong> has been removed.   </div>    <div class='mb-auto'>    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>      <span aria-hidden='true'>×</span>    </button>    </div>  </div> "
+$(".topUploadMsg").append(alertMsg);
+});
+
+
+$('#multiFileUpload1').on('change', function(e) {
+  e.preventDefault();
+  $(".topUploadMsg").html("");
+  $(this).parents("div.multiple-upload-primary").css("opacity", ".4");
+  $('.newFile2').removeClass('d-none');
+  $('.noFilesUploaded').remove();
+var newFileTR = "<tr class='newFile2 successTr'><td style='width:30px'><div class='spinner-border spinner-border-sm align-bottom fileUploadSpinner' role='status'>  <span class='sr-only'>Loading...</span></div><i class='material-icons align-bottom text-success d-none' role='img'  title='Uploaded successfully'>check</i></td><td class='align-middle'>statement_1.pdf</td>	  <td style='width:30px'><a href='statement_1.pdf' target='_blank' data-toggle='tooltip' data-placement='top' title='Download' class='d-inline-block'><i class='material-icons text-secondary  d-none'>download</i></a></td>    <td style='width:30px'><a href='#' target='_blank' data-toggle='tooltip' data-placement='top' title='Delete' class='d-inline-block deleteFile-btn'><i class='material-icons text-secondary d-none'>delete</i></a></td></tr><tr class='newFile2 errorTr'><td style='width:30px'><div class='spinner-border spinner-border-sm align-bottom fileUploadSpinner' role='status'>  <span class='sr-only'>Loading...</span></div><i class='material-icons align-bottom text-danger d-none' role='img'  title='Error uploading'>error</i></td><td class='align-middle'>another_file.zip</td>	    <td class='text-right'  style='width:30px'>&nbsp;</td>      <td class='text-right'  style='width:30px'>  <a href='#' target='_blank' data-toggle='tooltip' data-placement='top' title='Delete' class='d-inline-block deleteFile-btn'><i class='material-icons text-secondary d-none'>delete</i></a></td></tr><tr class='newFile2 successTr'><td  style='width:30px'><div class='spinner-border spinner-border-sm align-bottom fileUploadSpinner' role='status'>  <span class='sr-only'>Loading...</span></div><i class='material-icons align-bottom text-success d-none' role='img'  title='Uploaded successfully'>check</i></td><td class='align-middle'>File_name.xml</td>	      <td  style='width:30px'><a href='File_name.xml' target='_blank' data-toggle='tooltip' data-placement='top' title='Download' class='d-inline-block'><i class='material-icons text-secondary d-none'>download</i></a></td><td  style='width:30px'><a href='#' target='_blank' data-toggle='tooltip' data-placement='top' title='Delete' class='d-inline-block deleteFile-btn'><i class='material-icons text-secondary d-none'>delete</i></a></td></tr>"
+$("#FileUploadTable tbody").prepend(newFileTR);
+//addContainerSpinner(".uploadArea", 114000);
+getTotalDocs();
+  setTimeout(function() {
+   $(".fileUploadSpinner").addClass("d-none");
+   $('.newFile2 i').removeClass('d-none');
+   $(".successTr").addClass("table-success");
+   $(".errorTr").addClass("table-danger");
+   $("div.multiple-upload-primary").css("opacity", "1");
+
+var alertMsg = "<div class='mb-2 alert alert-danger alert-sm d-flex' role='alert'>    <div class='alert-icon'><i class='material-icons'>error</i></div>    <div class='flex-grow-1'>      Something went wrong, 1 document failed to upload.    </div>    <div class='mb-auto d-none'>      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>        <span aria-hidden='true'>×</span>      </button>    </div>  </div><div class='mb-2 alert alert-success alert-sm d-flex' role='alert'><div class='alert-icon'><i class='material-icons'>check_circle</i></div><div class='flex-grow-1'>      2 documents successfully uploaded.   </div>    <div class='mb-auto d-none'>    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>      <span aria-hidden='true'>×</span>    </button>    </div>  </div>"
+$(".topUploadMsg").append(alertMsg);
+$('[data-toggle="tooltip"]').tooltip();
+  }, 4000);
+  setTimeout(function() {
+    $(".successTr").removeClass("table-success");
+    $(".successTr, errorTr").removeClass();
+  }, 6000);
+});
+
+    
         //dataTable
  $('#dataTableExample').DataTable({  
   "sDom": '<"row view-filter"<"col-sm-12"<"float-left"i><"float-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"float-left"l><"float-right"p>>>',  
