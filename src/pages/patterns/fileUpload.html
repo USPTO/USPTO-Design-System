@@ -14,26 +14,29 @@ class: 'page-fileupload', title: 'File upload' } %} {% block content %}
     {{ macros.viewCode({ ariaLabel: 'view code for single file upload', code:
     singleFileUpload }, '')}}
   </div>
-</section>
-
-<section class="pv-content">
   <div class="pattern">
     <h2 id="multi-file-upload">Multiple file upload</h2>
-    <p>
-      This shows how to facilitate uploading multiple files to the same field
-      (e.g., an attachments field), where the files are uploaded as soon as
-      they’re selected rather than when the form is submitted.
-    </p>
+    <p>Multiple file upload, where user can select more than one file with the file upload button.</p>
   </div>
 
   <div class="preview pv-sm">
     {{ macros.viewCode({ ariaLabel: 'view code for multi file upload', code:
     multiFileUpload }, '')}}
   </div>
+</section>
 
+<section class="pv-content">
+  <div class="pattern">
+    <h2 id="drag-and-drop-fileupload">Drag and drop file upload</h2>
+    <p>
+      This shows how to facilitate uploading multiple files to the same field
+      (e.g., an attachments field), where the files are uploaded as soon as
+      they’re selected rather than when the form is submitted.
+    </p>
+  </div>
   <div class="preview pv-md">
     {{ macros.viewCode({ ariaLabel: 'view code for multi file upload', code:
-    dragndropFileUpload }, 'Drag and drop file upload')}}
+    dragndropFileUpload }, '')}}
   </div>
 </section>
 
@@ -63,22 +66,11 @@ class: 'page-fileupload', title: 'File upload' } %} {% block content %}
 <form>
   <div class="input-group">
     <div class="custom-file">
-      <input
-        type="file"
-        class="form-control custom-file-input"
-        id="inputGroupFile"
-      />
-      <label
-        class="custom-file-label"
-        for="inputGroupFile"
-        aria-describedby="inputGroupFileAddon"
-        >Select file</label
-      >
+      <input type="file" class="form-control custom-file-input" id="inputGroupFile" />
+      <label class="custom-file-label" for="inputGroupFile" aria-describedby="inputGroupFileAddon">Select file</label>
     </div>
     <div class="input-group-append">
-      <span class="input-group-text rounded-0" id="inputGroupFileAddon"
-        >Upload</span
-      >
+      <span class="input-group-text rounded-0" id="inputGroupFileAddon">Upload</span>
     </div>
   </div>
 </form>
@@ -87,120 +79,69 @@ class: 'page-fileupload', title: 'File upload' } %} {% block content %}
 <form>
   <div class="form-group">
     <label for="exampleFormControlFile">Example multiple files input</label>
-    <input
-      type="file"
-      class="form-control-file"
-      id="exampleFormControlFile"
-      multiple=""
-    />
+    <input type="file" class="form-control-file" id="exampleFormControlFile" multiple="" />
   </div>
 </form>
 {% endset%} {% set dragndropFileUpload %}
 <!--Drag and drop file upload -->
-<form>
-  <div class="multiple-upload-primary">
-    <input type="file" class="input-file" multiple="" />
-    <div class="input-upload-area" role="button">
-      <i class="material-icons md-3x">cloud_upload</i>
-      <h3>Drag and drop files here</h3>
-      <p>or</p>
-      <div class="btn btn-upload">Browse files</div>
+<form id="fileUload">
+  <span class="topUploadMsg"></span>
+  <div class="uploadArea">
+    <div class="multiple-upload-primary">
+      <label for="multiFileUpload1" class="sr-only">Multiple file upload</label>
+      <input type="file" class="input-file" multiple="" name="multiFileUpload1" id="multiFileUpload1">
+      <div class="input-upload-area py-1" role="button">
+        <div class="uploadButton">
+          <i class="material-icons md-2x mr-2">cloud_upload</i>
+          <h3 class="d-inline-block" style="vertical-align: text-bottom;">Drag and drop files here
+            <span class="font-weight-light mx-2">or</span>
+            <div class="btn btn-sm btn-upload">Browse files</div>
+          </h3>
+
+          <p class="small">Acceptable file formats: .pdf, .docx, .txt, .xml, .zip</p>
+        </div>
+
+      </div>
+
+
     </div>
   </div>
-  <p class="px-2 mt-5"><strong>Total documents uploaded: xxx</strong></p>
-  <table class="table table-outline mt-2">
+  <p class="px-2 mt-3 mb-0"><strong>Total documents uploaded: <span id="totalDocuments">1</span></strong></p>
+  <table class="table table-sm table-hover" id="FileUploadTable">
     <tbody>
-      <tr>
-        <td>
-          <i class="material-icons align-bottom">description</i> File name
-          <span class="text-muted">(0KB)</span>
-          <div class="small text-danger ml-4">Error uploading file.</div>
-        </td>
-        <td style="width: 105px">
-          <div class="input-group">
-            <button
-              class="btn btn-icon-only btn-sm"
-              type="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Preview <i class="material-icons align-bottom">more_vert</i>
-              <span class="sr-only">More</span>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right" style="">
-              <a class="dropdown-item" href="#">Edit</a>
-              <a class="dropdown-item" href="#">Remove</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Download</a>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <i class="material-icons align-bottom">description</i> File name
-          <span class="text-muted">(5KB)</span>
-        </td>
-        <td>
-          <div class="input-group">
-            <button
-              class="btn btn-icon-only btn-sm"
-              type="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Preview <i class="material-icons align-bottom">more_vert</i>
-              <span class="sr-only">More</span>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right" style="">
-              <a class="dropdown-item" href="#">Edit</a>
-              <a class="dropdown-item" href="#">Remove</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Download</a>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <i class="material-icons align-bottom">description</i> File name
-          <span class="text-muted">(3KB)</span>
 
-          <div class="progress w-25 ml-4" style="height: 10px">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 20%"
-              aria-valuenow="10"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-        </td>
-        <td>
-          <div class="input-group">
-            <button
-              class="btn btn-icon-only btn-sm"
-              type="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Preview <i class="material-icons align-bottom">more_vert</i>
-              <span class="sr-only">More</span>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right" style="">
-              <a class="dropdown-item" href="#">Edit</a>
-              <a class="dropdown-item" href="#">Remove</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Download</a>
-            </div>
-          </div>
+      <tr>
+        <td style="width: 15px;"><i class="material-icons align-bottom text-success" role="img"
+            title="Uploaded successfully">check</i></td>
+        <td class="align-middle">File123.txt</td>
+        <td style="width: 30px;"><a href="File123.txt" target="_blank" data-toggle="tooltip" data-placement="top"
+            title="Download" class="d-inline-block"><i class="material-icons text-secondary">download</i></a></td>
+        <td style="width: 30px;">
+          <a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Delete"
+            class="d-inline-block deleteFile-btn"><i class="material-icons text-secondary">delete</i></a>
         </td>
       </tr>
     </tbody>
   </table>
+  <!-- Delete multiple files modal -->
+  <div class="modal fade" id="deleteFileModal" tabindex="-1" aria-labelledby="deleteFileModal" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger">Delete file</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body pt-4">
+          <p>Are you sure you want to delete <strong><span class="deleteFileName">{{FileName}}</span></strong>?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm closeUploadedFile" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger btn-sm deleteUploadedFile">Delete file</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </form>
 {% endset%}
